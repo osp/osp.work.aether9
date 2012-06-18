@@ -1,0 +1,416 @@
+[aether] remote fairytales - performance invitation
+bk bk at [nospam] n3krozoft.com 
+Wed Jun 6 16:50:10 CEST 2007 
+Previous message: [aether] more fun european calls for submissions 
+Next message: [aether] remote fairytales - performance invitation 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+Dear aethernauts
+
+the next performance of the aether9 group will be on Thursday 14th of 
+june, online and in brussels
+at 7 PM in europe = 10 AM california = noon in colombia
+in an audience packed gallery in the center of  Brussels (n3krozoft Ltd 
+will occupy this space for 3 days (see the attached flyer). the 
+performance and the exhibit is called
+"remote fairytales, contes lontains, fabel op afstand"
+(last expression is flemmish - brussels is bilingual french/flemish. 
+flemish is very very close to dutch).
+
+the idea for this performance:
+
+1) on location in brussels, next to the screen, there will be 2 persons 
+on stage:
+- Deirdre Foster (she is a storyteller and actress from Geneva) - she 
+will tell her version on the classical tale (from the Grimm brothers) 
+"La jeune fille sans mains" (The girl without hands --> 
+http://en.wikipedia.org/wiki/The_Girl_Without_Hands).
+- Me, Boris, i will be conferencing the audience about the reunion of an 
+important group of patchers (i'm almost over writing this 
+conference-like text extrapolating from my aether9 experience!)
+we will intermingle our texts and form a strange dialogue.
+our idea is that Deirdre & I will be quite confused about what is going 
+on: i will begin my conference by adressing myself to the audience in a 
+similar way and setting (chair, table, lamp) than academic conferences 
+are usually given, with the intention of informing he audience. Deirdre, 
+dressed in a ... fancy way,  will then "interrupt me" and start telling 
+her tale, with the intention of enchanting her audience. I will react by 
+answering to her, in my conference mode, but with the intention of 
+understanding what Deirdre is doing here. Deirdre will continue her 
+tale, with the intention of unveiling the question: what am i doing in a 
+digital-media performance? i thought i was in a storyteller convention!
+etc. and our dialogue will go on according to what happens between us 
+two, the audience and aether9 screens, but we will always stick more or 
+less to the stories we wrote.
+
+
+2) remote aether9 part:
+in parralel to the stage action, aether9 remote action will flow on the 
+screen (maybe 2 screens).
+we didn't develop any script yet. but we want to.
+the script will integrate formal and narrative elements related to the 
+stage action.
+sometimes the stage action will be on standby for the screen action to 
+take all the attention. in these moments, formal elements of aether9 
+will prevail.
+when the stage action will be running, the narrative elements of aether9 
+wil prevail, providing a visual tale.
+i guess that there will be an irc channel for aether9 with somebody in 
+brussels giving cues for actions.
+our texts are in french and should be translated to some extent in 
+english for everybody to grasp the stories...  well for Deirdre's tale, 
+the basis is on the net and for mine i'll adress this later today.
+we wish that all remote performers have a common "neutral" set , for 
+instance something simple like : a table with a chair, a neutral wall, a 
+picture on the wall, a book and paper + pen  or typemachine on the table.
+this in order to avoid total randomness of the visual aspect and 
+confusion for the viewers (online especially), in order to have some unity.
+not all performers would be perorming at the same time, and it would be 
+good to have a common neutral state in a way.
+
+3) sound
+- there will be some sound environnment in the brussel performance.
+somebody will be in charge of the sound diffusion.
+we are not thinking of stremaing the sound for the moment.
+- we would like to invite you to upload some sound files on 
+aether at artslashmedia.ftp server in the >web >"sounds_remote_fairytales" 
+folder
+- please view D. Lynch "rabbit" project for interesting sound treatment 
+(in our view...)
+--> here are 2 videos:
+http://www.bzzp.biz/temp/
+(1st episode: full first episode, 10min
+fragment: 2 min extract)
+- you could also record yourselves saying short sentences (cf. lynch again).
+
+
+4) rehearsals
+- on the 13th of june, one day before the performance, we should do a 
+videocheck to see how everything is running in the gallery (at the same 
+time scheduled for the next day's performance.)
+- this friday (8th of june), we would like to do a jam session.
+this session will adress technical problems (the aether9 system was  
+working well on the "electronic café international" session of the 10th 
+of may.
+since manuel has been working more on the patch and we need to test the 
+latest versions.
+we will also write some script with formal elements to test how it goes.
+for instance:
+- the table setting described before
+- make a cross between the 9 screens
+- 2 persons making phone calls at the same time
+etc.
+
+
+----------------------------------
+
+so,
+who will participate in this landmark performance?
+- to my knowledge, the following aethernauts said that in principle they 
+are ready to take part:
+Nathalie from paris, Audrey from holland, Paula from medellin, cym from 
+walkendorf, Chris from yorba linda - california.
+i guess that a group from geneva will do a part too.
+- Dr. Gomez & the league?
+- Rhys from australia? (i heard that he would use puppets - that would 
+be good - performance time in au. would be early early in the morning.)
+- Johan from berlin?
+- Milena from the brazil group?
+- Laure form the Kingdom of belgium?
+
+-- 
+so we need to know asap:
+who will be there for the jam session this friday
+who wishes to take part in the "remote fairytales" perfomance on the 
+14th of june (and, if possible, the rehearsal on the 13th of june).
+
+all ideas, suggestion, disagreements etc. welcome and awaited!!!
+i love this team!
+looking forward,
+Boris
+
+
+
+
+
+[aether] last news and performance preparation
+bk bk at [nospam] n3krozoft.com 
+Sat Jun 9 14:44:31 CEST 2007 
+Previous message: [aether] remote fairytales - performance invitation 
+Next message: [aether] last news and performance preparation 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hello aethernauts,
+
+we jammed yesterday with
+laure_bruxell1, paula_medellin, manu_geneva, boris_brussel2 and 
+amirali_teheran (chat&images)
++
+christiaan_california, cym_walkendorf, ideakritik_rotterdam and the 
+league_california (chat only)
+no script was established so it began slowly in a quite random jam, then 
+ideakritik brilliantly gave cues according to elements of the "girl 
+without hands" tale. it lasted 3 hours or so.
+
+--
+
+technical conclusions:
+- the viewing 9frame html page works great (i attached some screenshots, 
+some slots are black because we weren't 9)
+- for maxers: the patch upload_109 works perfectly
+- for ftp uploaders: it works well also
+this means that the transmission system for next thursday's performance 
+is fully fonctional!
+
+--
+
+practical conclusions:
+
+- we all agreed that it is extremely helpfull to be 2 persons for the 
+performance, for example:
+1 person in charge of following the irc chat for the cues, for the 
+computer manipulations and the camera manipulations
+1 person in charge of the image (as actor, puppetist, drawer etc)
+
+- we need a fine tuned script - this script should be finished on 
+wednesday at the latest. (see my propositions below)
+- each performer needs a clear method. everybody develops one naturally, 
+but it's better to find it before the performance than during the 
+performance... will you use a fix or moving camera?  etc etc.
+we need law&order: more the formal aspects are defined, the better it 
+"feels" (knowing that anyway it will be quite hazardeous - i like this 
+struggle).
+it's possible at any time now to upload images and visualise it on 
+ >http://1904.cc/aether/ >new test interface!!!
+
+- perform simple & small things
+we may think that what we are uploading is not "rich" or interesting 
+enough, but then we forget that there are 8 other images!
+
+- react quicky & act slowly
+it's difficult to be all alert & super fast to react to cues and in the 
+same way remember not to rush the action
+
+- obviously prepare a maximum of stuff before the beggining, in this way 
+you can concentrate on less things during the performance.
+
+maxers:
+- use the 109 for upload and the htlm 9frame page to view (not the more 
+complex upload_107 patch, wich may crash)
+- use the start/stop button often - do not constantly upload images. 
+press the stop button to rearrange the setting and prepare for next actions.
+pressing once "start" then immediatly press "stop" will upload just one 
+image. this is great to create controlled animations (although it's hard 
+to control the order of the images, but it's verry fun nevertheless).
+
+--
+
+proposals for the basis of the script:
+- the script form in grid that we used for the first aether9 performance 
+was great i think.
+
+- it is now certain that we will use the "Girl Without Hands" tale. 
+Deirdre will tell it during the performance in brussels (we don't know 
+exaclty "how")
+
+- think it would be efficient and elegant to make a clear distinction 
+between when we upload "formal" elements (like "film an empty desk 
+before an empy chair") and "narrative" elements like
+("The devil sends a messenger to kill the queen and daugther!")
+
+i guess some of us prefer to do a performance with emphasis on formal 
+visuals, while others are more interested in emphasizing the 
+video-storytelling - it's different types of freedom and constraint.  
+both aspects are very important but cannot realistically be reunited by 
+every single performer yet (because it would need so much preparation).
+one way to do this would be to have a constant distinction on the screen 
+between who is working "fomal" and who is working "narrative".
+yesterday when everybody displayed an empty chair - the impression was 
+striking! common action works, and they never fail to create an 
+extremely deep impression.
+but the formal elements should always be thought of as going with the 
+tale in a way but not interpretating it litterally.
+all this shall be scripted of course.
+
+- the n3krozoft team can edit the script according to all the input on 
+the mailing list and related discussions, but if somebody or a group 
+wants to take the responsability to put this sript together, it would be 
+a great relief for us (because we are also in the rush of preparing the 
+exhibit: building fine zoetropes, editing dvd's, printing very large 
+video stills and more...). Please anonce it asap if you want to do this.
+
+--
+
+lineup for thursday the 14th:
+
+sure: cym, laure, paula, nathalie, christiaan
+  maybe: geneva, amirali:teheran, ideakritik
+no news: johan (berlin), alejo
+--> so we aren't ready yet participation-wise (there won't be any live 
+performance in the brussel gallery space itself.)
+
+--
+
+lookking forward,
+boris
+
+
+
+[aether] tommorow's jam session - details
+bk bk at [nospam] n3krozoft.com 
+Thu Jun 7 21:58:42 CEST 2007 
+Previous message: [aether] endless shores 
+Next message: [aether] 2 small corrections 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hello!
+
+tommorow's (8.06.2007) jam session is at
+9 PM in europe
+Noon in califonia
+10 AM in colombia
+11 PM in moscow
+
+new working patches!!!
+new 9 frame viewer html-page!!!
+
+---
+
+a couple exercices for us:
+
+-let's try to upload monochromatic images only at times (whether with 
+colored light if you have or filters to put in front of the camera or 
+any other way we can find)
+please prepare to upload images using red, blue and yellow.
++ darkness (not total)
+
+- anything that has to do with the "Girl without hands" tale is welcome.
+
+- if your camera films a setting with a wall (and some picture on it), a 
+table, a chair and sombody (you?) sitting behind the table, perfect! 
+(would be nice to try this all at the same time).
+
+---
+server list. 08.06.2007
+
+1 | 2 | 3
+4 | 5 | 6
+7 | 8 | 9
+
+Frame 1 - http://1904.cc/~aether/1
+Frame 2 - http://1904.cc/~aether/2/
+Frame 3 - http://10111.org/~aether/0/
+
+Frame 4 - http://10111.org/~aether/1/
+Frame 5 - http://artslashmedia.net/~aether/5/
+Frame 6 - http://aether.front.ru/6/
+
+Frame 7 - http://aether.front.ru/7/
+Frame 8 - http://aether.smtp.ru/cym/
+Frame 9 - http://aether.smtp.ru/9/
+
+for ftp uploaders: username and password on each server are the same as 
+usual.
+In each case the jpegs are now named 0x.jpg to 9x.jpg
+(except for cym, who uses arbitrarily frame 8. your jpg is named pw.jpg)
+
+the html interface will be available tomorrow, linked from 1904.cc/aether
+
+participants should announce on the list which frame they want to use.
+
+for maxers: use the latest patch: http://1904.cc/kode/upload_107.zip (22 k)
+
+or, if the new javaobjects aren't working, use this simplified version 
+(without visual feedback; you'll visualise through the html interface) - 
+http://1904.cc/kode/upload_109.zip (18 k)
+
+---
+
+boris
+
+ps: i will gladly use frame no. 7!
+
+
+
+[aether] brussels performance report
+bk bk at [nospam] n3krozoft.com 
+Sat Jun 16 15:04:32 CEST 2007 
+Previous message: [aether] Tesla in NYC? 
+Next message: [aether] aether Digest, Vol 2, Issue 15 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hello all,
+
+we just opened the gallery this morning in brussels for the last day of 
+the exhibit here.
+
+i write now a little performance report
+
+/////
+1. Mother Nature
+we where about ready (one hour before the performance)
+ when mother nature invited herself
+it started to rain and rain and rain
+and all at once, water filtered through the roof
+of the large performance hall
+and poured in buckets on our command table
+we ran to unplug the curent and move tables in the dark
+to protect the computers and cameras and stuff
+the sound was ear-crushing: torrential rain
+in 5 minutes, there was 5 cm of water everywhere
+and we where soaked... and sort of annoyed...
+so we rushed to transfer everything from the big hall to the
+smaller exhibit hall
+while the lady-gallerist was calling the fire department
+/////
+2. Action
+quite stessfull we managed to be not too late for the beginning
+and the performance started in front of about 30 people (that where 
+brave enough to come in spite of the exceptional storm)
+some more walked in during the show
+they where welcomed with champagne and other drinks
+Deirdre told the tale in a baroque white dress colored by the projection 
+rays
+Chloe mixed discreet sounds & music
+Boris told his story sitting in front of the audience on a desk while 
+trying to film his part of the tale.
+Manuel managed the projected images and chated on the skype conference
+/////
+3. Audience reaction
+some people where quite confused, but most of them liked it to put it 
+simply and shortly.
+///////
+4. Debriefing
+it was hard to be fully concentrate under these climatic conditions - 
+but it was exciting...
+- as there was no actual stage anymore, Deirdre found it extremely 
+difficult to properly perform her craft, storytelling. she also feels 
+frustration that we didn't have enough time to prepare a more refined 
+"mise en scene" between her and Boris.
+- Manuel was trying to give cues according to Deirdre's words, and 
+obviously it was going much too quick for the remote performers (& for 
+manuel also who had to solve some techicalities...) - it was a BIG 
+mistake to do so. we apologize for that. a better thing would be for the 
+performers to switch between acts every 3 minutes for instance - like 
+that everything would be co-ordinated whitout questions...
+it is a shame really that the performers weren't able to display their 
+work in a calm manner with sufficient time to do so. this will not 
+happen again.
+- Boris is basically satisfied of the opportunity to read loud his 
+speech (adapted for the circumstance...).
+
+--
+
+pictures & movies will come soon on the aether website.
+
+and check cristiaan site:  http://zurcnaaitsirhc.blogspot.com/
+
+--
+
+à bientôt,
+Boris
+
+
+
+
+

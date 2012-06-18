@@ -1,0 +1,328 @@
+[aether] next performance SETUP
+bk bk at [nospam] n3krozoft.com 
+Mon Jul 16 14:03:08 CEST 2007 
+Previous message: [aether] aether economics 
+Next message: [aether] Bulgaria performance - conceptual development 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hello
+
+here is the setup situation for the central balkan mountains performance 
+in Bulgaria on the 19th of this month
+confirmed:
+ > Cym + Luka (wd8_austria)
+ > Lucy/The League (norway)
+ > Boris (belgium)
+ > Manu + Alejo (Dortmund Germany)
+ > Nathalie - did you solve your camera problem? (Paris France)
+
+unconfirmed:
+ >>> Chris?
+ >>> Laure?
+ >>> Judy?
+ >>> Amirali?
+ >>> ???
+
+--
+
+have a look at the pic gallery of the place, it's quite something: 
+http://netuser.bg/2007/en/?gal=1&page_id=500
+
+-- 
+
+i had a look to one of the chats alejo pointed to: http://home.gabbly.com/
+super easy to embed... for bulgaria it would be no problem. (the 
+simplest way is to type gabbly.com/ in front of the url of the page you 
+visit, and all others visitors doing the same will be reunited in a 
+chatroom embedded on the visited url...)
+issues are:
+it eats quite some place on a web page.
+the design is... what it is - but more horrifying is the ad embed in the 
+top corner of the chat (i did not understand if we can replace it by 
+what we wish).
+you can see this chat at  http://gabbly.com/colboard.com/index.php - 
+when i tried it, 8 people where chatting at supersonic speed and it 
+worked perfectly.
+
+--
+
+Coco Islands Time Zone: UTC+6½
+
+--
+
+Boris
+
+
+
+
+[aether] bulgaria - interface
+1.1 [*] 1904.cc 1.1 [*] 1904.cc 
+Thu Jul 19 02:06:25 CEST 2007 
+Previous message: [aether] RE : SCRIPT UPDATE !!! 
+Next message: [aether] bulgaria - interface 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hi all,
+here is a possible setup for the Hotel Pleven performance (changes 
+are possible of course):
+
+laure(gva).JPG | cym+luka.PNG | audrey(rdam).JPG
+
+chris.JPG      | boris.JPG    | league.JPG
+
+objects        | objects      | objects
+
+the audio player is now a bit more hidden, see the new interface 
+from: http://1904.cc/aether/live/
+
+since we had some trouble (uncontrollable delays) with the .ru 
+servers, i propose to drop them for now.
+
+also, after some longer testing, it seems that png has a tendency to 
+be quite heavier than jpg, specially with very colourful/contrasted 
+material. so, since the max patch has now a contrast function, i 
+suggest we switch back to jpg (not for the pd users though).
+
+this are now the corresponding FTP directories:
+
+frame 1 - ftp://1904.cc/1/  format: jpg
+frame 2 - ftp://1904.cc/2/  format: png
+frame 3 - ftp://imaginaryscience.org/3/  format: jpg
+
+frame 4 - ftp://imaginaryscience.org/4/  format: jpg
+frame 5 - ftp://10111.org/web/5/  format: jpg
+frame 6 - ftp://10111.org/web/6/  format: jpg
+
+frame 7 - ftp://artslashmedia.net/web/7/ - OBJECTS
+frame 8 - ftp://artslashmedia.net/web/8/ - OBJECTS
+frame 9 - ftp://artslashmedia.net/web/9/ - OBJECTS
+
+note: user is "aether" for all servers, except imaginaryscience.org 
+where the user is aether
+
+note2: for frame 6 (league), there is only 1 self-refreshing png 
+file, called 1.png
+
+note3: i didn't include myself among the performers - will have a 
+busy day tomorrow and preparing the technical/html stuff + preparing 
+the performance/finding the objects will be hardly possible.
+
+if any of you needs special settings (filenames etc), tell me as soon 
+as you can.
+
+best,
+manuel
+
+
+[aether] (no subject)
+laure deselys lauredinateur at [nospam] yahoo.de 
+Thu Jul 19 03:37:59 CEST 2007 
+Previous message: [aether] bulgaria - interface 
+Next message: [aether] 4 objects (from boris) 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hello,
+
+
+leaving brussels pc-naked made it quite hard for me to
+organise tomorrows performance and was also very busy.
+so couldnt take part so much to the wiki and script
+elaboration.
+ i am and will be for tomorrow  located in france
+(high-savoy), i still have a  few technical problems
+but it should be solved by tomorrow midday. cross
+finger.
+
+the place where i here grab the net, is in a kind of
+basement
+and for me it actualy seems easier to use a window
+that is ground high, then a  door. i dont know, if
+considering this i should be placed somewhere else in
+the nine screen strucure.
+
+
+maybe i can find a solution with a door but cant
+confirm it right now
+
+for the four objects i was thinking of:
+
+1. red kimono
+2. hunting gun
+3. hat(s)
+4. mountain boots
+
+boris, i dont expect you to have these important
+things at home, but you can also use the color or hand
+gesture to make contact with them
+
+or if its not considered usefulll enough for bulgaria
+( desk type)
+
+1. pencil sharpner
+2. hair brush
+3. embrella
+4. goggles
+
+and so on . theres such a mess of objects in this
+place 
+i must make a tactico-narrativ choice
+
+i will send the pictures for the slide show tomorrow
+for midday
+
+more in a few hours
+gotta catch up some sleep
+
+
+
+laure.
+
+
+
+Luka Princic / Nova Viator nova at viator.si 
+Thu Jul 19 17:44:05 CEST 2007 
+Previous message: [aether] 115 or 114 
+Next message: [aether] wd8 -> live 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+On Thu, 19 Jul 2007 17:03:28 +0200
+1.1 [*] 1904.cc wrote:
+> i set everything back to JPG except the frame used by cym/viator 
+> (which is using the 0x.png - 9x.png naming scheme, hopefully it will 
+> work with Pd)
+> 
+> cym, i remind your FTP access:
+> frame 2 - ftp://1904.cc/2/
+
+yes.
+
+i just drove to wd8 at cym's, managed to download the linux driver for this nifty cym's hercules webcam, and it works!
+
+we're uploading.
+
+what's the chat channel this time then?
+
+ll.
+
+attaching the in-process screenshot *hope this list doesn't eat attaches for dinner*, wink wink...
+
+
+-- 
+<aav> coffee on an empty stomach is pretty nasy
+<knghtbrd> aav: time to run to the vending machine for cheetos
+<aav> cheetos? :)
+
+[aether] Thoughts, and a riddle
+Lucy H G art at workofbox.com 
+Thu Jul 19 20:09:27 CEST 2007 
+Previous message: [aether] wd8 -> live 
+Next message: [aether] Thoughts, and a riddle 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+Quick thoughts!
+
+I think this project in Bulgaria is a bit of a riddle - the script and
+performance - figure out as you go - search/consume/share.  The first aether
+project with its highly developed storyline, pseudo-science and mythological
+themes still holds the most for me...  It was quite fun to do, and I think
+it is because of the intensive scripting - even though this made it more
+challenging.
+
+I like the subject/object- consumerism theme for this unnamed last piece,
+but I think timing is essential.  Coordination of objects moved from frame
+to frame, etc.  Perhaps we are all in our own space time bubbles - we are
+still quite disconnected during these performances, and I think a live audio
+conference between us would help us to synchronize, as well as get to know
+one another.
+
+Instead of a new theme for each new project - perhaps we could return to
+this study of an object, of coordination, of passing items through the frame
+and communicating more "physically" with one other?  Boris had called for us
+to simplify, I think...  With very little setup or concept - just play
+catch, as it were.
+
+Lucy/League
+
+
+
+[aether] Re : Thoughts, and a riddle
+cym net cymnet at [nospam] gmail.com 
+Fri Jul 20 11:08:06 CEST 2007 
+Previous message: [aether] Re : Thoughts, and a riddle 
+Next message: [aether] Re : Thoughts, and a riddle 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+
+
+personally, i like to see aether 9 as a band that is playing live
+concerts. (or a theatre group that is doing theatre shows, but for me
+it is easier to compare it to a band)
+a band has a set of songs that they perform live. they practise the
+songs until they know them and can play them on the stage. they have a
+set of material and can change the set/order a little for each
+performance, and also create moments in the performance that leave
+space for improvisation. but still the basic structure is very clear
+for each band member. and at the same time it doesn't get boring to
+perform the same songs/compositions (or same theatre play) again and
+again.
+
+
+
+[aether] Re : Thoughts, and a riddle
+Judy Nylon knickerbockerjuju at [nospam] yahoo.com 
+Fri Jul 20 20:50:56 CEST 2007
+I sought out Aether to join after writing something myself in a published essay acknowledging that although I at one time used to see Moog, Cage etc etc and I was familiar with their work, I did not get what I needed from them artistically because there was no experiantial conversation between generations. It is a good time to address that comfortably because we are long distance performers. 
+
+
+[aether] Re : Thoughts, and a riddle
+Luka Princic / Nova Viator nova at viator.si 
+Sat Jul 21 00:20:06 CEST 2007
+
+i don't know if i have anything to contribute theoreticaly here
+although i find it very interesting how things are evolving around
+here. i'm also challanged by the notion of a connection that is not a
+technically enabled connection. what i mean here is that in my time of
+work (i met with the internet at about 97 and worked on this or the
+other way ever since) there has been an increasingly more visible
+problem of transfer / translation of certain connections between
+people, which, if they didn't exist, things didn't really work. i'm
+addressing the idea of a band here, maybe, or simply the fact that so
+many online projects have some kind of basis or at least some of the
+connection in real-life. or just the fact that i was able to think and
+work within a project that was facilitated online if i was also
+understanding the feeling of people involved in 'meat space'...
+anyway, i feel there is certain beauty (if i may use such a term here)
+in the efforts and connections that are happening here, and during the
+performances. 
+
+i'm also learning a lot about group performance and how things are
+bringing people closer together. the people who are performing, and the
+notions of distance and global and speed and time and place and space.
+i wish i had more theoretical tools to explain more precisely what i
+mean. but poetics can be also quite telling.
+
+i will/can work on a pd patch and linux-enabled approaches to aether9.
+
+[aether] Re : Re : Thoughts, and a riddle
+::audrey:: ideacritik at [nospam] yahoo.ca 
+Tue Jul 24 00:06:24 CEST 2007 
+Previous message: [aether] sept deadlines 
+Next message: [aether] RE : Re : Re : Thoughts, and a riddle 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+in response to 'getting to know each other' - as i also see this as a crucial element in a collaborative performance. especially since we cannot for the most part meet each other physically, small tidbits of knowledge become the extent of what we know about each other. these tiny tidbits are therefore also the only thing we have to go on in so far as expectation or imagination of how the other will act during a performance. in our excitement over 'the patches', have we perhaps overlooked that we must not only play, but play together? the person who 'assisted' me last performance was amazed at how little attention we payed to each others performances, 6 little autisms neatly assembled on a page. perhaps getting to know each other, even if only through these unsatisfactory mediums, is a start towards an aether9 embodied performance as opposed to several individuals operating in the same screen though otherwise seemingly detached.
+
+i was lucky enough to meet cym last week in austria as well as to attend the workshop in geneva where i of course met manu/aether9, alejo and others who are more or less inactive for the moment. i am based in rotterdam. i've just finished my MA in media design. my thesis is about the interaction/affect between media and our mourning process, and how we perceive death. as in many of my endeavors, i interviewed many people about this very idea and incorporated their accounts into my final project/thesis. i am explaining this only because my somewhat anthropological methodology outlines one of my main interests in this group;  how do remote performers work together, communicate, make decisions, disagree, in short, form a group. the limitations of our communication media form a particular set of 'constraints' which inherently shape our performance together. perhaps my use of the word constraints is not just because it is usually derogatory. i see these
+ constraints as borders from which to work with, in the same light as our 'low-tech one frame per second' refresh speed. i do not wish the frames to load quicker or to attain the perfect resolution. i prefer to take on this dimension and exploit it, in all its 'dramaturgical' glory. in the same way, i think we should exploit our 'thwarted' methods of communication. we often throw together a script at the last moment and more or less blindly perform all together without knowing what each other is doing. could we take this on as some sort of methodology? could this be made explicit as a performance tool? in this vein, i can imagine that we use simple 'unification' props such as text (which we have yet to integrate successfully but in which i have confidence). these props could be constant during each performance, and this aspect would be practiced, but the rest could be 'off the cuff' or improvised as usual. as cym noted, using text, written on a piece of
+ paper as we did in the first performance, was really nice. this is an idea which i feel is a beautiful metaphor for our communication together if it is used to communicate between frames during a performance. i imagine inmates passing each other notes between jailcells, all being watched on simultaneously by the jailguard on nine tiny screens hooked up to those surveillance cameras. we use the technology but we still attempt to communicate with paper and pen... this could be a constant which we can rehearse... for example.
+
+i hope this hasn't been too much of a digression to describe my feeling/desire to incorporate our communication process implicitly in our performances as well as to keep some things constant in order to refine our practice, focus our experiments.
+
+audrey/ideacritik
+
+
+
+
+
+
+

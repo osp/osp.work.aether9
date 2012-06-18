@@ -1,0 +1,70 @@
+[aether] Rotterdam script
+1.1 [*] 1904.cc 1.1 [*] 1904.cc 
+Mon Jul 2 00:05:21 CEST 2007 
+Previous message: [aether] Rotterdam performance 
+Next message: [aether] performance/event ideas and first thoughts about aether9 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+to the rotterdam performers,
+here the basic version of the script.
+
+9h00 opening (empty desks, chairs, etc)
+9h01 character 1 appears
+9h02 character 2 appears
+9h03 character 3 appears
+9h04 character 1: action (fills a glass of water)
+
+9h05 character 2: action (...)
+9h06 character 3: action (...)
+9h07 character 2: talks (in direction to 1)
+      character 1: answers (in direction to 2)
+9h08 character 3: leaves the space
+9h09 character 2+1 seem nervous
+9h10 character 3: comes back
+
+9h11 character 3: talks
+      character 2: looks to character 3
+      character 1: close up action
+9h12 character 3+2: close up action
+      character 1: looks at the others
+9h13 character 3: close up action
+9h14 character 1,2,3: stand up, saluts au public.
+9h15 empty desk
+
+
+for additions or changes, use the wiki:
+http://1904.cc/timeline/tiki-index.php?page=020707+rotterdam+script
+
+
+[aether] Re : today -- hotel new york
+::audrey:: ideacritik at [nospam] yahoo.ca 
+Mon Jul 2 11:35:07 CEST 2007 
+Previous message: [aether] performance/event ideas and first thoughts about aether9 
+Next message: [aether] photos last night 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+i apologise - i will be late for what i thought was a noon online-ness from the space.
+i am waiting for the dvcam which was supposed to be handed to me at 11.
+audrey
+
+
+
+[aether] Rotterdam performance
+Project Location Rotterdam 2007 project.location at [nospam] gmail.com 
+Tue Jul 3 17:07:36 CEST 2007 
+Previous message: [aether] photos last night 
+Next message: [aether] webaudience & radio show 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+Dear all,
+
+It was a true vibe to watch you all perform!!! I'm sending you million
+virtual kisses from somewhere on the way to Belgrade, and I'll be watching
+you on the 7th :)*
+
+I hope to keep in touch,
+Boba
+
+
+
+
