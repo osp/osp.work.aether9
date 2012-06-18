@@ -1,0 +1,335 @@
+[aether] Pixelache sound loop files needed
+christiaan cruz fe2cruz at hotmail.com 
+Thu Feb 18 20:57:15 CET 2010 
+Previous message: [aether] Florplan and schedule info about PixelAche 
+Next message: [aether] residency agence TOPO current situation 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+create/record sound files yourself or find them from other websites
+(with credits)
+
+FTP your files here
+http://cave12.org/~aether/archive/2010.03.26.Helsinki
+
+just follow these guidelines:
+
+Installation Sound Loop Guidelines
+This is an 8+ hour Public installation so please select your audio files with
+these things in mind:
+
+1. Voice reading a text in narratively engaging tone. Can be an essay
+about aether theories, or narrative. should be possible to
+understand/follow.
+2. Very short audio-loop of only a few seconds, that is interesting to
+listen to when looping for 1-2 minutes (maybe with slight shift in
+volume and speed). should not be too disruptive / rhythmic - it should
+be usable as a background for a reading voice.
+3. Avoid annoying sounds or standard crowd noise that would just blend
+into a large room of talking people.
+4. The content relates to the visual material we're streaming
+(landscapes of us see below)
+5. Ambient synthesizer or radio wave sounds in upper frequencies.
+
+
+Examples:
+space sounds - http://www-pw.physics.uiowa.edu/space-audio/sounds/
+aurora sounds - http://www.auroralchorus.com/
+space radio - http://www.svengrahn.pp.se/sounds/sounds.htm
+
+
+”LANDSCAPES OF US” (working title)
+
+This idea is inspired somehow by Vimeo group called ”The Pictures
+Don't Move” http://www.vimeo.com/groups/thepicturesdontmove and of
+course Judy's idea about the leaves. Idea would be to create
+landscapes or sceneries by using different streams: even though each
+stream is different and from different location, together they create
+a whole scenery (this is something Aether has done with drawing, I
+guess, but now it would be live footage). It's pretty simple, here's a
+sketch that explains a bit: http://www.artsufartsu.net/IMG_2438.JPG
+
+But what would be the sceneries, then? Should there be one or more?
+Could there be themes like, e.g, earth, wind, water and fire? Urban,
+forest, countryside? What is nature anyways? It should just be your
+localized nature. Like Judy's idea of shooting out your window. Just
+pick some image in your area that you can safely stream the whole
+8 hours. Or the aethernaut could have different setups say 8 different
+1 hour landscapes. I like this change idea.
+
+As of now the 9 aether frames will be like an exqusite corpes landscape image
+the top three sky streams
+the middle 3 frames horizon
+and the lower 3 earth ground streams
+A localized scene from your area is preferred
+
+
+So far we have confirmed
+Mari Keski-Korsu (possibly streaming in on location)
+
+Christiaan Cruz
+Manuel Schmalstieg
+Judy Nylon
+Paula Vélez Bravo
+Cym
+
+It'd be nice to 4 or more Aethernauts streaming live landscape
+so ask Friends and family about availability on Friday March 26th Helsinki time
+Just introduce them via the list and one of us can setup a skype chat date to
+help them get used to using the patch if needed.
+
+
+[aether] Set up and concept test of PixelAche 25.3. at 11 am (CET)
+Mari Keski-Korsu mkk at katastro.fi 
+Tue Mar 23 11:34:23 CET 2010 
+Previous message: [aether] telematic performance to watch today 
+Next message: [aether] Set up and concept test of PixelAche 25.3. at 11 am (CET) 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+Hi,
+
+Finally got info about set up in Kerava Art Museum. They start already 
+in the morning at 8 am (CET), but there won't be electricity for two 
+hours, so I think 10 - 11 am (CET) would be a good time for us to start 
+testing our work. This is Thursday 25.3.
+
+John Hopkins is interested in joining our installation. He would like to 
+stream Arizona sunrise at 14:30-15:00, (30min) CET
+Manu, from where should he download the needed files and also the server 
+listing?
+
+mkk
+
+
+
+[aether] patch 401
+Dhanya Pilo studio at dhanyapilo.com 
+Wed Mar 24 11:21:19 CET 2010 
+Previous message: [aether] patch 401 
+Next message: [aether] patch 401 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+Hi
+I missed some of the chats, but wanted to know how we have access to  
+these other web cameras?
+i see it on the patch, but it is some sort of piracy or web channels?
+wow!
+
+cheers,
+Dhanya
+
+
+
+
+[aether] rehearsal
+ideacritik idea at 1904.cc 
+Wed Mar 24 20:54:56 CET 2010 
+Previous message: [aether] patch 401 
+Next message: [aether] rehearsal 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+i will be online by 12~12:30 CET tomorrow for rehearsal, i'll be there n
+available for the afternoon.
+see some of you tomorrow!
+
+audrey
+
+ps ill be streaming with cym from utrecht(NL), where the botanical gardens
+of utrecht university used to be. the scenery will include dutch greenery,
+a stream, probably grey-ish sky and a mansion in the background.
+
+pps this is the webcam of the national dutch weather station (KNMI) which
+is almost in the backyard from where we will be streaming:
+http://www.knmi.nl/webcam/images/ispy.jpg?20427 (havent tested adress in
+patch yet but should work :)
+
+
+
+
+[aether] (no subject)
+bk bk at n3krozoft.com 
+Fri Mar 26 14:14:55 CET 2010 
+Previous message: [aether] and to already get you into the next performance... 
+Next message: [aether] Helsinki says thank you! 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+Hi list,
+
+i have been totally absent the recent times, but trying to follow the 
+list. i will remain mostly silent until end of april.
+right now 1904.cc looks and sound heavenly tropical. maybe you are 
+rehearsing. it's truly beautifull.
+
+MERDE for today's performance (as we say in french) !
+
+Boris
+
+
+
+
+[aether] Helsinki says thank you!
+Mari Keski-Korsu mkk at katastro.fi 
+Sat Mar 27 10:28:33 CET 2010 
+Previous message: [aether] (no subject) 
+Next message: [aether] Helsinki says thank you! 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+Hi,
+
+Manu, Paula, Audrey, Vinny, Cym, Judy, Chris, Dhanya and John.
+Once more, THANK YOU very much for your hard work and amazing creation 
+in Pixelache Camp yesterday. It was such a nice experience. I also want 
+to apologise once more that I had difficulties on concentrating in 
+between the virtual discussion of us and talking about the work with 
+people in physical space. Both sides lack in this situation, that's for 
+sure. But I hope you won't hate me, still :)
+
+I uploaded some pics to my Flickr account, I will ad them to the Aether9 
+group after Paula accepts me as a member of it.
+http://www.flickr.com/photos/artsufartsu/sets/72157623587582799/
+
+Bows,
+mkk
+
+
+
+[aether] Helsinki says thank you!
+Cym Net cymnet at gmail.com 
+Sat Mar 27 17:55:48 CET 2010 
+Previous message: [aether] Helsinki says thank you! 
+Next message: [aether] Helsinki says thank you! 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+Hello Mari
+
+Thank you for uploading the photos. The festival looks very nice!
+After seeing the photos I really think that it is a pity that I couldn't
+come...
+But it was a very nice experience to stream with Audrey from the garden. It
+was so strange to walk around there in this very quiet garden next to a busy
+street, making pictures from grass, water and clouds, while trying not to
+loose the connection. Somehow it seemed very bizarre to me, especially to do
+this live. But it is really nice to get feedback and to see some photos of
+the installation with the audience. The setting, the projection inside the
+white cube, is really nice!
+
+
+[aether] Helsinki says thank you!
+1.1 1.1 at 1904.cc 
+Sun Mar 28 13:45:08 CEST 2010 
+Previous message: [aether] Helsinki says thank you! 
+Next message: [aether] Helsinki 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+Hi all,
+
+big thanks to Mari for running the show at Camp Pixelache!
+
+It was a very interesting perfo for me as i was testing a new streaming 
+setup:
+- little AsusEEE netbook (running the patch in WinXP)
+- cheapo USB webcam (Aiptek VGA+)
+- mobile USB web access
+
+The first session was a near total failure, as it was raining heavily, 
+and I realized that it's impossible to operate laptop+cam while holding 
+an umbrella! In addition to that, the botanical garden where I was 
+trying to stream from turned out to be in a no-network zone between two 
+hills.
+
+During the afternoon sessions, rain stopped, and I got used to the 
+process of quickly connecting the USB modem, entering PIN, launching Max 
+patch, adjusting cam settings, all in a couple of minutes. And as Cym 
+says, it's a very weird and fascinating feeling, sending the live images 
+from a quiet natural outside location.
+
+The connection was surpraisingly stable, even in a rolling train there 
+were no disconnections. It looks like switzerland has a dense coverage, 
+appart from mountainous zones. This opens lots of opportunities for 
+outside streaming, and I think the direction of "mobile documentary 
+event coverage" is something to explore, where the "realtime" element 
+can make real sense.
+
+Also, specially in the later hours of the performance, I think we worked 
+out a good sense of composition withing our 9 frames (in terms of 
+geometry, colors)... hopefully the sign that there *is* some ongoing 
+progress in our familiarity with the tool / framework :)
+
+
+
+[aether] Helsinki says thank you!
+ideacritik idea at 1904.cc 
+Sat Mar 27 19:36:43 CET 2010 
+Previous message: [aether] Helsinki says thank you! 
+Next message: [aether] Helsinki says thank you! 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+On Sat, March 27, 2010 10:28 am, Mari Keski-Korsu wrote:
+> Hi,
+>
+
+hi
+
+> Manu, Paula, Audrey, Vinny, Cym, Judy, Chris, Dhanya and John.
+> Once more, THANK YOU very much for your hard work and amazing creation
+> in Pixelache Camp yesterday. It was such a nice experience. I also want
+> to apologise once more that I had difficulties on concentrating in
+> between the virtual discussion of us and talking about the work with
+> people in physical space. Both sides lack in this situation, that's for
+> sure. But I hope you won't hate me, still :)
+>
+
+all very understandable - its impossible to be totally present in both
+physical/virtual : )
+
+> I uploaded some pics to my Flickr account, I will ad them to the Aether9
+> group after Paula accepts me as a member of it.
+> http://www.flickr.com/photos/artsufartsu/sets/72157623587582799/
+>
+
+i especially like:
+http://www.flickr.com/photos/artsufartsu/4466814176/
+(our new aether9 'do' ? :)
+
+apart from the usual chaos of our performances i appreciated yesterday for
+a few reasons. first of all it was nice to be perfoming for so long (some
+hours) while people where casually walking in and out of the space (i
+imagine) because this meant mkk was giving us 'live' feedback on what is
+getting through to people. comments like - 'yes text helps' - or - 'add a
+shot of your faces in the loop' - etc.
+
+cym and i were indeed reflecting on what could possibly indicate to
+viewers that this is live - it is otherwise just pleasant scenery. ideas
+like adding the occasional mugshot, or the computer in 'the wild' are the
+start of a list we should elaborate upon.
+
+manu i loved your train and 'wandering' streaming! i also thought that
+much of the sound that was streaming yesterday was such a huge improvement
+on our tired sound bank. at one point the music coupled with the image was
+so fitting - i had a moment - one of those randomly programmed ones...
+
+next perfo coming april 21st in amsterdam - more on that soon.
+
+
+
+[aether] Helsinki
+1.1 1.1 at 1904.cc 
+Sun Mar 28 22:31:30 CEST 2010 
+Previous message: [aether] Helsinki says thank you! 
+Next message: [aether] novi sad > amsterdam [next performance] 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+more videos:
+http://1904.cc/aether/2010/community-news/trains-forest/
+
+i just pasted together a few clips that i had the good idea to record 
+while streaming ...
+
+do not forget: the patch *has the ability to record* with the little 
+"rec" button under the preview window ... it creates small quicktime 
+files that don't take much space on the harddrive, so you can record a 
+lot ...
+
+best,
+m.
+
+

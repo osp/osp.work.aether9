@@ -1,0 +1,130 @@
+[aether] residency agence TOPO current situation
+ideacritik idea at 1904.cc 
+Fri Feb 19 14:04:03 CET 2010 
+Previous message: [aether] Pixelache sound loop files needed 
+Next message: [aether] residency agence TOPO current situation 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hi all,
+
+i've been in contact with Eva Quintas president of agence TOPO where i
+sent a proposal for an aether9 residency about a month ago. the current
+proposal is the following: (it is still to be confirmed whether they
+accept or not)
+
+5 week residency ending with a performance at the 'geo-web installation'
+festival at the Cinematheque.
+
+theme: "lost in montreal"
+this theme adresses the mobility of the actor (to be developped in
+residency) and the aspect of discovery ('getting lost') linked to
+cinematographic explorations of the avant-garde (esthetic). (wink wink
+manu : )
+
+schedule:
+
+week 1-3: (audrey @ TOPO - other agents remotely present)
+-PD patch development
+-developemnt of mobile interface (method to control upload, contrast,
+etc., actions with a WII contoller)
+week 4-5: (audrey and chris @ TOPO - other agents remotely present)
+-explorations and experimentation with mobile interface
+-script
+-performance
+
+dates (approximate) : mid-may to mid-june 2010
+place: montreal
+
+this is perhaps a bad translation and certainly an abrieviated version
+which does not convey the extremely fun aspect of this new prospect of
+running around town with a magic wand uploading images to the interface.
+in any case as soon as/if we have confirmation we'll get down to details.
+
+audrey
+
+
+
+[aether] included in puredyne?
+christiaan cruz fe2cruz at hotmail.com 
+Mon May 10 07:28:21 CEST 2010 
+Previous message: [aether] next perfo in montreal- piratepad 
+Next message: [aether] next perfo - who's in? 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+I'll check it out again for sure. I had a lot of trouble with
+purdyne on my laptop but that was years ago. It worked well,
+but never got the resolution of my laptop's LCD right. It'll
+be interesting to see what has happened since then, but
+after we finish the Montreal project.
+
+As an update to that:
+I got a wiimote working to control PD on a Kubuntu laptop.
+Audrey's got a functioning PDpatch running on her linux box.
+We both have working webcams on pd within linux distros.
+And everyone must put availablities into the PiratePad
+and start contributing:
+    http://piratepad.net/HURO52Sh5K
+-c
+
+On 5/7/10, alejo <alejoduque at gmail.com> wrote:
+>
+> On May 8, 2010, at 1:17 AM, ideacritik wrote:
+>
+>> i can say that this will happen post 26th mai. the schedule for what
+>> is to
+>> be done here is very tight. certainly though its something i want to
+>> look
+>> into while im in montreal and can talk to the makers IRL..
+>
+> good, thats all i was suggesting, to have a look at it.. not just you
+> but everyone.
+> im convinced theres a lot more of potential there in terms of
+> development.
+>
+> also, i never talked with aquessy about it, as said we talked about
+> toonloop (another application that could be integrated in aethers
+> workflow.. yes yes not now)
+>
+> and about liveDVD's or customized puredynes:
+> http://planktum.wikidot.com/
+>
+> cheers,
+> /a
+>
+
+
+[aether] very small report from montreal
+ideacritik idea at 1904.cc 
+Tue May 18 04:08:47 CEST 2010 
+Previous message: [aether] times for boris and all 
+Next message: [aether] very small report from montreal 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hi all,
+
+chris and i are working our asses off (despite the beautiful beer drinking
+terasse sitting weather taking over the city). the alpha alpha patch is
+pretty much done - wii remote action up next. im half-way through the
+script/scenario (will upload very soon). local actor jordan arseneault has
+contributed loads to the script/scenario and i think it has tremendous
+potential!
+
+**rectification: may 26th showtime: 19h30CET this is confirmed!**
+
+audrey
+
+ps to answer the linux/osx question - we are working on linux exclusively
+at the moment because we plan (in the future) to make a boot cd (that is
+os independant, that everyone can use regardless of what operating system
+they use). so those who want to try it out for now must have a linux
+system and some patience to install other libraries and etc - or a
+puredyne type boot cd (i havent tried this either). therefore it is
+foreseeable that everyone else but the montreal crew ends up using the max
+patch for the next gig :)
+
+...that all folks! :) ...
+
+
+
+
+

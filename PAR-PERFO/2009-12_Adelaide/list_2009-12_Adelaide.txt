@@ -1,0 +1,144 @@
+[aether] meeting contents
+Vinny Bhagat contact at shivnakaun.com 
+Fri Dec 4 21:47:37 CET 2009 
+Previous message: [aether] meeting contents 
+Next message: [aether] SAT meeting 21:30CET = Sun Australia 7am 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hi Aethers ..
+
+Sunday is ideal time for a meeting / checks / rehearsal .. [ please ,  
+even if some of you are available ]
+
+Monday performance in Adelaide , we are on at 8.30pm Adelaide time  
+and play till 9.30 pm  , ie
+
+Adelaide (Australia - South Australia) Monday, December 7, 2009 at  
+8:30:00 PM
+Brussels : Monday, December 7, 2009 at 11:00:00 AM
+
+please calculate your local times .. checks will start earlier ..
+
+So far the tests i have done , with the wi fi available in the venue  
+[ 1-3 Mb - bandwidth ] and mobile broadband/ USB modem  ( varies but  
+often less than equal to 1Mb bandwidth ) ... " Slow is the word .. "
+
+I will be using 3 computers in Adelaide with individual internet  
+connections ..
+
+1) Projecting Aethers interface :  i would suggest , please remove  
+the audio stream .. Atleast for the interface that we use to stream  
+in venue . At the moment , whats streaming on 1904.cc , takes long  
+time to playback images properly .. there is a long buffering time ..
+For me in Sydney , its totally fine , because i am on 15Mb+ bandwidth ..
+For online audience we can make an interface that consists of all the  
+content < which needs faster internet ..
+
+2) To playback my AUDIO[ Syd]  in Adelaide  : What are your  
+suggestions , i can use Ustream , Live stream or icecast/ Giss Tv  
+setup using pd  ..
+What you suggest ?
+
+3) Stream AV from the performance space in Adelaide
+
+I will write you more soon , please reply, your thoughts n  
+suggestions . Sometime today i will send invites  .. people in  
+adelaide are excited and it has been advertised properly over there ..
+
+i have been spending way too much time at work , so apologies for not  
+writing much , i read all your emails , and maintain the circuit of  
+thoughts , inside me ..
+
+Talk to you all soon , beautiful friends ..
+'
+*bliss *
+~vinny
+---
+
+[aether] Adelaide performance
+1.1 1.1 at 1904.cc 
+Mon Dec 7 00:21:53 CET 2009 
+Previous message: [aether] SAT meeting 21:30CET = Sun Australia 7am 
+Next message: [aether] [New COMA Rehersal Time Proposal] SUN meeting 7CET = Sun Australia 4:30pm 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+Hi all,
+for the Adelaide performance in a couple of hours, some important points:
+
+* the frameset has been modified -- i removed the two "weak servers", nr
+4 and 5, that we struggled with during the berlin performance. at the
+moment i write this, those frames should show black, with an occasional
+red or blue monochrome appearing.
+
+If you recently accessed 1904.cc, you might use this direct link to make
+sure your browser doesn't show you an old version:
+http://1904.cc/live/frameset_09_adelaide/
+
+* this means of course that i updated the server-list, included with the
+Max patch -- the new list is included with the newest patch, nr 400.
+
+You find it here:
+http://1904.cc/~aether/kode/max_image_upload/
+
+The password of the z7/rar archive is the "old" aether password, the one
+that's easier to remember.
+
+Meet you in 10 hours:)
+
+
+Best,
+Manuel
+---
+
+[aether] report: Adelaide performance + future
+1.1 1.1 at 1904.cc 
+Tue Dec 8 14:03:39 CET 2009 
+Previous message: [aether] (no subject) 
+Next message: [aether] budget questions - possile performance in amsterdam (april 2010) 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+Hi all,
+
+Some short report about the Adelaide performance, to which the Aether9
+team contributed:
+
+The project was coordinated by Vinny Bhagat (aka Shivnakaun), who was
+streaming live electro-acoustics from his studio in Sydney (transmitting
+through giss.tv from a PureData patch).
+
+The stream was (supposedly, I didn't hear it) accompanied live
+on-location in Adelaide (at The Wheatsheaf Hotel, 39 George St
+Thebarton) by Kym Gluyas on saxophone. The aether9 interface was
+projected and visible to the live audience.
+
+The Aethernauts who generated the visuals:
+Christiaan Cruz, Dhanya Pilo, ideacritik, Manuel Schmalstieg, Maria Fava
+
+This was the first participation in the aether9 project for Maria Fava
+(aka eskoitaus), located in Nice (N3krozoft members will remember her
+from the CeC festival last February, where she was VJing).
+
+The visuals were fully improvised. The performers decided to restrict
+themselves to a black/white color palette for better graphic coherence.
+Also, due to the little number of Aethernauts, only 4-5 frames of the
+interface were used.
+
+We didn't encounter any technical / upload speed issues this time.
+Except ideacritik who was still unable to upload to frame 5, although
+the server feeding this frame has been changed. Very mysterious.
+
+Links to the COMA website (Creative Original Music Adelaide)
+
+http://www.coma.net.au/news.php
+http://www.coma.net.au/coma-gigs-past.php
+http://www.coma.net.au/band_page.php?Band_ID=49
+
+Link to the performance page I created:
+http://1904.cc/aether/2009/news/adelaide-performance/
+
+Best regards,
+Manuel
+
+---
+
+
