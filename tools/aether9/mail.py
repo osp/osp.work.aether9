@@ -70,17 +70,28 @@ class Reader:
 		
 		
 class Writer:
+	tex_special_chars = {r'&': '\\&', r'%': '\\%', r'$': '\\$', r'#': '\\#', r'_': '\\_', r'{': '\\{', r'}': '\\}', r'~': '\\textasciitilde', r'^': '\\textasciicircum', '\\' : '\\textbackslash'}
 	def __init__(self, mdict):
 		self.mail = mdict
 		
 	def as_string(self):
+		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
+		esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.text)
 		ret = []
 		ret.append('\\placeintermezzo[here][mail:%d]{}{'%(self.id,))
 		ret.append('\\bf{%s}'%(self.title,))
 		ret.append('\\it{%s}'%(self.author,))
-		ret.append(self.text)
+		ret.append(esc_text)
 		ret.append('}')
 		return '\n'.join(ret)
+		
+	def escape_tex(self, pt):
+		r = pt.group()
+		print('matched: %s'%r)
+		if r in self.tex_special_chars:
+			return self.tex_special_chars[r]
+		return r
+			
 		
 	def __getattr__(self, name):
 		try:
