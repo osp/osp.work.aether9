@@ -1,0 +1,787 @@
+[aether] test message
+ms ms at [nospam] n3krozoft.com 
+Fri May 4 18:23:29 CEST 2007 
+Next message: [aether] it seems the list is working... 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+does this work??
+
+
+
+[aether] it seems the list is working...
+1.1 [*] 1904.cc 1.1 [*] 1904.cc 
+Sun May 6 21:57:07 CEST 2007 
+Previous message: [aether] test message 
+Next message: [aether] it seems the list is working... 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+isn't it?
+
+
+
+[aether] it seems the list is working...
+cym cym at cym.net 
+Sun May 6 22:04:41 CEST 2007 
+Previous message: [aether] it seems the list is working... 
+Next message: [aether] img refresh 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+yes it is
+
+On Sun, 6 May 2007 1.1 [*] 1904.cc wrote:
+
+> isn't it?
+> _______________________________________________
+> aether mailing list
+> aether at [nospam] 1904.cc
+> http://lists.1904.cc/mailman/listinfo/aether
+>
+
+
+
+
+[aether] html seems to work good
+christiaan cruz fe2cruz at [nospam] hotmail.com 
+Mon May 7 09:03:58 CEST 2007 
+Previous message: [aether] img refresh 
+Next message: [aether] html seems to work good 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+The html works good so far. You N3krozofties are FAST!
+The console window doesn't pop up to the correct 
+size though; usually too small.
+Is there anything else you need help with?
+Any specific feedback, beta testing 
+calls/submissions or dirty work?
+Please let me know.
+ 
+-christiaan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: http://lists.1904.cc/pipermail/aether/attachments/20070507/5dd8fd02/attachment.html 
+
+
+[aether] html seems to work good
+1.1 [*] 1904.cc 1.1 [*] 1904.cc 
+Mon May 7 11:14:24 CEST 2007 
+Previous message: [aether] html seems to work good 
+Next message: [aether] [Ascii-announce] webcam (fwd) 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+>The html works good so far. You N3krozofties are FAST!
+>The console window doesn't pop up to the correct
+>size though; usually too small.
+
+depends probably how your toolbars look like.
+anyway, the intended setup is double screen:
+the video frames in full screen, projected.
+the control window on a control monitor.
+so the resize is not really needed, just practical for testing on 1 
+small screen.
+
+>Is there anything else you need help with?
+>Any specific feedback, beta testing
+>calls/submissions or dirty work?
+
+- FEEDBACK: think of what else should/could be implemented in this 
+"html-patch".
+the principle for now is: one main frame - 
+http://www.1904.cc/~aether/mainframe.html
+which is divided in a number of subframes (for now six)
+for each location, there are different versions of subframes with 
+different refresh speed (for now three)
+e.g.  http://www.1904.cc/~aether/frame_brussels_m.html (m: medium 
+speed, 1sec refresh)
+I attach the zipped html files so you can test in your computer...
+
+one function that needs to be implemented would be to change the 
+frame color of one video in order to highlight it - just a different 
+html page, or could this be done in a smart way, like a javascript 
+link that changes style settings of target frame on mouseclick?
+
+another function i would like to test is a "hi-speed" mode: a html 
+page where the jpegs would be placed in different layers, only one of 
+them visible at a time, and where the page would cycle through them 
+at very high speed (its quite easy to do using dreamweavers timeline 
+function). there would be no refresh in this mode since refresh needs 
+more time.
+
+- BETA TESTING: yes, please test this HTML refresh mode by uploading 
+some pictures and seeing if they refresh instantly as they should.
+using for the moment the following directories:
+http://artslashmedia.net/~aether/z/0z.jpg  (select:Sydney)
+http://artslashmedia.net/~aether/g/1g.jpg  (select:Brussels)
+http://artslashmedia.net/~aether/e/2e.jpg  (select:Geneva)
+
+Also, we should test the different existing webcam-2-ftp softwares. 
+Window users should give a try to these open-source softs:
+http://lundie.ca/fwink/
+http://www.webcam2000.info/
+
+tell us if they work, and how the .pngs or .jpgs are going the be 
+named - this will allow me the include the good filepath into the 
+HTML page.
+
+- CALLS/SUBMISSIONS
+yes, you are all very welcome to look for opportunities to present 
+this project elsewhere, write submissions, fill out forms etc. if 
+someone of you is volunteering for this job, i will be glad to 
+transmit all the text material we have.
+The Virginia Beach proposal looks very interesting, the detailed 
+specifications are here:
+http://www.vbgov.com/file_source/dept/cvd/Documents/OFCA-7-0002%20Complete%20RFP%20Package.pdf
+Deadline for application is: May 18.
+
+looking forward,
+manuel
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: aether_html_code.zip
+Type: application/octet-stream
+Size: 119204 bytes
+Desc: not available
+Url : http://lists.1904.cc/pipermail/aether/attachments/20070507/f01081c5/attachment.obj 
+
+[aether] control interface update
+1.1 [*] 1904.cc 1.1 [*] 1904.cc 
+Tue May 8 16:20:50 CEST 2007 
+Previous message: [aether] [Ascii-announce] webcam (fwd) 
+Next message: [aether] Re : [Ascii-announce] webcam (fwd) 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hi all,
+
+a new sexy html controller is online.
+check it out here:
+http://www.1904.cc/~aether/control_panel2.html
+
+it should be quite intuitive, the numbered arrows will make the images  
+refresh at different speed (1=slow, 3=fast).
+most of the frames are still void, waiting for your images to be uploaded.
+
+to test realtime upload you can use the lastest version of the max  
+patch (v.101), which you can find here:  
+http://1904.cc/~aether/upload_101.pat.zip
+
+or you can use the webcam2ftp software of your choice pointing to the  
+following servers (from left to right and from top to bottom):
+
+http://1904.cc/~aether/k/ (images named 0k.jpg - 9k.jpg)
+http://1904.cc/~aether/l/ (images named 0l.jpg - 9l.jpg)
+http://1904.cc/~aether/m/ (images named 0m.jpg - 9m.jpg)
+
+http://10111.org/~aether/0/ (images named 0x.jpg - 9x.jpg)
+http://10111.org/~aether/1/ (images named 0x.jpg - 9x.jpg)
+http://10111.org/~aether/x/ (images named 0x.jpg - 9x.jpg)
+
+if you use a webcam software that has a non-customisable naming  
+scheme, tell me how the images are named and we will make a specific  
+frame for this. btw we are still awaiting user reports about this two  
+windows webcam softs:
+http://lundie.ca/fwink/
+http://www.webcam2000.info/
+
+we could fix an appointment for this evening or some other day to do a  
+sort of jam session...
+
+ps: for all those who subscribed during the last 24 hours, check the  
+list archives for the posts you missed :  
+http://lists.1904.cc/pipermail/aether/
+
+best,
+manuel
+
+
+
+
+
+[aether] Re : sending testing
+::audrey:: ideacritik at [nospam] yahoo.ca 
+Wed May 9 20:49:31 CEST 2007 
+Previous message: [aether] sending testing 
+Next message: [aether] good test so 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+i am receiving. images from the ocean(?) the refresh every 3seconds or so, around 4-5 different images i think.
+
+
+
+[aether] good test so
+Paula Vélez Bravo ciruela at [nospam] une.net.co 
+Wed May 9 21:11:53 CEST 2007 
+Previous message: [aether] Re : sending testing 
+Next message: [aether] génial qui l'aurais cru 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+audrey:
+cool.
+alors, la question est ... je suis en train d'envoyer normalement  
+autour de 33 images differents.
+fluides d'une femme avec un bonnet blanc sur la figure dans la mer...
+
+il faut encore ameliorer le systeme. l'ideal est d'avoir des images  
+fluides dejà.
+mais c'est très interesant quand même.
+
+salut.
+
+PAula
+
+
+
+[aether] fluxus
+Paula Vélez Bravo ciruela at [nospam] une.net.co 
+Thu May 10 01:43:25 CEST 2007 
+Previous message: [aether] testing 
+Next message: [aether] fluxus / live session proposal 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+it works beter at speed 2.
+anyway there are only, maybe, 5 frames... i don't know, maybe 9...  
+and i was trying to send 33 frames. to put it more fluide. not so  
+interrupted. because we can not talk about movement or video. it is  
+diaphorama. then we have to concive something to play the material  
+this way.
+unfortunaly we can not play with the "persistence retinnienne" in any  
+way if things work like this.
+
+paula
+
+
+[aether] fluxus / live session proposal
+1.1 [*] 1904.cc 1.1 [*] 1904.cc 
+Thu May 10 11:17:46 CEST 2007 
+Previous message: [aether] fluxus 
+Next message: [aether] fluxus / live session proposal 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hi, thanks for the comments,
+
+indeed we could implement a version with a longer loop, like 33 frames.
+the reason of having only 9 images is that there 
+will be a quicker "live" refresh. with 33 images, 
+you will cycle a lot through the same images 
+before you see anything new.
+but we have to test it.
+also, for the persistance retinienne, i will try 
+to build this hi-speed htmlpage.
+but it seems also clear that at higher speeds, 
+even the javascript-code isn't able to refresh 
+the images correctly... still a trick has to be 
+found
+
+proposal for a jam session:
+date: this friday, title: "electronic cafe international"
+concept: broadcast from a café/ public location 
+with internet access, using possibly a mobile 
+computing device (of course exceptions are 
+possible for locations where showing up publicly 
+with a laptop would endanger your security..)
+please send a mail to tell if you will 
+participate, then i'll attribute the frames.
+
+what's the best global performance time?
+i propose this: 10 PM in europe = 1 PM in 
+california = 3 PM in colombia = 6 AM in australia
+(poor australia.. one hour later would be possible too..)
+
+and btw a new patch is here: http://1904.cc/kode/upload_103.pat.zip
+it works at a smaller size (the actual size at 
+which the images are displayed on the web 
+interface)
+and there is a control of the speed of the video 
+(can be useful to slow it down, to match the 
+upload speed...)
+
+
+best,
+manuel
+
+
+
+[aether] Re : fluxus / live session proposal
+::audrey:: ideacritik at [nospam] yahoo.ca 
+Thu May 10 14:12:15 CEST 2007 
+Previous message: [aether] photos STREEMING colombie 
+Next message: [aether] code investigation 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+
+ok. bypass the refresh and the re-direct.
+attached code to tell browser to get image every x mmseconds.
+in the code here:
+/* the magic call that tells the browser (window)
+   to call the changeimage function every 1000ms (1 sec) */
+    window.setInterval(changeimage, 1000);
+the url of the photos on the server change for each square, these have to be changed in the code also. for now i have: "http://www.1904.cc/~aether/frame_k/0k.jpg" (0-9)
+
+it has to be tested to see how many images the array can take, the buffer size, etc. if you give me the correct url for the photos i can do this... in any case, for now attached code (html + javascript only), comments are very explicative, curtosy of a mate...
+
+audrey
+
+
+[aether] question for preperation for... tomorrow 11/05/2007 GMT/UTC+2 o'clock
+oheun lee mementoelee at [nospam] gmail.com 
+Thu May 10 23:49:58 CEST 2007 
+Previous message: [aether] Re : fluxus / live session proposal 
+Next message: [aether] IRC #aether9 (6cell) chat history cafe jam session 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+Hi, this is ion - oheun lee - around geneva.
+
+Thx a lot for all the hard work of aether group. I've been withdrawn for
+some time but I'd love to participate.
+
+Would you kindly explain/suggest what sort of images / objects / etc to
+prepare in advance, beside "firm" internet connection & laptop with webcam?
+
+Best regard,
+
+oh eun
+
+
+[aether] aether news
+1.1 [*] 1904.cc 1.1 [*] 1904.cc 
+Wed May 16 01:50:24 CEST 2007 
+Previous message: [aether] IRC #aether9 (6cell) chat history cafe jam session 
+Next message: [aether] Submitted Aether to 07/07/07 conference RE: aether news 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hi all,
+
+busy week, in belgrade for a few days. but here 
+are some thoughts, + some extracts of our recent 
+chat chatter.
+
+
+a) technical considerations
+
+some explanations about the HTML interface:
+open http://www.1904.cc/~aether/control_panel.html
+click on "open mainframe"
+try the different buttons:
+
+mode 1,2,3 are cycling 10 images
+(1: refresh every 4 seconds, 2: every second, 3: 5 frames per second)
+
+in mode "33", 33 images are loaded and cycled at 
+high speed (actually 8 images per second).
+this speed couldn't be obtained if the page was 
+refreshing each image everytime it's read. 
+therefore, the images are refreshed at a much 
+slower speed, 1 img per second.
+so if the performer is transmitting, the loop 
+will be changing very slowly over time.
+
+[23:52] ideacritik: 33 is wild... but i get all the same images after a while.
+[23:52] fe2cruz: it just takes a few seconds for the browser to catch up
+
+in mode 1,2,3, each image is refreshed at the 
+moment it is played. so this is closer to 
+"realtime", but it also limits the speed at which 
+the images can cycle.
+
+
+
+b) general speed considerations:
+
+[23:54] ideacritik: i think the speed change is a 
+bit 'gadjetty' myself (though the 33 is certainly 
+hilarious!)
+[23:54] dspstv: 33 is far to much for what is 
+being uploaded.. not enuf images to make a 
+sentence
+[23:54] dspstv: it loops to fast
+[23:54] dspstv: imo
+[23:55] ideacritik: 2 is ok.
+[0:25] cym: the problem with speed 33 is that you must first have 33 images :-)
+[0:25] cym: 33 images that sort of go together
+
+
+
+c) GRID FORMAT: 6 or 9 frames
+
+[0:27] fe2cruz: are we stuck with 6 for now? or 
+can we jump back to 9 on the next jam test?
+[0:28] ideacritik: it's just a question of adjusting the html page.
+[0:28] ideacritik: not a big deal.
+[0:28] cym: if there are 9 people that take part it should work?
+[0:28] ideacritik: the 9 square grid was aesthetically pleasing.
+[0:29] cym: i liked the 9 grid very much
+
+Comment: 6 frames was really for testing only, 
+with a one-screen computer it's much easier like 
+that, when you need to share the screen between, 
+the HTML frames, the chat, the upload software... 
+9-frame setting should stay imo the standard for 
+the actual performance.
+
+
+d) the noble art of patching:
+
+[0:17] fe2cruz: does anyone know how to write this patch for PD?
+[0:18] boris_: not me.
+[0:18] cym: i would like to have a look at it
+[0:19] fe2cruz: can someone on MAX post screen 
+captures of the patch? would that help at all?
+
+no time for that this week, but more explanations 
+about the inner workings of the patch will 
+follow. also, i just discovered through the max 
+list (thanks to a guy called vade who did an 
+interesting webcam project: 
+http://abstrakt.vade.info/?p=80 ) some techniques 
+that could improve the receiving part of the 
+patch significantly and eventually allow it to 
+download the images fast and without crashing...
+
+
+e) concept + content
+
+[0:23] cym: i would be very interested to try to 
+create a play, a story for those slow refreshing 
+cameras
+[0:23] dspstv: exactly
+[0:23] cym: i actually like the idea that there 
+is a new image only every second or even slower
+[0:23] dspstv: agree
+[0:23] fe2cruz: so is 33 just too much? too 
+gittery should we keep it simple and stick with 1 
+& 2 speeds?
+[0:24] cym: with 9 cams in a grid it should be 
+possible to create a nice effect, even when the 
+changes are slow
+[0:24] paulav: maybe
+[0:25] paulav: il like the possibility of speeds, 
+but if it doesnt work very good?
+
+[0:51] boris_: yes, images are important and as 
+cym was saying it would be good to work on some 
+good script that would be playable by 6 (or 
+better: 9) remoters and image per image... maybe 
+packets of images , not necessarly in oreder 1 to 
+33 but also a reset all function would be very 
+usefull
+
+Comment: yes, we need to develop some narrative 
+outline. Concept proposal: GHOST STORY (Ghost 
+Stories from Medellin, from the Californian 
+desert, from the Austrian woods, from the Swiss 
+heights..... we would also really need some 
+Japanese or Korean ghost involved .. think Kairo).
+Also with our 9-frame split-screen setup, maybe 
+some inpiration could come from such 
+split-narration epics as the Canterbury Tales, 
+the Manuscript of Saragossa....
+
+
+f) some more possible applications:
+again very short term, if someone of you would 
+have time and motivation to put together material 
+for an application, would be great.
+
+best,
+manuel
+
+
+
+[aether] pd patch
+cym net cymnet at [nospam] gmail.com 
+Tue Jun 12 16:01:45 CEST 2007 
+Previous message: [aether] performance script! 
+Next message: [aether] Re : last news and performance preparation 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hello all,
+
+a friend of mine wrote a patch for pd last night that should do the
+same thing as the max/jitter patch (upload images from the live webcam
+stream to the server via ftp, naming them img1 to img33 and when they
+reach 33 start again with img1).
+
+if anyone of you is working with debian linux pd i can send the patch.
+in general he would be interested to share and test the patch with
+anyone.
+
+also, he would be interested to join the jam session tomorrow.
+his name is Nova Viator (or Luka Princic) and you can find more
+information about him at
+http://bin.viator.si/?page=biography
++ http://viator.si/
+
+attached is a png of the pd patch he sent me
+
+greetings,
+
+cym
+
+
+
+
+[aether] AetherOne 02 - pd patch update
+Luka Prinčič / Nova Viator nova at viator.si 
+Sat Jul 7 20:29:00 CEST 2007 
+Previous message: [aether] AetherOne 02 - pd patch update 
+Next message: [aether] new version of pd patch - AetherOne - 03 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+On Sat, 7 Jul 2007 19:21:56 +0200
+1.1 [*] 1904.cc wrote:
+
+> thanks luka,
+> 
+> btw, i tested the patch on osx, substituting pdp_v4l with pdp_iee1394
+> it was exporting the pngs successfully, but i ran into a problem with shell - actually the object seems to be buggy on OSX (even the help-patch keeps crashing).
+> 
+> that problem was reported on the PD list back in 2005 - cf. http://lists.puredata.info/pipermail/pd-list/2005-11/032615.html
+> 
+> this seems to be  a kind of solution, however i dont really understand what it means:
+> 
+> "i had these kind of problem too with shell on macosx+linux. the issue was that whenever a process did exit whit a nonzero status a zombie pd process was left and shell claimed that the process was still running. the solution was to make sure that the return status of the executed script is zero and to [delay] the bang for a short while. as far as i remember i used a value below 100."
+> 
+> it's certainly not easy to troubleshoot another system than the one you use, but maybe you have an idea what i could try?
+
+
+
+
+there is a workaround.
+
+i'm attaching a modified patch. (02b)
+no different names, no shell object. just one png
+generated in /tmp/aether9.png
+
+but uploading is done in separate terminal window with a 
+long commandline like this:
+
+ID=0; while (true); do if ((`expr $ID '>' 8`)); then ID=0; else ID=`expr $ID '+' 1`; fi; cat /tmp/aether9.png | ncftpput -u aether -p PASSWORD -c HOSTNAME $ID\x.png;  sleep 1; done
+
+it's also in the patch, but you have to type it, so rather copypaste from here.
+
+also change PASSWORD and HOSTNAME.
+
+in the patch change [pdp_noise] to whatever else you want.
+there is also a [receive] object - [r aetherone] so you can send video signals from some other opened patch with a send object like this: [s aetherone]
+
+sleep 1 means wait one second (+ time it needs to upload). you can adjust this.
+
+
+
+hope it helps
+
+
+[aether] new max/msp patch
+1.1.1904 1.1 [*] 1904.cc 
+Fri Mar 7 16:04:16 CET 2008 
+Previous message: [aether] MY BIKE! 
+Next message: [aether] another festival? (unusual story) 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hi group,
+
+a short message to inform you that a new performance patch is available:
+http://www.1904.cc/~aether/kode/max_image_upload/
+
+i finally added some functions i was planning since a long time, most 
+importantly an "archiving" function:
+
+as soon as you start uploading images, the patch will automatically 
+store an image, ca. once per minute, on a specific server location
+(for now it's http://www.cave12.org/~aether/archive/ )
+
+this will allow us to have an image data-bank of our performances, 
+which will be ready for many interesting uses.
+
+
+[aether] about aether pad
+Cym Net cymnet at gmail.com 
+Tue Apr 13 09:52:02 CEST 2010 
+Previous message: [aether] about aether pad 
+Next message: [aether] about aether pad 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+do we have a copy of the material on etherpad? if someone has the link to
+the material, I can try to save or export the aether material that's still
+on etherpad.
+
+best, Cym
+--
+
+[aether] berlin PREPARATION
+ideacritik idea at 1904.cc 
+Sat Sep 12 16:56:44 CEST 2009 
+Previous message: [aether] berlin PREPARATION 
+Next message: [aether] berlin PREPARATION 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+
+On Sat, September 12, 2009 3:36 pm, 1.1 wrote:
+> i agree with audrey, thinking that it will be very important to focus on
+> global priorities of the aether project, not only working for the one
+> performance .... it seemed to me recently that jam-like performances
+> worked quite well, when enough people are involved.
+>
+> talking about phone apps, do any of you people have any experience with
+> mobile phone platforms, i.e. are you using iphones? nokia linux phones?
+> google android phones?
+>
+
+i have a dinosaur phone (not even color display! :)
+however i could borrow some smart phones from this friend that does the
+treasuremapper. also if we are serious about the phone idea i could meet
+him (here in NL) and see if he thinks his thing can merge with ours and
+how complicated it is technically (i.e. is it feasible to
+achieve/implement in the berlin week).
+
+otherwise i have no experience with such things... but always willing to
+learn of course!! so let me know if i should suss out the situation.
+
+> wondering if any "webcam2ftp" application exists for the iphone already?
+
+no clue. does anyone have an iphone? ... (last year all my students did...
+how depressing).
+
+>
+> looking fwd,
+> manuel
+---
+
+[aether] website details
+1.1 1.1 at 1904.cc 
+Sun Oct 25 00:58:51 CEST 2009 
+Previous message: [aether] website details 
+Next message: [aether] coming to berlin 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+so, i think the new website, even under construction, looks better than
+the old one ....
+
+therefore i activated it, the new wordpress site is now at:
+http://1904.cc/aether
+
+to log into the admin area, you need to go to this adress:
+http://1904.cc/aether/wp-admin
+
+
+the old one, for reference, is at http://1904.cc/aether-v2
+
+the live interface is still at the same place.
+
+open the champaign!
+
+
+best,
+manuel
+---
+
+[aether] mid-way almost the end report
+alejo alejoduque at gmail.com 
+Fri Oct 30 11:40:14 CET 2009 
+Previous message: [aether] mid-way almost the end report 
+Next message: [aether] virtual wall berlin tonight 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+eia,
+
+will try to follow the taxi stream!
+
+On Oct 30, 2009, at 11:26 AM, ideacritik wrote:
+
+> workshops: [2 people minimum]
+> [*move to PD necessary + formal language and notation should be  
+> formulated]
+
+really good news
+
+:)
+
+>
+> ->PD patch:
+> working with dynabolic boot CD as way around 'shell' object problem.  
+> one
+> still uploaded to server! (micro success)
+>
+
+[shell] is buggy, i can tell from personal experience but just read  
+the ml to confirm if in doubt.. i have replaced it in the locus sonus  
+stream patched by [popen] that is part of the moonlib libraries.
+
+other suggestions could use pdlua or pyext. it all depends how simple  
+or complex is what you need to achieve.
+
+> from the madly working aether9 team in berlin... also we are on  
+> IRC : )
+
+will try to jump in to catch up the action, but weather is nice here  
+and this means last bike rides of the year for me.
+
+saludos a los lovely anfitriones
+/a
+---
+
+[aether] flat joke and other thoughts from c3cil
+christiaan cruz fe2cruz at hotmail.com 
+Wed Nov 4 00:55:41 CET 2009 
+Previous message: [aether] txt-material aether 
+Next message: [aether] flat joke and other thoughts from c3cil 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+yes it was nice
+even remote i felt really close to you all
+especially at the rehearsal
+
+but on to the issues to be resolved.
+
+something has to be done about the uploading problems
+it plagued us in lebanon and really killed the final minutes of berlin.
+
+did we just have too many people viewing the website for Berlin?
+I'm assuming this is the root of the problem.
+
+i was able to stream only after restarting max and then deleting the
+dummy (0kb) images that were writing incorrectly on our servers.
+but this would only fix it for a minute. There would be write
+errors immediately after. This was happening to those trying to
+fix the locked hand and credits frames at the end of our performance.
+There must be some way to verify the capacity of our servers and
+anticipate the number of viewers we have for each performance.
+
+the patch does give a red light and an 'error writing image" message.
+however, there must be a way to prevent this from happening.
+
+streaming for me worked fine during rehearsals when no one was viewing
+the webpage. But it seems like now that we have a good audience
+its impossible to perform because you can't stream when too many
+people are viewing the interface website. It seems all of our
+servers chrash during the performance from too much traffic.
+Is my assumption correct? If not there must be some other way
+to correct these upload issues during our performances. It can't
+be on my end as my isp was not having any problems.
+
+we have some time before manuel's & vinny's shows. We should really
+try to correct this issue before then.
+
+-christiaan
+---
+
+[aether] link PD section code + IRC in contact
+ideacritik idea at 1904.cc 
+Fri Dec 11 09:34:35 CET 2009 
+Previous message: [aether] storyteller looking for collaboration 
+Next message: [aether] media lab prado proposal 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+PD link??
+je cherchais a ajouter PD code dans la section CODE
+(http://bin.viator.si/?page=AetherOne - c'est pas ca - une idee ou il a
+transpose ca? je ne trouve pas)
+
+i added IRC channel in contact:
+http://1904.cc/aether/contact/
+(even though its not really 'our' channel)
+
+idea
+
+---
+
+
+

@@ -1,0 +1,647 @@
+[aether] reminder: finances
+1.1 [*] 1904.cc 1.1 [*] 1904.cc 
+Thu Sep 27 01:38:18 CEST 2007
+
+Previous message: [aether] row my bot//Money//Marko Stamenkovic//Oct in CA//niche venue or public facing
+Next message: [aether] reminder: finances
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+>For the record, at this point while there is so little money....I'm 
+>with Manu...just divide it up and give it out.
+
+right, actually we still didnt' do that, so let's finish with it.
+
+as said, i'm for applying democratically the distribution scheme 
+suggested by boris:
+
+>1 x 40 credits (to Manu)
+>4 x 30 credits (to Audrey, Laure, Chris & Boris)
+>7 x 20 credits (to Lucy, Nathalie, Cym, Judy, Paula, Luka & Alejo)
+
+so, Audrey, Laure, Chris, Boris,  Lucy, Nathalie, Cym, Judy, Paula, Luka, Alejo
+
+tell me:
+- your preference between Paypal or Moneybookers.com
+- the email adress to which i should send the payment.
+
+if you didn't use yet one of those systems, this will be the occasion 
+to check how it really works.
+for the record, for transfers of less than 50 EUR, paypal is more 
+economic than moneybookers. above, moneybookers is cheaper (the 
+highest transfer fee is 2,30 EUR).
+
+best,
+m.
+
+
+[aether] Re : oct. 26th & Judy update thru mid Nov
+Judy Nylon knickerbockerjuju at [nospam] yahoo.com 
+Sun Oct 7 17:01:06 CEST 2007
+
+Previous message: [aether] Re : oct. 26th
+Next message: [aether] RE : Re : oct. 26th
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+Update as related to Aether: Because of the possibility of live streaming multisource audio now, I have lined up a gift of Abelton and a huge database of MP3s (I have been sloppy about my own iTunes imports & it is easier to get an external data base than sort through millions of badly titled work fragments). This shortly faces the test, as I am DJing a night in the East End of London in Early Nov. This party/evening is for me, assisted by a music biz production team, a band called The Horror, and is intended to set the stage for a relaunch of recordings I own as well as the (for lack of a better descriptor) ‘punk tulpa’ I left in London circa 1984 with some new interviews and a photo session.
+
+If I can DJ with Abelton on the fly, I will do so for Aether  anytime, as required, from now on. Otherwise, if the soft is too clumsy, I am quite certain that the new NewmarkiDJ2 will facilitate this in a very flexi situ. All of this gear is half the price in NYC. Manu, if you get the residency, leave room in your suitcase! I have 20 (minus 3 during which I am at a writers’ retreat in the Adirondack Mountains) days to get it and learn it so the Tesla performance on the 26th is again not possible for me. I will be in London (through mid-Nov) as a guest for the Sex Pistols and am considering a commission to write about it as long as I can write about the phenomenon of this reunion and not be expected to give a “music review”. 
+
+However with regard to stills or camera footage
+.I am right now only a few blocks from Tesla’s studio on Bleeker Street NYC. Some of the architectural detail photographed here might be useful. I am also not short of either Pigeons or Pearls
+..if there is any script directive, I can snap and send.
+
+The last Aether note is: we have had issues with scripts. I applied and am still in the running for a year of mentoring at the  Public Theater (Joseph Papp’s). They are only choosing 10 of  650 applications so I am not holding my breath, but I am in a smaller group of those seeking to develop theater for new applications.
+
+I am still uncomfortable with the tech I have and a public facing arts practice is hard to turn around quickly, but I am inspired with the possibilities we have and just wanted to give you some glimpse of the scheduling and the insane juggling involved to run it on a dollar and a dream.     JUDY    
+
+
+[aether] Tr. : aether
+1.1 [*] 1904.cc 1.1 [*] 1904.cc 
+Thu Oct 11 00:46:38 CEST 2007
+
+Previous message: [aether] Tr. : aether
+Next message: [aether] about self-publishing website lulu.com Re: Tr. : aether
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+another topic: i was recently studying the possibilities of the 
+self-publishing website lulu.com
+
+( in a few words, it's a "print-on-demand" service with no minimum 
+investment, you can really print/order just one paperpack book for ca 
+10$ )
+
+and i'm thinking about publishing a series of ultra-serious readers 
+about the aether project, containing more or less everything that has 
+been written until now - mailing list archives, endless 
+skype-chat-logs...
+
+i imagine a very sober cover design, little graphics, lots of text 
+and a title such as:
+
+Aether9 Communication Systems
+Research & Development Group
+Proceedings Volume 1, Issue 1
+
+please all english-native-speaking: does this sound correct? or would 
+you have other proposals (for the title)?
+
+best,
+manu
+
+
+[aether] Re : aether Digest, Vol 6, Issue 4
+::audrey:: ideacritik at [nospam] yahoo.ca 
+Mon Oct 8 16:00:04 CEST 2007
+
+Previous message: [aether] about self-publishing website lulu.com Re: Tr. : aether
+Next message: [aether] ISEA deadline extended
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+christiaan,
+we thought of streaming audio from space, but htat is not confirmed and maybe it could be modified by you, or just straight from you. more after tuesday...
+cool - 
+a
+
+----- Message initial ----
+De : christiaan cruz <fe2cruz at [nospam] hotmail.com>
+À : aether at [nospam] 1904.cc
+Envoyé le : dimanche 7 octobre 2007, 15 h 24 min 40 s
+Objet : Re: [aether] aether Digest, Vol 6, Issue 4
+
+
+I'm in audio, box, whatever you need 
+streaming remotely that is
+just let me know
+
+-christiaan
+
+
+[aether] aether9 level2
+1.1 [*] 1904.cc 1.1 [*] 1904.cc 
+Sat Oct 27 00:00:57 CEST 2007
+
+Previous message: [aether] aether9 level2
+Next message: [aether] aether Digest, Vol 6, Issue 18
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+>but in explorer all the frames have a border! and because of the
+>border each cell has a scrollbar! and this doesn't look very nice. I
+
+oops, indeed this looks not as intended.. and it has been so since 
+the first aether performance!
+can it be that i never opened it in explorer since 6 months ? or is 
+this dependent on the version of explorer? anyway, we'll add this 
+little missing tag...
+
+
+
+[aether] tremor participation form
+Paula Vélez Bravo ciruela at [nospam] une.net.co 
+Tue Oct 30 23:18:31 CET 2007
+
+Previous message: [aether] tremor participation form
+Next message: [aether] tremor participation form
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+paula says...like in a simon says play:
+The other day...april. after the mapping festival performance i was  
+thinking about an idea to do with aether dispositif. The funny thing  
+was that it had a common thing about the first part of this  
+brainstorming. Public Baths.
+So i was thinking about it because of the public bathrooms and the  
+graffiti, scratch, notes, explicit drawings that some times i found  
+in some obscure nigth places. In latin américa particulary there is  
+an interesting photographic study that could be made about graphisme  
+and things i think. Anyway i'm always interested in graphism and  
+graffity...so do i in live performance... doing things graphicaly  
+manually to put it live in video performance. So i thought about this  
+idea.
+Basic: a public bathroom somewhere in each frame. an actor painting  
+the bathroom, drawing the walls, and communication with others, with  
+the others frames who are doing the same. It could be the public  
+showers but it is easyer to do it in a bar somewhere.
+Actually i'm trying to adaptate the idea to this... because it was  
+more complicated... it was related to pornographic chats and messages  
+in public bathrooms.
+i will try to draw a map of the first idea transformed maybe somebody  
+will give someothers.
+------------------------------------------------------------------------ 
+----
+\    only Audio Bath Cabin         ---      Only video  
+cabin               \
+\             |                                     
+|                       \
+\------------ | ---------------------------------- |  
+----------------------\
+\             V                                     
+V                       \
+\      words, phrases,                     live writings,  
+drawings         \
+\       dirth talk                          like in public  
+baths           \
+\    like in gainsbourg song                 telephone  
+numbers             \
+\        "hello, hello"                  then other things and photos  
+too  \
+\                                                                        
+    \
+\----------------------------------------------------------------------- 
+---\
+\                                                                        
+    \
+\                        T R A N S M I S S I O  
+N                           \
+\                                   
+|                                       \
+\----------------------------------|------------------------------------ 
+---\
+\                                   
+V                                       \
+\                          R E C E P T I O  
+N                               \
+\----------------------------------|------------------------------------ 
+---\
+|                      |                |          
+|                       |
+|     video frame      |                V         |      video  
+frame      |
+|     in place 1       |                          |      in place  
+3       |
+|                      |       video frame         
+|                       |
+|                      |     public bathroom in    
+|                       |
+|                      |     someother country     
+|                       |
+|                      |         place 2           
+|                       |
+|______________________|__________________________| 
+_______________________|
+|                      |                           
+|                       |
+|                      |    video body and         
+|                       |
+|    video frame       |  faces fragments from    |     video  
+frame       |
+|    in place 4        |  pornochat images live   |      in place  
+5       |
+|                      |                           
+|                       |
+|                      |                           
+|                       |
+|                      |                           
+|                       |
+|______________________|__________________________| 
+_______________________|
+|                      |                           
+|                       |
+|                      |                           
+|                       |
+|    video frame       |      video frame         |     video  
+frame       |
+|     in place 6       |      in place 7          |    in place  
+8         |
+|                      |                           
+|                       |
+|                      |                           
+|                       |
+|______________________|__________________________| 
+_______________________|
+
+I also thougth about sound and performance in place... and i thougt  
+that it could be interesting to put 9 or 8 channels in separate  
+speakers. to send sound from all aethernauts places picked from  
+people talking dirty in all languages.
+
+well... i will continue tomorrow... waiting for new ideas.
+
+
+[aether] novi sad 5pm and 23:15
+cym net cymnet at [nospam] gmail.com 
+Sat Dec 15 00:00:32 CET 2007
+
+Previous message: [aether] Re : novi sad
+Next message: [aether] novi sad 5pm and 23:15
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+hi all
+
+i made it to novi sad. i am writing you now from nenad's computer on
+the bar in the vojvodina museum.
+it was almost 9 hours drive to novi sad. don't know why, hungary is
+soooo big....
+
+anyway, i am here and we can do rehearsal tomorrow at 5pm
+projection room 2 in fact are 3 projection rooms, the project the same
+presentations, videos, on 3 screens simultaneously. the room is
+divided into 3 small rooms.
+so i think also aether 9 will be in the three rooms at the same time,
+but i will check everything tomorrow.
+
+there is wireless connection here everywhere in the museum. i will see
+tomorrow if it works on my computer.
+
+but probably in the daytime i will go around novi sad for a walk and
+collect some impressions of the town.
+so i will be online at 5pm for rehearsal.
+
+see you,
+
+cym
+
+
+[aether] Flip"book"
+1.1.1904 1.1 [*] 1904.cc 
+Sat Apr 12 08:02:05 CEST 2008
+
+Previous message: [aether] Flip"book"
+Next message: [aether] Flip"book"
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+hi all,
+one question, has the idea of showing the performers' locations, with 
+printed-out location names in the background of the image, been 
+abandoned?
+i think this is totally necessary in order to make sure the audience 
+understands the basic principle of our work.
+
+to repeat it for those who didn't participate in that particular chat 
+session, the idea is that at some moment (beginning/end) a shot shows 
+the location / set-up of each performer, with the location name in 
+big letters written/taped on some wall in the background (all 
+locations should use the same font for this - we could agree on 
+arial, or on Deja-Vu Sans, which is a major open-source font)
+
+best,
+manuel
+
+
+[aether] feedback from mapping
+bk bk at n3krozoft.com 
+Fri Apr 25 17:59:55 CEST 2008
+
+Previous message: [aether] list archives
+Next message: [aether] feedback from mapping
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+Hello,
+thank you Audrey for your warm mail of last saturday!
+
+here a couple comments on the performance at mapping in geneva:
+firstly the actual performance in mapping was the most enjoyable aether9 
+event i took part to. their was a sense of comfort and confidence for me.
+except at the beggining when we lost all internet connexion... this 
+generated  a good deal of tension and nervousness. the remote team was 
+without news from us, manu had to restart his computer, he did it hastly 
+and mistakenly restarted in linux, so he had to restart again... it was 
+hectic... then it was a pleasure to see that the remote team had carried 
+the performance and where at the 3rd act already... so of course it was 
+enjoyable that everything fell into place after a catastrophic start for 
+us at mapping! the audience was around 70-80 people, which impressed me as "a lot". 
+
+
+[aether] workshop upload
+chloé cramer chloecramer at gmail.com 
+Sat Apr 26 09:29:14 CEST 2008
+
+Previous message: [aether] workshop upload
+Next message: [aether] workshop upload
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+Regarding the whole (if the aim is to do something that is not only a great
+technical experience, but also a dramaturgic experience), it seems important
+to me to make participants conscious that they are actors/or musicians. As
+such, they have to listen to others. Sometimes, it is better to be silent,
+let somebody else do a solo. Sometimes, it is better to keep a simple image
+that will sustain others images.
+
+**
+Chloé
+
+
+[aether] workshops
+::audrey:: ideacritik at yahoo.ca 
+Thu Jun 19 12:34:36 CEST 2008
+
+Previous message: [aether] Re : Aether invited to Howl festivlal in NYC early Sept
+Next message: [aether] what is going on with ISEA???
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+about workshops:
+the workshop i proposed to the willem de kooning academie (that i forwarded to the list some time ago) was deamed "beyond the level" of students there. they study design and are not exposed to performance in any way during their studies. i was asked to think of a way to "bring it down to their level". i was thinking of ways in which the patch could be otherwise used. i haven't really come up with anything, if anyone has ideas...
+audrey
+PS i think i will send the proposal (as is) to KHM (academy of media arts in cologne) -- there students are 'of the level' for it.
+
+
+
+[aether] what is going on with ISEA???
+1.1.1904 1.1 at 1904.cc 
+Sat Jun 28 15:33:34 CEST 2008
+
+Previous message: [aether] what is going on with ISEA???
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+i have no idea what's going on in singapore... i wrote to the 
+organisers that i couldn't attend the festival in person but that one 
+of our agents, cym, could do the presentation of the project.
+since then, no answer or sign of life.
+
+regarding our global aetheric activities, i know some of us are very 
+busy right now completing project proposals, dossiers, dvd etc for 
+diverse big festivals and grants...
+
+so i guess there will be some more performances upcoming soon.
+
+best,
+manuel
+
+
+>have we desisted the idea?
+>has sleeping gas slipped into the aether?
+>:)
+>
+
+
+[aether] overview of next performance and aether9 chat brainstorming discussion
+::audrey:: ideacritik at yahoo.ca 
+Tue Aug 5 22:36:23 CEST 2008
+
+Previous message: [aether] reminder - at 20h CET - brainstorming on IRC for next aether performance
+Next message: [aether] news about LONDON
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+hi all,
+the following concerns those who will participate in teh next aehter9 performance on the 16th of august.
+the brainstorming session revealed the following:
+- a simplified version of LRRH (due to few aethernauts participating)
+- a 'french' language component (for the french speaking audience)
+- IRC chat (conversation between girl and crowd) is up for discussion - not sure if this is appropriate in this context... (on top of proposed local performance read below)
+- this would be the last of our series of LRRH performances -- a culmination of experiments leading us to bring livejasmin to the audience.
+a local performance as follows:
+the 'girl' in is the space - (for all to see) and she is being directed by me with a microphone - 'turn to left, look scared, show your ears to the camera.
+this mimics what occurs on in livejasmin - and i mimic the chatters (giving the girl requests, orders, etc).
+
+
+roles/characters:
+-the wolf (? who could do this -- paula?)
+-the girl (local actor in montreal - maybe a guy)
+-jasmin girl + text in black frame uploader (boris?)
+-analogue set (replacing dollhouse) - (chloe?)
+-giving cues and direction (chloe?)
+-sound (manu?)
+-IRC chat (this role is not certain/undecided)
+
+[aether] ad lib
+laure deselys lauredinateur at yahoo.de 
+Tue Sep 16 18:50:45 CEST 2008
+
+Previous message: [aether] ad lib
+Next message: [aether] ad lib
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+by the way ether means in arabic radio waves.
+
+
+[aether] the invisible work-
+laure deselys lauredinateur at yahoo.de 
+Mon Sep 29 13:13:29 CEST 2008
+
+Previous message: [aether] fundations
+Next message: [aether] the invisible work-
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+Uff.... what a night,
+
+First sorry for not giving any feedback just after the performance. As u can imagine, i was in between the people i know and strangers, answering questions about everything, then the packing etc...
+I must say that the screening spot was ideal , about 50 people being there, some sitting on the ground some standing, inviting people passing by to stop.
+although they start leaving after 15 minutes...
+screening in the street is really something we should continue to do
+
+When it started and looked like everything was working well, I really had a nice feeling, like if i was in some new kind of open air cinema
+
+I dont know what was the issues for u guys,
+i think u also saw more then what i was able to show in madina
+here i never understood why my patch would merely work
+
+but yesterday evening the connection was totally unregular, as it was ok in the afternoon and the day before
+i had yet took some precaution using two different connections and computers for sound and image connection.
+the worse moment was i guess when, after listening for a full song of Leo Ferre and wandering what was actually joe and samir trip on this one, i realised
+that the sound streaming was off and that the owner of the computer playing list was tuning...
+
+it looks like the guy in charge of the internet connection in hamra area
+who was asked during the performance to allow a maximum of internet for us
+on the way deleted one of the connection the beirut team was working with
+Actually what i heard very often  yesterday evening was : " This is Lebanon..." u cannot be sure of anything anytime.
+
+If im certainly vaccinated for a while for these kind of last minute works
+i dont feel like i dont want to do it anymore
+it was really meaningfull for me to work for the last two weeks, on something specially for here, with people from here making them meet with us through the tool
+but what should surely be rethought is how we do it, definitely not a one new script shot , how to reduce  the energy and time engagement of participants, how to include the transmission problems (as they often happen) in the sentiment of the screening, etc... 
+
+Im looking forward for the satyricon script.
+
+
+[aether] upladed recording
+bk bk at n3krozoft.com 
+Fri Oct 3 11:41:54 CEST 2008
+
+Previous message: [aether] upladed recording
+Next message: [aether] upladed recording
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+It's strange, on the video recorded by Paula i'm pretty sure that some 
+stuff that appeard on my interface doesn't appear on hers, this 
+indicates that there's no "definitive" recording and that the recordings 
+are relative to the never similar upload conditions of the 
+computer/connexion where it's recorded.
+
+Have a good friday,
+Boris
+
+[aether] Re : upladed recording
+::audrey:: ideacritik at yahoo.ca 
+Fri Oct 3 12:03:15 CEST 2008
+
+Previous message: [aether] upladed recording
+Next message: [aether] Re : upladed recording
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+
+hum... interesting! the aether9 performance resists the notion of the possibility of a 'singular archive' capable of representing a past event - it acts more like our memory (im stretching it - but if one was to associate the computer/connection related causes of the differences to the ways in which memory is constructed/stored/accessed influenced by emotion ---- but yes emotion has nothing to do with our different connections speeds.... 
+
+audrey 
+PS --is this database art or what ;p
+
+
+
+[aether] aether proceedings volume 1 in print
+1.1 1.1 at 1904.cc 
+Sat May 30 13:39:07 CEST 2009 
+Previous message: [aether] gardening 
+Next message: [aether] Berlin news / Aether development 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hi list,
+
+so finally i created the first volume of the "aether9 proceedings" print 
+series, where the idea is to collect all the chat sessions occurring 
+before and during performances.
+
+the first issue contains the chat logs of May 2nd and 3rd 2007, during 
+our first performance at Mapping festival 2007.
+
+the PDF file is available here: 
+http://1904.cc/~aether/material/aether_proceedings/
+
+i'm still going to revise this edition and add an Editorial Foreword / 
+Introduction and Conclusion / performers list ... tell me if you have 
+suggestions of what else could/should be included there.
+
+more to follow!
+
+best,
+manuel
+
+
+
+
+[aether] impotent science
+christiaan cruz fe2cruz at hotmail.com 
+Sat Sep 19 20:06:13 CEST 2009 
+Previous message: [aether] deadline for xxxxx write-up + transport to berlin 
+Next message: [aether] exhibition in berlin - CAE 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+I woke up, made fresh coffee and had perky j-pop playing.
+Still don't think i'm scientific, romantic or caffinated
+enough to respond to you properly audrey.
+glad you liked the podcast sans the announcer
+
+the list feels warmer than others to me anyways
+because it feels like a theatre group. and you
+get a reward kinda feeling too since you actually
+participate and do things rather than just talk
+or obsess over them
+
+
+
+[aether] perfo - amsterdam - feedback an dso on
+1.1 1.1 at 1904.cc 
+Thu Apr 22 21:41:50 CEST 2010 
+Previous message: [aether] perfo - amsterdam - feedback an dso on 
+Next message: [aether] perfo - amsterdam - feedback an dso on 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+hi audrey,
+
+good to read this feedback, and thanks for adressing directly issues of 
+future development of the project.
+
+> i think we are at some sort of a x-road. there have been many tensions
+> mounting, namely: diverging ideas about the future of aether9, possible
+> directions, where to invest energy, time, etc.
+
+agreed. interestingly, the two latest performances we did, pixelache and 
+now amsterdam, went into two totally different directions:
+- using the interface as canvas, working without a storyline, rather 
+exploring rules of visual composition.
+- following a precise storyline, with caracters, precise timing, 
+narrative interrelation of frames.
+
+i notice that i find the first option is much closer to my own 
+interests. so for me, that's definitely the direction i would envision 
+to work with. i also wrote about this in the proposal that was sent 
+recently to the list:
+http://lists.1904.cc/mailman/private/aether/2010-April/001027.html
+
+
+> so suggestions?
+> saturday or sunday evening? (lets say 21:00CET?)
+
+possible for me on sunday, but rather at 22:00 CET.
+
+best,
+manuel
+
+--
+
+Nylon
+14:46
+OK in NYC for me 10 AM
+manu
+14:47
+that's 11 AM in NYC
+paula vélez
+14:47
+boris?
+manu
+14:47
+with daylight saving time
+fe2cruz
+14:47
+daylight savings gotta check worldtimeserver.com
+Nylon
+14:47
+oh....manu you know I never get this right....thanks
+paula vélez
+14:47
+for mari the same hour?
+Mari Keski-Korsu
+14:47
+that's ok for me. i'll see you if can climb the tree high enough  i  
+have to go now, it was very nice talking to you.
+Nylon
+14:48
+bye, mari
+(extrait http://cave12.org/~aether/archive/list_archive_2008/2009-April/000483.html)
+
+
+
+---
+
+
+
+
+
+
+
