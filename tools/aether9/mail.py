@@ -1,5 +1,6 @@
 """
 mail.Reader
+mail.Writer
 """
 
 import os.path as opath
@@ -64,4 +65,26 @@ class Reader:
 				
 		text = '\n'.join(lines)
 		self.data['thread'].append({'title':title, 'author':author, 'date': date, 'text':text})
+		
+		
+		
+		
+class Writer:
+	def __init__(self, mdict):
+		self.mail = mdict
+		
+	def as_string(self):
+		ret = []
+		ret.append('\\placeintermezzo[here][mail:%d]{}{'%(self.id,))
+		ret.append('\\bf{%s}'%(self.title,))
+		ret.append('\\it{%s}'%(self.author,))
+		ret.append(self.text)
+		ret.append('}')
+		return '\n'.join(ret)
+		
+	def __getattr__(self, name):
+		try:
+			return self.mail[name]
+		except Exception:
+			raise AttributeError(name)
 		
