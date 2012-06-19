@@ -5,6 +5,7 @@ mail.Writer
 
 import os.path as opath
 import re
+import time
 
 class FileDoesNotExist(Exception):
 	def __init__(self, fname):
@@ -15,6 +16,7 @@ class FileDoesNotExist(Exception):
 class Reader:
 	start_pattern = r'^\[aether\]'
 	end_header_pattern = r'^Messages sorted by'
+	address_sep_pattern = r' at '
 	
 	def __init__(self, filename):
 		if not opath.exists(filename):
@@ -52,9 +54,15 @@ class Reader:
 		# ... until "Message sorted by" pattern
 		# +1 the message!
 		
-		title = lines.pop(0)
-		author = lines.pop(0)
-		date = lines.pop(0)
+		title = lines.pop(0).strip()
+		author = lines.pop(0).split(self.address_sep_pattern)[0]
+		date_str = lines.pop(0).strip()
+		date = time.gmtime()
+		try:
+			date = time.strptime(date_str, '%a %b %d %H:%M:%S %Z %Y')
+		except Exception:
+			print('Failed to build date with "%s"'%(date_str,))
+			raise
 		for l in lines:
 			if re.match(self.end_header_pattern, l):
 				lines.pop(0)
@@ -64,7 +72,7 @@ class Reader:
 				lines.pop(0)
 				
 		text = '\n'.join(lines)
-		self.data['thread'].append({'title':title, 'author':author, 'date': date, 'text':text})
+		self.data['thread'].append({'type':'mail', 'title':title, 'author':author, 'date': date, 'text':text})
 		
 		
 		
@@ -77,10 +85,14 @@ class Writer:
 	def as_string(self):
 		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
 		esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.text)
+		aref = []
+		for r in self.ref['author']:
+			#aref.append('\\in{section}[%s](p.\\at{page}[%s])'%(r,r))
+			aref.append(r.split(':')[-1])
+		
 		ret = []
-		ret.append('\\placeintermezzo[here][mail:%d]{}{'%(self.id,))
-		ret.append('\\bf{%s}'%(self.title,))
-		ret.append('\\it{%s}'%(self.author,))
+		ret.append('\\subject[mail:%d]{%d - %s}{'%(self.id,self.id,self.title))
+		ret.append('\\it{%s\\high{%s} --- %s}\n'%(self.author, ', '.join(aref), time.strftime('%d.%m.%Y',self.date)))
 		ret.append('\\tf{%s}'%(esc_text,))
 		ret.append('}')
 		return '\n'.join(ret)
