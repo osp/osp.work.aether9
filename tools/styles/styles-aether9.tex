@@ -1,0 +1,97 @@
+\startenvironment env_aether9.tex
+
+% DEBUG {{{
+    % uncomment those 2 lines to show the layout and the grid
+    %\showframe 
+    %\showgrid
+% }}}}
+
+% UTF-8 {{{
+    \enableregime[utf-8]              % Enters unicode 
+    %\setupencoding[default=uc]       % Uses unicode fonts only
+% }}}
+
+% LANGUAGE {{{
+    \setuplanguage[en][
+        leftquote=\upperleftdoublesixquote,
+        rightquote=\upperrightdoublesixquote,
+    ]
+    \mainlanguage[en]
+    \setcharacterspacing [frenchpunctuation]
+% }}}
+
+% LAYOUT {{{
+    % General layout
+    \definepapersize[sheet][width=165mm,height=255mm]         
+    \setuplayout[
+        backspace=21mm,
+        topspace=12mm,
+        width=138mm,
+        height=225mm,
+        leftmargin=15mm,
+        rightmargin=12mm,
+        header=0mm, % removes header
+        footer=6mm, 
+        grid=yes, % activates baseline grid
+        ]
+    \definepagebreak[emptyodd][yes,header,footer, odd]
+    \definepagebreak[emptyeven][yes,header,footer, even]
+    \setuphead[chapter][page=emptyodd]
+    % Left margin
+    \setupinmargin[
+        %align={outer, nothyphenated, verytolerant, stretch},
+        location=left,
+        align=left,
+        stack=yes,
+        style={\setupbodyfont[crimsontext, 9pt] \setupalign[hyphenated]},
+        before={\blank\startalignment[inner]},
+        after={\stopalignment},
+        line=0.5,
+        ]
+    % Indented block
+    \setupnarrower[left=3mm, right=0mm, middle=8mm]
+    % Folio
+     \setuppagenumber[number=3]
+    \setuppagenumbering[location=footer, style={\setupbodyfont[karlaregular, 6pt]}] 
+% }}}
+
+% LOAD FONTS {{{
+    \starttypescript [serif] [crimsontext] 
+        \definefontsynonym [Sans]            [name:crimsontext] [handling=pure]
+    \stoptypescript
+    \starttypescript [sans] [karlaregular] 
+        \definefontsynonym [Sans]            [name:karlaregular] [handling=pure]
+    \stoptypescript
+    \starttypescript [sans] [consolamono] 
+        \definefontsynonym [Mono]            [name:consolamono]
+    \stoptypescript
+
+    \definetypeface [crimsontext] [ss] [serif] [crimsontext]
+    \definetypeface [karlaregular]  [ss] [sans]  [karlaregular]
+    \definetypeface [consolamono]  [ss] [mono]  [consolamono]
+% }}}
+
+% TYPOGRAPHY {{{
+    \setupbodyfont[crimsontext, ss, 9pt]
+    \definebodyfontenvironment[default][a=1.5, b=1.75, c=2,d=3.4] % defines higher sizes of fonts 
+    \setupinterlinespace[11pt] 
+    \setupinteraction[state=start, color=black] % activate links
+    \setupnote[footnote][location=text, way=bypage, numberconversion=set 2, align={hyphenated}]
+    \setupnotedefinition[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
+% }}}
+
+% COLORS {{{
+    \setupcolors[rgb=no,cmyk=yes,state=start,overprint=yes]
+    \definecolor[blackos][c=0,m=0,y=0,k=1] 
+% }}}
+
+
+% JUSTIFICATION {{{
+    \setuptolerance[verytolerant] % justification settings
+    \interlinepenalty=8000 % tries to avoid widows
+    \widowpenalty=8000 % tries to avoid widows
+    \clubpenalty=8000 % tries to avoid widows
+    \doublehyphendemerits=1000000 % tries to avoid consecutive hyphenations
+    %\setupfonthandling [hz] [min=50,max=50,step=10]
+    %\setupalign[hz, hanging]
+% }}}
