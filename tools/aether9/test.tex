@@ -1,7 +1,6 @@
 % \setupoutput[pdftex]
 
 
-
 % DEBUG {{{
     % uncomment those 2 lines to show the layout and the grid
     %\showframe 
@@ -98,9 +97,72 @@
     %\setupalign[hz, hanging]
 % }}}
 
+% GRAPHIC ELEMENTS {{{
+    % put a frame around a word
+    \definetextbackground[ref][
+            framecolor=black,
+            background=,
+        ]
+% }}}
+
+% TABLE OF CONTENTS {{{
+    \setupcombinedlist[content][interaction=all, color=black] % makes it clickable
+    \setuplist[section][width=0mm] % sets indentation for section level
+    \setuplist[subsection][width=1em] % sets indentation for subsection level
+% }}}
+
+% SECTIONS AND HEADINGS {{{
+
+    % NUMBERED SECTIONS // used for table of contents
+        \setuphead[section][
+            number=no,
+            align={nothyphenated, verytolerant, center},
+            page=yes,
+            after=\nowhitespace,
+            style={\tfd \cap \setupbodyfont[crimsontext]},
+            %distance=0pt, alternative=text, command=\InMargin, % calls function to put in margin
+            ]
+      
+       % PIECES NUM 
+        \definehead[piece][subject]
+        \setuphead[piece][
+            align={nothyphenated, verytolerant, center},
+            before=\nowhitespace,
+            after=\nowhitespace,
+            style={\tfd \setupbodyfont[karlaregular]},
+            ]
+
+        % INFOS (author, date, etc)
+        \definehead[infos][subject]
+        \setuphead[infos][
+            align={nothyphenated, verytolerant, center},
+            before=\nowhitespace,
+            after=\nowhitespace,
+            style={\tfd \setupbodyfont[karlaregular]},
+            ]
+
+        % MAILS
+        \definehead[mails][subject]
+        \setuphead[mails][
+            align={nothyphenated, verytolerant, center},
+            before=\nowhitespace,
+            after=\nowhitespace,
+            style={\tfa \setupbodyfont[crimsontext]},
+            ]
+
+        % CHAT
+        \definehead[chat][subject]
+        \setuphead[chat][
+            before=\blank\noindentation,
+            after=\blank,
+            style={\tf \setupbodyfont[karlaregular]},
+        ]
+% }}}
+
+
 
 \starttext
-\subject[mail:0]{\ss0 - remote fairytales - performance invitation}{
+\subject[mail:0]{0 - remote fairytales - performance invitation}{
 \it{bk bk\high{\ref[p][mail:1].1, \ref[p][mail:2].2, \ref[p][mail:3].3, \ref[p][mail:9].9, \ref[p][mail:10].10, \ref[p][mail:29].29, \ref[p][mail:34].34, \ref[p][mail:65].65} --- 06.06.2007}
 
 \tf{
