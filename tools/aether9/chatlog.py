@@ -5,10 +5,11 @@ chatlog.Writer
 
 from HTMLParser import HTMLParser
 import time
+import datetime
 import sys
 
 # create a subclass and override the handler methods
-class QuoteParser(HTMLParser):
+class SkypeParser(HTMLParser):
 	states = [ 'no_op' ,'created', 'new_message_local_user', 'new_message_remote', 'remote_user', 'user_end' , 'time', 'content' ]
 	
 	def start(self, filename):
@@ -28,7 +29,7 @@ class QuoteParser(HTMLParser):
 			
 		
 		
-		self.feed(data_str)
+		self.feed(data_str.replace(r'<BR>','\n'))
 		
 	def handle_starttag(self, tag, attrs):
 		da = {}
@@ -66,33 +67,44 @@ class QuoteParser(HTMLParser):
 		#pass
 		
 	def new_message_local_user(self,data):
-		sys.stderr.write('=> new_message_local_user\n')
+		#sys.stderr.write('=> new_message_local_user\n')
 		self.current['author'] = data
 		self.state = 'user_end'
 		
 	def remote_user(self,data):
-		sys.stderr.write('=> remote_user\n')
+		#sys.stderr.write('=> remote_user\n')
 		self.current['author'] = data
 		self.state = 'user_end'
 		
 	def time(self, data):
-		sys.stderr.write('=> time\n')
-		self.current['time'] = data
+		dt = data.split(':')
+		tmp_t = datetime.time(int(dt[0]),int(dt[1]),int(dt[2]))
+		#if tmp_t.hour < self.start_date.hour:
+			#raise
+		dc = datetime.datetime.combine(self.start_date, tmp_t)
+		self.current['date'] = dc
 		
 	def content(self, data):
-		sys.stderr.write('=> content\n')
+		#sys.stderr.write('=> content\n')
 		self.current['text'] = data
 		self.state = 'no_op'
 		self.chat.append(self.current)
-		sys.stderr.write('=> %s\n'%(self.current,))
+		#sys.stderr.write('=> %s\n'%(self.current,))
 		self.current = {}
 		
-	
-		
+	def created(self, data):
+		self.start_date = datetime.datetime.strptime(data, 'Created on %Y-%m-%d %H:%M:%S.')
+		self.state = 'no_op'
 		
 	def handle_data(self, data):
 		try:
 			getattr(self, self.state)(data)
 		except AttributeError:
 			pass
+		
+class Reader:
+	def __init__(self, filename):
+		sp = SkypeParser()
+		sp.start(filename)
+		self.chat = sp.chat
 		

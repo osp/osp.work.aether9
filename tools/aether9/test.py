@@ -6,6 +6,7 @@ import mail
 import reference
 import os
 import fnmatch
+import chatlog
 
 
 def main():
@@ -17,15 +18,27 @@ def main():
 	
 	messages = []
 	writers = []
+	clogs = []
 	for r,d,f in os.walk(args.rootdir):
 		for fn in fnmatch.filter(f,'list*.txt'):
-			sys.stderr.write('Processing %s , %s'%(r,fn))
+			sys.stderr.write('Processing %s , %s\n'%(r,fn))
 			fp = os.path.join(r,fn)
 			ml = mail.Reader(fp)
 			cm = 0
 			for m in ml.data['thread']:
 				cm +=1
 				messages.append(m)
+			sys.stderr.write(' => %d\n'%(cm,))
+		
+	for r,d,f in os.walk(args.rootdir):
+		for fn2 in fnmatch.filter(f,'*chat*.html'):
+			sys.stderr.write('Processing %s , %s\n'%(r,fn2))
+			fp = os.path.join(r,fn2)
+			cl = chatlog.Reader(fp)
+			cm = 0
+			for m in cl.chat:
+				cm +=1
+				clogs.append(m)
 			sys.stderr.write(' => %d\n'%(cm,))
 				
 	messages.sort(key=lambda x:x['date'])

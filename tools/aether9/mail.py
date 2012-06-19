@@ -6,6 +6,7 @@ mail.Writer
 import os.path as opath
 import re
 import time
+import datetime
 
 class FileDoesNotExist(Exception):
 	def __init__(self, fname):
@@ -59,7 +60,7 @@ class Reader:
 		date_str = lines.pop(0).strip()
 		date = time.gmtime()
 		try:
-			date = time.strptime(date_str, '%a %b %d %H:%M:%S %Z %Y')
+			date = datetime.datetime.strptime(date_str, '%a %b %d %H:%M:%S %Z %Y')
 		except Exception:
 			print('Failed to build date with "%s"'%(date_str,))
 			raise
@@ -92,7 +93,7 @@ class Writer:
 		
 		ret = []
 		ret.append('\\subject[mail:%d]{%d - %s}{'%(self.id,self.id,self.title))
-		ret.append('\\it{%s\\high{%s} --- %s}\n'%(self.author, ', '.join(aref), time.strftime('%d.%m.%Y',self.date)))
+		ret.append('\\it{%s\\high{%s} --- %s}\n'%(self.author, ', '.join(aref), self.date.strftime('%d.%m.%Y')))
 		ret.append('\\tf{%s}'%(esc_text,))
 		ret.append('}')
 		return '\n'.join(ret)
