@@ -1,6 +1,6 @@
 """
-quotes.Reader
-quotes.Writer
+chatlog.Reader
+chatlog.Writer
 """
 
 from HTMLParser import HTMLParser
