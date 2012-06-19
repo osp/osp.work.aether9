@@ -1,0 +1,294 @@
+**** BEGIN LOGGING AT Tue Apr 15 19:21:38 2008
+
+Apr 15 19:21:38 * Now talking on #aether9
+Apr 15 19:21:38 * Topic for #aether9 is: aether9 manizales rehearsal
+Apr 15 19:21:38 * Topic for #aether9 set by aether9 at Tue Apr 15 09:50:19 2008
+Apr 15 19:21:40 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:21:41 <paulavelezbravo> jit.uldl: ul_status 4 
+Apr 15 19:21:43 <paulavelezbravo> jit.uldl: ul_status 10 
+Apr 15 19:21:45 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:21:47 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:21:49 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:21:51 <paulavelezbravo> jit.uldl: ul_status 9 
+Apr 15 19:21:53 <paulavelezbravo> jit.uldl: upload 1 ftp://immediat.ch/web/4/5x.jpg 
+Apr 15 19:21:55 <paulavelezbravo> matrxx: exportimage 6x.jpg 1 
+Apr 15 19:21:57 <paulavelezbravo> jit.uldl: upload 6x.jpg 
+Apr 15 19:21:59 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:22:01 <paulavelezbravo> jit.uldl: ul_status 4 
+Apr 15 19:22:03 <paulavelezbravo> jit.uldl: ul_status 10 
+Apr 15 19:22:05 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:22:07 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:22:09 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:22:11 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:22:13 <paulavelezbravo> jit.uldl: ul_status 9 
+Apr 15 19:22:15 <paulavelezbravo> jit.uldl: upload 1 ftp://immediat.ch/web/4/6x.jpg 
+Apr 15 19:22:17 <paulavelezbravo> matrxx: exportimage 7x.jpg 1 
+Apr 15 19:22:19 <paulavelezbravo> jit.movie: read wolfDialogos1.mov 1 
+Apr 15 19:22:21 <paulavelezbravo>  error: jit.qt.grab: no grabber component is currently open
+Apr 15 19:22:23 <paulavelezbravo>  error: jit.qt.grab: no grabber component is currently open
+Apr 15 19:22:25 <paulavelezbravo> jit.uldl: upload 7x.jpg 
+Apr 15 19:22:27 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:22:29 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:22:31 <paulavelezbravo> jit.uldl: ul_status 4 
+Apr 15 19:22:33 <paulavelezbravo> jit.uldl: ul_status 10 
+Apr 15 19:22:35 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:22:37 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:22:39 <paulavelezbravo> jit.uldl: ul_status 9 
+Apr 15 19:22:41 <paulavelezbravo> jit.uldl: upload 1 ftp://immediat.ch/web/4/7x.jpg 
+Apr 15 19:22:43 <paulavelezbravo> matrxx: exportimage 8x.jpg 1 
+Apr 15 19:22:45 <paulavelezbravo> jit.uldl: upload 8x.jpg 
+Apr 15 19:22:47 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:22:49 <paulavelezbravo> jit.uldl: ul_status 4 
+Apr 15 19:22:51 <paulavelezbravo> jit.uldl: ul_status 10 
+Apr 15 19:22:53 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:22:55 <paulavelezbravo> matrxx: exportimage 2008.4.15.12h.13m.41s.jpg 1 
+Apr 15 19:22:57 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:22:59 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:23:01 <paulavelezbravo> jit.uldl: ul_status 9 
+Apr 15 19:23:03 <paulavelezbravo> jit.uldl: upload 1 ftp://immediat.ch/web/4/8x.jpg 
+Apr 15 19:23:05 <paulavelezbravo> matrxx: exportimage 9x.jpg 1 
+Apr 15 19:23:07 <paulavelezbravo> jit.uldl: upload 9x.jpg 
+Apr 15 19:23:09 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:23:11 <paulavelezbravo> jit.uldl: ul_status 4 
+Apr 15 19:23:13 <paulavelezbravo> jit.uldl: ul_status 10 
+Apr 15 19:23:15 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:23:17 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:23:19 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:23:21 <paulavelezbravo> jit.uldl: ul_status 9 
+Apr 15 19:23:23 <paulavelezbravo> jit.uldl: upload 1 ftp://immediat.ch/web/4/9x.jpg 
+Apr 15 19:23:25 <paulavelezbravo> matrxx: exportimage 0x.jpg 1 
+Apr 15 19:23:27 <paulavelezbravo> jit.uldl: upload 0x.jpg 
+Apr 15 19:23:29 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:23:31 <paulavelezbravo> jit.uldl: ul_status 4 
+Apr 15 19:23:35 <paulavelezbravo> jit.uldl: ul_status 10 
+Apr 15 19:23:37 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:23:39 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:23:41 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:23:43 <paulavelezbravo> jit.uldl: ul_status 9 
+Apr 15 19:23:45 <paulavelezbravo> jit.uldl: upload 1 ftp://immediat.ch/web/4/0x.jpg 
+Apr 15 19:23:47 <paulavelezbravo> matrxx: exportimage 1x.jpg 1 
+Apr 15 19:23:49 <paulavelezbravo> jit.uldl: upload 1x.jpg 
+Apr 15 19:23:51 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:23:53 <paulavelezbravo> jit.uldl: ul_status 4 
+Apr 15 19:23:55 <paulavelezbravo> jit.uldl: ul_status 10 
+Apr 15 19:23:57 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:23:59 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:24:01 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:24:03 <paulavelezbravo> jit.uldl: ul_status 9 
+Apr 15 19:24:05 <paulavelezbravo> jit.uldl: upload 1 ftp://immediat.ch/web/4/1x.jpg 
+Apr 15 19:24:07 <paulavelezbravo> matrxx: exportimage 2x.jpg 1 
+Apr 15 19:24:09 <paulavelezbravo> jit.uldl: upload 2x.jpg 
+Apr 15 19:24:11 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:24:13 <paulavelezbravo> jit.uldl: ul_status 4 
+Apr 15 19:24:15 <paulavelezbravo> jit.uldl: ul_status 10 
+Apr 15 19:24:17 <paulavelezbravo> jit.uldl: ul_status 31 
+Apr 15 19:24:19 * paulavelezbravo has quit (Remote closed the connection)
+Apr 15 19:24:38 * paulavelezbravo (n=paulavel@adsl190-28-136-67.epm.net.co) has joined #aether9
+Apr 15 19:25:00 <paulavelezbravo> now it is ok? what happen. ?
+Apr 15 19:27:51 <aether9> you tell me :)
+Apr 15 19:28:11 <aether9> tu as copie-colle un enorme texte?
+Apr 15 19:29:38 <paulavelezbravo> yes, but it did continue to emulate? i was trying to copy the errors. sorry. hahahjajajaja
+Apr 15 19:29:57 <aether9> important question: we need to clarify the time zone issues!
+Apr 15 19:30:06 <aether9> which time is it at your place now, paula?
+Apr 15 19:30:19 <paulavelezbravo> i just can not arrive to transmit sound, it makes me angry
+Apr 15 19:30:29 <aether9> i need to check if my time table is correct
+Apr 15 19:31:05 <aether9> should i send sound for a minute, to see if it works here?
+Apr 15 19:32:30 <aether9> paula?
+Apr 15 19:33:08 <aether9> il est 12h33 chez toi, juste?
+Apr 15 19:33:46 <paljudy_> ah...its 1:33 in NYC
+Apr 15 19:34:05 <aether9> thanks!
+Apr 15 19:34:36 <paljudy_> good you asked; I thought P and I were in the same time zone
+Apr 15 19:35:14 <paulavelezbravo> it is 12 35
+Apr 15 19:35:29 <paulavelezbravo> here
+Apr 15 19:36:19 <aether9> ok... so we made some mistake with hours, i'm posting the correct time right now to the list
+Apr 15 19:37:20 <paulavelezbravo> http://www.worldtimeserver.com/convert_time_in_CO.aspx? 
+Apr 15 19:38:15 * aleij (n=ad@mailhost.ecole-art-aix.fr) has joined #aether9
+Apr 15 19:38:28 <paulavelezbravo> http://www.worldtimeserver.com/convert_time_in_CO.aspx?y=2008&mo=4&d=17&h=18&mn=0
+Apr 15 19:38:44 <paulavelezbravo> alejo
+Apr 15 19:38:52 <paljudy_> what is the time zone in Columbia called (you know, like it is EST for NYC)?
+Apr 15 19:39:01 <paulavelezbravo> como es que cambio el paulavelezbravo en este coso?
+Apr 15 19:39:22 <aether9> California: Pacific Daylight Time (PDT) -0700 UTC
+Apr 15 19:39:22 <aether9> Colombia:  Standard Time -0500 UTC 
+Apr 15 19:39:22 <aether9> New York: Eastern Daylight Time (EDT) -0400 UTC 
+Apr 15 19:39:22 <aether9> Brussels/Geneva:  Central European Summer Time (CEST) +0200 UTC
+Apr 15 19:39:25 <paulavelezbravo> Judy: Colombia
+Apr 15 19:39:29 <paulavelezbravo> not columbia
+Apr 15 19:39:31 <paulavelezbravo> hahaha
+Apr 15 19:39:57 <bk2> hi alejo!
+Apr 15 19:40:01 <paljudy_> too fast typing too slow answer :>
+Apr 15 19:40:50 <aether9> 6pm Colombian Time = 7pm in New York (EDT) = 1:00 AM in Brussels/Geneva (CEST) = 3:30 AM in Tehran.
+Apr 15 19:42:04 <aether9> And paula, the beginning time, according to the program, is 18:00 - is that correct?
+Apr 15 19:42:29 <aether9> ah yes, i see you confirmed it in recent email
+Apr 15 19:43:54 <paulavelezbravo> it is correct 
+Apr 15 19:44:05 <paulavelezbravo> 6:00 pm
+Apr 15 19:44:25 <paulavelezbravo> and workshop at 2:pm
+Apr 15 19:45:16 <paulavelezbravo> fuck the sound
+Apr 15 19:45:33 <aether9> yep, got it, i'm writing down a definitive timetable...
+Apr 15 19:45:41 <paulavelezbravo> manu, do i must use this?:shoutcast~.mxo
+Apr 15 19:46:04 <paulavelezbravo> i instal a thing called LAME.dmg
+Apr 15 19:46:38 <paulavelezbravo> there is another one better? i dont even know what is this, but i have installed
+Apr 15 19:46:41 <paulavelezbravo> it
+Apr 15 19:47:53 <aleij> hola hola
+Apr 15 19:48:04 <aleij> paula to change the nick you mean?
+Apr 15 19:48:20 <aleij> just type: /nick NUNICK
+Apr 15 19:50:00 * NUNICK (n=paulavel@adsl190-28-136-67.epm.net.co) has joined #aether9
+Apr 15 19:50:01 * paulavelezbravo has quit (Read error: 104 (Connection reset by peer))
+Apr 15 19:50:37 <aether9> paula... don't remember now, you did never stream sound from that computer before? yes, install lame.dmg, it can't hurt..
+Apr 15 19:51:03 <NUNICK> i arrive yesterday to stream sound
+Apr 15 19:51:08 <NUNICK> and this morning
+Apr 15 19:51:25 <NUNICK> and i did it before in worm festival i think
+Apr 15 19:51:32 <NUNICK> it was worm
+Apr 15 19:51:51 <aleij> now you are named NUNICK :)
+Apr 15 19:51:51 * NUNICK is now known as paula
+Apr 15 19:51:55 <aleij> ok
+Apr 15 19:51:56 <paula> nonon
+Apr 15 19:51:59 <paula> jaja
+Apr 15 19:51:59 <aleij> now is you
+Apr 15 19:52:01 <aleij> hehe
+Apr 15 19:52:03 <aether9> ok, so i don't think you need to install anything.. has to be another problem - and beyond all, it WAS streaming before, just no sound
+Apr 15 19:52:04 <paula> hehe
+Apr 15 19:52:13 <aether9> switch off computer and restart..
+Apr 15 19:52:34 <aether9> maybe alejo can help you, i need to finish now this timetable and put the infos on aether site....
+Apr 15 19:52:43 <bk2> hi off now. good bye to all. see you tommorow. 
+Apr 15 19:52:44 <paula> i arrive this morning alone to stream sound from the hotel
+Apr 15 19:52:52 <paula> and yesterday from here
+Apr 15 19:52:55 * bk2 has quit ("This computer has gone to sleep")
+Apr 15 19:52:55 <paula> indeed
+Apr 15 19:53:20 <paula> ok
+Apr 15 19:53:34 <aleij> so, is the same patch, same connection, same computer
+Apr 15 19:53:40 <aleij> it worked before
+Apr 15 19:53:46 <aleij> but not now?
+Apr 15 19:53:51 <paula> nuevo patch
+Apr 15 19:53:57 <aether9> paula, the time you proposed for rehearsal tomorrow: 6am colombia, 12 pm europe, right?
+Apr 15 19:54:09 <paula> pero porque el viejo no me funciona ya tampoco
+Apr 15 19:54:22 <aleij> is not 7hours diff?
+Apr 15 19:54:24 <paula> yes, 6am colombia
+Apr 15 19:54:35 <aleij> ok
+Apr 15 19:54:46 <paula> 7 hours now?
+Apr 15 19:55:07 <paula> winter 6 , summer 7
+Apr 15 19:55:16 <aleij> is 7 hours now
+Apr 15 19:55:20 <aleij> afaik
+Apr 15 19:55:22 <paula> so i dont know, did you change time already
+Apr 15 19:55:25 <paula> ah, ok
+Apr 15 19:55:28 <paula> so 7 hours
+Apr 15 19:55:42 <aether9> yes, you're right, so 13:00 in Europe
+Apr 15 19:55:51 <aleij> http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 15 19:56:24 * aleij has changed the topic to: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 15 19:57:21 <paula> http://www.worldtimeserver.com/convert_time_in_CO.aspx?y=2008&mo=4&d=17&h=18&mn=0
+Apr 15 19:57:45 <aleij> paula the sound patch streams to where? what server? whats the error?
+Apr 15 19:58:09 <paula> wait. let me go by parts
+Apr 15 19:59:05 <paula> first. the sound patch could works alone, without using the image upload patch, am i rigth?
+Apr 15 19:59:31 <paula> i have try it using two patches at the same time and it worked
+Apr 15 19:59:40 <paula> also alone i think
+Apr 15 20:01:06 <paula> then. to use the sound patch i have max runtime installed and i remember to installed before something else. like a icecast or something but i dont know how can i reinstalled to test if there is something wrong there
+Apr 15 20:02:41 <aleij> the patch that uses the runtime of max should stream to a remote icecast server, im guessing is giss?, so you dont have to install icecast or similar
+Apr 15 20:02:57 <paula> ok
+Apr 15 20:03:13 <paula> i think it is giss you are right
+Apr 15 20:03:32 <aleij> what error you get?
+Apr 15 20:04:10 <paula> i'll tell you
+Apr 15 20:04:17 <paula> let me restart runtime
+Apr 15 20:05:39 <aleij> ez
+Apr 15 20:09:16 <paula> set server type to icecast2
+Apr 15 20:09:16 <aether9> this is the link of the stream, while you are trying to stream, you can open it in VLC and see whate error message you get: http://giss.tv:8000/aether.mp3
+Apr 15 20:09:38 <paula> already connected
+Apr 15 20:09:56 <aether9> i receive your  sound
+Apr 15 20:10:04 <aether9> just very low/weak
+Apr 15 20:10:09 <paula> it seam it is streaming now
+Apr 15 20:10:21 <aether9> can hear it in VLC because it can go to 400%
+Apr 15 20:10:32 <aether9> but too silent to hear in the browser window
+Apr 15 20:10:57 <aether9> so, in the patch, go from 0.2 to 0.8 or 1.0 ... just avoid going in the red..
+Apr 15 20:11:58 <aether9> so it's actually working fine now, also in the web interface
+Apr 15 20:12:09 <aleij> so i fixed it?
+Apr 15 20:12:10 <aleij> hehe
+Apr 15 20:12:19 <paula> i just do the same things i do every time
+Apr 15 20:12:28 <paula> i want to test again
+Apr 15 20:12:29 <aleij> yes yes
+Apr 15 20:12:44 <paula> i will close the application and restarted to see
+Apr 15 20:13:07 <aleij> paula is usefull to not eat your bandwith streaming and listening (via vlc) at the same time
+Apr 15 20:13:08 <paula> then i must test a line in signal in stead of mic signal
+Apr 15 20:13:18 <aleij> see if its online here:
+Apr 15 20:13:28 <aleij>  http://giss.tv:8000/
+Apr 15 20:13:35 <paula> yes, i m not hearing 
+Apr 15 20:13:46 <aleij> just for the record
+Apr 15 20:14:20 <aleij> btw, how is bandwidt there?
+Apr 15 20:14:34 <aleij> i listen
+Apr 15 20:14:42 <aleij> you can just talk my dear
+Apr 15 20:14:49 <aleij> stable
+Apr 15 20:15:04 <aleij> parle francais svp
+Apr 15 20:15:14 <aleij> je arrive
+Apr 15 20:15:16 <aleij> hehe
+Apr 15 20:15:44 <aleij> redemarrer fixes all
+Apr 15 20:18:20 <paula> i'm sending sound and image. do you hear me?
+Apr 15 20:18:48 <paula> see
+Apr 15 20:20:06 <paula> the patch sound seems to work very goog in transmision, but it dont looks that i can not upload image at the same time.
+Apr 15 20:20:13 <paula> because it crash...
+Apr 15 20:20:26 <paula> the interface works good it seams
+Apr 15 20:20:32 <paula> but....
+Apr 15 20:20:55 <paula> letme put patches in the same folder, maybe that is the problem
+Apr 15 20:21:13 <paula> are you receving soudn alejoooo?
+Apr 15 20:23:40 <paula>  error: shoutcast~: No such object
+Apr 15 20:23:40 <paula> shoutcast~ v1.3test3,  2001-2006 Olaf Matthes
+Apr 15 20:24:43 <aleij> im back
+Apr 15 20:24:47 <aleij> stream is back
+Apr 15 20:25:22 <paula> now, i will start the image patch and you tell me if it crashes
+Apr 15 20:25:58 <aleij> no sound
+Apr 15 20:26:15 <paula> it crashes when i start the image patch
+Apr 15 20:30:40 <paula> what can i do. this is a problem, and i know it has work once, so...
+Apr 15 20:31:35 <paula> it is very strange, the max_sound_patch9 it is transmiting but ...
+Apr 15 20:31:42 <paula> now, tell me
+Apr 15 20:31:48 <paula> do you have sound?
+Apr 15 20:32:03 <aleij> no
+Apr 15 20:33:58 <aleij> paula porque aparece la palabra colombia en los frames
+Apr 15 20:34:02 <aleij> ahora hay audio
+Apr 15 20:34:21 <paula> no se quien puso eso, creo que fu christian y se le qued puesto
+Apr 15 20:34:29 <aleij> ahh ok
+Apr 15 20:34:37 <paula> o manu y se le olvidó
+Apr 15 20:34:43 <paula> ahora est sonando?
+Apr 15 20:34:51 <aleij> audio up si
+Apr 15 20:35:21 <aleij> ok
+Apr 15 20:41:55 <paula> audio, no
+Apr 15 20:41:57 <paula> imagen si
+Apr 15 20:41:59 <paula> fuck
+Apr 15 20:42:23 <aleij> thats the case... or seems to be
+Apr 15 20:42:32 <paula> en la ventanit de errores nisiquiea aparece el patch de sonidp
+Apr 15 20:42:42 <paula> es como una incompatibilidad rara
+Apr 15 20:43:35 <paula> como si activara el patch de imagen i el programa reconociera algo abierto. y cuando abro el otro patch al no estasr asociado al primero, pues solo funciona el uno o el otro
+Apr 15 20:44:28 <paula> estoy mamada, necesito comer algo, ya van a ser las 2
+Apr 15 20:45:14 <aleij> parace que el runtime no quiere compartir la maquina con otro proceso de otro runtime
+Apr 15 20:45:21 <aleij> son 2 patches diferentes?
+Apr 15 20:45:23 <paula> Alejo, i must go to eat... then i will report this diagnostic to manu, and see if he can put both patches joint
+Apr 15 20:45:31 <aleij> son dos runtimes diferentes?
+Apr 15 20:45:33 <paula> si dos patches
+Apr 15 20:45:38 <paula> un solo runtime
+Apr 15 20:45:47 <aleij> puede ser el runtime
+Apr 15 20:45:48 <paula> yo arrastro el patch para que lo abra el mismo runtime
+Apr 15 20:46:18 <aleij> te puedo mandar un patch de pd
+Apr 15 20:46:23 <aleij> para el audio
+Apr 15 20:46:41 <aleij> anda a comer
+Apr 15 20:46:46 <aleij> yo tb voy a comer algo
+Apr 15 20:46:48 <aleij> bon ap
+Apr 15 20:47:42 <paula> hay una carpeta que se llama: shoutcast~1.3test3-max4.6-intel en la carpeta donde tengo el patch
+Apr 15 20:47:49 <paula> la acabo de botar para ver que pasa.
+Apr 15 20:48:20 <paula> activ el patch y me sale el error: shoutpatch not such object
+Apr 15 20:48:43 <paula> entonces volvi a meter el archivo de la papelera a la carpeta de origen
+Apr 15 20:49:20 <paula> debe haber algo que se llama shoutcast para max que debo reinstalar, porque es posible que el error est ahi
+Apr 15 20:49:40 <paula> mi version de MAX que estoy usando para las imagenes y que abro con el patch de sonido es:
+Apr 15 20:50:12 <paula> MaxMSP Runtime 4.6.3
+Apr 15 20:50:34 <paula> aplicacion universal, no especifica que sea Intel o algo asi
+Apr 15 20:50:49 <paula> ser que hay incompatibilidad con esto?
+Apr 15 20:51:08 * paljudy_ has quit ("This computer has gone to sleep")
+Apr 15 20:52:03 <aleij> no paula, no creo
+Apr 15 20:52:13 <aleij> eso es solo para que funcione el stream
+Apr 15 20:52:19 <aleij> y ya sabemos que funciona
+Apr 15 20:52:32 <aleij> es un problema con el runtime
+Apr 15 20:52:40 <aleij> que no soporta los dos procesos al mismo tiempo
+Apr 15 20:52:47 <aleij> no importa el orden
+Apr 15 20:59:20 <paula> voy a comer... vuelvo en un ratico
+Apr 15 21:01:30 <aleij> moi osito
+**** ENDING LOGGING AT Tue Apr 15 21:28:22 2008
+
+**** BEGIN LOGGING AT Tue Apr 15 21:29:58 2008
+
+Apr 15 21:29:58 * Now talking on #aether9
+Apr 15 21:29:58 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 15 21:29:58 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
