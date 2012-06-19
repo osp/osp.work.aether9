@@ -31,16 +31,16 @@ def main():
 				items.append(m)
 			sys.stderr.write(' => %d\n'%(cm,))
 		
-	for r,d,f in os.walk(args.rootdir):
-		for fn2 in fnmatch.filter(f,'*chat*.html'):
-			sys.stderr.write('Processing %s , %s\n'%(r,fn2))
-			fp = os.path.join(r,fn2)
-			cl = chatlog.Reader(fp)
-			cm = 0
-			for m in cl.chat:
-				cm +=1
-				items.append(m)
-			sys.stderr.write(' => %d\n'%(cm,))
+	#for r,d,f in os.walk(args.rootdir):
+		#for fn2 in fnmatch.filter(f,'*chat*.html'):
+			#sys.stderr.write('Processing %s , %s\n'%(r,fn2))
+			#fp = os.path.join(r,fn2)
+			#cl = chatlog.Reader(fp)
+			#cm = 0
+			#for m in cl.chat:
+				#cm +=1
+				#items.append(m)
+			#sys.stderr.write(' => %d\n'%(cm,))
 			
 	for r,d,f in os.walk(args.rootdir):
 		for fn2 in fnmatch.filter(f,'*jpg'):
@@ -49,16 +49,14 @@ def main():
 			try:
 				items.append(image.Reader(fp).img)
 			except image.NoDate as e:
-				sys.stderr.write('%s'%e)
-				
-			sys.stderr.write(' => %d\n'%(cm,))
+				sys.stderr.write('%s\n'%e)
 				
 	items.sort(key=lambda x:x['date'])
 	
 	for i in range(len(items)):
 		items[i]['id'] = i
 		wr = globals()[items[i]['type']].Writer
-		writers.append(items[i])
+		writers.append(wr(items[i]))
 		
 	#for m in messages:
 		#writers.append(mail.Writer(reference.Factory(m, messages).doc))

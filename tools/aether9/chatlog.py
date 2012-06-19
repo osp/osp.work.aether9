@@ -7,6 +7,7 @@ from HTMLParser import HTMLParser
 import time
 import datetime
 import sys
+import re
 
 # create a subclass and override the handler methods
 class SkypeParser(HTMLParser):
@@ -114,6 +115,16 @@ class Writer:
 	def __init__(self, cldict):
 		self.log = cldict
 		
+	def as_string(self):
+		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
+		esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.text)
+		ret = []
+		ret.append('\\subject[chat:%d]{%d}'%(self.id,self.id))
+		ret.append('\\it{%s /%s/} '%(self.author, self.date.strftime('%d.%m.%Y')))
+		ret.append('\\tf{%s}'%(esc_text,))
+		ret.append('\n')
+		
+		return '\n'.join(ret)
 		
 	def escape_tex(self, pt):
 		r = pt.group()
