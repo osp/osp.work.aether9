@@ -1,0 +1,2554 @@
+**** BEGIN LOGGING AT Tue Apr 15 21:41:27 2008
+
+Apr 15 21:41:27 * Now talking on #aether9
+Apr 15 21:41:27 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 15 21:41:27 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
+Apr 15 21:44:48 * manu :Nickname is already in use.
+Apr 15 21:49:20 -christel- [Global Notice] Hi all! As you are aware we're preparing to move to a new Services package -- thanks to the hard work from the Atheme guys, in particular jilles (and nenolod) we are now ready for you all to come help us make sure they're approaching ready for production! Please join us over at the testnet. Connect to irc.freenode.net on port 9001. Thank you and have a great day!
+Apr 15 21:50:05 <aether9> alejo, you are still there?
+Apr 15 21:52:00 <aleij> half brother
+Apr 15 21:52:20 <aether9> ok. you talked about coming to geneva for saturday?
+Apr 15 21:52:37 <aleij> i was wondering
+Apr 15 21:52:39 <aleij> but
+Apr 15 21:52:50 <aleij> think is to late to find prems
+Apr 15 21:52:52 <aleij> :S
+Apr 15 21:53:00 <aether9> but you're in aix-en-provence now, right?
+Apr 15 21:53:12 <aleij> yes
+Apr 15 21:53:31 <aleij> thats why i say prems, those cheapo TGV tickets
+Apr 15 21:53:40 <aether9> anyway most work has to be done beforehand..
+Apr 15 21:53:57 <aleij> that means?
+Apr 15 21:54:02 <aleij> thursday?
+Apr 15 21:54:38 <aether9> those next days.. we will see how boris and i handle the tasks
+Apr 15 21:54:54 <aether9> and which computer is doing the sound streaming...
+Apr 15 21:55:01 <aether9> but it should be ok
+Apr 15 21:55:01 <aleij> ahh oke, so your not alone
+Apr 15 21:55:27 <aleij> cool
+Apr 15 21:55:34 <aether9> yes, we will handle it.. was just asking in case you wanted to come anyway
+Apr 15 21:56:15 <aleij> for me it makes sense to go to work on aether, otherwise i try to follow online
+Apr 15 21:57:23 <aether9> yes... btw i saw you'll be in basel soon, will try to come and see
+Apr 15 21:57:23 <aleij> did you saw the log 
+Apr 15 21:57:29 <aether9> the log?
+Apr 15 21:57:32 <aleij> paula says
+Apr 15 21:57:41 <paula> holo
+Apr 15 21:57:45 <aether9> ah, the sound-patch problems
+Apr 15 21:57:47 <paula> no veia que llamabas
+Apr 15 21:57:47 <aleij> that one she opens the uploading patch sounds breaks
+Apr 15 21:58:08 <aleij> seems the runtime cant handle both things at the same time
+Apr 15 21:58:49 <aether9> ok.. so either we use another streaming tool, or another computer
+Apr 15 21:59:02 <aether9> which would anyway be a more robust solution
+Apr 15 21:59:09 <aleij> agree
+Apr 15 21:59:18 <paula> it could be done with another computer then
+Apr 15 21:59:19 <aether9> the upload patch is not 100% crash-resistant...
+Apr 15 21:59:21 <aleij> paula, how much ram has that machine?
+Apr 15 21:59:26 <paula> my assistant have a mac
+Apr 15 21:59:32 <aether9> and the musician?
+Apr 15 21:59:41 <aether9> could he stream his sound directly?
+Apr 15 21:59:52 <paula> yeah
+Apr 15 21:59:54 <aleij> theres also nicecast
+Apr 15 22:00:06 <paula> he has another computer also
+Apr 15 22:00:21 <paula> he is playing live music, not laptop music
+Apr 15 22:00:30 <aether9> ah, great
+Apr 15 22:00:35 <paula> but we can use his computer to transmit i think
+Apr 15 22:00:58 <aether9> a software that seems simple enough is Muse - i guess you know it alejo?
+Apr 15 22:01:20 <aleij> yes, but im not sure about os x version
+Apr 15 22:01:24 <aleij> i think is old
+Apr 15 22:01:39 <aleij> for the macbooks
+Apr 15 22:01:42 <aether9> maybe...
+Apr 15 22:02:06 <aleij> i have a pd patch but 
+Apr 15 22:02:09 <aether9> you're right, it's PPC
+Apr 15 22:02:18 <aleij> with the second machine your patch will do
+Apr 15 22:02:28 <aleij> second machine is the solution
+Apr 15 22:02:35 <aleij> as you said
+Apr 15 22:03:02 <aether9> yes, maybe a bit a pain to install the runtime + objects, but it should work
+Apr 15 22:03:03 <aleij> more stable
+Apr 15 22:03:10 <aleij> ahh ok
+Apr 15 22:03:11 <paula> the musician has a mac powerbook
+Apr 15 22:03:42 <aleij> could be also, puredata and one patch i have or easier nicecast
+Apr 15 22:04:19 <aether9> that makes four possibilities ;)
+Apr 15 22:04:24 <paula> you asked me, alejo: how much ram has that machine? which one?
+Apr 15 22:04:32 <aleij> both :)
+Apr 15 22:04:43 <aleij> manuel nice if you come to basel
+Apr 15 22:04:50 <aleij> we will be with lorenz schori
+Apr 15 22:05:01 <aether9> i think any powerbook should be able to send an mp3 stream, no?
+Apr 15 22:05:07 <aleij> yes
+Apr 15 22:05:29 <aleij> it was more to be sure one could also have hungry pd
+Apr 15 22:05:49 <paula> 2.16 GHz intel core duo.  2GB 667 Mhz DDR2.  
+Apr 15 22:06:14 <paula> mine
+Apr 15 22:06:24 <aleij> you have pd already im sure
+Apr 15 22:06:53 <paula> but Natalia's puter is less strong, dont know exacly the ram
+Apr 15 22:07:07 <paula> i have pd
+Apr 15 22:07:10 <paula> yes
+Apr 15 22:07:19 <paula> but i have never use it
+Apr 15 22:08:05 <paula> i tryed the patch aether send once, but it crashed, i didnt know very well hoow it worked
+Apr 15 22:08:31 <aether9> so it will take some time to get used.. probably the max patch is most simple solutions, since all the settings are already included
+Apr 15 22:08:48 <paula> so, the thing is: i must transmit sound from one laptop. instal runtime, patch and everything
+Apr 15 22:09:09 <aether9> yep, that seems the thing to do.
+Apr 15 22:09:19 <paula> the problem is:  my assitant and muscian arrives almost 1 hour before workshop starts
+Apr 15 22:09:35 <paula> so it will not be a lot of time to install things
+Apr 15 22:10:07 <aether9> yes.. but so you can show to the people of the workshop how to install things :)
+Apr 15 22:10:07 <paula> and they are in medellin working for a concert tomorrow, so i don t think theey have time to work on it on line
+Apr 15 22:10:31 <paula> yeah!
+Apr 15 22:10:41 <aleij> haha
+Apr 15 22:10:52 <aleij> paula, anyway lets try the pd option
+Apr 15 22:10:53 <paula> i must make a CD with all the necesary stuff
+Apr 15 22:10:54 <aether9> in the worst case, somebody from the workshop participants will do the soundstream, for example
+Apr 15 22:11:03 <aleij> the patch i have is friendly
+Apr 15 22:11:18 <paula> can you make me a list to no make mistakes? 
+Apr 15 22:11:35 <aether9> for PD or for Max?
+Apr 15 22:11:36 <aleij> give me the mountpoint and password so i can "hard code" that into it so its even easier
+Apr 15 22:11:39 <aleij> pd
+Apr 15 22:12:07 <paula> great alejo, i'm exited about tryin g pd
+Apr 15 22:12:21 <aether9> easyer but impossible to copy to another computer
+Apr 15 22:12:26 <paula> then maybe i could stream sound with it
+Apr 15 22:12:29 <aleij> she will only need to double click on it and select the sound input
+Apr 15 22:12:31 <paula> at the same time
+Apr 15 22:12:37 <paula> and is freeware
+Apr 15 22:12:44 <paula> better than max because of that
+Apr 15 22:12:49 <aether9> of course
+Apr 15 22:13:10 <aleij> whats the password for aether.mp3 ?
+Apr 15 22:13:24 <aether9> one sec
+Apr 15 22:13:54 <aleij> we can test, is fast, you have pd already so nothing to loose
+Apr 15 22:13:57 <aleij> just my time
+Apr 15 22:13:59 <aleij> :)
+Apr 15 22:14:29 <aether9> passwd qs39z
+Apr 15 22:14:30 <aleij> i need to finish up some formulaire for felipe cesar
+Apr 15 22:14:32 <aleij> tx
+Apr 15 22:14:38 <aether9> connect giss.tv aether.mp3 8000
+Apr 15 22:14:45 <aleij> yeap
+Apr 15 22:15:20 <aether9> was streaming at mpeg 44100 40kbps
+Apr 15 22:15:35 <aether9> mono
+Apr 15 22:18:28 <aleij> ok
+Apr 15 22:18:40 <aleij> give some minutes
+Apr 15 22:23:48 <paula> ok. i will wait, you just tell me when we are testing
+Apr 15 22:24:41 <aether9> in the meantime, paula, you can watch a nice webcam video i made last night: http://blip.tv/file/828741
+Apr 15 22:26:29 <paula> thats great!
+Apr 15 22:26:49 <paula> did you animated faster all the uploaded frames?
+Apr 15 22:26:59 <paula> that is the snow?
+Apr 15 22:27:11 <aether9> yes, it's in southern sibiria..
+Apr 15 22:27:12 <paula> or there is an extra layer
+Apr 15 22:27:13 <paula> ?
+Apr 15 22:27:29 <paula> i love it
+Apr 15 22:27:29 <aether9> no special effects ;)
+Apr 15 22:27:39 <paula> encore mieux
+Apr 15 22:27:52 <aether9> the speed is just the speed of the webcam, but played at 25 frames/second
+Apr 15 22:28:24 <paula> coll
+Apr 15 22:28:29 <paula> coooool
+Apr 15 22:28:40 <paula> [:) 
+Apr 15 22:29:01 <aether9> thnx :]
+Apr 15 22:29:25 <paula> and how did you capture the camera? 
+Apr 15 22:29:56 <aether9> avec un patch, qui se trouve aussi sur notre serveur de download, nommé "better than tv" ...
+Apr 15 22:30:48 <paula> ahhh j. i will test it one of this days
+Apr 15 22:31:08 <aether9> yes you should ;)
+Apr 15 22:31:52 <paula> i was writing a emaid for you. alors je vais profiter pour t'envoyer par ici les questions
+Apr 15 22:32:12 <paula> you toldme:
+Apr 15 22:32:12 <paula> for the workshop, it would be best probably to use the 
+Apr 15 22:32:12 <paula> "test-interface" that is included in each patch folder.
+Apr 15 22:32:27 <paula> and i say: The test interface only has one frame and it will be cool if there are 9 frames for this.
+Apr 15 22:32:38 <aether9> it has nine frames!
+Apr 15 22:32:44 <aether9> open mainframe.html
+Apr 15 22:33:34 <aether9> je veux dire: frameset.html
+Apr 15 22:34:04 <paula> http://1904.cc/~aether/html/mainframe.html
+Apr 15 22:34:27 <paula> http://1904.cc/~aether/html/frameset.html
+Apr 15 22:34:30 <aether9> non, le frameset n'est pas en ligne: il faut ouvrir celui qui se trouve dans le dossier du patch
+Apr 15 22:34:40 <paula> ahhh
+Apr 15 22:35:04 <aether9> (ceci dit, je pourrais bien sur le mettre en ligne aussi.. mais c'est prévu pour l'usage "privé", disons)
+Apr 15 22:36:04 <paula> je ne vois pas tell objet dans le dossier du patch... :s
+Apr 15 22:36:18 <aether9> dans le dossier "sample_HTML"
+Apr 15 22:36:25 <aether9> qui se trouve dans le dossier du patch
+Apr 15 22:36:35 <aleij> almost there, need to fine tune the metadata
+Apr 15 22:36:53 <aether9> cool!
+Apr 15 22:36:57 <paula> yea
+Apr 15 22:37:02 <aleij> what aether9 url we use?
+Apr 15 22:37:08 <aleij> the direct or the other
+Apr 15 22:37:11 <aether9> for?
+Apr 15 22:37:24 <aleij> for the metadata entry of the stream
+Apr 15 22:37:39 <aether9> ah.. 1904.cc/aether/
+Apr 15 22:37:45 <aleij> so it appears in VLC nicely
+Apr 15 22:37:46 <aether9> or 1904.cc
+Apr 15 22:37:47 <aleij> ok
+Apr 15 22:37:52 <aleij> i have that one
+Apr 15 22:38:06 <aleij> so i leave that one
+Apr 15 22:38:14 <aleij> the main page
+Apr 15 22:38:15 <aether9> anyway, it will not be visible in the web interface
+Apr 15 22:38:36 <aleij> the stream is public and annouced via GISS
+Apr 15 22:38:46 <aleij> i work for GISS :)
+Apr 15 22:38:49 <aleij> is cleaner
+Apr 15 22:38:51 <aether9> ah, nice you took the time to do this
+Apr 15 22:38:55 <aether9> of course
+Apr 15 22:39:03 <aleij> nice you are in IRC :)
+Apr 15 22:39:27 <aether9> yeah, finally.. my skype user message now points to the irc channel..
+Apr 15 22:39:43 <aether9> but you should teach us some basic things..
+Apr 15 22:40:08 <aether9> like how channel creation, admin status and that kind of stuff works
+Apr 15 22:41:00 <aether9> i also found now good settings for xchat to create nice logfiles, so that last obstacle has disappeared
+Apr 15 22:41:19 <paula> so now the main window works with vlc and not flash?
+Apr 15 22:41:51 <aether9> no, vlc is still not a very widespread plugin
+Apr 15 22:41:56 <paula> i dont understand
+Apr 15 22:42:10 <aether9> so we can simply use VLC if we want to test, or the have a better sound, or a more reliable player
+Apr 15 22:42:40 <aether9> but the "internet audience" will listen to the same stream through the flash player integrated in the web page
+Apr 15 22:43:06 <paula> this?
+Apr 15 22:43:07 <paula> http://giss.tv:8000/aether.mp3
+Apr 15 22:43:13 <paula> it doesnt work
+Apr 15 22:43:37 <aether9> it works when the stream is working... most of the time it works..
+Apr 15 22:43:52 <aether9> the little flash player reads exactly the same stream
+Apr 15 22:44:17 <paula> ah, ok
+Apr 15 22:44:31 <aether9> (but with a worse sound quality, because it's flash)
+Apr 15 22:45:07 <paula> well now that i have this frameset open
+Apr 15 22:45:34 <aether9> you will ask me why the test frameset doesnt have the sound player...
+Apr 15 22:45:36 <paula> how can i use the test for transmision?
+Apr 15 22:46:04 <aether9> simply, there are two different server lists.
+Apr 15 22:46:18 <aether9> one for the "performance servers", one for the "test servers"
+Apr 15 22:46:20 <paula> no, je suis en train de revenir au sujet precedent
+Apr 15 22:46:51 <aether9> so - sound transmission?
+Apr 15 22:47:03 <paula> ok, so, this one for the test servers is not online cause it is for private Test Use
+Apr 15 22:47:21 <aether9> the servers are online, but the interface is not
+Apr 15 22:47:31 <paula> so for the workshop are we going to use this frame? but it is not online
+Apr 15 22:47:55 <paula> ah, the servers are online 
+Apr 15 22:47:58 <paula> ok
+Apr 15 22:48:14 <aether9> the idea is: anybody could use any kind of servers
+Apr 15 22:48:22 <paula> so it will be a link for remote aether team
+Apr 15 22:48:28 <aether9> the interface has simply to point to this servers
+Apr 15 22:49:09 <paula> ok , so which patch i have to use for the workshop?
+Apr 15 22:49:19 <aether9> the patch is the same
+Apr 15 22:49:31 <paula> and i use the test frame
+Apr 15 22:49:39 <aether9> simply, the server.txt file (server list) is different
+Apr 15 22:49:42 <paula> for everyone?
+Apr 15 22:50:27 <paula> i'm following your mail, give me a second , i dont want to make you repeate everything
+Apr 15 22:50:36 <paula> then i will ask you if i dont understand
+Apr 15 22:50:41 <aether9> ok
+Apr 15 22:52:07 <aether9> the basic thing is: when you open the patch, it will look for a file called "servers.txt", and create the menu of servers from the content of that file.
+Apr 15 22:52:41 <aether9> so you can decide if you want to use the "performance servers", or the "workshop servers"
+Apr 15 22:52:54 <aether9> the "performance servers" are secret, password-protected
+Apr 15 22:53:10 <aether9> the "workshop servers" are totally public
+Apr 15 22:53:45 <aether9> they are contained in the "servers-example.txt" file, which is not encrypted
+Apr 15 22:53:48 <aleij> ok paula
+Apr 15 22:53:57 <aleij> check email
+Apr 15 22:54:11 <aether9> one moment, paula can't do so many things at the same time;)
+Apr 15 22:54:20 <aleij> still some error with the metadata, but is not relevant now
+Apr 15 22:54:25 <paula> yes, thanks manu, i undestand now..... otherway .tell me .also  the sound patch has to be in the same folder as the main patch? maybe this is not working because of this. did you tried already your patch streaming sound and image at the same time? j'ai l'impression d'avoir reusir a le faire dj une fois.
+Apr 15 22:54:39 <aleij> yes, she filled up my mailbox in the meantine
+Apr 15 22:54:53 <paula> ahjajajaja thats true
+Apr 15 22:55:10 <paula> i'm mail bombing aethernautes
+Apr 15 22:55:39 <aether9> paula, the sound patch is totally different, it doesn't matter where you put it
+Apr 15 22:56:00 <aether9> i did image and sound streaming at the same time without problem
+Apr 15 22:56:10 <aether9> but it's not a good idea to do it during performance
+Apr 15 22:56:19 <paula> ok
+Apr 15 22:56:22 <aether9> the image patch can crash during performance
+Apr 15 22:56:33 <paula> ok
+Apr 15 22:56:36 <aether9> it's not a bit problem, because you can restart fast.
+Apr 15 22:56:45 <aether9> but if the sound interrupts, it's a problem
+Apr 15 22:57:09 <aether9> because probably people don't know they have to restart the sound player...
+Apr 15 22:57:36 <aether9> so... better to use two different softs, or two different computers
+Apr 15 22:58:06 <aether9> if you use PD, be sure to test if it works 30 min without crash
+Apr 15 22:58:08 <paula> i START pd
+Apr 15 22:58:12 <aether9> yeah!
+Apr 15 22:58:39 <aleij> yes, lets test that and crash paulas compi with pd!!
+Apr 15 22:59:06 <paula> am i transmiting now?
+Apr 15 22:59:20 <aleij> you have down
+Apr 15 22:59:26 <aleij> a status
+Apr 15 22:59:29 <paula> yes, 
+Apr 15 22:59:35 <paula> status?
+Apr 15 22:59:40 <aether9> one thing beforehand (alejo maybe forgets because it's natural to him), some PD objects work without X11, some need X11... make sure paula has it
+Apr 15 22:59:42 <aleij> it says something like #pages sent
+Apr 15 22:59:54 <aleij> is just audio
+Apr 15 23:00:04 <aleij> no x11
+Apr 15 23:00:11 <aleij> we use oggcast
+Apr 15 23:00:22 <aleij> oggcast~
+Apr 15 23:00:36 <aether9> ahhh.. ;) you want us to stop using the flash player..
+Apr 15 23:00:45 <aether9> smart
+Apr 15 23:00:55 <aleij> it goes out as .mp3
+Apr 15 23:00:59 <aleij> but yea
+Apr 15 23:01:04 <paula> error: inlet: no method for 'symbol'
+Apr 15 23:01:04 <paula> ... you might be able to track this down from the Find menu.
+Apr 15 23:01:04 <paula> oggcast~: set server type to new Icecast2 (HTTP/1.0 scheme)
+Apr 15 23:01:05 <paula> vorbis: vorbis 44100 0 0 0 0
+Apr 15 23:01:05 <aleij> uhmm flash wont like it
+Apr 15 23:01:06 <paula> oggcast~: 0 channels @ 44100 Hz, bitrates: max. 0 / nom. 0 / min. 0
+Apr 15 23:01:06 <paula> vorbis: vorbis 44100 1 0 0 0
+Apr 15 23:01:06 <paula> oggcast~: 1 channels @ 44100 Hz, bitrates: max. 0 / nom. 0 / min. 0
+Apr 15 23:01:08 <paula> vorbis: vorbis 44100 1 96 0 0
+Apr 15 23:01:10 <paula> oggcast~: 1 channels @ 44100 Hz, bitrates: max. 96 / nom. 0 / min. 0
+Apr 15 23:01:12 <paula> vorbis: vorbis 44100 1 96 0 32
+Apr 15 23:01:14 <paula> oggcast~: 1 channels @ 44100 Hz, bitrates: max. 96 / nom. 0 / min. 32
+Apr 15 23:01:16 <paula> vorbis: vorbis 44100 1 96 64 32
+Apr 15 23:01:18 <paula> oggcast~: 1 channels @ 44100 Hz, bitrates: max. 96 / nom. 64 / min. 32
+Apr 15 23:01:20 <paula> oggcast~: connecting to port 8000
+Apr 15 23:01:22 <paula> oggcast~: logging in to IceCast2 server...
+Apr 15 23:01:23 <aether9> NOT AGAIN!!
+Apr 15 23:01:24 <paula> oggcast~: logged in to http://stream.giss.tv:8000/aether.mp3
+Apr 15 23:01:26 <paula> oggcast~: ogg/vorbis encoder initialised
+Apr 15 23:01:28 <paula> status: 1
+Apr 15 23:01:41 <aleij> that seems to be streaming
+Apr 15 23:01:44 <aleij> but no sound
+Apr 15 23:01:45 <aether9> that's a feature of IRC that sux somehow...
+Apr 15 23:02:19 <aleij> paula, you see some level of sound in the mic leve meter?
+Apr 15 23:02:28 <aleij> yes, big flood
+Apr 15 23:02:31 <paula> yes
+Apr 15 23:02:37 <aleij> anyway.. i think this wont work
+Apr 15 23:02:40 <aleij> as manuel says
+Apr 15 23:02:52 <aleij> the flash interface wont eat that
+Apr 15 23:03:02 <aleij> will require a java plug-in
+Apr 15 23:03:09 <paula> i think it could with more time ahead to find the way... maybe
+Apr 15 23:03:25 <aleij> sure, it was just a fast test
+Apr 15 23:03:39 <aleij> it works or it doesnt
+Apr 15 23:03:41 <paula> ahhh, it must be that, usually corporations dont like rebels
+Apr 15 23:03:45 <aether9> let's wait 6 months and use shoutcast/mp3 for now
+Apr 15 23:04:01 <aleij> 6months?
+Apr 15 23:04:54 <aether9> for the mozilla VLC ogg plugin to reach 95% browser-share
+Apr 15 23:05:53 <aether9> or for java to change their logo
+Apr 15 23:06:09 <aleij> i was using this beta for firefox
+Apr 15 23:06:15 <aleij> it has all that included
+Apr 15 23:06:29 <aleij> minefield is the name
+Apr 15 23:06:38 <aether9> ok, will have a look
+Apr 15 23:06:44 <aleij> but its said that opera integrates ogg already
+Apr 15 23:06:47 <aether9> sounds good;)
+Apr 15 23:06:50 <aleij> not tested
+Apr 15 23:06:58 <aether9> ogg audio+ video?
+Apr 15 23:07:03 <aleij> yes
+Apr 15 23:07:08 <paula> cool
+Apr 15 23:07:10 <aleij> minefield did
+Apr 15 23:07:12 <paula> i must test that
+Apr 15 23:07:21 <aleij> is quite clean
+Apr 15 23:07:34 <aleij> just transparent for the user
+Apr 15 23:07:51 <aleij> but yes, 6months at least to have some stable version
+Apr 15 23:07:57 <aether9> do you have a good example page somewhere, or do i have to google around?
+Apr 15 23:08:15 <aleij> yes they had one
+Apr 15 23:08:18 <aleij> let me see
+Apr 15 23:09:26 <aether9> the thing is.. we can decide to bypass explorer, but what about our parents who use safari?
+Apr 15 23:09:32 <aether9> ;)
+Apr 15 23:10:39 <paula> where is Chloe situated? she wil transmit from where?
+Apr 15 23:10:43 <aether9> (or in the case of my parents, icab under OS9 ...)
+Apr 15 23:10:59 <aether9> from brussels, as well as Laure
+Apr 15 23:11:13 <aether9> and she will not do text, she will do camera and acting
+Apr 15 23:11:28 <aether9> or camera and directing.. better ask her
+Apr 15 23:12:12 <paula> audrey in rotterdam?
+Apr 15 23:12:13 <aether9> or simply put that credit for both chloe and laure: camera, acting, directing
+Apr 15 23:12:32 <aether9> yes, audrey in rotterdam, does the webcam coordination
+Apr 15 23:13:09 <paula> 3. Audrey Samson (webcam orchestration)
+Apr 15 23:13:10 <paula>        Rotterdam transmission
+Apr 15 23:13:10 <paula> 4.  New York , Judy Nylon: Transmission
+Apr 15 23:13:10 <paula>       (doll house).
+Apr 15 23:13:10 <paula> 5. Brussels. Chlo Cramer: (Script, Transmission)
+Apr 15 23:13:11 <paula>      Laure De Selys: (Transmission)
+Apr 15 23:13:35 <aether9> Chloe with accent aigu...
+Apr 15 23:13:44 <paula> 6. Geneva, Boris Kish: (Script,  Transmission)
+Apr 15 23:13:44 <paula> 7. Geneva, Manuel Schmalstieg: (Programming, Transmission)
+Apr 15 23:13:44 <paula> 8. Los Angeles. The League of Imaginary Scientist.
+Apr 15 23:13:50 <aleij> http://www.bluishcoder.co.nz/2007/08/svg-video-demo.html
+Apr 15 23:14:02 <paula> Chloè
+Apr 15 23:16:49 <aether9> no, other way
+Apr 15 23:18:19 <aether9> alejo, my firefox 2.0.0.13 says "Sorry, this browser does not support the video element."
+Apr 15 23:18:49 <aether9> so it works in firefox 3 beta?
+Apr 15 23:19:22 <aether9> (paula: accent in Chloe is upward)
+Apr 15 23:19:43 <paula> Chloé
+Apr 15 23:19:47 <aether9> yes!
+Apr 15 23:35:18 <aleij> manuel,yes its a special beta version
+Apr 15 23:35:30 <aleij> called minefield
+Apr 15 23:35:40 <aleij> but i can seem to find the link
+Apr 15 23:35:45 <aleij> let me try again
+Apr 15 23:35:51 <aleij> i was elsewhere
+Apr 15 23:40:13 <aleij> aether9: 
+Apr 15 23:40:16 <aleij> is here all
+Apr 15 23:40:17 <aleij> http://www.double.co.nz/video_test/
+Apr 15 23:56:48 <aether9> thnks.. no build for macPPC unfortunately (i work on obsolete machines by principle..)
+Apr 15 23:58:06 <aether9> paula, sent you some AIM accounts via email, so you can skip the whole registration procedure
+Apr 15 23:58:13 <aleij> but there is a linux one
+Apr 15 23:59:07 <paula> como asi una linux?
+Apr 15 23:59:12 <paula> voy a mirar
+Apr 15 23:59:33 <paula> que bueno, sin inscribirme uso una cuenta que me mandas para lo de maana?
+Apr 15 23:59:58 <paula> te le vas a pegar al chat?
+Apr 16 00:05:32 <aleij> maana a las 6pm creo que prefiero ir a tomarme unas polas
+Apr 16 00:05:44 <aleij> si fuera mas tarde seria mas facil
+Apr 16 00:06:11 <aleij> pero a las 6 y con la primavera.. :S
+Apr 16 00:20:16 * chloecramer (n=chloecra@d83-182-163-63.cust.tele2.be) has joined #aether9
+Apr 16 00:20:44 <chloecramer> hello
+Apr 16 00:21:43 * chloecramer has quit (Client Quit)
+Apr 16 00:22:00 <paula> hi
+Apr 16 00:23:21 * chloe (n=chloe@d83-182-163-63.cust.tele2.be) has joined #aether9
+Apr 16 00:23:31 <chloe> okdoc
+Apr 16 00:23:56 <chloe> impossible to view earlier conversation
+Apr 16 00:25:04 * chloe has quit (Client Quit)
+Apr 16 00:25:44 <aleij> is not impossible
+Apr 16 00:25:58 <aleij> just cp paste
+Apr 16 00:26:01 <aleij> will do
+Apr 16 00:27:45 <paula> hey, i will be kinetoskop in ichat tomorrow
+Apr 16 00:28:03 <paula> see ya
+Apr 16 00:28:08 <paula> i must go now
+Apr 16 00:28:15 <paula> the festival opens today
+Apr 16 00:28:16 <paula> bye
+Apr 16 00:28:19 * paula (n=paulavel@adsl190-28-136-67.epm.net.co) has left #aether9
+Apr 16 00:38:06 * chloe_ (n=chloe@d83-182-163-63.cust.tele2.be) has joined #aether9
+Apr 16 00:38:56 * chloe_ has quit (Client Quit)
+Apr 16 00:39:20 * chloe_ (n=chloe@d83-182-163-63.cust.tele2.be) has joined #aether9
+Apr 16 00:39:37 <chloe_> good day little red riding hood
+Apr 16 00:46:42 <chloe_> whiter away so early?
+Apr 16 00:46:54 <chloe_> what have you got in your apron
+Apr 16 00:47:03 <chloe_> where does you grandmother live?
+Apr 16 00:47:10 <chloe_> what a tender youg creature
+Apr 16 00:47:19 <chloe_> what a nice mouth
+Apr 16 00:47:40 <chloe_> better to eat than any old woman
+Apr 16 00:50:20 <chloe_> how pretty the flowers are about here
+Apr 16 00:50:30 <chloe_> why do you not look around
+Apr 16 00:50:39 <chloe_> everything in the wood is so merry
+Apr 16 00:50:50 <aether9> ah, doesnt this sound nicer in IRC than in skype?
+Apr 16 00:51:48 <chloe_> I am looking for litle red riding hood
+Apr 16 01:14:44 <aleij> she went to see grandma
+Apr 16 01:52:00 * Disconnected ().
+**** ENDING LOGGING AT Wed Apr 16 01:52:00 2008
+
+**** BEGIN LOGGING AT Wed Apr 16 12:17:26 2008
+
+Apr 16 12:17:26 * Now talking on #aether9
+Apr 16 12:17:26 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 16 12:17:26 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
+Apr 16 13:29:57 * aleij has quit ()
+Apr 16 13:37:50 * paljudy_ (n=Nylon222@user-12lde4j.cable.mindspring.com) has joined #aether9
+Apr 16 13:49:41 * bk2 (n=bk@d213-103-134-43.cust.tele2.ch) has joined #aether9
+Apr 16 13:53:10 <bk2> hello judy 
+Apr 16 13:53:12 <bk2> a tip to be sure to join effortlessly this irc chat channel: 
+Apr 16 13:53:16 <bk2> do
+Apr 16 13:53:16 <bk2> > user menu 
+Apr 16 13:53:16 <bk2> > edit this menu
+Apr 16 13:53:16 <bk2> > add new 
+Apr 16 13:53:16 <bk2> under "name" type something like "join aether" then under "command" type "join #aether9"
+Apr 16 13:53:17 <bk2> and save this.
+Apr 16 13:54:06 <bk2> then when you go in "User Menu", just selct the aether preset and you're in.
+Apr 16 13:56:07 <paljudy_> Done...am just re-doin screen grab to match script for text...Good Morning
+Apr 16 13:56:20 <bk2> early for you!
+Apr 16 13:56:25 <paljudy_> very
+Apr 16 13:56:47 <bk2> woke up with so many mails in the mailbox, had to laugh...
+Apr 16 13:56:56 <bk2> on aether the list i mean
+Apr 16 13:57:11 <paljudy_> but...this is the only time of day NYC downtown is quiet...otherwise its night city
+Apr 16 13:57:22 <bk2> nice
+Apr 16 13:57:32 <bk2> dusk
+Apr 16 13:58:20 <paljudy_> exactly....and I have fixed the same text so many times that I feel as if I am being punished in grade schol
+Apr 16 13:58:25 <paljudy_> school
+Apr 16 13:58:56 <bk2> ah , this text, yes.
+Apr 16 13:59:37 <bk2> should be simple, appears not to be. i don't understand why she takes care of not in spanish or french.
+Apr 16 13:59:43 <bk2> if
+Apr 16 14:00:00 <bk2> anyway, it will be like this. manu is here updating the webpage.
+Apr 16 14:00:05 <paljudy_> I have sent the PR release to Heather Wagner at Location1 where they are now offering a virtual residency...am not sure what that can do for us but I know them and will expect to be called in to talk about it
+Apr 16 14:00:28 <bk2> paula is not here for rehearsal, we can talk about PR and mail announcment
+Apr 16 14:00:34 <bk2> prepare it.
+Apr 16 14:00:44 <bk2> wich PR release xyou sent?
+Apr 16 14:00:49 <paljudy_> mine
+Apr 16 14:01:19 <bk2> ok. would it be usefull to share it? or it's way personal?
+Apr 16 14:01:27 <paljudy_> we need only to give avanced warning so that they will watch
+Apr 16 14:02:08 <paljudy_> I had to do this two days ago and except for spelling and time correction it is exactly what I sent Manu then
+Apr 16 14:03:36 <bk2> ok
+Apr 16 14:03:56 <paljudy_> i agree...one must keep it simple....nobody likes to scroll even
+Apr 16 14:04:53 <bk2> for me it's totally absurd that the names and function of everybody appears in a mail press/PR release
+Apr 16 14:05:09 <bk2> link to website, that's it for me.
+Apr 16 14:05:20 <bk2> we need it to look sexy (in my pov)
+Apr 16 14:05:40 <bk2> not a long and borish typicall cultural/artistic event announcment
+Apr 16 14:05:50 <paljudy_> otherwise i have let the deadline slide for the netaudio festival in the UK since there was no time for anyone to tell me if the idea with 
+Apr 16 14:06:18 <paljudy_> Vexations was doable.....but it will be here as an idea for a later date
+Apr 16 14:06:28 <bk2> oh yeah! i finbally got word2008 and read it. the concept from Cale or you or both is great 
+Apr 16 14:06:50 <bk2> when is the deadline? dead allready?
+Apr 16 14:07:22 <bk2> (sorry for not beeing more there about this - i just found a real job in a big art gallery in brusells, and was very into this recently)
+Apr 16 14:07:46 <paljudy_> Yes...likewise the workshops need to be performances...interesting for everyone, not university style presentations
+Apr 16 14:08:10 <paljudy_> I know....about $$...I am so broke 
+Apr 16 14:08:19 <bk2> (all the names will roll as credits at end of performance)
+Apr 16 14:08:34 <bk2> me too, quite broke
+Apr 16 14:08:48 <bk2> by the eway, my friend Psyche found a place to stay in nyc
+Apr 16 14:09:00 <paljudy_> ...but I am unemployable....imagine my CV
+Apr 16 14:09:20 <bk2> and about your funny idea, she told me humorously that she did it already in cannes with no effects..
+Apr 16 14:09:58 <paljudy_> ahhhh. now it is not just the action , but rather the PR that makes it work
+Apr 16 14:10:28 <bk2> most likely
+Apr 16 14:10:29 <paljudy_> Also....Aether....where's the t-shirt
+Apr 16 14:10:49 <paljudy_> note that the mapping fest sells their own
+Apr 16 14:11:21 <bk2> in the future we could contact well in advancee the hosts (like mapping) to discuss this matter.
+Apr 16 14:11:33 <bk2> these kinf of matters.
+Apr 16 14:12:50 <bk2> my cv makes me quite a problem to find job as well. but i hope i found something really interesting. and unexpected.
+Apr 16 14:15:07 <bk2> i am going to work on more concise press release for everybody to send to their mailinglists now. 
+Apr 16 14:15:23 <bk2> did you quiote Sir Oliver Lodge?
+Apr 16 14:16:32 <bk2> nice quote anyway for us.
+Apr 16 14:17:18 <bk2> for the PR, i will not use html-mail (bold, italic and stuff), some people get it mixed up.
+Apr 16 14:20:44 <paljudy_> Is there a fee for either of these performances? The doll hse and getting a camera were a bit of expense?
+Apr 16 14:21:30 <paljudy_> I didn't use the Sir Oliver Lodge quote....I kept if very simple indeed
+Apr 16 14:25:10 <bk2> mapping or manizales don't pay aether. after the upcoming performances, we need to make calculations and payments, yes. shady matter still as we don't have any clear system. 
+Apr 16 14:26:20 <paljudy_> We do need something to sell
+Apr 16 14:26:48 <bk2> do we need it?
+Apr 16 14:28:21 <paljudy_> the up-side is that the actually performances are improving, but I am serious about figuring out the issues on the back end of this project is 
+Apr 16 14:28:53 <paljudy_> cricial to advancing the genre of this kind of discipline.....crucial
+Apr 16 14:32:45 <bk2> i understand this fully and agree with you. i am concetrated to work on mail and update of site.
+Apr 16 14:32:51 <paljudy_> I am still in touch with 'Creative Capital' grant. Its value is that it mentors on the $ practical side
+Apr 16 14:32:51 <bk2> check the update by the way
+Apr 16 14:32:58 <paljudy_> will do
+Apr 16 14:33:00 <bk2> http://1904.cc/aether/
+Apr 16 14:33:50 <bk2> pragmatic $ side. i want to think about it more. not right now :-) 
+Apr 16 14:34:05 <bk2> think about it in group, indeed, it's good.
+Apr 16 14:35:59 <paljudy_> looks good.....I like the way the'special guest' item is listed. we will be able to ask almost any composer to do this once we can pay them something or get a gallery to commission them
+Apr 16 14:36:21 <paljudy_> is it linked.....search engines by guest's name/
+Apr 16 14:39:26 * aleij (n=ad@mailhost.ecole-art-aix.fr) has joined #aether9
+Apr 16 14:39:56 <bk2> gday alejo
+Apr 16 14:40:20 <bk2> site beeing updated - casse-tete with the various dates...
+Apr 16 14:41:17 <paljudy_> I have remembered that I was to write a couple of lines on the CMY performance....will try to do this soon/today
+Apr 16 14:41:46 <paljudy_> mornin' Alejo
+Apr 16 14:48:38 * NUNICK (n=paulavel@190.7.151.194) has joined #aether9
+Apr 16 14:49:00 <NUNICK> hi, so sorry i felt sleep
+Apr 16 14:49:41 <NUNICK> hi, i suppose rehersal is finsh now
+Apr 16 14:49:46 <NUNICK> :S
+Apr 16 14:52:26 <bk2> hi paula. manu updates the website. i prepare a mail announcment for the performance.
+Apr 16 14:57:38 <aleij> ola paljudy_ ola bk2 NUNICK aether9 
+Apr 16 15:13:04 * NUNICK has quit (Read error: 104 (Connection reset by peer))
+Apr 16 15:15:35 <bk2> people who chek get the announcment here http://1904.cc/aether/live/08_04_noborder/
+Apr 16 15:18:41 * NUNICK (n=paulavel@190.7.151.194) has joined #aether9
+Apr 16 15:54:03 * NUNICK (n=paulavel@190.7.151.194) has left #aether9
+Apr 16 16:18:23 <bk2> judy, i just sent a simple PR mail on the list
+Apr 16 16:19:42 * NUNICK (n=paulavel@190.7.151.194) has joined #aether9
+Apr 16 16:21:13 <NUNICK> bboris, i called a taxi, i'm going to alianza francesa to install things, test s and be preapred for ichat session
+Apr 16 16:21:22 * NUNICK has quit (Client Quit)
+Apr 16 16:21:38 <bk2> ok
+Apr 16 17:12:55 * aleij has quit ()
+Apr 16 17:20:42 * aleij (n=ad@mailhost.ecole-art-aix.fr) has joined #aether9
+Apr 16 17:21:39 <aleij> back
+Apr 16 17:32:51 <aleij> bk2: aether9: you around?
+Apr 16 17:46:26 * ideacritik_ (n=ideacrit@145.24.243.165) has joined #aether9
+Apr 16 17:46:41 <ideacritik_> ahah! 
+Apr 16 17:47:06 <ideacritik_> howdy - how fantastic we are on IRC! 
+Apr 16 17:47:35 <ideacritik_> i was wondering if anyone in this here channel is also joinning the talk with 'the league'
+Apr 16 17:50:31 <aleij> ideacritik_: que tal!
+Apr 16 17:50:44 <aleij> yes is nice to have IRC back
+Apr 16 17:50:57 <aleij> i mean, is far easier for me to follow :)
+Apr 16 17:51:16 <aleij> as for the talk, i will like to join in
+Apr 16 17:51:19 <aleij> i have some time
+Apr 16 17:51:36 <ideacritik_> hola!
+Apr 16 17:51:41 <aleij> but im not sure if already to late to send my ichat screen name
+Apr 16 17:52:03 <ideacritik_> aleij:  i might join if no one comes to this tutorial - i havent read all the mails yet...
+Apr 16 17:52:06 <bk2> hi
+Apr 16 17:52:11 <ideacritik_> ah - i have to install ichat now then.
+Apr 16 17:52:55 <aleij> whats you ichat id?
+Apr 16 17:53:17 <ideacritik_> aleij:  have to install now... momentito....
+Apr 16 17:53:24 <aleij> np
+Apr 16 17:55:26 <ideacritik_>  i hope we stick with IRC... its so much easier to follow with the 'naming' thing.... 
+Apr 16 17:56:12 <ideacritik_> (silly me - i of course have it already being a mac osx user!!
+Apr 16 17:57:58 <aleij> sure
+Apr 16 17:58:07 <aleij> is the account that takes some time
+Apr 16 17:58:14 <aleij> i have one since ages
+Apr 16 17:58:19 <aleij> alejoo@mac.com
+Apr 16 17:58:24 <ideacritik_> damn i did something wrong... and now... merde.
+Apr 16 17:58:30 <aleij> hehe
+Apr 16 17:58:33 <aleij> what?
+Apr 16 17:58:39 <ideacritik_> quelle connerie!!!
+Apr 16 17:58:59 <ideacritik_> calma l..... calma....
+Apr 16 18:03:21 <ideacritik_> this is ridiculous - i change the password over and over again - quit program and restart - and i am told screen name of password is incorrect... !?
+Apr 16 18:07:38 <ideacritik_> aleij: if i understand correctly - i have a 60-day trial for free and then... $$$ - all this for a .Mac iChat screen name? es necessario??
+Apr 16 18:08:03 <aleij> the account will continue to work
+Apr 16 18:08:11 <aleij> you wont have all that iShit
+Apr 16 18:08:27 <aleij> i meant
+Apr 16 18:08:32 <aleij> the account will continue to work for ichat
+Apr 16 18:08:51 <aleij> the rest, email, webspace, etc will be pagando
+Apr 16 18:32:55 * ideacritik_ has quit ()
+Apr 16 18:35:22 * NUNICK (n=paulavel@adsl190-28-132-121.epm.net.co) has joined #aether9
+Apr 16 18:43:01 * ideacritik (n=ideacrit@145.24.243.165) has joined #aether9
+Apr 16 18:43:51 <ideacritik> all -- is the chat going in with the league - is it too late2join or?.... just wondering if i create this ichat account now or not... 
+Apr 16 18:44:19 <aether9> i can give you one...
+Apr 16 18:44:31 <aether9> have a few bogus accounts
+Apr 16 18:49:59 <NUNICK> i'm using username:  kinetoscop
+Apr 16 18:50:11 <NUNICK> nunick it is me, paula
+Apr 16 18:50:28 <NUNICK> and i dont know why i can not see the ichat going
+Apr 16 18:50:38 <NUNICK> i'm connected since a while ago....
+Apr 16 18:51:06 <NUNICK> audrey, si tu arrives a le faire invite moi au chat
+Apr 16 18:51:31 <NUNICK> j'ai crit a lucy mais elle ne rponds pas... pour le moment
+Apr 16 18:52:16 <NUNICK> on est en train de peindre les murs, de mêtre l'espace un peux mieux adapté
+Apr 16 18:56:34 <aleij> paula, audrey, seems they are having the usual 
+Apr 16 18:56:42 <aleij> connecting issues
+Apr 16 19:01:32 * ideacritik has quit (Read error: 110 (Connection timed out))
+Apr 16 19:06:49 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-88005fb7d1ffc221) has joined #aether9
+Apr 16 19:09:32 * fe2cruz has quit (Client Quit)
+Apr 16 19:22:10 * NUNICK has quit ()
+Apr 16 19:32:29 <aleij> that ichat chat is taking forever
+Apr 16 19:32:38 <aleij> adding people one by one
+Apr 16 19:47:26 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-bc0154d02f85ffce) has joined #aether9
+Apr 16 20:09:57 * paljudy_ has quit ("Leaving")
+Apr 16 20:46:30 * bk2 has quit ("Leaving")
+Apr 16 20:59:24 * Disconnected ().
+**** ENDING LOGGING AT Wed Apr 16 20:59:24 2008
+
+**** BEGIN LOGGING AT Thu Apr 17 00:14:20 2008
+
+Apr 17 00:14:20 * Now talking on #aether9
+Apr 17 00:14:20 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 17 00:14:20 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
+Apr 17 00:40:18 * Disconnected ().
+**** ENDING LOGGING AT Thu Apr 17 00:40:18 2008
+
+**** BEGIN LOGGING AT Thu Apr 17 10:26:19 2008
+
+Apr 17 10:26:19 * Now talking on #aether9
+Apr 17 10:26:19 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 17 10:26:19 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
+Apr 17 10:26:52 <aether9> hey, you seem to never leave that channel ;)
+Apr 17 11:24:16 * aleij has quit ()
+Apr 17 11:47:48 * aleij (n=ad@mailhost.ecole-art-aix.fr) has joined #aether9
+**** ENDING LOGGING AT Thu Apr 17 14:33:16 2008
+
+**** BEGIN LOGGING AT Thu Apr 17 16:15:35 2008
+
+Apr 17 16:15:35 * Now talking on #aether9
+Apr 17 16:15:35 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 17 16:15:35 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
+Apr 17 16:16:13 <aether9> boris, just did the operation that will allow to track the number of connections
+Apr 17 16:16:44 <aether9> will also show us if the connection is through main page, or through mirror server;)
+Apr 17 16:17:10 <bk2> sup
+Apr 17 16:17:27 <bk2> tu connais magasin de deguisement?
+Apr 17 16:17:42 <bk2> ah voila ... la gait?, je vais les appeler
+Apr 17 16:17:56 <aether9> dans les rues basses, sorte de passage entre rues basses et la rue devant l'allhambra
+Apr 17 16:18:02 <bk2> ouais
+Apr 17 16:18:13 <aether9> et aussi un ptit magasin pres du restaurant "l'eschalotte"
+Apr 17 16:20:09 <bk2> je me souviens
+Apr 17 16:23:49 <bk2> ok ils ont cela ? la gait?... ils ont pas de gros ?cran au local de bliscappen par hasard, ?a m'allegerait...
+Apr 17 16:24:58 <aether9> pas que je sache.. mais ptet que le imac de philippo + la ptit tele de surveillance feront l'affaire
+Apr 17 16:25:04 <bk2> ?
+Apr 17 16:25:21 <bk2> il y a un imac?
+Apr 17 16:25:35 <aether9> oui, vieux imac trainant dans un coin
+Apr 17 16:25:46 <bk2> un de ces trucs color?s et ronds?
+Apr 17 16:25:57 <aether9> oui, celui ci est vert-bleu
+Apr 17 16:28:40 <bk2> je vais prendre l'?cran. tu peux prendre un adaptateur blanc?
+Apr 17 16:28:54 <bk2> (j'ai regard?, c'est le format "normal"
+Apr 17 16:29:09 <bk2> y a t'il suffisament de prises rallonges au local?
+Apr 17 16:29:12 <aether9> ok, je vais prendre ce que j'ai..
+Apr 17 16:29:22 <aether9> je vais prendre des multiprises et rallonges egalement
+Apr 17 16:32:49 <bk2> we need for image:
+Apr 17 16:32:50 <bk2> > wireless cam gear
+Apr 17 16:32:50 <bk2> > surveillance cam gear
+Apr 17 16:32:50 <bk2> > minidv cam gear
+Apr 17 16:33:32 <bk2> moi j'ai pas de chargeur pour ma camera sony (perdu) - donc prends ta camera canon aussi.
+Apr 17 16:33:45 <aether9> yep, ok
+Apr 17 16:35:44 <bk2> et ta sony aussi de toute fa?on, la mienne avait un probleme myt?rieux r?cemment.
+Apr 17 16:37:27 <aether9> of course
+Apr 17 16:39:27 * anthony.freenode.net irc.freenode.net :0 Irvine, CA, US
+Apr 17 16:39:27 * brown.freenode.net irc.freenode.net :0 Madison, WI, US
+Apr 17 16:39:27 * calkins.freenode.net irc.freenode.net :0 Milan, IT
+Apr 17 16:39:27 * calvino.freenode.net irc.freenode.net :0 Milan, IT
+Apr 17 16:39:27 * card.freenode.net irc.freenode.net :0 Washington, DC, US
+Apr 17 16:39:27 * clarke.freenode.net irc.freenode.net :0 Fremont, California, US
+Apr 17 16:39:27 * einstein.freenode.net irc.freenode.net :0 Corvallis, OR, US
+Apr 17 16:39:27 * heinlein.freenode.net irc.freenode.net :0 Missoula, MT, US
+Apr 17 16:39:27 * jordan.freenode.net irc.freenode.net :0 Evry, FR, EU
+Apr 17 16:39:27 * kornbluth.freenode.net irc.freenode.net :0 Frankfurt, DE, EU
+Apr 17 16:39:27 * kubrick.freenode.net irc.freenode.net :0 Los Angeles, CA, US
+Apr 17 16:39:27 * niven.freenode.net irc.freenode.net :0 Corvallis, OR, US
+Apr 17 16:39:27 * orwell.freenode.net irc.freenode.net :0 Helsinki, FI, EU
+Apr 17 16:39:27 * sendak.freenode.net irc.freenode.net :0 vilnius, Lithuania, EU
+Apr 17 16:39:27 * simak.freenode.net irc.freenode.net :0 Ume, SE, EU
+Apr 17 16:39:27 * wolfe.freenode.net irc.freenode.net :0 Manchester, England, UK, EU
+Apr 17 16:39:27 * zahn.freenode.net irc.freenode.net :0 Corvallis, OR, US
+Apr 17 16:39:27 * zelazny.freenode.net irc.freenode.net :0 Corvallis, OR, US
+Apr 17 16:39:27 * leguin.freenode.net irc.freenode.net :0 Ume, SE, EU
+Apr 17 16:39:27 * simmons.freenode.net irc.freenode.net :0 San Diego, CA, US
+Apr 17 16:39:27 * * :End of /LINKS list.
+**** ENDING LOGGING AT Thu Apr 17 16:40:34 2008
+
+**** BEGIN LOGGING AT Thu Apr 17 16:40:51 2008
+
+Apr 17 16:40:51 * Now talking on #aether9
+Apr 17 16:40:51 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 17 16:40:51 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
+Apr 17 16:40:55 <aether9> ééàà
+Apr 17 16:41:14 <aether9> accents working now?
+Apr 17 16:41:22 <bk2> oui
+Apr 17 16:41:40 <aether9> i switched to ISO-8859-1
+Apr 17 16:42:04 * aleij (n=ad@mailhost.ecole-art-aix.fr) has joined #aether9
+Apr 17 17:04:33 * paljudy_ (n=Nylon222@user-12lde4j.cable.mindspring.com) has joined #aether9
+Apr 17 17:05:36 <aether9> hi judy!
+Apr 17 17:06:34 <paljudy_> Hi....just seeing if anyone's around; back at noon NYC time....Good Morning 
+Apr 17 17:07:07 * paljudy_ has quit (Client Quit)
+Apr 17 17:07:12 * bk2 has quit ("Leaving")
+Apr 17 17:09:51 * bk2 (n=bk@177-164.203-62.cust.bluewin.ch) has joined #aether9
+Apr 17 17:13:54 <bk2> i go now, see you in a bit manu
+Apr 17 17:13:55 * bk2 has quit (Client Quit)
+Apr 17 17:23:18 * NUNICK (n=paulavel@adsl190-28-132-216.epm.net.co) has joined #aether9
+Apr 17 17:23:34 <NUNICK> salut
+Apr 17 17:23:43 <aether9> hola!
+Apr 17 17:23:56 <aether9> comment va le festival?
+Apr 17 17:23:56 <NUNICK> je vais devenir fou avec tout cette logistique du lieu
+Apr 17 17:24:13 <aether9> j'imagine.. 
+Apr 17 17:24:57 <aether9> but it's gonna be great i'm sure
+Apr 17 17:25:16 <NUNICK> du coup j'ai plein de gens pour m'aider, mais les gerer tous est Ã  la fois un bordel
+Apr 17 17:25:34 <NUNICK> tiens, manu puis alejo, vous voulais, je vous montre l'espace?
+Apr 17 17:25:44 <NUNICK> sur le patch?
+Apr 17 17:25:59 <NUNICK> il faut que j'iinstalle evocam
+Apr 17 17:26:06 <NUNICK> je ne sais pas encore comment Ã§a marche
+Apr 17 17:26:48 <NUNICK> alejo, je n'arrette pas d'Ã©crire /     nunick     puis paula et Ã§a ne marche plus. alors je m'apelle nunick
+Apr 17 17:26:48 * aleij_ (n=ad@mailhost.ecole-art-aix.fr) has joined #aether9
+Apr 17 17:27:07 <NUNICK> alejo, je n'arrette pas d'Ã©crire /    nunick    puis paula et Ã§a ne marche plus. alors je m'apelle nunick
+Apr 17 17:27:34 * aleij has quit (Read error: 104 (Connection reset by peer))
+Apr 17 17:28:07 <aether9> je m'y suis deja jabitué
+Apr 17 17:30:36 <NUNICK> jaja
+Apr 17 17:30:58 <aether9> j'ai essayé de réparer mes accents, mais maintenant c'est les tiens que je ne vois plus correctement...
+Apr 17 17:31:18 <NUNICK> manu, alors je vois sur le sites mirroir que le fade effect est maintenant le choix
+Apr 17 17:31:35 <aether9> oui, pour les mirroirs.., pas pour l'interface principale
+Apr 17 17:31:42 <aether9> c'est un test
+Apr 17 17:32:24 <NUNICK> ok,
+Apr 17 17:32:34 <NUNICK> alors la principal est noborder
+Apr 17 17:33:02 <aether9> oui, je pense mettre la noborder aussi sur les miroirs, mais ça me prendra un peu de temps
+Apr 17 17:33:11 <aether9> ça ne sera pas pr aujourd'hui
+Apr 17 17:52:56 <aether9> bon, je vais sortir maintenant.
+Apr 17 17:53:01 <NUNICK> salut
+Apr 17 17:53:11 <aether9> on va prendre un verre et discuter des derniers points avec boris
+Apr 17 17:53:28 <aether9> puis nous irons au local de répétition du groupe
+Apr 17 17:53:41 <aether9> c'est depuis là que nous allons répéter et performer...
+Apr 17 17:54:00 <aether9> alors à plus tard
+Apr 17 17:54:04 * NUNICK has quit (Read error: 104 (Connection reset by peer))
+**** ENDING LOGGING AT Thu Apr 17 17:56:11 2008
+
+**** BEGIN LOGGING AT Thu Apr 17 19:58:51 2008
+
+Apr 17 19:58:51 * Now talking on #aether9
+Apr 17 19:58:51 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 17 19:58:51 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
+Apr 17 19:58:51 * #aether9 :[freenode-info] why register and identify? your IRC nick is how people know you. http://freenode.net/faq.shtml#nicksetup
+Apr 17 19:58:53 >NickServ< identify ****
+Apr 17 19:58:54 -NickServ- Password accepted - you are now recognized
+Apr 17 19:58:54 * services. sets mode +e aether9
+Apr 17 19:59:56 <ideacritik> fe2cruz: shirley - its all a workin'
+Apr 17 20:00:09 <NUNICK> i'm try
+Apr 17 20:00:24 <NUNICK> ing to use new patc, mais encore quelque problemes
+Apr 17 20:00:46 <NUNICK> j'ai renomÃ© l'archive servers-example.txt"
+Apr 17 20:00:46 <ideacritik> ill be back in 5 - getting my 'location paper print'
+Apr 17 20:01:02 <NUNICK> to servers.txt
+Apr 17 20:01:14 <NUNICK> puis je dois faire quoi.
+Apr 17 20:01:22 <NUNICK> THE QUESTION IS:
+Apr 17 20:02:02 <NUNICK> in the workshop, people will install runtime, jittler, the new patch
+Apr 17 20:02:32 <fe2cruz> paula, what email are you using now
+Apr 17 20:02:33 <NUNICK> alors je ne vais pas leur donner le code pour le serveur
+Apr 17 20:02:36 <NUNICK> servers
+Apr 17 20:02:47 <NUNICK>  ciruela@une.net.co
+Apr 17 20:03:26 <fe2cruz> check it in a few seconds
+Apr 17 20:03:30 <paljudy_> ??Error....Jit.qt. grab: no grabber componant currently open.....and I have relaunched.....is it something on aether end?
+Apr 17 20:04:09 <fe2cruz> judy did you reload to the new patch?
+Apr 17 20:04:29 <paljudy_> no...manu said not to as I don't do webcams
+Apr 17 20:05:41 <paljudy_> now it says a grbber componant is already open
+Apr 17 20:07:09 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 17 20:09:10 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-29cdcda16443bb02) has joined #aether9
+Apr 17 20:09:34 <fe2cruz> eek got disconnected
+Apr 17 20:09:54 <chloe_> I am preparing for rehearsal. I have to connect a couple of things
+Apr 17 20:10:06 <chloe_> Laure is installing IRC.
+Apr 17 20:10:15 * NUNICK_ (n=paulavel@adsl190-28-132-216.epm.net.co) has joined #aether9
+Apr 17 20:10:21 <chloe_> X-chat and stuff
+Apr 17 20:10:23 <paljudy_> also...am a bit blurry on the exact giss url for my VLC....please remind me
+Apr 17 20:10:29 <chloe_> she has just arrived
+Apr 17 20:10:45 <ideacritik> paljudy_: 
+Apr 17 20:11:01 <ideacritik> paljudy_: did you choose server - and osx and then live input?
+Apr 17 20:11:41 <NUNICK_> hey
+Apr 17 20:11:45 <paljudy_> yes
+Apr 17 20:11:45 <ideacritik> NUNICK: i am no longer sure that we should use the test frame beccause i dont understand it... aether9 ?
+Apr 17 20:11:51 <paljudy_> server 2
+Apr 17 20:12:04 <ideacritik> paljudy_: and nothing in your squre?
+Apr 17 20:12:05 <fe2cruz> borwserbased IRC http://www.mibbit.com/
+Apr 17 20:12:21 <paljudy_> relaunched and I'm up & in
+Apr 17 20:12:22 <NUNICK_> a friend is coming to stream the workshop pour son site.
+Apr 17 20:12:32 <ideacritik> paljudy_: very good!!!!
+Apr 17 20:12:35 <NUNICK_> for his blog
+Apr 17 20:12:45 <ideacritik> NUNICK: tu vas nous donner le url?
+Apr 17 20:12:51 <ideacritik> tout a lheure.
+Apr 17 20:12:52 <NUNICK_> but if the connection is to slowly we must stop
+Apr 17 20:12:56 <NUNICK_> anyway
+Apr 17 20:13:11 <NUNICK_> take the link, it is very iteresting the proyect he is doing
+Apr 17 20:13:13 <ideacritik> NUNICK: but for now we rehearse we use patch 394 and no funny test server business....
+Apr 17 20:13:23 <NUNICK_> he worked with us in tremor festival.
+Apr 17 20:13:24 <NUNICK_> to bring some clarity into this:
+Apr 17 20:13:24 <NUNICK_> * EZ-7z_v.0.6_OSX = a little thingie that helps to decompress the 
+Apr 17 20:13:24 <NUNICK_> "servers.7z" file (which is encrypted to protect our most sensitive 
+Apr 17 20:13:25 <NUNICK_> information: the server access codes).
+Apr 17 20:13:25 <paljudy_> now ...its just giss for sound that I need url on VLC...for stream selection
+Apr 17 20:13:25 <NUNICK_> * Pd-0.39.3-extended = Pure Data : the open-source alternative to 
+Apr 17 20:13:25 <NUNICK_> MaxMSP (running on Linux, OSX and Windows), which would be great for 
+Apr 17 20:13:27 <NUNICK_> us to use, but it's not very easy for beginners. Luka, who knows the 
+Apr 17 20:13:29 <NUNICK_> program well, wrote a version of the upload patch (however anybody 
+Apr 17 20:13:31 <NUNICK_> who uses it will need to dig a bit inside the code to update the 
+Apr 17 20:13:33 <NUNICK_> server list).
+Apr 17 20:13:35 * NUNICK_ has quit (Excess Flood)
+Apr 17 20:13:48 <fe2cruz> giss.tv:8000/aether.mp3
+Apr 17 20:15:05 <paljudy_> thanks
+Apr 17 20:15:10 <bk2> we are getting ready... bliscappen band is here as well... they will play for rehearsal during our rehearsal. is the manizales musician going to play for the rehearsal???
+Apr 17 20:15:40 * NUNICK_ (n=paulavel@adsl190-28-132-216.epm.net.co) has joined #aether9
+Apr 17 20:16:05 <ideacritik> who is NUNICK_?
+Apr 17 20:16:07 <NUNICK_> sorry i did copy paste in the wrong place
+Apr 17 20:16:11 <NUNICK_> paula
+Apr 17 20:16:17 <ideacritik> you are 2 now?
+Apr 17 20:16:44 * saylor (n=saylor2@d83-182-166-110.cust.tele2.be) has joined #aether9
+Apr 17 20:16:45 <NUNICK_> dont konw why
+Apr 17 20:17:03 <bk2> is the manizales musician going to play for the rehearsal???
+Apr 17 20:17:08 <NUNICK_> how did you said i can change my name
+Apr 17 20:17:10 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 17 20:17:18 <saylor> finaly there
+Apr 17 20:17:28 <ideacritik> laure! great nick!!
+Apr 17 20:17:29 <NUNICK_> e
+Apr 17 20:17:30 <paljudy_> fe2.....??  ps: cannot peek
+Apr 17 20:17:31 <paljudy_>        main: no suitable demux module for `http/://giss.tv:8000.mp3'
+Apr 17 20:17:49 <NUNICK_> no, the muscician has not arrive yet
+Apr 17 20:17:49 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-136fd2ee4db8cdc9) has joined #aether9
+Apr 17 20:17:57 <NUNICK_> i 'm comming nuts
+Apr 17 20:18:10 <paljudy_> can do it w/o sound.....not crucial I suppose
+Apr 17 20:18:31 <saylor> hello everyone. how is it going ?
+Apr 17 20:18:37 <saylor> whos nunick ?
+Apr 17 20:18:43 <bk2> who's saylor?
+Apr 17 20:18:46 <saylor> oh chris
+Apr 17 20:18:46 <NUNICK_> this is the streaming page
+Apr 17 20:18:48 <NUNICK_> http://www.ufftv.blogspot.com/
+Apr 17 20:18:48 <saylor> laure
+Apr 17 20:18:49 <bk2> $nunick is paula
+Apr 17 20:19:07 <saylor> ok
+Apr 17 20:19:09 <NUNICK_> nunickpaula
+Apr 17 20:19:13 <NUNICK_> nunick/paula
+Apr 17 20:19:29 <NUNICK_> j
+Apr 17 20:19:46 <aleij_> solo esto: /nick paula
+Apr 17 20:19:52 <aleij_> (bis)
+Apr 17 20:20:05 <NUNICK_> chris, so this is a server to do streaming also?
+Apr 17 20:20:06 <NUNICK_> http://www.mibbit.com/
+Apr 17 20:20:13 <ideacritik> NUNICK: am checking the link...  its crazy - like 9 frames
+Apr 17 20:20:29 <NUNICK_> alejo : lo mismo dos veces junto?
+Apr 17 20:20:43 <NUNICK_> dj
+Apr 17 20:20:45 <ideacritik> NUNICK: tres veces!
+Apr 17 20:21:02 <aleij_> naaa
+Apr 17 20:21:05 <aleij_> solo esto
+Apr 17 20:21:06 <NUNICK_> dj
+Apr 17 20:21:11 <aleij_>  /nick paula
+Apr 17 20:21:15 <aleij_> copy y paste
+Apr 17 20:21:15 <aether9> here geneva, 90% of the setup is ready
+Apr 17 20:21:24 <NUNICK_> eso hago pero no funciona
+Apr 17 20:21:36 <aleij_> en el espacio donde escribis
+Apr 17 20:21:37 <NUNICK_> copy paste pero no escribe nada
+Apr 17 20:21:42 <NUNICK_> si
+Apr 17 20:21:47 <aleij_> que programa?
+Apr 17 20:21:56 <NUNICK_> colloquy
+Apr 17 20:22:01 <aleij_> eso uso
+Apr 17 20:22:04 <aleij_> y si funciona
+Apr 17 20:22:11 * aleij_ is now known as dspstv
+Apr 17 20:22:19 <NUNICK_> od
+Apr 17 20:22:29 * dspstv is now known as paulav
+Apr 17 20:22:33 <NUNICK_> jdk+
+Apr 17 20:22:49 <NUNICK_> ps
+Apr 17 20:22:52 <paulav> try another nick
+Apr 17 20:22:54 <NUNICK_> kd
+Apr 17 20:23:11 <paulav> like in: /nick paulamani
+Apr 17 20:23:28 <NUNICK_> paula
+Apr 17 20:23:30 * paulav is now known as aleij
+Apr 17 20:24:11 <aleij> you must write this --> /nick before the nunick
+Apr 17 20:25:05 <ideacritik> question : BEFORE START : Uploading of
+Apr 17 20:25:06 <ideacritik> the name OF PERFORMERS
+Apr 17 20:25:06 <ideacritik> LOCATION****************** --- how to do this?
+Apr 17 20:25:19 <fe2cruz> countdown to start? who is the caller of acts?
+Apr 17 20:25:20 <NUNICK_> j+
+Apr 17 20:25:21 <ideacritik> simply with a jpg of text - or is there someone in charge of this....?
+Apr 17 20:25:35 <NUNICK_> m
+Apr 17 20:26:15 <NUNICK_> no se si estoy tÃ¡para o que, mandÃ¡melo por gmail
+Apr 17 20:26:17 <NUNICK_> uf
+Apr 17 20:26:25 <NUNICK_> nick ta mere
+Apr 17 20:26:28 <aleij> que cosa por gmail?
+Apr 17 20:26:33 <NUNICK_> nunick no mother
+Apr 17 20:26:57 <NUNICK_> exactamente lo que debo escribir, porque, o no entiendo, o no funciona
+Apr 17 20:26:59 * NUNICK has quit (Read error: 113 (No route to host))
+Apr 17 20:27:00 <NUNICK_> tonces...
+Apr 17 20:27:29 <aleij> te mando por gmail esto: /nick paulavelez
+Apr 17 20:27:33 <aleij> es lo mismo
+Apr 17 20:28:07 <NUNICK_> copy paste
+Apr 17 20:28:08 * NUNICK_ is now known as paulavelez
+Apr 17 20:28:10 <paulavelez> jd
+Apr 17 20:28:11 <paulavelez> ya
+Apr 17 20:28:13 <aleij> bravo!!
+Apr 17 20:28:13 <paulavelez> que tal
+Apr 17 20:28:16 <paulavelez> raro
+Apr 17 20:28:25 <paulavelez> d
+Apr 17 20:28:29 * paulavelez is now known as paulav
+Apr 17 20:28:45 <paulav> jd
+Apr 17 20:29:17 <aether9> paula, whats the situation?
+Apr 17 20:30:11 <ideacritik> question : BEFORE START : Uploading of the name OF PERFORMERS LOCATION****************** --- do we do this individually?  
+Apr 17 20:30:50 <fe2cruz> judy's looks ok
+Apr 17 20:31:12 <fe2cruz> just text right no bodies needed
+Apr 17 20:31:44 <paljudy_> oh no....jpeg for location has 2 white lines??? I guess I'll do it again before performance
+Apr 17 20:32:00 <fe2cruz> the lines look cool
+Apr 17 20:32:06 * saylor has quit ("Leaving")
+Apr 17 20:33:59 <ideacritik> how bout this? NL in >7
+Apr 17 20:37:13 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 17 20:37:43 * saylor (n=saylor2@d83-182-166-110.cust.tele2.be) has joined #aether9
+Apr 17 20:37:49 <saylor> and back?
+Apr 17 20:38:25 <ideacritik> so what is going on? paulav ?
+Apr 17 20:38:40 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-39ac8ddff92de622) has joined #aether9
+Apr 17 20:38:59 <fe2cruz> disconnected again DAMN YOU ISP
+Apr 17 20:39:05 <bk2> for the salutes, credits, names, etc, let's see this during the workshop....
+Apr 17 20:39:08 <bk2> er
+Apr 17 20:39:09 <bk2> er
+Apr 17 20:39:11 <bk2> ???
+Apr 17 20:39:12 <aether9> who is supervising this rehearsal?
+Apr 17 20:39:17 <aether9> when can we start?
+Apr 17 20:39:18 <bk2> soora
+Apr 17 20:39:19 <bk2> y
+Apr 17 20:39:20 <aether9> ready here finally
+Apr 17 20:39:26 <bk2> yes
+Apr 17 20:39:30 <bk2> is musician there?
+Apr 17 20:39:40 <bk2> if no, we can stream bliscappen?
+Apr 17 20:39:42 <ideacritik> im ready too - we need to know paulav 's situation
+Apr 17 20:39:47 <paulav> i'm not ready
+Apr 17 20:39:50 <paulav> go ahead
+Apr 17 20:39:55 <paulav> but i have some problems here
+Apr 17 20:40:08 <paulav> and the musician will arrive in a moment
+Apr 17 20:40:19 <paulav> i can not be very active
+Apr 17 20:40:29 <ideacritik>  paulav  - you mean go ahead with rehearsal without you?
+Apr 17 20:40:36 <paulav> and i'm trying to configure the new patce for teh workshop
+Apr 17 20:40:44 <paulav> i havent arrive yet
+Apr 17 20:41:13 <ideacritik> paulav: i think we should just use 394/395 without worrying about testframe because i dont get it either...
+Apr 17 20:41:24 <saylor> the server on patch 394 dont get selected
+Apr 17 20:41:36 <saylor> can someone give me a hint 
+Apr 17 20:41:44 <ideacritik> saylor: have you decrypted the servers.7z file??
+Apr 17 20:42:03 <ideacritik> using either the Ez 7.app or 
+Apr 17 20:42:12 * fe2cruz has quit (Client Quit)
+Apr 17 20:42:23 <aether9> question: who is saylor ;)?
+Apr 17 20:42:28 <bk2> laure
+Apr 17 20:42:30 <ideacritik> otherwise saylor  - i can send you .txt file by mail
+Apr 17 20:42:31 <saylor> laure
+Apr 17 20:42:39 <aether9> ok
+Apr 17 20:43:00 <saylor> yes please
+Apr 17 20:43:05 <ideacritik> saylor: have you the servers.txt file in your folder irght now?
+Apr 17 20:43:10 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-783411f2ecfbb0cd) has joined #aether9
+Apr 17 20:43:12 <ideacritik> or only the .7z and .rar?
+Apr 17 20:44:15 <aether9> ok, meahwhile the band is playing, and i stream their music
+Apr 17 20:44:16 <ideacritik> saylor: (in the upload_394 folder i meant)
+Apr 17 20:44:50 <fe2cruz> sounds clear and good, so who is the act caller outer?
+Apr 17 20:44:50 <saylor> ok its settled
+Apr 17 20:44:58 <saylor> gr?ce ? chlo?
+Apr 17 20:45:14 <ideacritik> saylor: ca va? pas besoin du fichier?
+Apr 17 20:45:28 <bk2> chlo?, you want that the cam.girls withtout colors excpet at the end, right? 
+Apr 17 20:45:51 <chloe_> right
+Apr 17 20:46:08 <chloe_> could you BK, upload somewehere and elsewhere?
+Apr 17 20:46:29 <chloe_> but the cam girls a
+Apr 17 20:46:38 <chloe_> have to be well contrasted
+Apr 17 20:46:49 <bk2> ok 
+Apr 17 20:47:27 <chloe_> are we actually ready to do the rehearsal?
+Apr 17 20:48:36 <chloe_> Boris: are you going to film the chat on IRC (I mean between LRRH and Wolf?)
+Apr 17 20:50:04 <saylor> non merci audrey
+Apr 17 20:52:26 <bk2>  yes, i film the irc chat!!!
+Apr 17 20:52:33 <bk2> i am prepared for this
+Apr 17 20:52:39 <bk2> and to film the camgirls
+Apr 17 20:52:54 <bk2> is it clear that Chlo? is supervising the event?
+Apr 17 20:53:34 <chloe_> so we begin as I see
+Apr 17 20:53:51 <chloe_> OK, everybody ready?
+Apr 17 20:53:52 <fe2cruz> yeah lets go
+Apr 17 20:54:23 <chloe_> dollhouse : this is a vers facial light
+Apr 17 20:54:40 <chloe_> might be good to have some source coming from the side
+Apr 17 20:54:45 <ideacritik> im ready
+Apr 17 20:55:18 <chloe_> but it is quite cool...
+Apr 17 20:55:34 <bk2> at begining, laure or chris you can take care of webcams? or i take care of some webcams?
+Apr 17 20:55:37 <chloe_> paula is ot participating right?
+Apr 17 20:55:43 <chloe_> not
+Apr 17 20:55:45 <paljudy_> i am following the 1 min...then 3 min script
+Apr 17 20:55:46 <chloe_> ?
+Apr 17 20:56:08 <chloe_> I will give the signals 
+Apr 17 20:56:13 <fe2cruz> yeah i can do 4&6 forrests cams
+Apr 17 20:56:19 <saylor> i can take care of 1 and 3
+Apr 17 20:56:24 <aether9> ok, we wait
+Apr 17 20:56:54 <chloe_> saylor, just for act 2 you mean
+Apr 17 20:57:10 <saylor> yes
+Apr 17 20:57:10 <bk2> laure, in "traffic-cams", "tomsk5" is fantastic!
+Apr 17 20:57:18 <saylor> ok
+Apr 17 20:57:37 <paljudy_> back to start?
+Apr 17 20:58:11 <chloe_> yes
+Apr 17 20:58:21 <bk2> we need a sign "new-york city" in the dollhouse (for performance...)
+Apr 17 20:58:29 <saylor> i ont have tomsk in my traffic cam
+Apr 17 20:58:41 <chloe_> yes, back to before start
+Apr 17 20:58:48 <saylor> boris do tomsk on 1 ill do forest on 3
+Apr 17 20:58:51 <saylor> yes ?
+Apr 17 20:59:01 <bk2> in RU cams, sorry laure
+Apr 17 20:59:11 <bk2> tomsk is a city in siberia
+Apr 17 20:59:12 <chloe_> so that I follow the chrono
+Apr 17 20:59:31 <bk2> why follow the chrono? timing is indication, no?
+Apr 17 20:59:48 <chloe_> yes, but I will try to follow the timing
+Apr 17 20:59:51 <bk2> ok
+Apr 17 20:59:52 <saylor> but its not a forest ?
+Apr 17 20:59:53 <ideacritik> i need cues on IRC if possible
+Apr 17 20:59:54 <bk2> ready here
+Apr 17 21:00:06 <bk2> day forests are crap iun my
+Apr 17 21:00:10 <chloe_> cues is indication?
+Apr 17 21:00:12 <bk2> humpble opinion
+Apr 17 21:00:19 <bk2> chlo? you do cues
+Apr 17 21:00:24 <chloe_> yes
+Apr 17 21:00:26 <ideacritik> chloe_: as in ACT 1 ... etc
+Apr 17 21:01:01 <chloe_> operator: before start
+Apr 17 21:01:10 <bk2> yes, geneva, ok
+Apr 17 21:01:15 <bk2> black for now...
+Apr 17 21:01:25 <chloe_> ok
+Apr 17 21:01:40 <chloe_> act 1 now
+Apr 17 21:01:56 <chloe_> Judy: show us image of LRRH
+Apr 17 21:02:05 <chloe_> when approaching dollhouse
+Apr 17 21:02:16 <bk2> and bliscappen is streamed... relod the button
+Apr 17 21:02:55 <chloe_> operator: image please
+Apr 17 21:03:44 <chloe_> act 2 now
+Apr 17 21:04:09 <chloe_> 1-3-4 6 -7 webcams
+Apr 17 21:04:20 <chloe_> sorry 1, 3, 4 , 7, 9
+Apr 17 21:04:33 <chloe_> nice saylor
+Apr 17 21:05:08 <chloe_> # 1
+Apr 17 21:05:42 <chloe_> LRRH image
+Apr 17 21:05:47 <chloe_> judy
+Apr 17 21:06:01 <fe2cruz> band goes in 4 no?
+Apr 17 21:06:06 <chloe_> 4 will be wolf
+Apr 17 21:06:23 <chloe_> close up on LRRH
+Apr 17 21:06:40 <chloe_> cool
+Apr 17 21:07:03 <bk2> sorry for problem with operator.
+Apr 17 21:07:09 <chloe_> act 3 now
+Apr 17 21:08:22 <chloe_> eslewhere and yorba lind (5 and 6 ) should be black
+Apr 17 21:08:39 <chloe_> bk you are allready in act 4
+Apr 17 21:09:00 <bk2> sorry
+Apr 17 21:09:26 <chloe_> what i f you upload th eband, please do it in frame 4
+Apr 17 21:09:30 <chloe_> not in 5
+Apr 17 21:09:42 <chloe_> act 4
+Apr 17 21:09:43 <bk2> sorry
+Apr 17 21:09:44 <chloe_> now
+Apr 17 21:09:55 <chloe_> girl in frame 1 and 6
+Apr 17 21:10:15 <chloe_> I have no more sound
+Apr 17 21:10:26 <chloe_> frame 6 girl
+Apr 17 21:12:10 <chloe_> act 5
+Apr 17 21:12:12 <chloe_> now
+Apr 17 21:12:19 <chloe_> frame 1 black
+Apr 17 21:12:41 <chloe_> frame 4 chat
+Apr 17 21:12:54 * paulav (n=paulavel@adsl190-28-132-216.epm.net.co) has left #aether9
+Apr 17 21:13:09 <chloe_> I'd say: Laure takes care of uploading the black frames
+Apr 17 21:13:24 <chloe_> chat in frame 4
+Apr 17 21:13:37 <chloe_> you are slow operators
+Apr 17 21:14:03 <saylor> ok
+Apr 17 21:15:36 <chloe_> the chat is not clear enough
+Apr 17 21:15:48 <chloe_> and why do we have the wolf images interfering
+Apr 17 21:15:57 <chloe_> ?
+Apr 17 21:16:06 <chloe_> frame 4 is a mess
+Apr 17 21:16:41 * NUNICK (n=paulavel@adsl190-28-132-216.epm.net.co) has joined #aether9
+Apr 17 21:16:44 <chloe_> we need to be able of folwing the chat otherwise there is no point
+Apr 17 21:16:58 <aether9> of course, sorry, thought it was still act4
+Apr 17 21:17:10 <NUNICK> do i use this chanel for the workshop
+Apr 17 21:17:19 <NUNICK> ?
+Apr 17 21:17:25 <ideacritik> NUNICK: better after rehearsal
+Apr 17 21:17:30 <chloe_> I thought you where not there
+Apr 17 21:17:32 <ideacritik> use #aether9workshop
+Apr 17 21:17:40 <NUNICK> coool
+Apr 17 21:17:40 <chloe_> act 6
+Apr 17 21:18:05 <chloe_> wolfs in frame 4
+Apr 17 21:18:13 <chloe_> turn their face to frame 5
+Apr 17 21:18:37 <chloe_> act 6 is actually act 7,
+Apr 17 21:18:53 <chloe_> frame 5 buildings
+Apr 17 21:19:06 <chloe_> what the fuck in frame 6
+Apr 17 21:19:43 * NUNICK has quit (Remote closed the connection)
+Apr 17 21:20:35 * NUNICK (n=paulavel@adsl190-28-132-216.epm.net.co) has joined #aether9
+Apr 17 21:21:06 <bk2> well there's no act6!?! sorry i thought we where at 7...
+Apr 17 21:21:11 <chloe_> act 8
+Apr 17 21:21:21 <chloe_> abstract shadows in frame 5
+Apr 17 21:22:18 <bk2> what about act 7????
+Apr 17 21:22:35 <chloe_> act 9
+Apr 17 21:23:18 <chloe_> judy, show me your tits
+Apr 17 21:23:59 * NUNICK (n=paulavel@adsl190-28-132-216.epm.net.co) has left #aether9
+Apr 17 21:24:12 <chloe_> wolf shadows chris
+Apr 17 21:25:50 <chloe_> phallus judy
+Apr 17 21:26:27 <chloe_> act 10
+Apr 17 21:26:38 <aleij> (aether.mp3 has no audio? or is only me that connects to a silent stream)
+Apr 17 21:26:51 <ideacritik> i hear nothing either....
+Apr 17 21:26:55 <aleij> k
+Apr 17 21:29:15 <chloe_> me neither
+Apr 17 21:29:27 <chloe_> act 11
+Apr 17 21:29:27 <bk2> manu told me sound was too weak
+Apr 17 21:29:32 <chloe_> or 12...
+Apr 17 21:29:32 <bk2> now?
+Apr 17 21:29:36 <chloe_> now
+Apr 17 21:29:47 <ideacritik> damn - there was no call for act 11....
+Apr 17 21:29:56 <chloe_> hunter
+Apr 17 21:30:29 <chloe_> in frame1
+Apr 17 21:30:37 <chloe_>  shooting frame 4
+Apr 17 21:30:39 <fe2cruz> just lost my patch
+Apr 17 21:30:48 <chloe_> shit
+Apr 17 21:31:05 <chloe_> BK upload you gi in frame 1
+Apr 17 21:31:08 <chloe_> please
+Apr 17 21:31:11 <fe2cruz> matrixx exporting image none 0
+Apr 17 21:31:17 <fe2cruz> i've never gotten that error?
+Apr 17 21:31:33 <ideacritik> fe2cruz: restart?
+Apr 17 21:31:52 <fe2cruz> i did
+Apr 17 21:32:01 <ideacritik> merde
+Apr 17 21:32:27 <fe2cruz> seems to work now but the cell is still blank did we lose 10111:1?
+Apr 17 21:32:56 <ideacritik> euh... 
+Apr 17 21:33:19 <chloe_> BK upload GI
+Apr 17 21:33:29 <chloe_> well too late
+Apr 17 21:33:35 <chloe_>  ok END
+Apr 17 21:33:55 <chloe_>  Black Laure
+Apr 17 21:35:43 <bk2> credits are shit like this, i wasn't prepared, we need to discuss the method
+Apr 17 21:36:30 <chloe_> black judy
+Apr 17 21:37:29 <chloe_> frame 2: your black is not black
+Apr 17 21:37:35 <chloe_> we can see the dollhouse
+Apr 17 21:37:42 <bk2> gianluca (from bliscapenn) asked about the girl in frame 3 and stated she is beautifull...
+Apr 17 21:37:52 <chloe_> and your appartment even
+Apr 17 21:37:53 <bk2> upload blacj in frame 2!
+Apr 17 21:38:06 <bk2> pure black! from a screenshot. not with contrasts!
+Apr 17 21:38:19 <bk2> laure should do it.
+Apr 17 21:38:24 <chloe_> exclame yourself Boris
+Apr 17 21:38:36 <bk2> here now we discuss with bliscappen.
+Apr 17 21:38:36 <paljudy_> ?....sorry....I will make one...we never go this far with rehear.
+Apr 17 21:38:49 <chloe_> it works with contrast
+Apr 17 21:38:49 <ideacritik> it all looks blakc to me.....
+Apr 17 21:38:59 <paljudy_> never knew conrasts were not enough
+Apr 17 21:39:09 <chloe_> but you have to go even deeper with the curser on the left
+Apr 17 21:39:19 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 17 21:39:38 <chloe_> or you stop uploading and I do it
+Apr 17 21:39:39 <ideacritik> so we only do the shot with town and our faces for the real perfo later?
+Apr 17 21:39:54 <chloe_> what do you mean?
+Apr 17 21:40:11 <chloe_> nice webcam on frame 7
+Apr 17 21:40:34 <chloe_> I'd like to try another color correction on dollhouse
+Apr 17 21:40:35 <ideacritik> frame 7 is being done by someone else... not me....
+Apr 17 21:40:56 <chloe_> the images are not as pretty as the dollhouse could be
+Apr 17 21:41:02 <ideacritik> i mean that part where we show 'rotterdam' (ville) printend on wall with us next to it...
+Apr 17 21:41:06 <aether9> sorry audrey, its me
+Apr 17 21:41:06 <chloe_> a little bit to flat and clinic
+Apr 17 21:41:14 <aether9> sending images from Tomsk
+Apr 17 21:41:23 <ideacritik> chloe_: which images are you talking about now
+Apr 17 21:41:28 <chloe_> dollhouse
+Apr 17 21:41:39 <ideacritik> ah ok -- not webcams
+Apr 17 21:41:43 <chloe_> how do you do to put the red color on your IRC text?
+Apr 17 21:41:51 <chloe_> cool...
+Apr 17 21:42:10 <ideacritik> but di di get this wrong -= i printed 'ROTTERDAM' AND put it on my wall - thinking i would have to stand next to it a tthe end of the perfo...
+Apr 17 21:42:11 <chloe_> Wolf was really missing too
+Apr 17 21:42:35 <chloe_> we dropped this idea
+Apr 17 21:42:58 <chloe_> I interpreted Manuel's wish with the beginning tool
+Apr 17 21:43:11 <chloe_> I mean effect
+Apr 17 21:43:27 <chloe_> I thought this was what he meant 
+Apr 17 21:43:39 <ideacritik> ah!!!!!!!!!!!
+Apr 17 21:43:50 <chloe_> As this is the end, Judy, could you upload images of you dollhouse again?
+Apr 17 21:43:58 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-c4c8b7e09af7428c) has joined #aether9
+Apr 17 21:44:17 <ideacritik> hahaahahah - i got that all wrong - i though he wanted to show the 'liveness' so that we should appear at eh end of the 'show' like in novi sad - in front of cam
+Apr 17 21:44:35 <chloe_> I actually don't know...
+Apr 17 21:44:40 <chloe_> this web communication
+Apr 17 21:44:46 <chloe_> interpretation
+Apr 17 21:44:54 <chloe_> is very big part
+Apr 17 21:44:59 <chloe_> of the process
+Apr 17 21:45:30 <chloe_> Judy, are you here?
+Apr 17 21:45:36 <ideacritik> well it could be nice to do so - i saw they have geneva on wall printed
+Apr 17 21:45:39 <fe2cruz> fell off again, how is paula's workshop going do we break now?
+Apr 17 21:45:52 <ideacritik> paula is not answering in #aether9workshop
+Apr 17 21:45:59 <ideacritik> so i assume she is busy talking
+Apr 17 21:46:28 <ideacritik> okido - well i will sit it out till the workshop calls on us...
+Apr 17 21:46:35 <ideacritik> and check if they set up streaming
+Apr 17 21:46:42 <chloe_> I liked the first part of the performance
+Apr 17 21:46:48 <fe2cruz> i missed some bits of the chat, are we done?
+Apr 17 21:46:48 <paljudy_> no...I am not doing the workshop....I will re-do my color squares and be back at 
+Apr 17 21:47:11 <chloe_> but when it comes to the critical moment, we didn't manage to create the beauty that was there for a couple of rehearsa
+Apr 17 21:47:34 <chloe_> Judy?
+Apr 17 21:47:56 <paljudy_> before 7 PM NY time for transmission....would be nice to have sound for me....but it seems the least of our issues
+Apr 17 21:48:27 <paljudy_> yes I am listening...reading Chloe
+Apr 17 21:48:31 <chloe_> what did YOU thin of the colors?
+Apr 17 21:48:57 <chloe_> don't you want to try it now?
+Apr 17 21:49:06 <paljudy_> oddly not rich....I am subject to natural light here
+Apr 17 21:49:41 <paljudy_> try...what?
+Apr 17 21:49:57 <chloe_> I am sure we can do something more glamorous
+Apr 17 21:50:22 <chloe_> well, you film and color correct and we see what it looks like
+Apr 17 21:50:45 <paljudy_> yes....I will try....by 7 I will also have rich golden light, I face south
+Apr 17 21:50:59 <chloe_> great! like on the stills
+Apr 17 21:51:05 <chloe_> the light is very nice on them
+Apr 17 21:51:17 <paljudy_> will try now then.....still from late afternoon
+Apr 17 21:51:52 <chloe_> I have one on my computer desktop background...
+Apr 17 21:52:38 <chloe_> nice, allready with more contrast it loks better
+Apr 17 21:52:45 <paljudy_> better
+Apr 17 21:53:21 <chloe_> and on the close ups
+Apr 17 21:53:32 <paljudy_> I like that gold paint to be picked up in Late afternoon light
+Apr 17 21:54:04 <chloe_> ah yes, I liked how you were introducing the caracters at the begining
+Apr 17 21:54:24 <chloe_> It could be nice to have the wolf as well
+Apr 17 21:54:46 <fe2cruz> manuel, streaming to aether.mp3 seems to be down again. stream won't stay connected
+Apr 17 21:55:01 <chloe_> also because #3 could sometimes watch what you are showing with interest
+Apr 17 21:55:02 <chloe_> nice images
+Apr 17 21:55:10 <paljudy_> I have the shittest 10 dollar tripod too
+Apr 17 21:55:24 <chloe_> I understand
+Apr 17 21:55:29 <paljudy_> I have to keep hand on it or it drifts
+Apr 17 21:55:50 <chloe_> and you are allone I guess
+Apr 17 21:55:55 <paljudy_> yes
+Apr 17 21:56:17 <chloe_> it's gonna be fine
+Apr 17 21:56:31 <chloe_> take your time to upload each thing you want to show
+Apr 17 21:56:43 <chloe_> this way it will be seen
+Apr 17 21:56:51 <chloe_> the images are powerfull
+Apr 17 21:56:52 <paljudy_> oh...I know...I am more concerned about paula with so much to manage
+Apr 17 21:57:20 <chloe_> Yes, but we can't help her
+Apr 17 21:57:22 <paljudy_> Thanks....they connect the other squares to the story....my intent
+Apr 17 21:57:34 <chloe_> exactly
+Apr 17 21:57:38 <paljudy_> I heard no sound
+Apr 17 21:57:49 <chloe_> nobody did
+Apr 17 21:57:54 <paljudy_> ah
+Apr 17 21:58:00 <chloe_> I don't know what was the problem
+Apr 17 21:59:05 <paljudy_> I will try no to re-do the text square and blk square
+Apr 17 21:59:26 <ideacritik> btw - for workshop we are on #aether9workshop
+Apr 17 22:03:21 <bk2> i am back from discussing with bliscappen - will read the chat
+Apr 17 22:04:24 <chloe_> I am leaving for a little while if I may
+Apr 17 22:04:41 <chloe_> when are we meating gain?
+Apr 17 22:05:04 <chloe_> bk?
+Apr 17 22:05:12 <ideacritik> well perfo is at 1am for us right?
+Apr 17 22:05:36 <ideacritik> btw - paula will stream workshop here : http://www.ustream.tv/channel/aether-jam-session-workshop-festival
+Apr 17 22:05:50 <chloe_> I really want to think of a way to improvise with rules
+Apr 17 22:06:12 <chloe_> ?t could be something like: 
+Apr 17 22:06:25 <chloe_> one frame for the main character
+Apr 17 22:06:44 <chloe_> (or one performer, sometimes using several frames, uploading similar images)
+Apr 17 22:06:54 <chloe_> I like the repetition of images...
+Apr 17 22:07:01 <chloe_> One performer for the setting,
+Apr 17 22:07:11 <chloe_> one for the danger/ennemy
+Apr 17 22:07:18 <chloe_> one for the unconscious
+Apr 17 22:07:21 <chloe_> etc.
+Apr 17 22:07:23 * paljudy_ has quit ("Leaving")
+Apr 17 22:07:34 <chloe_> but one thing each., and no pre-written script
+Apr 17 22:08:02 <chloe_> because there are so beautiful things during impro
+Apr 17 22:09:01 <chloe_> Am i alone here?
+Apr 17 22:09:01 <chloe_> ok see you at 00:20 CET
+Apr 17 22:09:01 <ideacritik> im reading... 
+Apr 17 22:09:08 <ideacritik> but im following other window in case workhsop begins
+Apr 17 22:09:19 <ideacritik> k c u later chloe_ 
+Apr 17 22:10:29 <bk2> so we meet at 00:00 cet? manu and me are going to eat something and be back before 00:00 anyway.
+Apr 17 22:11:05 <aether9> well, what i meant was indeed printing the location name and putting it on the wall
+Apr 17 22:11:26 <aether9> sorry, answering an old topic
+Apr 17 22:14:18 <ideacritik> aether9: i did that actually... so i could be ready to do it.
+Apr 17 22:16:36 <aether9> i prefer it too, rather than just text on black..
+Apr 17 22:16:55 <aether9> and please, let's all use arial font in this case... ;)
+Apr 17 22:18:01 <ideacritik> i used helvetica - close enough i think .... you are now talking about the initial shot? or the print on the wall at teh end?
+Apr 17 22:26:00 <ideacritik> who is uploading  in frame 8?
+Apr 17 22:26:02 <ideacritik> currently
+Apr 17 22:29:24 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 17 22:34:52 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-edbb71d666ad8623) has joined #aether9
+Apr 17 22:42:51 <fe2cruz> looks like they reverted back to skype
+Apr 17 22:45:00 <ideacritik> really?.... oh well i stay here
+Apr 17 22:45:08 <ideacritik> let me know if i should move to there please
+Apr 17 22:47:14 <aleij> skype beats IRC
+Apr 17 22:47:20 <aleij> (again)
+Apr 17 22:50:30 <fe2cruz> lucy was on there now they are coming back i think
+Apr 17 22:51:12 <aether9> we're in the #aether9workshop chanel now
+Apr 17 22:51:59 <ideacritik> im on IRC only....
+Apr 17 22:52:12 <bk2> i uploaded frame herre
+Apr 17 22:52:27 <aether9> it is irc, just (slash)join #aether9workshop
+Apr 17 22:52:34 <ideacritik> aether9:  im wondering if i have to do this servers.txt from server_example... etc thing
+Apr 17 22:52:47 <ideacritik> aether9: jy suis depuis tantot
+Apr 17 22:53:46 <aether9> idea, as you want, if you want to upload to the workshop-frameset, you have to use the servers-example list
+Apr 17 22:54:02 <aether9> but be sure to keep to original servers for the performance afterwards..
+Apr 17 22:54:06 <ideacritik> aether9: what do you mean upload the workshop-frameset?
+Apr 17 22:54:18 <ideacritik> this is the missing part of the explanation for me
+Apr 17 22:54:26 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 17 22:54:30 <ideacritik> 'cause i did the server_example name change earlier
+Apr 17 22:54:37 <aether9> inside the main patch folder, is a folder named "sample_HTML"
+Apr 17 22:54:55 <ideacritik> ah!!!! 
+Apr 17 22:55:00 <ideacritik> bonjour audrey!
+Apr 17 22:55:02 <ideacritik> ....
+Apr 17 22:55:02 <aether9> inside is a frameset.html file, that shows the images uploaded to the "example_servers"
+Apr 17 22:55:19 <aether9> which are for public use, such as workshops...
+Apr 17 22:55:39 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-6031d9f0097522c0) has joined #aether9
+Apr 17 22:56:14 <aether9> using the very naughty front.ru servers.. (belonging to the evil russian buisness network)
+Apr 17 22:56:23 <ideacritik> hihi
+Apr 17 22:56:37 <ideacritik> ah me voila - mon upload frame 7 d'il ya 5 heures... 
+Apr 17 22:56:53 <ideacritik> reveil en delai a rotterdam heure de colombie.... :S
+Apr 17 22:58:06 <ideacritik> mais.. attend aether9 what is the online url of the test-frame for workshop? the one i see is local...
+Apr 17 23:00:17 <fe2cruz> there should be a little bell in all laptop enter keys
+Apr 17 23:11:20 <fe2cruz> the text from the screen looks ugly. the credits need to be rethought
+Apr 17 23:11:47 <fe2cruz> maybe increase the sharpness settings of the webcam?
+Apr 17 23:15:50 <ideacritik> fe2cruz: sharpness settings? i have only brightness contrast and b&w....
+Apr 17 23:16:05 <bk2> i just made a little test with credits. you refer to this?
+Apr 17 23:16:22 <bk2> i'll do it now again in frame4
+Apr 17 23:17:26 <bk2> quite ugly indeed.
+Apr 17 23:17:34 <fe2cruz> too hard too read
+Apr 17 23:17:44 <fe2cruz> not sharp enough
+Apr 17 23:17:45 <bk2> yes
+Apr 17 23:18:10 <bk2> like that?
+Apr 17 23:18:22 <fe2cruz> farsi?
+Apr 17 23:18:23 <bk2> let's see...
+Apr 17 23:18:50 <bk2> maybe upload for some time the credits in different windows simply
+Apr 17 23:19:08 <bk2> (by the way thanks for the sample, will see with the band if they want to use iut)
+Apr 17 23:19:31 <fe2cruz> no problem
+Apr 17 23:19:51 <fe2cruz> what are you trying to do have the credits scroll
+Apr 17 23:19:53 <fe2cruz> ?
+Apr 17 23:20:11 <bk2> no, just display them.
+Apr 17 23:34:31 <bk2> doing another credit test in frame4
+Apr 17 23:35:06 <fe2cruz> not sure why but pink is clearest
+Apr 17 23:35:25 <fe2cruz> upir boris blue is nice
+Apr 17 23:35:42 <bk2> light blue and pink?
+Apr 17 23:36:22 <ideacritik> oooh im pink :)
+Apr 17 23:36:31 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 17 23:36:35 <bk2> of course?
+Apr 17 23:37:41 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-549ddbfdc0097db1) has joined #aether9
+Apr 17 23:37:57 <ideacritik> the cyan pale reste le plus beau je trouve... but i will not complain to be magenta :)
+Apr 17 23:38:21 <bk2> light blue and yellow c'est bon.
+Apr 17 23:38:38 <bk2> un peude variations. ?a fait un peu gar?on
+Apr 17 23:38:47 <bk2> les gar?ons et les filles...
+Apr 17 23:38:49 <bk2> mais bon
+Apr 17 23:39:13 <ideacritik> blanc c'est pas bon?
+Apr 17 23:39:19 * fe2cruz has quit (Client Quit)
+Apr 17 23:39:43 <bk2> puorquoi pas je r??ssaie
+Apr 17 23:41:20 <bk2> it's more sober b&w
+Apr 17 23:41:38 <ideacritik> bk2: je ne sais pas quesceque tu utilise pour la couleur - mais si tu pouvais faire un #eeeeee pour le blanc
+Apr 17 23:41:39 <bk2> it's too fast though
+Apr 17 23:41:57 <ideacritik> ca serait parfait - just un peu moins 'ouch' pour les yeux - 
+Apr 17 23:42:09 <chloe_> alors il faut pr?parer un paneau en Arial accroch? sur un mur, c'est ?a?
+Apr 17 23:42:22 <chloe_> est-ce que l'info est vraiment pass?e ? tout le monde?
+Apr 17 23:42:23 <ideacritik> chloe_: c'est ce que manu disait
+Apr 17 23:42:29 <chloe_> c'est beau ce que vous faites
+Apr 17 23:42:46 <ideacritik> ca je ne sais pas... moi je l'ai - geneve aussi - mais les autres... ?
+Apr 17 23:43:05 <chloe_> ben non, Judy, Chris, Paula...
+Apr 17 23:43:14 <chloe_> ce ne sera pas tr?s uniforme
+Apr 17 23:43:21 <ideacritik> en effet oui
+Apr 17 23:43:25 <chloe_> ? moins de les pr?parer pour eux et de les uploader ? leur place
+Apr 17 23:44:17 <ideacritik> cest impossible puisque l'idee est de mettre le truc sur le mur et de filmer le 'performer' live devant sa 'pancarte' si j'ai bien compris
+Apr 17 23:44:32 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-1ccb61069a8a9fcc) has joined #aether9
+Apr 17 23:44:53 <ideacritik> fe2cruz: have you prepared a sheet of paper with your town on it - printed on wall?
+Apr 17 23:45:30 <fe2cruz> i have one yes
+Apr 17 23:45:57 <ideacritik> do you knwo if judy does?
+Apr 17 23:46:38 <fe2cruz> irc keeps hiccuping
+Apr 17 23:46:38 <fe2cruz> i have a little card to display under me
+Apr 17 23:46:58 <ideacritik> i see you hiccuping yes
+Apr 17 23:47:49 <fe2cruz> maybe
+Apr 17 23:48:36 <chloe_> Should it be centered or alignment on the left
+Apr 17 23:48:40 <bk2> so i got readable credits that i can upload one after the other in one frame OR
+Apr 17 23:49:05 <bk2> in different frames (for 2 minutes or so, then black or whatever)
+Apr 17 23:49:22 <bk2> (it is different from the basic idea, i think we need both.
+Apr 17 23:49:39 <bk2> basic idea: performer with printed location on the wall
+Apr 17 23:49:47 <bk2> question: at begining or end?
+Apr 17 23:50:10 <bk2> (i suggest end for coordination reasons, but manu prefers begining for clarifiaction to audience...)
+Apr 17 23:50:21 <fe2cruz> why not upload just the black readable credits to 5 out of the 9 frames
+Apr 17 23:50:23 <bk2> what do YOU think after all lol?
+Apr 17 23:50:27 <fe2cruz> 10 frames
+Apr 17 23:50:32 <bk2> i like it chris!
+Apr 17 23:50:42 <bk2> black readable credits to 5 out of the 9 frames
+Apr 17 23:51:05 <bk2> black readable credits to 5 out of the 9 frames
+Apr 17 23:51:05 <bk2> one time
+Apr 17 23:51:06 <chloe_> centr? ou align?s
+Apr 17 23:51:07 <bk2> two times
+Apr 17 23:51:09 <chloe_> ?
+Apr 17 23:51:14 <bk2> aligned
+Apr 17 23:51:17 <bk2> tree times
+Apr 17 23:51:23 <bk2> sold!
+Apr 17 23:51:36 <fe2cruz> test it use the fader option
+Apr 17 23:52:14 <chloe_> BK, j'ai donn? word office ? Laure, ok?
+Apr 17 23:52:39 <chloe_> black readable credits to 5 out of the 9 frames
+Apr 17 23:52:44 <chloe_> what does it mean?
+Apr 17 23:53:19 <fe2cruz> i think boris will show us in a bit
+Apr 17 23:54:05 <bk2> you want a demo?
+Apr 17 23:54:33 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 17 23:55:03 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-b64ea2ceec0f057f) has joined #aether9
+Apr 17 23:55:29 <bk2> i had the feeling we went too wast during the rehearsal, do you?
+Apr 17 23:55:54 <bk2> (a problem is the chat thing. almost impossible to do it fast and live)
+Apr 17 23:55:55 <aleij> fe2cruz: maybe use ircatwork.com or.. are you on a wifi connection?
+Apr 17 23:57:37 <ideacritik> re-bonjour - workhosp termine.
+Apr 17 23:57:42 <fe2cruz> its mibbit.com now and i'm on hard wire cable
+Apr 17 23:57:43 <bk2> ok
+Apr 17 23:58:30 <bk2> so chris you have regular problems? should we use skype instead?
+Apr 17 23:58:50 <fe2cruz> no its not a big deal
+Apr 17 23:58:53 <bk2> ok
+Apr 17 23:59:26 <bk2> WOLF: how sweetly the little birds are singing
+Apr 17 23:59:26 <bk2> WOLF: how sweetly the little birds are singing
+Apr 17 23:59:34 <bk2> (just a copy paste test...
+Apr 18 00:00:01 <bk2> WOLF: come to dinner with me?
+Apr 18 00:00:01 <bk2> WOLF: do you want to see my ears?
+Apr 18 00:00:01 <bk2> acts weird the copy paste
+Apr 18 00:00:40 <bk2> ok - found the way to do the chat must faster on livejamin.
+Apr 18 00:00:53 <bk2> will do a live training now on frame whatever
+Apr 18 00:01:35 <fe2cruz> i'll take a 20 minute breather too
+Apr 18 00:01:52 <chloe_> question: shoud Laure and me stand side by side for the begin credit or is it better that we keep the illusion of her being just a livejasmin girl?
+Apr 18 00:02:33 <ideacritik> shouldnt we keep the beginnign as it was and do the live version with text on wall at the end?
+Apr 18 00:02:43 <ideacritik> solving the 'illusion' problem... 
+Apr 18 00:02:55 <ideacritik> like 'revealing' at teh end ... 
+Apr 18 00:03:32 <aether9> we need to have clarity regarding the BEGINNING CREDITS/LOCATION NAMES
+Apr 18 00:03:54 <aether9> so what option do we want:
+Apr 18 00:04:07 <aether9> 1) just location name on black
+Apr 18 00:04:36 <aether9> 2) view of aether operator, with location name printed/ written on the wall
+Apr 18 00:05:24 <ideacritik> i think both. 1) in beginning and 2) at end
+Apr 18 00:06:40 <aether9> that's a possibility indeed
+Apr 18 00:07:34 <aether9> however i quite liked to idea to have those views of our working spaces, in those endless "last 5 minutes" while waiting for the beginning of the performance
+Apr 18 00:07:52 <aether9> more entertaining, i think
+Apr 18 00:08:10 <ideacritik> you have a point... 
+Apr 18 00:08:19 <ideacritik> im open to all options - 
+Apr 18 00:08:24 <aether9> but we would need to see it to know if it really works..
+Apr 18 00:08:38 <ideacritik> yes - we could try now if others are there... others?
+Apr 18 00:09:22 <aether9> other point, if we do just text in the begginning, we should at least use the same font + font size
+Apr 18 00:10:40 <ideacritik> why? isnt variety a bit more symbolic of different people and geographic locations?
+Apr 18 00:10:53 <ideacritik> (and less impossible to organise 1h before perfo?)
+Apr 18 00:11:05 <ideacritik> jsut trying to be practical al.so./...
+Apr 18 00:11:19 <bk2> yes, manu forget this synchronisation
+Apr 18 00:11:37 <ideacritik> we can think of this for mapping though
+Apr 18 00:11:43 <ideacritik> what / how we want it
+Apr 18 00:14:50 <bk2> i liked the variations at the beggining - let's keep it that way, we'll lose so much time otherwise.
+Apr 18 00:15:20 <bk2> so each person uploads his location the way he wants...
+Apr 18 00:15:33 <bk2> at the end though i'll throw the uniformed cridits
+Apr 18 00:16:39 <bk2> chloe?
+Apr 18 00:16:58 <bk2> saylor?
+Apr 18 00:17:33 * paljudy_ (n=Nylon222@user-12lde4j.cable.mindspring.com) has joined #aether9
+Apr 18 00:17:55 <ideacritik> can i test my 'location shot' to see if its ok or not?
+Apr 18 00:18:10 <ideacritik> frame 7 lets say
+Apr 18 00:18:23 <paljudy_> sure I will look
+Apr 18 00:18:28 <ideacritik> that is to say if we still do this live with text on wall... or did we drop this?
+Apr 18 00:18:33 <ideacritik> ok frame 7
+Apr 18 00:19:34 <paljudy_> Not sure....BK though credits were sloppy but the story text was not discussed
+Apr 18 00:19:40 <paljudy_> thought
+Apr 18 00:20:52 <bk2> hmm?
+Apr 18 00:20:55 <aether9> btw - WHO is uploading this 3D-forest to frame 2 of the main interface, since hours???
+Apr 18 00:20:56 <bk2> what?
+Apr 18 00:21:16 <paljudy_> yes...I see Rotterdam
+Apr 18 00:21:22 <ideacritik> hein?
+Apr 18 00:21:26 <bk2> great!!!
+Apr 18 00:21:35 <ideacritik> oh 3d forest - not me
+Apr 18 00:21:43 <ideacritik> paljudy_: you see rotterdam?
+Apr 18 00:21:43 <paljudy_> me...so I can walk in front of my camera
+Apr 18 00:21:44 <aether9> love the rotterdam NL wall pring
+Apr 18 00:21:47 <aether9> print
+Apr 18 00:21:49 <ideacritik> oh the word...
+Apr 18 00:21:55 <ideacritik> dman i loosing it here... halahah
+Apr 18 00:22:20 <bk2> laure /chlo? + chris, can you do same soprt of stuff?
+Apr 18 00:22:24 <ideacritik> well are we using print or ? and if so should i zoom in on it or leave comp in?
+Apr 18 00:22:50 <paljudy_> #2 is a just a paper forest. How is the workshop going?
+Apr 18 00:22:55 * saylor has quit ("This computer has gone to sleep")
+Apr 18 00:22:59 <ideacritik> paljudy_: is over
+Apr 18 00:23:11 <paljudy_> and?
+Apr 18 00:23:25 <ideacritik> paljudy_: hard to say how it went - communicataion mostly in spanish and not much uploading - 
+Apr 18 00:23:38 <ideacritik> not much communication between the remote and the local in other words
+Apr 18 00:23:39 <bk2> you can see the state of the interface we used here?:
+Apr 18 00:23:39 <bk2> file:///Users/boris/Desktop/n3k08/aether9/ActuelAether/upload_394/sample_HTML/frameset.html
+Apr 18 00:23:41 <aether9> paljudy - are you sending that image? (frame2)
+Apr 18 00:23:47 <bk2> (it0s the test interface)
+Apr 18 00:23:48 <paljudy_> yes
+Apr 18 00:23:53 <ideacritik> we will have to wait for paula's comments
+Apr 18 00:24:13 <bk2> mmm sorry...
+Apr 18 00:24:42 <bk2> ah judy to see the results of the test page, go into your patch folder
+Apr 18 00:25:09 <bk2> go into the "sample_HTML" folder
+Apr 18 00:25:17 <bk2> and open "frameset"
+Apr 18 00:25:32 <bk2> you will see uploaded workshopers there
+Apr 18 00:26:40 <ideacritik> well hardly anything though... a few isolated frame - single uploads hre and ther....
+Apr 18 00:27:31 <paljudy_> I see.....not much to guess how it went/is...but nice to see Colombia in the sun
+Apr 18 00:27:59 * NUNICK (n=paulavel@adsl190-28-192-118.epm.net.co) has joined #aether9
+Apr 18 00:27:59 <paljudy_> The hall is smaller than I 'd expected
+Apr 18 00:30:29 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 18 00:31:03 <ideacritik> NUNICK: come vas?
+Apr 18 00:31:09 <aleij> not good mibbit
+Apr 18 00:31:26 <ideacritik> aleij: no... indeed
+Apr 18 00:31:32 <aleij> NUNICK: headache?
+Apr 18 00:31:42 <NUNICK> si
+Apr 18 00:31:45 <aleij> ahy
+Apr 18 00:31:46 <NUNICK> caho
+Apr 18 00:31:52 <NUNICK> chao
+Apr 18 00:31:57 <ideacritik> oh....
+Apr 18 00:31:58 <NUNICK> je reviens
+Apr 18 00:32:02 <aleij> k
+Apr 18 00:32:45 <aether9> heja
+Apr 18 00:33:07 <ideacritik> judy - paljudy_ : do you have such a printed piece of paper with NYC on it?
+Apr 18 00:33:36 <ideacritik> we were thinking if we could do this version of the intro - as i have in frame7 -- but only if its possible - i mean its short notice and all..
+Apr 18 00:34:12 <paljudy_> No not printed.....I just re-did the vid grab since rehearsal though
+Apr 18 00:34:23 <paljudy_> like this
+Apr 18 00:35:12 <ideacritik> so shall we keep it all like that or have a mix of judy's version and mine for example? thoughts anyoen?
+Apr 18 00:35:57 <paljudy_> if the balance is pleasing....mixed is ok by me
+Apr 18 00:35:58 <NUNICK> what is the good universal version of jittelr?
+Apr 18 00:35:59 <ideacritik> chloe_: ? u ther?
+Apr 18 00:36:00 <NUNICK> for a mac
+Apr 18 00:36:15 <NUNICK> macosX version .04
+Apr 18 00:36:17 <ideacritik> what version of OSX you have NUNICK 
+Apr 18 00:36:33 <ideacritik> 10.4? euh - i think the latest version then
+Apr 18 00:36:34 <NUNICK> 10.4.8
+Apr 18 00:36:44 <ideacritik> the latest version of jitter
+Apr 18 00:36:59 <NUNICK> i need the good download link to instal sur un ordi
+Apr 18 00:37:08 <ideacritik> oh attend
+Apr 18 00:37:14 <chloe_> I am there
+Apr 18 00:37:27 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-70e33b977ddf1c05) has joined #aether9
+Apr 18 00:37:29 <NUNICK> a computer taht will transmit upload images to the patch , cause mine only can aupload sound
+Apr 18 00:37:36 <chloe_> it is a little bit stressing to me to do this test for a good setting of the begin credit
+Apr 18 00:38:02 <ideacritik> http://www.cycling74.com/download/jitter163.dmg
+Apr 18 00:38:10 <ideacritik> NUNICK: http://www.cycling74.com/download/jitter163.dmg
+Apr 18 00:38:31 <ideacritik> chloe_: we can easily keep it like it was -= it was just throwing around ideas
+Apr 18 00:38:37 <ideacritik> i still have this - i upload
+Apr 18 00:39:40 <ideacritik> up to you 
+Apr 18 00:40:04 * manizales (n=nata@adsl190-28-192-118.epm.net.co) has joined #aether9
+Apr 18 00:40:13 <paljudy_> mixed is more visually interesting
+Apr 18 00:40:17 <ideacritik> proost / sante/ salud! from rotterdam
+Apr 18 00:40:37 <NUNICK> or, if it is easier, i can download only runtime, 
+Apr 18 00:40:38 <ideacritik> i could also do this... differnt in 7 and 9
+Apr 18 00:40:46 <NUNICK> http://www.cycling74.com/download/jitter163.dmg
+Apr 18 00:40:46 <NUNICK> http://www.cycling74.com/download/jitter163.dmg
+Apr 18 00:40:52 <NUNICK> manizales is natalia
+Apr 18 00:41:07 <NUNICK> collaborating and will transmit
+Apr 18 00:41:27 <aleij> ideacritik: wha are you drinking?
+Apr 18 00:41:37 <ideacritik> red wine of course!
+Apr 18 00:41:42 <aleij> k
+Apr 18 00:41:56 <aleij> i was on a deepdarkbeer
+Apr 18 00:42:07 <ideacritik> ah - lekker! :)
+Apr 18 00:42:28 <ideacritik> who is frame 4 and 6 ?
+Apr 18 00:42:41 <ideacritik> maybe if they could upload their 'intro' we could se eif its nice 
+Apr 18 00:42:47 <NUNICK> sound or image. which one is 
+Apr 18 00:43:13 <ideacritik> NUNICK: ? 
+Apr 18 00:44:02 <NUNICK> we did that jittler it didn work
+Apr 18 00:44:19 <NUNICK> manu, its the sound patch work with out jitter?
+Apr 18 00:44:32 <ideacritik> but remember that you changed the servers.txt file before
+Apr 18 00:44:33 <aether9> yes, it works without
+Apr 18 00:44:46 <NUNICK> great
+Apr 18 00:44:50 <ideacritik> so you have to change it back - or just download version 394 again
+Apr 18 00:45:02 <ideacritik> (of patch)
+Apr 18 00:46:09 <NUNICK> so i need to install some other stuff, or only runtime to run sond patch?
+Apr 18 00:46:11 <ideacritik> i like this remote 'toasting' session
+Apr 18 00:46:29 <NUNICK> totali toast
+Apr 18 00:46:36 <aether9> i would install the full max version, to be sure to have all objects
+Apr 18 00:48:17 <chloe_> ok I am ready
+Apr 18 00:48:19 * saylor (n=saylor2@d83-182-166-110.cust.tele2.be) has joined #aether9
+Apr 18 00:48:47 <ideacritik> saylor: is a great nick for a web cam girl! :)
+Apr 18 00:52:36 <chloe_> who is actually telling us when to start?
+Apr 18 00:52:44 <ideacritik> aleij: are you in communication with paula?
+Apr 18 00:53:33 <saylor> yep it is
+Apr 18 00:53:38 <aleij> ideacritik: no, i come and go, what you see here is all, i hate to use private messages on collaborative spaces
+Apr 18 00:53:55 <bk2> we are ready as well.
+Apr 18 00:54:04 <aleij> she seems to be overloaded
+Apr 18 00:54:06 <paljudy_> 7 min if we start on time for web watchers
+Apr 18 00:54:12 <ideacritik> aleij: ok - just thought you might be helping her troubleshoot in native language... 
+Apr 18 00:54:41 <ideacritik> paljudy_: i have the impression we wont be ontime - seem to be technical problems over the ocean
+Apr 18 00:55:14 <aleij> no, i could have done yes, she didn't asked so i thouhg all is gut there
+Apr 18 00:55:47 <paljudy_> can we generate text on screen to say so.....?
+Apr 18 00:56:15 <ideacritik> good idea - can someone?
+Apr 18 00:56:22 <bk2> i will gradually upload eventual delays in frame 1...
+Apr 18 00:56:48 <paljudy_> that we are late so the viewers won't leave
+Apr 18 00:56:53 <bk2> exactly
+Apr 18 00:57:01 <paljudy_> perfect
+Apr 18 00:58:26 <fe2cruz> paula you got sounds?
+Apr 18 00:58:33 <paljudy_> I have changed to outside view of house for first view in Act 1 as suggested in Rehearsal
+Apr 18 00:59:04 <bk2> please help for formulas: "Estimated online audience, we are ..." 
+Apr 18 00:59:28 <saylor> when is it starting ?
+Apr 18 00:59:29 <paljudy_> delayed....Please stand by
+Apr 18 00:59:31 <ideacritik> dear online audience
+Apr 18 00:59:37 <bk2> ... performance should start in app. 10 minutes"...
+Apr 18 00:59:43 <bk2> dear online audience
+Apr 18 00:59:48 <NUNICK> http://1904.cc/aether/live/08_04_noborder/
+Apr 18 00:59:50 <NUNICK> http://1904.cc/aether/live/08_04_noborder/
+Apr 18 00:59:57 <NUNICK> no sound yet
+Apr 18 01:00:03 <bk2> ok we wait
+Apr 18 01:00:07 <ideacritik> performance will start shortly - please ...
+Apr 18 01:00:22 <ideacritik> please remain connected or?
+Apr 18 01:00:34 <ideacritik> if we say 10 min we are lying already...
+Apr 18 01:00:42 <paljudy_> please stand by
+Apr 18 01:00:44 <aleij> don't tuch that remote
+Apr 18 01:00:47 <aleij> touch
+Apr 18 01:00:53 <ideacritik> yep good! :)
+Apr 18 01:01:01 <paljudy_> as was said in early days of television
+Apr 18 01:01:10 <bk2> what?
+Apr 18 01:01:13 <fe2cruz> don't change that dail
+Apr 18 01:01:16 <fe2cruz> dial
+Apr 18 01:01:17 <bk2> dear online audience,
+Apr 18 01:01:17 <bk2> 			performance should start
+Apr 18 01:01:17 <bk2> 			with a 15 minutes delay
+Apr 18 01:01:17 <ideacritik> no it w as dont touch that dial!
+Apr 18 01:01:33 <bk2> sorry for inconvenience?
+Apr 18 01:01:42 <fe2cruz> don't close that browser
+Apr 18 01:01:45 <ideacritik> bk2: i wouldnt say sorry
+Apr 18 01:01:45 <aleij> audio is up
+Apr 18 01:01:50 <bk2> ok
+Apr 18 01:01:52 <ideacritik> and i wouldnt put a # of min....
+Apr 18 01:02:02 <paljudy_> Yes stream some sound too
+Apr 18 01:02:15 <aether9> i did a few seconds audio test
+Apr 18 01:02:24 <aether9> how is sound situation in Manizales
+Apr 18 01:02:26 <aether9> ?
+Apr 18 01:02:30 <bk2> ok. no minutes
+Apr 18 01:02:41 <fe2cruz> yeah sound works for me too, but not yet for paula
+Apr 18 01:02:56 <paljudy_> no sound here...and didn't wish to add to confusion so I said nothing
+Apr 18 01:03:04 <fe2cruz> colombia needs some time to set up still
+Apr 18 01:03:52 <ideacritik> fe2cruz: you've got quite a 'mug shot' shirley :)
+Apr 18 01:03:53 <fe2cruz> its really easy on the eyse all b/w like this
+Apr 18 01:03:54 <paljudy_> so.....I couldn't get giss in either itunes or VLC...why do you thik that is?
+Apr 18 01:04:10 <aleij> i have it here in vlc
+Apr 18 01:04:26 <paljudy_> walk me through set up?
+Apr 18 01:04:32 <chloe_> euh, is this music suppose to make us pepsi?
+Apr 18 01:04:33 <paljudy_> to pass the time
+Apr 18 01:04:36 <aleij> you have port 8000 closed, are you using a firewall?
+Apr 18 01:04:51 <paljudy_> no
+Apr 18 01:04:59 <aleij> click apple+n
+Apr 18 01:05:02 <aleij> paste this
+Apr 18 01:05:03 <aleij> http://1904.cc/aether/live/08_04_noborder/ audio i pick here: http://live1.radiovague.com:8000/aether.mp3
+Apr 18 01:05:11 <ideacritik> chloe_: pepsi?
+Apr 18 01:05:13 <fe2cruz> judy manuel just started the sream so you might wanna just redo it
+Apr 18 01:05:14 <aleij> second link of course
+Apr 18 01:05:30 <chloe_> nous donner du peps
+Apr 18 01:05:47 <ideacritik> chloe_: ah bon daccord :)
+Apr 18 01:05:47 <fe2cruz> yes muggy shirley is still not awake
+Apr 18 01:06:00 <paljudy_> alj......main: no suitable access module for `stream://http://1904.cc/aether/live/08_04_noborder/ audio i pick here: http://live1.radiovague.com:8000/aether.mp3'
+Apr 18 01:06:14 <manizales> do i need to install something else to stream sond...?
+Apr 18 01:06:16 <manizales> sound?
+Apr 18 01:06:21 <saylor> whos muggy chirley?
+Apr 18 01:06:21 <manizales> i have runtimne
+Apr 18 01:06:22 <aleij> paljudy_: just this  http://live1.radiovague.com:8000/aether.mp3
+Apr 18 01:06:37 <aleij> though now sound is down
+Apr 18 01:06:44 <bk2> i hear stream!
+Apr 18 01:06:44 <manizales> when i open the patch it sais shoutcast no such object
+Apr 18 01:06:51 <aleij> up again
+Apr 18 01:06:51 <ideacritik> who can help manizales ? 
+Apr 18 01:07:03 <bk2> ah its manu again. sorry.
+Apr 18 01:07:07 <manizales> â¢ error: shoutcast~: No such object
+Apr 18 01:07:13 <ideacritik> manizales: di dyou unencrypt the servers.7z file?
+Apr 18 01:07:29 <manizales> yes
+Apr 18 01:07:30 <fe2cruz> she's on the sound patch 
+Apr 18 01:07:35 <ideacritik> oh sorry
+Apr 18 01:07:40 <aether9> manizales/paula, you need to put at the right place the Shoutcast object, included with the sound patch
+Apr 18 01:07:46 <manizales> and i need onluy sound
+Apr 18 01:07:53 <manizales> olk
+Apr 18 01:07:54 <chloe_> let's shoot this discussion and show it in the interface at least...
+Apr 18 01:07:55 <manizales> ok
+Apr 18 01:07:56 <manizales> :)
+Apr 18 01:08:08 <bk2> ok
+Apr 18 01:08:19 <chloe_> real live action
+Apr 18 01:08:29 <aether9> http://1904.cc/~aether/kode/max_audio_streaming/shoutcast~1.3test3-max4.6.zip
+Apr 18 01:08:32 <aether9> this one
+Apr 18 01:08:35 <chloe_> sorry ;)
+Apr 18 01:09:03 <aleij> this is the performance, i agree chloe_ 
+Apr 18 01:09:26 <ideacritik> certainly reminiscant of mapping last year... haha
+Apr 18 01:09:38 <bk2> <<<<!!!!!
+Apr 18 01:09:48 <bk2> <<<<!!!!!
+Apr 18 01:09:57 <aether9> paula, should i tell you precise steps?
+Apr 18 01:10:35 <aether9> you decompress the stuff, find the object shoutcast~.mxo
+Apr 18 01:10:41 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 18 01:11:25 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-f63ae1da959eb91a) has joined #aether9
+Apr 18 01:11:30 <chloe_> chris is leaving!
+Apr 18 01:11:32 * fe2cruz has quit (Client Quit)
+Apr 18 01:11:44 <ideacritik> chloe_: no - he has IRC issues
+Apr 18 01:12:03 <ideacritik> chloe_: he will be back... we have not solved this
+Apr 18 01:12:04 <chloe_> I know, but it is like a spaceman lacking oxygene
+Apr 18 01:12:11 <ideacritik> hahahhahaha
+Apr 18 01:12:15 <ideacritik> nice analogie@!
+Apr 18 01:12:20 <aether9> paula, then you put the object into Applications/MaxMSP4.6/Cycling '74/externals
+Apr 18 01:12:35 * saylor has quit ("This computer has gone to sleep")
+Apr 18 01:12:45 <aether9> or simply in the folder where is your max audio_streaming patch
+Apr 18 01:13:04 <ideacritik> and now our saylor has left us... jumped ship
+Apr 18 01:13:28 <bk2> camgirl is tiring job... fell asleep...
+Apr 18 01:14:02 <aether9> paula? any success?
+Apr 18 01:14:09 <ideacritik> nice idea to put the chat online in the meantime.... 
+Apr 18 01:14:45 <chloe_> come on, let's put the chat for the viewers!
+Apr 18 01:16:14 <ideacritik> we've lost our little red riding hood
+Apr 18 01:17:26 <aleij> kidnaped already?
+Apr 18 01:17:27 <chloe_> no, she's not lost, just went for a walk in the forest
+Apr 18 01:17:39 <ideacritik> ah but the wolf!!!!!!
+Apr 18 01:18:08 * saylor (n=saylor2@d83-182-166-110.cust.tele2.be) has joined #aether9
+Apr 18 01:18:17 <ideacritik> the saylor is back!
+Apr 18 01:18:20 <NUNICK> ihttp://1904.cc/~aether/kode/max_audio_streaming/
+Apr 18 01:18:29 <NUNICK> es este?
+Apr 18 01:18:30 <NUNICK> [18:17] NUNICK: http://giss.tv:8000/aether.mp3
+Apr 18 01:18:30 <NUNICK> [18:18] NUNICK: is thins
+Apr 18 01:18:41 <NUNICK> tienes los datos del icecast
+Apr 18 01:18:42 <NUNICK> [18:06] NUNICK: para que les puentee el audio?
+Apr 18 01:18:49 <aether9> what's the question?
+Apr 18 01:19:22 <aleij> no idea
+Apr 18 01:19:29 <saylor> elo manuelo
+Apr 18 01:19:34 <aleij> im trying to translate it
+Apr 18 01:19:39 <aleij> but cant understand
+Apr 18 01:19:41 <aether9> you need password for the icecast stream?
+Apr 18 01:19:51 <chloe_> let's all try to translate it
+Apr 18 01:20:03 <ideacritik> im sorry but LOL
+Apr 18 01:20:08 <aleij> into swiss german?
+Apr 18 01:20:11 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-85eda82fea7c5c79) has joined #aether9
+Apr 18 01:20:13 <ideacritik> LOL
+Apr 18 01:20:22 <chloe_> we lol too
+Apr 18 01:20:43 <manizales> quel sont les pasword du giss
+Apr 18 01:21:01 <aether9> qs39z
+Apr 18 01:21:19 <aleij> now is public
+Apr 18 01:21:21 <aleij> :)
+Apr 18 01:21:32 <aleij> dear audience..
+Apr 18 01:21:38 <chloe_> great
+Apr 18 01:21:45 <ideacritik> hahaha
+Apr 18 01:22:17 <aether9> if that allows somebody from the audience to stream sound, then great...
+Apr 18 01:22:21 <chloe_> so now everybody keeps quiet
+Apr 18 01:22:32 * fe3cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-2a42b7b9a1d5e919) has joined #aether9
+Apr 18 01:22:32 <aleij> yes, agree
+Apr 18 01:22:42 * fe2cruz has quit (Client Quit)
+Apr 18 01:22:45 <chloe_> or do we do it with no sound and no WOLF
+Apr 18 01:22:55 <chloe_> ?
+Apr 18 01:22:59 * fe3cruz is now known as fe2cruz
+Apr 18 01:23:08 <ideacritik> chloe_: hum... tough call i think only paula can make... 
+Apr 18 01:23:12 <NUNICK> we are ready without sound
+Apr 18 01:23:24 <NUNICK> we installed lame, and the patche
+Apr 18 01:23:30 <NUNICK> but it didnt wore
+Apr 18 01:23:49 <chloe_> some other sound to stream during the perf for the audience?
+Apr 18 01:23:57 <NUNICK> i will send sounb by oher way
+Apr 18 01:24:10 <aether9> by other way??
+Apr 18 01:24:31 <chloe_> es, you know...
+Apr 18 01:25:06 <aleij> audio is up
+Apr 18 01:25:11 <NUNICK> we have sound
+Apr 18 01:25:12 <NUNICK> yes
+Apr 18 01:25:13 <NUNICK> yes
+Apr 18 01:25:14 <NUNICK> yes
+Apr 18 01:25:15 <NUNICK> yse
+Apr 18 01:25:16 <NUNICK> go
+Apr 18 01:25:20 <ideacritik> !!!!!!!!!!!! bravo
+Apr 18 01:25:21 <saylor> yes
+Apr 18 01:25:22 <chloe_> V
+Apr 18 01:25:22 <saylor> yes
+Apr 18 01:25:23 <saylor> sey
+Apr 18 01:25:25 <saylor> sey
+Apr 18 01:25:31 <chloe_> say yes
+Apr 18 01:25:33 <bk2> now keep cool, let's not rush please
+Apr 18 01:25:37 <paljudy_> OK...
+Apr 18 01:25:43 <fe2cruz> this is pure colombian soiund?
+Apr 18 01:25:47 <bk2> great!
+Apr 18 01:25:54 <chloe_> can we start ?
+Apr 18 01:26:46 <fe2cruz> i'm ready
+Apr 18 01:26:56 <NUNICK> yes
+Apr 18 01:26:59 <ideacritik> NL ready
+Apr 18 01:27:03 <saylor> we re ready in1  min
+Apr 18 01:27:27 <chloe_> ready
+Apr 18 01:27:53 <bk2> ready
+Apr 18 01:27:56 <NUNICK> i', m ready
+Apr 18 01:28:14 <chloe_> ok, start: ACT1
+Apr 18 01:28:42 <chloe_> BLACK IN ALL FRAMES EXCEPT OPERATOR 8
+Apr 18 01:28:46 <chloe_> AND DOLLHOUSE 2
+Apr 18 01:28:46 <bk2> i blak1
+Apr 18 01:29:17 <chloe_> 7 IS NOT REALLY BLACK
+Apr 18 01:29:27 <chloe_> AUDREY, YOR BLAC IS GREY
+Apr 18 01:29:34 <ideacritik> not possible...
+Apr 18 01:29:54 <ideacritik> black here - and its black dont know what to say
+Apr 18 01:30:33 <aether9> it's your contrast settings
+Apr 18 01:30:52 <chloe_> DONT CHANGE IT  TANT PIS
+Apr 18 01:31:00 <chloe_> ACT 2
+Apr 18 01:31:11 <chloe_> 1 AND 3 FOREST LAURE
+Apr 18 01:31:19 <chloe_> 4 WEBCAM BORIS
+Apr 18 01:31:27 <chloe_> 7 AND 9 AUDREY
+Apr 18 01:31:53 <chloe_> SORRY : 4 IS WOLF!!!
+Apr 18 01:31:53 <chloe_> SORRY 4 IS WOLF?!!!!
+Apr 18 01:31:58 <ideacritik> yah one sec shit not workin....
+Apr 18 01:32:23 <fe2cruz> ahh thats scarry!
+Apr 18 01:32:26 <chloe_> LAURE HAS TROUBLES, UPLOAD WELL CONTRASTED WEBCAMS IN FRAMES 1 AND 3, OPERATOR
+Apr 18 01:32:35 <chloe_> NOTING IN FRAME 6!!!!
+Apr 18 01:32:49 <chloe_> GUYS!
+Apr 18 01:33:23 <chloe_> THANKS FOR FORESTBK
+Apr 18 01:33:50 <chloe_> JUDY, THIS IS VERY CONTRASTED, EVEN IF PRETTY
+Apr 18 01:34:03 <chloe_> OK , THIS IS COOL, I LIKE IT VERY MUCH
+Apr 18 01:34:24 <bk2> frame 1 is blocking, fuck. will solve it
+Apr 18 01:34:37 <bk2> is sombody uploading black in frame 1????
+Apr 18 01:34:44 <ideacritik> not i
+Apr 18 01:34:45 <chloe_> TANT PIS ON FAIT SANS
+Apr 18 01:34:53 <chloe_> ACT 3
+Apr 18 01:35:44 <chloe_> JUDY, SHOW US LRRH
+Apr 18 01:36:06 <NUNICK> i stoped uploading, act 3 is this no? 
+Apr 18 01:36:13 <NUNICK> or the wolf must istill there?
+Apr 18 01:36:40 <chloe_> THE WOLF IS THERE
+Apr 18 01:36:49 <chloe_> ACT 4
+Apr 18 01:36:55 <NUNICK> do you need a call girl?
+Apr 18 01:36:57 <chloe_> GIRLS IN FRAME 1 AND 6 
+Apr 18 01:37:03 <chloe_> (TRY AGAIN BORIS)
+Apr 18 01:37:17 <aether9> he's trying
+Apr 18 01:37:18 <chloe_> IF 1 DOESN'T WORK, USE 5
+Apr 18 01:37:22 <aether9> ok
+Apr 18 01:37:32 <chloe_> IT WORKS
+Apr 18 01:37:49 <ideacritik> perfect!
+Apr 18 01:38:37 <fe2cruz> it looks sooo sexy
+Apr 18 01:39:54 <chloe_> ACT 5
+Apr 18 01:40:21 <chloe_> FRAME 1 IS BLACK
+Apr 18 01:40:25 <chloe_> CHAT IN FRAME 4
+Apr 18 01:41:25 <NUNICK> sorry
+Apr 18 01:41:29 <NUNICK> go boris
+Apr 18 01:41:38 <NUNICK> call your call girl
+Apr 18 01:41:39 <chloe_> STOP THE TEXT PAULA
+Apr 18 01:41:50 <chloe_> SO THAT THE CHAT CAN BE VIEWED
+Apr 18 01:42:07 <NUNICK> sorry
+Apr 18 01:42:08 <chloe_> STOP UPLOADING IN 4
+Apr 18 01:42:16 <NUNICK> i made a istake... call your call girl
+Apr 18 01:42:20 <chloe_> stop uploading in 5 too
+Apr 18 01:42:23 <NUNICK> it lools fantalticc
+Apr 18 01:42:33 <NUNICK> c'est vachement bien
+Apr 18 01:43:22 * fe3cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-877a37e81125e6e7) has joined #aether9
+Apr 18 01:43:46 <chloe_> ACT 6/7
+Apr 18 01:44:04 <chloe_> WOLF BACK IN FRAME 4
+Apr 18 01:44:34 <chloe_> FRAME 5: BUILDING WEBCAM
+Apr 18 01:44:44 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 18 01:45:02 * cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-cfda2c603cd6eedf) has joined #aether9
+Apr 18 01:45:45 <chloe_> WOLF COULD WATCH TO FRAME 5 ?
+Apr 18 01:46:02 <chloe_> WOLF NOW IN FRAME 4 AND 5 
+Apr 18 01:46:35 <chloe_> ACT 8
+Apr 18 01:46:44 * fe3cruz has quit (Client Quit)
+Apr 18 01:47:01 <chloe_> WOLF SHADOWS 
+Apr 18 01:47:03 <NUNICK> yes
+Apr 18 01:48:21 <chloe_> LEAVE THE SHADOWS NOT TOO CONTRASTED CHRIS
+Apr 18 01:48:34 <chloe_> AND CHRIS KEEPS ABSTRACT SHADOWS IN FRAME 5
+Apr 18 01:48:44 <chloe_> PAULA, LEAVE FRAME 5 TO CHRIS PLEASE
+Apr 18 01:48:53 <chloe_> ACT9
+Apr 18 01:49:18 <chloe_> LEAVE FRAME 5 TO CHRIS
+Apr 18 01:49:37 <NUNICK> whart is happenig with frame 6?
+Apr 18 01:50:46 <NUNICK> whos in frame 6?
+Apr 18 01:50:54 <chloe_> PHALLUS CLOSE UP
+Apr 18 01:52:16 <chloe_> ACT 10 EATEN
+Apr 18 01:53:06 <chloe_> VERY NICE WHEN WOLF OPEN MOUTH
+Apr 18 01:53:47 <chloe_> WOLF DIES
+Apr 18 01:53:59 <chloe_> WOLF DEAD
+Apr 18 01:54:05 <chloe_> OR TAKES OFF MASK
+Apr 18 01:54:32 <chloe_> KILL THE WOLF IN FRAME 4!!
+Apr 18 01:54:32 <chloe_> KILL THE WOLF IN FRAME 4
+Apr 18 01:54:42 <saylor> kill the wolf  '''''
+Apr 18 01:54:45 <chloe_> ACT 12 RESOLUTION
+Apr 18 01:58:16 <NUNICK> some one get a girl in frame 4
+Apr 18 01:58:23 <chloe_> END
+Apr 18 01:58:45 <chloe_> ALL BLACK EXCERPT LOWER ROW
+Apr 18 02:00:07 <chloe_> WAOU, BEAUTIFUL THINGS HAPPENED!
+Apr 18 02:00:19 <chloe_> BRAVO A TOUS
+Apr 18 02:00:26 <ideacritik> someone recorded this right??? :)
+Apr 18 02:00:27 <cruz> was anybody recording?
+Apr 18 02:00:31 <ideacritik> oui bravo
+Apr 18 02:00:33 <bk2> let me put the credits : stop uploading black!!!!
+Apr 18 02:00:37 <cruz> i forgot to plug my recorder in
+Apr 18 02:00:46 <bk2> impossible to  put credits in frame 8 only.
+Apr 18 02:00:58 <ideacritik> im not uploading 
+Apr 18 02:01:08 <NUNICK> did someone record it?
+Apr 18 02:01:14 <NUNICK> it was pretty
+Apr 18 02:01:20 <cruz> paula were you recording?
+Apr 18 02:01:24 <NUNICK> thanks aehternautes
+Apr 18 02:01:25 <chloe_> COULD YOU CREDIT OTHER PEOPLE...
+Apr 18 02:01:31 <NUNICK> not video 
+Apr 18 02:01:31 * cruz is now known as fe2cruz
+Apr 18 02:01:36 <saylor> i think it wasnt recorded
+Apr 18 02:01:42 <NUNICK> tres con
+Apr 18 02:01:47 <ideacritik> aethernauts bravo - i think we have to work on documentation... :)
+Apr 18 02:01:48 <NUNICK> pas enregistÂ´re avec ma camera
+Apr 18 02:01:50 <NUNICK> shit
+Apr 18 02:01:57 <chloe_> OUAIS, mais c'est du live, c'est bien aussi
+Apr 18 02:01:59 <ideacritik> (tabarnac)
+Apr 18 02:02:01 <NUNICK> trop dans le rush
+Apr 18 02:02:01 <fe2cruz> gone
+Apr 18 02:02:25 <chloe_> I am sorry too, it was a good one
+Apr 18 02:02:26 <aether9> i screencaptured some significant fragments
+Apr 18 02:02:28 <fe2cruz> geneva? anmyone recording?
+Apr 18 02:02:42 <NUNICK> was pretty exiting
+Apr 18 02:02:45 <ideacritik> merde - was nice - 
+Apr 18 02:02:46 <NUNICK> +sorry for been late
+Apr 18 02:02:55 <fe2cruz> credits look nice
+Apr 18 02:02:56 <bk2> sorry: paudrey: frame...
+Apr 18 02:03:02 <fe2cruz> good work boris
+Apr 18 02:03:04 <ideacritik> all good - how is it now in venue NUNICK ?
+Apr 18 02:03:12 <NUNICK> it will not happen again for mapping festivals this saturday
+Apr 18 02:03:37 <ideacritik> NUNICK: what do yo umean?
+Apr 18 02:03:47 <fe2cruz> being late
+Apr 18 02:03:50 <chloe_> credits do look nice
+Apr 18 02:03:52 <bk2> problem in frame 7, sorry
+Apr 18 02:03:53 <ideacritik> well spectator in my room has good feedback
+Apr 18 02:03:55 <ideacritik> :)
+Apr 18 02:04:03 <bk2> and now all black?
+Apr 18 02:04:18 <fe2cruz> i LOVE the bells at the end
+Apr 18 02:04:18 <chloe_> yes.
+Apr 18 02:04:25 <fe2cruz> just like an old record storybook
+Apr 18 02:04:30 <ideacritik> fe2cruz: i did not see bells... 
+Apr 18 02:04:33 <ideacritik> damn
+Apr 18 02:04:40 <fe2cruz> hurray musician
+Apr 18 02:04:43 <chloe_> I have heard them
+Apr 18 02:04:47 <bk2> sorry Judy. there was a mess up. i use frame 7 for you...
+Apr 18 02:04:57 <ideacritik> i also love 'brussels kingdom of belgium' !
+Apr 18 02:05:07 <chloe_> I 'll black upper row
+Apr 18 02:05:13 <fe2cruz> kingdom of beers
+Apr 18 02:05:15 <ideacritik> bk2 - shall i put back cam?
+Apr 18 02:05:26 <bk2> cams in 7 + 9 ok
+Apr 18 02:05:27 <saylor> me too... brussels kingdom
+Apr 18 02:05:28 <ideacritik> actually - we are drinking belgian beer now! :)
+Apr 18 02:05:29 <bk2> and rest black
+Apr 18 02:05:34 <chloe_> wait bk, first all black
+Apr 18 02:05:41 <saylor> we are drinking turkish raki
+Apr 18 02:05:52 <ideacritik> saylor: sante!!
+Apr 18 02:05:57 <saylor> sant?
+Apr 18 02:06:04 <chloe_> i black middle row
+Apr 18 02:06:14 <ideacritik> santÃ©
+Apr 18 02:06:24 <NUNICK> must talke you later
+Apr 18 02:06:29 <NUNICK> bye
+Apr 18 02:06:31 <NUNICK> sante
+Apr 18 02:06:32 <saylor> thanks paula
+Apr 18 02:06:34 <NUNICK> chin chin
+Apr 18 02:06:40 <NUNICK> was beautiful
+Apr 18 02:06:44 <NUNICK> really
+Apr 18 02:06:47 <fe2cruz> great work paula. 
+Apr 18 02:06:49 * NUNICK has quit ()
+Apr 18 02:07:02 <saylor> thanks to everybody
+Apr 18 02:07:18 <fe2cruz> anyone left from manizales yes thats to all
+Apr 18 02:07:28 <fe2cruz> thanks
+Apr 18 02:07:31 <chloe_> OK, if you want to put webcams, now you can do it
+Apr 18 02:07:34 <ideacritik> shall we leave it all blackÃ 
+Apr 18 02:07:35 <bk2> ok -it went quite smoothly! how long was it???
+Apr 18 02:07:39 <ideacritik> ah ok i do now
+Apr 18 02:07:48 <chloe_> 30 minutes without credits
+Apr 18 02:07:58 <chloe_> 39 with
+Apr 18 02:08:30 <chloe_> great
+Apr 18 02:08:35 <manizales> chao a todos
+Apr 18 02:08:45 <fe2cruz> bye
+Apr 18 02:08:45 <chloe_> I am very happy that it eventually was something
+Apr 18 02:08:49 <ideacritik> ciao manizales ! gracias!
+Apr 18 02:08:54 <chloe_> ciao, gracias
+Apr 18 02:09:00 <ideacritik> yes very nice - 
+Apr 18 02:09:15 <ideacritik> well --- tomorrow early mroning here in NL so ... 
+Apr 18 02:09:20 <ideacritik> ciao from me too - 
+Apr 18 02:09:27 <ideacritik> pitty wie did not record.
+Apr 18 02:09:28 <fe2cruz> bye audrey
+Apr 18 02:09:32 <bk2> ciao manizales!! merci pour toute l'organisation!!!!
+Apr 18 02:09:40 <bk2> bye audrey
+Apr 18 02:09:44 <chloe_> c'est pas grave audrey
+Apr 18 02:09:53 <paljudy_> Sorry...phone call....
+Apr 18 02:09:53 <fe2cruz> i will set up recorder properly saturday
+Apr 18 02:09:55 <ideacritik> ok - ,merci tout le monde - very nice work 
+Apr 18 02:09:57 <bk2> great work on webcams - very smooth!
+Apr 18 02:09:57 <chloe_> on va en refaire encore tellement de bonnes perfomances!
+Apr 18 02:10:04 <saylor> see u on saturday
+Apr 18 02:10:04 <ideacritik> and till soon!!!
+Apr 18 02:10:15 <paljudy_> I have been reading ....we'll confab later?
+Apr 18 02:10:16 <bk2> i put the anouncment for next performance in the interface now..
+Apr 18 02:10:19 <chloe_> what time do we have to be online on saturday?
+Apr 18 02:10:25 <aether9> yeah, cheers to all and see you soon
+Apr 18 02:10:28 <chloe_> do that
+Apr 18 02:10:29 <bk2> confab?
+Apr 18 02:10:35 <fe2cruz> 40minutes before to prep?
+Apr 18 02:10:41 <ideacritik> oh - email about saturday times? i mean to meetÃ
+Apr 18 02:10:43 <ideacritik> ?
+Apr 18 02:10:43 <chloe_> 1 hour at least
+Apr 18 02:10:51 <ideacritik> so 7pm CET
+Apr 18 02:10:59 <chloe_> is the beginning of perf
+Apr 18 02:11:04 <ideacritik> oh?
+Apr 18 02:11:07 <ideacritik> i thought 8CET
+Apr 18 02:11:11 <chloe_> and it is in switzerland...
+Apr 18 02:11:17 <aether9> 7 CET (summertime)
+Apr 18 02:11:20 <ideacritik> hahaha... oui oui...
+Apr 18 02:11:22 <ideacritik> ah
+Apr 18 02:11:30 <ideacritik> so 6CET we meet?
+Apr 18 02:11:38 <saylor> yes
+Apr 18 02:11:42 <chloe_> let's do that
+Apr 18 02:11:43 <ideacritik> okido 
+Apr 18 02:11:43 <aether9> agreed
+Apr 18 02:11:56 <chloe_> alors ? samedi
+Apr 18 02:11:56 <fe2cruz> eek post it proper on the list too
+Apr 18 02:11:59 <ideacritik> to all the shirleys and the crew! great and ciao
+Apr 18 02:12:18 <fe2cruz> surely, we'll see you soon
+Apr 18 02:12:19 <ideacritik> (have to wake up in 4 hours...)
+Apr 18 02:12:22 <ideacritik> :)
+Apr 18 02:12:29 * ideacritik has quit ()
+Apr 18 02:12:55 * saylor has quit ("Leaving")
+**** ENDING LOGGING AT Fri Apr 18 02:13:30 2008
+
+**** BEGIN LOGGING AT Fri Apr 18 13:36:10 2008
+
+Apr 18 13:36:10 * Now talking on #aether9
+Apr 18 13:36:10 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 18 13:36:10 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
+Apr 18 15:49:43 * NUNICK (n=paulavel@190.7.151.194) has joined #aether9
+Apr 18 15:49:49 * NUNICK (n=paulavel@190.7.151.194) has left #aether9
+Apr 18 18:02:14 * bk2 (n=bk@226-135.203-62.cust.bluewin.ch) has joined #aether9
+Apr 18 18:02:20 <bk2> manu?
+Apr 18 18:02:27 <aether9> yep?
+Apr 18 18:03:09 <bk2> salut - you know how to edit a fuscking acrobat document? how to export it correctly in another format?
+Apr 18 18:03:22 <bk2> possible in acrobat, but penible...
+Apr 18 18:03:28 <aether9> through open-office, i think
+Apr 18 18:03:32 <bk2> (cause we need a new script actually)
+Apr 18 18:03:39 <bk2> not word?
+Apr 18 18:03:45 <bk2> open office better for this=?
+Apr 18 18:03:50 <aether9> does word open PDF?
+Apr 18 18:04:01 <aether9> open office does
+Apr 18 18:04:15 <bk2> i didn't try dirrectly from word. i try. maybe 2008...
+Apr 18 18:04:26 <aether9> and export to what?
+Apr 18 18:05:04 <bk2> 2008: no...
+Apr 18 18:05:28 <bk2> don't care about export, just to change the last script.
+Apr 18 18:06:06 <aether9> try open office, might work, and save again as PDF
+Apr 18 18:06:12 <bk2> ok
+Apr 18 18:08:00 <bk2> biig package... i'll wait. let's see for our rdv. starts at 20:00 at bac. teknoid night.
+Apr 18 18:34:34 <bk2> oprn office peut pas ouvrir un pdf
+Apr 18 18:36:48 <aether9> tiens, tu as raisons, j'etais persuade pourtant..
+Apr 18 18:55:02 <bk2> trouv? THE soft: deskUNpdf
+Apr 18 18:55:21 <bk2> www.docudesk.com
+Apr 18 18:55:55 <bk2> ?a marche ultra bien apparement, tu peux exporter dans le format que tu veux, toutes les images et polices sont conserv?es 1:1
+Apr 18 18:56:50 <bk2> version demo, une seule page ? la fois et pas plus de 4 pages par documents...
+Apr 18 18:56:55 <bk2> (seul probleme)
+Apr 18 18:58:18 <aether9> mouais.. il y a aussi Inkscape, freeware open-source (sort d'Illustrator), peut éditer les PDF mais une seule page à la fois (comme Illustrator)..
+Apr 18 18:59:08 <aether9> et je viens de trouver ceci qui est supposer combiner plusieurs PDFs : http://www.malcom-mac.com/blog/pdfmergex/
+Apr 18 19:37:04 <aleij> manuel i see you have subscribed my emails to 2 lists
+Apr 18 20:05:42 <aether9> 2 lists?
+Apr 18 20:06:25 <aether9> you should be on x-ebcdic-international - basic aether/n3kr. information...
+Apr 18 20:06:27 <bk2> my mother called me to, she was very worried about those mails ;-)
+Apr 18 20:06:56 <aether9> yep, i have the impression our provider "forced" the sending of the subscrition info...
+Apr 18 20:07:26 <aether9> on the other hand, we just received this interesting email:
+Apr 18 20:07:52 <aether9> Date:   	 Fri, 18 Apr 2008 09:05:20 +0530 [05:35:20 AM CEST]
+Apr 18 20:07:52 <aether9> From:  	pritham k chakravarthy <prithu7@hotmail.com>
+Apr 18 20:07:52 <aether9> To:  	utf-8@1904.cc
+Apr 18 20:07:52 <aether9> Subject:  	[No Subject]
+Apr 18 20:07:52 <aether9> I am a storyteller/performer, both in English & Tamil. I am truly interested in knowing more about your project and getting actively involved. Could you help me please?
+Apr 18 20:07:52 <aether9> Pritham K. Chakravarthy
+Apr 18 20:08:17 <aether9> she's an indian film-maker
+Apr 18 20:08:31 <bk2> Pritham K Chakravarthy is a playwright, director, performer, film critic and activist from Chennai.
+Apr 18 20:08:39 <bk2> don't you know her? Damn!
+Apr 18 20:08:54 <aether9> regarding mapping- are you there now?
+Apr 18 20:09:05 <aleij> one is named utf-8 and the other KOI8-R
+Apr 18 20:09:20 <aether9> utf-8 is the sender
+Apr 18 20:09:27 <bk2> no - i'm still revising this script and will go there after. i need 45 more minutnes i guess.
+Apr 18 20:09:41 <aether9> ok
+Apr 18 20:09:54 <aleij> so 2 emails on the same mailing lists
+Apr 18 20:10:02 <aleij> this is good for your statistics
+Apr 18 20:10:08 <aleij> :)
+Apr 18 20:10:13 <aether9> ah, that's a mistake
+Apr 18 20:10:50 <aether9> if you don't want the duplicates, unsubscribe from KOI8-R
+Apr 18 20:10:54 <aleij> please unsubscibe alejo@riseup.net
+Apr 18 20:11:01 <aether9> ok
+Apr 18 20:11:03 <aleij> tx
+Apr 18 21:25:55 <bk2> ah tu es l? - donc, moi je serai ? mapping a 22:00
+Apr 18 21:26:38 <aether9> ok, à toute
+Apr 18 21:28:06 * bk2 has quit ("Leaving")
+**** ENDING LOGGING AT Fri Apr 18 21:32:48 2008
+
+**** BEGIN LOGGING AT Sat Apr 19 10:56:50 2008
+
+Apr 19 10:56:50 * Now talking on #aether9
+Apr 19 10:56:50 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 19 10:56:50 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
+Apr 19 11:32:48 * bk (n=bk@59-46.1-85.cust.bluewin.ch) has joined #aether9
+Apr 19 11:32:55 <bk> ssalut,
+Apr 19 11:33:17 <aether9> yo
+Apr 19 11:33:18 <bk> pour cedric ok pour la camera
+Apr 19 11:33:56 <aether9> ok.. une question, pour toi, est-que ce serait ok d'utiliser une cam iSight?
+Apr 19 11:34:01 <bk> mais pour l'ordi, pas sur. l? il dort. ?a devrait ?tre jouable, le probleme est qu'il est pas dispo avant 18h.
+Apr 19 11:34:06 <aether9> c'est la cam firewire mac
+Apr 19 11:34:14 <bk> je suppose que oui.
+Apr 19 11:34:34 <aether9> ça nous permet d'avoir une cam de libre pour filmer la projection.
+Apr 19 11:34:53 <bk> cedric va fillmner la projection.
+Apr 19 11:35:00 <bk> avec sa camera.
+Apr 19 11:35:23 <aether9> ah.. alors avec l'autre, anna filmera les musiciens, l'ensemble de la perfo
+Apr 19 11:35:45 <aether9> question: tables de mixage n3krozoftiennes
+Apr 19 11:36:00 <aether9> y en-a-t-il dans la fameuse malle?
+Apr 19 11:36:05 <bk> ok. oui, elles sont l? (une grosse noire  + la toy-grise)
+Apr 19 11:36:36 <aether9> la behringer moyenne, si possible
+Apr 19 11:36:58 <bk> il n'y a pas de behringer dans la malle. 
+Apr 19 11:37:14 <aether9> ah.. tu parles des trucs d'effets video
+Apr 19 11:37:26 <aether9> je parlais de tables de mixage son
+Apr 19 11:37:39 <aether9> mais je viens de voir qu'il y a ce carton au fond de mon armoire
+Apr 19 11:37:58 <bk> ok
+Apr 19 11:40:57 <aether9> ouaip, c'est bon pour la table de mix
+Apr 19 11:41:17 <aether9> as-tu trouve un adaptateur pour ton ecran
+Apr 19 11:41:18 <aether9> ?
+Apr 19 11:41:36 <bk> pas encore
+Apr 19 11:44:17 <aether9> en theorie cedric devrait en avoir un, mais l'avoir a 18h c'est chaud
+Apr 19 11:45:14 <bk> oui. en theorie marco devrais en avoir un aussi. mais l? je vais me doucher, je reglerai cela apr?s. 
+Apr 19 11:45:30 <bk> c'est ou qu'on peut manger? ? l'usine?
+Apr 19 11:46:56 <aether9> dont' know, l'annee passee c'etait au cafe alu, a artamis
+Apr 19 11:52:33 <aether9> il faudrait faire en sorte que la perfo ce soir commence a 19:04 ...
+Apr 19 12:17:36 * bk has quit ("This computer has gone to sleep")
+Apr 19 12:33:15 * bk2 (n=bk@59-46.1-85.cust.bluewin.ch) has joined #aether9
+Apr 19 12:33:33 <bk2> manu, toi tu voudras manger a artamis ou pas?
+Apr 19 12:33:58 <aether9> oui, prquoi pas
+Apr 19 12:34:16 <aether9> la je sors acheter des k7 minidv chez interdiscount
+Apr 19 12:34:32 <bk2> entre 12h et 14. les blisscapen qui peuvent devraient nous rejoindre l? alors
+Apr 19 12:34:44 <bk2> avant de sortir, faisons un plan...
+Apr 19 12:35:01 <aether9> c'est confirme pour artamis?
+Apr 19 12:35:05 <bk2> oui.
+Apr 19 12:35:32 <aether9> ok.. alors 13h15 a artamis pour manger?
+Apr 19 12:36:01 <bk2> ok. le plan est que tu passes chercher les bliss au bac?
+Apr 19 12:36:11 <aether9> je les sms-se
+Apr 19 12:36:18 <bk2> ok, 13h15 ? arta!
+Apr 19 12:36:22 <aether9> ok, a toute
+Apr 19 12:36:31 <bk2> tak
+Apr 19 12:41:18 * Disconnected ().
+**** ENDING LOGGING AT Sat Apr 19 12:41:18 2008
+
+**** BEGIN LOGGING AT Sat Apr 19 18:25:48 2008
+
+Apr 19 18:25:48 * Now talking on #aether9
+Apr 19 18:25:48 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 19 18:25:48 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
+Apr 19 18:25:50 * ideacritik (n=ideacrit@a82-95-96-133.adsl.xs4all.nl) has joined #aether9
+Apr 19 18:26:00 <aether9> hi folks
+Apr 19 18:26:05 <paulavel> i wil read now the script boris and i tell you
+Apr 19 18:26:05 <paulavel> [11:23] paulavel: hey, should i test the "cadre" in test frame, or  can i do it in main window?
+Apr 19 18:26:10 <paulavel> hi manu and adrey
+Apr 19 18:26:13 <paulavel> audrey
+Apr 19 18:26:16 <bk3> test it in the patch - do you need to upload?
+Apr 19 18:26:27 <ideacritik> hoi!
+Apr 19 18:26:48 <ideacritik> test
+Apr 19 18:27:19 <ideacritik> test??
+Apr 19 18:27:42 * ideacritik has quit (Client Quit)
+Apr 19 18:29:32 <paljudy_> yo! I'm here now too! Let's grab a quick vid segment of the beautiful loction BK3....OK?
+Apr 19 18:29:33 * ideacritik (n=ideacrit@a82-95-96-133.adsl.xs4all.nl) has joined #aether9
+Apr 19 18:29:36 <ideacritik> test
+Apr 19 18:29:40 <ideacritik> bon! allo !!
+Apr 19 18:31:26 <ideacritik> testing 1-2-3 anyone out there??
+Apr 19 18:32:08 <ideacritik> aleij: ?
+Apr 19 18:32:22 <paulavel> hi
+Apr 19 18:32:27 <ideacritik> salut merci lllll
+Apr 19 18:32:32 <paulavel> i'm uploading location in 4rt window
+Apr 19 18:32:34 <ideacritik> je me demandais si je recevais
+Apr 19 18:32:42 <paulavel> i will stream from the hotel
+Apr 19 18:32:43 <ideacritik> i see - i will too in 5 min then
+Apr 19 18:32:47 <paulavel> le couloir
+Apr 19 18:33:10 <paulavel> the best place for internet connection
+Apr 19 18:35:26 <paulavel> hey
+Apr 19 18:35:37 <paulavel> did you got sound in last performance? judy told me that she never recive sound
+Apr 19 18:36:47 <fe2cruz> mos of us heard your musician yeah, it was good stuff
+Apr 19 18:36:48 <ideacritik> i never receive sound... but no one told me url of server so i can ask sysadmin to unblock it....
+Apr 19 18:39:43 <fe2cruz> audrey you need the giss.tv:8000/aether.mp3 address?
+Apr 19 18:40:23 <fe2cruz> i'm streaming into the main interface now can you hear it?
+Apr 19 18:40:23 <paulavel> so beautiful brussels page in the wall
+Apr 19 18:40:28 <ideacritik> so i have to ask to unblock giss.tv... ok thanx
+Apr 19 18:40:38 <paulavel> great
+Apr 19 18:40:39 <paulavel> i hear
+Apr 19 18:40:52 <paulavel> chirs , you love tango!
+Apr 19 18:40:56 <fe2cruz> the little flash thinging is fickle it needs to be reclicked till it plays
+Apr 19 18:41:14 <paljudy_> OK...sound is good...all is well here...
+Apr 19 18:41:17 <bk3> great chlo?!
+Apr 19 18:41:57 <chloe_> thanks
+Apr 19 18:42:28 <fe2cruz> tango is funny
+Apr 19 18:42:52 <fe2cruz> audrey can you hear it, or is port 8000 being blocked by your router?
+Apr 19 18:43:03 <chloe_> reem, my german friend is here, doing the camera
+Apr 19 18:43:06 <fe2cruz> 8000 is usually unblocked by default i think
+Apr 19 18:43:57 <chloe_> what is this music?!
+Apr 19 18:44:25 <fe2cruz> sorry i'm just streaming whatever on my radio to see if everyone can get access to the sound
+Apr 19 18:46:04 * manizales (n=nata@190.7.151.194) has joined #aether9
+Apr 19 18:46:05 <chloe_> i get access, for sure
+Apr 19 18:46:53 <chloe_> it stopped
+Apr 19 18:47:03 <paulavel> do you mind if i put the manizales hotel in a paper with hand typographie?
+Apr 19 18:47:17 <chloe_> I mind
+Apr 19 18:47:19 <paulavel> sound restart and stoped
+Apr 19 18:47:22 <paulavel> again
+Apr 19 18:47:27 <paulavel> i hear
+Apr 19 18:48:25 <paulavel> hey chirs
+Apr 19 18:48:42 <paulavel> you are crazy with music
+Apr 19 18:48:48 <paulavel> that is colombian sound?
+Apr 19 18:49:00 <fe2cruz> cumbia its big in east la
+Apr 19 18:49:20 * saylor (n=saylor2@d83-182-182-200.cust.tele2.be) has joined #aether9
+Apr 19 18:49:24 <paulavel> ok chloÃ©. ill will left it kike it is then. computer text
+Apr 19 18:49:47 <paulavel> cumbia is native from colombia
+Apr 19 18:50:10 <paulavel> boris, i'm reading the script
+Apr 19 18:50:20 <paulavel> i will ask you things if i need
+Apr 19 18:50:35 <ideacritik> chloe_: is frame 7 ok or should i put just NL instead
+Apr 19 18:50:50 <chloe_> I like it
+Apr 19 18:51:21 <aether9> some body of you is streaming sound?
+Apr 19 18:51:25 <aether9> good
+Apr 19 18:51:25 <saylor> is there sound already where u are in geneva
+Apr 19 18:51:31 <aether9> we make a last briefing
+Apr 19 18:51:39 <fe2cruz> yeah, do you know where it comes from? its not like mexico stealing from german polka. its unique and simple
+Apr 19 18:51:43 <saylor> would be nice to hear the test sound of bliscapen
+Apr 19 18:51:54 <saylor> before start
+Apr 19 18:51:54 <aether9> they start with some drones now
+Apr 19 18:52:06 <aether9> as soon as the soundman swithces it on
+Apr 19 18:52:28 <fe2cruz> i'm disconnected please stream the band
+Apr 19 18:57:08 <paljudy_> 4 minutes
+Apr 19 18:57:24 <paljudy_> who calls the show?
+Apr 19 18:57:33 <chloe_> BK i guess
+Apr 19 18:57:50 <chloe_> or aether
+Apr 19 18:57:50 <chloe_> or aether?
+Apr 19 18:58:19 <ideacritik> someone recording?? sounnd + interface + live show in geneva?
+Apr 19 18:58:24 <ideacritik> would be nice.... 
+Apr 19 18:59:28 <paljudy_> filmed and up on YouTube...would be nice
+Apr 19 18:59:42 <ideacritik> seriously - who is recording?
+Apr 19 19:00:09 <paljudy_> i cannot
+Apr 19 19:00:25 <fe2cruz> geneva said yes they will record something, i am recording the interface and sound once we start
+Apr 19 19:00:40 <ideacritik> great!!!!
+Apr 19 19:00:47 <ideacritik> very good!!
+Apr 19 19:01:14 <fe2cruz> i believe chloe is shouting the acts again
+Apr 19 19:01:32 <ideacritik> what goees in frame 6?
+Apr 19 19:02:30 <ideacritik> whoever is shouting acts - please DO SO IN CAPS :)
+Apr 19 19:02:34 <chloe_> yes chris
+Apr 19 19:02:54 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 19 19:03:07 <chloe_> YES
+Apr 19 19:03:15 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-7397fe804a05f55b) has joined #aether9
+Apr 19 19:03:23 <chloe_> FRAME 6: SOMEWHERE
+Apr 19 19:03:33 <bk3> people are slowly getting in. we wait till more poeple arrive. about 10-15 minutes.
+Apr 19 19:03:34 <chloe_> FRAME 1: ESLEWEHERE
+Apr 19 19:03:36 <ideacritik> very good
+Apr 19 19:03:43 <ideacritik> ok bk3 
+Apr 19 19:05:16 <chloe_> BK: YOU ARE VERY DARK IN THE IMAGE
+Apr 19 19:05:30 <chloe_> MAYBE TO DARK
+Apr 19 19:05:41 <chloe_> I MEAN: WE DON'T EVEN SEE YOUR WHITE SHIRT
+Apr 19 19:05:45 <saylor> shouldnt we announce somehow that we re late for the internauts
+Apr 19 19:05:55 <paulavel> boris, some questions about script
+Apr 19 19:06:09 <chloe_> SAY
+Apr 19 19:06:13 <saylor> k
+Apr 19 19:06:15 <saylor> ok
+Apr 19 19:07:06 <paulavel> first close up in act 2
+Apr 19 19:07:22 <paulavel> ok, do i introduce texts sometimes?
+Apr 19 19:07:54 <paulavel> later, like?
+Apr 19 19:07:54 <paulavel> do you want to see my ears?
+Apr 19 19:08:00 <chloe_> CHAT WILL DO THE TEXT
+Apr 19 19:08:04 <paulavel> my teeth?
+Apr 19 19:08:05 <paulavel> ok
+Apr 19 19:08:19 <paulavel> so i can not mix some times with text
+Apr 19 19:08:20 <chloe_> IF YOU FEEL LIKE, WHY NOT
+Apr 19 19:08:27 <chloe_>  BUT IN SMALL AMOUNT
+Apr 19 19:08:28 <paulavel> ok, i feel like it
+Apr 19 19:09:04 <chloe_> DO WHAT YOU FEEL LIKE BUT FOLLOW MY WORDS
+Apr 19 19:09:05 <paulavel> you mean by amount... taille de la typo or le temps que Ã§a passe
+Apr 19 19:09:17 <paulavel> conais pas le mot amount je crois
+Apr 19 19:09:19 <chloe_> (if I have anything to say)
+Apr 19 19:09:27 <paulavel> ok, i will
+Apr 19 19:09:39 <paulavel> follow your words
+Apr 19 19:09:40 <chloe_> AMOUNT IS QUANTITE
+Apr 19 19:09:52 <paulavel> yeah ok, amount
+Apr 19 19:10:08 <fe2cruz> approx when do we start?
+Apr 19 19:10:25 <ideacritik> bk3 said 10-15 min about 5 min ago
+Apr 19 19:10:38 <ideacritik> so prob in 5 -10
+Apr 19 19:10:39 <paljudy_> 10 minutes is a lifetime for a web audience
+Apr 19 19:10:41 <bk3> yes, in about 5 more minutes.
+Apr 19 19:10:49 <ideacritik> 5 min okido
+Apr 19 19:10:57 <bk3> yes, minutes.
+Apr 19 19:11:05 <saylor> i agree with judy
+Apr 19 19:11:16 <ideacritik> lets get it on ! :)
+Apr 19 19:11:39 <bk3> we will not make a speech here. the audience will understand it starts with the music starting.
+Apr 19 19:11:51 <bk3> so 4 more minutes.
+Apr 19 19:11:55 <ideacritik> bk3: maybe says its LRRH?
+Apr 19 19:11:57 <saylor> is there a lot of people boris
+Apr 19 19:11:58 <ideacritik> at least... 
+Apr 19 19:11:59 <saylor> ?
+Apr 19 19:12:08 <bk3> (so chlo?, don't rush the start.)
+Apr 19 19:12:08 <bk3> yes.
+Apr 19 19:12:18 <bk3> about 40
+Apr 19 19:12:22 <fe2cruz> can i get a whu whu so i cna press record on my recorder before we really start
+Apr 19 19:12:51 <chloe_> WHAT DO YOU MEAN BK?
+Apr 19 19:13:03 <chloe_> THAT I LEAVE ACT 1 FOR A WHILE?
+Apr 19 19:13:46 <paljudy_> no...40 people in the hall is what he is saying
+Apr 19 19:16:09 <bk3> lightning problem - solved in 1 minute.
+Apr 19 19:16:31 <bk3> we can start uploading black
+Apr 19 19:16:42 <chloe_> OK
+Apr 19 19:16:47 <bk3> stop. 
+Apr 19 19:16:52 <ideacritik> frame 4??????????
+Apr 19 19:16:53 <bk3> sorry, we need 1 more minute...
+Apr 19 19:16:57 <paulavel> hey
+Apr 19 19:17:00 <paulavel> pleas
+Apr 19 19:17:14 <chloe_> PAULA!!
+Apr 19 19:17:21 <chloe_> WE ARE NOW UPLOADING BLACK
+Apr 19 19:17:28 <chloe_> PFOLLOW MY DIRECTIONS
+Apr 19 19:17:32 <bk3> paula...?!?!
+Apr 19 19:17:38 <chloe_> I WILL TELLE YOU WHAT TO DO
+Apr 19 19:17:51 <paulavel> sorry
+Apr 19 19:17:54 <chloe_> BLACK EVERYWHERE
+Apr 19 19:18:10 <chloe_> PLEASE LET^S ALL BE CAREFULL
+Apr 19 19:18:35 <chloe_> BLACK IS NOT BLUE
+Apr 19 19:18:48 <chloe_> FRAME 4 IS NOW UPLOADING BLUE
+Apr 19 19:19:12 <paulavel> it is black
+Apr 19 19:19:14 <chloe_> LAURE WILL UPLOAD BLAKC IN FRAME 4
+Apr 19 19:19:14 <paulavel> here
+Apr 19 19:19:18 <chloe_> STOP UPLOADING PAULA
+Apr 19 19:19:24 <chloe_> SHE HAS BLACK READY
+**** ENDING LOGGING AT Sat Apr 19 19:19:34 2008
+
+**** BEGIN LOGGING AT Sat Apr 19 19:47:01 2008
+
+Apr 19 19:47:01 * Now talking on #aether9
+Apr 19 19:47:01 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 19 19:47:01 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
+Apr 19 19:47:01 * #aether9 :[freenode-info] channel flooding and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+Apr 19 19:47:08 <chloe_> SKIN
+Apr 19 19:48:05 <chloe_> CLOSE UP ON WOLF
+Apr 19 19:48:13 <chloe_> ASTRACTZ ON HIS HAIR AND TEEHT
+Apr 19 19:48:34 <chloe_> PHALLUS JUDY
+Apr 19 19:48:41 <chloe_> PHALLUS
+Apr 19 19:49:31 <chloe_> ACT 9 RESCUE
+Apr 19 19:50:21 <chloe_> AND EATEN
+Apr 19 19:50:32 <chloe_> WOLF CAN REST
+Apr 19 19:50:37 <chloe_> HE HAS EATEN
+Apr 19 19:51:17 <chloe_> HUNTERS IN FRAME 1
+Apr 19 19:52:41 <chloe_> WOLF DIES
+Apr 19 19:52:44 <chloe_> WOLF DIES
+Apr 19 19:52:46 <chloe_> WOLF DIES
+Apr 19 19:52:58 <chloe_> GI IN FRAME 5
+Apr 19 19:53:06 <chloe_> PAULA WOLF DIES
+Apr 19 19:53:17 <chloe_> MY BELLY?
+Apr 19 19:53:50 <chloe_> GOOD PICTURE OF WOLF DESAD
+Apr 19 19:53:51 <bk> next act?
+Apr 19 19:54:00 <chloe_> ACT 10
+Apr 19 19:54:07 <saylor> why the webcam dont work ?
+Apr 19 19:54:48 <ideacritik> saylor what do you need to upload? i can from here
+Apr 19 19:55:37 <chloe_> GIRL IN FRAME 6
+Apr 19 19:56:19 <ideacritik> that i cant
+Apr 19 19:57:46 <ideacritik> music is great!!
+Apr 19 19:57:50 <paulavel> pleas put my  dead wolf again
+Apr 19 19:57:50 <chloe_> I WILL UPLOAD ALL THE BLACK
+Apr 19 19:57:56 <chloe_> LITTLE BY LITTLE
+Apr 19 19:57:58 <bk> girls uploaded
+Apr 19 19:57:58 <paulavel> thanks
+Apr 19 19:58:18 <bk> paula, stop uploading in frame 4
+Apr 19 19:58:30 <ideacritik> i can black too chloe_ if you need
+Apr 19 19:58:35 <ideacritik> tell me which frame
+Apr 19 19:58:48 <chloe_> OK BLACK ON 2
+Apr 19 19:58:59 <ideacritik> done
+Apr 19 19:59:16 <ideacritik> another?
+Apr 19 19:59:22 <bk> we are blackening out???
+Apr 19 19:59:33 <bk> ??????
+Apr 19 19:59:34 <paulavel> do we, all the team be on line at the final fina end end?
+Apr 19 19:59:42 <chloe_> BLACK FRAME 5 AUDREY
+Apr 19 19:59:43 <paulavel> the set and all in line?
+Apr 19 19:59:46 <ideacritik> yes
+Apr 19 19:59:59 <bk> just "single frames" of crew on location please...
+Apr 19 20:00:01 <chloe_> AND THEN FRAME 6
+Apr 19 20:00:05 <ideacritik> ok
+Apr 19 20:00:22 <ideacritik> why is 1 and 3 not black??
+Apr 19 20:00:36 <chloe_> YOU CAN BLACK 1
+Apr 19 20:00:51 <bk> who blackens out 1 + 3'???
+Apr 19 20:00:56 <ideacritik> am i doing 1
+Apr 19 20:00:59 <chloe_> DONT STRESS DARLING
+Apr 19 20:01:09 <chloe_> AND I AM DOING 3
+Apr 19 20:01:17 <chloe_> CREDITS
+Apr 19 20:01:24 <paulavel> do we, all the team be on line at the final fina end end?
+Apr 19 20:01:24 <paulavel> [12:59] paulavel: the set and all in line?
+Apr 19 20:01:27 <ideacritik> ok i stopped blacking - ready for credits
+Apr 19 20:01:37 <ideacritik> paulavel: no 
+Apr 19 20:01:42 <chloe_> 41 MINUTES, 10 MORE THAN YESTERDAY
+Apr 19 20:01:50 <paulavel> ok
+Apr 19 20:01:57 <paulavel> ideacritik
+Apr 19 20:02:11 <paulavel> so pretty, i love this performance
+Apr 19 20:02:15 <ideacritik> someone should add a 'merci' text
+Apr 19 20:02:17 <paulavel> so so pretty, 
+Apr 19 20:02:18 <paulavel> great
+Apr 19 20:02:25 <paulavel> in a rush
+Apr 19 20:02:27 <chloe_> BEGINNING A LITTLE BIT CHAOTIC
+Apr 19 20:02:29 <ideacritik> can someone put 'merci - thankyou?
+Apr 19 20:02:42 <chloe_> BUT YOUR TEXT PAULA, WAS VERY VERY GREAT AND ABSOLUTELY NEEDE
+Apr 19 20:02:47 <chloe_> D
+Apr 19 20:03:01 <paulavel> my set was difficult at the begining, cause in a hotel, i didn t have the time to set the cadrage...
+Apr 19 20:03:11 <paljudy_> ?
+Apr 19 20:03:24 <ideacritik> cadrage is 'framing'
+Apr 19 20:03:24 <chloe_> YOUR WOLF WASN'T VERY PRETTY...
+Apr 19 20:03:28 <paulavel> me merci, thanks gracias
+Apr 19 20:03:30 <chloe_> BUT IT WAS A SIGN
+Apr 19 20:03:36 <chloe_> HIS DEATH WAS GREAT
+Apr 19 20:03:45 <ideacritik> can someone upload 'merci'?
+Apr 19 20:03:47 <chloe_> I REALLY LIKED THE WAY HE DIES
+Apr 19 20:03:48 * saylor has quit ("This computer has gone to sleep")
+Apr 19 20:03:52 <ideacritik> thankyou for watiching?
+Apr 19 20:03:56 <ideacritik> something like that?
+Apr 19 20:04:07 <ideacritik> jsut before final black?
+Apr 19 20:04:19 <ideacritik> in frame 5
+Apr 19 20:04:20 <bk> judy, you must liberate frame 2, stop uploading...
+Apr 19 20:04:35 <aether9>     .applause from geneva
+Apr 19 20:04:47 <ideacritik> ok i black credits?
+Apr 19 20:04:52 <chloe_> oh, not bad
+Apr 19 20:05:01 <fe2cruz> how many poeple were there?
+Apr 19 20:05:08 <ideacritik> i black credits????
+Apr 19 20:05:13 <bk> anow about 70, warm a?ppplauses
+Apr 19 20:05:13 <chloe_> yes, black credit ideak
+Apr 19 20:05:49 <bk> is somebody forgotten?
+Apr 19 20:06:21 <ideacritik> im blacking 568
+Apr 19 20:06:28 <chloe_> special guest: reem almannai
+Apr 19 20:06:52 <bk> hey thanks, now we will undo our stuff here. program is late...
+Apr 19 20:07:08 <ideacritik> great! talk later 
+Apr 19 20:07:24 <bk> we unplugg everything to let our followers performenrs. good bye xxxxxxxx
+Apr 19 20:07:25 <chloe_> hey man, I told you something
+Apr 19 20:07:29 * bk has quit ("Leaving")
+Apr 19 20:07:31 <chloe_> ok leave it
+Apr 19 20:07:54 <paljudy_> I'm turned off too
+Apr 19 20:08:00 <paulavel> ok bye
+**** ENDING LOGGING AT Sat Apr 19 20:08:06 2008
+
+**** BEGIN LOGGING AT Sat Apr 19 20:08:28 2008
+
+Apr 19 20:08:28 * Now talking on #aether9
+Apr 19 20:08:28 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 19 20:08:28 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
+Apr 19 20:08:28 -NickServ- Password accepted - you are now recognized
+Apr 19 20:08:28 * services. sets mode +e aether9
+Apr 19 20:08:34 <fe2cruz> sure leave it
+Apr 19 20:08:43 <ideacritik> okido then we are done!
+Apr 19 20:08:45 <paulavel> im uploading black
+Apr 19 20:08:49 <paulavel> everywhere
+Apr 19 20:08:56 <ideacritik> paula leave it
+Apr 19 20:08:59 <paulavel> not  7 and 9
+Apr 19 20:08:59 <ideacritik> i did 
+Apr 19 20:09:01 <ideacritik> and
+Apr 19 20:09:05 <ideacritik> roads stay
+Apr 19 20:09:15 <paulavel> bye
+Apr 19 20:09:18 <paulavel> audrey
+Apr 19 20:09:19 <ideacritik> right chloe_ ?
+Apr 19 20:09:27 * manizales has quit ()
+Apr 19 20:09:30 <paulavel> bye
+Apr 19 20:09:31 <ideacritik> im still here - you are leaving paula?
+Apr 19 20:09:32 <paulavel> bye
+Apr 19 20:09:36 <paulavel> adios, gracias
+Apr 19 20:09:36 <ideacritik> have a good trip back!
+Apr 19 20:09:40 <paulavel> hey, wait
+Apr 19 20:09:42 <ideacritik> and great wolf death
+Apr 19 20:09:44 <paulavel> i need to know
+Apr 19 20:09:47 <ideacritik> yes?
+Apr 19 20:09:49 <paulavel> did you recive or not
+Apr 19 20:09:56 <ideacritik> receive what?
+Apr 19 20:09:57 <paulavel> sound last performance, in manizales, 
+Apr 19 20:10:06 <paulavel> from us?
+Apr 19 20:10:11 <ideacritik> non - but that was a firewall issue on *MY* side
+Apr 19 20:10:13 <ideacritik> not you
+Apr 19 20:10:28 <ideacritik> now that is solved - and i received today
+Apr 19 20:10:29 <paulavel> some one did?
+Apr 19 20:10:35 <ideacritik> i think so
+Apr 19 20:10:42 <paulavel> did we stream sound or not
+Apr 19 20:10:43 <ideacritik> fe2cruz: you received irght?
+Apr 19 20:10:52 <paulavel> because my patch was uploading
+Apr 19 20:10:55 <fe2cruz> yeah
+Apr 19 20:11:02 <paulavel> ok
+Apr 19 20:11:04 * paljudy_ has quit ("This computer has gone to sleep")
+Apr 19 20:11:09 <paulavel> and did you like it?
+Apr 19 20:11:28 <aether9> hi, it was big stress here as usual
+Apr 19 20:11:30 <fe2cruz> yeah sound was nice please give a warm thanks to your musician
+Apr 19 20:11:35 <aether9> but it seems audience liked it
+Apr 19 20:11:55 <paulavel> i think it was great. the final part
+Apr 19 20:11:56 <ideacritik> yes sound was great!!!!!!!
+Apr 19 20:11:56 <fe2cruz> no one was able to record the sound or images from colombia though
+Apr 19 20:12:10 <paulavel> because at the first part it was a mess for me
+Apr 19 20:12:38 <paulavel> the garden and the wolf was not great at the first time
+Apr 19 20:12:48 <paulavel> it was better later in green
+Apr 19 20:12:57 <paulavel> sound was great
+Apr 19 20:13:21 <paulavel> no, i think no one record colombia performance
+Apr 19 20:13:33 <paulavel> hey, i must go now to Medellin
+Apr 19 20:13:44 <paulavel> 5 hours car driving
+Apr 19 20:13:45 <paulavel> bye
+Apr 19 20:13:45 <fe2cruz> have a safe trip paula
+Apr 19 20:13:58 <paulavel> thanks
+Apr 19 20:13:59 <paulavel> bye
+Apr 19 20:14:04 * paulavel has quit ()
+Apr 19 20:14:26 <aether9> ok, we havve to wrap all our cables and leave the space
+Apr 19 20:14:35 <ideacritik> merci
+Apr 19 20:14:37 <aether9> must close the connection
+Apr 19 20:14:49 <aether9> thanks all, see you later
+**** ENDING LOGGING AT Sat Apr 19 20:14:52 2008
+
+**** BEGIN LOGGING AT Mon Apr 21 00:22:49 2008
+
+Apr 21 00:22:49 * Now talking on #aether9
+Apr 21 00:22:49 * Topic for #aether9 is: aether9 manizales rehearsal --- check your timezone: http://www.timeanddate.com/worldclock/personal.html?cities=150,51,240,233,101,181,27,248,602,155,166,270,136,1240,179
+Apr 21 00:22:49 * Topic for #aether9 set by aleij at Tue Apr 15 19:56:18 2008
+Apr 21 00:23:00 
+Commands Available:
+
+Apr 21 00:23:00   ADDBUTTON ALLCHAN   ALLCHANL  ALLSERV   AWAY
+Apr 21 00:23:00   BAN       CHARSET   CLEAR     CLOSE     COUNTRY
+Apr 21 00:23:00   CTCP      CYCLE     DCC       DEBUG     DEHOP
+Apr 21 00:23:00   DELBUTTON DEOP      DEVOICE   DISCON    DNS
+Apr 21 00:23:00   ECHO      EXEC      EXECCONT  EXECKILL  EXECSTOP
+Apr 21 00:23:00   EXECWRITE FLUSHQ    GATE      GETINT    GETSTR
+Apr 21 00:23:00   GHOST     GUI       HELP      HOP       ID
+Apr 21 00:23:00   IGNORE    INVITE    JOIN      KICK      KICKBAN
+Apr 21 00:23:00   KILLALL   LAGCHECK  LASTLOG   LIST      LOAD
+Apr 21 00:23:00   MDEHOP    MDEOP     ME        MENU      MKICK
+Apr 21 00:23:00   MODE      MOP       MSG       NAMES     NCTCP
+Apr 21 00:23:00   NEWSERVER NICK      NOTICE    NOTIFY    OP
+Apr 21 00:23:00   PART      PING      QUERY     QUIT      QUOTE
+Apr 21 00:23:00   RECONNECT RECV      SAY       SEND      SERVCHAN
+Apr 21 00:23:00   SERVER    SET       SETCURSOR SETTAB    SETTEXT
+Apr 21 00:23:00   TOPIC     UNBAN     UNIGNORE  UNLOAD    URL
+Apr 21 00:23:00   USELECT   USERLIST  VOICE     WALLCHAN  WALLCHOP
+Apr 21 00:23:00   
+Apr 21 00:23:00 
+User defined commands:
+
+Apr 21 00:23:00   ACTION    AME       ANICK     AMSG      BACK
+Apr 21 00:23:00   BANLIST   CHAT      DIALOG    DMSG      EXIT
+Apr 21 00:23:00   J         KILL      LEAVE     M         ONOTICE
+Apr 21 00:23:00   RAW       SERVHELP  SPING     SQUERY    SSLSERVER
+Apr 21 00:23:00   SV        UMODE     UPTIME    VER       VERSION
+Apr 21 00:23:00   WALLOPS   WII       
+Apr 21 00:23:00 
+Plugin defined commands:
+
+Apr 21 00:23:00   TIMER     LOAD      RELOAD    SOURCE    TCL
+Apr 21 00:23:00   UNLOAD    LOAD      RB        UNLOAD    LOAD
+Apr 21 00:23:00   PY        GOOGLE    RELOADALL UNLOADALL RELOAD
+Apr 21 00:23:00   UNLOAD    LOAD      BROWSER   APPLESCRIPT
+Apr 21 00:23:00 
+Type /HELP <command> for more information, or /HELP -l
+
+Apr 21 00:23:28 Usage: TOPIC [<topic>], sets the topic if one is given, else shows the current topic
+Apr 21 00:23:37 * aether9 has changed the topic to: aether9 performance group
+Apr 21 01:14:56 * Disconnected ().
+**** ENDING LOGGING AT Mon Apr 21 01:14:56 2008
+
+**** BEGIN LOGGING AT Mon Apr 21 09:50:22 2008
+
+Apr 21 09:50:22 * Now talking on #aether9
+Apr 21 09:50:22 * Topic for #aether9 is: aether9 performance group
+Apr 21 09:50:22 * Topic for #aether9 set by aether9 at Mon Apr 21 00:23:25 2008
+Apr 21 09:50:22 * #aether9 :[freenode-info] if you need to send private messages, please register: http://freenode.net/faq.shtml#privmsg
+Apr 21 09:50:24 -NickServ- Password accepted - you are now recognized
+Apr 21 09:50:24 * services. sets mode +e aether9
+**** ENDING LOGGING AT Mon Apr 21 11:37:44 2008
+
+**** BEGIN LOGGING AT Mon Apr 21 11:51:24 2008
+
+Apr 21 11:51:24 * Now talking on #aether9
+Apr 21 11:51:24 * Topic for #aether9 is: aether9 performance group
+Apr 21 11:51:24 * Topic for #aether9 set by aether9 at Mon Apr 21 00:23:25 2008
+Apr 21 12:56:00 * Disconnected ().
+**** ENDING LOGGING AT Mon Apr 21 12:56:00 2008
+
+**** BEGIN LOGGING AT Mon Apr 21 14:29:49 2008
+
+Apr 21 14:29:49 * Now talking on #aether9
+Apr 21 14:29:49 * Topic for #aether9 is: aether9 performance group
+Apr 21 14:29:49 * Topic for #aether9 set by aether9 at Mon Apr 21 00:23:25 2008
+Apr 21 15:04:49 * Disconnected (No route to host).
+**** ENDING LOGGING AT Mon Apr 21 15:04:49 2008
+
+**** BEGIN LOGGING AT Mon Apr 21 17:54:17 2008
+
+Apr 21 17:54:17 * Now talking on #aether9
+Apr 21 17:54:17 * Topic for #aether9 is: aether9 performance group
+Apr 21 17:54:17 * Topic for #aether9 set by aether9 at Mon Apr 21 00:23:25 2008
+Apr 21 17:54:17 * #aether9 :[freenode-info] channel trolls and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+Apr 21 17:54:24 >NickServ< identify ****
+Apr 21 17:54:24 -NickServ- The nickname [aether9_] is not registered
+Apr 21 19:33:54 * NUNICK (n=paulavel@cable200-116-211-110.epm.net.co) has joined #aether9
+Apr 21 19:34:16 * NUNICK is now known as paulavel
+Apr 21 20:13:02 * paulavel has quit ()
+**** ENDING LOGGING AT Tue Apr 22 01:15:19 2008
+
+**** BEGIN LOGGING AT Tue Apr 22 10:42:45 2008
+
+Apr 22 10:42:45 * Now talking on #aether9
+Apr 22 10:42:45 * Topic for #aether9 is: aether9 performance group
+Apr 22 10:42:45 * Topic for #aether9 set by aether9 at Mon Apr 21 00:23:25 2008
+Apr 22 11:57:17 * ideacritik (n=ideacrit@a82-95-96-133.adsl.xs4all.nl) has joined #aether9
+Apr 22 11:57:26 <ideacritik> bon matin
+Apr 22 12:28:19 <aether9> bon midi :)
+Apr 22 12:28:32 <aether9> je viens de voir que tu es la
+Apr 22 15:04:57 <aether9> pas tres actif ce IRC !
+Apr 22 15:47:09 <ideacritik> non pas tres... 
+Apr 22 15:47:34 <ideacritik> bon je quitte... quel bordel que vous avez eu avant la perfor!!!! mailing list et tout... oh la la.....
+Apr 22 15:47:50 * ideacritik has quit ()
+Apr 22 20:09:35 * bk (n=bk@41-172.62-81.cust.bluewin.ch) has joined #aether9
+Apr 22 20:30:48 * NUNICK (n=paulavel@cable200-116-211-110.epm.net.co) has joined #aether9
+Apr 22 20:31:06 * NUNICK is now known as paulavel
+Apr 22 20:31:32 <paulavel> boris, salut! encore des problemes avec le serveur?
+Apr 22 20:32:01 <aether9> les problemes sont regles, mais c'est en train de transferer
+Apr 22 20:32:17 <aether9> et vu la quantite de donnees, ca prend du temps
+Apr 22 20:32:18 <paulavel> j'espere qu'il n'y a rien a voir avec plein de photos et videos que j'ai tÃ©lÃ©chargÃ© juste avant que Ã§a crash
+Apr 22 20:32:47 <paulavel> oui, j'en ai mis plein... sorry si cela est un problÃ©me
+Apr 22 20:33:19 <aether9> non, ne t'inquiete pas ce n'etait pas ca
+Apr 22 20:33:50 <aether9> toutes les archives, on va les placer a l'avenir sur un autre serveur plus grand (50 gb..)
+Apr 22 20:33:52 <paulavel> ok, ouf, j'ai eu peur
+Apr 22 20:34:02 <aether9> tes donnees sont maintenant ici: http://cave12.org/~aether/data/archive/2008.04.Manizales/
+Apr 22 20:34:06 <paulavel> cool
+Apr 22 20:34:46 <paulavel> encore tu est en train de les transferer?
+Apr 22 20:35:03 <aether9> pas ceux-la, ils sont entiers je crois
+Apr 22 20:37:13 <bk> hi Paula! manu by the way do you have any interesting web-stats about last performance?
+Apr 22 20:37:32 <aether9> no, didnt have time to analyze them
+Apr 22 20:37:45 <bk> ok
+Apr 22 20:38:24 <paulavel> i have send already some of it to the server
+Apr 22 20:38:34 <paulavel> so soon it will be restablish
+Apr 22 20:38:49 <paulavel> but i have some more from rehersals
+Apr 22 20:38:56 <aether9> well, dont send anything to 1904.cc server right now
+Apr 22 20:39:10 <aether9> because it will probably be the wrong one..
+Apr 22 20:39:18 <paulavel> no, i will not send anything dont worry
+Apr 22 20:40:36 <paulavel> when everything will be fixed i will send where you tell me. and i need perhaps the ftp and the pasword again... you ll give it to me later, no prblm
+Apr 22 20:41:01 <aether9> i think we use this opportunity to change the password..
+Apr 22 20:41:27 <paulavel> you must see Lucy drinking water wiht her diving mask and tuba
+Apr 22 20:41:40 <paulavel> bye
+Apr 22 20:41:43 <aether9> :) will watch that
+Apr 22 20:41:45 <aether9> bye!
+Apr 22 20:41:58 <bk> ciao
+Apr 22 20:42:00 * bk has quit ("Leaving")
+Apr 22 20:42:02 * paulavel has quit ()
+**** ENDING LOGGING AT Tue Apr 22 21:52:27 2008
+
+**** BEGIN LOGGING AT Wed Apr 23 21:19:48 2008
+
+Apr 23 21:19:48 * Now talking on #aether9
+Apr 23 21:19:48 * Topic for #aether9 is: aether9 performance group
+Apr 23 21:19:48 * Topic for #aether9 set by aether9 at Mon Apr 21 00:23:25 2008
+Apr 24 01:12:28 * Disconnected ().
+**** ENDING LOGGING AT Thu Apr 24 01:12:28 2008
+
+**** BEGIN LOGGING AT Thu Apr 24 11:20:46 2008
+
+Apr 24 11:20:46 * Now talking on #aether9
+Apr 24 11:20:46 * Topic for #aether9 is: aether9 performance group
+Apr 24 11:20:46 * Topic for #aether9 set by aether9 at Mon Apr 21 00:23:25 2008
+**** ENDING LOGGING AT Thu Apr 24 13:40:08 2008
+
+**** BEGIN LOGGING AT Sat Apr 26 21:12:19 2008
+
+Apr 26 21:12:19 * Now talking on #aether9
+Apr 26 21:12:19 * Topic for #aether9 is: aether9 performance group
+Apr 26 21:12:19 * Topic for #aether9 set by aether9 at Mon Apr 21 00:23:25 2008
+Apr 27 01:53:22 * Disconnected ().
+**** ENDING LOGGING AT Sun Apr 27 01:53:22 2008
+
+**** BEGIN LOGGING AT Sun Apr 27 12:11:48 2008
+
+Apr 27 12:11:48 * Now talking on #aether9
+Apr 27 12:11:48 * Topic for #aether9 is: aether9 performance group
+Apr 27 12:11:48 * Topic for #aether9 set by aether9 at Mon Apr 21 00:23:25 2008
+**** ENDING LOGGING AT Sun Apr 27 14:11:21 2008
+
+**** BEGIN LOGGING AT Sun Apr 27 20:50:16 2008
+
+Apr 27 20:50:16 * Now talking on #aether9
+Apr 27 20:50:16 * Topic for #aether9 is: aether9 performance group
+Apr 27 20:50:16 * Topic for #aether9 set by aether9 at Mon Apr 21 00:23:25 2008
+Apr 28 01:08:30 * Disconnected ().
+**** ENDING LOGGING AT Mon Apr 28 01:08:30 2008
+

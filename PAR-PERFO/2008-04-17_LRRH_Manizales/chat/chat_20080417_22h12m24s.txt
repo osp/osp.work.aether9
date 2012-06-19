@@ -1,0 +1,227 @@
+**** BEGIN LOGGING AT Thu Apr 17 22:12:24 2008
+
+Apr 17 22:12:24 * Now talking on #aether9workshop
+Apr 17 22:13:37 <ideacritik> streamin gis on!
+Apr 17 22:13:46 <ideacritik> aether9: http://www.ustream.tv/channel/aether-jam-session-workshop-festival
+Apr 17 22:14:08 * Lariana (n=Steph@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 22:16:15 * NUNICK (n=paulavel@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 22:16:15 * vale_ has quit (Read error: 104 (Connection reset by peer))
+Apr 17 22:16:15 * Lariana has quit (Read error: 104 (Connection reset by peer))
+Apr 17 22:16:15 * propietario_ has quit (Read error: 104 (Connection reset by peer))
+Apr 17 22:16:40 * Lariana (n=Steph@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 22:16:49 * vale_ (n=vale@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 22:16:56 * propietario_ (n=propieta@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 22:19:18 <ideacritik> ouch on the ears with streaming... :( 
+Apr 17 22:19:26 <fe2cruz> wow the stream scared me
+Apr 17 22:19:35 <ideacritik> me too... haha
+Apr 17 22:19:39 <ideacritik> shirley
+Apr 17 22:19:47 <ideacritik> (sorry im still stuck on that)
+Apr 17 22:19:48 <ideacritik> haha
+Apr 17 22:20:01 <fe2cruz> surely you can't be serious
+Apr 17 22:20:09 <ideacritik> hahah LOL
+Apr 17 22:20:27 <ideacritik> what the *hell* are you streaming over there crazy workhsop people? 
+Apr 17 22:20:30 <ideacritik> :)
+Apr 17 22:20:42 <fe2cruz> its loud
+Apr 17 22:21:02 <fe2cruz> have the fader to the bottom even
+Apr 17 22:21:16 <ideacritik> yes here too.... 
+Apr 17 22:21:23 <ideacritik> but its like in waves i would day
+Apr 17 22:22:01 <ideacritik> there is paula
+Apr 17 22:22:49 * Lariana has quit ("Leaving")
+Apr 17 22:26:43 * Lariana (n=Steph@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 22:26:52 <vale_> paula
+Apr 17 22:27:15 <vale_> ya baje el max/msp runtime pero me sale cmo vacio
+Apr 17 22:28:43 * vale_ has quit ("Saliendo")
+Apr 17 22:29:18 * propietario_ has quit ("Saliendo")
+Apr 17 22:29:24 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 17 22:31:18 * jotaere has quit (Read error: 113 (No route to host))
+Apr 17 22:31:26 * paulavelez has quit (Read error: 113 (No route to host))
+Apr 17 22:31:42 * kalia has quit (Read error: 113 (No route to host))
+Apr 17 22:33:20 * godines has quit (Read error: 113 (No route to host))
+Apr 17 22:33:23 * jotaere (n=propieta@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 22:33:37 * godines (n=Usuario@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 22:34:30 * Lariana_andrey has quit (Read error: 113 (No route to host))
+Apr 17 22:35:37 * kalia (n=vale@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 22:36:20 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-edbb71d666ad8623) has joined #aether9workshop
+Apr 17 22:37:11 <ideacritik> the stream is disconnected i think?
+Apr 17 22:37:16 <ideacritik> or back on again now... ok
+Apr 17 22:39:38 <NUNICK> aqui estÃ¡ el pathc para los que ya tienen el jitler  y el runtime instalado
+Apr 17 22:39:39 <NUNICK> http://1904.cc/~aether/kode/max_image_upload/upload_395.zip
+Apr 17 22:40:35 <Lariana> Gracias NUNICK
+Apr 17 22:41:51 * NUNICK is now known as paulavelez
+Apr 17 22:48:53 <paulavelez> mmanu
+Apr 17 22:49:07 <paulavelez> manu, now they have the patch
+Apr 17 22:49:14 <aether9> yes, ok¨
+Apr 17 22:49:36 <paulavelez> and we need to change the server text file to remplace it
+Apr 17 22:49:45 <aether9> yes, very simple:
+Apr 17 22:50:00 <aether9> use the file servers-example.txt
+Apr 17 22:50:05 <aether9> and name it servers.txt
+Apr 17 22:50:25 <aether9> then, the patch will read it
+Apr 17 22:51:35 * bk2 (n=bk@adsl-62-167-66-119.adslplus.ch) has joined #aether9workshop
+Apr 17 22:54:26 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 17 22:55:23 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-6031d9f0097522c0) has joined #aether9workshop
+Apr 17 22:56:56 <paulavelez> manu, the main frame for this workshop transmission is?
+Apr 17 22:57:06 <paulavelez> i dont know where did i put it
+Apr 17 22:57:25 <aether9> it's inside the patch folder
+Apr 17 22:57:29 <aether9> "sample_HTML"
+Apr 17 22:57:57 <paulavelez> tnks
+Apr 17 22:58:26 <ideacritik> aether9: but that is local non?
+Apr 17 22:58:43 <aether9> yes
+Apr 17 22:58:51 <aether9> but the images are one the servers..
+Apr 17 22:59:24 <ideacritik> so aether9 then we dont 'upload' since we wont appear on their local computers obviously 
+Apr 17 22:59:58 <aether9> we will... the "local" frameset reads the images from the ONLINE servers
+Apr 17 23:00:09 <ideacritik> really?
+Apr 17 23:00:27 <ideacritik> so in frame 7 people see my plants?
+Apr 17 23:00:27 <aether9> i agree it's conceptually difficult to admint
+Apr 17 23:00:29 <aether9> admit
+Apr 17 23:00:46 <aether9> if you insist, you can also watch it from an online location:
+Apr 17 23:00:48 <aether9> http://okarem.smtp.ru/
+Apr 17 23:01:04 <aether9> but you will get 24 popup-windows (hopefully your firefox blocks them)
+Apr 17 23:01:18 <aether9> (it's the russian business networks' servers...)
+Apr 17 23:02:12 <aether9> and the whole point of having the html in a local folder, is that it's easyer for the workshop participants to have a look at the code
+Apr 17 23:02:20 <ideacritik> i just did  aview source on frame7.html and i now get the russian business :)
+Apr 17 23:03:04 * jotaere has quit ("Saliendo")
+Apr 17 23:04:19 <fe2cruz> that lucy on the beemer?
+Apr 17 23:04:34 <paulavelez> i can not upload in that workshop windoy
+Apr 17 23:05:01 <ideacritik> paulavelez: which workhsop window?
+Apr 17 23:05:02 * godines has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:05:02 * paulavelez has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:05:39 * godines (n=Usuario@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:05:39 * kalia has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:05:49 * NUNICK (n=paulavel@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:05:55 * kalia (n=vale@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:08:20 * jotaere (n=propieta@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:09:38 <ideacritik> yes - workshop is uploading on frame 5!
+Apr 17 23:09:57 <ideacritik> or is that m\anu?
+Apr 17 23:10:42 <ideacritik> shall i join in frame 7? or 5?
+Apr 17 23:10:58 <aether9> yeah, did some test to show that it's working..
+Apr 17 23:11:06 <aether9> paula, how can i help??
+Apr 17 23:14:06 <Lariana> cambiar nombre a servers
+Apr 17 23:14:29 <ideacritik> Lariana: que?
+Apr 17 23:14:44 <NUNICK> i will stop uploading in main window
+Apr 17 23:14:47 <NUNICK> !!!!
+Apr 17 23:14:52 <Lariana> quitale al nombre -examples
+Apr 17 23:14:55 <aether9> servers-example.txt > servers.txt
+Apr 17 23:16:03 <aether9> audrey, you sent to frame 8, right?
+Apr 17 23:16:09 <ideacritik> yes
+Apr 17 23:16:21 <aether9> so where are the images from Manizales ?!
+Apr 17 23:16:32 <NUNICK> manu
+Apr 17 23:16:49 * godines has quit ("Saliendo")
+Apr 17 23:17:05 <aether9> yes, i'm here
+Apr 17 23:17:12 <NUNICK> is sont encore , et moi aussi, on essai d'uploader
+Apr 17 23:17:27 <NUNICK> et j'ai du faire un truc
+Apr 17 23:17:39 <kalia> paula me puedes reenviar las direcciones donde bajo el max
+Apr 17 23:17:54 <aether9> oui.. je vois que des images ont été uploadées vers la page "performance".. frame centrale
+Apr 17 23:20:25 <NUNICK> yes
+Apr 17 23:20:43 <ideacritik> kalia:
+Apr 17 23:20:44 <ideacritik> http://cycling74.com/downloads/maxmsp
+Apr 17 23:20:44 <ideacritik> -
+Apr 17 23:20:44 <ideacritik> http://cycling74.com/downloads/jitter
+Apr 17 23:20:45 <NUNICK> jotaere entrÃ³ en el canal de chat.
+Apr 17 23:20:46 <NUNICK> [15:00] paulav: http://cycling74.com/downloads/maxmsp
+Apr 17 23:20:46 <NUNICK> [15:00] paulav: http://cycling74.com/downloads/jitter
+Apr 17 23:20:54 <Lariana> Manu me ves?
+Apr 17 23:21:13 <ideacritik> Lariana: frame 7?
+Apr 17 23:21:17 <aether9> que?
+Apr 17 23:21:25 <ideacritik> she says do you see me aether9 
+Apr 17 23:22:22 <aether9> yep, something is coming through
+Apr 17 23:22:30 <aether9> success!
+Apr 17 23:22:50 * godines (n=Usuario@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:23:47 <aether9> congratulations Lariana
+Apr 17 23:23:58 <Lariana> thanks!!
+Apr 17 23:24:16 <ideacritik> yes please upload more! :)
+Apr 17 23:25:03 <Lariana> Manu ella es Kalia
+Apr 17 23:25:26 <ideacritik> Lariana: so we see Kalia in frame 7
+Apr 17 23:26:06 <Lariana> yes, she don't have camera
+Apr 17 23:26:15 <aether9> we want more! :)
+Apr 17 23:26:36 <godines> los archivos me aparecen como un archivo de autocad y no los abre el max
+Apr 17 23:26:58 <ideacritik> godines: los archivos de que?
+Apr 17 23:27:32 <ideacritik> godines: en el 'select server' drop-down menu?
+Apr 17 23:27:32 * Lariana has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:27:36 <godines> del upload
+Apr 17 23:28:26 <aether9> autocad ?!??
+Apr 17 23:28:26 <ideacritik> godines: en el patch o en otro luego?
+Apr 17 23:28:52 <godines> si
+Apr 17 23:28:53 <ideacritik> aether9: il dit que ca 'ressemble' a du autocad.... 
+Apr 17 23:28:54 * kalia has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:29:18 * kalia (n=vale@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:29:35 * Lariana (n=Steph@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:29:35 * NUNICK has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:29:48 <ideacritik> godines: you are using the patch right now? and what server did you select from the 'select server' drop-down menu?
+Apr 17 23:30:32 * godines has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:30:32 * jotaere has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:30:37 * NUNICK (n=paulavel@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:30:46 * jotaere (n=propieta@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:30:50 * godines (n=Usuario@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:31:33 <fe2cruz> so is 7 are only comlombia live streamer?
+Apr 17 23:31:47 <ideacritik> yes and my plants from earlier
+Apr 17 23:32:10 <fe2cruz> 2 is just the general wrokshop
+Apr 17 23:32:12 <ideacritik> oh now frame 2
+Apr 17 23:32:49 <fe2cruz> come on workshopees upload
+Apr 17 23:32:56 <ideacritik> :)
+Apr 17 23:34:58 <ideacritik> ah! - breakthough in 7?
+Apr 17 23:36:31 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 17 23:36:31 * kalia has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:36:32 * Lariana has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:36:55 * kalia (n=vale@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:37:11 * Lariana (n=Steph@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:38:38 * NUNICK has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:38:39 * jotaere has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:38:39 * godines has quit (Connection reset by peer)
+Apr 17 23:38:47 <aether9> come on, don't be shy
+Apr 17 23:39:27 * NUNICK (n=paulavel@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:39:39 <aether9> don't be afraid to erase my frame :)
+Apr 17 23:39:56 <ideacritik> yes! and my stupid plants in frame 7!... :)
+Apr 17 23:40:09 * jotaere (n=propieta@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:40:10 <aether9> uploading a single image isn't enough, you should upload longer sequences
+Apr 17 23:40:11 * godines (n=Usuario@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:42:36 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-1ccb61069a8a9fcc) has joined #aether9workshop
+Apr 17 23:43:32 * godines has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:43:33 * Lariana has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:43:33 * NUNICK has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:43:33 * kalia has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:43:48 * godines (n=Usuario@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:43:56 * kalia (n=vale@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:44:12 * Lariana (n=Steph@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:45:16 <ideacritik> proost/sante to geneva :)
+Apr 17 23:46:01 * jotaere has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:46:21 * jotaere (n=propieta@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:46:22 * Lariana has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:46:39 * Lariana (n=Steph@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:46:40 * jotaere has quit (Read error: 104 (Connection reset by peer))
+Apr 17 23:47:19 * jotaere (n=propieta@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:47:40 <aether9> who is that peer who resets the connection all the time ?
+Apr 17 23:48:11 <fe2cruz> think that'
+Apr 17 23:49:10 <ideacritik> aether9: bad peer! :)
+Apr 17 23:51:01 * kalia has quit ("Saliendo")
+Apr 17 23:51:22 <aether9> ah, ideacritik, you look photogenic ;)
+Apr 17 23:51:35 <ideacritik> LOL
+Apr 17 23:52:07 <fe2cruz> phallic
+Apr 17 23:52:15 <aether9> and black&white webcams beat color webcams
+Apr 17 23:52:19 <ideacritik> fe2cruz: ? hahha ?
+Apr 17 23:52:30 <fe2cruz> thats a big bottle you got there manu
+Apr 17 23:52:34 * Lariana has quit ("Leaving")
+Apr 17 23:52:41 <ideacritik> fe2cruz: hahahaha
+Apr 17 23:52:52 <ideacritik> well we need to keep awake :)
+Apr 17 23:53:05 <ideacritik> by all means possible... :) 
+Apr 17 23:53:33 * NUNICK (n=paulavel@adsl190-28-192-118.epm.net.co) has joined #aether9workshop
+Apr 17 23:53:38 <NUNICK> espero que algo hayan visto que les de nuevas ideas al menos, para explorar nuevos medio, encontran grupos de discusiÃ³n para estas nuevas formas de trabajo en la red 
+Apr 17 23:54:08 <ideacritik> NUNICK: come vas? se termino?
+Apr 17 23:54:30 <NUNICK> si
+Apr 17 23:54:33 * fe2cruz has quit ("http://www.mibbit.com ajax IRC Client")
+Apr 17 23:54:39 <ideacritik> gracias a todos!
+Apr 17 23:54:48 <NUNICK> finish, i will show then mre things in prohector
+Apr 17 23:54:54 <ideacritik> e salud! :)
+Apr 17 23:55:15 <aether9> ok, so we can close this channel?
+Apr 17 23:55:31 * fe2cruz (i=4caf4330@gateway/web/ajax/mibbit.com/x-b64ea2ceec0f057f) has joined #aether9workshop
+Apr 17 23:56:05 <ideacritik> i guess we could... NUNICK we close channel? or stay a while? or are you now setting up for perfo ?
+Apr 17 23:56:13 <fe2cruz> how do i not get kicked off anymore?
+Apr 17 23:56:28 <aether9> you should ask alejo
+Apr 17 23:56:51 <NUNICK> lets left this chane
+Apr 17 23:56:55 <NUNICK> i must go 
+Apr 17 23:56:59 <ideacritik> ok - ciao
+Apr 17 23:57:00 * NUNICK has quit (Client Quit)
+Apr 17 23:57:09 <ideacritik> a bientot /part
+Apr 17 23:57:16 * ideacritik (n=ideacrit@a82-95-96-133.adsl.xs4all.nl) has left #aether9workshop
+Apr 17 23:57:55 <aether9> ok, bye bye to all participants
+**** ENDING LOGGING AT Thu Apr 17 23:58:03 2008
+
