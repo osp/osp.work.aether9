@@ -194,10 +194,9 @@ audrey
 ---
 
 AUTHOR: Sir Oliver Lodge, Ether and Reality
-DATE: 1933
+DATE: 1933-01-01
 QUOTE: 
 
 "The first thing to realize about the (a)ether(9) is its absolute continuity. A deep sea fish has probably no means of apprehending the existence of water; it is too uniformly immersed in it: and that is our condition in regard to the
 ether."
 
----
