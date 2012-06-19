@@ -95,3 +95,77 @@
     %\setupfonthandling [hz] [min=50,max=50,step=10]
     %\setupalign[hz, hanging]
 % }}}
+
+% GRAPHIC ELEMENTS {{{
+    % put a frame around a word
+    \definetextbackground[ref][
+            framecolor=black,
+            background=,
+        ]
+% }}}
+
+% TABLE OF CONTENTS {{{
+    \setupcombinedlist[content][interaction=all, color=black] % makes it clickable
+    \setuplist[section][width=0mm] % sets indentation for section level
+    \setuplist[subsection][width=1em] % sets indentation for subsection level
+% }}}
+
+% SECTIONS AND HEADINGS {{{
+
+    % NUMBERED SECTIONS // used for table of contents
+       
+        \setuphead[section][
+            number=no,
+            align={nothyphenated, verytolerant, center},
+            page=yes,
+            after=\nowhitespace,
+            style={\tfd \cap \setupbodyfont[crimsontext]},
+            %distance=0pt, alternative=text, command=\InMargin, % calls function to put in margin
+            ]
+      
+       % PIECES NUM 
+        \definehead[piece][subject]
+        \setuphead[piece][
+            number=no,
+            align={nothyphenated, verytolerant, center},
+            before=\nowhitespace,
+            after=\nowhitespace,
+            style={\tfd \setupbodyfont[karlaregular]},
+            ]
+
+
+% }}}
+
+
+% PARAGRAPHS {{{
+    \setupwhitespace[none]           % no empty line after a paragraph
+
+
+    % INFOS
+    \defineparagraphs[infos][n=1] 
+    \setupparagraphs[infos][1][
+        style={\setupbodyfont[karlaregular, 7pt]},
+        after=\nowhitespace,
+        ] 
+
+    % CHAT
+    \defineparagraphs[chat][n=1] 
+    \setupparagraphs[chat][1][
+        style={\setupbodyfont[karlaregular, 12pt]},
+        after=\nowhitespace,
+        ] 
+
+    % MAILS
+    \defineparagraphs[mail][n=1] 
+    \setupparagraphs[mail][1][
+        style={\setupbodyfont[crimsontexto, 8pt]},
+        after=\nowhitespace,
+        ] 
+
+    % QUOTES
+    \defineparagraphs[quotes][n=1] 
+    \setupparagraphs[quotes][1][
+        style={\setupbodyfont[crimsontexto, 21pt]},
+        after=\nowhitespace,
+        ] 
+% }}}
