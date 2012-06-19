@@ -7,6 +7,7 @@ import reference
 import os
 import fnmatch
 import chatlog
+import image
 
 
 def main():
@@ -16,7 +17,7 @@ def main():
 	args = parser.parse_args()
 	c = 0
 	
-	messages = []
+	items = []
 	writers = []
 	clogs = []
 	for r,d,f in os.walk(args.rootdir):
@@ -27,7 +28,7 @@ def main():
 			cm = 0
 			for m in ml.data['thread']:
 				cm +=1
-				messages.append(m)
+				items.append(m)
 			sys.stderr.write(' => %d\n'%(cm,))
 		
 	for r,d,f in os.walk(args.rootdir):
@@ -38,19 +39,31 @@ def main():
 			cm = 0
 			for m in cl.chat:
 				cm +=1
-				clogs.append(m)
+				items.append(m)
+			sys.stderr.write(' => %d\n'%(cm,))
+			
+	for r,d,f in os.walk(args.rootdir):
+		for fn2 in fnmatch.filter(f,'*jpg'):
+			sys.stderr.write('Processing %s , %s\n'%(r,fn2))
+			fp = os.path.join(r,fn2)
+			try:
+				items.append(image.Reader(fp).img)
+			except image.NoDate as e:
+				sys.stderr.write('%s'%e)
+				
 			sys.stderr.write(' => %d\n'%(cm,))
 				
-	messages.sort(key=lambda x:x['date'])
+	items.sort(key=lambda x:x['date'])
 	
-	for i in range(len(messages)):
-		messages[i]['id'] = i
+	for i in range(len(items)):
+		items[i]['id'] = i
+		wr = globals()[items[i]['type']].Writer
+		writers.append(items[i])
 		
-	for m in messages:
-		writers.append(mail.Writer(reference.Factory(m, messages).doc))
+	#for m in messages:
+		#writers.append(mail.Writer(reference.Factory(m, messages).doc))
 	
 	ret = []
-	ret.append('\\setupoutput[pdftex]')
 	ret.append('\\starttext')
 	for w in writers:
 		ret.append(w.as_string())

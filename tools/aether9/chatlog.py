@@ -87,6 +87,7 @@ class SkypeParser(HTMLParser):
 	def content(self, data):
 		#sys.stderr.write('=> content\n')
 		self.current['text'] = data
+		self.current['type'] = 'chatlog'
 		self.state = 'no_op'
 		self.chat.append(self.current)
 		#sys.stderr.write('=> %s\n'%(self.current,))
@@ -107,4 +108,24 @@ class Reader:
 		sp = SkypeParser()
 		sp.start(filename)
 		self.chat = sp.chat
+		
+class Writer:
+	tex_special_chars = {r'&': '\\&', r'%': '\\%', r'$': '\\$', r'#': '\\#', r'_': '\\_', r'{': '\\{', r'}': '\\}', r'~': '\\textasciitilde{}', r'^': '\\textasciicircum{}', '\\' : '\\textbackslash{}', '|':'\\textbar{}'}
+	def __init__(self, cldict):
+		self.log = cldict
+		
+		
+	def escape_tex(self, pt):
+		r = pt.group()
+		#print('matched: %s'%r)
+		if r in self.tex_special_chars:
+			return self.tex_special_chars[r]
+		return r
+			
+		
+	def __getattr__(self, name):
+		try:
+			return self.log[name]
+		except Exception:
+			raise AttributeError(name)
 		

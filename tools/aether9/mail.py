@@ -87,13 +87,16 @@ class Writer:
 		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
 		esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.text)
 		aref = []
-		for r in self.ref['author']:
-			#aref.append('\\in{section}[%s](p.\\at{page}[%s])'%(r,r))
-			aref.append('%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
+		try:
+			for r in self.ref['author']:
+				#aref.append('\\in{section}[%s](p.\\at{page}[%s])'%(r,r))
+				aref.append('\n%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
+		except:
+			pass
 		
 		ret = []
 		ret.append('\\subject[mail:%d]{%d - %s}{'%(self.id,self.id,self.title))
-		ret.append('\\it{%s\\high{%s} --- %s}\n'%(self.author, ', '.join(aref), self.date.strftime('%d.%m.%Y')))
+		ret.append('\\it{%s\\high{%s} --- %s}\n'%(self.author, ','.join(aref), self.date.strftime('%d.%m.%Y')))
 		ret.append('\\tf{%s}'%(esc_text,))
 		ret.append('}')
 		return '\n'.join(ret)

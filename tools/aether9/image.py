@@ -16,6 +16,12 @@ class FileDoesNotExist(Exception):
 		self.filename = fname
 	def __str__(self):
 		return '%s does not exist'%(self.filename)
+		
+class NoDate(Exception):
+	def __init__(self, fname):
+		self.filename = fname
+	def __str__(self):
+		return '%s does not provide any date info'%(self.filename)
 
 class Reader:
 	def __init__(self, filename, root = False):
@@ -31,10 +37,11 @@ class Reader:
 		except Exception as e:
 			print 'Unhandle exception: %s'%(e,)
 
-		self.filename = filename
+		self.img = {}
+		self.img['filename'] = filename
 		#self.creationtime = self.get_creationtime (im)
-		self.creationtime = self.get_creationtime_fromfilename (filename)
-		self.fullpage = self.is_fullpage ()
+		self.img['date'] = self.get_creationtime_fromfilename (filename)
+		self.img['fullpage'] = self.is_fullpage ()
 
 	def get_creationtime_fromfilename (self, filename):
 		tail = opath.split (filename)[1]
@@ -48,14 +55,14 @@ class Reader:
 			if d <> None:
 				return datetime (int (d.group(1)), int (d.group(2)), int(d.group(3)), 0, 0, 0)
 			else:
-				return None
+				raise NoDate(filename)
 
 	def is_fullpage (self):
-		return re.search ('^.*FULL.[^LEFT|RIGHT]*$', opath.split (self.filename)[1]) <> None
+		return re.search ('^.*FULL.[^LEFT|RIGHT]*$', opath.split (self.img['filename'])[1]) <> None
 
 	def get_creationtime(self, im):
 		exif = im._getexif();
-		ctime = datetime.fromtimestamp (getctime (self.filename))
+		ctime = datetime.fromtimestamp (getctime (self.img['filename'] ))
 
 		if exif <> None:
 			for field in [306,36868,36867]:
@@ -99,7 +106,7 @@ class Writer:
 
 	def __getattr__(self, name):
 		try:
-			return getattr (self.image, name)
+			self.image[name]
 		except Exception:
 			raise AttributeError(name)
 
