@@ -1,0 +1,1039 @@
+(test.tex
+
+ConTeXt  ver: 2012.01.02 21:59 MKIV  fmt: 2012.1.5  int: english/english
+
+system          > cont-new.mkiv loaded
+(/home/ludi/context/tex/texmf-context/tex/context/base/cont-new.mkiv
+system          > beware: some patches loaded from cont-new.mkiv
+)
+system          > test.top loaded
+
+system          > options > start used options
+
+used options    > % runtime options files (command line driven)
+used options    > \unprotect
+used options    > % feedback and basic job control
+used options    > % handy for special styles
+used options    > \startluacode
+used options    > document = document or { }
+used options    > document.arguments={
+used options    > }
+used options    > document.files={
+used options    >  "test.tex",
+used options    > }
+used options    > \stopluacode
+used options    > % process info
+used options    > \setupsystem[inputfile=test.tex]
+used options    > \setupsystem[\c!n=2,\c!m=2]
+used options    > % modes
+used options    > % options (not that important)
+used options    > \startsetups *runtime:options
+used options    > \stopsetups
+used options    > % styles and modules
+used options    > \startsetups *runtime:modules
+used options    > \stopsetups
+used options    > % done
+used options    > \protect \endinput
+
+system          > options > stop used options
+
+(test.top)
+fonts           > latin modern fonts are not preloaded
+languages       > language en is active
+(/home/ludi/context/tex/texmf-context/tex/context/base/type-siz.mkiv) (/home/ludi/context/tex/texmf-context/tex/context/base/type-otf.mkiv)
+files           > readfile > asked name: 'loc', not found
+fonts           > preloading latin modern fonts (math)
+{/home/ludi/context/tex/texmf/fonts/map/dvips/lm/lm-math.map}{/home/ludi/context/tex/texmf/fonts/map/dvips/lm/lm-rm.map}{/home/ludi/context/tex/texmf-context/fonts/map/pdftex/context/mkiv-base.map}
+fonts           > fallback modern mm 9pt is loaded
+fonts           > preloading latin modern fonts (mono)
+fonts           > fallback modern tt 9pt is loaded
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfss*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtf*
+fonts           > beware: fontclass ignored (if needed use: [fontclass][size][settings])
+colors          > cmyk color space is not supported
+structure       > sectioning > subject @ level 3 : 0.0.0 -> \ss 0 - remote fairytales - performance invitation
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+backend         > xmp > using file '/home/ludi/context/tex/texmf-context/tex/context/base/lpdf-pdx.xml'
+pages           > flushing realpage 1, userpage 3, subpage 1
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 1 - tommorow's jam session - details
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+
+Overfull \hbox (52.906pt too wide) in paragraph at lines 274--277
+[][]\*crimsontext9ptmmmb11* Frame 1 - http ://1904.cc/~aether/1 Frame 2 - http ://1904.cc/~aether/2/ Frame 3 - http ://10111.org/~aether/0/ 
+
+\hbox(6.75+2.25)x392.64803, glue set - 1.0, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* F
+.\*crimsontext9ptmmmb11* r
+.\*crimsontext9ptmmmb11* a
+.etc.
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 282--285
+[][]\*crimsontext9ptmmmb11* Frame 7 - http ://aether.front.ru/7/ Frame 8 - http ://aether.smtp.ru/cym/ Frame 9 -
+
+\hbox(6.75+2.25)x392.64803, glue set 3.25438, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* F
+.\*crimsontext9ptmmmb11* r
+.\*crimsontext9ptmmmb11* a
+.etc.
+
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 2 - last news and performance preparation
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 2, userpage 4
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 3 - brussels performance report
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 3, userpage 5
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 4 - Rotterdam script
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 5 - Re : today -- hotel new york
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 6 - Rotterdam performance
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 4, userpage 6
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 7 - final TWO for 7/7/7
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 8 - question - logistics
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 9 - 070707 news
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 10 - next performance SETUP
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 5, userpage 7
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+
+Overfull \hbox (52.28232pt too wide) in paragraph at lines 695--697
+[][]\*crimsontext9ptmmmb11* have a look at the pic gallery of the place, it's quite some-thing : http ://ne-tuser.bg/2007/en/ ?gal=1&page_id=500 
+
+\hbox(6.75+2.25)x392.64803, glue set - 1.0, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* h
+.\*crimsontext9ptmmmb11* a
+.\*crimsontext9ptmmmb11* v
+.etc.
+
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 11 - bulgaria - interface
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 12 - (no subject)
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 6, userpage 8
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 13 - Thoughts, and a riddle
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 14 - Re : Thoughts, and a riddle
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 7, userpage 9
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 15 - Re : Thoughts, and a riddle
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 16 - Re : Thoughts, and a riddle
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 17 - Re : Re : Thoughts, and a riddle
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 8, userpage 10
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 18 - Re : more archives online
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 19 - 26 october reconfirmation
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 20 - rehearsal times
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 21 - RE : last thougths this evening
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 22 - Re : Re : RE : last thougths this evening
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 9, userpage 11
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 23 - aether9 level2
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 24 - tremor participation confirmed
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 25 - bogotá tempete
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+
+Overfull \hbox (22.09892pt too wide) in paragraph at lines 1116--1118
+[][]\*crimsontext9ptmmmb11* http ://www.eltiempo.com/mul-ti-me-dia/ga-le-rias/granizada/GA-LE-RI-AFO-TOS- WEB-PLAN-TILLA_GA-
+
+\hbox(6.75+2.25)x392.64803, glue set - 1.0, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* h
+.\*crimsontext9ptmmmb11* t
+.\*crimsontext9ptmmmb11* t
+.etc.
+
+
+Overfull \hbox (3.35194pt too wide) in paragraph at lines 1119--1121
+[][]\*crimsontext9ptmmmb11* http ://www.eltiempo.com/mul-ti-me-dia/ga-le-rias/granizadalec-tores/ GA-LE-RI-AFO-TOS-WEB-PLAN-
+
+\hbox(6.75+2.25)x392.64803, glue set - 1.0, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* h
+.\*crimsontext9ptmmmb11* t
+.\*crimsontext9ptmmmb11* t
+.etc.
+
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 26 - urgent tremor RDV2
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 10, userpage 12
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 27 - Re : videocapture did works
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 28 - sunday ghost [TITLE suggestion]
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 29 - a marvelous fantasio rescripture von the SPOOKY TRIO de beket
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 11, userpage 13
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 30 - RIGHTS
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 31 - Beckett estate & performance rights alarm
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 32 - today's reheasal & re-write of announcement
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 33 - new script for ghost trio.....looks more clear. JN
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 12, userpage 14
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 34 - new script proposal
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 13, userpage 15
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 35 - new script proposal
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 14, userpage 16
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 36 - updated may 23rd performance order/shifts Sunsets Sunrises
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+
+Underfull \hbox (badness 1990) in paragraph at lines 1469--1473
+[][]\*crimsontext9ptmmmb11* 1st Group 2 hours 2PM Colom-bia Time 1.UTC/GMT+2 : Cym, Pre-sent-ing in Croa-tia
+
+\hbox(6.75+2.25)x392.64803, glue set 2.71129, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* 1
+.\*crimsontext9ptmmmb11* s
+.\*crimsontext9ptmmmb11* t
+.etc.
+
+
+Overfull \hbox (8.08597pt too wide) in paragraph at lines 1490--1492
+[][]\*crimsontext9ptmmmb11* http ://www.world-time-server.com/con-vert_time_in_CO.aspx ?y=2009&mo=5&d=23&h=14&mn=0
+
+\hbox(6.75+2.25)x392.64803, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* h
+.\*crimsontext9ptmmmb11* t
+.\*crimsontext9ptmmmb11* t
+.etc.
+
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 37 - correct spelling, names etc?
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 38 - skype summary main poimts
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 15, userpage 17
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 39 - personnal summary
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 40 - resume, chat and ideas for JAM
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 16, userpage 18
+
+Underfull \hbox (badness 1292) in paragraph at lines 1639--1645
+[][]\*crimsontext9ptmmmb11* Last Group start @ 5 :00PM Colom-bia Time 8.UTC/GMT-6 : Ax-e-lat0r, Wis-con-sin, USA
+
+\hbox(6.75+2.25)x392.64803, glue set 2.35014, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* L
+.\*crimsontext9ptmmmb11* a
+.\*crimsontext9ptmmmb11* s
+.etc.
+
+
+Overfull \hbox (39.14679pt too wide) in paragraph at lines 1639--1645
+\*crimsontext9ptmmmb11* ing and Pro-ject-ing in Medel-lín, Colom-bia http ://trans-late.google.com/trans-late ?u=http%3A%2F%2Fwww.el-
+
+\hbox(6.75+2.25)x392.64803, glue set - 1.0, direction TLT
+.\*crimsontext9ptmmmb11* i
+.\*crimsontext9ptmmmb11* n
+.\*crimsontext9ptmmmb11* g
+.\glue 2.997 plus 1.4985 minus 0.999
+.\*crimsontext9ptmmmb11* a
+.etc.
+
+
+Overfull \hbox (8.08597pt too wide) in paragraph at lines 1651--1653
+[][]\*crimsontext9ptmmmb11* http ://www.world-time-server.com/con-vert_time_in_CO.aspx ?y=2009&mo=5&d=23&h=14&mn=0
+
+\hbox(6.75+2.25)x392.64803, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* h
+.\*crimsontext9ptmmmb11* t
+.\*crimsontext9ptmmmb11* t
+.etc.
+
+
+Overfull \hbox (163.47545pt too wide) in paragraph at lines 1667--1670
+[][]\*crimsontext9ptmmmb11* aqui la hora del jam en su zona ho-raria : http ://www.world-time-server.com/con-vert_time_in_CO.aspx ?y=2009&mo=5&d=23&h=14&mn=0
+
+\hbox(6.75+2.25)x392.64803, glue set - 1.0, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* a
+.\*crimsontext9ptmmmb11* q
+.\*crimsontext9ptmmmb11* u
+.etc.
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 1682--1686
+[][]\*crimsontext9ptmmmb11* 4. Video chan-nels trans-mis-sion : http ://1904.cc/ http ://www.livestream.com/transs-e-siones
+
+\hbox(6.75+2.25)x392.64803, glue set 2.32623, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* 4
+.\*crimsontext9ptmmmb11* .
+.\glue 3.99599 plus 4.49551 minus 0.333
+.etc.
+
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 17, userpage 19
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 41 - ok for 22nd
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 42 - 22nd call 9pm Manila time
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+
+Underfull \hbox (badness 1286) in paragraph at lines 1812--1817
+[][]\*crimsontext9ptmmmb11* For the of-fi-ci-cal Aether Manila Sex-tet Per-former's Call time is 9pm Manila with of-fi-cial
+
+\hbox(6.444+1.746)x392.64803, glue set 2.34398, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* F
+.\*crimsontext9ptmmmb11* o
+.\*crimsontext9ptmmmb11* r
+.etc.
+
+
+Underfull \hbox (badness 1997) in paragraph at lines 1812--1817
+\*crimsontext9ptmmmb11* show start-time 10pm Manila get your time here : http ://www.world-time-server.com/con-
+
+\hbox(6.75+2.25)x392.64803, glue set 2.71509, direction TLT
+.\*crimsontext9ptmmmb11* s
+.\*crimsontext9ptmmmb11* h
+.\*crimsontext9ptmmmb11* o
+.\*crimsontext9ptmmmb11* w
+.\glue 2.997 plus 1.4985 minus 0.999
+.etc.
+
+
+Overfull \hbox (55.4799pt too wide) in paragraph at lines 1831--1844
+[][]\*crimsontext9ptmmmb11* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+\hbox(4.86+0.36)x392.64803, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* >
+.\*crimsontext9ptmmmb11* >
+.\*crimsontext9ptmmmb11* >
+.etc.
+
+
+Overfull \hbox (151.41447pt too wide) in paragraph at lines 1831--1844
+\*crimsontext9ptmmmb11* Manila/Taipei/HK other times : http ://www.world-time-server.com/con-vert_time_in_US-CA.aspx ?y=2009&mo=7&d=19&h=11&mn=0
+
+\hbox(6.75+2.25)x392.64803, glue set - 1.0, direction TLT
+.\*crimsontext9ptmmmb11* M
+.\*crimsontext9ptmmmb11* a
+.\*crimsontext9ptmmmb11* n
+.\*crimsontext9ptmmmb11* i
+.\*crimsontext9ptmmmb11* l
+.etc.
+
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 43 - ASEUM epilogue
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 18, userpage 20
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 44 - berlin PREPARATION
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 45 - berlin flat/munich
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 46 - way to berlin
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 19, userpage 21
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 47 - reports of the 1st 1/2 day in residency :
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 48 - Fwd: Video-Performance, Rupert Goldsworthy Gallery
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 49 - [Fwd: daily reports - aetheric activity 29.10.2009]
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 20, userpage 22
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 50 - performance group get your ass on IRC
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 51 - mid-way almost the end report
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 21, userpage 23
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 52 - I add names to the mailing message
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 53 - flat joke and other thoughts from c3cil
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 22, userpage 24
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 54 - meeting
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 55 - meeting contents
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 56 - Adelaide performance
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 23, userpage 25
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 57 - report: Adelaide performance + future
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+
+Overfull \hbox (159.81697pt too wide) in paragraph at lines 2437--2440
+[][]\*crimsontext9ptmmmb11* http ://www.coma.net.au/news.php http ://www.coma.net.au/coma-gigs-past.php http ://www.coma.net.au/band_page.php ?Band_ID=49 
+
+\hbox(6.75+2.25)x392.64803, glue set - 1.0, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* h
+.\*crimsontext9ptmmmb11* t
+.\*crimsontext9ptmmmb11* t
+.etc.
+
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 58 - ghost trio - write up....Final (I think)
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 59 - ghost trio - found this.
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 24, userpage 26
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 60 - Pixelache sound loop files needed
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+
+Overfull \hbox (69.75401pt too wide) in paragraph at lines 2562--2570
+[][]\*crimsontext9ptmmmb11* This idea is in-spired some-how by Vimeo group called ”The Pic-tures Don't Move” http ://www.vimeo.com/groups/thep-
+
+\hbox(6.75+2.25)x392.64803, glue set - 1.0, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\*crimsontext9ptmmmb11* T
+.\*crimsontext9ptmmmb11* h
+.\*crimsontext9ptmmmb11* i
+.etc.
+
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 25, userpage 27
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 61 - residency agence TOPO current situation
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 62 - Set up and concept test of PixelAche 25.3. at 11 am (CET)
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 63 - patch 401
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 64 - rehearsal
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 26, userpage 28
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 65 - (no subject)
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 66 - Helsinki says thank you!
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 67 - Helsinki says thank you!
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 68 - Helsinki says thank you!
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 27, userpage 29
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 69 - Helsinki says thank you!
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 70 - Helsinki
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 71 - rain rain rain
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 28, userpage 30
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 72 - 21st april
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 73 - perfo - amsterdam - feedback an dso on
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 74 - included in puredyne?
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 29, userpage 31
+structure       > sectioning > subject @ level 3 : 0.0.0 -> 75 - very small report from montreal
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext9ptrmtfa*
+fonts           > defining > font with asked name 'crimsontext' is not found using lookup 'name'
+fonts           > defining > unknown font crimsontext, loading aborted
+fonts           > defining > unable to define crimsontext as \*crimsontext7ptrmtf*
+fonts           > defining > font with asked name 'karlaregular' is not found using lookup 'name'
+fonts           > defining > unknown font karlaregular, loading aborted
+fonts           > defining > unable to define karlaregular as \*karlaregular6ptsstf*
+pages           > flushing realpage 30, userpage 32
+ )</home/ludi/context/tex/texmf/fonts/opentype/public/lm/lmmath-regular.otf>
+
+system          > files > start used files
+
+used files      >    1: filename=mult-mps.lua | filetype=tex | format=tex | foundname=/home/ludi/context/tex/texmf-context/tex/context/base/mult-mps.lua | usedmethod=database
+used files      >    2: filename=test.tex | foundname=test.tex | usedmethod=direct
+used files      >    3: filename=cont-new.mkiv | filetype=tex | foundname=/home/ludi/context/tex/texmf-context/tex/context/base/cont-new.mkiv | usedmethod=database
+used files      >    4: filename=test.top | foundname=test.top | usedmethod=direct
+used files      >    5: filename=lang-us.lua | filetype=lua | foundname=/home/ludi/context/tex/texmf-context/tex/context/patterns/lang-us.lua | usedmethod=database
+used files      >    6: filename=type-siz.mkiv | filetype=tex | foundname=/home/ludi/context/tex/texmf-context/tex/context/base/type-siz.mkiv | usedmethod=database
+used files      >    7: filename=type-otf.mkiv | filetype=tex | foundname=/home/ludi/context/tex/texmf-context/tex/context/base/type-otf.mkiv | usedmethod=database
+used files      >    8: filename=lm-math.lfg | filetype=tex | foundname=/home/ludi/context/tex/texmf-context/tex/context/fonts/lm-math.lfg | usedmethod=database
+used files      >    9: filename=lm-math.map | filetype=map | format=map | foundname=/home/ludi/context/tex/texmf/fonts/map/dvips/lm/lm-math.map | usedmethod=database
+used files      >   10: filename=lm-rm.map | filetype=map | format=map | foundname=/home/ludi/context/tex/texmf/fonts/map/dvips/lm/lm-rm.map | usedmethod=database
+used files      >   11: filename=mkiv-base.map | filetype=map | format=map | foundname=/home/ludi/context/tex/texmf-context/fonts/map/pdftex/context/mkiv-base.map | usedmethod=database
+used files      >   12: filename=lmmath-regular.otf | filetype=otf | format=otf | foundname=/home/ludi/context/tex/texmf/fonts/opentype/public/lm/lmmath-regular.otf | usedmethod=database
+used files      >   13: filename=lpdf-pdx.xml | filetype=tex | foundname=/home/ludi/context/tex/texmf-context/tex/context/base/lpdf-pdx.xml | usedmethod=database
+
+system          > files > stop used files
+
+
+system          > structure > start used structure
+
+used structure  > text: test
+
+system          > structure > stop used structure
+
+
+mkiv lua stats  > used config file          - selfautoparent:texmf/web2c/texmfcnf.lua
+mkiv lua stats  > used cache path           - /home/ludi/context/tex/texmf-cache/luatex-cache/context/2448223e6631addb83df348d74153606
+mkiv lua stats  > resource resolver         - loadtime 0.008 seconds, 0 scans with scantime 0.000 seconds, 0 shared scans, 13 found files, scanned paths: 
+mkiv lua stats  > stored bytecode data      - 301 modules, 65 tables, 366 chunks
+mkiv lua stats  > cleaned up reserved nodes - 39 nodes, 9 lists of 426
+mkiv lua stats  > node memory usage         - 2 glue, 2 penalty, 16 attribute, 259 glue_spec, 3 attribute_list
+mkiv lua stats  > node list callback tasks  - 6 unique task lists, 5 instances (re)created, 9147 calls
+mkiv lua stats  > h-node processing time    - 0.073 seconds including kernel
+mkiv lua stats  > attribute processing time - 0.421 seconds front- and backend
+mkiv lua stats  > used backend              - pdf (backend for directly generating pdf output)
+mkiv lua stats  > loaded patterns           - en::2
+mkiv lua stats  > jobdata time              - 0.009 seconds saving, 0.003 seconds loading
+mkiv lua stats  > callbacks                 - 11576 direct, 5998 indirect, 17574 total
+mkiv lua stats  > randomizer                - resumed with value 0.86502885020572
+mkiv lua stats  > lxml preparation time     - 0.000 seconds, 0 nodes, 15 lpath calls, 0 cached calls
+mkiv lua stats  > interactive elements      - 0 references, 76 destinations
+mkiv lua stats  > v-node processing time    - 0.128 seconds 
+mkiv lua stats  > result saved in file      - test.pdf
+mkiv lua stats  > loaded fonts              - 1 files: lmmath-regular.otf
+mkiv lua stats  > fonts load time           - 0.630 seconds 
+mkiv lua stats  > luatex banner             - this is luatex, version beta-0.70.1-2011051923 (rev 4277)
+mkiv lua stats  > control sequences         - 32638 of 65536 + 100000
+mkiv lua stats  > current memory usage      - 28 MB (ctx: 29 MB)
+mkiv lua stats  > runtime                   - 3.017 seconds, 29 processed pages, 30 shipped pages, 9.944 pages/second
+

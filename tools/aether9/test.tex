@@ -1,0 +1,3044 @@
+% \setupoutput[pdftex]
+
+
+
+% DEBUG {{{
+    % uncomment those 2 lines to show the layout and the grid
+    %\showframe 
+    %\showgrid
+% }}}}
+
+% UTF-8 {{{
+    \enableregime[utf-8]              % Enters unicode 
+    %\setupencoding[default=uc]       % Uses unicode fonts only
+% }}}
+
+% LANGUAGE {{{
+    \setuplanguage[en][
+        leftquote=\upperleftdoublesixquote,
+        rightquote=\upperrightdoublesixquote,
+    ]
+    \mainlanguage[en]
+    \setcharacterspacing [frenchpunctuation]
+% }}}
+
+% LAYOUT {{{
+    % General layout
+    \definepapersize[sheet][width=165mm,height=255mm]         
+    \setuplayout[
+        backspace=21mm,
+        topspace=12mm,
+        width=138mm,
+        height=225mm,
+        leftmargin=15mm,
+        rightmargin=12mm,
+        header=0mm, % removes header
+        footer=6mm, 
+        grid=yes, % activates baseline grid
+        ]
+    \definepagebreak[emptyodd][yes,header,footer, odd]
+    \definepagebreak[emptyeven][yes,header,footer, even]
+    \setuphead[chapter][page=emptyodd]
+    % Left margin
+    \setupinmargin[
+        %align={outer, nothyphenated, verytolerant, stretch},
+        location=left,
+        align=left,
+        stack=yes,
+        style={\setupbodyfont[crimsontext, 9pt] \setupalign[hyphenated]},
+        before={\blank\startalignment[inner]},
+        after={\stopalignment},
+        line=0.5,
+        ]
+    % Indented block
+    \setupnarrower[left=3mm, right=0mm, middle=8mm]
+    % Folio
+     \setuppagenumber[number=3]
+    \setuppagenumbering[location=footer, style={\setupbodyfont[karlaregular, 6pt]}] 
+% }}}
+
+% LOAD FONTS {{{
+    \starttypescript [serif] [crimsontext] 
+        \definefontsynonym [Sans]            [name:crimsontext] [handling=pure]
+    \stoptypescript
+    \starttypescript [sans] [karlaregular] 
+        \definefontsynonym [Sans]            [name:karlaregular] [handling=pure]
+    \stoptypescript
+    \starttypescript [sans] [consolamono] 
+        \definefontsynonym [Mono]            [name:consolamono]
+    \stoptypescript
+
+    \definetypeface [crimsontext] [ss] [serif] [crimsontext]
+    \definetypeface [karlaregular]  [ss] [sans]  [karlaregular]
+    \definetypeface [consolamono]  [ss] [mono]  [consolamono]
+% }}}
+
+% TYPOGRAPHY {{{
+    \setupbodyfont[crimsontext, ss, 9pt]
+    \definebodyfontenvironment[default][a=1.5, b=1.75, c=2,d=3.4] % defines higher sizes of fonts 
+    \setupinterlinespace[11pt] 
+    \setupinteraction[state=start, color=black] % activate links
+    \setupnote[footnote][location=text, way=bypage, numberconversion=set 2, align={hyphenated}]
+    \setupnotedefinition[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
+% }}}
+
+% COLORS {{{
+    \setupcolors[rgb=no,cmyk=yes,state=start,overprint=yes]
+    \definecolor[blackos][c=0,m=0,y=0,k=1] 
+% }}}
+
+
+% JUSTIFICATION {{{
+    \setuptolerance[verytolerant] % justification settings
+    \interlinepenalty=8000 % tries to avoid widows
+    \widowpenalty=8000 % tries to avoid widows
+    \clubpenalty=8000 % tries to avoid widows
+    \doublehyphendemerits=1000000 % tries to avoid consecutive hyphenations
+    %\setupfonthandling [hz] [min=50,max=50,step=10]
+    %\setupalign[hz, hanging]
+% }}}
+
+
+\starttext
+\subject[mail:0]{\ss0 - remote fairytales - performance invitation}{
+\it{bk bk\high{\ref[p][mail:1].1, \ref[p][mail:2].2, \ref[p][mail:3].3, \ref[p][mail:9].9, \ref[p][mail:10].10, \ref[p][mail:29].29, \ref[p][mail:34].34, \ref[p][mail:65].65} --- 06.06.2007}
+
+\tf{
+Dear aethernauts
+
+the next performance of the aether9 group will be on Thursday 14th of 
+june, online and in brussels
+at 7 PM in europe = 10 AM california = noon in colombia
+in an audience packed gallery in the center of  Brussels (n3krozoft Ltd 
+will occupy this space for 3 days (see the attached flyer). the 
+performance and the exhibit is called
+"remote fairytales, contes lontains, fabel op afstand"
+(last expression is flemmish - brussels is bilingual french/flemish. 
+flemish is very very close to dutch).
+
+the idea for this performance:
+
+1) on location in brussels, next to the screen, there will be 2 persons 
+on stage:
+- Deirdre Foster (she is a storyteller and actress from Geneva) - she 
+will tell her version on the classical tale (from the Grimm brothers) 
+"La jeune fille sans mains" (The girl without hands --> 
+http://en.wikipedia.org/wiki/The\_Girl\_Without\_Hands).
+- Me, Boris, i will be conferencing the audience about the reunion of an 
+important group of patchers (i'm almost over writing this 
+conference-like text extrapolating from my aether9 experience!)
+we will intermingle our texts and form a strange dialogue.
+our idea is that Deirdre \& I will be quite confused about what is going 
+on: i will begin my conference by adressing myself to the audience in a 
+similar way and setting (chair, table, lamp) than academic conferences 
+are usually given, with the intention of informing he audience. Deirdre, 
+dressed in a ... fancy way,  will then "interrupt me" and start telling 
+her tale, with the intention of enchanting her audience. I will react by 
+answering to her, in my conference mode, but with the intention of 
+understanding what Deirdre is doing here. Deirdre will continue her 
+tale, with the intention of unveiling the question: what am i doing in a 
+digital-media performance? i thought i was in a storyteller convention!
+etc. and our dialogue will go on according to what happens between us 
+two, the audience and aether9 screens, but we will always stick more or 
+less to the stories we wrote.
+
+
+2) remote aether9 part:
+in parralel to the stage action, aether9 remote action will flow on the 
+screen (maybe 2 screens).
+we didn't develop any script yet. but we want to.
+the script will integrate formal and narrative elements related to the 
+stage action.
+sometimes the stage action will be on standby for the screen action to 
+take all the attention. in these moments, formal elements of aether9 
+will prevail.
+when the stage action will be running, the narrative elements of aether9 
+wil prevail, providing a visual tale.
+i guess that there will be an irc channel for aether9 with somebody in 
+brussels giving cues for actions.
+our texts are in french and should be translated to some extent in 
+english for everybody to grasp the stories...  well for Deirdre's tale, 
+the basis is on the net and for mine i'll adress this later today.
+we wish that all remote performers have a common "neutral" set , for 
+instance something simple like : a table with a chair, a neutral wall, a 
+picture on the wall, a book and paper + pen  or typemachine on the table.
+this in order to avoid total randomness of the visual aspect and 
+confusion for the viewers (online especially), in order to have some unity.
+not all performers would be perorming at the same time, and it would be 
+good to have a common neutral state in a way.
+
+3) sound
+- there will be some sound environnment in the brussel performance.
+somebody will be in charge of the sound diffusion.
+we are not thinking of stremaing the sound for the moment.
+- we would like to invite you to upload some sound files on 
+aether at artslashmedia.ftp server in the >web >"sounds\_remote\_fairytales" 
+folder
+- please view D. Lynch "rabbit" project for interesting sound treatment 
+(in our view...)
+--> here are 2 videos:
+http://www.bzzp.biz/temp/
+(1st episode: full first episode, 10min
+fragment: 2 min extract)
+- you could also record yourselves saying short sentences (cf. lynch again).
+
+
+4) rehearsals
+- on the 13th of june, one day before the performance, we should do a 
+videocheck to see how everything is running in the gallery (at the same 
+time scheduled for the next day's performance.)
+- this friday (8th of june), we would like to do a jam session.
+this session will adress technical problems (the aether9 system was  
+working well on the "electronic café international" session of the 10th 
+of may.
+since manuel has been working more on the patch and we need to test the 
+latest versions.
+we will also write some script with formal elements to test how it goes.
+for instance:
+- the table setting described before
+- make a cross between the 9 screens
+- 2 persons making phone calls at the same time
+etc.
+
+
+----------------------------------
+
+so,
+who will participate in this landmark performance?
+- to my knowledge, the following aethernauts said that in principle they 
+are ready to take part:
+Nathalie from paris, Audrey from holland, Paula from medellin, cym from 
+walkendorf, Chris from yorba linda - california.
+i guess that a group from geneva will do a part too.
+- Dr. Gomez \& the league?
+- Rhys from australia? (i heard that he would use puppets - that would 
+be good - performance time in au. would be early early in the morning.)
+- Johan from berlin?
+- Milena from the brazil group?
+- Laure form the Kingdom of belgium?
+
+-- 
+so we need to know asap:
+who will be there for the jam session this friday
+who wishes to take part in the "remote fairytales" perfomance on the 
+14th of june (and, if possible, the rehearsal on the 13th of june).
+
+all ideas, suggestion, disagreements etc. welcome and awaited!!!
+i love this team!
+looking forward,
+Boris
+
+
+
+
+}
+}
+\subject[mail:1]{1 - tommorow's jam session - details}{
+\it{bk bk\high{\ref[p][mail:0].0, \ref[p][mail:2].2, \ref[p][mail:3].3, \ref[p][mail:9].9, \ref[p][mail:10].10, \ref[p][mail:29].29, \ref[p][mail:34].34, \ref[p][mail:65].65} --- 07.06.2007}
+
+\tf{
+hello!
+
+tommorow's (8.06.2007) jam session is at
+9 PM in europe
+Noon in califonia
+10 AM in colombia
+11 PM in moscow
+
+new working patches!!!
+new 9 frame viewer html-page!!!
+
+---
+
+a couple exercices for us:
+
+-let's try to upload monochromatic images only at times (whether with 
+colored light if you have or filters to put in front of the camera or 
+any other way we can find)
+please prepare to upload images using red, blue and yellow.
++ darkness (not total)
+
+- anything that has to do with the "Girl without hands" tale is welcome.
+
+- if your camera films a setting with a wall (and some picture on it), a 
+table, a chair and sombody (you?) sitting behind the table, perfect! 
+(would be nice to try this all at the same time).
+
+---
+server list. 08.06.2007
+
+1 \textbar{} 2 \textbar{} 3
+4 \textbar{} 5 \textbar{} 6
+7 \textbar{} 8 \textbar{} 9
+
+Frame 1 - http://1904.cc/\textasciitilde{}aether/1
+Frame 2 - http://1904.cc/\textasciitilde{}aether/2/
+Frame 3 - http://10111.org/\textasciitilde{}aether/0/
+
+Frame 4 - http://10111.org/\textasciitilde{}aether/1/
+Frame 5 - http://artslashmedia.net/\textasciitilde{}aether/5/
+Frame 6 - http://aether.front.ru/6/
+
+Frame 7 - http://aether.front.ru/7/
+Frame 8 - http://aether.smtp.ru/cym/
+Frame 9 - http://aether.smtp.ru/9/
+
+for ftp uploaders: username and password on each server are the same as 
+usual.
+In each case the jpegs are now named 0x.jpg to 9x.jpg
+(except for cym, who uses arbitrarily frame 8. your jpg is named pw.jpg)
+
+the html interface will be available tomorrow, linked from 1904.cc/aether
+
+participants should announce on the list which frame they want to use.
+
+for maxers: use the latest patch: http://1904.cc/kode/upload\_107.zip (22 k)
+
+or, if the new javaobjects aren't working, use this simplified version 
+(without visual feedback; you'll visualise through the html interface) - 
+http://1904.cc/kode/upload\_109.zip (18 k)
+
+---
+
+boris
+
+ps: i will gladly use frame no. 7!
+
+
+}
+}
+\subject[mail:2]{2 - last news and performance preparation}{
+\it{bk bk\high{\ref[p][mail:0].0, \ref[p][mail:1].1, \ref[p][mail:3].3, \ref[p][mail:9].9, \ref[p][mail:10].10, \ref[p][mail:29].29, \ref[p][mail:34].34, \ref[p][mail:65].65} --- 09.06.2007}
+
+\tf{
+hello aethernauts,
+
+we jammed yesterday with
+laure\_bruxell1, paula\_medellin, manu\_geneva, boris\_brussel2 and 
+amirali\_teheran (chat\&images)
++
+christiaan\_california, cym\_walkendorf, ideakritik\_rotterdam and the 
+league\_california (chat only)
+no script was established so it began slowly in a quite random jam, then 
+ideakritik brilliantly gave cues according to elements of the "girl 
+without hands" tale. it lasted 3 hours or so.
+
+--
+
+technical conclusions:
+- the viewing 9frame html page works great (i attached some screenshots, 
+some slots are black because we weren't 9)
+- for maxers: the patch upload\_109 works perfectly
+- for ftp uploaders: it works well also
+this means that the transmission system for next thursday's performance 
+is fully fonctional!
+
+--
+
+practical conclusions:
+
+- we all agreed that it is extremely helpfull to be 2 persons for the 
+performance, for example:
+1 person in charge of following the irc chat for the cues, for the 
+computer manipulations and the camera manipulations
+1 person in charge of the image (as actor, puppetist, drawer etc)
+
+- we need a fine tuned script - this script should be finished on 
+wednesday at the latest. (see my propositions below)
+- each performer needs a clear method. everybody develops one naturally, 
+but it's better to find it before the performance than during the 
+performance... will you use a fix or moving camera?  etc etc.
+we need law\&order: more the formal aspects are defined, the better it 
+"feels" (knowing that anyway it will be quite hazardeous - i like this 
+struggle).
+it's possible at any time now to upload images and visualise it on 
+ >http://1904.cc/aether/ >new test interface!!!
+
+- perform simple \& small things
+we may think that what we are uploading is not "rich" or interesting 
+enough, but then we forget that there are 8 other images!
+
+- react quicky \& act slowly
+it's difficult to be all alert \& super fast to react to cues and in the 
+same way remember not to rush the action
+
+- obviously prepare a maximum of stuff before the beggining, in this way 
+you can concentrate on less things during the performance.
+
+maxers:
+- use the 109 for upload and the htlm 9frame page to view (not the more 
+complex upload\_107 patch, wich may crash)
+- use the start/stop button often - do not constantly upload images. 
+press the stop button to rearrange the setting and prepare for next actions.
+pressing once "start" then immediatly press "stop" will upload just one 
+image. this is great to create controlled animations (although it's hard 
+to control the order of the images, but it's verry fun nevertheless).
+
+--
+
+proposals for the basis of the script:
+- the script form in grid that we used for the first aether9 performance 
+was great i think.
+
+- it is now certain that we will use the "Girl Without Hands" tale. 
+Deirdre will tell it during the performance in brussels (we don't know 
+exaclty "how")
+
+- think it would be efficient and elegant to make a clear distinction 
+between when we upload "formal" elements (like "film an empty desk 
+before an empy chair") and "narrative" elements like
+("The devil sends a messenger to kill the queen and daugther!")
+
+i guess some of us prefer to do a performance with emphasis on formal 
+visuals, while others are more interested in emphasizing the 
+video-storytelling - it's different types of freedom and constraint.  
+both aspects are very important but cannot realistically be reunited by 
+every single performer yet (because it would need so much preparation).
+one way to do this would be to have a constant distinction on the screen 
+between who is working "fomal" and who is working "narrative".
+yesterday when everybody displayed an empty chair - the impression was 
+striking! common action works, and they never fail to create an 
+extremely deep impression.
+but the formal elements should always be thought of as going with the 
+tale in a way but not interpretating it litterally.
+all this shall be scripted of course.
+
+- the n3krozoft team can edit the script according to all the input on 
+the mailing list and related discussions, but if somebody or a group 
+wants to take the responsability to put this sript together, it would be 
+a great relief for us (because we are also in the rush of preparing the 
+exhibit: building fine zoetropes, editing dvd's, printing very large 
+video stills and more...). Please anonce it asap if you want to do this.
+
+--
+
+lineup for thursday the 14th:
+
+sure: cym, laure, paula, nathalie, christiaan
+  maybe: geneva, amirali:teheran, ideakritik
+no news: johan (berlin), alejo
+--> so we aren't ready yet participation-wise (there won't be any live 
+performance in the brussel gallery space itself.)
+
+--
+
+lookking forward,
+boris
+
+
+}
+}
+\subject[mail:3]{3 - brussels performance report}{
+\it{bk bk\high{\ref[p][mail:0].0, \ref[p][mail:1].1, \ref[p][mail:2].2, \ref[p][mail:9].9, \ref[p][mail:10].10, \ref[p][mail:29].29, \ref[p][mail:34].34, \ref[p][mail:65].65} --- 16.06.2007}
+
+\tf{
+hello all,
+
+we just opened the gallery this morning in brussels for the last day of 
+the exhibit here.
+
+i write now a little performance report
+
+/////
+1. Mother Nature
+we where about ready (one hour before the performance)
+ when mother nature invited herself
+it started to rain and rain and rain
+and all at once, water filtered through the roof
+of the large performance hall
+and poured in buckets on our command table
+we ran to unplug the curent and move tables in the dark
+to protect the computers and cameras and stuff
+the sound was ear-crushing: torrential rain
+in 5 minutes, there was 5 cm of water everywhere
+and we where soaked... and sort of annoyed...
+so we rushed to transfer everything from the big hall to the
+smaller exhibit hall
+while the lady-gallerist was calling the fire department
+/////
+2. Action
+quite stessfull we managed to be not too late for the beginning
+and the performance started in front of about 30 people (that where 
+brave enough to come in spite of the exceptional storm)
+some more walked in during the show
+they where welcomed with champagne and other drinks
+Deirdre told the tale in a baroque white dress colored by the projection 
+rays
+Chloe mixed discreet sounds \& music
+Boris told his story sitting in front of the audience on a desk while 
+trying to film his part of the tale.
+Manuel managed the projected images and chated on the skype conference
+/////
+3. Audience reaction
+some people where quite confused, but most of them liked it to put it 
+simply and shortly.
+///////
+4. Debriefing
+it was hard to be fully concentrate under these climatic conditions - 
+but it was exciting...
+- as there was no actual stage anymore, Deirdre found it extremely 
+difficult to properly perform her craft, storytelling. she also feels 
+frustration that we didn't have enough time to prepare a more refined 
+"mise en scene" between her and Boris.
+- Manuel was trying to give cues according to Deirdre's words, and 
+obviously it was going much too quick for the remote performers (\& for 
+manuel also who had to solve some techicalities...) - it was a BIG 
+mistake to do so. we apologize for that. a better thing would be for the 
+performers to switch between acts every 3 minutes for instance - like 
+that everything would be co-ordinated whitout questions...
+it is a shame really that the performers weren't able to display their 
+work in a calm manner with sufficient time to do so. this will not 
+happen again.
+- Boris is basically satisfied of the opportunity to read loud his 
+speech (adapted for the circumstance...).
+
+--
+
+pictures \& movies will come soon on the aether website.
+
+and check cristiaan site:  http://zurcnaaitsirhc.blogspot.com/
+
+--
+
+à bientôt,
+Boris
+
+
+
+
+}
+}
+\subject[mail:4]{4 - Rotterdam script}{
+\it{1.1 [*] 1904.cc 1.1 [*] 1904.cc \high{\ref[p][mail:11].11} --- 02.07.2007}
+
+\tf{
+to the rotterdam performers,
+here the basic version of the script.
+
+9h00 opening (empty desks, chairs, etc)
+9h01 character 1 appears
+9h02 character 2 appears
+9h03 character 3 appears
+9h04 character 1: action (fills a glass of water)
+
+9h05 character 2: action (...)
+9h06 character 3: action (...)
+9h07 character 2: talks (in direction to 1)
+      character 1: answers (in direction to 2)
+9h08 character 3: leaves the space
+9h09 character 2+1 seem nervous
+9h10 character 3: comes back
+
+9h11 character 3: talks
+      character 2: looks to character 3
+      character 1: close up action
+9h12 character 3+2: close up action
+      character 1: looks at the others
+9h13 character 3: close up action
+9h14 character 1,2,3: stand up, saluts au public.
+9h15 empty desk
+
+
+for additions or changes, use the wiki:
+http://1904.cc/timeline/tiki-index.php?page=020707+rotterdam+script
+
+}
+}
+\subject[mail:5]{5 - Re : today -- hotel new york}{
+\it{::audrey:: ideacritik\high{\ref[p][mail:17].17, \ref[p][mail:18].18, \ref[p][mail:22].22, \ref[p][mail:27].27} --- 02.07.2007}
+
+\tf{
+i apologise - i will be late for what i thought was a noon online-ness from the space.
+i am waiting for the dvcam which was supposed to be handed to me at 11.
+audrey
+
+
+}
+}
+\subject[mail:6]{6 - Rotterdam performance}{
+\it{Boba project.location\high{} --- 03.07.2007}
+
+\tf{
+Dear all,
+
+It was a true vibe to watch you all perform!!! I'm sending you million
+virtual kisses from somewhere on the way to Belgrade, and I'll be watching
+you on the 7th :)*
+
+I hope to keep in touch,
+Boba
+
+
+
+}
+}
+\subject[mail:7]{7 - final TWO for 7/7/7}{
+\it{cym net cymnet\high{\ref[p][mail:8].8, \ref[p][mail:14].14, \ref[p][mail:23].23} --- 06.07.2007}
+
+\tf{
+i will be making tree-color pasta (fusilli tricolori) with tomato
+sauce, with some vegetables added to the tomato sauce
+
+in fact i am eating the pasta right now already and didn't start
+making the sauce yet, but i will try to do that still later tonight to
+have all the material ready for tomorrow
+
+i need to first download the movies of the first part and charge the
+batteries before i can continue the second part of cooking. it takes
+quite some planning to cook a meal online
+
+are there any other recipes? does anyone else already know what s/he will cook?
+
+by the way, the three colored pasta i used is green, orange and white.
+i might stick to those colors also with the vegetables and add the red
+tomatoes as a contrast...
+
+any suggestions how to add numbers and formulas to the recipe?
+
+happy cooking,
+
+cym
+
+
+
+
+}
+}
+\subject[mail:8]{8 - question - logistics}{
+\it{cym net cymnet\high{\ref[p][mail:7].7, \ref[p][mail:14].14, \ref[p][mail:23].23} --- 06.07.2007}
+
+\tf{
+it seems we are 8 now? is that okay? can we make it a 7+1 performance?
+7+1 squares? for me it would be okay
+
+
+
+
+
+}
+}
+\subject[mail:9]{9 - 070707 news}{
+\it{bk bk\high{\ref[p][mail:0].0, \ref[p][mail:1].1, \ref[p][mail:2].2, \ref[p][mail:3].3, \ref[p][mail:10].10, \ref[p][mail:29].29, \ref[p][mail:34].34, \ref[p][mail:65].65} --- 07.07.2007}
+
+\tf{
+http://1904.cc/aether/live/index.html\#
+
+Hello,
+so we will be 7!
+
+following the set-up shaped as number 7,
+
+XXX
+-XX
+XX-
+
+i propose:
+
+NORWAY      LA1              LA2
+--------              BRUSSEL    GENEVA
+SLOVENIA    AUSTRIA    --------
+
+or in other words:
+
+league front
+n3krozoft front
+slovenia front
+
+in this disposition for instance:
+
+Dr. Gomez   Dr. Shleidan   Dr. Madmann
+
+-------------     BXL n3kro     GVA n3kro
+
+Luka             Cym                ------------
+
+///////////////
+
+if the 3 league members can coordinate something, great!
+
+here in brussels we are of course goig to respect the first and last 7 
+minutes segments (presentation \& eating) but haven't decided yet if we 
+are going to explicitly respect the 5 middle 7 minute segments. surprise 
+it will be.
+
+i will carefully record the performance with a camera filming a computer 
+screen.
+
+see you all later,
+Boris
+}
+}
+\subject[mail:10]{10 - next performance SETUP}{
+\it{bk bk\high{\ref[p][mail:0].0, \ref[p][mail:1].1, \ref[p][mail:2].2, \ref[p][mail:3].3, \ref[p][mail:9].9, \ref[p][mail:29].29, \ref[p][mail:34].34, \ref[p][mail:65].65} --- 16.07.2007}
+
+\tf{
+hello
+
+here is the setup situation for the central balkan mountains performance 
+in Bulgaria on the 19th of this month
+confirmed:
+ > Cym + Luka (wd8\_austria)
+ > Lucy/The League (norway)
+ > Boris (belgium)
+ > Manu + Alejo (Dortmund Germany)
+ > Nathalie - did you solve your camera problem? (Paris France)
+
+unconfirmed:
+ >>> Chris?
+ >>> Laure?
+ >>> Judy?
+ >>> Amirali?
+ >>> ???
+
+--
+
+have a look at the pic gallery of the place, it's quite something: 
+http://netuser.bg/2007/en/?gal=1\&page\_id=500
+
+-- 
+
+i had a look to one of the chats alejo pointed to: http://home.gabbly.com/
+super easy to embed... for bulgaria it would be no problem. (the 
+simplest way is to type gabbly.com/ in front of the url of the page you 
+visit, and all others visitors doing the same will be reunited in a 
+chatroom embedded on the visited url...)
+issues are:
+it eats quite some place on a web page.
+the design is... what it is - but more horrifying is the ad embed in the 
+top corner of the chat (i did not understand if we can replace it by 
+what we wish).
+you can see this chat at  http://gabbly.com/colboard.com/index.php - 
+when i tried it, 8 people where chatting at supersonic speed and it 
+worked perfectly.
+
+--
+
+Coco Islands Time Zone: UTC+6½
+
+--
+
+Boris
+
+
+
+}
+}
+\subject[mail:11]{11 - bulgaria - interface}{
+\it{1.1 [*] 1904.cc 1.1 [*] 1904.cc \high{\ref[p][mail:4].4} --- 19.07.2007}
+
+\tf{
+hi all,
+here is a possible setup for the Hotel Pleven performance (changes 
+are possible of course):
+
+laure(gva).JPG \textbar{} cym+luka.PNG \textbar{} audrey(rdam).JPG
+
+chris.JPG      \textbar{} boris.JPG    \textbar{} league.JPG
+
+objects        \textbar{} objects      \textbar{} objects
+
+the audio player is now a bit more hidden, see the new interface 
+from: http://1904.cc/aether/live/
+
+since we had some trouble (uncontrollable delays) with the .ru 
+servers, i propose to drop them for now.
+
+also, after some longer testing, it seems that png has a tendency to 
+be quite heavier than jpg, specially with very colourful/contrasted 
+material. so, since the max patch has now a contrast function, i 
+suggest we switch back to jpg (not for the pd users though).
+
+this are now the corresponding FTP directories:
+
+frame 1 - ftp://1904.cc/1/  format: jpg
+frame 2 - ftp://1904.cc/2/  format: png
+frame 3 - ftp://imaginaryscience.org/3/  format: jpg
+
+frame 4 - ftp://imaginaryscience.org/4/  format: jpg
+frame 5 - ftp://10111.org/web/5/  format: jpg
+frame 6 - ftp://10111.org/web/6/  format: jpg
+
+frame 7 - ftp://artslashmedia.net/web/7/ - OBJECTS
+frame 8 - ftp://artslashmedia.net/web/8/ - OBJECTS
+frame 9 - ftp://artslashmedia.net/web/9/ - OBJECTS
+
+note: user is "aether" for all servers, except imaginaryscience.org 
+where the user is aether
+
+note2: for frame 6 (league), there is only 1 self-refreshing png 
+file, called 1.png
+
+note3: i didn't include myself among the performers - will have a 
+busy day tomorrow and preparing the technical/html stuff + preparing 
+the performance/finding the objects will be hardly possible.
+
+if any of you needs special settings (filenames etc), tell me as soon 
+as you can.
+
+best,
+manuel
+
+}
+}
+\subject[mail:12]{12 - (no subject)}{
+\it{laure deselys lauredinateur\high{} --- 19.07.2007}
+
+\tf{
+hello,
+
+
+leaving brussels pc-naked made it quite hard for me to
+organise tomorrows performance and was also very busy.
+so couldnt take part so much to the wiki and script
+elaboration.
+ i am and will be for tomorrow  located in france
+(high-savoy), i still have a  few technical problems
+but it should be solved by tomorrow midday. cross
+finger.
+
+the place where i here grab the net, is in a kind of
+basement
+and for me it actualy seems easier to use a window
+that is ground high, then a  door. i dont know, if
+considering this i should be placed somewhere else in
+the nine screen strucure.
+
+
+maybe i can find a solution with a door but cant
+confirm it right now
+
+for the four objects i was thinking of:
+
+1. red kimono
+2. hunting gun
+3. hat(s)
+4. mountain boots
+
+boris, i dont expect you to have these important
+things at home, but you can also use the color or hand
+gesture to make contact with them
+
+or if its not considered usefulll enough for bulgaria
+( desk type)
+
+1. pencil sharpner
+2. hair brush
+3. embrella
+4. goggles
+
+and so on . theres such a mess of objects in this
+place 
+i must make a tactico-narrativ choice
+
+i will send the pictures for the slide show tomorrow
+for midday
+
+more in a few hours
+gotta catch up some sleep
+
+
+
+laure.
+
+
+
+Luka Princic / Nova Viator nova at viator.si 
+Thu Jul 19 17:44:05 CEST 2007 
+Previous message: [aether] 115 or 114 
+Next message: [aether] wd8 -> live 
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ] 
+
+On Thu, 19 Jul 2007 17:03:28 +0200
+1.1 [*] 1904.cc wrote:
+> i set everything back to JPG except the frame used by cym/viator 
+> (which is using the 0x.png - 9x.png naming scheme, hopefully it will 
+> work with Pd)
+> 
+> cym, i remind your FTP access:
+> frame 2 - ftp://1904.cc/2/
+
+yes.
+
+i just drove to wd8 at cym's, managed to download the linux driver for this nifty cym's hercules webcam, and it works!
+
+we're uploading.
+
+what's the chat channel this time then?
+
+ll.
+
+attaching the in-process screenshot *hope this list doesn't eat attaches for dinner*, wink wink...
+
+
+-- 
+<aav> coffee on an empty stomach is pretty nasy
+<knghtbrd> aav: time to run to the vending machine for cheetos
+<aav> cheetos? :)
+}
+}
+\subject[mail:13]{13 - Thoughts, and a riddle}{
+\it{Lucy H G art\high{} --- 19.07.2007}
+
+\tf{
+Quick thoughts!
+
+I think this project in Bulgaria is a bit of a riddle - the script and
+performance - figure out as you go - search/consume/share.  The first aether
+project with its highly developed storyline, pseudo-science and mythological
+themes still holds the most for me...  It was quite fun to do, and I think
+it is because of the intensive scripting - even though this made it more
+challenging.
+
+I like the subject/object- consumerism theme for this unnamed last piece,
+but I think timing is essential.  Coordination of objects moved from frame
+to frame, etc.  Perhaps we are all in our own space time bubbles - we are
+still quite disconnected during these performances, and I think a live audio
+conference between us would help us to synchronize, as well as get to know
+one another.
+
+Instead of a new theme for each new project - perhaps we could return to
+this study of an object, of coordination, of passing items through the frame
+and communicating more "physically" with one other?  Boris had called for us
+to simplify, I think...  With very little setup or concept - just play
+catch, as it were.
+
+Lucy/League
+
+
+}
+}
+\subject[mail:14]{14 - Re : Thoughts, and a riddle}{
+\it{cym net cymnet\high{\ref[p][mail:7].7, \ref[p][mail:8].8, \ref[p][mail:23].23} --- 20.07.2007}
+
+\tf{
+
+
+personally, i like to see aether 9 as a band that is playing live
+concerts. (or a theatre group that is doing theatre shows, but for me
+it is easier to compare it to a band)
+a band has a set of songs that they perform live. they practise the
+songs until they know them and can play them on the stage. they have a
+set of material and can change the set/order a little for each
+performance, and also create moments in the performance that leave
+space for improvisation. but still the basic structure is very clear
+for each band member. and at the same time it doesn't get boring to
+perform the same songs/compositions (or same theatre play) again and
+again.
+
+
+}
+}
+\subject[mail:15]{15 - Re : Thoughts, and a riddle}{
+\it{Judy Nylon knickerbockerjuju\high{\ref[p][mail:28].28, \ref[p][mail:30].30, \ref[p][mail:31].31, \ref[p][mail:32].32, \ref[p][mail:33].33, \ref[p][mail:35].35} --- 20.07.2007}
+
+\tf{}
+}
+\subject[mail:16]{16 - Re : Thoughts, and a riddle}{
+\it{Luka Princic / Nova Viator nova\high{} --- 21.07.2007}
+
+\tf{understanding the feeling of people involved in 'meat space'...
+anyway, i feel there is certain beauty (if i may use such a term here)
+in the efforts and connections that are happening here, and during the
+performances. 
+
+i'm also learning a lot about group performance and how things are
+bringing people closer together. the people who are performing, and the
+notions of distance and global and speed and time and place and space.
+i wish i had more theoretical tools to explain more precisely what i
+mean. but poetics can be also quite telling.
+
+i will/can work on a pd patch and linux-enabled approaches to aether9.
+}
+}
+\subject[mail:17]{17 - Re : Re : Thoughts, and a riddle}{
+\it{::audrey:: ideacritik\high{\ref[p][mail:5].5, \ref[p][mail:18].18, \ref[p][mail:22].22, \ref[p][mail:27].27} --- 24.07.2007}
+
+\tf{
+in response to 'getting to know each other' - as i also see this as a crucial element in a collaborative performance. especially since we cannot for the most part meet each other physically, small tidbits of knowledge become the extent of what we know about each other. these tiny tidbits are therefore also the only thing we have to go on in so far as expectation or imagination of how the other will act during a performance. in our excitement over 'the patches', have we perhaps overlooked that we must not only play, but play together? the person who 'assisted' me last performance was amazed at how little attention we payed to each others performances, 6 little autisms neatly assembled on a page. perhaps getting to know each other, even if only through these unsatisfactory mediums, is a start towards an aether9 embodied performance as opposed to several individuals operating in the same screen though otherwise seemingly detached.
+
+i was lucky enough to meet cym last week in austria as well as to attend the workshop in geneva where i of course met manu/aether9, alejo and others who are more or less inactive for the moment. i am based in rotterdam. i've just finished my MA in media design. my thesis is about the interaction/affect between media and our mourning process, and how we perceive death. as in many of my endeavors, i interviewed many people about this very idea and incorporated their accounts into my final project/thesis. i am explaining this only because my somewhat anthropological methodology outlines one of my main interests in this group;  how do remote performers work together, communicate, make decisions, disagree, in short, form a group. the limitations of our communication media form a particular set of 'constraints' which inherently shape our performance together. perhaps my use of the word constraints is not just because it is usually derogatory. i see these
+ constraints as borders from which to work with, in the same light as our 'low-tech one frame per second' refresh speed. i do not wish the frames to load quicker or to attain the perfect resolution. i prefer to take on this dimension and exploit it, in all its 'dramaturgical' glory. in the same way, i think we should exploit our 'thwarted' methods of communication. we often throw together a script at the last moment and more or less blindly perform all together without knowing what each other is doing. could we take this on as some sort of methodology? could this be made explicit as a performance tool? in this vein, i can imagine that we use simple 'unification' props such as text (which we have yet to integrate successfully but in which i have confidence). these props could be constant during each performance, and this aspect would be practiced, but the rest could be 'off the cuff' or improvised as usual. as cym noted, using text, written on a piece of
+ paper as we did in the first performance, was really nice. this is an idea which i feel is a beautiful metaphor for our communication together if it is used to communicate between frames during a performance. i imagine inmates passing each other notes between jailcells, all being watched on simultaneously by the jailguard on nine tiny screens hooked up to those surveillance cameras. we use the technology but we still attempt to communicate with paper and pen... this could be a constant which we can rehearse... for example.
+
+i hope this hasn't been too much of a digression to describe my feeling/desire to incorporate our communication process implicitly in our performances as well as to keep some things constant in order to refine our practice, focus our experiments.
+
+audrey/ideacritik
+
+
+
+
+
+
+}
+}
+\subject[mail:18]{18 - Re : more archives online}{
+\it{::audrey:: ideacritik\high{\ref[p][mail:5].5, \ref[p][mail:17].17, \ref[p][mail:22].22, \ref[p][mail:27].27} --- 06.10.2007}
+
+\tf{
+we are trying to find someone to do the music-audio ... the idea i mentionned about streaming audio from there, to participants, and back into the room... no one confirmed thus far. do we have a backup audio streamer available - i know boris and laure are in transit so not available...
+
+i`m off to a chalet for a couple of days, more upon return.
+
+so who?s in???
+
+audrey
+
+}
+}
+\subject[mail:19]{19 - 26 october reconfirmation}{
+\it{Paula Vélez Bravo ciruela\high{\ref[p][mail:24].24, \ref[p][mail:25].25, \ref[p][mail:26].26, \ref[p][mail:40].40, \ref[p][mail:46].46, \ref[p][mail:52].52, \ref[p][mail:59].59} --- 11.10.2007}
+
+\tf{
+so, the script and everything will be at the same link i supposed.
+
+will connect today to skype to see if we can try things up.
+
+other thing, the sound streeming... i would like to try. it will be  
+using giss tv?
+
+ok.
+see you soon on the net.
+
+paula
+
+}
+}
+\subject[mail:20]{20 - rehearsal times}{
+\it{nicola unger nicola_unger\high{} --- 19.10.2007}
+
+\tf{wednesday 24 morning 11.00-14.00
+
+thursday to be confirmed and friday gigtime as well
+audrey will figure out techsetup today, not sure how
+far we get.
+
+cu soon!
+nicola
+
+}
+}
+\subject[mail:21]{21 - RE : last thougths this evening}{
+\it{fougeras nathalie fougeras_nathalie\high{} --- 22.10.2007}
+
+\tf{sorry for today.... ok i bought my webcam so tomorrow morning it's possible for me to participate to the rehearsal
+see you soon
+cheers
+Natali
+
+}
+}
+\subject[mail:22]{22 - Re : Re : RE : last thougths this evening}{
+\it{::audrey:: ideacritik\high{\ref[p][mail:5].5, \ref[p][mail:17].17, \ref[p][mail:18].18, \ref[p][mail:27].27} --- 23.10.2007}
+
+\tf{
+26.10.2007
+14:30: general rehearsal (all *must* be present)
+15:15: second/last general rehearsal (all *must* be present)
+
+*things to schedule:
+sound check : paula tu es disponible quand? et le vendredi comment tot p-e etre online avec le streaming du son.
+je vais uploader de l'audio de trains holandais que j'aimerais incorporer au soundscape, quand sera tu online pour qu'on en discute?
+
+a\textbar{}idea
+
+}
+}
+\subject[mail:23]{23 - aether9 level2}{
+\it{cym net cymnet\high{\ref[p][mail:7].7, \ref[p][mail:8].8, \ref[p][mail:14].14} --- 26.10.2007}
+
+\tf{i just spent the whole week in ljubljana teaching 18 students
+HTML/webdesign (from 10am till 21pm every day..), so maybe i am
+focused a bit too much on such details, but anyway.. the interface
+looks really nice in firefox and would be good if it looks the same in
+explorer...
+
+anyway, i am right now watching, waiting for the performance to start.
+some of my students also said they will watch tonight, so it would be
+good to put some message or something online, that performance is
+starting 30 mins later. I am not sure if it is enough just that the
+number of seconds how long to wait keeps on changing. would be better
+to put a line on the bottom that says
+* performance will start 30 mins later - 22:30 CET *
+
+okay, i will keep on watching and waiting and take some photos
+
+cym}
+}
+\subject[mail:24]{24 - tremor participation confirmed}{
+\it{Paula Vélez Bravo ciruela\high{\ref[p][mail:19].19, \ref[p][mail:25].25, \ref[p][mail:26].26, \ref[p][mail:40].40, \ref[p][mail:46].46, \ref[p][mail:52].52, \ref[p][mail:59].59} --- 01.11.2007}
+
+\tf{street,
+sur un mur de la rue. outdoors at night, like christian said last  
+night : an aether midnight drive-in.
+if it is complicated i could do it maybe, i'm just asking ... in a  
+cool place call: "pato feo films"
+
+a friend of mine is working in this space... he is the one who  
+invites us to participate in this festival
+
+christiaan said yesterday:
+its a fun space, looks like some cool sound and video stuff
+i like how everything is on the floor. so you have to sit japanese style
+
+there are some chairs and a sofa, but mostly you have to sit on the  
+floor. so i'm trying to do it there... i will see. i need people to  
+help me. maybe this friend of mine that manage that place.
+
+
+PAula
+
+
+}
+}
+\subject[mail:25]{25 - bogotá tempete}{
+\it{Paula Vélez Bravo ciruela\high{\ref[p][mail:19].19, \ref[p][mail:24].24, \ref[p][mail:26].26, \ref[p][mail:40].40, \ref[p][mail:46].46, \ref[p][mail:52].52, \ref[p][mail:59].59} --- 04.11.2007}
+
+\tf{
+AETHER9:
+
+à bogotá..... puis, pas facil faire un reperage, a part de prendre  
+quelques images... mais il s'est passé un truc incroyable.
+Une tempete de verglas, neige, pluie...
+
+je suis venu pour le festival rock al parque. ajourd'hui je regraette  
+de ne pas avoir allée, car les photos et films que j'aurai pu prendre  
+j'en reve...
+
+voici c'est qui c'est passe aujourd'hui, regardez quelques photos du  
+journal.
+
+encore vous dirai que ce n'est pas qu'une tempete de neige. mais en  
+colombie ne neige pas!
+
+seulement à 5.000 metres d'altitude. et voici, on est à bogotá à  
+2600mts... rarement il y a des phienomenes comme ça.
+
+http://www.eltiempo.com/multimedia/galerias/granizada/GALERIAFOTOS- 
+WEB-PLANTILLA\_GALERIAFOTOS-3801694.html
+
+http://www.eltiempo.com/multimedia/galerias/granizadalectores/ 
+GALERIAFOTOS-WEB-PLANTILLA\_GALERIAFOTOS-3801410.html
+
+
+paula
+
+
+
+}
+}
+\subject[mail:26]{26 - urgent tremor RDV2}{
+\it{Paula Vélez Bravo ciruela\high{\ref[p][mail:19].19, \ref[p][mail:24].24, \ref[p][mail:25].25, \ref[p][mail:40].40, \ref[p][mail:46].46, \ref[p][mail:52].52, \ref[p][mail:59].59} --- 08.11.2007}
+
+\tf{
+nicola and audrey:
+sorry about your internet connection.
+i don't know how are we going to di now.
+i have been waiting aethernautes since more than an hour... to fixe  
+things, do a rehersal... mmm i don't know, i start to be worried  
+about it.
+don't know exacly how are we going to do.
+so... i have to go to get some videos fprm the street to use in the  
+performance.
+
+i need participants ready to do some test tomorrow night (night in  
+european time) it could be 18h eurpoean time.
+
+we have to think about a plan B. maybe a quick new script and see if  
+other AETHERnautes want to participate.
+I know the hour it is not easy for you all. 1am in saturday morning  
+10 november... for me it will be 9 november 19h.
+
+so, tomorrow i wish all participants will be connected the sooner you  
+can...
+i will try to be connected since 10am  so 16h european time.
+
+ok.
+paula
+
+
+El 8/11/2007, a las 14:31, nicola unger escribió:
+
+> hi all, audrey and me are still in a situation without
+> internet at home...
+> so better not count on us, it is really stressfull to
+> get online and timing is shit...!
+> sorry...
+>
+
+}
+}
+\subject[mail:27]{27 - Re : videocapture did works}{
+\it{::audrey:: ideacritik\high{\ref[p][mail:5].5, \ref[p][mail:17].17, \ref[p][mail:18].18, \ref[p][mail:22].22} --- 11.11.2007}
+
+\tf{
+----- Message initial ----
+De : Paula Vélez Bravo ciruela at [nospam] une.net.co
+
+>did somebody put the video already in the net? i would like to see it with sound incorporated.
+
+hi all,
+i am just now going through all the aether mails. as you know i am offline. in addition to that, the dv tape of the WORM performance has rather embarassingly ended up in someone else's camera which is now in turkey and etc so i won't even get my paws on the thing for another whole week. for this disorganisation i apologise as i find the immediacy of watching the performance from the 'outside' very important for critique. once i get the tape i'll be on the case asap.
+
+a\textbar{}idea 
+
+ps some feedback i received :
+-it would have been interesting if the actions performed/mimiked by the actors have a connection to the medium, its limitations, politics, etc. rather than just stretching for example... 
+-the storyline was not very clear
+-it was not clear whether the brussels/geneva performances were live or recorded (which made the tension very interesting - or the intrigue).
+-the cues which i gave to nicola (by whispering into a microphone) were for some very nice, bringing my role in the performance more clear and also adding to the intrigue of not knowing if the cues go to nicola or also to the other actors (who is guiding who?). for others much for the same reason a bit confusing, why those cues? (i.e. front/back/left/enter/leave/apple/...) they seemed too random.
+
+in general the feedback was positive and the critical points were brought up because they saw potential in the project.
+
+that's all for now. still reading the last 20 aether mails... :S
+
+
+
+
+}
+}
+\subject[mail:28]{28 - sunday ghost [TITLE suggestion]}{
+\it{Judy Nylon knickerbockerjuju\high{\ref[p][mail:15].15, \ref[p][mail:30].30, \ref[p][mail:31].31, \ref[p][mail:32].32, \ref[p][mail:33].33, \ref[p][mail:35].35} --- 09.12.2007}
+
+\tf{Please consider for the Aether adaptation of "Ghost Trio" could be called "Ghost Given". It sounds like 'forgiven' and suggests the intangibility of what is received and the uncertainly of who is actually doing the giving. 
+
+Judy
+}
+}
+\subject[mail:29]{29 - a marvelous fantasio rescripture von the SPOOKY TRIO de beket}{
+\it{bk bk\high{\ref[p][mail:0].0, \ref[p][mail:1].1, \ref[p][mail:2].2, \ref[p][mail:3].3, \ref[p][mail:9].9, \ref[p][mail:10].10, \ref[p][mail:34].34, \ref[p][mail:65].65} --- 11.12.2007}
+
+\tf{
+ > music:
+- i didn't produced anything, contradictory to what i announced 
+yesterday on skype. questions:
+- do we want to use Beethoven’s Piano Trio?
+If yes, do we want to respect more or less the indications from Beckett 
+OR do we want to freely play with this trio, with mixed loops or samples 
+for example? (i understand that the uploaded music is only a fraction of 
+the second movement of the trio. all the music indicated by Beckett 
+commes from this second movement. i do not have the full piece - i 
+uploaded, for the sake of the example, the part that goes with "Act1, 
+l.31" - i also uploaded a couple nice loops).
+- There's very little (faint) music in the original indications 
+(repertoried in the wikipedia page).
+- If we decide to use musical elements, is there sound appart from this 
+music, for example do we want to stream some sounds of aint winds? Or 
+"pastel noise"?
+- Judy, how do you generally feel this music part? What are your ideas?
+
+}
+}
+\subject[mail:30]{30 - RIGHTS}{
+\it{Judy Nylon knickerbockerjuju\high{\ref[p][mail:15].15, \ref[p][mail:28].28, \ref[p][mail:31].31, \ref[p][mail:32].32, \ref[p][mail:33].33, \ref[p][mail:35].35} --- 12.12.2007}
+
+\tf{I called the agency here in NYC about the rights. They have never done anything for live and on-line for anything they represent and have not had any request for this TV play while she has worked there. The agent I spoke with said she would like a write up of what we are doing emailed to her     kate \{a+\}  gbagency.com      so that she might pass it along to Edward Beckett (owns the estate) who lives in England....to request permission and establish a fee for performance rights.
+
+I too suggest we wait. There is not time before Saturday. JUDY
+}
+}
+\subject[mail:31]{31 - Beckett estate & performance rights alarm}{
+\it{Judy Nylon knickerbockerjuju\high{\ref[p][mail:15].15, \ref[p][mail:28].28, \ref[p][mail:30].30, \ref[p][mail:32].32, \ref[p][mail:33].33, \ref[p][mail:35].35} --- 13.12.2007}
+
+\tf{
+At some point we must consider the ways around this because we will not receive this man's blessing at any price. However, if everything remains web-based in its production and presentation, he will have nowhere to drop his lawsuits \& 'cease and desist' orders. We will have to change the name of the play/never call it an adaptation and perhaps morph it into something else......in my opinion......possibly retaining Beckett himself as the character (f)
+
+Judy--
+}
+}
+\subject[mail:32]{32 - today's reheasal & re-write of announcement}{
+\it{Judy Nylon knickerbockerjuju\high{\ref[p][mail:15].15, \ref[p][mail:28].28, \ref[p][mail:30].30, \ref[p][mail:31].31, \ref[p][mail:33].33, \ref[p][mail:35].35} --- 14.12.2007}
+
+\tf{We’re presenting a live multi-based web link up on Saturday December 15th. Loosely adapted from a theater piece written in 1975, taped in ‘76 and televised on BBC2 in 1977. We are mixing it with a bit of dub on classic piano and samples.  It is a parallel universe played out in the same slice of time as the first wave of British punk. The language will be English. The development of live storytelling without a single fixed location is on going. 
+
+My fellow aethernauts and I would be delighted if you would join us on-line at our first chance to bring this piece from TV to a wider audience. It doesn’t matter what you’re wearing and you won’t have to worry about how you’re getting home.
+
+Members of Aether9 will be performing from different locations:  Medellin, Yorba Linda, NYC , Brussels, Geneva, and Paris. The audience, those in the same room, will be joined at ‘Videomedja 2007’ at the Museum of Vojvodina, Novi Sad, Serbia, by two Aether9 artists from Austria and Slovinia who will host the Q \& A which follows the performance.
+
+There are no complicated programs or hardware involved. It is easier than getting out of the house. I hope you will look through our site at  www.1904.cc where the collaborative process involved is quite transparent, our project laid out, and participants named. Here we will make the links “to set up your computer” so easy that you will practically fall through them to the new venue.
+
+You will need to go through one link to find out what the time will be where you are, when it is Saturday at 11:15 PM in Serbia. The second link opens the audience viewing window and a third link leads to instructions to stream sound.
+
+}
+}
+\subject[mail:33]{33 - new script for ghost trio.....looks more clear. JN}{
+\it{Judy Nylon knickerbockerjuju\high{\ref[p][mail:15].15, \ref[p][mail:28].28, \ref[p][mail:30].30, \ref[p][mail:31].31, \ref[p][mail:32].32, \ref[p][mail:35].35} --- 17.12.2007}
+
+\tf{
+Re: feedback: Beyond the compliments and stirring of the imagination the useful thoughts from friends were as follows: 1) an actor said that it still lacks emotive room in the small screens and we might insert extreme close-up shots to allow us to receive the interior part of the acting. OR...soon maybe we will be able to feature that one square larger when something like that is going on in the script. 2) a filmmaker in Berlin loved the piece and was familiar with  Beckett and seemed to know that it was impossible to get the rights to do any adaptations of Beckett's plays.  Her only critical comment (among lots of praise) was that the credits were  impossible to follow and she wasn't wild about the handwritten  "live from  wherever" cards.  I thought seeing everyone on camera for a second was reminiscent  of the informal credits on a Doris Dorrie film. I liked it. 3) I had one person who is close to 70 years say that she couldn't get to it and that the interface still
+ wasn't easy enough. I mention her because she is someone who has a foundation that gives grants and we do want to get everybody to be able to see what we do. 4) tomorrow at their Xmas party, I will hear if anyone at HWKs (www.harvestworks.org) saw this and will start them thinking about sponsoring us to have a gig at the New Museum which just opened a state of the art building on the Bowery a couple of weeks ago. I have been to Location1 (the art space I mentioned before) and feel that they have very little to offer us.
+
+Onward....Thanks one and all...good show, it was a pleasure.  Judy}
+}
+\subject[mail:34]{34 - new script proposal}{
+\it{bk bk\high{\ref[p][mail:0].0, \ref[p][mail:1].1, \ref[p][mail:2].2, \ref[p][mail:3].3, \ref[p][mail:9].9, \ref[p][mail:10].10, \ref[p][mail:29].29, \ref[p][mail:65].65} --- 15.03.2008}
+
+\tf{
+Hi all,
+I throw a script idea here. Still needs lots of input fortunately. I 
+believe now that it would be better to do twice the same script for the 
+2 april performances.
+
+---
+
+It is a first draft sort of inspired by the LRRH tale, an essay from Lev 
+Manovich, sites like livejasmin.com and elements of our previous 
+discussions. I also had a meeting with Chloé in a brussels bar yesterday 
+night where we discussed this.
+This requires 5 live performers. I guess that it would last about 40 
+minutes.
+
+
+LAYERS
+ > remember the first script, i think we all liked the 3 layers: Gods / 
+Stratosphere / underworld. I think we mostly liked it and in this 
+proposal, there are also layers. But not so rigid: at times the fixed 
+clear structure is broken when the performers decide to upload their 
+images to another frame. There would be set moments for this principle, 
+it would be chaotic (like an unpredictable frame battle - easy to do for 
+the max-patch users, i don't know for performers who use another upload 
+system)
+(check Lev Manovich essay "Interaction as an Aesthetic Event" (2007), 
+found the other day on manovich.net, a short must read that i attach it 
+to this mail. Key quote: "Command-line interfaces "deliver the goods", 
+that is, they focus on pure functionality and utility. GUI (Graphic User 
+Interface) adds "service" to interfaces (like mac OS9). And at next 
+stage, interfaces become "experiences" (like mac OSX) " (it helped me to 
+imagine the 3 layers as: "goods / services / experiences" but i don't 
+think we should remember this for a performance script really).
+ 
+
+TOP LAYER (frames 1,2,3) - experiences
+the Little Red Riding Hood
+ > must attract all 5 senses.  
+ > Shows 1 girl doing the webcam thing (check www.livejasmin.com to get 
+the idea...) - her body is spread out on 3 frames, in the illogical 
+horizontally way (assuming the girl is sitting and not laying on a 
+matress for example, but she could switch positions of course):
+frame 1: head and shoulders
+frame 2: chest to tights
+frame 3: legs
+(This requires 3 cameras and 3 computers!)
+ > Differently colored frames (Godard's "Contempt" / "Le mépris" style lol)
+ > The girl is "typographed": lighten by a video-beamer (projector) if 
+available: light, images and texts (screen surface would be the skin, 
+the clothes and the wall in the background). Magical transparency etc.
+ > The girl would wear red cape at times.
+ > Live stream would be the sound environnement (spoken interactions 
+between girls, with the technical assistant(s) and sounds from their 
+surroundings).
+ > A different girl could appear at times (i mean that they could 
+switch, on location of the shooting: people on livesjasmin.com often 
+operate from studios where different people work)
+ > nb: I talked with Chloé who is enthusiastic for doing this part! And 
+in bruxelles it would be totally feasible without big organisation fuzz 
+to have 3 cameras and 3 computers for the 3 part upload. So we can 
+assume that brussels could do this sort of complicate part :-)
+
+
+MIDDLE LAYER (frames 4,5,6) - services
+ > The Hunter, The Wolf, and other persons/things (grandmother? Dolls? 
+Objects? central frame 5 could be a webcam highway all the time?) / 
+could be the people through wich the tale is carried and transmitted / 
+could be the people looking at the kind of peepshow / the forest / the house
+ > The Wolf: a person could be disguised in wolf, wild and chaotic. 
+Undecipherable. Basic instincts.
+ > The Hunter: could be disguised with mustache, hat with feather, 
+riffle. Could spend a lot of time cleaning his gun.
+
+
+LOWER LAYER (frames 7,8,9) - goods
+The transmission operator (frame 8) + 2 text frames (frames 7 + 9)
+ > The Operator frame is played at the Mapping festival. He is in front 
+of an old-fashionned greyish computer screen.He is the person managing 
+the live Skype chat (that should be projected at Mapping). He has a desk 
+with a lot of stuff around, like a police inspector (i am thinking of 
+the police office at the end of "The Usual Suspects: crowded with 
+pictures, notes, etc - here all these documents would relate to the LRRH 
+case of course).
+ >  black and white image only.
+ > The Operator becomes mad when the frames change of place, when it is 
+chaotic. Hence he would appear as a puppet-master whose puppets aren't 
+obedient. Also as the manager of the webcam girl. I imagine he would 
+have a eastern-mafia feel.
+ > He gives orders at time to the girl of top layer (with text).
+
+NARRATIVE
+So far i've described mostly stuctural elements. But i feel we need 
+actions. Like sketches. Series of little interactions (like in the last 
+performance when there's the "murder with the typingmachine" betwwen 2 
+frames). What will be doing :-) ?
+This needs a lot of development. Here are a couple ideas:
+
+ > When the Wolf catches the LRRH (by going up a ladder and exiting his 
+frame by the top? bof...) , a curtain could come down on the LRRH (like 
+when they do a private show in web-peepshows - well of course the morale 
+of the the LRRH story can be read as: the LRRH shall have a lover (the 
+wolf) before marriage (with the hunter)...
+
+ > END: for the grand finale, i imagine with pleasure a big showdown 
+(after a tense preparation time, like in westerns), with everybody 
+shooting against everybody, and constantly changing of frames, so it 
+would be a shooting chaotic ballet (before everybody going back to it's 
+orîginal frame for the salutes - where the assistants also come in the 
+image to salute).
+
+ > There should be a moment of eating alltogether.
+
+ > Text: in 1 text frame, the text could be a chat session between the 
+LRRH, the hunter and the Wolf. They could be rambling over their great 
+memories of they recall from their story, and the operator could be 
+there as well (live on the skype-chat and somebody remote would take 
+care to upload the logs into the text frame or we could write this chat 
+session in advance and somebody would upload it as well.)
+ (n3krozoft did a performance with images of a chatter and the chat: 
+http://www.n3krozoft.com/projects/art/lol/index.html\#
+In the other text frame, something totally different could be going on.
+
+ > I guess that to emphasize the actual LRRH tale, we could upload 
+images from books / illustrations / drawings / dolls / films / comics 
+etc. on the theme - or not on the theme actually :-)
+
+ > SOUND:  i imagine BliscappenVonMaria could do "musique descriptive", 
+i mean develop expressionistic themes around the themes of the LRRH.
+
+////////
+
+I believe this structure is an invitation to a lot of playfullness and 
+inventions.
+For instance the roles between the LRRH and the Wolf(es) can be inverted 
+at some point. The LRRH could turn into a big eater, in a very 
+disgusting way (dirty or jung food only, and alcohol) - well just a 
+random thought.
+
+Please don't hesitate to tell clearly your critics. If negative, please 
+propose other concrete directions. Or if you wish to bring it to an all 
+other level or direction, let's share ideas!
+
+
+///////
+
+PARTICIPANTS \& DATES:
+
+
+Confirmed for Festival de la Imagen (but we still need a date):
+ > Boris (i'm available at almost any time this week)
+ > Paula
+
+
+Confirmed for Mapping (19th April, we don't know at what time yet):
+ > Boris + Manu team
+ > Chris
+ > Chloé
+ > Bliscappen music band
+
+//////////
+
+See you soon,
+Boris
+
+}
+}
+\subject[mail:35]{35 - new script proposal}{
+\it{Judy Nylon knickerbockerjuju\high{\ref[p][mail:15].15, \ref[p][mail:28].28, \ref[p][mail:30].30, \ref[p][mail:31].31, \ref[p][mail:32].32, \ref[p][mail:33].33} --- 17.03.2008}
+
+\tf{
+This is exciting.....I must still call around for a camera; I still have nothing but my Mac built-in...but I have built a doll house (thinking about Duchamp's valise) in which, with surreal sized objets relating to the Red Riding Hood story, I can build the emotive current of the story with signifiers. I am attaching jpgs. The dollhouse has six rooms and I can access the objets (barely) sticking my hands (with long stick on red fingernails) through the windows on the front. I hope you all like this; I think the smaller (rooms) boxes within on of the larger Aether boxes will give an odd scale/depth sensation that will relate to the body spread across three frames. The tits in the picture are tension toys for executives (weird to touch/squeeze).
+
+The test of the new Aether page looks good.  I think doing the same performance twice is a good move. i will look at the references below. and also check about the web cams ....And if we think this dollhouse idea will work to show the elements of the myth in an emotional/ mental landscape , I will continue to collect ephemeria related to the story. I have watched an artist Laurie Simmons use cutouts from magazines propped up like paperdolls \& moved in these scenerios....it is very dream-like.
+
+And yes, I am glad to have anything to help my half hour lecture on Aether. 
+The doll house is out in my own dollhouse sized apartment where I can see it and think...so feed back would be good. Also, are we sticking to having a single source for sound or not?   Great script start..... Judy
+
+}
+}
+\subject[mail:36]{36 - updated may 23rd performance order/shifts Sunsets Sunrises}{
+\it{christiaan cruz fe2cruz\high{\ref[p][mail:38].38, \ref[p][mail:42].42, \ref[p][mail:43].43, \ref[p][mail:60].60, \ref[p][mail:74].74} --- 19.05.2009}
+
+\tf{
+12 confirmed aethernaut streams
+2 event locations/presenters
+3 groups of 2 hour shifts between 2-7pm Colombia time
+2 possible sunsets
+1 possible sunrise
+5 continents
+8 timezones
+11 cities
+according time zones, possible sunsomething \& list request
+feel free to trade times if needed
+
+1st Group 2 hours 2PM Colombia Time
+1.UTC/GMT+2: Cym, Presenting in Croatia
+2.UTC/GMT+3: Mari Keski-Korsu. Tunnila Village, Finland possible @ SunDown 10PM?
+3.UTC/GMT+2: Manuel Schmalstieg. Neuchâtel, Switzerland
+
+
+2nd Group start @ 3:30PM Colombia Time
+4.UTC/GMT+2: Frauke Frech, Kiel, Germany
+5.UTC/GMT+2: Chloé Cramer. Brussels,Belgium
+6.UTC/GMT+2: Boris Kish, Brussels,Belgium
+7.UTC+9:30: Vinny Bhagat, Adelaide, South Australia Sunrising 6:13am
+
+Last Group start @ 5:00PM Colombia Time
+8.UTC/GMT-6: Alexat0r,Wisconsin or Colorado, USA
+9.UTC/GMT-7: Christiaan Cruz. Yorba Linda, California
+10.UTC/GMT-5: Paula Vélez. Streaming and Projecting in Medellín, Colombia
+
+Continuous Group full 5 hours
+11.UTC/GMT+5:30: Dhanya Pilo. Mumbai, India (15 min intervals)
+12.UTC/GMT-4: Judy Nylon. New York. USA (30 min Intervals) Sunseting 7:14pm
+
+http://www.worldtimeserver.com/convert\_time\_in\_CO.aspx?y=2009\&mo=5\&d=23\&h=14\&mn=0
+http://www.srrb.noaa.gov/highlights/sunrise/sunrise.html
+
+---
+}
+}
+\subject[mail:37]{37 - correct spelling, names etc?}{
+\it{Mari Keski-Korsu mkk\high{\ref[p][mail:62].62, \ref[p][mail:66].66} --- 20.05.2009}
+
+\tf{
+Hello,
+
+Sorry for not being able to skype lately. Could someone write a short, 
+simple summary about the actions done simultaneously? I won't be able to 
+see or hear you due to the slow internets and this would help. There was 
+something about luck in group changes and then there was something about 
+sunset? I'll be able to stream a little bit about the sunset, it is 
+setting behind the trees around the time of the my stream. I can of 
+course try to climb on the roof of the house (a bit scared about that). 
+What is the idea with the sunset? Is it about just showing a sunset what 
+ever way we feel like or is there some sort of concept like everyone is 
+trying to show it from same angles or something?
+
+mkk
+---
+}
+}
+\subject[mail:38]{38 - skype summary main poimts}{
+\it{christiaan cruz fe2cruz\high{\ref[p][mail:36].36, \ref[p][mail:42].42, \ref[p][mail:43].43, \ref[p][mail:60].60, \ref[p][mail:74].74} --- 20.05.2009}
+
+\tf{
+Mari \& all the Aethers,
+
+To make it easier I think rather than luck they mean: Chance
+
+Props of luck gambling or chance ect:
+Dice
+drawing lots - sticks
+throwing bones
+games of chance
+play
+gaming imagery
+Aethers Aleatoric
+
+synchronization will also happen by chance
+hopefully we can work with you via skype
+otherwise we can also text your phone messages SMS
+we can instruct you to add colors or adjust your stream
+simple instructions like its too busy or a cooler or warmer color
+likewise if skype is too much for your connection you may SMS me too
+213-806-6962
+free via http://www.gizmosms.com/
+
+we'll have 1 person in each group function like a moderator
+and try to keep all of the cells even and balanced
+
+sunset/sunrise is just another way to accent our locations
+if the trees are in your way don't climb your roof
+its not important as not many of us won't have a sunrise or sunset
+just have a local paper, a clock or snow
+anything live from your location that the rest of us won't have
+
+It seems like a proper rehearsal may be difficult to organize.
+too many timezones. However since this is a festival about
+imporvisation and our main theme could be
+ Moving Images of Chance
+then rehearsals may actually be the wrong thing to do.
+
+I suggest all streamers just gather as many objects that they can.
+Objects that might support or even oppose the idea of Chance.
+Lots of Colors, pictures, books. Be prepared to write or Draw.
+Have prisms, Kaliedescopes or lenses to put over your camera.
+Try puppets in lights or just as shadows.
+Use mirrors to open up your space.
+Be aware of the other features available in the patch: cam-links \& effects
+have your camera near a nice window to grab imagery outside
+or even stream outside in a nice location as long as the light isn't an issue
+
+Everyone has at least 2 hours. So we should all bring lots of things
+to play with in front of the camera and be ready to change those things
+if your moderator feels your cell needs to be adjusted. Anywone with
+luck enough to have connections for proper viewing and listening of
+all the streams should try to communicate to everyone how all 9 cells
+are working and if any adjustments need to be made.
+
+---
+}
+}
+\subject[mail:39]{39 - personnal summary}{
+\it{chloé cramer chloecramer\high{\ref[p][mail:44].44, \ref[p][mail:53].53} --- 20.05.2009}
+
+\tf{
+*Those are my notes about the content of saturday's jam *:
+playing cards
+about luck : being lucky (can lead to any personal interpretation)
+clocks (time zone, time on location)
+
+following the music : improvising on the music.
+
+abstract lines ...
+
+
+*Judy wrote :*
+**
+Nature Weightless Wet Anxious Travel
+Hot Languid Food Soft Money Couples/Pairs
+Dance Industrial Ancient Magic Cool Depth
+Focal Shift
+NECESSITY TO PREPARE DIFFERENT KIND OF PROPS, ACCORDING TO THE SUBJECT.
+I would like to add that the mutual watching of other frames should not be
+forgotten, so that we really play together (if there is no master of
+ceremony). Maybe some frames could also be passive or still, or showing a
+slow minimalistic action, in order to llow other frames to catch the viewers
+attention. Let's consider each other as an orchestra and trully imagine what
+it sounds like when all musicians are playing solo in the same time...
+by the way, is there a leader of the performance or not ?!
+See you soon
+chloé
+---
+}
+}
+\subject[mail:40]{40 - resume, chat and ideas for JAM}{
+\it{Paula Vélez Bravo ciruela\high{\ref[p][mail:19].19, \ref[p][mail:24].24, \ref[p][mail:25].25, \ref[p][mail:26].26, \ref[p][mail:46].46, \ref[p][mail:52].52, \ref[p][mail:59].59} --- 22.05.2009}
+
+\tf{
+LIST OF PARTICIPANTS. JAM 23-05-09 (A list of confirmed participants  
+and a schedule, division in time/slots)
+
+Final Roll Call, Info, Credits -> Ready To Go!
+12 confirmed aethernaut streams
+2 event locations/presenters
+3 groups of 2 hour shifts between 2-7pm Colombia time
+5 continents
+8 timezones
+11 cities
+
+1st Group 2 hours 2PM Colombia Time
+1.UTC/GMT+2: Cym, Presenting in Croatia
+  http://networkcultures.org/wpmu/videovortex/video-vortex-split/
+2.UTC/GMT+3: Mari Keski-Korsu. Tunnila Village, Finland
+3.UTC/GMT+2: Manuel Schmalstieg. Neuchâtel, Switzerland
+
+
+2nd Group start @ 3:30PM Colombia Time
+4.UTC/GMT+2: Frauke Frech, Kiel, Germany
+5.UTC/GMT+2: Chloé Cramer. Brussels,Belgium
+6.UTC/GMT+2: Boris Kish, Brussels,Belgium
+7.UTC+9:30: Vinny Bhagat, Adelaide, South Australia Sunrising 6:13am
+
+Last Group start @ 5:00PM Colombia Time
+8.UTC/GMT-6: Axelat0r, Wisconsin, USA
+9.UTC/GMT-7: Christiaan Cruz. Yorba Linda, California
+10.UTC/GMT-5: Paula Vélez. Streaming and Projecting in Medellín,  
+Colombia
+   http://translate.google.com/translate?u=http\%3A\%2F\%2Fwww.elmamm.org\%2Fsitio\%2Fprogramacion\%2Ftranssesiones.html\&sl=es\&tl=en\&hl=en\&ie=UTF-8
+
+Continuous Group full 5 hours
+11.UTC/GMT+5:30: Dhanya Pilo. Mumbai, India (15 min intervals)
+12.UTC/GMT-4: Judy Nylon. New York. USA (30 min Intervals) Sunseting  
+7:14pm
+
+http://www.worldtimeserver.com/convert\_time\_in\_CO.aspx?y=2009\&mo=5\&d=23\&h=14\&mn=0
+http://www.srrb.noaa.gov/highlights/sunrise/sunrise.html
+
+
+AETHER9 5 horas de JAM (improvisación y música)
+Trans-Sesiones https://transesiones.wordpress.com
+Sábado 23 de mayo 2009. Desde las 2:00 pm hasta las 7:00 pm
+MAMM. Museo de Arte Moderno de Medellín, Colombia
+
+12 transmisiones de AETHERnautas confirmados
+2 eventos dos locaciones/presentadores
+3 grupos de 2 horas cada uno entre las 2-7 pm Horario Colombia
+5 continentes
+8 zonas horarias
+11 ciudades
+
+aqui la hora del jam en su zona horaria:
+http://www.worldtimeserver.com/convert\_time\_in\_CO.aspx?y=2009\&mo=5\&d=23\&h=14\&mn=0
+http://www.srrb.noaa.gov/highlights/sunrise/sunrise.html
+
+SET UP AND EQUIPEMENTS IN MEDELLIN for streaming and projection.
+
+1. Two screens (one for skype chat and patch the other for MAIN AETHER  
+WINDOW)
+2. Two projectors.
+3. Sound transmission   (i would like to know MANU, if that sound  
+patch i'm using could have a doble transmission to another channel  
+where quality could be maximum as Chris proposed?)
+
+http://giss.tv:8000/aether.mp3
+
+4. Video channels transmission:
+http://1904.cc/
+http://www.livestream.com/transsesiones
+http://www.ustream.tv/channel/transsesiones
+
+RECORDING.
+Who will record the hole performance?
+We should maybe asign different people for different moments.. it will  
+be long!
+
+Who will record sound?
+who will record video?
+
+I will try to do it here, but ... cool if someonelse do it.
+one at cd quality and the other really low
+
+
+IDEAS for JAM we talked in last chats
+
+At 2:00 pm (COL time) we will try to start at time with this jam
+
+CYM gives the signal, in a moment of *highter intensity* will start.  
+Just need to be sure everyone is clear and knows they must write  
+"greetings to split" when Cym gives that command around 20minutes into  
+our performance
+
+and then 'greetings to split', in different languages.
+(Like, projection in Croatia. Videovortex Festival. Cym, hello from  
+Vorva Linda, California, Here  is the sun in Australia, C'est le  
+printemps à Brusels,...
+
+
+1.Playing cards, dice, coins, casino...
+about luck : being lucky --> astrology, karma
+clocks.  could be a nice "leitmotiv", a clock , like an old alarm. to  
+use it in BREAKS.
+
+We say the comand: CLOCKS and everyone put clocks in their frames.
+
+2. Drawings, abstract lines, B\&W
+
+3. Ambience, landscapes, and using remote webcams.
+
+4. Simulating people making, "Foley sound" . Crunching, steps, claps,  
+hammers, using in the image objects that makes think about sound!
+
+5. Simulating playing instruments, following music.
+
+6.Adapting to less frames.
+
+7.Words to play with:
+
+Luck Nature    Weightless   Wet   Anxious   Travel
+Hot   Languid   Food   Soft   Money   Couples/Pairs
+Dance   Industrial   Ancient   Magic   Cool   Depth
+Focal Shift
+
+8. spaceships, tesla, transmision, theremyn... representation of  
+magnetic fields..
+
+9. Toys, objects, playhouse
+
+10. try to play simon says.
+
+11. use red, green, bleu patch colors, and contrast B\&W images... some  
+times of course colored and what ever you want of course....
+
+
+THINK about a moment of a little perfomance for 30 minutes, to make  
+muscicians do the soundtrack live.... (aether9 making images and  
+muscicians following)
+
+
+
+the interface with 9 frames
+dissolve interface
+  sometimes some of the frames black
+abstract lines
+
+the teams themselves can decide how to lay things out
+hell they can move around in just one cell if they want too
+
+
+
+IDEAS IN THE AIR of  posible STRUCTUREs FOR THE JAM
+For the JAM I have being talking to musicians to see if they have an  
+structure to follow. Because i think it is very nice to have knoledge  
+of that to prepare something for aether9.
+
+1. One of the musicians will base his part of the JAM direction  
+working with SILENCE in music.
+2. Another one will work with a synth and use, from the computer,  
+algoritms like dinamic systems . That will not be repetitive sound  
+secuences. Some could take a long time, others not.
+random typical aether atmospheres
+
+1. Writing in skype session , needs of noises, voices, music, strings,  
+punctual "bruitage".
+2. Using colors as we have being doing, in frames we want to have  
+particulary "musicalised".Like in SIMON SAYS toy.
+http://www.youtube.com/watch?v=2jmVU2eykuI
+
+
+ambience
+
+sound effects
+
+foley sound
+---
+
+}
+}
+\subject[mail:41]{41 - ok for 22nd}{
+\it{Frauke Frech fraukefrech\high{\ref[p][mail:54].54} --- 17.07.2009}
+
+\tf{
+alright then, without any rehearsal
+-was just wondering...
+anyways i like authentic situations better!
+
+when is starting time on 22nd?
+
+frauke
+---
+}
+}
+\subject[mail:42]{42 - 22nd call 9pm Manila time}{
+\it{christiaan cruz fe2cruz\high{\ref[p][mail:36].36, \ref[p][mail:38].38, \ref[p][mail:43].43, \ref[p][mail:60].60, \ref[p][mail:74].74} --- 17.07.2009}
+
+\tf{
+For the officical Aether Manila Sextet
+Performer's Call time is 9pm Manila
+with official show start-time 10pm Manila
+get your time here:
+http://www.worldtimeserver.com/convert\_time\_in\_PH.aspx?y=2009\&mo=7\&d=22\&h=21\&mn=0
+
+
+Confirmed performers are:
+Manuel presentation + performance
+Paula presentation + performance
+Mari performance
+chloe performance
+christiaan presentation + performance moderator/screencap
+frauke performance
+Vinny performance
+Tengal - organizer ASEUM Philippines
+?Kim skype presentation
+boris maybe performance
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Presentation meeting is locked in for Sunday Evening Europe
+19th of July, Aether skype meeting
+11-1pm  Califirnia
+1-3pm   Colombia
+7-9PM   Highlander Time UK
+8-10pm  Brussells
+2-4am   Manila/Taipei/HK
+other times:
+http://www.worldtimeserver.com/convert\_time\_in\_US-CA.aspx?y=2009\&mo=7\&d=19\&h=11\&mn=0
+---
+}
+}
+\subject[mail:43]{43 - ASEUM epilogue}{
+\it{christiaan cruz fe2cruz\high{\ref[p][mail:36].36, \ref[p][mail:38].38, \ref[p][mail:42].42, \ref[p][mail:60].60, \ref[p][mail:74].74} --- 27.07.2009}
+
+\tf{
+Don't fret Chloé,
+
+Manuel experienced the brunt of the term "Filipino Time"
+Its an island mentality where things always seem to start
+go or arrive later than proposed or expected. I had figured
+this would happen so I did not want to burden everyone with
+rehearsals and other meetings.
+
+I've been on chat with Tengal since the festival and
+everything seems to have worked out for the best. It
+really was the biggest international symposium in that
+lower region of Asia every assembled and Aether was
+a big part of it. All the weird technical communications
+issues and lack of proper funding aside it really was
+a Success for the region. I have been involved in
+earlier symposiums where they were not much more
+than a website and mailing list. This one had real
+events and exchanges.
+
+They had lots of fun listening to Manuel do his presentation.
+Even though we had communications issues and we started
+slow the large audience still did enjoy listening to Manuel
+count backwards. All those Filipino artists and students
+hardly ever hear European accents. Its always Hollywood/TV
+american english.
+
+So maybe we could all go to the Philippines in the flesh
+next year with any new Grant money? I go there regularly
+so I wouldn't need a ticket. I'm sure that free housing
+would be available then too.
+
+Also sincere apologies to Vinny who was streaming to
+dead frames 7-9. We will be sure to Specify that those
+cells are not working when we use the SEXTET. maybe we
+could create a warning or flag in the Patch.
+
+Thanks to everyone that participated via streaming and or
+just piping in on the list.
+
+now on to -> Berlin \& then cimatics?
+
+-christiaan
+---
+
+
+}
+}
+\subject[mail:44]{44 - berlin PREPARATION}{
+\it{chloé cramer chloecramer\high{\ref[p][mail:39].39, \ref[p][mail:53].53} --- 03.09.2009}
+
+\tf{- HOW?
+Determine the way we are going to discuss:
+> are we going to have a moderator? (A person who takes care that anyone has
+the opportunity to express and also refrains us to spend more time than
+necessary on each subject)
+> are we going to work in small groups or alltogether?
+> How much time do we give for general matters and separate topics / how
+much time for the performance developpment itself.
+> regarding the performance, knowing how long it takes to develop a
+performance, it might be good to define it before the actual meeting and
+start working on it before, in order to spend more "practical rehearsing
+time" than brain-storming/developpment time.
+> should we make a schedule with morning, afternoon and night sessions ?
+
+- PREPARATION OF BERLIN
+In order to have clear and efficient discussion, we propose to reflect
+before the Meeting. Here are a couple of propositions FOR EVERY PERSON WHO
+WILL ATTEND THE BERLIN MEETING (physically or remotly):
+> reflect on the above subjects.
+> if you have a performance idea, summarize it (setting, story, aesthetic,
+or any other feature)
+> prepare a small selection of screenshots (maximum 5) of your favorite
+aether9 moments (that you find inspiring, beautiful, interesting or
+whatever) and explain why in a few words (to be presented and discussed at
+the begginging of the Meeting)
+
+!!! THE IDEA IS NOT TO HAVE BIG MAILING-LIST CONVERSATION NOW !!! We have
+the chance to have a physical meeting to communicate more directly. The idea
+is to prepare this meeting according to the subjects we would like to
+discuss, and anyone who has strong wish to discuss any aspect of the aether9
+should express it before, so that we are ready to interact.
+
+OK ?
+See you soon,
+Chloé (\& Boris)
+---
+}
+}
+\subject[mail:45]{45 - berlin flat/munich}{
+\it{ideacritik idea\high{\ref[p][mail:47].47, \ref[p][mail:49].49, \ref[p][mail:50].50, \ref[p][mail:51].51, \ref[p][mail:58].58, \ref[p][mail:61].61, \ref[p][mail:64].64, \ref[p][mail:68].68, \ref[p][mail:71].71, \ref[p][mail:73].73, \ref[p][mail:75].75} --- 16.09.2009}
+
+\tf{
+regarding the flat - i also trust your judgement manu.
+
+in addition, i spoke to cym yesterday (IRL!!) and she might be coming as
+well so i think a bigger flat is best -
+
+i also think it would be nice to have us all in the same space - though
+that will be extremely intense and ironically diametrically opposite to
+our usual relationship : )
+
+audrey
+---
+}
+}
+\subject[mail:46]{46 - way to berlin}{
+\it{Paula Vélez Bravo ciruela\high{\ref[p][mail:19].19, \ref[p][mail:24].24, \ref[p][mail:25].25, \ref[p][mail:26].26, \ref[p][mail:40].40, \ref[p][mail:52].52, \ref[p][mail:59].59} --- 24.10.2009}
+
+\tf{
+Tomorrow I will take my plane,
+
+long trip: MEdellín-Bogotá-Madrid\_Paris\_Berlin.
+
+see you then monday.
+
+bye
+
+Paula
+---
+}
+}
+\subject[mail:47]{47 - reports of the 1st 1/2 day in residency :}{
+\it{ideacritik idea\high{\ref[p][mail:45].45, \ref[p][mail:49].49, \ref[p][mail:50].50, \ref[p][mail:51].51, \ref[p][mail:58].58, \ref[p][mail:61].61, \ref[p][mail:64].64, \ref[p][mail:68].68, \ref[p][mail:71].71, \ref[p][mail:73].73, \ref[p][mail:75].75} --- 26.10.2009}
+
+\tf{
+dear aethernautes,
+
+daily reports will be sent to the list with contents of the day's
+discussion. after initial group discussion we will split off into smaller
+groups to focus on specific issues detailed below (tentative list). for
+those remote participants, if you feel there is a topic that interests you
+particularly and want to give feedback on - please tell us - we try to
+include remote participation : ) we can do this over IRC for example.
+
+currently present are:
+boris, judy, manu, frauke, audrey
+
+laure and paula will be joining us this evening.
+
+we have arrived at \_\_\_\_\_-micro research today. we have enjoyed a superb
+vedgetable vindaloo cooked by kati! re-energising us for the hours to come
+: )
+
+the main subjects of discussion we foresee are:
+-website design (manu will give a presentation on the wordpress website at
+14:00 tomorrow)
+-technical development (specifics to be determined)
+-PR (publication - contents, distribution, flipbook, prints)
+-performance (narrative, formal stuff, content, nomadic idea,
+storyboarding/script, sets/scenography) > directions? i.e. workshops,
+festivals, vjing [proposals: "urban screen", pact, rote fabrik, okno,
+mousonturm]
+-financial - grants, sponsorships, agent/producer
+-saturday's performance (who/what) - dr. mabuse still restaged
+
+question: who would be interested in following the discussion over IRC
+(irc.freenode.net \#aether9)? what timeframe and what discussion do you
+think is of interest to you?
+
+proposed schedule of the week:
+
+tonight: preparation of slideshow for tomorow's presentation, initial
+discussion about saturday's performance
+
+tuesday:
+offline till 14:00 - painting and prepararing gallery space.
+14:00 : manu's presentation about website
+19:00 : presentation
+
+wednesday + thursday (schedule not yet determined)
+[chloe and cym arrive in berlin]
+
+friday :
+11:00\textasciitilde{}14:00 : interviews with diana mccarthy
+rest of the day prepare for saturday's performance
+
+saturday >>> PERFORMANCE
+
+sunday :
+offline debriefing with diana mccarthy
+
+that's all folks!
+
+updates coming daily : )
+
+frauke/audrey
+
+---}
+}
+\subject[mail:48]{48 - Fwd: Video-Performance, Rupert Goldsworthy Gallery}{
+\it{1.1 1.1\high{\ref[p][mail:56].56, \ref[p][mail:57].57, \ref[p][mail:69].69, \ref[p][mail:70].70} --- 26.10.2009}
+
+\tf{
+FYI, here is another short compiled version of our press-text, can be useful to send around:
+
+*****
+
+
+rupert goldsworthy gallery is premiering an aethereal performance, a wildly dispersed yet intimate collision of live sounds and images.
+
+Developed by an online networked group of international visual artists/collectives working through Oceania, Asia, the Middle East, Europe, and into the Americas, aether9 is a matrix for video/audio performance, the foundations being  distributed authorship, cross-platform, and 'remote' performance of streaming audio and visual material to a nomadic web interface. 
+
+>From October 26th to 31st, an intensive real-life residency of members of the aether9 group is held at at \_\_\_\_\_-micro research [berlin], where the artists meet in physical space for the first time.
+
+
+further information:
+http://1904.cc/aether/
+---
+}
+}
+\subject[mail:49]{49 - [Fwd: daily reports - aetheric activity 29.10.2009]}{
+\it{ideacritik idea\high{\ref[p][mail:45].45, \ref[p][mail:47].47, \ref[p][mail:50].50, \ref[p][mail:51].51, \ref[p][mail:58].58, \ref[p][mail:61].61, \ref[p][mail:64].64, \ref[p][mail:68].68, \ref[p][mail:71].71, \ref[p][mail:73].73, \ref[p][mail:75].75} --- 29.10.2009}
+
+\tf{
+28.10.2009 - daily report aetheric activity
+
+Morning discussions:
+
+-IRC vs skype discussion (what are the pros and cons)
+-division into work groups:
+        *the radio show group
+        *the saturday performance group
+        *PR/publication group
+
+Radio show group:
+aether9 was broadcasting on Herpstradio.de in the Berliner Runde radio
+show at 19:00 CET @ HKW.
+http://1904.cc/aether/2009/news/live-on-backyardradio-berlin/
+Link in Herpstradio:
+http://herbstradio.org/plan/sendung/8614.html\#Magazin-Berliner\_Runde-Aether9
+
+PR group:
+the PR group discussed crucial ‘producibles’ that will be invaluable to
+potential up and coming young and wealthy collectors. Such as, the deluxe
+collector’s kit (both digital and tangible) amongst numerous other
+novelties.
+
+Publication:
+an aether9 publication is soon to come, including documentation of
+performances, interviews conducted this week in berlin and an essay by
+Diana McCarthy. discussions are still going around edition and printing
+issues.
+
+Performance group:
+Saturday, aether agents will be directed by doctor Nylon and her assistant
+from the Rupert Goldworthy Gallery in an attempt to materialise the
+Californian. This script is an interpretation of Doctor Mabuse by Fritz
+Lang. Further script development to follow.
+
+
+audrey/aether9 group
+
+
+---
+}
+}
+\subject[mail:50]{50 - performance group get your ass on IRC}{
+\it{ideacritik idea\high{\ref[p][mail:45].45, \ref[p][mail:47].47, \ref[p][mail:49].49, \ref[p][mail:51].51, \ref[p][mail:58].58, \ref[p][mail:61].61, \ref[p][mail:64].64, \ref[p][mail:68].68, \ref[p][mail:71].71, \ref[p][mail:73].73, \ref[p][mail:75].75} --- 29.10.2009}
+
+\tf{
+log in to IRC \_\_\_\_ !!!!!!!!!
+
+---
+}
+}
+\subject[mail:51]{51 - mid-way almost the end report}{
+\it{ideacritik idea\high{\ref[p][mail:45].45, \ref[p][mail:47].47, \ref[p][mail:49].49, \ref[p][mail:50].50, \ref[p][mail:58].58, \ref[p][mail:61].61, \ref[p][mail:64].64, \ref[p][mail:68].68, \ref[p][mail:71].71, \ref[p][mail:73].73, \ref[p][mail:75].75} --- 30.10.2009}
+
+\tf{
+yesterday (thursday 29th):
+
+main groups were performance, future directions and PD patch.
+
+** we have bought aether9.com \& .org domains **
+
+Performance:
+the performance will reflect of what has 'impressed' the aether9 meeting
+in berlin. for the first time in aether9 history the performance will be
+partially streamed from a taxi speeding through berlin.
+
+notes: we will insert more documentary in the fiction.
+
+Future directions >>
+festivals - residencies - workshops - tours - agent
+
+Festivals:
+*FLOSS Orientated festivals
+Interested parties: audrey, Manuel.
+*Generic media art festivals:
+Presenting aether9 as an installation.
+Interested parties: Manuel.
+*Art fairs/biennale
+Interested parties: Boris
+
+Residencies:
+Could be dedicated to development of specific aspects:
+-       Software development (with some programmer giving technical support)
+-       PureData patching
+-       Mobile platform support (Symbian, mobile linux...)
+
+workshops: [2 people minimum]
+[*move to PD necessary + formal language and notation should be formulated]
+*educational context (in art academies and universities)
+-> the WORKSHOP PDF IS NOW READY TO BE CIRCULATED
+*performative context (in festivals)
+Interested parties: Manu, audrey, Judy, cym
+
+speaking engagements:
+Interested parties: Judy
+
+tours:
+A group of 3-4 aethernauts could be touring with a performance. Activity
+in a Festival or a Workshop could be followed by a couple of other dates.
+
+AGENT/Representation:
+Should contact possible representants.
+Interested parties: Judy.
+
+Clothing of the performers / Visual identity / in-kind sponsorship
+We will propose to fashion designers to sponsorize the aether9 group with
+clothes, luggage.
+Interested parties: cym, Judy
+
+->PD patch:
+working with dynabolic boot CD as way around 'shell' object problem. one
+still uploaded to server! (micro success)
+
+from the madly working aether9 team in berlin... also we are on IRC : )
+
+---
+}
+}
+\subject[mail:52]{52 - I add names to the mailing message}{
+\it{Paula Vélez Bravo ciruela\high{\ref[p][mail:19].19, \ref[p][mail:24].24, \ref[p][mail:25].25, \ref[p][mail:26].26, \ref[p][mail:40].40, \ref[p][mail:46].46, \ref[p][mail:59].59} --- 30.10.2009}
+
+\tf{
+OFFICIAL STATEMENT
+FOR IMMEDIATE RELEASE
+AETHER AGENTS in Berlin
+comming from Geneva, Rotterdam, New York, Brussels, Medellin,
+or streaming remotely from Sydney, Yorba Linda
+
+Scheduled for October 31st - 21:00 CET
+
+Aether9, an experiment in collaborative realtime storytelling
+is gathering souls in a dramatically online fashion.
+BERLIN hosts a physical reunion,
+a seance,
+workshop,
+conspiracy, residency, and eventually a performance.
+wtf
+
+ALL SOULS BERLIN >>>
+
+Tommorow night, Saturday, Halloween,
+as a culmination of a week long residencey @ \_\_\_\_\_-micro research
+aether9 will present a live online performance before an audience in  
+the rupert goldsworthy gallery in Berlin.
+
+The wireless building of a mass mind, controlling aether9  
+agents ...amongst Berliners unaware.
+Aether9 presents an interpretation of Fritz Lang's Doktor Mabuse
+streaming from a taxi speeding through Berlin.
+
+Join us online at 21:00 CET --> http://1904.cc
+
+///
+
+about aether9
+Aether9 is a collaborative art project exploring the field of realtime  
+video transmission. It was initiated in May 2007 during a workshop at  
+the Mapping Festival in Geneva, Switzerland. Developed by an  
+international group of visual artists and collectives working in  
+different locations (Europe, North and South America) and  
+communicating solely through the Internet, ther9 is a framework for  
+networked video/audio performance, and the collaborative development  
+of dramarturgical rules particular to Internet modes of communication.  
+The system functions as an open platform for participants of any  
+technical level to transmit imagery in real-time and interact through  
+a structured narrative performance questioning the issues of presence/ 
+absence, remote/local, identity and intimacy in the context of the  
+electronic space.
+
+http://1904.cc/aether/
+
+///
+
+residence @ \_\_\_\_\_-micro research [berlin] http://www.1010.co.uk/
+
+/// PERFORMERS
+
+Judy Nylon/Audrey Samson/Paula Vélez/Chloé Cramer/Frauke Frech/Boris  
+Kish/Laure Deselys/Cym/Manuel Schmalstieg/Christian Cruz/Vinny Bhagat
+---
+}
+}
+\subject[mail:53]{53 - flat joke and other thoughts from c3cil}{
+\it{chloé cramer chloecramer\high{\ref[p][mail:39].39, \ref[p][mail:44].44} --- 02.11.2009}
+
+\tf{myself. if you agree with this pattern (or would like to think about it with
+me), it could be used for future developpment or for workshops. By the way,
+I would be interested to lead workshops to guide performance developpment
+part, without taking part myself. Would be interesting!
+(In addition, I am now starting a project were 100 people are creating a
+part of a parade, me and another guy being the artisitic coordinator who
+will eventually "stage direct" and write what comes out from all these
+imputs...) :
+
+\_ NEEDS FOR A PERFORMANCE:
+* one person doing only continuity chat and looking at the interface
+* one person doing music only
+* one voice person doing the narratives
+* each image-uploader should deal 2 frames maximum, not more, in order to be
+really aware and creative, and especially in order to be FASTER.
+
+\_PREPARATION: how to write an efficient script step by step:
+* brainstorm around a thema connected with smth actual, happening now.
+think of images, not ideas. think of interaction of frames.
+>> there are very efficient techniques of brainstorm. I learned some
+recently and think we should try them on. you can have a first collection of
+homogenoeous idea in not more than 3 hours.
+* more accurate brainstorm with maximum 4 people, ending with 4 propositions
+for a performance-
+*1-2 persons, after discussion, write final proposition
+* 1 person write the text (the story to be told, it can be a poem, whatever,
+but must be entertaining for the lenght of the performance)
+* others organise a general disposition of interface, coherent with the
+story and esthetic/ image choices.
+* rehearsal: absolutely necessary to do at least one with *everybody*.
+
+thank you all and see you soon aetherians,
+Chloé, analisa, c3cil and the others
+---
+}
+}
+\subject[mail:54]{54 - meeting}{
+\it{Frauke Frech fraukefrech\high{\ref[p][mail:41].41} --- 18.11.2009}
+
+\tf{
+>  i would be in on the 21st. (next saturday)
+>
+> ///
+>   
+
+this saturday i'm available around noon/1pm.
+
+in case loads of us can't be there we could also meet in smaller groups, no?
+i really need to clear some things within our continuation and also just 
+getting in touch with you again.
+
+after this intense week it suddenly feels so withdrawn again...
+
+hope an rdv works out soon
+
+excited  frauke
+---
+
+
+
+
+
+
+
+}
+}
+\subject[mail:55]{55 - meeting contents}{
+\it{Vinny Bhagat contact\high{\ref[p][mail:72].72} --- 04.12.2009}
+
+\tf{
+hi Aethers ..
+
+Sunday is ideal time for a meeting / checks / rehearsal .. [ please ,  
+even if some of you are available ]
+
+Monday performance in Adelaide , we are on at 8.30pm Adelaide time  
+and play till 9.30 pm  , ie
+
+Adelaide (Australia - South Australia) Monday, December 7, 2009 at  
+8:30:00 PM
+Brussels : Monday, December 7, 2009 at 11:00:00 AM
+
+please calculate your local times .. checks will start earlier ..
+
+So far the tests i have done , with the wi fi available in the venue  
+[ 1-3 Mb - bandwidth ] and mobile broadband/ USB modem  ( varies but  
+often less than equal to 1Mb bandwidth ) ... " Slow is the word .. "
+
+I will be using 3 computers in Adelaide with individual internet  
+connections ..
+
+1) Projecting Aethers interface :  i would suggest , please remove  
+the audio stream .. Atleast for the interface that we use to stream  
+in venue . At the moment , whats streaming on 1904.cc , takes long  
+time to playback images properly .. there is a long buffering time ..
+For me in Sydney , its totally fine , because i am on 15Mb+ bandwidth ..
+For online audience we can make an interface that consists of all the  
+content < which needs faster internet ..
+
+2) To playback my AUDIO[ Syd]  in Adelaide  : What are your  
+suggestions , i can use Ustream , Live stream or icecast/ Giss Tv  
+setup using pd  ..
+What you suggest ?
+
+3) Stream AV from the performance space in Adelaide
+
+I will write you more soon , please reply, your thoughts n  
+suggestions . Sometime today i will send invites  .. people in  
+adelaide are excited and it has been advertised properly over there ..
+
+i have been spending way too much time at work , so apologies for not  
+writing much , i read all your emails , and maintain the circuit of  
+thoughts , inside me ..
+
+Talk to you all soon , beautiful friends ..
+'
+*bliss *
+\textasciitilde{}vinny
+---
+}
+}
+\subject[mail:56]{56 - Adelaide performance}{
+\it{1.1 1.1\high{\ref[p][mail:48].48, \ref[p][mail:57].57, \ref[p][mail:69].69, \ref[p][mail:70].70} --- 07.12.2009}
+
+\tf{
+Hi all,
+for the Adelaide performance in a couple of hours, some important points:
+
+* the frameset has been modified -- i removed the two "weak servers", nr
+4 and 5, that we struggled with during the berlin performance. at the
+moment i write this, those frames should show black, with an occasional
+red or blue monochrome appearing.
+
+If you recently accessed 1904.cc, you might use this direct link to make
+sure your browser doesn't show you an old version:
+http://1904.cc/live/frameset\_09\_adelaide/
+
+* this means of course that i updated the server-list, included with the
+Max patch -- the new list is included with the newest patch, nr 400.
+
+You find it here:
+http://1904.cc/\textasciitilde{}aether/kode/max\_image\_upload/
+
+The password of the z7/rar archive is the "old" aether password, the one
+that's easier to remember.
+
+Meet you in 10 hours:)
+
+
+Best,
+Manuel
+---
+}
+}
+\subject[mail:57]{57 - report: Adelaide performance + future}{
+\it{1.1 1.1\high{\ref[p][mail:48].48, \ref[p][mail:56].56, \ref[p][mail:69].69, \ref[p][mail:70].70} --- 08.12.2009}
+
+\tf{
+Hi all,
+
+Some short report about the Adelaide performance, to which the Aether9
+team contributed:
+
+The project was coordinated by Vinny Bhagat (aka Shivnakaun), who was
+streaming live electro-acoustics from his studio in Sydney (transmitting
+through giss.tv from a PureData patch).
+
+The stream was (supposedly, I didn't hear it) accompanied live
+on-location in Adelaide (at The Wheatsheaf Hotel, 39 George St
+Thebarton) by Kym Gluyas on saxophone. The aether9 interface was
+projected and visible to the live audience.
+
+The Aethernauts who generated the visuals:
+Christiaan Cruz, Dhanya Pilo, ideacritik, Manuel Schmalstieg, Maria Fava
+
+This was the first participation in the aether9 project for Maria Fava
+(aka eskoitaus), located in Nice (N3krozoft members will remember her
+from the CeC festival last February, where she was VJing).
+
+The visuals were fully improvised. The performers decided to restrict
+themselves to a black/white color palette for better graphic coherence.
+Also, due to the little number of Aethernauts, only 4-5 frames of the
+interface were used.
+
+We didn't encounter any technical / upload speed issues this time.
+Except ideacritik who was still unable to upload to frame 5, although
+the server feeding this frame has been changed. Very mysterious.
+
+Links to the COMA website (Creative Original Music Adelaide)
+
+http://www.coma.net.au/news.php
+http://www.coma.net.au/coma-gigs-past.php
+http://www.coma.net.au/band\_page.php?Band\_ID=49
+
+Link to the performance page I created:
+http://1904.cc/aether/2009/news/adelaide-performance/
+
+Best regards,
+Manuel
+
+---
+
+}
+}
+\subject[mail:58]{58 - ghost trio - write up....Final (I think)}{
+\it{ideacritik idea\high{\ref[p][mail:45].45, \ref[p][mail:47].47, \ref[p][mail:49].49, \ref[p][mail:50].50, \ref[p][mail:51].51, \ref[p][mail:61].61, \ref[p][mail:64].64, \ref[p][mail:68].68, \ref[p][mail:71].71, \ref[p][mail:73].73, \ref[p][mail:75].75} --- 12.02.2010}
+
+\tf{
+im going with this one from judy (below).
+it emcompasses what you said in french laure and it sounds good.
+thanx judy!
+alright - ill keep us all updated on the when/how of this upcoming Ghost
+Study in amsterdam.
+laure - will you participate?? boris? cym?
+audrey
+
+>
+> ³Ghost Story²  aether9
+>
+> Adapted by aether9 from Samuel Beckett's 1976 Teleplay for the BBC, "Ghost
+> Trio".
+>
+> Both Beckett and aether9 separate sound from image with a voice-over that
+> may or may not be located in any of the action frames. Sustained shots of
+> figures flowing through rooms and across frames, alternate with the
+> tension
+> of extreme detail alliterated intimately. In the aether production color
+> overlays chart the emotional temperature as well. Beckett recognized
+> televisuality by addressing the audience directly in the voice over.
+> Aether9, updates having framed the action in a nexus of simultaneous
+> streaming, further abandoning the notion of temporality and location ( for
+> both audience and performers) in that which is of the mind's domain. This
+> time the Beethoven piece gets dubbed with ambient rain and lightning to
+> further establish a possibility of web delivered emotional tonality.
+>
+> Let me know it anyone has any corrections....judy
+>
+>
+}
+}
+\subject[mail:59]{59 - ghost trio - found this.}{
+\it{Paula Vélez Bravo ciruela\high{\ref[p][mail:19].19, \ref[p][mail:24].24, \ref[p][mail:25].25, \ref[p][mail:26].26, \ref[p][mail:40].40, \ref[p][mail:46].46, \ref[p][mail:52].52} --- 15.02.2010}
+
+\tf{
+We're revealing our adaptation of  "Ghost Trio," by Beckett on  
+Saturday December 15th. Written in 1975, taped in '76 and televised on  
+BBC2 in 1977. It is a parallel universe played out in the same slice  
+of time as the first wave of British punk. Beckett, I wish we'd met.
+
+My fellow aethernauts and I would be delighted if you would join us  
+live on-line at our first chance to bring this play from TV to a wider  
+audience. It doesn't matter what you're wearing and you won't have to  
+worry about how you're getting home.
+
+Members of Aether9 will be performing from Medellin, Yorba Linda,  
+NYC , Brussels, Geneva, and Paris. The audience, those in the same  
+room, will be joined at 'Videomedja 2007' at the Museum of Vojvodina,  
+Novi Sad, Serbia, by two Aether9 artists from Austria and Slovinia who  
+will host the Q \& A which follows the performance.
+
+There are no complicated programs or hardware involved. It is easier  
+than getting out of the house. I hope you will look through our site  
+at  www.1904.cc where the collaborative process involved is quite  
+transparent, our project laid out, and participants credited. Here we  
+will make the links "to set up your computer" so easy that you will  
+practically fall through them.
+
+You will need to go through one link to find out what the time will be  
+where you are, when it is Saturday at 11:15 PM in Serbia. The second  
+link opens the audience viewing window and a third link leads to  
+instructions to stream sound.
+
+We all wait inside our distractions to see what is outside time,  
+beyond words, without location, and never in complete control …….....  
+Judy Nylon
+}
+}
+\subject[mail:60]{60 - Pixelache sound loop files needed}{
+\it{christiaan cruz fe2cruz\high{\ref[p][mail:36].36, \ref[p][mail:38].38, \ref[p][mail:42].42, \ref[p][mail:43].43, \ref[p][mail:74].74} --- 18.02.2010}
+
+\tf{
+create/record sound files yourself or find them from other websites
+(with credits)
+
+FTP your files here
+http://cave12.org/\textasciitilde{}aether/archive/2010.03.26.Helsinki
+
+just follow these guidelines:
+
+Installation Sound Loop Guidelines
+This is an 8+ hour Public installation so please select your audio files with
+these things in mind:
+
+1. Voice reading a text in narratively engaging tone. Can be an essay
+about aether theories, or narrative. should be possible to
+understand/follow.
+2. Very short audio-loop of only a few seconds, that is interesting to
+listen to when looping for 1-2 minutes (maybe with slight shift in
+volume and speed). should not be too disruptive / rhythmic - it should
+be usable as a background for a reading voice.
+3. Avoid annoying sounds or standard crowd noise that would just blend
+into a large room of talking people.
+4. The content relates to the visual material we're streaming
+(landscapes of us see below)
+5. Ambient synthesizer or radio wave sounds in upper frequencies.
+
+
+Examples:
+space sounds - http://www-pw.physics.uiowa.edu/space-audio/sounds/
+aurora sounds - http://www.auroralchorus.com/
+space radio - http://www.svengrahn.pp.se/sounds/sounds.htm
+
+
+”LANDSCAPES OF US” (working title)
+
+This idea is inspired somehow by Vimeo group called ”The Pictures
+Don't Move” http://www.vimeo.com/groups/thepicturesdontmove and of
+course Judy's idea about the leaves. Idea would be to create
+landscapes or sceneries by using different streams: even though each
+stream is different and from different location, together they create
+a whole scenery (this is something Aether has done with drawing, I
+guess, but now it would be live footage). It's pretty simple, here's a
+sketch that explains a bit: http://www.artsufartsu.net/IMG\_2438.JPG
+
+But what would be the sceneries, then? Should there be one or more?
+Could there be themes like, e.g, earth, wind, water and fire? Urban,
+forest, countryside? What is nature anyways? It should just be your
+localized nature. Like Judy's idea of shooting out your window. Just
+pick some image in your area that you can safely stream the whole
+8 hours. Or the aethernaut could have different setups say 8 different
+1 hour landscapes. I like this change idea.
+
+As of now the 9 aether frames will be like an exqusite corpes landscape image
+the top three sky streams
+the middle 3 frames horizon
+and the lower 3 earth ground streams
+A localized scene from your area is preferred
+
+
+So far we have confirmed
+Mari Keski-Korsu (possibly streaming in on location)
+
+Christiaan Cruz
+Manuel Schmalstieg
+Judy Nylon
+Paula Vélez Bravo
+Cym
+
+It'd be nice to 4 or more Aethernauts streaming live landscape
+so ask Friends and family about availability on Friday March 26th Helsinki time
+Just introduce them via the list and one of us can setup a skype chat date to
+help them get used to using the patch if needed.
+
+}
+}
+\subject[mail:61]{61 - residency agence TOPO current situation}{
+\it{ideacritik idea\high{\ref[p][mail:45].45, \ref[p][mail:47].47, \ref[p][mail:49].49, \ref[p][mail:50].50, \ref[p][mail:51].51, \ref[p][mail:58].58, \ref[p][mail:64].64, \ref[p][mail:68].68, \ref[p][mail:71].71, \ref[p][mail:73].73, \ref[p][mail:75].75} --- 19.02.2010}
+
+\tf{
+hi all,
+
+i've been in contact with Eva Quintas president of agence TOPO where i
+sent a proposal for an aether9 residency about a month ago. the current
+proposal is the following: (it is still to be confirmed whether they
+accept or not)
+
+5 week residency ending with a performance at the 'geo-web installation'
+festival at the Cinematheque.
+
+theme: "lost in montreal"
+this theme adresses the mobility of the actor (to be developped in
+residency) and the aspect of discovery ('getting lost') linked to
+cinematographic explorations of the avant-garde (esthetic). (wink wink
+manu : )
+
+schedule:
+
+week 1-3: (audrey @ TOPO - other agents remotely present)
+-PD patch development
+-developemnt of mobile interface (method to control upload, contrast,
+etc., actions with a WII contoller)
+week 4-5: (audrey and chris @ TOPO - other agents remotely present)
+-explorations and experimentation with mobile interface
+-script
+-performance
+
+dates (approximate) : mid-may to mid-june 2010
+place: montreal
+
+this is perhaps a bad translation and certainly an abrieviated version
+which does not convey the extremely fun aspect of this new prospect of
+running around town with a magic wand uploading images to the interface.
+in any case as soon as/if we have confirmation we'll get down to details.
+
+audrey
+
+
+}
+}
+\subject[mail:62]{62 - Set up and concept test of PixelAche 25.3. at 11 am (CET)}{
+\it{Mari Keski-Korsu mkk\high{\ref[p][mail:37].37, \ref[p][mail:66].66} --- 23.03.2010}
+
+\tf{
+Hi,
+
+Finally got info about set up in Kerava Art Museum. They start already 
+in the morning at 8 am (CET), but there won't be electricity for two 
+hours, so I think 10 - 11 am (CET) would be a good time for us to start 
+testing our work. This is Thursday 25.3.
+
+John Hopkins is interested in joining our installation. He would like to 
+stream Arizona sunrise at 14:30-15:00, (30min) CET
+Manu, from where should he download the needed files and also the server 
+listing?
+
+mkk
+
+
+}
+}
+\subject[mail:63]{63 - patch 401}{
+\it{Dhanya Pilo studio\high{} --- 24.03.2010}
+
+\tf{
+Hi
+I missed some of the chats, but wanted to know how we have access to  
+these other web cameras?
+i see it on the patch, but it is some sort of piracy or web channels?
+wow!
+
+cheers,
+Dhanya
+
+
+
+}
+}
+\subject[mail:64]{64 - rehearsal}{
+\it{ideacritik idea\high{\ref[p][mail:45].45, \ref[p][mail:47].47, \ref[p][mail:49].49, \ref[p][mail:50].50, \ref[p][mail:51].51, \ref[p][mail:58].58, \ref[p][mail:61].61, \ref[p][mail:68].68, \ref[p][mail:71].71, \ref[p][mail:73].73, \ref[p][mail:75].75} --- 24.03.2010}
+
+\tf{
+i will be online by 12\textasciitilde{}12:30 CET tomorrow for rehearsal, i'll be there n
+available for the afternoon.
+see some of you tomorrow!
+
+audrey
+
+ps ill be streaming with cym from utrecht(NL), where the botanical gardens
+of utrecht university used to be. the scenery will include dutch greenery,
+a stream, probably grey-ish sky and a mansion in the background.
+
+pps this is the webcam of the national dutch weather station (KNMI) which
+is almost in the backyard from where we will be streaming:
+http://www.knmi.nl/webcam/images/ispy.jpg?20427 (havent tested adress in
+patch yet but should work :)
+
+
+
+}
+}
+\subject[mail:65]{65 - (no subject)}{
+\it{bk bk\high{\ref[p][mail:0].0, \ref[p][mail:1].1, \ref[p][mail:2].2, \ref[p][mail:3].3, \ref[p][mail:9].9, \ref[p][mail:10].10, \ref[p][mail:29].29, \ref[p][mail:34].34} --- 26.03.2010}
+
+\tf{
+Hi list,
+
+i have been totally absent the recent times, but trying to follow the 
+list. i will remain mostly silent until end of april.
+right now 1904.cc looks and sound heavenly tropical. maybe you are 
+rehearsing. it's truly beautifull.
+
+MERDE for today's performance (as we say in french) !
+
+Boris
+
+
+
+}
+}
+\subject[mail:66]{66 - Helsinki says thank you!}{
+\it{Mari Keski-Korsu mkk\high{\ref[p][mail:37].37, \ref[p][mail:62].62} --- 27.03.2010}
+
+\tf{
+Hi,
+
+Manu, Paula, Audrey, Vinny, Cym, Judy, Chris, Dhanya and John.
+Once more, THANK YOU very much for your hard work and amazing creation 
+in Pixelache Camp yesterday. It was such a nice experience. I also want 
+to apologise once more that I had difficulties on concentrating in 
+between the virtual discussion of us and talking about the work with 
+people in physical space. Both sides lack in this situation, that's for 
+sure. But I hope you won't hate me, still :)
+
+I uploaded some pics to my Flickr account, I will ad them to the Aether9 
+group after Paula accepts me as a member of it.
+http://www.flickr.com/photos/artsufartsu/sets/72157623587582799/
+
+Bows,
+mkk
+
+
+}
+}
+\subject[mail:67]{67 - Helsinki says thank you!}{
+\it{Cym Net cymnet\high{} --- 27.03.2010}
+
+\tf{
+Hello Mari
+
+Thank you for uploading the photos. The festival looks very nice!
+After seeing the photos I really think that it is a pity that I couldn't
+come...
+But it was a very nice experience to stream with Audrey from the garden. It
+was so strange to walk around there in this very quiet garden next to a busy
+street, making pictures from grass, water and clouds, while trying not to
+loose the connection. Somehow it seemed very bizarre to me, especially to do
+this live. But it is really nice to get feedback and to see some photos of
+the installation with the audience. The setting, the projection inside the
+white cube, is really nice!
+
+}
+}
+\subject[mail:68]{68 - Helsinki says thank you!}{
+\it{ideacritik idea\high{\ref[p][mail:45].45, \ref[p][mail:47].47, \ref[p][mail:49].49, \ref[p][mail:50].50, \ref[p][mail:51].51, \ref[p][mail:58].58, \ref[p][mail:61].61, \ref[p][mail:64].64, \ref[p][mail:71].71, \ref[p][mail:73].73, \ref[p][mail:75].75} --- 27.03.2010}
+
+\tf{
+On Sat, March 27, 2010 10:28 am, Mari Keski-Korsu wrote:
+> Hi,
+>
+
+hi
+
+> Manu, Paula, Audrey, Vinny, Cym, Judy, Chris, Dhanya and John.
+> Once more, THANK YOU very much for your hard work and amazing creation
+> in Pixelache Camp yesterday. It was such a nice experience. I also want
+> to apologise once more that I had difficulties on concentrating in
+> between the virtual discussion of us and talking about the work with
+> people in physical space. Both sides lack in this situation, that's for
+> sure. But I hope you won't hate me, still :)
+>
+
+all very understandable - its impossible to be totally present in both
+physical/virtual : )
+
+> I uploaded some pics to my Flickr account, I will ad them to the Aether9
+> group after Paula accepts me as a member of it.
+> http://www.flickr.com/photos/artsufartsu/sets/72157623587582799/
+>
+
+i especially like:
+http://www.flickr.com/photos/artsufartsu/4466814176/
+(our new aether9 'do' ? :)
+
+apart from the usual chaos of our performances i appreciated yesterday for
+a few reasons. first of all it was nice to be perfoming for so long (some
+hours) while people where casually walking in and out of the space (i
+imagine) because this meant mkk was giving us 'live' feedback on what is
+getting through to people. comments like - 'yes text helps' - or - 'add a
+shot of your faces in the loop' - etc.
+
+cym and i were indeed reflecting on what could possibly indicate to
+viewers that this is live - it is otherwise just pleasant scenery. ideas
+like adding the occasional mugshot, or the computer in 'the wild' are the
+start of a list we should elaborate upon.
+
+manu i loved your train and 'wandering' streaming! i also thought that
+much of the sound that was streaming yesterday was such a huge improvement
+on our tired sound bank. at one point the music coupled with the image was
+so fitting - i had a moment - one of those randomly programmed ones...
+
+next perfo coming april 21st in amsterdam - more on that soon.
+
+
+}
+}
+\subject[mail:69]{69 - Helsinki says thank you!}{
+\it{1.1 1.1\high{\ref[p][mail:48].48, \ref[p][mail:56].56, \ref[p][mail:57].57, \ref[p][mail:70].70} --- 28.03.2010}
+
+\tf{
+Hi all,
+
+big thanks to Mari for running the show at Camp Pixelache!
+
+It was a very interesting perfo for me as i was testing a new streaming 
+setup:
+- little AsusEEE netbook (running the patch in WinXP)
+- cheapo USB webcam (Aiptek VGA+)
+- mobile USB web access
+
+The first session was a near total failure, as it was raining heavily, 
+and I realized that it's impossible to operate laptop+cam while holding 
+an umbrella! In addition to that, the botanical garden where I was 
+trying to stream from turned out to be in a no-network zone between two 
+hills.
+
+During the afternoon sessions, rain stopped, and I got used to the 
+process of quickly connecting the USB modem, entering PIN, launching Max 
+patch, adjusting cam settings, all in a couple of minutes. And as Cym 
+says, it's a very weird and fascinating feeling, sending the live images 
+from a quiet natural outside location.
+
+The connection was surpraisingly stable, even in a rolling train there 
+were no disconnections. It looks like switzerland has a dense coverage, 
+appart from mountainous zones. This opens lots of opportunities for 
+outside streaming, and I think the direction of "mobile documentary 
+event coverage" is something to explore, where the "realtime" element 
+can make real sense.
+
+Also, specially in the later hours of the performance, I think we worked 
+out a good sense of composition withing our 9 frames (in terms of 
+geometry, colors)... hopefully the sign that there *is* some ongoing 
+progress in our familiarity with the tool / framework :)
+
+
+}
+}
+\subject[mail:70]{70 - Helsinki}{
+\it{1.1 1.1\high{\ref[p][mail:48].48, \ref[p][mail:56].56, \ref[p][mail:57].57, \ref[p][mail:69].69} --- 28.03.2010}
+
+\tf{
+more videos:
+http://1904.cc/aether/2010/community-news/trains-forest/
+
+i just pasted together a few clips that i had the good idea to record 
+while streaming ...
+
+do not forget: the patch *has the ability to record* with the little 
+"rec" button under the preview window ... it creates small quicktime 
+files that don't take much space on the harddrive, so you can record a 
+lot ...
+
+best,
+m.
+
+}
+}
+\subject[mail:71]{71 - rain rain rain}{
+\it{ideacritik idea\high{\ref[p][mail:45].45, \ref[p][mail:47].47, \ref[p][mail:49].49, \ref[p][mail:50].50, \ref[p][mail:51].51, \ref[p][mail:58].58, \ref[p][mail:61].61, \ref[p][mail:64].64, \ref[p][mail:68].68, \ref[p][mail:73].73, \ref[p][mail:75].75} --- 12.04.2010}
+
+\tf{
+famous/classic/cult film - rainy scene - rain hitting the window - black n
+white movie - death - memory ----
+
+anyone have any ideas?
+
+we need rain.
+
+audrey
+
+--
+
+}
+}
+\subject[mail:72]{72 - 21st april}{
+\it{Vinny Bhagat contact\high{\ref[p][mail:55].55} --- 15.04.2010}
+
+\tf{
+Hi Aethers
+I can be there if needed ..
+But I need to understand the script , my role and go through /  
+rehearse before the performance..
+It will be 5 am/22.4 in Sydney [ 21hour CET/21.4] , and i can be  
+there till 7.45 am = 23.45 CET ..
+i am reading (now) the notes on the pad..
+
+v
+}
+}
+\subject[mail:73]{73 - perfo - amsterdam - feedback an dso on}{
+\it{ideacritik idea\high{\ref[p][mail:45].45, \ref[p][mail:47].47, \ref[p][mail:49].49, \ref[p][mail:50].50, \ref[p][mail:51].51, \ref[p][mail:58].58, \ref[p][mail:61].61, \ref[p][mail:64].64, \ref[p][mail:68].68, \ref[p][mail:71].71, \ref[p][mail:75].75} --- 22.04.2010}
+
+\tf{
+good afternoon,
+
+yesterday immediately after the performance maaike (actress), cym and i
+had to take everything down in less than 10min. this meant we had to
+immediately shut down computers, beamers, etc.
+
+some feedback from organisors:
+-beautiful, 'it really worked for me' this kindof slow trance like medium.
+(in short we are invited to develop something for museumnacht in november
+- more on that in another email)
+-maaike was a really great actress (i agree)
+
+other feedback:
+-it was really clear that it fell apart (timing, etc).
+-interesting how you work with a form (telematic performance) that was
+explored in pre-days of internet and then some how dropped out.
+
+for my part i would like to thank you all for participating in this
+unpaid, unexpectedly very demanding, and extremely chaotic performance (+
+rehearsals). it was not easy - thanks for hanging in there!!! the
+performance was certainly not a great success (timing was pretty off) but
+considering the chaos and the single rehearsal we did quite all right.
+amsterdam was pretty solid thanks to the script with timing. this
+countered the lack of timing in the interface.
+
+i think we are at some sort of a x-road. there have been many tensions
+mounting, namely: diverging ideas about the future of aether9, possible
+directions, where to invest energy, time, etc.
+
+i think it is time to organise a chat meeting in which these things can be
+discussed. i myself have many issues and frustrations with this group at
+the moment which need to be adressed (especially in light of the upcoming
+residency). i think the mailing-list is not the place to do this. the fact
+that misscommunication cannot be immediately addressed in a chat channel
+can lead to huge unnecessary tensions. i suggest a meeting over the
+weekend. late enough that columbia/california dont have to again wake up
+before 7am!
+
+so suggestions?
+saturday or sunday evening? (lets say 21:00CET?)
+
+lets please keep this discussion off list. after all it is 'public'.
+
+audrey}
+}
+\subject[mail:74]{74 - included in puredyne?}{
+\it{christiaan cruz fe2cruz\high{\ref[p][mail:36].36, \ref[p][mail:38].38, \ref[p][mail:42].42, \ref[p][mail:43].43, \ref[p][mail:60].60} --- 10.05.2010}
+
+\tf{
+I'll check it out again for sure. I had a lot of trouble with
+purdyne on my laptop but that was years ago. It worked well,
+but never got the resolution of my laptop's LCD right. It'll
+be interesting to see what has happened since then, but
+after we finish the Montreal project.
+
+As an update to that:
+I got a wiimote working to control PD on a Kubuntu laptop.
+Audrey's got a functioning PDpatch running on her linux box.
+We both have working webcams on pd within linux distros.
+And everyone must put availablities into the PiratePad
+and start contributing:
+    http://piratepad.net/HURO52Sh5K
+-c
+
+On 5/7/10, alejo <alejoduque at gmail.com> wrote:
+>
+> On May 8, 2010, at 1:17 AM, ideacritik wrote:
+>
+>> i can say that this will happen post 26th mai. the schedule for what
+>> is to
+>> be done here is very tight. certainly though its something i want to
+>> look
+>> into while im in montreal and can talk to the makers IRL..
+>
+> good, thats all i was suggesting, to have a look at it.. not just you
+> but everyone.
+> im convinced theres a lot more of potential there in terms of
+> development.
+>
+> also, i never talked with aquessy about it, as said we talked about
+> toonloop (another application that could be integrated in aethers
+> workflow.. yes yes not now)
+>
+> and about liveDVD's or customized puredynes:
+> http://planktum.wikidot.com/
+>
+> cheers,
+> /a
+>
+
+}
+}
+\subject[mail:75]{75 - very small report from montreal}{
+\it{ideacritik idea\high{\ref[p][mail:45].45, \ref[p][mail:47].47, \ref[p][mail:49].49, \ref[p][mail:50].50, \ref[p][mail:51].51, \ref[p][mail:58].58, \ref[p][mail:61].61, \ref[p][mail:64].64, \ref[p][mail:68].68, \ref[p][mail:71].71, \ref[p][mail:73].73} --- 18.05.2010}
+
+\tf{
+hi all,
+
+chris and i are working our asses off (despite the beautiful beer drinking
+terasse sitting weather taking over the city). the alpha alpha patch is
+pretty much done - wii remote action up next. im half-way through the
+script/scenario (will upload very soon). local actor jordan arseneault has
+contributed loads to the script/scenario and i think it has tremendous
+potential!
+
+**rectification: may 26th showtime: 19h30CET this is confirmed!**
+
+audrey
+
+ps to answer the linux/osx question - we are working on linux exclusively
+at the moment because we plan (in the future) to make a boot cd (that is
+os independant, that everyone can use regardless of what operating system
+they use). so those who want to try it out for now must have a linux
+system and some patience to install other libraries and etc - or a
+puredyne type boot cd (i havent tried this either). therefore it is
+foreseeable that everyone else but the montreal crew ends up using the max
+patch for the next gig :)
+
+...that all folks! :) ...
+
+
+
+
+}
+}
+\stoptext
