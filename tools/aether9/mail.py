@@ -1,5 +1,6 @@
 """
 mail.Reader
+mail.Writer
 """
 
 import os.path as opath
@@ -34,14 +35,14 @@ class Reader:
 		
 		if data_str:
 			data = re.split(self.start_pattern, data_str, flags=re.MULTILINE)
-			print('Got %d pieces off data_str with sp(%s)'%(len(data),self.start_pattern))
+			#print('Got %d pieces off data_str with sp(%s)'%(len(data),self.start_pattern))
 			for piece in data:
 				self.process_piece(piece)
 				
 	def process_piece(self, piece):
 		lines = piece.splitlines()
 		#print('Got %d lines off piece'%(len(lines),))
-		print('==============================================\n%s\n'%(piece,))
+		#print('==============================================\n%s\n'%(piece,))
 		if len(lines) < 4:
 			#raise Exception('Not enough pieces')
 			return
@@ -64,4 +65,37 @@ class Reader:
 				
 		text = '\n'.join(lines)
 		self.data['thread'].append({'title':title, 'author':author, 'date': date, 'text':text})
+		
+		
+		
+		
+class Writer:
+	tex_special_chars = {r'&': '\\&', r'%': '\\%', r'$': '\\$', r'#': '\\#', r'_': '\\_', r'{': '\\{', r'}': '\\}', r'~': '\\textasciitilde{}', r'^': '\\textasciicircum{}', '\\' : '\\textbackslash{}', '|':'\\textbar{}'}
+	def __init__(self, mdict):
+		self.mail = mdict
+		
+	def as_string(self):
+		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
+		esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.text)
+		ret = []
+		ret.append('\\placeintermezzo[here][mail:%d]{}{'%(self.id,))
+		ret.append('\\bf{%s}'%(self.title,))
+		ret.append('\\it{%s}'%(self.author,))
+		ret.append('\\tf{%s}'%(esc_text,))
+		ret.append('}')
+		return '\n'.join(ret)
+		
+	def escape_tex(self, pt):
+		r = pt.group()
+		#print('matched: %s'%r)
+		if r in self.tex_special_chars:
+			return self.tex_special_chars[r]
+		return r
+			
+		
+	def __getattr__(self, name):
+		try:
+			return self.mail[name]
+		except Exception:
+			raise AttributeError(name)
 		
