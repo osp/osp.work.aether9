@@ -15,7 +15,7 @@ class Factory:
 		aname = self.doc['author']
 		self.doc['ref'] = {'author':[]}
 		for m in self.base:
-			if m['type'] == 'mail':
+			if m['type'] == 'mail' and not m['id'] == self.doc['id']:
 				if m['author'] == aname:
 					self.doc['ref']['author'].append('mail:%d' % m['id'])
 	

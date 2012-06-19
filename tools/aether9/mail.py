@@ -88,7 +88,7 @@ class Writer:
 		aref = []
 		for r in self.ref['author']:
 			#aref.append('\\in{section}[%s](p.\\at{page}[%s])'%(r,r))
-			aref.append(r.split(':')[-1])
+			aref.append('%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
 		
 		ret = []
 		ret.append('\\subject[mail:%d]{%d - %s}{'%(self.id,self.id,self.title))
