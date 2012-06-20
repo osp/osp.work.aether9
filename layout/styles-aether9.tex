@@ -1,4 +1,4 @@
-
+    \setvariables[pageprops][columnwidth=63mm]
 % DEBUG {{{
     % uncomment those 2 lines to show the layout and the grid
     %\showframe 
@@ -34,7 +34,18 @@
         footer=6mm, 
         grid=yes, % activates baseline grid
         ]
-    \definecolumnset[duo][n=2, distance=12mm]
+    \definelayout[full][
+	backspace=0mm,
+	topspace=0mm,
+	header=0mm,
+	footer=0mm,
+	leftmargin=0mm,
+	rightmargin=0mm,
+        width=138mm,
+        height=225mm,
+        grid=yes
+	]
+    \definecolumnset[duo][n=2, distance=12mm, width=\getvariables[pageprops][columnwidth]]
 %     \definepagebreak[emptyodd][yes,header,footer, odd]
 %     \definepagebreak[emptyeven][yes,header,footer, even]
     \setuphead[chapter][page=emptyodd]
