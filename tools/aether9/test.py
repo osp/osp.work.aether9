@@ -68,9 +68,10 @@ def main():
 		ret.append('\\input %s'%args.style)
 	
 	ret.append('\\starttext')
+	ret.append('\\startcolumnset[duo]')
 	for w in writers:
 		ret.append(w.as_string())
-		
+	ret.append('\\stopcolumnset')	
 	ret.append('\\stoptext')
 	
 	print '\n'.join(ret)

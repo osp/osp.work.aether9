@@ -1,4 +1,3 @@
-\startenvironment env_aether9.tex
 
 % DEBUG {{{
     % uncomment those 2 lines to show the layout and the grid
@@ -28,13 +27,13 @@
         topspace=12mm,
         width=138mm,
         height=225mm,
-        columns=2,
         leftmargin=15mm,
         rightmargin=12mm,
         header=0mm, % removes header
         footer=6mm, 
         grid=yes, % activates baseline grid
         ]
+    \definecolumnset[duo][n=2]
     \definepagebreak[emptyodd][yes,header,footer, odd]
     \definepagebreak[emptyeven][yes,header,footer, even]
     \setuphead[chapter][page=emptyodd]
