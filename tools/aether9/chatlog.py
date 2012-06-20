@@ -63,6 +63,10 @@ class SkypeParser(HTMLParser):
 	def dd(self, da):
 		if self.state == 'time':
 			self.state = 'content'
+	
+	def h3(self, da):
+		if self.state == 'no_op':
+			self.state = 'change_start'
 			
 	#def handle_endtag(self, tag):
 		#pass
@@ -97,6 +101,10 @@ class SkypeParser(HTMLParser):
 	def created(self, data):
 		self.start_date = datetime.datetime.strptime(data, 'Created on %Y-%m-%d %H:%M:%S.')
 		self.state = 'no_op'
+	
+	def change_start(self, data):
+		self.start_date = datetime.datetime.strptime(data, '%Y-%m-%d')
+		self.state = 'no_op'
 		
 	def handle_data(self, data):
 		try:
@@ -105,23 +113,26 @@ class SkypeParser(HTMLParser):
 			pass
 		
 class Reader:
-	def __init__(self, filename, images = [], delta = 30):
-		sp = SkypeParser()
-		sp.start(filename)
-		t_delta = datetime.timedelta(0,delta,0)
+	def __init__(self, filename, images = [], delta_prep = 1, delta_perf = 10):
+		
 		self.chat = []
-		c_len = len(sp.chat)
-		c_idx = 0
-		in_flag = False
-		for im in images:
-			for c in xrange(c_idx, c_len):
-				itvl = self.abs_itvl(im['date'], sp.chat[c]['date'])
-				if itvl < t_delta:
-					in_flag = True
-					self.chat.append(sp.chat[c])
-				elif in_flag:
-					in_flag = False
-					break
+		if filename.endswith('html'):
+			sp = SkypeParser()
+			sp.start(filename)
+			t_delta = datetime.timedelta(delta_prep,0,0)
+			c_len = len(sp.chat)
+			c_idx = 0
+			in_flag = False
+			for im in images:
+				for c in xrange(c_idx, c_len):
+					itvl = self.abs_itvl(im['date'], sp.chat[c]['date'])
+					#sys.stderr.write(' %s \t %s\n'%(itvl,itvl < t_delta))
+					if itvl < t_delta:
+						in_flag = True
+						self.chat.append(sp.chat[c])
+					elif in_flag:
+						in_flag = False
+						break
 				c_idx = c 
 		
 	def abs_itvl(self, a, b):
