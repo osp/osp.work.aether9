@@ -21,26 +21,28 @@ class XChatParser:
 		f = open(fn)
 		data_str = f.read()
 		self.chat = []
-		self.base
 		data = data_str.splitlines()
 		
 		for d in data:
-			s0 = d.split('<')
+			s0 = d.split(' <')
 			if len(s0) == 1:
 				if d.startswith('**** BEGIN'):
 					self.decode_start(d)
 			else:
-				s1 = '%d %s'%(self.start_date.year,s[0])
+				if d.startswith('Type'):
+					continue
+				s1 = '%d %s'%(self.start_date.year,s0[0])
+				_d(s1)
 				dt = datetime.datetime.strptime(s1,'%Y %b %d %H:%M:%S')
-				s2 = s0.split('>')
+				s2 = s0[1].split('>')
 				author = s2[0]
 				t = s2[-1]
-				self.chat.append({'date':dt, 'author':author, 'text':t})
+				self.chat.append({'date':dt, 'author':author, 'text':t, 'type':'chatlog'})
 				
 		
 	def decode_start(self, l):
 		pat = '**** BEGIN LOGGING AT %a %b %d %H:%M:%S %Y'
-		self.start_date = datetime.datetime.strptime(data, pat)
+		self.start_date = datetime.datetime.strptime(l, pat)
 
 # create a subclass and override the handler methods
 class SkypeParser(HTMLParser):

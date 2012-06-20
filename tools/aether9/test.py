@@ -62,7 +62,7 @@ def main():
 		files = []
 		for fn2 in fnmatch.filter(f,'*.jpg'):
 			files.append(fn2)
-		for fn2 in fnmatch.filter(f,'*.pnf'):
+		for fn2 in fnmatch.filter(f,'*.png'):
 			files.append(fn2)
 		for fn2 in files:
 			sys.stderr.write('Processing %s , %s\n'%(r,fn2))
@@ -82,6 +82,7 @@ def main():
 	images.sort(key=lambda x:x['date'])
 			
 	for r,d,f in os.walk(args.rootdir):
+		files = []
 		for fn2 in fnmatch.filter(f,'*chat*.html'):
 			files.append(fn2)
 		for fn2 in fnmatch.filter(f,'*chat*.txt'):
