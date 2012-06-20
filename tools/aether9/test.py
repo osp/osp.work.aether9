@@ -13,6 +13,7 @@ import image
 def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument("rootdir", help="root directory for aether9 files")
+	parser.add_argument("--style", help="Specify a stylesheet")
 	
 	args = parser.parse_args()
 	c = 0
@@ -62,6 +63,10 @@ def main():
 		#writers.append(mail.Writer(reference.Factory(m, messages).doc))
 	
 	ret = []
+	
+	if args.style:
+		ret.append('\\input %s'%args.style)
+	
 	ret.append('\\starttext')
 	for w in writers:
 		ret.append(w.as_string())
