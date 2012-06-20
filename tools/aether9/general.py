@@ -1,3 +1,8 @@
+"""
+general.Reader
+general.Writer
+"""
+
 import mail
 import re
 
@@ -27,16 +32,12 @@ class Writer (mail.Writer):
 		
 		ret = []
 		
-		ret.append('\\startpiece')
+		ret.append('\\stylepiece')
 		ret.append('%d'%self.id)
-		ret.append('\\stoppiece')
-		ret.append('\\startgeneraltitle')
+		ret.append('\\stylemailtitle')
 		ret.append(self.title)
-		ret.append('\\stopgeneraltitle')
-		ret.append('\\startinfos')
+		ret.append('\\styleinfos')
 		ret.append('%s\n\n%s'%( self.author, self.date.strftime('%d.%m.%Y') ))
-		ret.append('\\stopinfos')
-		ret.append('\\startgeneral')
+		ret.append('\\stylemail')
 		ret.append(esc_text)
-		ret.append('\\stopgeneral')
 		return '\n'.join(ret)
