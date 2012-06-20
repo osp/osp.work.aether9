@@ -37,7 +37,11 @@ class Factory:
 		for r in self.networks_:
 			_d('##',r,'##')
 			for p in self.networks_[r]:
-				_d(p)
+				_d(p[0]['key'], len(p))
+		for r in self.roads_:
+			_d('##',r,'##')
+			for p in self.roads_[r]:
+				_d(p[0]['key'], len(p))
 		
 	def get_kw_lists(self, rd):
 		fl = glob.glob('%s/*'%rd)

@@ -32,7 +32,7 @@ class XChatParser:
 				if d.startswith('Type'):
 					continue
 				s1 = '%d %s'%(self.start_date.year,s0[0])
-				_d(s1)
+				
 				dt = datetime.datetime.strptime(s1,'%Y %b %d %H:%M:%S')
 				s2 = s0[1].split('>')
 				author = s2[0]
@@ -194,12 +194,19 @@ class Writer:
 		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
 		esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.text)
 		ret = []
-		ret.append('\\section[chat:%d]{%d}'%(self.id,self.id))
-		ret.append('\\it{%s /%s/} '%(self.author, self.date.strftime('%d.%m.%Y')))
-		ret.append('\\tf{%s}'%(esc_text,))
-		ret.append('\n')
+		#ret.append('\\section[chat:%d]{%d}'%(self.id,self.id))
+		#ret.append('\\it{%s /%s/} '%(self.author, self.date.strftime('%d.%m.%Y')))
+		#ret.append('\\tf{%s}'%(esc_text,))
+		#ret.append('\n')
 		
-		return '\n'.join(ret)
+		ret.append('\\stylechatpiece')
+		ret.append('%s'%self.id)
+		ret.append('\\stylechatinfo')
+		ret.append('%s %s'%(self.author, self.date.strftime('%H:%M')))
+		ret.append('\\stylechat')
+		ret.append(esc_text)
+		
+		return '\n\n'.join(ret)
 		
 	def escape_tex(self, pt):
 		r = pt.group()
