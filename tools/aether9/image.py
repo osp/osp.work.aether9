@@ -41,27 +41,46 @@ class Reader:
 		self.img = {}
 		self.img['filename'] = filename
 		#self.creationtime = self.get_creationtime (im)
-		self.img['date'] = self.get_creationtime_fromfilename (filename)
+		self.img['date'] = self.get_creationtime_from_filename (filename)
 		self.img['fullpage'] = self.is_fullpage ()
 		self.img['type'] = 'image'
 
-	def get_creationtime_fromfilename (self, filename):
+	def get_creationtime_from_filename (self, filename):
 		tail = opath.split (filename)[1]
 		date_patt = '(\d{4})(\d{2})(\d{2})_(\d{2})h(\d{2})m(\d{2})s'
 		alt_date_patt = '(\d{4})(\d{2})(\d{2})'
 		d = re.search (date_patt, tail)
 		if d <> None:
+			# Regular date time is in the filename
 			return datetime (int (d.group(1)), int (d.group(2)), int(d.group(3)), int(d.group (4)), int(d.group (5)), int(d.group(6)))
 		else:
 			d = re.search (alt_date_patt, tail)
 			if d <> None:
+				# We've found somewhat of a date in the filename. Try to parse it.
 				try:
 					return datetime (int (d.group(1)), int (d.group(2)), int(d.group(3)), 0, 0, 0)
 				except ValueError:
-					raise NoDate (filename)
+					# Fallback to the date in the directory
+					return self.get_creationtime_from_path (filename)
 			else:
-				raise NoDate(filename)
-
+				# Fallback to the date in the directory
+				return self.get_creationtime_from_path (filename)
+	
+	def get_creationtime_from_path(self, filename):
+		parts = filename.split ('/')
+		parts.reverse()
+		
+		for part in parts:
+			d = re.search ('(\d{4})-(\d{2})-(\d{2})', part)
+			if d <> None:
+				try:
+					return datetime (int (d.group(1)), int (d.group(2)), int(d.group(3)), 0, 0, 0)
+				except ValueError:
+					# Fallback to the date in the directory
+					continue
+		
+		raise NoDate (filename)
+	
 	def is_fullpage (self):
 		return re.search ('^.*FULL.[^LEFT|RIGHT]*$', opath.split (self.img['filename'])[1]) <> None
 
@@ -107,6 +126,7 @@ class Writer:
 			
 			if width <> False:
 				imgpts.append ('width=%s' % width)
+				imgpts.append ('factor=max')
 			try:
 				buff = '\n\\placefigure[%s]{%s}{{\\externalfigure[%s]}}' % (place, caption, ']['.join(imgpts))
 			except Exception as e:
@@ -152,6 +172,6 @@ if __name__ == '__main__':
 
 	for filename in glob (opath.join (root, 'PAR-PERFO/*/img/*.jpg')):
 		reader = Reader (filename)
-		if reader.creationtime <> None or reader.fullpage == True:
+		if reader.img['date'] <> None or reader.img['fullpage'] == True:
 			writer = Writer (reader)
 			print writer.as_string ()

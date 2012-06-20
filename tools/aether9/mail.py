@@ -95,10 +95,22 @@ class Writer:
 			pass
 		
 		ret = []
-		ret.append('\\section[mail:%d]{%d}{%s}{'%(self.id,self.id,self.title))
-		ret.append('\\startinfos %s --- %s\n\\stopinfos\n'%(self.author, self.date.strftime('%d.%m.%Y')))
-		ret.append('\\startmail %s\\stopmail\n'%(esc_text,))
-		ret.append('}')
+		#ret.append('\\section[mail:%d]{%d}{%s}{'%(self.id,self.id,self.title))
+		#ret.append('\\startinfos %s --- %s\n\\stopinfos\n'%(self.author, self.date.strftime('%d.%m.%Y')))
+		#ret.append('\\startmail %s\\stopmail\n'%(esc_text,))
+		#ret.append('}')
+		ret.append('\\startpiece')
+		ret.append('%d'%self.id)
+		ret.append('\\stoppiece')
+		ret.append('\\startmailtitle')
+		ret.append(self.title)
+		ret.append('\\stopmailtitle')
+		ret.append('\\startinfos')
+		ret.append('%s\n\n%s'%( self.author, self.date.strftime('%d.%m.%Y') ))
+		ret.append('\\stopinfos')
+		ret.append('\\startmail')
+		ret.append(esc_text)
+		ret.append('\\stopmail')
 		return '\n'.join(ret)
 		
 	def escape_tex(self, pt):

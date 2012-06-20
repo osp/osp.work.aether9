@@ -27,7 +27,7 @@
         backspace=21mm,
         topspace=12mm,
         width=138mm,
-        height=225mm,
+%         height=225mm,
         leftmargin=15mm,
         rightmargin=12mm,
         header=0mm, % removes header
@@ -90,8 +90,8 @@
     \definebodyfontenvironment[default][a=1.5, b=1.75, c=2,d=3.4] % defines higher sizes of fonts 
     \setupinterlinespace[11pt] 
     \setupinteraction[state=start, color=black] % activate links
-    \setupnote[footnote][location=text, way=bypage, numberconversion=set 2, align={hyphenated}]
-    \setupnotedefinition[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
+%     \setupnote[footnote][location=text, way=bypage, numberconversion=set 2, align={hyphenated}]
+%     \setupnotedefinition[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
 % }}}
 
 % COLORS {{{
@@ -102,12 +102,12 @@
 
 % JUSTIFICATION {{{
     \setuptolerance[verytolerant] % justification settings
-    \interlinepenalty=8000 % tries to avoid widows
-    \widowpenalty=8000 % tries to avoid widows
-    \clubpenalty=8000 % tries to avoid widows
+%     \interlinepenalty=8000 % tries to avoid widows
+%     \widowpenalty=8000 % tries to avoid widows
+%     \clubpenalty=8000 % tries to avoid widows
     \doublehyphendemerits=1000000 % tries to avoid consecutive hyphenations
     %\setupfonthandling [hz] [min=50,max=50,step=10]
-    %\setupalign[hz, hanging]
+    \setupalign[hz, hanging]
 % }}}
 
 % GRAPHIC ELEMENTS {{{
@@ -119,9 +119,9 @@
 % }}}
 
 % TABLE OF CONTENTS {{{
-    \setupcombinedlist[content][interaction=all, color=black] % makes it clickable
-    \setuplist[section][width=0mm] % sets indentation for section level
-    \setuplist[subsection][width=1em] % sets indentation for subsection level
+%     \setupcombinedlist[content][interaction=all, color=black] % makes it clickable
+%     \setuplist[section][width=0mm] % sets indentation for section level
+%     \setuplist[subsection][width=1em] % sets indentation for subsection level
 % }}}
 
 % SECTIONS AND HEADINGS {{{
@@ -143,8 +143,11 @@
 
 
 % PARAGRAPHS {{{
-    \setupwhitespace[none]           % no empty line after a paragraph
+%     \setupwhitespace[none]           % no empty line after a paragraph
 
+\def\stylepiece{%
+	\setupbodyfont[karlaregular, 27pt]
+}
     % PIECES NUMBERS
     \defineparagraphs[piece][n=1] 
     \setupparagraphs[piece][1][
@@ -174,8 +177,8 @@
         ] 
 
     % MAILS
-    \defineparagraphs[mail][n=1] 
-    \setupparagraphs[mail][1][
+    \defineparagraphs[mail][n=2] 
+    \setupparagraphs[mail][2][
         style={\setupbodyfont[crimsontexto, 9pt]},
         after=\nowhitespace,
         ] 
