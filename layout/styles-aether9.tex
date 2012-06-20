@@ -46,6 +46,7 @@
         grid=yes
 	]
     \definecolumnset[duo][n=2, distance=12mm, width=\getvariable{pageprops}{columnwidth}]
+    \definecolumnsetspan[wide][n=2]
 %     \definepagebreak[emptyodd][yes,header,footer, odd]
 %     \definepagebreak[emptyeven][yes,header,footer, even]
     \setuphead[chapter][page=emptyodd]
@@ -141,52 +142,24 @@
 
 % }}}
 
-
+-
 % PARAGRAPHS {{{
-%     \setupwhitespace[none]           % no empty line after a paragraph
 
-\def\stylepiece{%
-	\setupbodyfont[karlaregular, 27pt]
-}
-    % PIECES NUMBERS
-    \defineparagraphs[piece][n=1] 
-    \setupparagraphs[piece][1][
-        style={\setupbodyfont[karlaregular, 27pt]},
-        after=\nowhitespace,
-        ] 
 
-    % MAIL TITLES (objects)
-    \defineparagraphs[mailtitle][n=1] 
-    \setupparagraphs[mailtitle][1][
-        style={\cap \setupbodyfont[crimsontext, 9pt]},
-        after=\nowhitespace,
-        ] 
+\def\styleref{%
+	\setupbodyfont[crimsontext, 9pt]
+	\setupinterlinespace[10.5pt] 
+	\color[black]
+	\definetextbackground[inbox][
+            framecolor=black,
+            background=,
+	    ]}
 
-    % INFOS
-    \defineparagraphs[infos][n=1] 
-    \setupparagraphs[infos][1][
-        style={\setupbodyfont[karlaregular, 8pt]},
-        after=\nowhitespace,
-        ] 
-
-    % CHAT
-    \defineparagraphs[chat][n=1] 
-    \setupparagraphs[chat][1][
-        style={\setupbodyfont[karlaregular, 12pt]},
-        after=\nowhitespace,
-        ] 
-
-    % MAILS
-    \defineparagraphs[mail][n=2] 
-    \setupparagraphs[mail][2][
-        style={\setupbodyfont[crimsontexto, 9pt]},
-        after=\nowhitespace,
-        ] 
-
-    % QUOTES
-    \defineparagraphs[quotes][n=1] 
-    \setupparagraphs[quotes][1][
-        style={\setupbodyfont[crimsontexto, 21pt]},
-        after=\nowhitespace,
-        ] 
 % }}}
+
+\input chat
+\input infos
+\input mail
+\input piece
+\input mailtitle
+\input quotes
