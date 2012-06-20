@@ -32,7 +32,10 @@ class Factory:
 			except Exception:
 				_d('Booo\n')
 				
-		_d(self.roads_)
+		for r in self.roads_:
+			_d('##',r,'##')
+			for p in self.roads_[r]:
+				_d(p)
 		
 	def get_kw_lists(self, rd):
 		fl = glob.glob('%s/*'%rd)
@@ -75,8 +78,14 @@ class Factory:
 			sk = k.strip()
 			ret = re.search(sk, item['text'], flags=re.IGNORECASE)
 			if  ret:
-				cr.append({'id':item['id'], 'key': sk})
-			#else:
-				#_d(item['id'],sk,ret,len(item['text']))
+				cr.append({'id':item['id'], 'key': sk, 'type':item['type']})
+				
+	def roads_chatlog(self, item, kw, cr):
+		kwl = kw.split(',')
+		for k in kwl:
+			sk = k.strip()
+			ret = re.search(sk, item['text'], flags=re.IGNORECASE)
+			if  ret:
+				cr.append({'id':item['id'], 'key': sk, 'type':item['type']})
 		
 	
