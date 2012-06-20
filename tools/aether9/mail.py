@@ -83,10 +83,12 @@ class Writer:
 	tex_special_chars = {r'&': '\\&', r'%': '\\%', r'$': '\\$', r'#': '\\#', r'_': '\\_', r'{': '\\{', r'}': '\\}', r'~': '\\textasciitilde{}', r'^': '\\textasciicircum{}', '\\' : '\\textbackslash{}', '|':'\\textbar{}'}
 	def __init__(self, mdict):
 		self.mail = mdict
+		self.et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
 		
 	def as_string(self):
-		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
-		esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.text)
+		esc_text = self.text
+		if 'tex_escaped' not in self.mail:
+			esc_text = self.escape_tex(self.text)
 		aref = []
 		try:
 			for r in self.ref['author']:
@@ -110,13 +112,14 @@ class Writer:
 		ret.append(esc_text)
 		return '\n\n'.join(ret)
 		
-	def escape_tex(self, pt):
+	def escape_tex_cb(self, pt):
 		r = pt.group()
-		#print('matched: %s'%r)
 		if r in self.tex_special_chars:
 			return self.tex_special_chars[r]
 		return r
 			
+	def escape_tex(self, text):
+		return re.sub(self.et_pat, getattr(self, 'escape_tex_cb') , text)	
 		
 	def __getattr__(self, name):
 		try:

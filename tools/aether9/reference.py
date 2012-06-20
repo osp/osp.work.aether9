@@ -20,11 +20,14 @@ class FileDoesNotExist(Exception):
 
 
 class Factory:
+	tex_special_chars = {r'&': '\\&', r'%': '\\%', r'$': '\\$', r'#': '\\#', r'_': '\\_', r'{': '\\{', r'}': '\\}', r'~': '\\textasciitilde{}', r'^': '\\textasciicircum{}', '\\' : '\\textbackslash{}', '|':'\\textbar{}'}
+
 	roads_ = {}
 	networks_ = {}
 	unknown_ = {}
 	def __init__(self, root_dir, base):
 		_d('Factory',root_dir, len(base[0]))
+		self.et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
 		self.base = base
 		self.get_kw_lists(root_dir)
 		for k in self.keywords:
@@ -57,7 +60,9 @@ class Factory:
 		for name in self.roads_:
 			for road in self.roads_[name]:
 				rlen = len(road) 
+				_d('\nReference road:', name)
 				for r in xrange(0,rlen):
+					sys.stderr.write('%d '%r)
 					current = road[r]
 					back = road[r-1]
 					forward = None
@@ -68,7 +73,8 @@ class Factory:
 					#_d(current)
 					res = '\\styleroadback{%d}%s\\styleroadforward{%d}'%(back['id'],current['key'],forward['id'])
 					bid = self.lookup_idx(current['id'])
-					self.base[0][bid]['text'] = self.base[0][bid]['text'].replace(current['key'], res, 1)
+					self.base[0][bid]['text'] = self.escape_tex(self.base[0][bid]['text']).replace(current['key'], res, 1)
+					self.base[0][bid]['tex_escaped'] = True
 			
 	
 	def output_networks(self):
@@ -148,5 +154,11 @@ class Factory:
 	def roads_general(self, item, kw, cr):
 		roads_mail(item, kw, cr)
 		
-		
-		
+	def escape_tex_cb(self, pt):
+		r = pt.group()
+		if r in self.tex_special_chars:
+			return self.tex_special_chars[r]
+		return r
+			
+	def escape_tex(self, text):
+		return re.sub(self.et_pat, getattr(self, 'escape_tex_cb') , text)
