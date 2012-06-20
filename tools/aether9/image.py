@@ -47,6 +47,7 @@ class Reader:
 
 	def get_creationtime_fromfilename (self, filename):
 		tail = opath.split (filename)[1]
+		print tail
 		date_patt = '(\d{4})(\d{2})(\d{2})_(\d{2})h(\d{2})m(\d{2})s'
 		alt_date_patt = '(\d{4})(\d{2})(\d{2})'
 		d = re.search (date_patt, tail)
@@ -55,7 +56,10 @@ class Reader:
 		else:
 			d = re.search (alt_date_patt, tail)
 			if d <> None:
-				return datetime (int (d.group(1)), int (d.group(2)), int(d.group(3)), 0, 0, 0)
+				try:
+					return datetime (int (d.group(1)), int (d.group(2)), int(d.group(3)), 0, 0, 0)
+				except ValueError:
+					raise NoDate (filename)
 			else:
 				raise NoDate(filename)
 
@@ -86,7 +90,7 @@ class Writer:
 			parts = self.splitImage ()
 			buff += '\n\page[left]'
 			buff += '\n\placefigure[left,top]{{}}{{\externalfigure[{0}][width=16.5cm]}}'.format (parts[0])
-			buff += '\n\page[right]'
+			#buff += '\n\page[right]'
 			buff += '\n\placefigure[left,top]{{}}{{\externalfigure[{0}][width=16.5cm]}}'.format (parts[1])
 			buff += '\n\page[left]'
 		else:
