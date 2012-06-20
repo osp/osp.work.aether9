@@ -1,8 +1,8 @@
     \setvariables[pageprops][columnwidth=63mm]
 % DEBUG {{{
     % uncomment those 2 lines to show the layout and the grid
-    \showframe 
-    \showgrid
+%     \showframe 
+%     \showgrid
 % }}}}
 
 % UTF-8 {{{
@@ -30,9 +30,7 @@
 %         height=225mm,
         leftmargin=15mm,
         rightmargin=12mm,
-        header=0mm, % removes header
         footer=6mm, 
-        grid=yes, % activates baseline grid
         ]
     \definelayout[full][
 	backspace=0mm,
@@ -49,24 +47,13 @@
     \definecolumnsetspan[wide][n=2]
 %     \definepagebreak[emptyodd][yes,header,footer, odd]
 %     \definepagebreak[emptyeven][yes,header,footer, even]
-    \setuphead[chapter][page=emptyodd]
-    % Left margin
-    \setupinmargin[
-        %align={outer, nothyphenated, verytolerant, stretch},
-        location=left,
-        align=left,
-        stack=yes,
-        style={\setupbodyfont[crimsontext, 9pt] \setupalign[hyphenated]},
-        before={\blank\startalignment[inner]},
-        after={\stopalignment},
-        line=0.5,
-        ]
-    % Indented block
-    \setupnarrower[left=3mm, right=0mm, middle=8mm]
+%     \setuphead[chapter][page=emptyodd]
+
+
     % Folio
      \setuppagenumber[number=1]
     \setuppagenumbering[alternative=doublesided, location=footer, style={\setupbodyfont[karlaregular, 6pt]}] 
-    \setupfootertexts [section]
+%     \setupfootertexts [section]
     
 % }}}
 
@@ -164,3 +151,4 @@
 \input mailtitle
 \input quotes
 \input tech
+\input bio
