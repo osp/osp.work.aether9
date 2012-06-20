@@ -18,7 +18,7 @@ class Reader:
 	performance_sep_pattern = r'\n---\n'
 	line_sep_pattern = r'\n'
 	infos_sep_pattern = r':\s+'
-	included_fields = ['title', 'description', 'performers', 'duration', 'date', 'time']
+	included_fields = ['title', 'description', 'performers', 'duration', 'date', 'time', 'event', 'location']
 
 	def __init__(self, filename):
 		if not opath.exists(filename):
@@ -71,14 +71,14 @@ class Reader:
 class Writer:
 	tex_special_chars = {r'&': '\\&', r'%': '\\%', r'$': '\\$', r'#': '\\#', r'_': '\\_', r'{': '\\{', r'}': '\\}', r'~': '\\textasciitilde{}', r'^': '\\textasciicircum{}', '\\' : '\\textbackslash{}', '|':'\\textbar{}'}
 	et_pat = '[%s]'%(re.escape(''.join(tex_special_chars.keys())),)
-	def __init__(self, bdict):
-		self.bio = bdict
+	def __init__(self, pdict):
+		self.perfo = pdict
 		
 	def as_string(self):
 		aref = []
-		for r in self.ref['author']:
+		#for r in self.ref['author']:
 			#aref.append('\\in{section}[%s](p.\\at{page}[%s])'%(r,r))
-			aref.append('%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
+		#	aref.append('%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
 		
 		ret = []
 		ret.append('\\stylepiece')
@@ -86,7 +86,7 @@ class Writer:
 		ret.append('\\styleinfos')
 		ret.append('%s\n\n%s\n\n%s\n\n%s'%(self.title,self.event,self.location,self.performers))
 		ret.append('\\styleperfo')
-		ret.append(esc_text)
+		ret.append(self.description)
 		return '\n'.join(ret)
 		
 	def escape_tex(self, pt):
@@ -99,10 +99,14 @@ class Writer:
 		
 	def __getattr__(self, name):
 		try:
-			return re.sub(et_pat, getattr(self, 'escape_tex'), self.bio[name])
+			return re.sub(et_pat, getattr(self, 'escape_tex'), self.perfo[name])
 		except Exception:
-			raise AttributeError(name)
+			try:
+				return self.perfo[name]
+			except Exception:
+				raise AttributeError(name)
 		
 if __name__ == '__main__':
 	reader = Reader ('../../TEXT_FILES/perfo_descriptions.txt')
-	print reader.data['perfos']
+	print reader.data['perfos'][0]
+	print Writer (reader.data['perfos'][0]).as_string()

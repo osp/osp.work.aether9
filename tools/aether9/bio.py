@@ -50,6 +50,8 @@ class Reader:
 			if parts[0].lower() in self.included_fields:
 				bio[parts[0].lower()] = parts[1]
 				
+		bio['bio_text'] = bio['bio']
+		
 		self.data['bios'].append(bio)
 		
 class Writer:
@@ -60,17 +62,17 @@ class Writer:
 		
 	def as_string(self):
 		aref = []
-		for r in self.ref['author']:
+		#for r in self.ref['author']:
 			#aref.append('\\in{section}[%s](p.\\at{page}[%s])'%(r,r))
-			aref.append('%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
+		#	aref.append('%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
 		
 		ret = []
 		ret.append('\\stylepiece')
-		ret.append('%d'%self.id)
+		#ret.append('%d'%self.id)
 		ret.append('\\styleinfos')
-		ret.append('%s\n\n%s'%( self.name))
+		ret.append('%s\n\n%s'%(self.name, self.nick))
 		ret.append('\\stylebio')
-		ret.append(esc_text)
+		ret.append(self.bio_text)
 		return '\n'.join(ret)
 		
 	def escape_tex(self, pt):
@@ -85,8 +87,11 @@ class Writer:
 		try:
 			return re.sub(et_pat, getattr(self, 'escape_tex'), self.bio[name])
 		except Exception:
-			raise AttributeError(name)
+			try:
+				return self.bio[name]
+			except Exception:
+				raise AttributeError(name)
 		
 if __name__ == '__main__':
 	reader = Reader ('../../TEXT_FILES/biographies.txt')
-	print reader.data['bios']
+	print Writer (reader.data['bios'][0]).as_string()
