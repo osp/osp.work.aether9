@@ -21,7 +21,8 @@
 
 % LAYOUT {{{
     % General layout
-    \definepapersize[sheet][width=165mm,height=255mm]         
+    \definepapersize[sheet][width=165mm,height=255mm]  
+    \setuppapersize[sheet]
     \setuplayout[
         backspace=21mm,
         topspace=12mm,
@@ -33,9 +34,9 @@
         footer=6mm, 
         grid=yes, % activates baseline grid
         ]
-    \definecolumnset[duo][n=2]
-    \definepagebreak[emptyodd][yes,header,footer, odd]
-    \definepagebreak[emptyeven][yes,header,footer, even]
+    \definecolumnset[duo][n=2, distance=12mm]
+%     \definepagebreak[emptyodd][yes,header,footer, odd]
+%     \definepagebreak[emptyeven][yes,header,footer, even]
     \setuphead[chapter][page=emptyodd]
     % Left margin
     \setupinmargin[
