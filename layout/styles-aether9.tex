@@ -24,12 +24,12 @@
     \definepapersize[sheet][width=165mm,height=255mm]  
     \setuppapersize[sheet]
     \setuplayout[
-        backspace=21mm,
+        backspace=15mm,
         topspace=12mm,
-        width=138mm,
-%         height=225mm,
-        leftmargin=15mm,
-        rightmargin=12mm,
+	width=138mm,
+% 		height=225mm,
+        leftmargin=0mm,
+        rightmargin=0mm,
         footer=6mm, 
         ]
     \definelayout[full][
@@ -52,8 +52,8 @@
 
     % Folio
      \setuppagenumber[number=1]
-    \setuppagenumbering[alternative=doublesided, location=footer, style={\setupbodyfont[karlaregular, 6pt]}] 
-%     \setupfootertexts [section]
+     \setuppagenumbering[alternative=doublesided, location=footer, style={\setupbodyfont[karlaregular, 7pt]}] 
+%    \setupfootertexts [section]
     
 % }}}
 
@@ -115,17 +115,6 @@
 % SECTIONS AND HEADINGS {{{
        
 
-%         % PIECES 
-%         \setuphead[section][
-%             ownnumber=yes,
-%             align={nothyphenated, verytolerant, center},
-% %             page=yes,
-%             after=\nowhitespace,
-%             style={\tfd \setupbodyfont[karlaregular, 21pt]},
-%             ]
-      
-
-
 
 % }}}
 
@@ -143,12 +132,23 @@
 	    ]}
 
 % }}}
-
-\input chat
-\input infos
-\input mail
 \input piece
 \input mailtitle
+\input infos
+\input mail
+
+\input chat
+\input chatpiece
+\input chatinfos
+
 \input quotes
+
 \input tech
+
 \input bio
+
+\input ref
+
+\input perfo
+
+

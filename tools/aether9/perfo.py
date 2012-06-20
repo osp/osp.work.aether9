@@ -98,7 +98,7 @@ class Writer:
 		ret.append('\\styleperfo')
 		ret.append(self.description)
 		ret.append('\\stopcolumnsetspan')
-		return '\n'.join(ret)
+		return '\cap{%s}' % '\n'.join(ret)
 		
 	def escape_tex(self, pt):
 		r = pt.group()

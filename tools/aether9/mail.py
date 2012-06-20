@@ -103,7 +103,7 @@ class Writer:
 		ret.append('\\stylepiece')
 		ret.append('%d'%self.id)
 		ret.append('\\stylemailtitle')
-		ret.append(self.title)
+		ret.append('\cap{%s}' % self.title)
 		ret.append('\\styleinfos')
 		ret.append('%s\n\n%s'%( self.author, self.date.strftime('%d.%m.%Y') ))
 		ret.append('\\stylemail')
