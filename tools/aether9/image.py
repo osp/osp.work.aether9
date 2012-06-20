@@ -83,7 +83,7 @@ class Writer:
 	def __init__(self, reader):
 		self.image = reader
 
-	def as_string(self, width='\One', place='here', caption='none'):
+	def as_string(self, width='\\getvariables[pageprops][columnwidth]', place='here', caption='none'):
 		buff = ''
 		if (self.fullpage == True):
 			parts = self.splitImage ()
