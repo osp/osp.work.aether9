@@ -24,7 +24,7 @@ class Factory:
 	networks_ = {}
 	unknown_ = {}
 	def __init__(self, root_dir, base):
-		_d('Factory',root_dir, len(base))
+		_d('Factory',root_dir, len(base[0]))
 		self.base = base
 		self.get_kw_lists(root_dir)
 		for k in self.keywords:
@@ -43,24 +43,32 @@ class Factory:
 			for p in self.roads_[r]:
 				_d(p[0]['key'], len(p))
 				
-	def lookup(sel, tid):
-		for i in self.base:
-			if i['id'] = tid:
+		self.output_roads()
+				
+	def lookup_idx(self, tid):
+		blen = len(self.base[0])
+		for i in xrange(0,blen):
+			if self.base[0][i]['id'] == tid:
 				return i
 		return None
 		
 	def output_roads(self):
-		rlen = len(self.roads_) 
-		for r in xrange(0,rlen):
-			current = self.roads_[r]
-			back = self.roads_[r-1]
-			forward = None
-			try:
-				forward = self.roads_[r+1]
-			except Exception:
-				forward = self.roads_[0]
-			
-			res = '\\styleroadback{%d}%s\\styleroadforward{%d}'%(back['id'],current['key'],forward['id'])
+		#_d(self.roads_)
+		for name in self.roads_:
+			for road in self.roads_[name]:
+				rlen = len(road) 
+				for r in xrange(0,rlen):
+					current = road[r]
+					back = road[r-1]
+					forward = None
+					try:
+						forward = road[r+1]
+					except Exception:
+						forward = road[0]
+					#_d(current)
+					res = '\\styleroadback{%d}%s\\styleroadforward{%d}'%(back['id'],current['key'],forward['id'])
+					bid = self.lookup_idx(current['id'])
+					self.base[0][bid]['text'] = self.base[0][bid]['text'].replace(current['key'], res, 1)
 			
 	
 	def output_networks(self):
@@ -94,7 +102,7 @@ class Factory:
 		tdict[name] = []
 		for kw in kws:
 			current_ref = []
-			for item in self.base:
+			for item in self.base[0]:
 				try:
 					getattr(self, '%s_%s'%(target, item['type']))(item, kw, current_ref)
 				except:
