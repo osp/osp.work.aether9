@@ -5,7 +5,7 @@ quotes.Writer
 
 import os.path as opath
 import re
-import time
+from datetime import datetime
 
 class FileDoesNotExist(Exception):
 	def __init__(self, fname):
@@ -54,7 +54,7 @@ class Reader:
 		if len(author_a) > 0:
 			author = author_a[1].strip()
 		
-		date = time.strptime(date_str, '%Y-%m-%d')
+		date = datetime.strptime(date_str, '%Y-%m-%d')
 		
 		content = tmpa_[1]
 		self.data['quotes'].append({'type':'quotes', 'author':author, 'date': date, 'text':content})
@@ -71,16 +71,16 @@ class Writer:
 		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
 		esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.text)
 		aref = []
-		for r in self.ref['author']:
+		#for r in self.ref['author']:
 			#aref.append('\\in{section}[%s](p.\\at{page}[%s])'%(r,r))
-			aref.append('%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
+		#	aref.append('%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
 		
 		ret = []
+		ret.append('\\startcolumnsetspan[wide]')
 		ret.append('\\stylepiece')
 		ret.append('%d'%self.id)
 		ret.append('\\styleinfos')
 		ret.append('%s'%( self.author))
-		ret.append('\\startcolumnsetspan[wide]')
 		ret.append('\\stylequote')
 		ret.append(esc_text)
 		ret.append('\\stopcolumnsetspan')
