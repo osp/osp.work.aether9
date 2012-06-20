@@ -10,7 +10,8 @@ import chatlog
 import image
 import general
 import technical
-
+import bio
+import perfo
 
 def main():
 	parser = argparse.ArgumentParser()
@@ -97,7 +98,26 @@ def main():
 				items.append(m)
 			sys.stderr.write(' => %d\n'%(cm,))
 			
-			
+	# bios
+	fp = os.path.join (args.rootdir, 'TEXT_FILES', 'biographies.txt')
+	sys.stderr.write('Processing %s \n'%(fp))
+	ml = bio.Reader (fp)
+	cm = 0
+	for m in ml.data['bios']:
+		cm +=1
+		items.append(m)
+	sys.stderr.write(' => %d\n'%(cm,))
+	
+	# performances
+	fp = os.path.join (args.rootdir, 'TEXT_FILES', 'perfo_descriptions.txt')
+	sys.stderr.write('Processing %s \n'%(fp))
+	ml = perfo.Reader (fp)
+	cm = 0
+	for m in ml.data['perfos']:
+		cm +=1
+		items.append(m)
+	sys.stderr.write(' => %d\n'%(cm,))
+	
 	items.sort(key=lambda x:x['date'])
 	
 	for i in range(len(items)):
