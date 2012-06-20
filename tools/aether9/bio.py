@@ -1,6 +1,6 @@
 """
-quotes.Reader
-quotes.Writer
+bio.Reader
+bio.Writer
 """
 
 import os.path as opath
@@ -14,9 +14,10 @@ class FileDoesNotExist(Exception):
 		return '%s does not exist'%(self.filename)
 
 class Reader:
-	quotes_sep_pattern = '\n---\n'
-	infos_sep_pattern = r':'
-	content_sep_pattern = r'QUOTE:'
+	bio_sep_pattern = r'\n\n'
+	line_sep_pattern = r'\n'
+	infos_sep_pattern = r':\s+'
+	included_fields = ['name', 'nick', 'bio', 'url']
 
 	def __init__(self, filename):
 		if not opath.exists(filename):
@@ -33,43 +34,31 @@ class Reader:
 			f.close()
 		
 		self.data = {}
-		self.data['quotes'] = []
+		self.data['bios'] = []
 		
 		if data_str:
-			data = re.split('---', data_str, flags=re.MULTILINE)
+			data = re.split(self.bio_sep_pattern, data_str, flags=re.MULTILINE)
 			
 			for bloc in data:
 				self.process_bloc(bloc.strip())
 				
 	def process_bloc(self, bloc):
-		#lines = bloc.splitlines()
-		tmpa_ = bloc.split('QUOTE:')
-		tmp_b = tmpa_[0]
-		head = tmp_b.splitlines()
-
-
-		author_a = head[0].split(':')
-		date_str = head[1].split(':')[1].strip()
-		author = None
-		if len(author_a) > 0:
-			author = author_a[1].strip()
-		
-		date = time.strptime(date_str, '%Y-%m-%d')
-		
-		content = tmpa_[1]
-		self.data['quotes'].append({'type':'quotes', 'author':author, 'date': date, 'text':content})
-		
-		
-		
+		bio = {'type': 'bio'}
+		for line in re.split (self.line_sep_pattern, bloc, flags=re.MULTILINE):
+			parts = re.split (self.infos_sep_pattern, line)
+			
+			if parts[0].lower() in self.included_fields:
+				bio[parts[0].lower()] = parts[1]
+				
+		self.data['bios'].append(bio)
 		
 class Writer:
 	tex_special_chars = {r'&': '\\&', r'%': '\\%', r'$': '\\$', r'#': '\\#', r'_': '\\_', r'{': '\\{', r'}': '\\}', r'~': '\\textasciitilde{}', r'^': '\\textasciicircum{}', '\\' : '\\textbackslash{}', '|':'\\textbar{}'}
-	def __init__(self, mdict):
-		self.mail = mdict
+	et_pat = '[%s]'%(re.escape(''.join(tex_special_chars.keys())),)
+	def __init__(self, bdict):
+		self.bio = bdict
 		
 	def as_string(self):
-		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
-		esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.text)
 		aref = []
 		for r in self.ref['author']:
 			#aref.append('\\in{section}[%s](p.\\at{page}[%s])'%(r,r))
@@ -79,11 +68,9 @@ class Writer:
 		ret.append('\\stylepiece')
 		ret.append('%d'%self.id)
 		ret.append('\\styleinfos')
-		ret.append('%s'%( self.author))
-		ret.append('\\startcolumnsetspan[wide]')
-		ret.append('\\stylequote')
+		ret.append('%s\n\n%s'%( self.name))
+		ret.append('\\stylebio')
 		ret.append(esc_text)
-		ret.append('\\stopcolumnsetspan')
 		return '\n'.join(ret)
 		
 	def escape_tex(self, pt):
@@ -96,7 +83,10 @@ class Writer:
 		
 	def __getattr__(self, name):
 		try:
-			return self.mail[name]
+			return re.sub(et_pat, getattr(self, 'escape_tex'), self.bio[name])
 		except Exception:
 			raise AttributeError(name)
 		
+if __name__ == '__main__':
+	reader = Reader ('../../TEXT_FILES/biographies.txt')
+	print reader.data['bios']
