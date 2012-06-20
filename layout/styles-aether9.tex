@@ -65,6 +65,8 @@
     % Folio
      \setuppagenumber[number=1]
     \setuppagenumbering[alternative=doublesided, location=footer, style={\setupbodyfont[karlaregular, 6pt]}] 
+    \setupfootertexts [section][pagenumber]
+    
 % }}}
 
 % LOAD FONTS {{{
@@ -139,7 +141,7 @@
             align={nothyphenated, verytolerant, center},
 %             page=yes,
             after=\nowhitespace,
-            style={\tfd \cap \setupbodyfont[crimsontext]},
+            style={\tfd \cap \setupbodyfont[karlaregular, 27pt]},
             ]
       
 
