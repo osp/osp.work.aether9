@@ -70,23 +70,23 @@ def main():
 	
 	# chatlog
 	# we need a list of images to insert less chatlogs
-	#images = []
-	#for i in items:
-		#if i['type'] == 'image':
-			#images.append(i)
+	images = []
+	for i in items:
+		if i['type'] == 'image':
+			images.append(i)
 	
-	#images.sort(key=lambda x:x['date'])
+	images.sort(key=lambda x:x['date'])
 			
-	#for r,d,f in os.walk(args.rootdir):
-		#for fn2 in fnmatch.filter(f,'*chat*.html'):
-			#sys.stderr.write('Processing %s , %s\n'%(r,fn2))
-			#fp = os.path.join(r,fn2)
-			#cl = chatlog.Reader(fp, images)
-			#cm = 0
-			#for m in cl.chat:
-				#cm +=1
-				#items.append(m)
-			#sys.stderr.write(' => %d\n'%(cm,))
+	for r,d,f in os.walk(args.rootdir):
+		for fn2 in fnmatch.filter(f,'*chat*.html'):
+			sys.stderr.write('Processing %s , %s\n'%(r,fn2))
+			fp = os.path.join(r,fn2)
+			cl = chatlog.Reader(fp, images)
+			cm = 0
+			for m in cl.chat:
+				cm +=1
+				items.append(m)
+			sys.stderr.write(' => %d\n'%(cm,))
 			
 			
 	items.sort(key=lambda x:x['date'])

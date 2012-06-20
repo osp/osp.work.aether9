@@ -58,7 +58,6 @@ class Factory:
 				
 				
 	def roads(self, name, kws):
-		_d('roads',name)
 		self.roads_[name] = []
 		for kw in kws:
 			current_ref = []
@@ -76,7 +75,6 @@ class Factory:
 			sk = k.strip()
 			ret = re.search(sk, item['text'], flags=re.IGNORECASE)
 			if  ret:
-				_d('roads_mail',item['id'],sk)
 				cr.append({'id':item['id'], 'key': sk})
 			#else:
 				#_d(item['id'],sk,ret,len(item['text']))
