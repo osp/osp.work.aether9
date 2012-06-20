@@ -8,6 +8,8 @@ import os
 import fnmatch
 import chatlog
 import image
+import general
+import technical
 
 
 def main():
@@ -35,6 +37,26 @@ def main():
 			sys.stderr.write(' => %d\n'%(cm,))
 		
 	
+	# general discussion
+	fp = os.path.join (args.rootdir, 'TEXT_FILES', 'emails-general-discussions.txt')
+	sys.stderr.write('Processing %s \n'%(fp))
+	ml = general.Reader (fp)
+	cm = 0
+	for m in ml.data['thread']:
+		cm +=1
+		items.append(m)
+	sys.stderr.write(' => %d\n'%(cm,))
+	
+	# technical discussion
+	fp = os.path.join (args.rootdir, 'TEXT_FILES', 'emails-technical-discussions.txt')
+	sys.stderr.write('Processing %s \n'%(fp))
+	ml = technical.Reader (fp)
+	cm = 0
+	for m in ml.data['thread']:
+		cm +=1
+		items.append(m)
+	sys.stderr.write(' => %d\n'%(cm,))
+	
 	# images	
 	for r,d,f in os.walk(args.rootdir):
 		reg = fnmatch.translate('*.{jpg,png}')
@@ -48,23 +70,23 @@ def main():
 	
 	# chatlog
 	# we need a list of images to insert less chatlogs
-	images = []
-	for i in items:
-		if i['type'] == 'image':
-			images.append(i)
+	#images = []
+	#for i in items:
+		#if i['type'] == 'image':
+			#images.append(i)
 	
-	images.sort(key=lambda x:x['date'])
+	#images.sort(key=lambda x:x['date'])
 			
-	for r,d,f in os.walk(args.rootdir):
-		for fn2 in fnmatch.filter(f,'*chat*.html'):
-			sys.stderr.write('Processing %s , %s\n'%(r,fn2))
-			fp = os.path.join(r,fn2)
-			cl = chatlog.Reader(fp, images)
-			cm = 0
-			for m in cl.chat:
-				cm +=1
-				items.append(m)
-			sys.stderr.write(' => %d\n'%(cm,))
+	#for r,d,f in os.walk(args.rootdir):
+		#for fn2 in fnmatch.filter(f,'*chat*.html'):
+			#sys.stderr.write('Processing %s , %s\n'%(r,fn2))
+			#fp = os.path.join(r,fn2)
+			#cl = chatlog.Reader(fp, images)
+			#cm = 0
+			#for m in cl.chat:
+				#cm +=1
+				#items.append(m)
+			#sys.stderr.write(' => %d\n'%(cm,))
 			
 			
 	items.sort(key=lambda x:x['date'])
@@ -74,8 +96,7 @@ def main():
 		wr = globals()[items[i]['type']].Writer
 		writers.append(wr(items[i]))
 		
-	#for m in messages:
-		#writers.append(mail.Writer(reference.Factory(m, messages).doc))
+	ref = reference.Factory('%s/nodes'%args.rootdir, items)
 	
 	ret = []
 	

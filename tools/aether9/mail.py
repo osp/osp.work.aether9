@@ -18,6 +18,7 @@ class Reader:
 	start_pattern = r'^\[aether\]'
 	end_header_pattern = r'^Messages sorted by'
 	address_sep_pattern = r' at '
+	type = 'mail'
 	
 	def __init__(self, filename):
 		if not opath.exists(filename):
@@ -73,7 +74,7 @@ class Reader:
 				lines.pop(0)
 				
 		text = '\n'.join(lines)
-		self.data['thread'].append({'type':'mail', 'title':title, 'author':author, 'date': date, 'text':text})
+		self.data['thread'].append({'type':self.type, 'title':title, 'author':author, 'date': date, 'text':text})
 		
 		
 		

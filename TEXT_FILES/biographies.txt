@@ -14,18 +14,22 @@ URL: http://cym.net
 NAME: Dhanya Pilo (India) 
 NICK: dhanyapilo
 BIO: works as a film maker, designer and a visual artist from her studio in Mumbai, the teeming hub of India's artistic and film community.
+URL: http://www.dhanyapilo.com/
 
 NAME: Frauke Frech (DE)
 NICK: frauke, sokimee
 BIO: In her performance based works - mainly dance, video, and installation - she focuses on the discrepance of analog and digital world, of individual and society. Since 2008 she is performing for aether9.
+URL: http://fraukefrech.com
 
 NAME: Paula Vélez (Colombia)
 NICK: paulavelezbravo, paula, paulavelez, manizales
 BIO: Media and video artist, vj, super8 activist, involved in musical and  cultural project management. Member of Aether9 since 2007. Interest in home-made technology span into documentary work with communities to solve social and enviromental problems.
+URL: http://paulav.net
 
 NAME: Audrey Samson (CAN/NL)
 NICK: ideacritik, idea
 BIO: Interests focus on ways to interface community storytelling and in creating communication possibilities in unlikely scenarios. M.A. Media Design (2007) from the Piet Zwart Institute, Rotterdam, NL. Teacher at Gerrit Rietveld Academie (NL), member of genderchangers; a collective of women which promote the exchange of technical skills between women, member of Aether9; collective exploring the dramaturgical possibilities of remote realtime storytelling.
+URL: http://ideacritik.com
 
 NAME: Judy Nylon (USA)
 NICK: paljudy, Nylon
@@ -38,7 +42,7 @@ URL: http://www.imaginaryscience.org
 
 NAME: Manuel Schmalstieg (CH)
 NICK: aether9, manu, 1.1, 
-BIO: Born 1976, Manuel Schmalstieg operates on the borderline between video, performance and software art, exploring new creative territories that straddle between the virtual and the real.
+BIO: Born in Hinterkappelen in 1976, Manuel operates on the borderline between video, performance and software art. He graduated from HEAD Geneva in 2003, where he worked as teaching assistant. He is the co-founder of N3krozoft Ltd, a technological think tank producing performances and installations. In 2008 he launches Greyscale Press, expanding his experimental practice into the field of printed matter.
 URL: http://ms-studio.net
 
 NAME: Mari Keski-Korsu (FIN)
@@ -46,9 +50,9 @@ NICK: mkk
 BIO: (b. 1976) is an artist, initiator and organizer. She is interested in storytelling and moments that befall.  She explores i.e. nations as imaginary communities, tourism, presented identities and especially causalities of eco-social and structural changes in people's everyday life. She works with mixed and locative media applying process oriented methods. She is/has been concentrated on i.e. net and video art, streaming happenings and live visual mixing. Her works has been shown around Finland and in several countries. She has a MA in new media (digital authoring) from University of Arts and Design Helsinki and BA in visual arts from Polytech of Western Lapland.
 URL: http://www.artsufartsu.net
 
-NAME: Laure de Selys (CH/BE)
+NAME: Laure de Selys (BE/FR)
 NICK: saylor, laure.dit
-BIO: Video artist filming abroad.
+BIO: Laure de Selys is a Belgian and French artist, born in Geneva in 1986. She studied at Universität der Kunst (Berlin) with Katharina Sieverding and at Académie Libanaise des Beaux Arts (Beirut) in the new media department. In 2010, she received a Master in Fine Arts from the Ecole Nationale des Arts Visuels de la Cambre (Brussels). Laure currently lives and works between Brussels and Beirut.
 
 NAME: Boris Kish (CH/BE)
 NICK: bk, bk2, boris, thom_edison
@@ -57,13 +61,13 @@ URL: http://n3krozoft.com
 
 NAME: Alejo Duque (Colombia/CH)
 NICK: alejo, aleij
-BIO: .
-URL: .
+BIO: Alejo Duque is a Colombian theorist, media activist, sound artist, frequency analyst, data streamer and satellite tracker based in Switzerland. An active member of networks such as Bricolabs, [k.0_lab] and dorkbot, his research focuses on streams for networked communities and outernets packet exchanges.
 
 NAME: Vinny Bhagat (India/Australia)
 BIO: Vinny Bhagat aka Shivnakaun is a sound artist and musician researching in the field of computational electro acoustic music and audio-visual art and technology. His work explores digital sound generative and synthesis methods , physical interaction and models for performance and composition. He is deeply interested in spontaneous art / music performances, distributed online performances and the connection between sound and moving image in a live performance context. Born in New Delhi – India, he studied Music Technology and Electronic Music at The Elder Conservatorium Of Music.
 URL: http://shivnakaun.com
 
-NAME: Nathalie Fougeras
+NAME: Nathalie Fougeras (FR/Sweden)
 NICK: fougeras nathalie, nathalie
-BIO:
+BIO: Studied contemporary art and obtained a post-diploma ARI (interactive research) at ENSAD in Paris. She began to explore new media with interactive cinema, exhibited her works in several festivals like Jouable Genève-Kyoto-Paris. From 2007 she performs with two groups of artists: aether9 and Avatar Orchestra Metaverse. She curated "Stream On You" at iMAL Bruxelles in 2008.
+URL: http://nathaliefougeras.org/
