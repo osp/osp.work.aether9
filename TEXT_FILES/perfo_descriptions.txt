@@ -1,0 +1,309 @@
+Title: First aether9 performance
+Event: Mapping Festival 2007
+Location: Bâtiment d’Art Contemporain (BAC), Geneva (Switzerland)
+Date: May 3rd, 2007
+Time: 21:00 Central European Summer Time (UTC/GMT +2)
+
+Duration: 60 minutes
+
+Description: Linking nine performers in various remote locations around the globe, this performance marked the beginning of the aether9 project. 
+Performers: Alan Bogana, Alejandro Duque, Ariane Téodoridis, Boris Kish, Chloé Cramer, Christiaan Cruz, cym, Daphné Dornbierer, ideacritik, Manuel Schmalstieg, Nathalie Fougeras, Oh Eun Lee, Paula Vélez, Yoann Trellu
+
+---
+Title: Remote Fairytales
+Event: N3krozoft Ltd micro exhibition
+Location: Maison d’Art Actuel des Chartreux (MAAC), Brussels (Belgium)
+Date: June 14th, 2007
+Time: 19:00 (UTC/GMT +2)
+
+Duration: 
+
+Description: The opening program consisted in a lecture about the noble art of patching, alongside with the Grimm Brothers tale “The Girl Without Hands”, narrated by storyteller Deirdre Foster and accompanied visually by the Æther Group, an international remote performance ensemble whose members participated from locations in California, Colombia, Europe and Iran. 
+
+Performers: Amirali Ghasemi, Boris Kish, Chloé Cramer, Christiaan Cruz, cym, ideacritik, Laure De Selys, Manuel Schmalstieg, Paula Vélez
+---
+Title: “Conférence aux Antipodes”
+Event: “Inquiry in Location” curated by Mirjana Boba Stojadinovic for the Piet Zwart Institute
+Location: Hotel New York, Rotterdam (The Netherlands)
+Date: July 2nd, 2007
+Time: 21:00 (UTC/GMT +2)
+
+Duration: 15 min
+
+Description: “Conférence aux Antipodes” was a mysterious 15 minute conference call between 3 remote performers. This performance occurred in the context of the "Inquiry in Location" event, curated by Mirjana Boba Stojadinovic for the Piet Zwart Institute, which took place in one of the former conference rooms of Hotel New York, in Rotterdam. It was also the first aether9 performance to implement a live audio mp3 stream (via the giss.tv streaming server). 
+
+Performers: Boris Kish, Christiaan Cruz, ideacritik, Laure De Selys, Manuel Schmalstieg
+
+---
+Title: 07.07.07
+Event: Celebration of the remarkable date (07.07.07)
+Location: exclusively online 
+Date: July 7th, 2007 
+Time: 19:00 (UTC/GMT)
+
+Duration: 7 * 7 min
+
+Description: A shared meal between performers located on two different continents. Celebration of the remarkable date: 07/07/07. Note: frame #4 and #9 remained black in order to approximate the shape of the number seven.
+
+Performers: Boris Kish, Chloé Cramer, cym, Laure De Selys, Luka Prinčič, Manuel Schmalstieg, Nathalie Fougeras, The League of Imaginary Scientists
+
+---
+Title: 
+Event: NetUser4 International Working Camp
+Location: Pleven (Bulgaria) 
+Date: July 19th, 2007
+Time: 18:00 (UTC/GMT +3)
+Duration:
+
+Description: Conceptual performance reflecting upon everyday disposable/consumer goods and 'luxury' objects.
+Performers: Boris Kish, Christiaan Cruz, cym, ideacritik, Judy Nylon, Luka Prinčič, Manuel Schmalstieg, Nathalie Fougeras, The League of Imaginary Scientists
+
+---
+Title: “untitled sound transmission”
+Event: International Sputnik Day (curated by Francis Hunger)
+Location: exclusively online  
+Date: October 4th, 2007
+Time: 19:00 (UTC/GMT +2)
+
+Duration:
+
+Description: Minimalistic performance celebrating the 50th anniversary of the sputnik satellite launch.
+Performers: Manuel Schmalstieg
+---
+Title: Stationary Æmotion
+Event: Introducing: Labouretum Lumbrici
+Location: WORM, Rotterdam (The Netherlands)
+Date: October 26th, 2007
+Time: 22:00 (UTC/GMT +2)
+
+Duration:
+ 
+Description: Protagonist flees her life and embarks on a train adventure, escaping the law and her lover.
+
+Performers:
+ ideacritik, Manuel Schmalstieg, Nathalie Fougeras, Nicola Unger, Paula Vélez
+---
+Title: Stationary Æmotion
+Event: Tremor 4 <Live.Doc> festival
+Location: multi-locational throughout Bogotá (Colombia)
+Date: November 9th, 2007
+Time: 19:00 (UTC/GMT -5)
+
+Duration:
+
+Description: Protagonist flees her life and embarks on a train adventure, escaping the law and her lover.
+
+Performers:
+ Christiaan Cruz, Laure De Selys, Manuel Schmalstieg, Paula Vélez, Juliana Restrepo
+---
+Title: Ghost Study
+Event: Videomedeja Festival
+Location: Museum of Vojvodina, Novi Sad (Serbia)
+Date: December 15th, 2007
+Time: 
+23:15 (UTC/GMT +1)
+Duration:
+
+Description: Adaptation of Samuel Beckett’s 1976 TV play “Ghost Trio”.
+
+Performers:
+ Boris Kish, Chloé Cramer, Christiaan Cruz, cym, Judy Nylon, Laure De Selys, Manuel Schmalstieg, Nathalie Fougeras, Paula Vélez, Richard Milan, Luka Princic, Juan Guillermo Caicedo, Pedro Hermelin, Jonathan Goldstein
+---
+Title: CMYK
+Event: “Stream on You” event, curated by Nathalie Fougeras and produced by iMAL
+Location: iMAL, Brussels (Belgium)
+Date: February 16th, 2008
+Time: 
+21:00 (UTC/GMT +1)
+Duration:
+ 
+Description:
+ An improvisational structure based on list of actions coupled to the four suits of a deck of cards. Suits are called by a human random generator. These actions are framed within the CMYK color space. 
+Performers:
+ Bjorn Eriksson, Boris Kish, Chloé Cramer, ideacritik, Judy Nylon, Laure De Selys, Manuel Schmalstieg, Nathalie Fougeras, Pascale Barret, Paula Vélez, Richard Milan, Jonathan Goldstein
+---
+Title: LHHR
+Event: Festival Internacional de la Imagen
+Location: Alianza Francesa, Manizales (Colombia)
+Date: April 17th, 2008
+Time: 18:00 (UTC/GMT -5)
+
+Duration:
+
+Description:
+ The Little Red Riding Hood tale fragmented for a twenty first century mind, one that detects a storyline from multi-sourced information streams, part cubist, part 3D chess, but coherently set in human, ancient, primordial mind. Wolf, an “anyman”, seeks a role-playing Little Red Riding Hood among cyber sex chat girls. A journey into the psychological landscape of the classical tale, a cipher of Aging, Sex, Death, Desire, Violence, Secrecy, Beauty and Decay. Live soundtrack by Gregorio Gómez (aka gladkazuka).
+Performers:
+ Boris Kish, Chloé Cramer, Christiaan Cruz, gladkazuka, Gregorio Gómez, ideacritik, Judy Nylon, Laure De Selys, Manuel Schmalstieg, Natalia Valencia, Paula Vélez, The League of Imaginary Scientists
+---
+Title: LHHR
+Event: Mapping Festival
+Location: Bâtiment d’Art Contemporain (BAC), Geneva (Switzerland)
+Date: April 19th, 2008
+Time: 19:00 (UTC/GMT +2)
+
+Duration:
+
+Description:
+ The Little Red Riding Hood tale fragmented for a twenty first century mind, one that detects a storyline from multi-sourced information streams, part cubist, part 3D chess, but coherently set in human, ancient, primordial mind. Wolf, an “anyman”, seeks a role-playing Little Red Riding Hood among cyber sex chat girls. A journey into the psychological landscape of the classical tale, a cipher of Aging, Sex, Death, Desire, Violence, Secrecy, Beauty and Decay. Live soundtrack by Bliscappen Van Maria.
+Performers:
+ Boris Kish, Chloé Cramer, Christiaan Cruz, ideacritik, Judy Nylon, Laure De Selys, Manuel Schmalstieg, Paula Vélez
+---
+Title: LHHR
+Event: London Short Film Festival
+Location: Tenderpixel Gallery, London (GB)
+Date: July 31st, 2008
+Time: 
+22:30 (GMT)
+Duration:
+
+Description:
+ The Little Red Riding Hood tale fragmented for a twenty first century mind, one that detects a storyline from multi-sourced information streams, part cubist, part 3D chess, but coherently set in human, ancient, primordial mind. Wolf, an “anyman”, seeks a role-playing Little Red Riding Hood among cyber sex chat girls. A journey into the psychological landscape of the classical tale, a cipher of Aging, Sex, Death, Desire, Violence, Secrecy, Beauty and Decay. Live audio by Jérôme Prosperger, transmitted from Brussels. In this iteration of LRRH, the audience had the opportunity to interact with the remote performers through instant messaging during the performance.
+Performers:
+ Chloé Cramer, ideacritik, Laure De Selys, Manuel Schmalstieg, Paula Vélez, Christiaan Cruz, Judy Nylon, Pascale Barret, Jérome Prosperger, Boris Kish
+---
+Title: LHHR
+Event: Residency @ Perte-de-Signal
+Location: Perte-de-Signal, Montréal (Canada)
+Date: August 16th, 2008
+Time: 
+18:45 (GMT -4)
+Duration:
+
+Description: The Little Red Riding Hood tale fragmented for a twenty first century mind, one that detects a storyline from multi-sourced information streams, part cubist, part 3D chess, but coherently set in human, ancient, primordial mind. Wolf, an “anyman”, seeks a role-playing Little Red Riding Hood among cyber sex chat girls. A journey into the psychological landscape of the classical tale, a cipher of Aging, Sex, Death, Desire, Violence, Secrecy, Beauty and Decay. 
+
+Performers:
+ Boris Kish, Chloé Cramer, Christiaan Cruz, ideacritik, Judy Nylon, Manuel Schmalstieg, Maria Hermelin, Paula Vélez, Sofian Audry
+---
+Title: When antennas convert love in space
+Event: Beirut Street Festival
+Location: Hamra Street (el medina theater), Beirut (Lebanon)
+Date: September 28th, 2008
+Time: At Sunset
+
+Duration:
+ 
+Description:
+ An intimate performance screened on Hamra street, taking the myriad of Beirut rooftop antennas as a starting point for discussing cultural identity.
+Performers:
+ Boris Kish, Christiaan Cruz, ideacritik, Joe Elias, Judy Nylon, Laure De Selys, Manuel Schmalstieg, Paula Vélez, Samir Youssef, Zoe Judell
+---
+Title: N3krozoft Ltd featuring aether9
+Event: 4th annual Carnival of e-Creativity
+Location: Sattal Estate, Uttarakhand (India)
+Date: March 1st, 2009
+Time: 
+
+Duration:
+
+Description:
+ A stage performance inspired by early scientific exeriments on telepathy and extra-sensory perception (ESP). During the play, remote performers were subjected to a set of tests designed by psychologist Karl Zener (1903-1964).
+Performers:
+ Boris Kish, Chloé Cramer, Manuel Schmalstieg, Yuri Gruznov
+---
+Title: Jam Session
+Event: Trans-Sesiones
+Location: Museo de Arte Moderno, Medellín (Colombia)/Video Vortex 4, Split (Croatia)
+Date: May 23rd, 2009
+Time: 
+Duration:
+ 
+5 hours
+Description:
+ Maratón de improvisación visual remoto. AETHER9 , aceptó unirse a este ejercicio de improvisación y experimentación durante las 5 horas que durará el JAM.
+Performers:
+ Axelat0r, Boris Kish, Chloé Cramer, Christiaan Cruz, Dhanya Pilo, Frauke Frech, Judy Nylon, Manuel Schmalstieg, Mari Keski-Korsu, Paula Vélez, Vinny Bhagat
+---
+Title: aether9
+Event: ASEUM
+Location: Manila (Philippines)
+Date: July 25th, 2009
+Time: 
+21:00 (UTC/GMT +8)
+Duration: 
+
+Description:
+ Improvised transmission using a 6-frame interface in combination with live musical performances at the Sabaw Media Kitchen in Manila.
+Performers:
+ Christiaan Cruz, Dhanya Pilo, Frauke Frech, Kim Xupei, Manuel Schmalstieg, Mari Keski-Korsu, Paula Vélez, Vinny Bhagat
+---
+Title: All Souls
+Event: Residencey @ _____-micro research
+Location: rupert goldsworthy gallery, Berlin (Germany)
+Date: October 31st, 2009
+Time: 
+21:00 (UTC/GMT +2)
+Duration:
+
+Description:
+ Saturday, Halloween, as a culmination of a week long residencey @ _____-micro research, aether9 presented a live online performance before an audience in the rupert goldsworthy gallery in Berlin. The wireless building of a mass mind, controlling aether9 agents …amongst Berliners who are unaware of their presence. Aether9 presents an interpretation of Fritz Lang’s Doktor Mabuse streaming from a taxi speeding through Berlin.
+Performers:
+ Boris Kish, Chloé Cramer, Christiaan Cruz, cym, Frauke Frech, ideacritik, Judy Nylon, Laure De Selys, Manuel Schmalstieg, Paula Vélez, Vinny Bhagat
+---
+Title: aether9
+Event: COMA (Creative Original Music Adelaide)
+Location: The Wheatsheaf Hotel, Adelaide (Australia)
+Date: December 7th, 2009
+
+Time: 20:00 (UTC/GMT +9:30)
+
+Duration:
+
+Description: Aether9 improvised jam session in live collaboration with Shivnakaun (Vinny Bhagat).
+
+Performers:
+
+ Christiaan Cruz, Dhanya Pilo, ideacritik, Manuel Schmalstieg, Maria Fava, Vinny Bhagat
+---
+Title: live at Camp Pixelache
+
+Event: Camp Pixelache
+
+Location: Kerava Art Museum, Helsinki (Finland)
+
+Date: March 26th, 2010
+
+Time: 
+11:00 (UTC/GMT +2)
+Duration:
+ 5 hours
+Description:
+ Durational performance presented as an audiovisual installation in which aethernauts created an ever changing landscape.
+Performers:
+
+ Christiaan Cruz, cym, Dhanya Pilo, ideacritik, John Hopkins, Manuel Schmalstieg, Mari Keski-Korsu, Paula Vélez, Vinny Bhagat
+---
+Title: GhostStudy Amsterdam
+
+Event: IN THE EVIDENCE OF EXPERIENCE – 7 EVENINGS OF LIVE ART
+
+Location: Arti et Amicitiae, Amsterdam (The Netherlands)
+
+Date: April 21st, 2010
+
+Time: 
+20:30 (UTC/GMT +2)
+Duration:
+
+Description:
+ An adaptation of Samuel Beckett’s 1976 TV play “Ghost Trio”.
+Performers: Christiaan Cruz, cym, ideacritik, Judy Nylon, Manuel Schmalstieg, Mari Keski-Korsu, Paula Vélez, Catalina Sierra, Pedro Hermelin
+---
+Title: 
+
+Montréal aether9 presentation
+
+Event: SORTIR DE L’ÉCRAN
+
+Location: Société des arts technologiques [S.A.T.], Montréal (Canada)
+
+Date: May 26th, 2010
+
+Time: 
+19:30 (UTC/GMT -4)
+Duration:
+ 
+Description:
+ A presentation about the conceptual and technical developments resulting from a residency at agence TOPO. Exploration of landscape possibilities of telematic performance as well as aether9's new PD Patch and Wiimote control options.
+Performers:
+ Christiaan Cruz, cym, ideacritik, Manuel Schmalstieg, Mari Keski-Korsu, Paula Vélez, Vinny Bhagat
+---
