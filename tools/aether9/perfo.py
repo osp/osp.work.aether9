@@ -14,6 +14,12 @@ class FileDoesNotExist(Exception):
 	def __str__(self):
 		return '%s does not exist'%(self.filename)
 
+class NoDate(Exception):
+	def __init__(self, fname):
+		self.filename = fname
+	def __str__(self):
+		return '%s does not provide any date info'%(self.filename)		
+		
 class Reader:
 	performance_sep_pattern = r'\n---\n'
 	line_sep_pattern = r'\n'
@@ -60,8 +66,11 @@ class Reader:
 			perfo['date'] = datetime.strptime ('%s %s' % (perfo['date'], time.group(0)), '%m %d, %Y %H:%M')
 			del perfo['time']
 		else:
-			perfo['date'] = datetime.strptime (perfo['date'], '%m %d, %Y')
-			del perfo['time']
+			try:
+				perfo['date'] = datetime.strptime (perfo['date'], '%m %d, %Y')
+				del perfo['time']
+			except Exception as e:
+				raise NoDate (e)
 			
 		if 'performers' in perfo:
 			perfo['seperate_performers'] = map(lambda performer: performer.strip(), perfo['performers'].split (','))

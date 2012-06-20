@@ -6,6 +6,7 @@ bio.Writer
 import os.path as opath
 import re
 import time
+from datetime import datetime
 
 class FileDoesNotExist(Exception):
 	def __init__(self, fname):
@@ -49,8 +50,13 @@ class Reader:
 			
 			if parts[0].lower() in self.included_fields:
 				bio[parts[0].lower()] = parts[1]
-				
-		bio['bio_text'] = bio['bio']
+		if 'bio' in bio:
+			bio['bio_text'] = bio['bio']
+		
+		if 'nick' not in bio:
+			bio['nick'] = ''
+		
+		bio['date'] = datetime (2000, 1, 1, 0, 0, 0)
 		
 		self.data['bios'].append(bio)
 		
