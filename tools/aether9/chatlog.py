@@ -105,10 +105,31 @@ class SkypeParser(HTMLParser):
 			pass
 		
 class Reader:
-	def __init__(self, filename):
+	def __init__(self, filename, images = [], delta = 30):
 		sp = SkypeParser()
 		sp.start(filename)
-		self.chat = sp.chat
+		t_delta = datetime.timedelta(0,delta,0)
+		self.chat = []
+		c_len = len(sp.chat)
+		c_idx = 0
+		in_flag = False
+		for im in images:
+			for c in xrange(c_idx, c_len):
+				itvl = self.abs_itvl(im['date'], sp.chat[c]['date'])
+				if itvl < t_delta:
+					in_flag = True
+					self.chat.append(sp.chat[c])
+				elif in_flag:
+					in_flag = False
+					break
+				c_idx = c 
+		
+	def abs_itvl(self, a, b):
+		if a < b:
+			return b - a
+		else:
+			return a - b
+			
 		
 class Writer:
 	tex_special_chars = {r'&': '\\&', r'%': '\\%', r'$': '\\$', r'#': '\\#', r'_': '\\_', r'{': '\\{', r'}': '\\}', r'~': '\\textasciitilde{}', r'^': '\\textasciicircum{}', '\\' : '\\textbackslash{}', '|':'\\textbar{}'}
