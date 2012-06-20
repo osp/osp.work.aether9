@@ -83,7 +83,7 @@ class Writer:
 	def __init__(self, reader):
 		self.image = reader
 
-	def as_string(self, width='\\getvariable[pageprops][columnwidth]', place='here', caption='none'):
+	def as_string(self, width='\\getvariable{pageprops}{columnwidth}', place='here', caption='none'):
 		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
 		buff = ''
 		if (self.fullpage == True):
