@@ -12,6 +12,7 @@ import general
 import technical
 import bio
 import perfo
+import quotes
 
 def main():
 	parser = argparse.ArgumentParser()
@@ -54,6 +55,16 @@ def main():
 	ml = technical.Reader (fp)
 	cm = 0
 	for m in ml.data['thread']:
+		cm +=1
+		items.append(m)
+	sys.stderr.write(' => %d\n'%(cm,))
+	
+	# quotes
+	fp = os.path.join (args.rootdir, 'TEXT_FILES', 'great-quotes.txt')
+	sys.stderr.write('Processing %s \n'%(fp))
+	ml = quotes.Reader (fp)
+	cm = 0
+	for m in ml.data['quotes']:
 		cm +=1
 		items.append(m)
 	sys.stderr.write(' => %d\n'%(cm,))
