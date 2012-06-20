@@ -1,0 +1,4 @@
+money
+grant
+funds,funding
+paypal
