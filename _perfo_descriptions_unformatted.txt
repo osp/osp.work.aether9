@@ -2,13 +2,11 @@ Title: First aether9 performance
 Event: Mapping Festival 2007
 Location: Bâtiment d’Art Contemporain (BAC), Geneva (Switzerland)
 Date: May 3rd, 2007
-
 Time: 21:00 Central European Summer Time (UTC/GMT +2)
 
 Duration: 60 minutes
 
 Description: Linking nine performers in various remote locations around the globe, this performance marked the beginning of the aether9 project. 
-
 Performers: Alan Bogana, Alejandro Duque, Ariane Téodoridis, Boris Kish, Chloé Cramer, Christiaan Cruz, cym, Daphné Dornbierer, ideacritik, Manuel Schmalstieg, Nathalie Fougeras, Oh Eun Lee, Paula Vélez, Yoann Trellu
 
 ---
@@ -20,7 +18,7 @@ Time: 19:00 (UTC/GMT +2)
 
 Duration: 
 
-Description: The opening programme consisted in a lecture about the noble art of patching, alongside with the Grimm Brothers tale “The Girl Without Hands”, narrated by storyteller Deirdre Foster and accompanied visually by the Æther Group, an international remote performance ensemble whose members participated from locations in California, Colombia, Europe and Iran. 
+Description: The opening program consisted in a lecture about the noble art of patching, alongside with the Grimm Brothers tale “The Girl Without Hands”, narrated by storyteller Deirdre Foster and accompanied visually by the Æther Group, an international remote performance ensemble whose members participated from locations in California, Colombia, Europe and Iran. 
 
 Performers: Amirali Ghasemi, Boris Kish, Chloé Cramer, Christiaan Cruz, cym, ideacritik, Laure De Selys, Manuel Schmalstieg, Paula Vélez
 ---
@@ -52,9 +50,9 @@ Performers: Boris Kish, Chloé Cramer, cym, Laure De Selys, Luka Prinčič, Manu
 ---
 Title: 
 Event: NetUser4 International Working Camp
-Location: Pleven (BulGaria) 
+Location: Pleven (Bulgaria) 
 Date: July 19th, 2007
-Time: 
+Time: 18:00 (UTC/GMT +3)
 Duration:
 
 Description: Conceptual performance reflecting upon everyday disposable/consumer goods and 'luxury' objects.
@@ -65,7 +63,7 @@ Title: “untitled sound transmission”
 Event: International Sputnik Day (curated by Francis Hunger)
 Location: exclusively online  
 Date: October 4th, 2007
-Time: 
+Time: 19:00 (UTC/GMT +2)
 
 Duration:
 
@@ -237,7 +235,7 @@ Time:
 Duration:
 
 Description:
- Saturday, Halloween, as a culmination of a week long residencey @ _____-micro research, aether9 presented a live online performance before an audience in the rupert goldsworthy gallery in Berlin. The wireless building of a mass mind, controlling aether9 agents …amongst Berliners unaware. Aether9 presents an interpretation of Fritz Lang’s Doktor Mabuse streaming from a taxi speeding through Berlin.
+ Saturday, Halloween, as a culmination of a week long residencey @ _____-micro research, aether9 presented a live online performance before an audience in the rupert goldsworthy gallery in Berlin. The wireless building of a mass mind, controlling aether9 agents …amongst Berliners who are unaware of their presence. Aether9 presents an interpretation of Fritz Lang’s Doktor Mabuse streaming from a taxi speeding through Berlin.
 Performers:
  Boris Kish, Chloé Cramer, Christiaan Cruz, cym, Frauke Frech, ideacritik, Judy Nylon, Laure De Selys, Manuel Schmalstieg, Paula Vélez, Vinny Bhagat
 ---
