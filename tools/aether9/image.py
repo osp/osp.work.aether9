@@ -83,21 +83,25 @@ class Writer:
 	def __init__(self, reader):
 		self.image = reader
 
-	def as_string(self, width=False, place='left', caption='none'):
+	def as_string(self, width='\One', place='here', caption='none'):
 		buff = ''
 		if (self.fullpage == True):
 			parts = self.splitImage ()
-			buff += '\n\page[left]'
-			buff += '\n\placefigure[left,top]{{}}{{\externalfigure[{0}][width=16.5cm]}}'.format (parts[0])
-			#buff += '\n\page[right]'
-			buff += '\n\placefigure[left,top]{{}}{{\externalfigure[{0}][width=16.5cm]}}'.format (parts[1])
-			buff += '\n\page[left]'
+			buff += '\n\\stopcolumnset'
+			buff += '\n\\page[left]'
+			buff += '\n\\setuplayout[full]'
+			buff += '\n\\placefigure[left,top]{{none}}{{\\externalfigure[{0}][width=165mm,height=225mm]}}'.format (parts[0])
+			buff += '\n\\placefigure[left,top]{{none}}{{\\externalfigure[{0}][width=165mm,height=225mm]}}'.format (parts[1])
+			buff += '\n\\page[left]'
+			buff += '\n\\setuplayout[reset]'
+			buff += '\n\\startcolumnset[duo]'
+
 		else:
 			imgpts = [self.filename]
 			#sys.stderr.write('[%s] [%s] [%s]\n'%(place, imgpts, caption))
 			
 			if width <> False:
-				imgpts.append (width)
+				imgpts.append ('width=%s' % width)
 			try:
 				buff = '\n\\placefigure[%s]{%s}{{\\externalfigure[%s]}}' % (place, caption, ']['.join(imgpts))
 			except Exception as e:

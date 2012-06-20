@@ -34,9 +34,21 @@
         footer=6mm, 
         grid=yes, % activates baseline grid
         ]
+    \definelayout[full][
+	backspace=0mm,
+	topspace=0mm,
+	header=0mm,
+	footer=0mm,
+	leftmargin=0mm,
+	rightmargin=0mm,
+        width=138mm,
+        height=225mm,
+        grid=yes
+	]
     \definecolumnset[duo][n=2, distance=12mm]
 %     \definepagebreak[emptyodd][yes,header,footer, odd]
 %     \definepagebreak[emptyeven][yes,header,footer, even]
+    \definecolumnsethsize{duo}{1}{1}\One
     \setuphead[chapter][page=emptyodd]
     % Left margin
     \setupinmargin[
