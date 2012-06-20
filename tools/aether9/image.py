@@ -47,7 +47,6 @@ class Reader:
 
 	def get_creationtime_fromfilename (self, filename):
 		tail = opath.split (filename)[1]
-		print tail
 		date_patt = '(\d{4})(\d{2})(\d{2})_(\d{2})h(\d{2})m(\d{2})s'
 		alt_date_patt = '(\d{4})(\d{2})(\d{2})'
 		d = re.search (date_patt, tail)
