@@ -1,47 +1,69 @@
 NAME: Chloé Cramer (CH/BE)
+NICK: chloe, ana-lisa, analisateresa
 BIO: Born in Geneva, living in Brussels. She shares her time between assisting fiction film directors, performing for *N3krozoft * and directing video for the scenography of various stage performances (dance and theater)
 
 NAME: Christiaan Cruz (USA)
+NICK: chris, fe2cruz
 BIO: A Southern California based photographer/DBA analyst by trade. Interest in human interaction, ownership, and appropriate design prompted networked pieces; some of which have used water, Jovian waves, and motorbikes.
 
 NAME: cym (NL/A/SLO) 
+NICK: cymnet, cym
 BIO: traveling through Europe with laptop and digital camera, explores the relations between virtual reality and real life. Her redevelopment of an old small village farm into an art center in south-east Austria inspires her work. These natural suroundings and the long history of the building have been incorporated into her Aether9 contributions.
 URL: http://cym.net
 
 NAME: Dhanya Pilo (India) 
+NICK: dhanyapilo
 BIO: works as a film maker, designer and a visual artist from her studio in Mumbai, the teeming hub of India's artistic and film community.
 
 NAME: Frauke Frech (DE)
+NICK: frauke, sokimee
 BIO: In her performance based works - mainly dance, video, and installation - she focuses on the discrepance of analog and digital world, of individual and society. Since 2008 she is performing for aether9.
 
 NAME: Paula Vélez (Colombia)
+NICK: paulavelezbravo, paula, paulavelez, manizales
 BIO: Media and video artist, vj, super8 activist, involved in musical and  cultural project management. Member of Aether9 since 2007. Interest in home-made technology span into documentary work with communities to solve social and enviromental problems.
 
-NAME: ideacritik (CAN/NL)
+NAME: Audrey Samson (CAN/NL)
+NICK: ideacritik, idea
 BIO: Interests focus on ways to interface community storytelling and in creating communication possibilities in unlikely scenarios. M.A. Media Design (2007) from the Piet Zwart Institute, Rotterdam, NL. Teacher at Gerrit Rietveld Academie (NL), member of genderchangers; a collective of women which promote the exchange of technical skills between women, member of Aether9; collective exploring the dramaturgical possibilities of remote realtime storytelling.
 
 NAME: Judy Nylon (USA)
+NICK: paljudy, Nylon
 BIO: Originally from Cambridge, Massachusetts, influenced by the museum collections of old Boston plus the twentieth century tech inventions of Polaroid, Harvard and M.I.T. Trained in the philosophy of sedition as per local Irish tradition, then launched back at England, Judy was part of Londonís first wave of British Punk.  The resonating influence of her thinking has been critically acknowledged in the analysis of other collaborations with fellow artists, principally John Cale and Eno. Judy joined in the aether9 project on July 07 drawn to the development of narrative co-authorship, many to many broadcast, and new performative techniques for emerging art disciplines.
 
 NAME: The League of Imaginary Scientists (USA)
+NICK: Remote Control Monkey,
 BIO: Lucy H G is a media artist, a filmmaker, and the interdisciplinary research coordinator for the League of Imaginary Scientists.  Her visual experiments, creative diagrams, and interactions fit in between realms, where microbiology mingles with geopolitics and mechanical engineering animates human biology.
 URL: http://www.imaginaryscience.org
 
 NAME: Manuel Schmalstieg (CH)
+NICK: aether9, manu, 1.1, 
 BIO: Born 1976, Manuel Schmalstieg operates on the borderline between video, performance and software art, exploring new creative territories that straddle between the virtual and the real.
 URL: http://ms-studio.net
 
 NAME: Mari Keski-Korsu (FIN)
+NICK: mkk
 BIO: (b. 1976) is an artist, initiator and organizer. She is interested in storytelling and moments that befall.  She explores i.e. nations as imaginary communities, tourism, presented identities and especially causalities of eco-social and structural changes in people's everyday life. She works with mixed and locative media applying process oriented methods. She is/has been concentrated on i.e. net and video art, streaming happenings and live visual mixing. Her works has been shown around Finland and in several countries. She has a MA in new media (digital authoring) from University of Arts and Design Helsinki and BA in visual arts from Polytech of Western Lapland.
 URL: http://www.artsufartsu.net
 
 NAME: Laure de Selys (CH/BE)
+NICK: saylor, laure.dit
 BIO: Video artist filming abroad.
 
 NAME: Boris Kish (CH/BE)
-BIO: Media artist and filmmaker. b. 1978. Member of N3krozoft Ltd.
+NICK: bk, bk2, boris, thom_edison
+BIO: Boris Kish was born in 1978 in the Swiss Jura mountains. After studying philosophy and comparative literature, he cofounded n3krozoft ltd., an art group producing videos, installations, street and stage performances. He is also involved in filmmaking.
 URL: http://n3krozoft.com
+
+NAME: Alejo Duque (Colombia/CH)
+NICK: alejo, aleij
+BIO: .
+URL: .
 
 NAME: Vinny Bhagat (India/Australia)
 BIO: Vinny Bhagat aka Shivnakaun is a sound artist and musician researching in the field of computational electro acoustic music and audio-visual art and technology. His work explores digital sound generative and synthesis methods , physical interaction and models for performance and composition. He is deeply interested in spontaneous art / music performances, distributed online performances and the connection between sound and moving image in a live performance context. Born in New Delhi – India, he studied Music Technology and Electronic Music at The Elder Conservatorium Of Music.
 URL: http://shivnakaun.com
+
+NAME: Nathalie Fougeras
+NICK: fougeras nathalie, nathalie
+BIO:
