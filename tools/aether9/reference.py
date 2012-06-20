@@ -1,6 +1,16 @@
 """
 reference.Factory
 """
+import os
+import glob
+import sys
+import re
+
+
+def _d(*args):
+	for a in args:
+		sys.stderr.write('%s '%a)
+	sys.stderr.write('\n')
 
 class FileDoesNotExist(Exception):
 	def __init__(self, fname):
@@ -10,18 +20,65 @@ class FileDoesNotExist(Exception):
 
 
 class Factory:
+	roads_ = {}
+	networks_ = {}
 	def __init__(self, root_dir, base):
+		_d('Factory',root_dir, len(base))
 		self.base = base
+		self.get_kw_lists(root_dir)
+		for k in self.keywords:
+			try:
+				getattr(self, k['mode'])(k['name'], k['keywords'])
+			except Exception:
+				_d('Booo\n')
+				
+		_d(self.roads_)
 		
 	def get_kw_lists(self, rd):
-		pass
+		fl = glob.glob('%s/*'%rd)
+		self.keywords = []
+		for lf in fl:
+			fn = lf.split('/').pop()
+			_d('KF',fn)
+			if not os.path.exists(lf):
+				raise FileDoesNotExist(lf)
+			data_str = None
+			try:
+				f = open(lf)
+				data_str = f.read()
+			except IOError:
+				_d( 'Cannot open %s: expect missing data'%(lf,))
+			except Exception as e:
+				_d( 'Unhandle exception: %s'%(e,))
+			finally:
+				f.close()
+			if data_str:
+				parts = fn.split('_')
+				self.keywords.append({'name':parts[0],'mode':parts[1],'keywords':data_str.splitlines()})
+				
+				
+	def roads(self, name, kws):
+		_d('roads',name)
+		self.roads_[name] = []
+		for kw in kws:
+			current_ref = []
+			for item in self.base:
+				try:
+					getattr(self, 'roads_%s'%item['type'])(item, kw, current_ref)
+				except:
+					pass #_d('reference.Factory.%s() does not exists\n'%item['type'])
+			self.roads_[name].append(current_ref)
+				
+	
+	def roads_mail(self, item, kw, cr):
+		kwl = kw.split(',')
+		for k in kwl:
+			sk = k.strip()
+			ret = re.search(sk, item['text'], flags=re.IGNORECASE)
+			if  ret:
+				_d('roads_mail',item['id'],sk)
+				cr.append({'id':item['id'], 'key': sk})
+			#else:
+				#_d(item['id'],sk,ret,len(item['text']))
 		
-	#def mail(self):
-		## test with author name
-		#aname = self.doc['author']
-		#self.doc['ref'] = {'author':[]}
-		#for m in self.base:
-			#if m['type'] == 'mail' and not m['id'] == self.doc['id']:
-				#if m['author'] == aname:
-					#self.doc['ref']['author'].append('mail:%d' % m['id'])
 	
