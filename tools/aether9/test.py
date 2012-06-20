@@ -52,6 +52,7 @@ def main():
 	for i in items:
 		if i['type'] == 'image':
 			images.append(i)
+	
 	images.sort(key=lambda x:x['date'])
 			
 	for r,d,f in os.walk(args.rootdir):

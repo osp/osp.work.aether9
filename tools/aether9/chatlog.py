@@ -113,27 +113,29 @@ class SkypeParser(HTMLParser):
 			pass
 		
 class Reader:
-	def __init__(self, filename, images = [], delta_prep = 1, delta_perf = 10):
-		
+	def __init__(self, filename, images = [], delta = 120):
 		self.chat = []
 		if filename.endswith('html'):
 			sp = SkypeParser()
 			sp.start(filename)
-			t_delta = datetime.timedelta(delta_prep,0,0)
+			t_delta = datetime.timedelta(0,delta,0)
 			c_len = len(sp.chat)
 			c_idx = 0
+			tmp = []
 			in_flag = False
 			for im in images:
-				for c in xrange(c_idx, c_len):
-					itvl = self.abs_itvl(im['date'], sp.chat[c]['date'])
-					#sys.stderr.write(' %s \t %s\n'%(itvl,itvl < t_delta))
+				for c in range(0, c_len):
+					itvl = self.abs_itvl(sp.chat[c]['date'], im['date'])
+					#sys.stderr.write('[%s][%d] %s \t %s\n'%(filename, c, itvl,itvl < t_delta))
 					if itvl < t_delta:
 						in_flag = True
-						self.chat.append(sp.chat[c])
+						if c not in tmp:
+							tmp.append(c)
 					elif in_flag:
 						in_flag = False
 						break
-				c_idx = c 
+			for i in tmp:
+				self.chat.append(sp.chat[i])
 		
 	def abs_itvl(self, a, b):
 		if a < b:
@@ -151,7 +153,7 @@ class Writer:
 		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
 		esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.text)
 		ret = []
-		ret.append('\\subject[chat:%d]{%d}'%(self.id,self.id))
+		ret.append('\\section[chat:%d]{%d}'%(self.id,self.id))
 		ret.append('\\it{%s /%s/} '%(self.author, self.date.strftime('%d.%m.%Y')))
 		ret.append('\\tf{%s}'%(esc_text,))
 		ret.append('\n')
