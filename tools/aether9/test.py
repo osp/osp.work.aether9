@@ -59,8 +59,12 @@ def main():
 	
 	# images	
 	for r,d,f in os.walk(args.rootdir):
-		reg = fnmatch.translate('*.{jpg,png}')
+		files = []
 		for fn2 in fnmatch.filter(f,'*.jpg'):
+			files.append(fn2)
+		for fn2 in fnmatch.filter(f,'*.pnf'):
+			files.append(fn2)
+		for fn2 in files:
 			sys.stderr.write('Processing %s , %s\n'%(r,fn2))
 			fp = os.path.join(r,fn2)
 			try:
@@ -79,6 +83,10 @@ def main():
 			
 	for r,d,f in os.walk(args.rootdir):
 		for fn2 in fnmatch.filter(f,'*chat*.html'):
+			files.append(fn2)
+		for fn2 in fnmatch.filter(f,'*chat*.txt'):
+			files.append(fn2)
+		for fn2 in files:
 			sys.stderr.write('Processing %s , %s\n'%(r,fn2))
 			fp = os.path.join(r,fn2)
 			cl = chatlog.Reader(fp, images)

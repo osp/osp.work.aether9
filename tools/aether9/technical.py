@@ -41,4 +41,4 @@ class Writer (mail.Writer):
 		ret.append('%s\n\n%s'%( self.author, self.date.strftime('%d.%m.%Y') ))
 		ret.append('\\stylemail')
 		ret.append(esc_text)
-		return '\n'.join(ret)
+		return '\n\n'.join(ret)

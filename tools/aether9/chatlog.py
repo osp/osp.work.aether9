@@ -16,6 +16,31 @@ def _d(*args):
 		sys.stderr.write('%s '%a)
 	sys.stderr.write('\n')
 
+class XChatParser:
+	def __init__(self, fn):
+		f = open(fn)
+		data_str = f.read()
+		self.chat = []
+		self.base
+		data = data_str.splitlines()
+		
+		for d in data:
+			s0 = d.split('<')
+			if len(s0) == 1:
+				if d.startswith('**** BEGIN'):
+					self.decode_start(d)
+			else:
+				s1 = '%d %s'%(self.start_date.year,s[0])
+				dt = datetime.datetime.strptime(s1,'%Y %b %d %H:%M:%S')
+				s2 = s0.split('>')
+				author = s2[0]
+				t = s2[-1]
+				self.chat.append({'date':dt, 'author':author, 'text':t})
+				
+		
+	def decode_start(self, l):
+		pat = '**** BEGIN LOGGING AT %a %b %d %H:%M:%S %Y'
+		self.start_date = datetime.datetime.strptime(data, pat)
 
 # create a subclass and override the handler methods
 class SkypeParser(HTMLParser):
@@ -123,29 +148,33 @@ class SkypeParser(HTMLParser):
 class Reader:
 	def __init__(self, filename, images = [], delta = 120):
 		self.chat = []
+		sp = None
 		if filename.endswith('html'):
 			sp = SkypeParser()
 			sp.start(filename)
-			t_delta = datetime.timedelta(0,delta,0)
-			c_len = len(sp.chat)
-			c_idx = 0
-			tmp = []
-			in_flag = False
-			for im in images:
-				for c in range(0, c_len):
-					itvl = self.abs_itvl(sp.chat[c]['date'], im['date'])
-					#sys.stderr.write('[%s][%d] %s \t %s\n'%(filename, c, itvl,itvl < t_delta))
-					
-					if itvl < t_delta:
-						in_flag = True
-						if c not in tmp:
-							_d(filename,c,sp.chat[c]['text'])
-							tmp.append(c)
-					elif in_flag:
-						in_flag = False
-						break
-			for i in tmp:
-				self.chat.append(sp.chat[i])
+		else:
+			sp = XChatParser(filename)
+		
+		t_delta = datetime.timedelta(0,delta,0)
+		c_len = len(sp.chat)
+		c_idx = 0
+		tmp = []
+		in_flag = False
+		for im in images:
+			for c in range(0, c_len):
+				itvl = self.abs_itvl(sp.chat[c]['date'], im['date'])
+				#sys.stderr.write('[%s][%d] %s \t %s\n'%(filename, c, itvl,itvl < t_delta))
+				
+				if itvl < t_delta:
+					in_flag = True
+					if c not in tmp:
+						#_d(filename,c,sp.chat[c]['text'])
+						tmp.append(c)
+				elif in_flag:
+					in_flag = False
+					break
+		for i in tmp:
+			self.chat.append(sp.chat[i])
 		
 	def abs_itvl(self, a, b):
 		if a < b:
