@@ -3,11 +3,19 @@ chatlog.Reader
 chatlog.Writer
 """
 
+
 from HTMLParser import HTMLParser
 import time
 import datetime
 import sys
 import re
+
+
+def _d(*args):
+	for a in args:
+		sys.stderr.write('%s '%a)
+	sys.stderr.write('\n')
+
 
 # create a subclass and override the handler methods
 class SkypeParser(HTMLParser):
@@ -127,9 +135,11 @@ class Reader:
 				for c in range(0, c_len):
 					itvl = self.abs_itvl(sp.chat[c]['date'], im['date'])
 					#sys.stderr.write('[%s][%d] %s \t %s\n'%(filename, c, itvl,itvl < t_delta))
+					
 					if itvl < t_delta:
 						in_flag = True
 						if c not in tmp:
+							_d(filename,c,sp.chat[c]['text'])
 							tmp.append(c)
 					elif in_flag:
 						in_flag = False

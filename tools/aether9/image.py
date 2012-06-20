@@ -11,6 +11,8 @@ from datetime import datetime
 from PIL import Image
 from math import ceil
 import sys
+import md5
+import base64
 
 class FileDoesNotExist(Exception):
 	def __init__(self, fname):
@@ -123,12 +125,19 @@ class Writer:
 			
 			esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.filename)
 			imgpts = [esc_text]
+			md = md5.new()
+			md.update(esc_text)
+			mds = base64.b64encode(md.digest())
 			
+			options = []
+			#options.append('')
 			if width <> False:
-				imgpts.append ('width=%s' % width)
-				imgpts.append ('factor=max')
+				options.append ('width=%s' % width)
+				#options.append ('factor=max')
 			try:
-				buff = '\n\\placefigure[%s]{%s}{{\\externalfigure[%s]}}' % (place, caption, ']['.join(imgpts))
+				#buff = '\n\\placefigure[%s]{%s}{{\\externalfigure[%s]}}' % (place, caption, ']['.join(imgpts))
+				buff += '\\useexternalfigure[%s][%s][%s]'%(mds,esc_text,','.join(options))
+				buff += '\\hbox {\\externalfigure[%s]}' % (esc_text, )
 			except Exception as e:
 				#sys.stderr.write('%s\n'%e)
 				pass
