@@ -52,8 +52,8 @@
     % Indented block
     \setupnarrower[left=3mm, right=0mm, middle=8mm]
     % Folio
-     \setuppagenumber[number=3]
-    \setuppagenumbering[location=footer, style={\setupbodyfont[karlaregular, 6pt]}] 
+     \setuppagenumber[number=1]
+    \setuppagenumbering[alternative=doublesided, location=footer, style={\setupbodyfont[karlaregular, 6pt]}] 
 % }}}
 
 % LOAD FONTS {{{
@@ -112,27 +112,26 @@
 % }}}
 
 % SECTIONS AND HEADINGS {{{
-
-    % NUMBERED SECTIONS // used for table of contents
        
+%        % PIECES NUM 
+%         \setuphead[piece][
+%             ownnumber=yes,
+%             align={nothyphenated, verytolerant, center},
+%             before=\nowhitespace,
+%             after=\nowhitespace,
+%             style={\tfd \setupbodyfont[karlaregular]},
+%             ]
+
+        % PIECES 
         \setuphead[section][
-            number=no,
+            ownnumber=yes,
             align={nothyphenated, verytolerant, center},
-            page=yes,
+%             page=yes,
             after=\nowhitespace,
             style={\tfd \cap \setupbodyfont[crimsontext]},
-            %distance=0pt, alternative=text, command=\InMargin, % calls function to put in margin
             ]
       
-       % PIECES NUM 
-        \definehead[piece][subject]
-        \setuphead[piece][
-            number=no,
-            align={nothyphenated, verytolerant, center},
-            before=\nowhitespace,
-            after=\nowhitespace,
-            style={\tfd \setupbodyfont[karlaregular]},
-            ]
+
 
 
 % }}}
@@ -145,7 +144,7 @@
     % INFOS
     \defineparagraphs[infos][n=1] 
     \setupparagraphs[infos][1][
-        style={\setupbodyfont[karlaregular, 7pt]},
+        style={\setupbodyfont[karlaregular, 8pt]},
         after=\nowhitespace,
         ] 
 

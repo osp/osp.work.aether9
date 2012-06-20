@@ -95,9 +95,9 @@ class Writer:
 			pass
 		
 		ret = []
-		ret.append('\\subject[mail:%d]{%d - %s}{'%(self.id,self.id,self.title))
-		ret.append('\\it{%s\\high{%s} --- %s}\n'%(self.author, ','.join(aref), self.date.strftime('%d.%m.%Y')))
-		ret.append('\\tf{%s}'%(esc_text,))
+		ret.append('\\section[mail:%d]{%d}{%s}{'%(self.id,self.id,self.title))
+		ret.append('\\startinfos %s --- %s\n\\stopinfos\n'%(self.author, self.date.strftime('%d.%m.%Y')))
+		ret.append('\\startmail %s\\stopmail\n'%(esc_text,))
 		ret.append('}')
 		return '\n'.join(ret)
 		
