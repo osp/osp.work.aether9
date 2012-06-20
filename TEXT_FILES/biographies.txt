@@ -61,7 +61,8 @@ URL: http://n3krozoft.com
 
 NAME: Alejo Duque (Colombia/CH)
 NICK: alejo, aleij
-BIO: Alejo Duque is a Colombian theorist, media activist, sound artist, frequency analyst, data streamer and satellite tracker based in Switzerland. An active member of networks such as Bricolabs, [k.0_lab] and dorkbot, his research focuses on streams for networked communities and outernets packet exchanges.
+BIO: Graduated from the school of fine arts of Medellin, Alejo deeply involved in networks such as dorkbot-medellin [k.0_lab] and labSurlab. His main interests deal with satellites, radio waves, streaming media, and their crossing point with open source hardware and software. He is a researcher at the Locus Sonus Laboratory in the south of France, and pursues a PhD at the European Graduate School.
+URL: http://dorkbot.org/dorkbotmde/rebot/?TRUeQUE
 
 NAME: Vinny Bhagat (India/Australia)
 BIO: Vinny Bhagat aka Shivnakaun is a sound artist and musician researching in the field of computational electro acoustic music and audio-visual art and technology. His work explores digital sound generative and synthesis methods , physical interaction and models for performance and composition. He is deeply interested in spontaneous art / music performances, distributed online performances and the connection between sound and moving image in a live performance context. Born in New Delhi – India, he studied Music Technology and Electronic Music at The Elder Conservatorium Of Music.
