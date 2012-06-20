@@ -83,22 +83,27 @@ class Writer:
 	def __init__(self, reader):
 		self.image = reader
 
-	def as_string(self, width='\\getvariables[pageprops][columnwidth]', place='here', caption='none'):
+	def as_string(self, width='\\getvariable[pageprops][columnwidth]', place='here', caption='none'):
+		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
 		buff = ''
 		if (self.fullpage == True):
 			parts = self.splitImage ()
+			esc_text0 = re.sub(et_pat, getattr(self, 'escape_tex') , parts[0])
+			esc_text1 = re.sub(et_pat, getattr(self, 'escape_tex') , parts[1])
 			buff += '\n\\stopcolumnset'
 			buff += '\n\\page[left]'
 			buff += '\n\\setuplayout[full]'
-			buff += '\n\\placefigure[left,top]{{none}}{{\\externalfigure[{0}][width=165mm,height=225mm]}}'.format (parts[0])
-			buff += '\n\\placefigure[left,top]{{none}}{{\\externalfigure[{0}][width=165mm,height=225mm]}}'.format (parts[1])
+			buff += '\n\\placefigure[left,top]{{none}}{{\\externalfigure[{0}][width=165mm,height=225mm]}}'.format (esc_text0)
+			buff += '\n\\placefigure[left,top]{{none}}{{\\externalfigure[{0}][width=165mm,height=225mm]}}'.format (esc_text1)
 			buff += '\n\\page[left]'
 			buff += '\n\\setuplayout[reset]'
 			buff += '\n\\startcolumnset[duo]'
 
 		else:
-			imgpts = [self.filename]
 			#sys.stderr.write('[%s] [%s] [%s]\n'%(place, imgpts, caption))
+			
+			esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.filename)
+			imgpts = [esc_text]
 			
 			if width <> False:
 				imgpts.append ('width=%s' % width)
