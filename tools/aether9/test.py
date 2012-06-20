@@ -8,6 +8,8 @@ import os
 import fnmatch
 import chatlog
 import image
+import general
+import technical
 
 
 def main():
@@ -34,6 +36,26 @@ def main():
 				items.append(m)
 			sys.stderr.write(' => %d\n'%(cm,))
 		
+	
+	# general discussion
+	fp = os.path.join (args.rootdir, '..', 'TEXT_FILES', 'emails-general-discussions.txt')
+	sys.stderr.write('Processing %s \n'%(fp))
+	ml = general.Reader (fp)
+	cm = 0
+	for m in ml.data['thread']:
+		cm +=1
+		items.append(m)
+	sys.stderr.write(' => %d\n'%(cm,))
+	
+	# technical discussion
+	fp = os.path.join (args.rootdir, '..', 'TEXT_FILES', 'emails-technical-discussions.txt')
+	sys.stderr.write('Processing %s \n'%(fp))
+	ml = technical.Reader (fp)
+	cm = 0
+	for m in ml.data['thread']:
+		cm +=1
+		items.append(m)
+	sys.stderr.write(' => %d\n'%(cm,))
 	
 	# images	
 	for r,d,f in os.walk(args.rootdir):
