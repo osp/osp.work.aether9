@@ -10,6 +10,7 @@ import time
 from datetime import datetime
 from PIL import Image
 from math import ceil
+import sys
 
 class FileDoesNotExist(Exception):
 	def __init__(self, fname):
@@ -42,6 +43,7 @@ class Reader:
 		#self.creationtime = self.get_creationtime (im)
 		self.img['date'] = self.get_creationtime_fromfilename (filename)
 		self.img['fullpage'] = self.is_fullpage ()
+		self.img['type'] = 'image'
 
 	def get_creationtime_fromfilename (self, filename):
 		tail = opath.split (filename)[1]
@@ -82,20 +84,26 @@ class Writer:
 	def __init__(self, reader):
 		self.image = reader
 
-	def as_string(self,width=False, place='left', caption='none'):
+	def as_string(self, width=False, place='left', caption='none'):
+		buff = ''
 		if (self.fullpage == True):
 			parts = self.splitImage ()
-			buff = '\n\page[left]'
-			buff += '\n\placefigure[left,top]{{none}}{{\externalfigure[{0}][width=16.5cm]}}'.format (parts[0])
+			buff += '\n\page[left]'
+			buff += '\n\placefigure[left,top]{{}}{{\externalfigure[{0}][width=16.5cm]}}'.format (parts[0])
 			#buff += '\n\page[right]'
-			buff += '\n\placefigure[left,top]{{none}}{{\externalfigure[{0}][width=16.5cm]}}'.format (parts[1])
+			buff += '\n\placefigure[left,top]{{}}{{\externalfigure[{0}][width=16.5cm]}}'.format (parts[1])
 			buff += '\n\page[left]'
 		else:
 			imgpts = [self.filename]
+			#sys.stderr.write('[%s] [%s] [%s]\n'%(place, imgpts, caption))
+			
 			if width <> False:
 				imgpts.append (width)
-			
-			buff = '\n\placefigure[{0}]{{{1}}}{{\externalfigure[{2}]}}'.format (place, caption, ']['.join (imgpts))
+			try:
+				buff = '\n\\placefigure[%s]{%s}{{\\externalfigure[%s]}}' % (place, caption, ']['.join(imgpts))
+			except Exception as e:
+				#sys.stderr.write('%s\n'%e)
+				pass
 
 		return buff
 
@@ -110,7 +118,7 @@ class Writer:
 
 	def __getattr__(self, name):
 		try:
-			self.image[name]
+			return self.image[name]
 		except Exception:
 			raise AttributeError(name)
 
