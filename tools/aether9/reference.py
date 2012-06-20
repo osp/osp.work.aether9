@@ -42,6 +42,29 @@ class Factory:
 			_d('##',r,'##')
 			for p in self.roads_[r]:
 				_d(p[0]['key'], len(p))
+				
+	def lookup(sel, tid):
+		for i in self.base:
+			if i['id'] = tid:
+				return i
+		return None
+		
+	def output_roads(self):
+		rlen = len(self.roads_) 
+		for r in xrange(0,rlen):
+			current = self.roads_[r]
+			back = self.roads_[r-1]
+			forward = None
+			try:
+				forward = self.roads_[r+1]
+			except Exception:
+				forward = self.roads_[0]
+			
+			res = '\\styleroadback{%d}%s\\styleroadforward{%d}'%(back['id'],current['key'],forward['id'])
+			
+	
+	def output_networks(self):
+		pass
 		
 	def get_kw_lists(self, rd):
 		fl = glob.glob('%s/*'%rd)

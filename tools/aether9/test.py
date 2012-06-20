@@ -125,7 +125,7 @@ def main():
 		wr = globals()[items[i]['type']].Writer
 		writers.append(wr(items[i]))
 		
-	ref = reference.Factory('%s/nodes'%args.rootdir, items)
+	ref = reference.Factory('%s/nodes'%args.rootdir, [items])
 	
 	ret = []
 	
