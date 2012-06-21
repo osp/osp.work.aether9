@@ -138,7 +138,7 @@ class Writer:
 			try:
 				#buff = '\n\\placefigure[%s]{%s}{{\\externalfigure[%s]}}' % (place, caption, ']['.join(imgpts))
 				buff += '\\useexternalfigure[%s][%s]'%(mds,esc_text)
-				buff += '\\hbox {\\externalfigure[%s][%s]}' % (esc_text, ','.join(options))
+				buff += '\\hbox {\\externalfigure[%s][%s]}' % (mds, ','.join(options))
 			except Exception as e:
 				#sys.stderr.write('%s\n'%e)
 				pass

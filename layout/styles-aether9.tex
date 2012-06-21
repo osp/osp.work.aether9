@@ -61,6 +61,7 @@
 % }}}
 
 % LOAD FONTS {{{
+<<<<<<< HEAD
 \usemodule[simplefonts]
 
 \definesimplefont[crimbase][crimson][size=9pt] 
@@ -77,6 +78,8 @@
 \definesimplefont[crimTW][crimson][size=12pt] 
 
 
+=======
+>>>>>>> 606c0e10d872812330dce5df7b7fa237579a1ab9
 %     \starttypescript [serif] [crimsontext] 
 %         \definefontsynonym [Sans]            [name:crimsontext] [handling=pure]
 %     \stoptypescript
@@ -87,15 +90,12 @@
 %         \definefontsynonym [Mono]            [name:consolamono]
 %     \stoptypescript
 % 
-%     \definetypeface [crimsontext] [ss] [serif] [crimsontext]
-%     \definetypeface [karlaregular]  [ss] [sans]  [karlaregular]
-%     \definetypeface [consolamono]  [ss] [mono]  [consolamono]
 % }}}
 
 % TYPOGRAPHY {{{
-%     \setupbodyfont[crimsontext, ss, 9pt]
-%     \definebodyfontenvironment[default][a=1.5, b=1.75, c=2,d=3.4] % defines higher sizes of fonts 
-%     \setupinterlinespace[11pt] 
+    \setupbodyfont[crimsontext, rm, 9pt]
+    \definebodyfontenvironment[default][a=1.5, b=1.75, c=2,d=3.4] % defines higher sizes of fonts 
+    \setupinterlinespace[11pt] 
 %     \setupinteraction[state=start, color=black] % activate links
 %     \setupnote[footnote][location=text, way=bypage, numberconversion=set 2, align={hyphenated}]
 %     \setupnotedefinition[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
@@ -140,16 +140,6 @@
 % PARAGRAPHS {{{
 
 
-\def\styleref{%
-	\setupbodyfont[crimsontext, 9pt]
-	\setupinterlinespace[10.5pt] 
-	\color[black]
-	\definetextbackground[inbox][
-            framecolor=black,
-            background=,
-	    ]}
-
-% }}}
 \input piece
 \input mailtitle
 \input infos
