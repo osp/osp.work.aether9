@@ -61,25 +61,25 @@
 % }}}
 
 % LOAD FONTS {{{
-    \starttypescript [serif] [crimsontext] 
-        \definefontsynonym [Sans]            [name:crimsontext] [handling=pure]
-    \stoptypescript
-    \starttypescript [sans] [karlaregular] 
-        \definefontsynonym [Sans]            [name:karlaregular] [handling=pure]
-    \stoptypescript
-    \starttypescript [sans] [consolamono] 
-        \definefontsynonym [Mono]            [name:consolamono]
-    \stoptypescript
-
-    \definetypeface [crimsontext] [ss] [serif] [crimsontext]
+%     \starttypescript [serif] [crimsontext] 
+%         \definefontsynonym [Sans]            [name:crimsontext] [handling=pure]
+%     \stoptypescript
+%     \starttypescript [sans] [karlaregular] 
+%         \definefontsynonym [Sans]            [name:karlaregular] [handling=pure]
+%     \stoptypescript
+%     \starttypescript [sans] [consolamono] 
+%         \definefontsynonym [Mono]            [name:consolamono]
+%     \stoptypescript
+% 
+    \definetypeface [crimsontext] [rm] [serif] [crimsontext]
     \definetypeface [karlaregular]  [ss] [sans]  [karlaregular]
-    \definetypeface [consolamono]  [ss] [mono]  [consolamono]
+    \definetypeface [consolamono]  [tt] [mono]  [consolamono]
 % }}}
 
 % TYPOGRAPHY {{{
-%     \setupbodyfont[crimsontext, ss, 9pt]
-%     \definebodyfontenvironment[default][a=1.5, b=1.75, c=2,d=3.4] % defines higher sizes of fonts 
-%     \setupinterlinespace[11pt] 
+    \setupbodyfont[crimsontext, rm, 9pt]
+    \definebodyfontenvironment[default][a=1.5, b=1.75, c=2,d=3.4] % defines higher sizes of fonts 
+    \setupinterlinespace[11pt] 
 %     \setupinteraction[state=start, color=black] % activate links
 %     \setupnote[footnote][location=text, way=bypage, numberconversion=set 2, align={hyphenated}]
 %     \setupnotedefinition[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
@@ -124,16 +124,6 @@
 % PARAGRAPHS {{{
 
 
-\def\styleref{%
-	\setupbodyfont[crimsontext, 9pt]
-	\setupinterlinespace[10.5pt] 
-	\color[black]
-	\definetextbackground[inbox][
-            framecolor=black,
-            background=,
-	    ]}
-
-% }}}
 \input piece
 \input mailtitle
 \input infos
