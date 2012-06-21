@@ -156,6 +156,7 @@ def main():
 		f = open('aether_%s.tex'%(wrt,), 'w')
 		ret.append('\\startproduct aether_%s'%(wrt,))
 		ret.append('\\starttext')
+		ret.append('\\part[%s]{%s}'%(wrt,wrt))
 		ret.append('\\startcolumnset[duo]')
 		for w in writers[wrt]:
 			ret.append(w.as_string())
@@ -163,7 +164,7 @@ def main():
 		ret.append('\\stoptext')
 		ret.append('\\stopproduct')
 	
-		f.write( '\n'.join(ret) )
+		f.write( '\n\n'.join(ret) )
 		f.close()
 		
 	
