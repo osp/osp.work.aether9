@@ -1,9 +1,10 @@
-\def\stylechatinfos{%
+\def\stylechatinfo#1%
+{
 	\setupbodyfont[karlaregular, 8pt]
 	\setupinterlinespace[10pt] 
 	\setupalign[flushleft]
-	\setcharacterspacing[frenchpunctuation]
 	\defineblank[default][3mm]
 	\setuptolerance[verytolerant]
 	\color[black]
+	#1
 }

@@ -23,7 +23,9 @@ def main():
 	c = 0
 	
 	items = []
-	writers = []
+	writers = {}
+	for i in range(1900, 2100):
+		writers[i] = []
 	clogs = []
 	
 	# e-mails
@@ -133,25 +135,50 @@ def main():
 	
 	for i in range(len(items)):
 		items[i]['id'] = i
-		wr = globals()[items[i]['type']].Writer
-		writers.append(wr(items[i]))
 		
 	ref = reference.Factory('%s/nodes'%args.rootdir, [items])
 	
-	ret = []
+	for i in range(len(items)):
+		wr = globals()[items[i]['type']].Writer
+		writers[items[i]['date'].year].append(wr(items[i]))
+		
 	
+	
+	
+	
+	
+	products = []
+	for wrt in writers:
+		ret = []
+		if not writers[wrt]:
+			continue
+		products.append(wrt)
+		f = open('aether_%s.tex'%(wrt,), 'w')
+		ret.append('\\startproduct aether_%s'%(wrt,))
+		ret.append('\\starttext')
+		ret.append('\\startcolumnset[duo]')
+		for w in writers[wrt]:
+			ret.append(w.as_string())
+		ret.append('\\stopcolumnset')	
+		ret.append('\\stoptext')
+		ret.append('\\stopproduct')
+	
+		f.write( '\n'.join(ret) )
+		f.close()
+		
+	
+	fpr = []
+	fpr.append('\\startproject aether')
 	if args.style:
-		ret.append('\\input %s'%args.style)
+		fpr.append('\\environment %s'%args.style)
+	for p in products:
+		fpr.append('\\product aether_%s'%(p,))
+	fpr.append('\\stopproject')
 	
-	ret.append('\\starttext')
-	ret.append('\\startcolumnset[duo]')
-	for w in writers:
-		ret.append(w.as_string())
-	ret.append('\\stopcolumnset')	
-	ret.append('\\stoptext')
 	
-	print '\n'.join(ret)
-	
+	final_r = open('aether.tex', 'w')
+	final_r.write('\n'.join(fpr))
+	final_r.close
 	
 if __name__ == '__main__':
 	main()

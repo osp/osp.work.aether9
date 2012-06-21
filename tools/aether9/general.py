@@ -21,14 +21,9 @@ class Writer (mail.Writer):
 		
 	def as_string(self):
 		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
-		esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.text)
-		aref = []
-		try:
-			for r in self.ref['author']:
-				#aref.append('\\in{section}[%s](p.\\at{page}[%s])'%(r,r))
-				aref.append('\n%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
-		except:
-			pass
+		esc_text = self.text
+		if 'tex_escaped' not in self.mail:
+			esc_text = self.escape_tex(self.text)
 		
 		ret = []
 		
