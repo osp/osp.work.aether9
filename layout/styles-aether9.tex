@@ -1,8 +1,11 @@
-    \setvariables[pageprops][columnwidth=63mm]
+\startenvironment styles-aether9
+  
+  \setvariables[pageprops][columnwidth=63mm]
 % DEBUG {{{
     % uncomment those 2 lines to show the layout and the grid
 %     \showframe 
 %     \showgrid
+\tracingstats=2
 % }}}}
 
 % UTF-8 {{{
@@ -74,10 +77,10 @@
 % }}}
 
 % TYPOGRAPHY {{{
-    \setupbodyfont[crimsontext, ss, 9pt]
-    \definebodyfontenvironment[default][a=1.5, b=1.75, c=2,d=3.4] % defines higher sizes of fonts 
-    \setupinterlinespace[11pt] 
-    \setupinteraction[state=start, color=black] % activate links
+%     \setupbodyfont[crimsontext, ss, 9pt]
+%     \definebodyfontenvironment[default][a=1.5, b=1.75, c=2,d=3.4] % defines higher sizes of fonts 
+%     \setupinterlinespace[11pt] 
+%     \setupinteraction[state=start, color=black] % activate links
 %     \setupnote[footnote][location=text, way=bypage, numberconversion=set 2, align={hyphenated}]
 %     \setupnotedefinition[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
 % }}}
@@ -94,7 +97,7 @@
 %     \clubpenalty=8000 % tries to avoid widows
     \doublehyphendemerits=1000000 % tries to avoid consecutive hyphenations
     %\setupfonthandling [hz] [min=50,max=50,step=10]
-    \setupalign[hz, hanging]
+%     \setupalign[hz, hanging]
 % }}}
 
 % GRAPHIC ELEMENTS {{{
@@ -150,4 +153,4 @@
 
 \input perfo
 
-
+\stopenvironment

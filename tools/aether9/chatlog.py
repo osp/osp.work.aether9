@@ -202,12 +202,9 @@ class Writer:
 		#ret.append('\\tf{%s}'%(esc_text,))
 		#ret.append('\n')
 		
-		ret.append('\\stylechatpiece')
-		ret.append('%s'%self.id)
-		ret.append('\\stylechatinfo')
-		ret.append('%s %s'%(self.author, self.date.strftime('%H:%M')))
-		ret.append('\\stylechat')
-		ret.append(esc_text)
+		ret.append('\\stylechatpiece{%s}'%self.id)
+		ret.append('\\stylechatinfo{%s %s}'%(self.author, self.date.strftime('%H:%M')))
+		ret.append('\\stylechat{ %s }'%esc_text)
 		
 		return '\n\n'.join(ret)
 		

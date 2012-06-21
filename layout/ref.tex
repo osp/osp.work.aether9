@@ -1,4 +1,4 @@
-\def\stylerefnetwork{%
+\def\stylerefnetwork#1{%
 	\setupbodyfont[karlaregular, 5pt]
 	\setupinterlinespace[7pt] 
 	\setupalign[flushleft]
@@ -6,9 +6,10 @@
 	\defineblank[default][0mm]
 	\setuptolerance[verytolerant]s 
 	\color[black]
+	#1
 }
 
-\def\stylerefroadback{%
+\def\stylerefroadback#1{%
 	\setupbodyfont[karlaregular, 5pt]
 	\setupinterlinespace[7pt] 
 	\setupalign[flushleft]
@@ -16,9 +17,10 @@
 	\defineblank[default][0mm]
 	\setuptolerance[verytolerant]s 
 	\color[black]
+	#1
 }
 
-\def\stylerefroadforward{%
+\def\stylerefroadforward#1{%
 	\setupbodyfont[karlaregular, 5pt]
 	\setupinterlinespace[7pt] 
 	\setupalign[flushleft]
@@ -26,4 +28,5 @@
 	\defineblank[default][0mm]
 	\setuptolerance[verytolerant]s 
 	\color[black]
+	#1
 }

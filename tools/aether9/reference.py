@@ -61,20 +61,30 @@ class Factory:
 			for road in self.roads_[name]:
 				rlen = len(road) 
 				_d('\nReference road:', name)
-				for r in xrange(0,rlen):
-					sys.stderr.write('%d '%r)
-					current = road[r]
-					back = road[r-1]
-					forward = None
-					try:
-						forward = road[r+1]
-					except Exception:
-						forward = road[0]
-					#_d(current)
-					res = '\\styleroadback{%d}%s\\styleroadforward{%d}'%(back['id'],current['key'],forward['id'])
-					bid = self.lookup_idx(current['id'])
-					self.base[0][bid]['text'] = self.escape_tex(self.base[0][bid]['text']).replace(current['key'], res, 1)
-					self.base[0][bid]['tex_escaped'] = True
+				if road and road[0]:
+					for r in xrange(0,rlen):
+						sys.stderr.write('%d '%r)
+						current = road[r]
+						
+						back = road[r-1]
+						forward = None
+						try:
+							forward = road[r+1]
+						except Exception:
+							forward = road[0]
+						#_d(current)
+						res = '\\stylerefroadback{%d}%s\\stylerefroadforward{%d}'%(back['id'],current['key'],forward['id'])
+						bid = self.lookup_idx(current['id'])
+						txt = ''
+						if 'tex_escaped' not in self.base[0][bid]:
+							txt = self.escape_tex(self.base[0][bid]['text']).replace(current['key'], res, 1)
+						else:
+							txt = self.base[0][bid]['text']
+						#_d(txt)
+						self.base[0][bid]['text'] = txt
+						self.base[0][bid]['tex_escaped'] = True
+				
+		#sys.exit()
 			
 	
 	def output_networks(self):
