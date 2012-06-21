@@ -92,11 +92,11 @@ class Writer:
 		ret = []
 		ret.append('\\startcolumnsetspan[wide]')
 		ret.append('\\stylepiece')
-		ret.append('\cap{%s}' % '%d'%self.id)
+		ret.append('\\cap{%s}' % '%d'%self.id)
 		ret.append('\\styleinfos')
-		ret.append('\cap{%s}' % '%s\n\n%s\n\n%s\n\n%s'%(self.title,self.event,self.location,'\n'.join(self.performers.split())))
+		ret.append('\\cap{%s}' % '%s\n\n%s\n\n%s\n\n%s'%(self.title,self.event,self.location,'\n'.join(self.performers.split())))
 		ret.append('\\styleperfo')
-		ret.append('\cap{%s}' % self.description)
+		ret.append('\\cap{%s}' % self.description)
 		ret.append('\\stopcolumnsetspan')
 		return '%s' % '\n'.join(ret)
 		
