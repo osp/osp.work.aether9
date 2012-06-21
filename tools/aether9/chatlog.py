@@ -204,7 +204,7 @@ class Writer:
 		
 		ret.append('\\stylechatpiece{%s}'%self.id)
 		ret.append('\\stylechatinfo{%s %s}'%(self.author, self.date.strftime('%H:%M')))
-		ret.append('\\stylechat{ %s }'%esc_text)
+		ret.append('\\stylechat{%s}'%(esc_text))
 		
 		return '\n\n'.join(ret)
 		
