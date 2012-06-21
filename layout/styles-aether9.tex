@@ -61,19 +61,35 @@
 % }}}
 
 % LOAD FONTS {{{
-    \starttypescript [serif] [crimsontext] 
-        \definefontsynonym [Sans]            [name:crimsontext] [handling=pure]
-    \stoptypescript
-    \starttypescript [sans] [karlaregular] 
-        \definefontsynonym [Sans]            [name:karlaregular] [handling=pure]
-    \stoptypescript
-    \starttypescript [sans] [consolamono] 
-        \definefontsynonym [Mono]            [name:consolamono]
-    \stoptypescript
+\usemodule[simplefonts]
 
-    \definetypeface [crimsontext] [ss] [serif] [crimsontext]
-    \definetypeface [karlaregular]  [ss] [sans]  [karlaregular]
-    \definetypeface [consolamono]  [ss] [mono]  [consolamono]
+\definesimplefont[crimbase][crimson][size=9pt] 
+\definesimplefont[crimmedium][crimson][size=12pt] 
+\definesimplefont[crimbig][crimson][size=21pt] 
+\definesimplefont[kasmall][karla][size=8pt] 
+\definesimplefont[kabase][karla][size=12pt] 
+\definesimplefont[kaquin][karla][size=15pt] 
+\definesimplefont[kafat][karla][size=27pt] 
+\definesimplefont[consolbase][consolamono][size=12pt] 
+
+
+
+\definesimplefont[crimTW][crimson][size=12pt] 
+
+
+%     \starttypescript [serif] [crimsontext] 
+%         \definefontsynonym [Sans]            [name:crimsontext] [handling=pure]
+%     \stoptypescript
+%     \starttypescript [sans] [karlaregular] 
+%         \definefontsynonym [Sans]            [name:karlaregular] [handling=pure]
+%     \stoptypescript
+%     \starttypescript [sans] [consolamono] 
+%         \definefontsynonym [Mono]            [name:consolamono]
+%     \stoptypescript
+% 
+%     \definetypeface [crimsontext] [ss] [serif] [crimsontext]
+%     \definetypeface [karlaregular]  [ss] [sans]  [karlaregular]
+%     \definetypeface [consolamono]  [ss] [mono]  [consolamono]
 % }}}
 
 % TYPOGRAPHY {{{
