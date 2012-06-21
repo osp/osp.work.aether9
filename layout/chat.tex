@@ -1,10 +1,24 @@
 \def\stylechat#1{%
-% 	\setupbodyfont[karlaregular, 12pt]
-% 	\setupinterlinespace[13.5pt] 
-% 	\setupalign[flushleft]
-% 	\setcharacterspacing[frenchpunctuation]
-% 	\defineblank[default][3mm]
-% 	\setuptolerance[verytolerant]
-% 	\color[black]
+	\setupbodyfont[karlaregular, 12pt]
+	\setupinterlinespace[13.5pt] 
+	\setupalign[flushleft]
+	\defineblank[default][3mm]
+	#1
+}
+
+\def\stylechatpiece#1{%
+	\setupbodyfont[karlaregular, 15pt]
+	\setupinterlinespace[16pt] 
+	\setupalign[center]
+	\setupwhitespace[10mm]
+	#1
+}
+
+\def\stylechatinfo#1%
+{
+	\setupbodyfont[karlaregular, 8pt]
+	\setupinterlinespace[10pt] 
+	\setupalign[flushleft]
+	\defineblank[default][3mm]
 	#1
 }
