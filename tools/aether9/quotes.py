@@ -84,7 +84,7 @@ class Writer:
 		ret.append('\\stylequote')
 		ret.append(esc_text)
 		ret.append('\\stopcolumnsetspan')
-		return '\n'.join(ret)
+		return '\n\n'.join(ret)
 		
 	def escape_tex(self, pt):
 		r = pt.group()
