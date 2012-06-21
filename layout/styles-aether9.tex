@@ -1,7 +1,7 @@
 \startenvironment styles-aether9
   
   \setvariables[pageprops][columnwidth=63mm]
-  \showframe[text]
+%   \showframe[text]
 
 
 % LANGUAGE {{{
@@ -34,11 +34,10 @@
 	footer=0mm,
 	leftmargin=0mm,
 	rightmargin=0mm,
-        width=138mm,
-        height=225mm,
-        grid=yes
+        width=165mm,
+        height=255mm
 	]
-    \definecolumnset[duo][n=2, distance=12mm, width=\getvariable{pageprops}{columnwidth}]
+    \definecolumnset[duo][n=2, balance=no, distance=12mm, width=\getvariable{pageprops}{columnwidth}]
     \definecolumnsetspan[wide][n=2]
 %     \definepagebreak[emptyodd][yes,header,footer, odd]
 %     \definepagebreak[emptyeven][yes,header,footer, even]

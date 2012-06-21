@@ -1,23 +1,32 @@
-\def\stylechat#1%
+% \setupinmargin[location=both,align=left,distance=16pt]
+\usemodule[lettrine]
+\def\chatbox#1#2%
 {
-	\setupinterlinespace[13.5pt] 
-	\setupalign[flushleft]
-	\defineblank[default][3mm]
-	\kabase{#1}
-}
-
-\def\stylechatpiece#1%
-{
-	\setupinterlinespace[16pt] 
-	\setupalign[center]
-	\setupwhitespace[10mm]
-	\kaquin{#1}
+	\hbox{
+		\setupwhitespace[0pt]
+		\hbox to 50pt{#1}\vbox{#2}
+	}
 }
 
 \def\stylechatinfo#1%
 {
-	\setupinterlinespace[10pt] 
+	\setupwhitespace[2pt]
+	\setupinterlinespace[line=10pt] 
 	\setupalign[flushleft]
-	\defineblank[default][3mm]
 	\kasmall{#1}
 }
+\def\stylechatpiece#1%
+{
+
+	\kafat{#1}
+}
+
+
+\def\stylechat#1%
+{
+	\setupwhitespace[0pt]
+	\setupinterlinespace[line=13.5pt] 
+	\setupalign[flushleft]
+	\kabase{#1}
+}
+

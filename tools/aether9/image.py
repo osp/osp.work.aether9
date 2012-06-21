@@ -114,8 +114,8 @@ class Writer:
 			buff += '\n\\stopcolumnset'
 			buff += '\n\\page[left]'
 			buff += '\n\\setuplayout[full]'
-			buff += '\n\\placefigure[left,top]{{none}}{{\\externalfigure[{0}][width=165mm,height=225mm]}}'.format (esc_text0)
-			buff += '\n\\placefigure[left,top]{{none}}{{\\externalfigure[{0}][width=165mm,height=225mm]}}'.format (esc_text1)
+			buff += '\n\\placefigure[here]{%d}{\\externalfigure[%s][width=165mm,height=255mm]}'%(self.id, esc_text0)
+			buff += '\n\\placefigure[here]{none}{\\externalfigure[%s][width=165mm,height=255mm]}'%(esc_text1)
 			buff += '\n\\page[left]'
 			buff += '\n\\setuplayout[reset]'
 			buff += '\n\\startcolumnset[duo]'
