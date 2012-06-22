@@ -1,32 +1,14 @@
-\def\stylerefnetwork#1{%
-	\setupbodyfont[karlaregular, 5pt]
-	\setupinterlinespace[7pt] 
-	\setupalign[flushleft]
-	\setcharacterspacing[frenchpunctuation]
-	\defineblank[default][0mm]
-	\setuptolerance[verytolerant]s 
-	\color[black]
+\def\stylerefnetwork#1%
+{
 	#1
 }
 
-\def\stylerefroadback#1{%
-	\setupbodyfont[karlaregular, 5pt]
-	\setupinterlinespace[7pt] 
-	\setupalign[flushleft]
-	\setcharacterspacing[frenchpunctuation]
-	\defineblank[default][0mm]
-	\setuptolerance[verytolerant]s 
-	\color[black]
-	#1
+\def\stylerefroadback#1%
+{
+	{\kafat << #1 }
 }
 
-\def\stylerefroadforward#1{%
-	\setupbodyfont[karlaregular, 5pt]
-	\setupinterlinespace[7pt] 
-	\setupalign[flushleft]
-	\setcharacterspacing[frenchpunctuation]
-	\defineblank[default][0mm]
-	\setuptolerance[verytolerant]s 
-	\color[black]
-	#1
+\def\stylerefroadforward#1%
+{
+	{\kafat #1 >> }
 }

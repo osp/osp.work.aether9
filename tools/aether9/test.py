@@ -157,10 +157,10 @@ def main():
 		ret.append('\\startproduct aether_%s'%(wrt,))
 		ret.append('\\starttext')
 		ret.append('\\part[%s]{%s}'%(wrt,wrt))
-		ret.append('\\startcolumnset[duo]')
+		#ret.append('\\startcolumnset[duo]')
 		for w in writers[wrt]:
 			ret.append(w.as_string())
-		ret.append('\\stopcolumnset')	
+		#ret.append('\\stopcolumnset')	
 		ret.append('\\stoptext')
 		ret.append('\\stopproduct')
 	

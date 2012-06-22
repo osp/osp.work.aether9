@@ -108,6 +108,7 @@ class Writer:
 		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
 		buff = ''
 		if (self.fullpage == True):
+			return buff
 			parts = self.splitImage ()
 			esc_text0 = re.sub(et_pat, getattr(self, 'escape_tex') , parts[0])
 			esc_text1 = re.sub(et_pat, getattr(self, 'escape_tex') , parts[1])
