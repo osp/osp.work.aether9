@@ -1,17 +1,8 @@
 \startenvironment styles-aether9
   
   \setvariables[pageprops][columnwidth=63mm]
-% DEBUG {{{
-    % uncomment those 2 lines to show the layout and the grid
-%     \showframe 
-%     \showgrid
-\tracingstats=2
-% }}}}
+%   \showframe[text]
 
-% UTF-8 {{{
-    \enableregime[utf-8]              % Enters unicode 
-    %\setupencoding[default=uc]       % Uses unicode fonts only
-% }}}
 
 % LANGUAGE {{{
     \setuplanguage[en][
@@ -24,13 +15,14 @@
 
 % LAYOUT {{{
     % General layout
-    \definepapersize[sheet][width=165mm,height=255mm]  
+    \definepapersize[sheet][width=85mm,height=255mm]  
     \setuppapersize[sheet]
     \setuplayout[
         backspace=15mm,
         topspace=12mm,
-	width=138mm,
-% 		height=225mm,
+	width=68mm,
+	height=225mm,
+	header=0mm,
         leftmargin=0mm,
         rightmargin=0mm,
         footer=6mm, 
@@ -42,11 +34,10 @@
 	footer=0mm,
 	leftmargin=0mm,
 	rightmargin=0mm,
-        width=138mm,
-        height=225mm,
-        grid=yes
+        width=165mm,
+        height=255mm
 	]
-    \definecolumnset[duo][n=2, distance=12mm, width=\getvariable{pageprops}{columnwidth}]
+    \definecolumnset[duo][n=2, balance=no, distance=12mm, width=\getvariable{pageprops}{columnwidth}]
     \definecolumnsetspan[wide][n=2]
 %     \definepagebreak[emptyodd][yes,header,footer, odd]
 %     \definepagebreak[emptyeven][yes,header,footer, even]
@@ -61,29 +52,19 @@
 % }}}
 
 % LOAD FONTS {{{
-    \starttypescript [serif] [crimsontext] 
-        \definefontsynonym [Sans]            [name:crimsontext] [handling=pure]
-    \stoptypescript
-    \starttypescript [sans] [karlaregular] 
-        \definefontsynonym [Sans]            [name:karlaregular] [handling=pure]
-    \stoptypescript
-    \starttypescript [sans] [consolamono] 
-        \definefontsynonym [Mono]            [name:consolamono]
-    \stoptypescript
+\usemodule[simplefonts]
 
-    \definetypeface [crimsontext] [ss] [serif] [crimsontext]
-    \definetypeface [karlaregular]  [ss] [sans]  [karlaregular]
-    \definetypeface [consolamono]  [ss] [mono]  [consolamono]
-% }}}
+\definesimplefont[crimbase][crimson][size=9pt] 
+\definesimplefont[crimmedium][crimson][size=12pt] 
+\definesimplefont[crimit][crimsontextitalic][size=12pt] 
+\definesimplefont[crimbig][crimson][size=21pt] 
+\definesimplefont[kasmall][karla][size=8pt] 
+\definesimplefont[kabase][karla][size=12pt] 
+\definesimplefont[kaquin][karla][size=15pt] 
+\definesimplefont[kafat][karla][size=27pt] 
+\definesimplefont[consolbase][consolamono][size=12pt] 
+\definesimplefont[consolmini][consolamono][size=8pt] 
 
-% TYPOGRAPHY {{{
-%     \setupbodyfont[crimsontext, ss, 9pt]
-%     \definebodyfontenvironment[default][a=1.5, b=1.75, c=2,d=3.4] % defines higher sizes of fonts 
-%     \setupinterlinespace[11pt] 
-%     \setupinteraction[state=start, color=black] % activate links
-%     \setupnote[footnote][location=text, way=bypage, numberconversion=set 2, align={hyphenated}]
-%     \setupnotedefinition[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
-% }}}
 
 % COLORS {{{
     \setupcolors[rgb=no,cmyk=yes,state=start,overprint=yes]
@@ -108,40 +89,16 @@
         ]
 % }}}
 
-% TABLE OF CONTENTS {{{
-%     \setupcombinedlist[content][interaction=all, color=black] % makes it clickable
-%     \setuplist[section][width=0mm] % sets indentation for section level
-%     \setuplist[subsection][width=1em] % sets indentation for subsection level
-% }}}
 
-% SECTIONS AND HEADINGS {{{
-       
-
-
-% }}}
-
--
 % PARAGRAPHS {{{
 
 
-\def\styleref{%
-	\setupbodyfont[crimsontext, 9pt]
-	\setupinterlinespace[10.5pt] 
-	\color[black]
-	\definetextbackground[inbox][
-            framecolor=black,
-            background=,
-	    ]}
-
-% }}}
 \input piece
 \input mailtitle
 \input infos
 \input mail
 
 \input chat
-\input chatpiece
-\input chatinfos
 
 \input quotes
 

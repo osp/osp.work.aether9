@@ -76,15 +76,15 @@ class Writer:
 		#	aref.append('%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
 		
 		ret = []
-		ret.append('\\startcolumnsetspan[wide]')
+		ret.append('\\stylequoteblock{')
 		ret.append('\\stylepiece')
 		ret.append('%d'%self.id)
 		ret.append('\\styleinfos')
 		ret.append('%s'%( self.author))
 		ret.append('\\stylequote')
 		ret.append(esc_text)
-		ret.append('\\stopcolumnsetspan')
-		return '\n'.join(ret)
+		ret.append('}')
+		return '\n\n'.join(ret)
 		
 	def escape_tex(self, pt):
 		r = pt.group()

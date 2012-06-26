@@ -91,13 +91,13 @@ class Writer:
 		
 		ret = []
 		ret.append('\\stylepiece')
-		ret.append('\\startcolumnsetspan[wide]')
-		ret.append('\\cap{%s}' % '%d'%self.id)
+		#ret.append('\\startcolumnsetspan[wide]')
+		ret.append('%d'%self.id)
 		ret.append('\\styleinfos')
-		ret.append('\\cap{%s}' % '%s\n\n%s\n\n%s\n\n%s'%(self.title,self.event,self.location,'\n'.join(self.performers.split())))
+		ret.append('%s\n\n%s\n\n%s\n\n%s'%(self.title,self.event,self.location,'\n'.join(self.performers.split())))
 		ret.append('\\styleperfo')
-		ret.append('\\cap{%s}' % self.description)
-		ret.append('\\stopcolumnsetspan')
+		ret.append(self.description.upper())
+		#ret.append('\\stopcolumnsetspan')
 		return '%s' % '\n'.join(ret)
 		
 	def escape_tex(self, pt):

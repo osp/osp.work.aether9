@@ -1,10 +1,32 @@
-\def\stylechat#1{%
-% 	\setupbodyfont[karlaregular, 12pt]
-% 	\setupinterlinespace[13.5pt] 
-% 	\setupalign[flushleft]
-% 	\setcharacterspacing[frenchpunctuation]
-% 	\defineblank[default][3mm]
-% 	\setuptolerance[verytolerant]
-% 	\color[black]
-	#1
+% \setupinmargin[location=both,align=left,distance=16pt]
+\usemodule[lettrine]
+\def\chatbox#1#2%
+{
+	\hbox{
+		\setupwhitespace[0pt]
+		\hbox to 50pt{#1}\vbox{#2}
+	}
 }
+
+\def\stylechatinfo#1%
+{
+	\setupwhitespace[2pt]
+	\setupinterlinespace[line=10pt] 
+	\setupalign[flushleft]
+	\kasmall{#1}
+}
+\def\stylechatpiece#1%
+{
+
+	\kafat{#1}
+}
+
+
+\def\stylechat#1%
+{
+	\setupwhitespace[0pt]
+	\setupinterlinespace[line=13.5pt] 
+	\setupalign[flushleft]
+	\kabase{#1}
+}
+

@@ -73,13 +73,15 @@ class Writer:
 		#	aref.append('%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
 		
 		ret = []
-		ret.append('\\stylepiece')
+		#ret.append('\\stylebiopiece')
 		#ret.append('%d'%self.id)
-		ret.append('\\styleinfos')
-		ret.append('%s\n\n%s'%(self.name, self.nick))
+		ret.append('\\stylebioname')
+		ret.append(self.name.upper())
+		ret.append('\\stylebionick')
+		ret.append(self.nick)
 		ret.append('\\stylebio')
 		ret.append(self.bio_text)
-		return '\n'.join(ret)
+		return '\n\n'.join(ret)
 		
 	def escape_tex(self, pt):
 		r = pt.group()

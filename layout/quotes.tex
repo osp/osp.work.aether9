@@ -1,8 +1,12 @@
-\def\stylequote{%
-	\setupbodyfont[crimsontext, 21pt]
+\def\stylequoteblock#1%
+{
+#1
+}
+
+\def\stylequote%
+{
 	\setupinterlinespace[22pt]  
 	\setupalign[flushleft]
 	\defineblank[default][3mm]
-	\setuptolerance[verytolerant]
-	\color[black]
+	\crimbig
 }

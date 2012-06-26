@@ -108,14 +108,15 @@ class Writer:
 		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
 		buff = ''
 		if (self.fullpage == True):
+			return buff
 			parts = self.splitImage ()
 			esc_text0 = re.sub(et_pat, getattr(self, 'escape_tex') , parts[0])
 			esc_text1 = re.sub(et_pat, getattr(self, 'escape_tex') , parts[1])
 			buff += '\n\\stopcolumnset'
 			buff += '\n\\page[left]'
 			buff += '\n\\setuplayout[full]'
-			buff += '\n\\placefigure[left,top]{{none}}{{\\externalfigure[{0}][width=165mm,height=225mm]}}'.format (esc_text0)
-			buff += '\n\\placefigure[left,top]{{none}}{{\\externalfigure[{0}][width=165mm,height=225mm]}}'.format (esc_text1)
+			buff += '\n\\placefigure[here]{%d}{\\externalfigure[%s][width=165mm,height=255mm]}'%(self.id, esc_text0)
+			buff += '\n\\placefigure[here]{none}{\\externalfigure[%s][width=165mm,height=255mm]}'%(esc_text1)
 			buff += '\n\\page[left]'
 			buff += '\n\\setuplayout[reset]'
 			buff += '\n\\startcolumnset[duo]'
@@ -138,7 +139,7 @@ class Writer:
 			try:
 				#buff = '\n\\placefigure[%s]{%s}{{\\externalfigure[%s]}}' % (place, caption, ']['.join(imgpts))
 				buff += '\\useexternalfigure[%s][%s]'%(mds,esc_text)
-				buff += '\\hbox {\\externalfigure[%s][%s]}' % (esc_text, ','.join(options))
+				buff += '\\hbox {\\externalfigure[%s][%s]}' % (mds, ','.join(options))
 			except Exception as e:
 				#sys.stderr.write('%s\n'%e)
 				pass
