@@ -5,6 +5,9 @@ Copy editing: Audrey Samson, Manuel Schmalstieg
 Design: Ludivine Loiseau, Pierre Marchand, Gijs de Heij (OSP)
 Printing: ???
 This book was produced in ..., based on ...., .
+The files of this book are available at .... 
+
+
 Licence: The content of this book is licensed under the Creative Commons Attribution 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by/3.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 
 Remerciements
@@ -15,3 +18,4 @@ People:
 Gregorio Gómez (aka gladkazuka), Natalia Valencia, Leonardo Gonzalez, Jonathan Goldstein,  Rupert Goldsworthy, Jane Friedman, Carsten Shultz, Brad Ellis, Diana McCarty, Toni Schifer, Gabriele Stellbaum, Maaike Stutterheim, Kathrin Günter, Martin Howse, Samir Youssef, Joe Elias, Zoe Judell, Robin Dupuis, Jonathan Villeneuve, Tom Stout, Sofian Audry, Jordan Arsenault, Nicola Unger, Maria Hermelin, Pedro Hermelin, Jérôme Prosperger, Kim Xupei, Luka Prinčič, Richard Milan, Anna Popek, Bliscappen van Maria, Deirdre Foster, Amirali Ghasemi, Sohrab Kashani, Shankar Barua, Pooja Varma, Shandrika Grover, Tengal Drilon, Justine Beaujouan, Boris Edelstein, Boba Mirjana Stojadinović, Yves Bernard, Juliana Restrepo, Juan Guillermo Caicedo, Viviana Palacio, Bjorn Eriksson, Sebastian Bohle, Sunshine,  
 
 This publication was supported by Sitemapping Mediaprojects / Swiss Federal Office for Culture.
+
