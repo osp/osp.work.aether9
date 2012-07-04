@@ -37,10 +37,10 @@ class Factory:
 			except Exception:
 				_d('Booo\n')
 				
-		for r in self.networks_:
-			_d('##',r,'##')
-			for p in self.networks_[r]:
-				_d(p[0]['key'], len(p))
+		#for r in self.networks_:
+			#_d('##',r,'##')
+			#for p in self.networks_[r]:
+				#_d(p[0]['key'], len(p))
 		for r in self.roads_:
 			_d('##',r,'##')
 			for p in self.roads_[r]:
@@ -73,7 +73,10 @@ class Factory:
 						except Exception:
 							forward = road[0]
 						#_d(current)
-						res = '\\stylerefroadback{%d}%s\\stylerefroadforward{%d}'%(back['id'],current['key'],forward['id'])
+						if current['type'] == 'mail':
+							res = '\\stylerefroadback{%d}\\stylerefmailslow{%s}\\stylerefroadforward{%d}'%(back['id'],current['key'],forward['id'])
+						else:
+							res = '\\stylerefroadback{%d}%s\\stylerefroadforward{%d}'%(back['id'],current['key'],forward['id'])
 						bid = self.lookup_idx(current['id'])
 						txt = ''
 						if 'tex_escaped' not in self.base[0][bid]:
