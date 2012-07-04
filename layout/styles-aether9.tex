@@ -1,6 +1,6 @@
 \startenvironment styles-aether9
   
-  \setvariables[pageprops][columnwidth=63mm]
+%  \setvariables[pageprops][columnwidth=63mm]
 %   \showframe[text]
 
 
@@ -27,18 +27,29 @@
         rightmargin=0mm,
         footer=6mm, 
         ]
-    \definelayout[full][
-	backspace=0mm,
-	topspace=0mm,
+    \definelayout[nomargins][
+	width=\paperwidth,
+	textheight=\paperheight,
+	rightedge=0mm,
+	rightmargin=0mm,
+	leftmargin=0mm,
+	leftedge=0mm,
+	top=0mm,
 	header=0mm,
 	footer=0mm,
-	leftmargin=0mm,
-	rightmargin=0mm,
-        width=165mm,
-        height=255mm
+	bottom=0mm,
+	backspace=0mm,
+	topspace=0mm,
+	rightedgedistance=0mm,
+	rightmargindistance=0mm,
+	leftmargindistance=0mm,
+	leftedgedistance=0mm,
+	topdistance=0mm,
+	footerdistance=0mm,
+	bottomdistance=0mm
 	]
-    \definecolumnset[duo][n=2, balance=no, distance=12mm, width=\getvariable{pageprops}{columnwidth}]
-    \definecolumnsetspan[wide][n=2]
+%     \definecolumnset[duo][n=2, balance=no, distance=12mm, width=\getvariable{pageprops}{columnwidth}]
+%     \definecolumnsetspan[wide][n=2]
 %     \definepagebreak[emptyodd][yes,header,footer, odd]
 %     \definepagebreak[emptyeven][yes,header,footer, even]
 %     \setuphead[chapter][page=emptyodd]
@@ -64,6 +75,11 @@
 \definesimplefont[kafat][karla][size=27pt] 
 \definesimplefont[consolbase][consolamono][size=12pt] 
 \definesimplefont[consolmini][consolamono][size=8pt] 
+\definesimplefont[kaslow][karlaslow][size=12pt] 
+\definesimplefont[crimslow][crimsontextslow][size=12pt] 
+\definesimplefont[crimbigslow][crimsontextslow][size=21pt] 
+\definesimplefont[consolminislow][consolamonoslow][size=8pt] 
+\definesimplefont[consolbaseslow][consolamonoslow][size=12pt] 
 
 
 % COLORS {{{
