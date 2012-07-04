@@ -37,7 +37,7 @@ class Factory:
 			except Exception:
 				_d('Booo\n')
 				
-		self.output_networks()
+		#self.output_networks()
 		self.output_roads()
 				
 	def lookup_idx(self, tid):
