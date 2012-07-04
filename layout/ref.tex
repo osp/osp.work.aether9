@@ -1,6 +1,6 @@
 \def\stylerefnetwork#1%
 {
-	#1
+	\kafat #1
 }
 
 \def\stylerefroadback#1%
@@ -30,10 +30,19 @@
 {
 	{\crimbigslow #1}
 }
-
-\def\stylerefmaillow#1%
+\def\stylerefmailslow#1%
 {
-	{\crimslow #1}
+	{\crimslow #1 }
+}
+
+\def\stylerefmaillowback#1%
+{
+	{\crimslow \stylerefroadback{#1} }
+}
+
+\def\stylerefmaillowforward#1%
+{
+	{\crimslow \stylerefroadforward{#1} }
 }
 
 \def\stylerefbiolow#1%
