@@ -1,0 +1,10 @@
+from random import choice
+
+patts = ["Patt0","Patt1","Patt2"]
+font = fontforge.activeFont()
+
+for glyph in font.glyphs():
+ font.selection.select(choice(patts))  
+ font.copy()
+ font.selection.select(glyph)
+ font.pasteInto()
