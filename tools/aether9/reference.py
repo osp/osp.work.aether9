@@ -37,7 +37,7 @@ class Factory:
 			except Exception:
 				_d('Booo\n')
 				
-		#self.output_networks()
+		self.output_networks()
 		self.output_roads()
 				
 	def lookup_idx(self, tid):
@@ -72,9 +72,9 @@ class Factory:
 						bid = self.lookup_idx(current['id'])
 						txt = ''
 						if 'tex_escaped' not in self.base[0][bid]:
-							txt = self.escape_tex(self.base[0][bid]['text']).replace(current['key'], res, 1)
+							txt = re.sub(self.paternize(current['key']), res, self.escape_tex(self.base[0][bid]['text']), 1)
 						else:
-							txt = self.base[0][bid]['text'].replace(current['key'], res, 1)
+							txt = re.sub(self.paternize(current['key']), res, self.base[0][bid]['text'], 1)
 						#_d(txt)
 						self.base[0][bid]['text'] = txt
 						self.base[0][bid]['tex_escaped'] = True
@@ -111,9 +111,9 @@ class Factory:
 						bid = self.lookup_idx(current['id'])
 						txt = ''
 						if 'tex_escaped' not in self.base[0][bid]:
-							txt = self.escape_tex(self.base[0][bid]['text']).replace(current['key'], res, 1)
+							txt = re.sub(self.paternize(current['key']), res, self.escape_tex(self.base[0][bid]['text']), 1)
 						else:
-							txt = self.base[0][bid]['text'].replace(current['key'], res, 1)
+							txt = re.sub(self.paternize(current['key']), res, self.base[0][bid]['text'], 1)
 						#_d(txt)
 						self.base[0][bid]['text'] = txt
 						self.base[0][bid]['tex_escaped'] = True
@@ -159,7 +159,7 @@ class Factory:
 		#_d('networks_mail',item,kw,cr)
 		kwl = kw.split(',')
 		for k in kwl:
-			sk = k.strip()
+			sk = self.paternize(k.strip())
 			ret0 = re.search(sk, item['text'], flags=re.IGNORECASE)
 			ret1 = re.search(sk, item['author'], flags=re.IGNORECASE)
 			if  ret0 or ret1:
@@ -177,10 +177,10 @@ class Factory:
 	def roads_mail(self, item, kw, cr):
 		kwl = kw.split(',')
 		for k in kwl:
-			sk = k.strip()
+			sk = self.paternize(k.strip())
 			ret = re.search(sk, item['text'], flags=re.IGNORECASE)
 			if  ret:
-				cr.append({'id':item['id'], 'key': sk, 'type':item['type']})
+				cr.append({'id':item['id'], 'key': k.strip(), 'type':item['type']})
 				
 	def roads_chatlog(self, item, kw, cr):
 		kwl = kw.split(',')
@@ -204,3 +204,6 @@ class Factory:
 			
 	def escape_tex(self, text):
 		return re.sub(self.et_pat, getattr(self, 'escape_tex_cb') , text)
+		
+	def paternize(self, name):
+		return '\\b%s\\b'%name

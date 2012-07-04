@@ -5,12 +5,12 @@
 
 \def\stylerefroadback#1%
 {
-	{\kafat << #1 }
+	{\inleft{\kasml #1}}
 }
 
 \def\stylerefroadforward#1%
 {
-	{\kafat #1 >> }
+	{\inright{\kasml #1}}
 }
 
 \def\stylerefnet#1%
@@ -18,8 +18,15 @@
 	{\kafat ++ #1 ++}
 }
 
+\def\stylerefmail#1%
+{
+	{\crimslow#1}
+}
 
-
+\def\stylerefmailslow#1%
+{
+	{\crimslow#1}
+}
 
 \def\stylerefchatlow#1%
 {
