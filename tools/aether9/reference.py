@@ -74,7 +74,7 @@ class Factory:
 						if 'tex_escaped' not in self.base[0][bid]:
 							txt = self.escape_tex(self.base[0][bid]['text']).replace(current['key'], res, 1)
 						else:
-							txt = self.base[0][bid]['text']
+							txt = self.base[0][bid]['text'].replace(current['key'], res, 1)
 						#_d(txt)
 						self.base[0][bid]['text'] = txt
 						self.base[0][bid]['tex_escaped'] = True
@@ -93,11 +93,19 @@ class Factory:
 						sys.stderr.write('%d '%r)
 						current = network[r]
 						
-						targets = []
+						_d('Key:', current['key'])
+						itargets = set()
 						for t in xrange(0,rlen):
-							if (network[t]['id'] != current['id']) and (network[t]['id'] not in targets):
-								targets.append('%s'%(network[t]['id'],))
-						#_d('Network',targets);
+							itargets.add(network[t]['id'])
+						
+						tmptargets = []
+						for it in itargets:
+							tmptargets.append(it)
+						tmptargets.sort()
+						targets = []
+						for ta in tmptargets:
+							targets.append('%s'%ta)
+						#_d('Network',targets.keys());
 						#_d(current)
 						res = '\\stylerefnet{%s}%s'%(', '.join(targets), current['key'])
 						bid = self.lookup_idx(current['id'])
@@ -105,7 +113,7 @@ class Factory:
 						if 'tex_escaped' not in self.base[0][bid]:
 							txt = self.escape_tex(self.base[0][bid]['text']).replace(current['key'], res, 1)
 						else:
-							txt = self.base[0][bid]['text']
+							txt = self.base[0][bid]['text'].replace(current['key'], res, 1)
 						#_d(txt)
 						self.base[0][bid]['text'] = txt
 						self.base[0][bid]['tex_escaped'] = True
@@ -156,7 +164,7 @@ class Factory:
 			ret1 = re.search(sk, item['author'], flags=re.IGNORECASE)
 			if  ret0 or ret1:
 				_d('Appending Match:', item['id'], kwl[0].strip(), item['type'])
-				cr.append({'id':item['id'], 'key': kwl[0].strip(), 'type':item['type']})
+				cr.append({'id':item['id'], 'key': k.strip(), 'type':item['type']})
 
 	def networks_technical(self, item, kw, cr):
 		networks_mail(item, kw, cr)
