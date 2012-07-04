@@ -13,6 +13,7 @@ from math import ceil
 import sys
 import md5
 import base64
+import sys
 
 class FileDoesNotExist(Exception):
 	def __init__(self, fname):
@@ -84,7 +85,7 @@ class Reader:
 		raise NoDate (filename)
 	
 	def is_fullpage (self):
-		return re.search ('^.*FULL.[^LEFT|RIGHT]*$', opath.split (self.img['filename'])[1]) <> None
+		return re.search ('FULL', opath.split (self.img['filename'])[1]) <> None
 
 	def get_creationtime(self, im):
 		exif = im._getexif();
@@ -100,6 +101,7 @@ class Reader:
 		return ctime
 		
 class Writer:
+	panel_count = 4
 	tex_special_chars = {r'&': '\\&', r'%': '\\%', r'$': '\\$', r'#': '\\#', r'_': '\\_', r'{': '\\{', r'}': '\\}', r'~': '\\textasciitilde{}', r'^': '\\textasciicircum{}', '\\' : '\\textbackslash{}', '|':'\\textbar{}'}
 	def __init__(self, reader):
 		self.image = reader
@@ -108,22 +110,16 @@ class Writer:
 		et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
 		buff = ''
 		if (self.fullpage == True):
-			return buff
-			parts = self.splitImage ()
-			esc_text0 = re.sub(et_pat, getattr(self, 'escape_tex') , parts[0])
-			esc_text1 = re.sub(et_pat, getattr(self, 'escape_tex') , parts[1])
-			buff += '\n\\stopcolumnset'
-			buff += '\n\\page[left]'
-			buff += '\n\\setuplayout[full]'
-			buff += '\n\\placefigure[here]{%d}{\\externalfigure[%s][width=165mm,height=255mm]}'%(self.id, esc_text0)
-			buff += '\n\\placefigure[here]{none}{\\externalfigure[%s][width=165mm,height=255mm]}'%(esc_text1)
-			buff += '\n\\page[left]'
+			paths = self.splitImage ()
+			buff += '\n\\page'
+			#buff += '\n\\setuplayout[width=\paperwidth,textheight=\paperheight,rightedge=0mm,rightmargin=0mm,leftmargin=0mm,leftedge=0mm,top=0mm,header=0mm,footer=0mm,bottom=0mm,backspace=0mm,topspace=0mm,rightedgedistance=0mm,rightmargindistance=0mm,leftmargindistance=0mm,leftedgedistance=0mm,topdistance=0mm,footerdistance=0mm,bottomdistance=0mm]'
+			buff += '\n\\setuplayout[nomargins]'
+			for path in paths:
+				buff += '\n\\placefigure[here,force]{none}{\\externalfigure[%s][width=\\paperwidth,\\paperheight]}'%(re.sub(et_pat, getattr(self, 'escape_tex'), path))
+			buff += '\n\\page'
 			buff += '\n\\setuplayout[reset]'
-			buff += '\n\\startcolumnset[duo]'
 
 		else:
-			#sys.stderr.write('[%s] [%s] [%s]\n'%(place, imgpts, caption))
-			
 			esc_text = re.sub(et_pat, getattr(self, 'escape_tex') , self.filename)
 			imgpts = [esc_text]
 			md = md5.new()
@@ -131,17 +127,13 @@ class Writer:
 			mds = base64.b64encode(md.digest())
 			
 			options = []
-			#options.append('')
 			if width <> False:
 				options.append ('width=%s' % width)
 				options.append ('factor=max')
-				#options.append ('factor=max')
 			try:
-				#buff = '\n\\placefigure[%s]{%s}{{\\externalfigure[%s]}}' % (place, caption, ']['.join(imgpts))
 				buff += '\\useexternalfigure[%s][%s]'%(mds,esc_text)
 				buff += '\\hbox {\\externalfigure[%s][%s]}' % (mds, ','.join(options))
 			except Exception as e:
-				#sys.stderr.write('%s\n'%e)
 				pass
 
 		return buff
@@ -149,7 +141,6 @@ class Writer:
 
 	def escape_tex(self, pt):
 		r = pt.group()
-		#print('matched: %s'%r)
 		if r in self.tex_special_chars:
 			return self.tex_special_chars[r]
 		return r
@@ -162,17 +153,16 @@ class Writer:
 			raise AttributeError(name)
 
 	def splitImage (self):
+		tmp_path = '/tmp/OSP_AETHER9__'
 		im = Image.open (self.filename)
-		leftWidth = int (ceil (float(im.size[0]) * 0.5))
-		rightWidth = im.size[0] - leftWidth
-		left = Image.new (im.mode, (leftWidth, im.size[1]), (255,255,255))
-		right = Image.new (im.mode, (im.size[0] - leftWidth, im.size[1]), (255,255,255))
-		left.paste (im.copy (), (0,0))
-		right.paste (im.copy (), (-leftWidth,0))
-		fparts = self.filename.rsplit ('.', 1)
-		paths = ('%s-LEFT.png' % (fparts[0]), '%s-RIGHT.png' % (fparts[0]))
-		right.save (paths[1])
-		left.save (paths[0])
+		panelWidth = int (ceil (float(im.size[0]) * (1.0 / float (self.panel_count))))
+		part = opath.split(self.filename)[1].split ('.')[0]
+		paths = []
+		for i in range (0,self.panel_count):
+			panel = Image.new (im.mode, (panelWidth, im.size[1]), (255,255,255))
+			panel.paste (im.copy (), (i * -panelWidth,0))
+			paths.append ('%s%s_%d.png' % (tmp_path, part, i))
+			panel.save (paths[-1])
 		
 		return paths
 
