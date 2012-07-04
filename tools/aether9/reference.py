@@ -32,20 +32,12 @@ class Factory:
 		self.get_kw_lists(root_dir)
 		for k in self.keywords:
 			try:
-				#getattr(self, k['mode'])(k['name'], k['keywords'])
+				_d(k['name'], ' | ', k['keywords'], ' | ', k['mode'], ' \n ')
 				self.build_refs(k['name'], k['keywords'], k['mode'])
 			except Exception:
 				_d('Booo\n')
 				
-		#for r in self.networks_:
-			#_d('##',r,'##')
-			#for p in self.networks_[r]:
-				#_d(p[0]['key'], len(p))
-		for r in self.roads_:
-			_d('##',r,'##')
-			for p in self.roads_[r]:
-				_d(p[0]['key'], len(p))
-				
+		self.output_networks()
 		self.output_roads()
 				
 	def lookup_idx(self, tid):
@@ -91,7 +83,32 @@ class Factory:
 			
 	
 	def output_networks(self):
-		pass
+		for name in self.networks_:
+			for network in self.networks_[name]:
+				rlen = len(network) 
+				_d('\nReference network:', name)
+				#_d(' ', network)
+				if network and network[0]:
+					for r in xrange(0,rlen):
+						sys.stderr.write('%d '%r)
+						current = network[r]
+						
+						targets = []
+						for t in xrange(0,rlen):
+							if (network[t]['id'] != current['id']) and (network[t]['id'] not in targets):
+								targets.append('%s'%(network[t]['id'],))
+						#_d('Network',targets);
+						#_d(current)
+						res = '\\stylerefnet{%s}%s'%(', '.join(targets), current['key'])
+						bid = self.lookup_idx(current['id'])
+						txt = ''
+						if 'tex_escaped' not in self.base[0][bid]:
+							txt = self.escape_tex(self.base[0][bid]['text']).replace(current['key'], res, 1)
+						else:
+							txt = self.base[0][bid]['text']
+						#_d(txt)
+						self.base[0][bid]['text'] = txt
+						self.base[0][bid]['tex_escaped'] = True
 		
 	def get_kw_lists(self, rd):
 		fl = glob.glob('%s/*'%rd)
@@ -116,7 +133,7 @@ class Factory:
 				self.keywords.append({'name':parts[0],'mode':parts[1],'keywords':data_str.splitlines()})
 				
 	def build_refs(self, name, kws, target):
-		_d('build_refs',name,target)
+		_d('build_refs',name,target,kws)
 		tdict = getattr(self,'%s_'%target)
 		tdict[name] = []
 		for kw in kws:
@@ -124,17 +141,21 @@ class Factory:
 			for item in self.base[0]:
 				try:
 					getattr(self, '%s_%s'%(target, item['type']))(item, kw, current_ref)
-				except:
+				except Exception as e:
+					#_d('Failed to process:', '%s_%s'%(target, item['type']), item['id'])
+					#_d(e)
 					pass
 			tdict[name].append(current_ref)
 			
 	def networks_mail(self, item, kw, cr):
+		#_d('networks_mail',item,kw,cr)
 		kwl = kw.split(',')
 		for k in kwl:
 			sk = k.strip()
 			ret0 = re.search(sk, item['text'], flags=re.IGNORECASE)
 			ret1 = re.search(sk, item['author'], flags=re.IGNORECASE)
 			if  ret0 or ret1:
+				_d('Appending Match:', item['id'], kwl[0].strip(), item['type'])
 				cr.append({'id':item['id'], 'key': kwl[0].strip(), 'type':item['type']})
 
 	def networks_technical(self, item, kw, cr):
