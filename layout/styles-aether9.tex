@@ -15,25 +15,23 @@
 
 % LAYOUT {{{
     % General layout
-    \definepapersize[sheet][width=105mm,height=255mm]  
+    \definepapersize[sheet][width=85mm,height=255mm]  
     \setuppapersize[sheet]
     \setuplayout[
-	location=doublesided,
 	leftedge=0mm,
         footer=6mm,
         rightedge=0mm,
 	rightmargin=10mm,
-	leftmargin=45mm,
+	leftmargin=20mm,
 	leftedge=0mm,
 	top=0mm,
 	header=12mm,
 	footer=6mm,
 	bottom=0mm,
-	backspace=0mm,
 	topspace=0mm,
-	rightedgedistance=0mm,
-	rightmargindistance=5mm,
-	leftmargindistance=5mm,
+	rightedgedistance=10mm,
+	rightmargindistance=3mm,
+	leftmargindistance=3mm,
 	leftedgedistance=0mm,
 	topdistance=0mm,
 	footerdistance=0mm,
@@ -74,9 +72,10 @@
 
 \definemargindata [margintext]
     [
-      location=outer,
-         align=flushleft,
-         stack=continue, % or yes
+	location=outer,
+	align=inner,
+	stack=continue, % or yes
+	width=15mm
     ]
     
 % }}}
@@ -92,7 +91,7 @@
 \definesimplefont[kabase][karlaregular][size=12pt] 
 \definesimplefont[kaquin][karlaregular][size=15pt] 
 \definesimplefont[kafat][karlaregular][size=27pt] 
-\definesimplefont[kasml][karlaregular][size=8pt] 
+\definesimplefont[kasml][karlaregular][size=5pt] 
 \definesimplefont[consolbase][consolamono][size=12pt] 
 \definesimplefont[consolmini][consolamono][size=8pt] 
 \definesimplefont[kaslow][karlaregularslow][size=12pt] 
