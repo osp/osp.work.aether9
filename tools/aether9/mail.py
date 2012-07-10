@@ -84,11 +84,12 @@ class Writer:
 	def __init__(self, mdict):
 		self.mail = mdict
 		self.et_pat = '[%s]'%(re.escape(''.join(self.tex_special_chars.keys())),)
+		self.hp_pat = '\b(((\S+)?)(@|mailto\:|(news|(ht|f)tp(s?))\s?\://)\S+)\b' # http://regexlib.com/REDetails.aspx?regexp_id=334
 		
 	def as_string(self):
 		esc_text = self.text
 		if 'tex_escaped' not in self.mail:
-			esc_text = self.escape_tex(self.text)
+			esc_text = self.escape_tex(esc_text)
 		aref = []
 		try:
 			for r in self.ref['author']:
@@ -120,7 +121,10 @@ class Writer:
 			
 	def escape_tex(self, text):
 		return re.sub(self.et_pat, getattr(self, 'escape_tex_cb') , text)	
-		
+	
+	def hyphenate_urls (self, text):
+		return re.sub(self.hp_pat, '\\hyphenatedurl{\g<0>}', text)
+	
 	def __getattr__(self, name):
 		try:
 			return self.mail[name]

@@ -66,9 +66,9 @@ class Factory:
 							forward = road[0]
 						#_d(current)
 						if current['type'] == 'mail':
-							res = '\\stylerefroadback{%d}\\stylerefmailslow{%s}\\stylerefroadforward{%d}'%(back['id'],current['key'],forward['id'])
+							res = '\\stylerefmailslow{%s}\\stylerefroad{%d,\\crlf%d}'%(current['key'],back['id'],forward['id'])
 						else:
-							res = '\\stylerefroadback{%d}%s\\stylerefroadforward{%d}'%(back['id'],current['key'],forward['id'])
+							res = '%s\\stylerefroad{%d,\\crlf %d}'%(current['key'],back['id'],forward['id'])
 						bid = self.lookup_idx(current['id'])
 						txt = ''
 						if 'tex_escaped' not in self.base[0][bid]:
@@ -93,21 +93,17 @@ class Factory:
 						sys.stderr.write('%d '%r)
 						current = network[r]
 						
-						_d('Key:', current['key'])
-						itargets = set()
-						for t in xrange(0,rlen):
-							itargets.add(network[t]['id'])
-						
-						tmptargets = []
-						for it in itargets:
-							tmptargets.append(it)
-						tmptargets.sort()
-						targets = []
-						for ta in tmptargets:
-							targets.append('%s'%ta)
-						#_d('Network',targets.keys());
+						back = network[r-1]
+						forward = None
+						try:
+							forward = network[r+1]
+						except Exception:
+							forward = network[0]
 						#_d(current)
-						res = '\\stylerefnet{%s}%s'%(', '.join(targets), current['key'])
+						if current['type'] == 'mail':
+							res = '\\stylerefroadback{%d}\\stylerefmailslow{%s}\\stylerefroadforward{%d}'%(back['id'],current['key'],forward['id'])
+						else:
+							res = '\\stylerefroadback{%d}%s\\stylerefroadforward{%d}'%(back['id'],current['key'],forward['id'])
 						bid = self.lookup_idx(current['id'])
 						txt = ''
 						if 'tex_escaped' not in self.base[0][bid]:

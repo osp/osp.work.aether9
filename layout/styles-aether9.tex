@@ -1,7 +1,8 @@
 \startenvironment styles-aether9
-  
 
-
+\sethyphenatedurlnormal{:=?&/}
+\sethyphenatedurlbefore{?&}
+\sethyphenatedurlafter {:=}
 
 % LANGUAGE {{{
     \setuplanguage[en][
@@ -14,23 +15,24 @@
 
 % LAYOUT {{{
     % General layout
-    \definepapersize[sheet][width=85mm,height=255mm]  
+    \definepapersize[sheet][width=77.5mm,height=240mm]  
     \setuppapersize[sheet]
     \setuplayout[
-	leftedge=0mm,
-        footer=6mm,
-        rightedge=0mm,
-	rightmargin=10mm,
-	leftmargin=20mm,
+	height=\paperheight,
+	textwidth=55.5mm,
+	rightedge=0mm,
+	rightmargin=15mm,
+	leftmargin=0mm,
 	leftedge=0mm,
 	top=0mm,
 	header=12mm,
 	footer=6mm,
 	bottom=0mm,
+	backspace=6mm,
 	topspace=0mm,
-	rightedgedistance=10mm,
-	rightmargindistance=3mm,
-	leftmargindistance=3mm,
+	rightedgedistance=0mm,
+	rightmargindistance=2mm,
+	leftmargindistance=0mm,
 	leftedgedistance=0mm,
 	topdistance=0mm,
 	footerdistance=0mm,
@@ -73,9 +75,19 @@
     [
 	location=outer,
 	align=inner,
-	stack=continue, % or yes
-	width=15mm
+	stack=yes, % or yes
+	width=15mm,
+	distance=2mm
     ]
+
+\definemargindata [refroad]
+	[
+		location=outer,
+		align=inner,
+		stack=yes, % or yes
+		width=17mm,
+		distance=2mm
+	]
     
 % }}}
 
@@ -137,7 +149,9 @@
 
 
 % PARAGRAPHS {{{
-
+\showlayout
+\showmakeup
+\showframe
 
 \input piece
 \input mailtitle

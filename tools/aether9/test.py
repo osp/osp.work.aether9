@@ -13,6 +13,7 @@ import technical
 import bio
 import perfo
 import quotes
+import re
 
 def main():
 	parser = argparse.ArgumentParser()
@@ -159,7 +160,7 @@ def main():
 		ret.append('\\part[%s]{%s}'%(wrt,wrt))
 		#ret.append('\\startcolumnset[duo]')
 		for w in writers[wrt]:
-			ret.append(w.as_string())
+			ret.append(re.sub ('((([^\s<>]+)?)(@|mailto\:|(news|(ht|f)tp(s?))\s?\://)\S+)', hyphenate_urls, w.as_string()))
 		#ret.append('\\stopcolumnset')	
 		ret.append('\\stoptext')
 		ret.append('\\stopproduct')
@@ -180,6 +181,9 @@ def main():
 	final_r = open('aether.tex', 'w')
 	final_r.write('\n'.join(fpr))
 	final_r.close
+
+def hyphenate_urls (matchObject):
+	return re.sub ('/', '\\/', '\\hyphenatedurl{%s}' % matchObject.group(0))
 	
 if __name__ == '__main__':
 	main()
