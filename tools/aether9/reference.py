@@ -66,9 +66,9 @@ class Factory:
 							forward = road[0]
 						#_d(current)
 						if current['type'] == 'mail':
-							res = '\\stylerefmailslow{%s}\\stylerefroad{%d,\\crlf%d}'%(current['key'],back['id'],forward['id'])
+							res = '\\stylerefmailslow{%s}\\stylerefroad{%d}{%d}'%(current['key'],back['id'],forward['id'])
 						else:
-							res = '%s\\stylerefroad{%d,\\crlf %d}'%(current['key'],back['id'],forward['id'])
+							res = '%s\\stylerefroad{%d}{%d}'%(current['key'],back['id'],forward['id'])
 						bid = self.lookup_idx(current['id'])
 						txt = ''
 						if 'tex_escaped' not in self.base[0][bid]:

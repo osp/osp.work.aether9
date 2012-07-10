@@ -17,25 +17,28 @@
     \definepapersize[sheet][width=77.5mm,height=240mm]  
     \setuppapersize[sheet]
     \setuplayout[
+	width=65mm,
 	height=\paperheight,
-	textwidth=55.5mm,
-	rightedge=0mm,
-	rightmargin=15mm,
+	rightmargin=5mm,
 	leftmargin=0mm,
+	rightedge=0mm,
 	leftedge=0mm,
 	top=0mm,
 	header=12mm,
 	footer=6mm,
 	bottom=0mm,
 	backspace=6mm,
+	rightspace=0,
+	leftspace=0,
 	topspace=0mm,
 	rightedgedistance=0mm,
-	rightmargindistance=2mm,
+	rightmargindistance=1.5mm,
 	leftmargindistance=0mm,
 	leftedgedistance=0mm,
 	topdistance=0mm,
 	footerdistance=0mm,
-	bottomdistance=0mm
+	bottomdistance=0mm,
+	cutspace=0mm
         ]
     \definelayout[nomargins][
 	width=\paperwidth,
@@ -75,18 +78,9 @@
 	location=outer,
 	align=inner,
 	stack=yes, % or yes
-	width=15mm,
-	distance=2mm
+	width=5mm,
+	distance=0mm
     ]
-
-\definemargindata [refroad]
-	[
-		location=outer,
-		align=inner,
-		stack=yes, % or yes
-		width=17mm,
-		distance=2mm
-	]
     
 % }}}
 
@@ -101,7 +95,7 @@
 \definesimplefont[kabase][karlaregular][size=12pt] 
 \definesimplefont[kaquin][karlaregular][size=15pt] 
 \definesimplefont[kafat][karlaregular][size=27pt] 
-\definesimplefont[kasml][karlaregular][size=5pt] 
+\definesimplefont[kasml][karlaregular][size=5.5pt]
 \definesimplefont[consolbase][consolamono][size=12pt] 
 \definesimplefont[consolmini][consolamono][size=8pt] 
 \definesimplefont[kaslow][karlaregularslow][size=12pt] 
@@ -121,6 +115,8 @@
 \definesimplefont[crimbigthemes][crimsontextthemes][size=21pt] 
 \definesimplefont[consolminithemes][consolamonothemes][size=8pt] 
 \definesimplefont[consolbasethemes][consolamonothemes][size=12pt] 
+
+\definebodyfontenvironment[kasml][6pt][linespace=40pt]
 
 
 % COLORS {{{
@@ -148,9 +144,9 @@
 
 
 % PARAGRAPHS {{{
-\showlayout
-\showmakeup
-\showframe
+% \showlayout
+% \showframe
+% \showmakeup
 
 \input piece
 \input mailtitle
