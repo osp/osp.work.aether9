@@ -1,3 +1,14 @@
+\setvariables[type][mail=0]
+
+\setvariables[road][slow=0]
+\setvariables[road][cash=1]
+\setvariables[road][red=2]
+\setvariables[road][themes=3]
+\setvariables[road][network=4]
+\setvariables[road][chat=5]
+\setvariables[road][sciences=6]
+\setvariables[road][patch=7]
+
 \def\stylerefnetwork#1%
 {
 	\margintext{\kasml #1}
@@ -76,3 +87,30 @@
 	{\consolbaseslow #1}
 }
 
+\def\styleref#1#2#3%
+{
+	if #1 == \getvariable{type}{mail} then
+		if #2 == \getvariable{road}{slow} then
+			{\crimslow #3}
+		elseif #2 == \getvariable{road}{cash} then
+			{\crimcash #3}
+		elseif #2 == \getvariable{road}{patch} then
+			{\crimpatch #3}
+		elseif #2 == \getvariable{road}{chat} then
+			{\crimchat #3}
+		elseif #2 == \getvariable{road}{red} then
+			{\crimred #3}
+		elseif #2 == \getvariable{road}{science} then
+			{\crimscience #3}
+		elseif #2 == \getvariable{road}{themes} then
+			{\crimthemes #3}
+		elseif #2 == \getvariable{road}{network} then
+			{\crimnetwork #3}
+	else
+		% A kind of inconsistent specification, but used
+		% in for instance s-pre-19.tex; the cutspace is
+		% used only for determining some kind of right
+		% margin; don't use this in doublesided mode
+		pass 
+	end
+}

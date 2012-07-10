@@ -37,7 +37,7 @@ class Factory:
 			except Exception:
 				_d('Booo\n')
 				
-		self.output_networks()
+		#self.output_networks()
 		self.output_roads()
 				
 	def lookup_idx(self, tid):
@@ -66,12 +66,11 @@ class Factory:
 							forward = road[0]
 						#_d(current)
 						if current['type'] == 'mail':
-							res = '\\stylerefmailslow{%s}\\stylerefroad{%d}{%d}'%(current['key'],back['id'],forward['id'])
-						else:
-							res = '%s\\stylerefroad{%d}{%d}'%(current['key'],back['id'],forward['id'])
+							res = '\\styleref{\\getvariable\[type\]\[%s\]}{\\getvariable\[road\]\[%s\]}{%s}\\stylerefroad{%d}{%d}'%(current['type'],name,current['key'],back['id'],forward['id'])
 						bid = self.lookup_idx(current['id'])
 						txt = ''
 						if 'tex_escaped' not in self.base[0][bid]:
+							print 'RES[%s] PAT[%s] TXT[%s]'%(res,self.paternize(current['key']),self.escape_tex(self.base[0][bid]['text']))
 							txt = re.sub(self.paternize(current['key']), res, self.escape_tex(self.base[0][bid]['text']), 1)
 						else:
 							txt = re.sub(self.paternize(current['key']), res, self.base[0][bid]['text'], 1)
