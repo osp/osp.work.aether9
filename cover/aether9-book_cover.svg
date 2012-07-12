@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1133.8583"
+   height="850.39368"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="aether9-book_cover.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5289">
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:1;"
+         offset="0"
+         id="stop5291" />
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:0;"
+         offset="1"
+         id="stop5293" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5283"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#0000ff;stop-opacity:1;"
+         offset="0"
+         id="stop5285" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5289"
+       id="linearGradient5295"
+       x1="549.21259"
+       y1="539.80151"
+       x2="14.92693"
+       y2="539.80151"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="565.65367"
+     inkscape:cy="406.61632"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="mm"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       orientation="1,0"
+       position="549.2126,1091.4286"
+       id="guide2985" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="584.64567,1102.8571"
+       id="guide2987" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-201.96851)">
+    <rect
+       style="fill:url(#linearGradient5295);fill-opacity:1;stroke:none"
+       id="rect3061"
+       width="565.37506"
+       height="907.117"
+       x="-16.162441"
+       y="187.6716" />
+    <g
+       transform="matrix(1.25,0,0,-1.25,578.85247,1093.4339)"
+       inkscape:label="aether02"
+       id="g3016">
+      <text
+         id="text3018"
+         transform="matrix(1,0,0,-1,236.1262,57.1606)">
+        <tspan
+           id="tspan3020"
+           y="0"
+           x="0"
+           style="font-size:6.97384787px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:LMRoman7;-inkscape-font-specification:LMRoman7-Regular">1</tspan>
+      </text>
+      <text
+         id="text3022"
+         transform="matrix(1,0,0,-1,123.822,647.5337)">
+        <tspan
+           id="tspan3024"
+           y="0"
+           x="0"
+           style="font-size:26.89912796px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Karla;-inkscape-font-specification:Karla-Regular">0</tspan>
+      </text>
+      <text
+         id="text3026"
+         transform="matrix(1,0,0,-1,42.5197,609.2246)">
+        <tspan
+           id="tspan3028"
+           sodipodi:role="line"
+           y="0"
+           x="0 4.8219175 7.2049813 12.13848 17.287172 19.518805 21.901867 25.910833 30.015442 34.94894 38.678955 43.030636 47.764881 52.267994 56.372601 59.943211 64.422417 67.419174 72.233124 76.33773 81.271233 85.734497 90.540474 97.171608 102.05728 106.16189 110.62515 112.85679 115.23985 118.23661"
+           style="font-size:7.97011185px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Karla;-inkscape-font-specification:Karla-Regular">SirOliverLodge,EtherandReality</tspan>
+      </text>
+      <text
+         id="text3030"
+         transform="matrix(1,0,0,-1,42.5197,558.9604)">
+        <tspan
+           id="tspan3032"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.1091409 20.777185 31.606176 45.056637 51.205479 56.701569 64.465553 71.800644 82.901619 89.316162 100.14516 105.64124 116.73594 131.10695 137.5215"
+           style="font-size:20.92154312px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Crimson Text;-inkscape-font-specification:CrimsonText-Roman">&quot;Thefirstthingto</tspan>
+      </text>
+      <text
+         id="text3034"
+         transform="matrix(1,0,0,-1,42.5197,537.0425)">
+        <tspan
+           id="tspan3036"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.7639852 16.548941 25.191631 30.319502 35.81559 44.27417 57.724632 66.367325 76.562393 86.981316 97.544609 108.64558 115.06012 125.88911"
+           style="font-size:20.92154312px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Crimson Text;-inkscape-font-specification:CrimsonText-Roman">realizeaboutthe</tspan>
+      </text>
+      <text
+         id="text3038"
+         transform="matrix(1,0,0,-1,42.5197,515.1247)"
+         sodipodi:linespacing="125%">
+        <tspan
+           id="tspan3040"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.5986547 15.241344 21.821171 30.606127 37.020672 47.849663 56.634621 64.398605 70.997261 80.886871 92.132202 97.628296 109.64981 115.1459 121.56045 133.56105 142.20374 152.3988"
+           style="font-size:20.92154312px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Crimson Text;-inkscape-font-specification:CrimsonText-Roman"><tspan
+   style="-inkscape-font-specification:Crimson Text Patch;font-family:Crimson Text Patch;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:20.92154236px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%"
+   id="tspan3053">(a)ether(9</tspan>
+)isitsab-</tspan>
+      </text>
+      <text
+         id="text3042"
+         transform="matrix(1,0,0,-1,42.5197,493.2069)">
+        <tspan
+           id="tspan3044"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.3350935 17.754023 22.881893 33.445179 39.859726 53.310184 61.584656 72.003586 83.098282 89.512825 95.008919 106.10361 116.6669 122.16299 128.57753 137.85414"
+           style="font-size:20.92154312px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Crimson Text;-inkscape-font-specification:CrimsonText-Roman">solutecontinuity.</tspan>
+      </text>
+      <text
+         id="text3046"
+         transform="matrix(1,0,0,-1,42.5197,471.2891)">
+        <tspan
+           id="tspan3048"
+           sodipodi:role="line"
+           y="0"
+           x="0 18.641096 28.796413 37.581371 46.366325 61.492603 68.827698 77.612648 90.920845 97.069687 102.56578 109.90087 125.41629 136.24529 144.88797"
+           style="font-size:20.92154312px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Crimson Text;-inkscape-font-specification:CrimsonText-Roman">Adeepseafishhas</tspan>
+      </text>
+      <text
+         id="text3050"
+         transform="matrix(1,0,0,-1,42.5197,449.3713)">
+        <tspan
+           id="tspan3052"
+           sodipodi:role="line"
+           y="0"
+           x="0 10.439851 18.203835 28.622765 38.817833 47.460522 57.65559 62.783463 76.725578 87.820274 102.92563 119.27163 128.05658 136.69928 147.79398"
+           style="font-size:20.92154312px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Crimson Text;-inkscape-font-specification:CrimsonText-Roman">probablynomeans</tspan>
+      </text>
+      <text
+         id="text3054"
+         transform="matrix(1,0,0,-1,42.5197,427.4535)">
+        <tspan
+           id="tspan3056"
+           sodipodi:role="line"
+           y="0"
+           x="0 10.418929 21.233274 29.875965 40.315815 50.755665 58.51965 67.304604 78.133598 86.918556 98.013252 108.16856 113.66466 124.75935 139.13036 145.54491 156.3739"
+           style="font-size:20.92154312px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Crimson Text;-inkscape-font-specification:CrimsonText-Roman">ofapprehendingthe</tspan>
+      </text>
+      <text
+         id="text3058"
+         transform="matrix(1,0,0,-1,42.5197,405.5357)">
+        <tspan
+           id="tspan3060"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.784956 18.327272 23.823362 31.158455 37.573002 46.357956 57.452652 65.727119 79.177582 89.596512 100.43178 115.42834 124.07103 130.48558 139.27054 152.26491 161.93694 167.43303"
+           style="font-size:20.92154312px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Crimson Text;-inkscape-font-specification:CrimsonText-Roman">existenceofwater;it</tspan>
+      </text>
+      <text
+         id="text3062"
+         transform="matrix(1,0,0,-1,42.5197,383.6179)">
+        <tspan
+           id="tspan3064"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.4960895 17.496687 23.911232 34.330162 49.435516 59.998802 71.093498 76.589592 82.738434 93.157356 100.92134 117.26735 122.39522 136.35826 141.85434 158.20035"
+           style="font-size:20.92154312px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Crimson Text;-inkscape-font-specification:CrimsonText-Roman">istoouniformlyim-</tspan>
+      </text>
+      <text
+         id="text3066"
+         transform="matrix(1,0,0,-1,42.5197,361.7001)">
+        <tspan
+           id="tspan3068"
+           sodipodi:role="line"
+           y="0"
+           x="0 16.346003 25.130959 32.894943 40.230038 49.014992 63.835815 69.331902 85.113022 90.609116 102.25404 117.53723 126.17992 137.27461"
+           style="font-size:20.92154312px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Crimson Text;-inkscape-font-specification:CrimsonText-Roman">mersedinit:and</tspan>
+      </text>
+      <text
+         id="text3070"
+         transform="matrix(1,0,0,-1,42.5197,339.7823)">
+        <tspan
+           id="tspan3072"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.4145455 17.243536 25.886227 36.966274 42.462364 54.483887 64.902817 75.466103 87.895592 96.190987 106.60991 117.70461 127.85992 133.35602"
+           style="font-size:20.92154312px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Crimson Text;-inkscape-font-specification:CrimsonText-Roman">thatisourcondi-</tspan>
+      </text>
+      <text
+         id="text3074"
+         transform="matrix(1,0,0,-1,42.5197,317.8645)">
+        <tspan
+           id="tspan3076"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.4145455 11.910635 22.329563 38.089764 43.585854 59.366974 67.130959 75.915916 85.600494 94.243187 102.00717 116.828 123.24254 138.3479 144.76244 155.59143"
+           style="font-size:20.92154312px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Crimson Text;-inkscape-font-specification:CrimsonText-Roman">tioninregardtothe</tspan>
+      </text>
+      <text
+         id="text3078"
+         transform="matrix(1,0,0,-1,42.5197,295.9467)">
+        <tspan
+           id="tspan3080"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.784956 15.199502 26.028492 34.81345 42.577435 47.337086"
+           style="font-size:20.92154312px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Crimson Text;-inkscape-font-specification:CrimsonText-Roman">ether.&quot;</tspan>
+      </text>
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3139"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3141"><rect
+           id="rect3143"
+           width="395.9798"
+           height="369.71582"
+           x="88.893425"
+           y="127.12446" /></flowRegion><flowPara
+         id="flowPara3145" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3154"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(-116.57142,103.11136)"><flowRegion
+         id="flowRegion3156"><rect
+           id="rect3158"
+           width="243.00371"
+           height="682.44684"
+           x="157.5838"
+           y="135.20567"
+           style="font-size:12px" /></flowRegion><flowPara
+         id="flowPara3164"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"> </flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara3221">Aether9, from the beginning was offering inclusion to participants at differing stages in the development of their art practice and technical proficiency. We had very different skill sets and we all wanted aether9 to be truly multidisciplinary, showing the ‘human hand’ in our creation: including sculpture and drawings on camera, sound composition, authoring both code and script, and all translation was handled among us. Interest in our progress was facilitated by a FB group, aether9's mailing list, news links from member's sites, our own aether9.org wiki, as well as venue/gallery listings. We gave interviews about aether9 within the interested community; but generally we rushed headlong into performance without stopping to merchandise anything like a T-shirt, and spent very little time asking for money. Time was of the essence. As video conferencing and communication over <flowSpan
+   style="-inkscape-font-specification:Karla Network;font-family:Karla Network;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%"
+   id="flowSpan3057">distance</flowSpan> became commonplace and ubiquitous, aimed at families spread over several localities or corporate tele-conferencing, the novelty that attracted us to this project slowly faded. Today multiple stream video conferencing is a pay-to-play offering on <flowSpan
+   style="-inkscape-font-specification:Karla Chat;font-family:Karla Chat;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%"
+   id="flowSpan3059">Skype Premium</flowSpan>. Over half of us have changed our countries of residence and have gone on to other projects in emerging media. We remain in touch; our experiments in communication <flowSpan
+   style="-inkscape-font-specification:Karla Science;font-family:Karla Science;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%"
+   id="flowSpan3055">technology</flowSpan> as aether9 have expanded our imaginations and shaped our dramaturgical considerations.</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3166"
+       style="font-size:9px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(-35.428571,111.68279)"><flowRegion
+         id="flowRegion3168"><rect
+           id="rect3170"
+           width="200.64116"
+           height="641.42865"
+           x="348.57144"
+           y="146.10796"
+           style="font-size:9px;fill:#000000" /></flowRegion><flowPara
+         id="flowPara3172"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">Aether9 is a publication of Greyscale Press.</flowPara><flowPara
+         id="flowPara3174"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">Copy editing: Audrey Samson, Manuel Schmalstieg</flowPara><flowPara
+         id="flowPara3176"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">Design: Gijs de Heij, Ludivine Loiseau, Pierre Marchand (OSP http://osp.constantvzw.org)</flowPara><flowPara
+         id="flowPara3178"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">Composed in modified Karla, Crimson Text and Consola Mono fonts. Layouted in ConTeXt and Inkscape.The pdf found its way through OSPImpose.</flowPara><flowPara
+         id="flowPara3180"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000" /><flowPara
+         id="flowPara3182"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">Printing: </flowPara><flowPara
+         id="flowPara3184"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">This book was produced in an intense sprint and some after shocks in June and July 2012, starting from a gathering of the project archives.</flowPara><flowPara
+         id="flowPara3186"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">The files of this book are available at .... </flowPara><flowPara
+         id="flowPara3188"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000" /><flowPara
+         id="flowPara3190"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">Licence: The content of this book is licensed under the Creative Commons Attribution 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by/3.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</flowPara><flowPara
+         id="flowPara3192"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000" /><flowPara
+         id="flowPara3194"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">The design of the book is licensed under the Free Art License 1.3.</flowPara><flowPara
+         id="flowPara3196"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">http://artlibre.org/licence/lal/en</flowPara><flowPara
+         id="flowPara3198"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000" /><flowPara
+         id="flowPara3200"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">Remerciements</flowPara><flowPara
+         id="flowPara3202"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">Festivals/Institutions:</flowPara><flowPara
+         id="flowPara3204"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">OSP, Kumbit, GISS.TV, Mapping Festival, 10111.ORG, cave12.org, agence TOPO, Perte-de-Signal, _____ -micro research, Festival de la Imagen, Tenderpixel gallery, Galeria 10-36, rupert goldsworthy gallery</flowPara><flowPara
+         id="flowPara3206"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000" /><flowPara
+         id="flowPara3208"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">People:</flowPara><flowPara
+         id="flowPara3210"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000">Gregorio Gómez (aka gladkazuka), Natalia Valencia, Leonardo Gonzalez, Jonathan Goldstein,  Rupert Goldsworthy, Jane Friedman, Carsten Shultz, Brad Ellis, Diana McCarty, Toni Schifer, Gabriele Stellbaum, Maaike Stutterheim, Kathrin Günter, Martin Howse, Samir Youssef, Joe Elias, Zoe Judell, Robin Dupuis, Jonathan Villeneuve, Tom Stout, Sofian Audry, Jordan Arsenault, Nicola Unger, Maria Hermelin, Pedro Hermelin, Jérôme Prosperger, Kim Xupei, Luka Prinčič, Richard Milan, Anna Popek, Bliscappen van Maria, Deirdre Foster, Amirali Ghasemi, Sohrab Kashani, Shankar Barua, Pooja Varma, Shandrika Grover, Tengal Drilon, Justine Beaujouan, Boris Edelstein, Boba Mirjana Stojadinović, Yves Bernard, Juliana Restrepo, Juan Guillermo Caicedo, Viviana Palacio, Bjorn Eriksson, Sebastian Bohle, Sunshine,  This publication was supported by Sitemapping Mediaprojects / Swiss Federal Office for Culture.</flowPara><flowPara
+         id="flowPara3212"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000" /><flowPara
+         id="flowPara3214"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Crimson Text;-inkscape-font-specification:Crimson Text;fill:#000000" /></flowRoot>  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="g"
+     sodipodi:insensitive="true">
+    <path
+       style="fill:#f2f2f2;fill-opacity:1;stroke:none"
+       d="m -351.62946,-260.46872 0,1342.87492 1857.12496,0 0,-1342.87492 -1857.12496,0 z m 352.5,261.03124676 1133.84376,0 0,850.40625324 -1133.84376,0 0,-850.40625324 z"
+       id="rect3117"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
