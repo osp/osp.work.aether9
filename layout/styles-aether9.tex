@@ -5,13 +5,14 @@
 \sethyphenatedurlafter {:=}
 
 % LANGUAGE {{{
-    \setuplanguage[en][
-        leftquote=\upperleftdoublesixquote,
-        rightquote=\upperrightdoublesixquote,
-    ]
+%     \setuplanguage[en][
+%         leftquote=\upperleftdoublesixquote,
+%         rightquote=\upperrightdoublesixquote,
+%     ]
     \mainlanguage[en]
-    \setcharacterspacing [frenchpunctuation]
 % }}}
+
+
 
 % LAYOUT {{{
     % General layout
@@ -64,12 +65,6 @@
 %     \definepagebreak[emptyodd][yes,header,footer, odd]
 %     \definepagebreak[emptyeven][yes,header,footer, even]
 %     \setuphead[chapter][page=emptyodd]
-
-
-    % Folio
-     \setuppagenumber[number=1]
-     \setuppagenumbering[alternative=doublesided, location=footer, style={\setupbodyfont[karlaregular, 7pt]}] 
-%    \setupfootertexts [section]
 
 \definemargindata [margintext]
     [
@@ -148,10 +143,73 @@
 % }}}
 
 
+% \def\stylerunning#1{{\crimmedium #1}}
+
+\startlua
+trackers.enable("marks.set")
+trackers.enable("marks.get")
+\stoplua
+
+\definemarking[P]
+\definemarking[I]
+
+\startluacode
+userdata = userdata or {}
+function userdata.print(start, step, limit, cond)
+	
+	local nstart = tonumber(start)
+	local var = nstart
+	local ncond = tonumber(cond)
+	local dd = 0
+	while (step > 0 and var <= limit) or (step <= 0 and var >= limit) 
+	do
+		local v = var
+		if ncond == v 
+		then 
+		
+			local i = nil
+			if nstart == 4 then
+				commands.getmarking("I", interfaces.variables.page, interfaces.variables.last)
+				context(" --- ")
+			end
+			
+			local p = commands.getmarking("P", interfaces.variables.page, interfaces.variables.current)
+			
+			if nstart == 1 then
+				context(" --- ")
+				commands.getmarking("I", interfaces.variables.page, interfaces.variables.first)
+			end
+			
+			dd = 1
+			break
+		end 
+		var = var + step
+	end
+
+
+end
+\stopluacode
+
+\def\blabla#1{%
+	\ctxlua{userdata.print("#1", 4, 400, tex.count.pageno);}
+}
+
+\setuppagenumber[number=1]
+\setuppagenumbering[location=]
+
+
+
+\setupheadertexts[\blabla{1}][]
+		[\blabla{4}][]
+
+\setupheader[style={\crimmedium}]
+
+
+
 % PARAGRAPHS {{{
-\showlayout
-\showmakeup
-\showframe
+% \showlayout
+% \showmakeup
+% \showframe
 
 \input piece
 \input mailtitle
