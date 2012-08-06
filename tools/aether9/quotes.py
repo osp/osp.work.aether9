@@ -76,9 +76,10 @@ class Writer:
 		#	aref.append('%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
 		
 		ret = []
+		ret.append('\\stylepiece{%d}'%self.id)
 		ret.append('\\stylequoteblock{')
-		ret.append('\\stylepiece')
-		ret.append('%d'%self.id)
+		#ret.append('\\stylepiece')
+		#ret.append('%d'%self.id)
 		ret.append('\\styleinfos')
 		ret.append('%s'%( self.author))
 		ret.append('\\stylequote')

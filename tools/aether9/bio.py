@@ -75,6 +75,7 @@ class Writer:
 		ret = []
 		#ret.append('\\stylebiopiece')
 		#ret.append('%d'%self.id)
+		ret.append('\\stylepiece{%d}'%self.id)
 		ret.append('\\stylebioname')
 		ret.append(self.name.upper())
 		ret.append('\\stylebionick')
