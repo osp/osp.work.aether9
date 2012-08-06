@@ -184,7 +184,8 @@ def main():
 	final_r.close
 
 def hyphenate_urls (matchObject):
-	return re.sub ('/', '\\/', '\\hyphenatedurl{%s}' % matchObject.group(0))
+	esc_text = re.sub ('\\\\textasciitilde\{\}', '~', matchObject.group(0))
+	return '\\hyphenatedurl{%s}' % esc_text 
 	
 if __name__ == '__main__':
 	main()

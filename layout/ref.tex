@@ -1,3 +1,14 @@
+\setvariables[type][mail=0]
+
+\setvariables[road][slow=0]
+\setvariables[road][cash=1]
+\setvariables[road][red=2]
+\setvariables[road][themes=3]
+\setvariables[road][network=4]
+\setvariables[road][chat=5]
+\setvariables[road][science=6]
+\setvariables[road][patch=7]
+
 \def\stylerefnetwork#1%
 {
 	\margintext{\kasml #1}
@@ -13,57 +24,77 @@
 	{\inright{\kasml #1}}
 }
 
-\def\stylerefroad#1%
+\def\stylerefroad#1#2%
 {
-	{\refroad{\kasml #1}}
-}
-
-\def\stylerefnet#1%
-{
-	{\margintext{\kasml #1}}
-}
-
-\def\stylerefmail#1%
-{
-	{\crimslow#1}
+	\margintext{
+		\hskip -1.5mm
+		{\kasml
+			\vbox to 8pt {
+				\hbox{#1}
+				\vskip -5pt
+				\hbox{#2}
+			}
+		}
+	}
 }
 
 \def\stylerefmailslow#1%
 {
-	{\crimslow#1}
+	{
+		\crimslow #1
+	}
 }
-
-\def\stylerefchatlow#1%
+\def\stylerefmailchat#1%
 {
-	{\kaslow #1}
+	{
+		\crimchat #1
+	}
 }
-
-\def\stylerefquoteslow#1%
+\def\stylerefmailpatch#1%
 {
-	{\crimbigslow #1}
+	{
+		\crimpatch #1
+	}
 }
-\def\stylerefmailslow#1%
+\def\stylerefmailred#1%
 {
-	{\crimslow #1 }
+	{
+		\crimred #1
+	}
 }
-
-\def\stylerefmaillowback#1%
+\def\stylerefmailnetwork#1%
 {
-	{\crimslow \stylerefroadback{#1} }
+	{
+		\crimnetwork #1
+	}
 }
-
-\def\stylerefmaillowforward#1%
+\def\stylerefmailcash#1%
 {
-	{\crimslow \stylerefroadforward{#1} }
+	{
+		\crimcash #1
+	}
 }
-
-\def\stylerefbiolow#1%
+\def\stylerefmailscience#1%
 {
-	{\consolminislow #1}
+	{
+		\crimscience #1
+	}
 }
-
-\def\stylereftechlow#1%
+\def\stylerefmailthemes#1%
 {
-	{\consolbaseslow #1}
+	{
+		\crimthemes #1
+	}
 }
-
+\def\stylerefmailperformers#1%
+{
+	{
+		\cap{#1}
+	}
+}
+\def\stylerefmailtech#1%
+{
+	{
+		\crimtech #1
+	}
+}
