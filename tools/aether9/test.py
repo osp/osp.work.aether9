@@ -158,6 +158,7 @@ def main():
 		ret.append('\\startproduct aether_%s'%(wrt,))
 		ret.append('\\starttext')
 		ret.append('\\part[%s]{%s}'%(wrt,wrt))
+		ret.append('\\marking[P]{%s}'%(wrt,))
 		#ret.append('\\startcolumnset[duo]')
 		for w in writers[wrt]:
 			ret.append(re.sub ('((([^\s<>]+)?)(@|mailto\:|(news|(ht|f)tp(s?))\s?\://)\S+)', hyphenate_urls, w.as_string()))

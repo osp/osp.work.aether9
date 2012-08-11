@@ -1,7 +1,8 @@
-\def\stylepiece%
+\def\stylepiece#1%
 {
+	\marking[I]{#1}
 	\setupinterlinespace[27pt] 
 	\setupalign[center]
 	\setupwhitespace[10mm]
-	\kafat
+	{\kafat #1}
 }

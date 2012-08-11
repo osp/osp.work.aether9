@@ -115,7 +115,7 @@ class Writer:
 			#buff += '\n\\setuplayout[width=\paperwidth,textheight=\paperheight,rightedge=0mm,rightmargin=0mm,leftmargin=0mm,leftedge=0mm,top=0mm,header=0mm,footer=0mm,bottom=0mm,backspace=0mm,topspace=0mm,rightedgedistance=0mm,rightmargindistance=0mm,leftmargindistance=0mm,leftedgedistance=0mm,topdistance=0mm,footerdistance=0mm,bottomdistance=0mm]'
 			buff += '\n\\setuplayout[nomargins]'
 			for path in paths:
-				buff += '\n\\placefigure[here,force]{none}{\\externalfigure[%s][width=\\paperwidth,\\paperheight]}'%(re.sub(et_pat, getattr(self, 'escape_tex'), path))
+				buff += '\n\\placefigure[here,force]{none}{\\externalfigure[%s][width=\\paperwidth,height=\\paperheight]}'%(re.sub(et_pat, getattr(self, 'escape_tex'), path))
 			buff += '\n\\page'
 			buff += '\n\\setuplayout[reset]'
 

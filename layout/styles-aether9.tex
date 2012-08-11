@@ -5,44 +5,49 @@
 \sethyphenatedurlafter {=/:_-.}
 
 % LANGUAGE {{{
-    \setuplanguage[en][
-        leftquote=\upperleftdoublesixquote,
-        rightquote=\upperrightdoublesixquote,
-    ]
+%     \setuplanguage[en][
+%         leftquote=\upperleftdoublesixquote,
+%         rightquote=\upperrightdoublesixquote,
+%     ]
     \mainlanguage[en]
 % }}}
 
+
+
 % LAYOUT {{{
     % General layout
+    \setuppagenumbering [alternative=doublesided]
     \definepapersize[sheet][width=77.5mm,height=240mm]  
     \setuppapersize[sheet]
     \setuplayout[
-	width=65mm,
-	height=\paperheight,
-	rightmargin=5mm,
-	leftmargin=0mm,
-	rightedge=0mm,
-	leftedge=0mm,
-	top=0mm,
-	header=12mm,
-	footer=6mm,
-	bottom=0mm,
 	backspace=6mm,
-	rightspace=0,
-	leftspace=0,
-	topspace=0mm,
-	rightedgedistance=0mm,
-	rightmargindistance=1.5mm,
-	leftmargindistance=0mm,
-	leftedgedistance=0mm,
-	topdistance=0mm,
-	footerdistance=0mm,
+	bottom=5mm,
 	bottomdistance=0mm,
-	cutspace=0mm
+	bottomspace=0mm,
+	cutspace=0mm,
+	footer=15mm,
+	footerdistance=0mm,
+	header=12mm,
+	height=239mm,
+	leftedge=0mm,
+	leftedgedistance=0mm,
+	leftmargin=0mm,
+	leftmargindistance=0mm,
+	leftspace=0,
+	rightedge=0mm,
+	rightedgedistance=0mm,
+	rightmargin=5mm,
+	rightmargindistance=1.5mm,
+	rightspace=0,
+	textheight=222mm,
+	top=0mm,
+	topdistance=0mm,
+	topspace=0mm,
+	width=65mm
         ]
     \definelayout[nomargins][
-	width=\paperwidth,
-	textheight=\paperheight,
+	width=77.5mm,
+	textheight=240mm,
 	rightedge=0mm,
 	rightmargin=0mm,
 	leftmargin=0mm,
@@ -66,12 +71,6 @@
 %     \definepagebreak[emptyodd][yes,header,footer, odd]
 %     \definepagebreak[emptyeven][yes,header,footer, even]
 %     \setuphead[chapter][page=emptyodd]
-
-
-    % Folio
-     \setuppagenumber[number=1]
-     \setuppagenumbering[alternative=doublesided, location=footer, style={\setupbodyfont[karlaregular, 7pt]}] 
-%    \setupfootertexts [section]
 
 \definemargindata [margintext]
     [
@@ -188,26 +187,78 @@
 % }}}
 
 
+% \def\stylerunning#1{{\crimmedium #1}}
+
+
+\definemarking[P]
+\definemarking[I]
+
+\startluacode
+userdata = userdata or {}
+function userdata.print(start, step, limit, cond)
+	
+	local nstart = tonumber(start)
+	local var = nstart
+	local ncond = tonumber(cond)
+	local dd = 0
+	while (step > 0 and var <= limit) or (step <= 0 and var >= limit) 
+	do
+		local v = var
+		if ncond == v 
+		then 
+		
+			local i = nil
+			if nstart == 2 then
+				commands.getmarking("I", interfaces.variables.page, interfaces.variables.last)
+				context(" --- ")
+			end
+			
+			local p = commands.getmarking("P", interfaces.variables.page, interfaces.variables.current)
+			
+			if nstart == 3 then
+				context(" --- ")
+				commands.getmarking("I", interfaces.variables.page, interfaces.variables.first)
+			end
+			
+			dd = 1
+			break
+		end 
+		var = var + step
+	end
+
+
+end
+\stopluacode
+
+\def\blabla#1{%
+	\ctxlua{userdata.print("#1", 4, 400, tex.count.pageno);}
+}
+
+\setuppagenumber[number=1]
+\setuppagenumbering[location=]
+
+
+
+\setupfootertexts[\blabla{3}][][][\blabla{2}]
+
+\setupfooter[style={\crimmedium}]
+
+
+
 % PARAGRAPHS {{{
 % \showlayout
-% \showframe
 % \showmakeup
-
-\input piece
-\input mailtitle
-\input infos
-\input mail
-
-\input chat
-
-\input quotes
-
-\input tech
+% \showframe
 
 \input bio
-
-\input ref
-
+\input chat
+\input infos
+\input mail
+\input mailtitle
 \input perfo
+\input piece
+\input quotes
+\input ref
+\input tech
 
 \stopenvironment

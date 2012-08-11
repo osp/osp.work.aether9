@@ -27,8 +27,7 @@ class Writer (mail.Writer):
 		
 		ret = []
 		
-		ret.append('\\stylepiece')
-		ret.append('%d'%self.id)
+		ret.append('\\stylepiece{%d}'%self.id)
 		ret.append('\\stylemailtitle')
 		ret.append(self.title)
 		ret.append('\\styleinfos')

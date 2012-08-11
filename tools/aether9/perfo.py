@@ -90,9 +90,7 @@ class Writer:
 		#	aref.append('%s.%s'%('\\ref[p]['+r+']', r.split(':')[-1]))
 		
 		ret = []
-		ret.append('\\stylepiece')
-		#ret.append('\\startcolumnsetspan[wide]')
-		ret.append('%d'%self.id)
+		ret.append('\\stylepiece{%d}'%self.id)
 		ret.append('\\styleinfos')
 		ret.append('%s\n\n%s\n\n%s\n\n%s'%(self.title,self.event,self.location,'\n'.join(self.performers.split())))
 		ret.append('\\styleperfo')
