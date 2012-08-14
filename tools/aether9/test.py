@@ -69,7 +69,7 @@ def main():
 	cm = 0
 	for m in ml.data['quotes']:
 		cm +=1
-		items.append
+		items.append(m)
 	sys.stderr.write(' => %d\n'%(cm,))
 	
 	# images	

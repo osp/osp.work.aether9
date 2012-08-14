@@ -57,7 +57,7 @@ class Reader:
 		# +1 the message!
 		
 		title = lines.pop(0).strip()
-		author = lines.pop(0).split(self.address_sep_pattern)[0]
+		author = ' '.join(lines.pop(0).split(self.address_sep_pattern)[0].split()[:-1])
 		date_str = lines.pop(0).strip()
 		date = time.gmtime()
 		try:
