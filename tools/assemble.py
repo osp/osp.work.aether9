@@ -1,6 +1,4 @@
 # An assembler for aether9
-
-
 sdoc = params["INPUT"]
 tdoc = params["OUTPUT"]
 sinfo = pdf_info.extract(sdoc)

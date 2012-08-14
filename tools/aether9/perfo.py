@@ -75,6 +75,10 @@ class Reader:
 		if 'performers' in perfo:
 			perfo['seperate_performers'] = map(lambda performer: performer.strip(), perfo['performers'].split (','))
 		
+		# If we transform to uppercase in the writer we also uppercase the tex commands.
+		if 'description' in perfo:
+			perfo['description'] = perfo['description'].upper()
+		
 		self.data['perfos'].append(perfo)
 		
 class Writer:
@@ -94,7 +98,7 @@ class Writer:
 		ret.append('\\styleinfos')
 		ret.append('%s\n\n%s\n\n%s\n\n%s'%(self.title,self.event,self.location,'\n'.join(self.performers.split())))
 		ret.append('\\styleperfo')
-		ret.append(self.description.upper())
+		ret.append(self.description)
 		#ret.append('\\stopcolumnsetspan')
 		return '%s' % '\n'.join(ret)
 		

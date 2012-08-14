@@ -68,23 +68,39 @@ class Factory:
 						res = "\\styleref%s%s{%s}\\stylerefroad{%d}{%d}"%(current['type'],name,current['key'],back['id'],forward['id'])
 						bid = self.lookup_idx(current['id'])
 						txt = ''
-						if 'tex_escaped' not in self.base[0][bid]:
-							if (current['type'] == 'perfo'):
-								txt = re.sub(self.paternize(current['key']), res, self.escape_tex(self.base[0][bid]['description']), 1)
-							elif (current['type'] == 'bio'):
-								txt = re.sub(self.paternize(current['key']), res, self.escape_tex(self.base[0][bid]['bio_text']), 1)
-							else:
-								txt = re.sub(self.paternize(current['key']), res, self.escape_tex(self.base[0][bid]['text']), 1)
+						#if 'tex_escaped' not in self.base[0][bid]:
+							#if (current['type'] == 'perfo'):
+								#txt = re.sub(self.paternize(current['key']), res, self.escape_tex(self.base[0][bid]['description']), 1, re.IGNORECASE)
+							#elif (current['type'] == 'bio'):
+								#txt = re.sub(self.paternize(current['key']), res, self.escape_tex(self.base[0][bid]['bio_text']), 1, re.IGNORECASE)
+							#else:
+								#txt = re.sub(self.paternize(current['key']), res, self.escape_tex(self.base[0][bid]['text']), 1, re.IGNORECASE)
+						#else:
+							#if (current['type'] == 'perfo'):
+								#txt = re.sub(self.paternize(current['key']), res, self.base[0][bid]['description'], 1, re.IGNORECASE)
+							#elif (current['type'] == 'bio'):
+								#txt = re.sub(self.paternize(current['key']), res, self.base[0][bid]['bio_text'], 1, re.IGNORECASE)
+							#else:
+								#txt = re.sub(self.paternize(current['key']), res, self.base[0][bid]['text'], 1, re.IGNORECASE)
+							
+						##_d(txt)
+						#self.base[0][bid]['text'] = txt
+						#self.base[0][bid]['tex_escaped'] = True
+						
+						if (current['type'] == 'perfo'):
+							target = 'description'
+						elif (current['type'] == 'bio'):
+							target = 'bio_text'
 						else:
-							if (current['type'] == 'perfo'):
-								txt = re.sub(self.paternize(current['key']), res, self.base[0][bid]['description'], 1)
-							elif (current['type'] == 'bio'):
-								txt = re.sub(self.paternize(current['key']), res, self.base[0][bid]['bio_text'], 1)
-							else:
-								txt = re.sub(self.paternize(current['key']), res, self.base[0][bid]['text'], 1)
+							target = 'text'
+						
+						if 'tex_escaped' not in self.base[0][bid]:
+							txt = re.sub(self.paternize(current['key']), res, self.escape_tex(self.base[0][bid][target]), 1, re.IGNORECASE)
+						else:
+							txt = re.sub(self.paternize(current['key']), res, self.base[0][bid][target], 1, re.IGNORECASE)
 							
 						#_d(txt)
-						self.base[0][bid]['text'] = txt
+						self.base[0][bid][target] = txt
 						self.base[0][bid]['tex_escaped'] = True
 				
 		#sys.exit()
