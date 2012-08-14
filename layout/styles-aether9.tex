@@ -97,6 +97,7 @@
 \definesimplefont[kasml][karlaaether9][size=5.5pt]
 \definesimplefont[consolbase][consolamono][size=12pt] 
 \definesimplefont[consolmini][consolamono][size=8pt]
+\definesimplefont[consolmicro][consolamono][size=6pt]
 
 % slow, patch, chat, tech, red, science, themes, network
 
@@ -187,61 +188,9 @@
 % }}}
 
 
-% \def\stylerunning#1{{\crimmedium #1}}
-
-
-\definemarking[P]
-\definemarking[I]
-
-\startluacode
-userdata = userdata or {}
-function userdata.print(start, step, limit, cond)
-	
-	local nstart = tonumber(start)
-	local var = nstart
-	local ncond = tonumber(cond)
-	local dd = 0
-	while (step > 0 and var <= limit) or (step <= 0 and var >= limit) 
-	do
-		local v = var
-		if ncond == v 
-		then 
-		
-			local i = nil
-			if nstart == 2 then
-				commands.getmarking("I", interfaces.variables.page, interfaces.variables.last)
-				context(" --- ")
-			end
-			
-			local p = commands.getmarking("P", interfaces.variables.page, interfaces.variables.current)
-			
-			if nstart == 3 then
-				context(" --- ")
-				commands.getmarking("I", interfaces.variables.page, interfaces.variables.first)
-			end
-			
-			dd = 1
-			break
-		end 
-		var = var + step
-	end
-
-
-end
-\stopluacode
-
-\def\blabla#1{%
-	\ctxlua{userdata.print("#1", 4, 400, tex.count.pageno);}
-}
 
 \setuppagenumber[number=1]
 \setuppagenumbering[location=]
-
-
-
-\setupfootertexts[\blabla{3}][][][\blabla{2}]
-
-\setupfooter[style={\crimmedium}]
 
 
 
@@ -259,6 +208,7 @@ end
 \input piece
 \input quotes
 \input ref
+\input rtitle
 \input tech
 
 \stopenvironment
