@@ -133,6 +133,7 @@ class Writer:
 			try:
 				buff += '\\useexternalfigure[%s][%s]'%(mds,esc_text)
 				buff += '\\hbox {\\externalfigure[%s][%s]}' % (mds, ','.join(options))
+				buff += '\\blank[image]'
 			except Exception as e:
 				pass
 
