@@ -6,10 +6,10 @@ for type, font in types.items():
 		if road == 'performers':
 			print '\def\styleref%s%s#1%%' % (type,road)
 			#print '{'
-			print '{{\cap{\%s#1}}}' % (font)
+			print '{{\cap{\%s#1}}}\n' % (font)
 			#print '}'
 		else:
 			print '\def\styleref%s%s#1%%' % (type,road)
 			#print '{'
-			print '{{\%s%s #1}}' % (font, road)
+			print '{\\vbox{\\hbox to 10.5pt{{\%s%s #1}}}}\n' % (font, road)
 			#print '}'
