@@ -11,5 +11,6 @@ for type, font in types.items():
 		else:
 			print '\def\styleref%s%s#1%%' % (type,road)
 			#print '{'
-			print '{\\vbox{\\hbox to 10.5pt{{\%s%s #1}}}}\n' % (font, road)
+			#print '{\\vbox{\\hbox to 10.5pt{{\%s%s #1}}}}\n' % (font, road)
+			print '{{\%s%s #1}}\n' % (font, road)
 			#print '}'
