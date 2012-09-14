@@ -24,15 +24,40 @@
 	{\inright{\kasml #1}}
 }
 
+\def\stylerefroadfwdonly#1%
+{
+	\margintext{
+		\hskip -1.5mm
+		{\kasml
+			\vbox to 8pt {
+				\hbox{#1_}
+			}
+		}
+	}
+}
+
+\def\stylerefroadrwdonly#1%
+{
+	\margintext{
+		\hskip -1.5mm
+		{\kasml
+			\vbox to 8pt {
+				\hbox{_#1}
+			}
+		}
+	}
+}
+
+
 \def\stylerefroad#1#2%
 {
 	\margintext{
 		\hskip -1.5mm
 		{\kasml
 			\vbox to 8pt {
-				\hbox{#1}
+				\hbox{_#1}
 				\vskip -5pt
-				\hbox{#2}
+				\hbox{#2_}
 			}
 		}
 	}
