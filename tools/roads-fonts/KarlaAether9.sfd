@@ -14,13 +14,14 @@ sfntRevision: 0x00010000
 LayerCount: 2
 Layer: 0 1 "Back"  1
 Layer: 1 1 "Fore"  0
+NeedsXUIDChange: 1
 XUID: [1021 619 1067718245 14027532]
 FSType: 8
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1307536560
-ModificationTime: 1342545886
+ModificationTime: 1347699088
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5
@@ -84,17 +85,22 @@ ShortTable: maxp 16
   0
 EndShort
 LangName: 1033 "" "" "Regular" "FontForge 2.0 : Karla Regular Aether9 : 10-7-2012" "" "Version 1.000" "" "" "" "Jonathan Pinhorn" "" "" "jonpinhorn.com" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL" 
-GaspTable: 1 65535 3
+GaspTable: 1 65535 3 0
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 132 22 10
+WinInfo: 8586 6 5
 BeginPrivate: 0
 EndPrivate
-BeginChars: 65549 171
+Grid
+-1000 481 m 0
+ 2000 481 l 0
+  Named: "x-height" 
+EndSplineSet
+BeginChars: 65549 173
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -5346,33 +5352,75 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-456 790 m 5
- 212 677 l 5
- 189 727 l 5
- 424 860 l 5
- 456 790 l 5
+456 790 m 5,0,-1
+ 212 677 l 5,1,-1
+ 189 727 l 5,2,-1
+ 424 860 l 5,3,-1
+ 456 790 l 5,0,-1
 EndSplineSet
 Refer: 38 67 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: Ccaron
 Encoding: 268 268 170
 Width: 613
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
-497.7 840 m 5
- 447.7 879 l 5
- 318.7 771 l 5
- 188.7 879 l 5
- 138.7 840 l 5
- 318.7 684 l 5
- 497.7 840 l 5
+497.7 840 m 5,0,-1
+ 447.7 879 l 5,1,-1
+ 318.7 771 l 5,2,-1
+ 188.7 879 l 5,3,-1
+ 138.7 840 l 5,4,-1
+ 318.7 684 l 5,5,-1
+ 497.7 840 l 5,0,-1
 EndSplineSet
 Refer: 38 67 N 1 0 0 1 0 0 2
-Validated: 622601
+Validated: 32777
+EndChar
+
+StartChar: arrowleft
+Encoding: 8592 8592 171
+Width: 726
+Flags: WO
+LayerCount: 2
+Fore
+SplineSet
+167.588 267 m 5,0,-1
+ 408 101 l 5,1,-1
+ 356 40 l 5,2,-1
+ 40 271 l 5,3,-1
+ 40 340 l 5,4,-1
+ 356 572 l 5,5,-1
+ 408 512 l 5,6,-1
+ 168.695 345 l 5,7,-1
+ 671 345 l 5,8,-1
+ 671 267 l 5,9,-1
+ 167.588 267 l 5,0,-1
+EndSplineSet
+EndChar
+
+StartChar: arrowright
+Encoding: 8594 8594 172
+Width: 726
+Flags: WO
+LayerCount: 2
+Fore
+SplineSet
+543.412 267 m 5,0,-1
+ 303 101 l 5,1,-1
+ 355 40 l 5,2,-1
+ 671 271 l 5,3,-1
+ 671 340 l 5,4,-1
+ 355 572 l 5,5,-1
+ 303 512 l 5,6,-1
+ 542.305 345 l 5,7,-1
+ 40 345 l 5,8,-1
+ 40 267 l 5,9,-1
+ 543.412 267 l 5,0,-1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont

@@ -65,7 +65,17 @@ class Factory:
 						except Exception:
 							forward = road[0]
 						#_d(current)
+						
 						res = "\\styleref%s%s{%s}\\stylerefroad{%d}{%d}"%(current['type'],name,current['key'],back['id'],forward['id'])
+						
+						if current['id'] == back['id']:
+							res = "\\styleref%s%s{%s}\\stylerefroadfwdonly{%d}"%(current['type'],name,current['key'],forward['id'])
+						if current['id'] == forward['id']:
+							res = "\\styleref%s%s{%s}\\stylerefroadrwdonly{%d}"%(current['type'],name,current['key'],back['id'])
+							
+						if current['id'] == back['id'] and current['id'] == forward['id']:
+							res = "\\styleref%s%s{%s}"%(current['type'],name,current['key'])
+						
 						bid = self.lookup_idx(current['id'])
 						txt = ''
 						#if 'tex_escaped' not in self.base[0][bid]:

@@ -12,9 +12,11 @@
 % 		}
 % 	}
 	
-	\smallskip{}
+% 	\medskip{}
 	
-	#1 \hfill{} #2
+	#1 
+	
+	#2
 	
 	#3
 	
@@ -25,14 +27,19 @@
 {
 	\setupwhitespace[2pt]
 	\setupinterlinespace[line=10pt] 
-	\setupalign[flushright]
+	\setupalign[flushleft]
 	{\kasmall #1}
 }
 \def\stylechatpiece#1%
 {
 	\marking[I]{#1}
-	\setupalign[flushleft]
-	{\kaquin #1 }
+	\setupalign[center]
+	\blank[medium]
+	{\setupinterlinespace[27pt] \kafat #1}
+	\blank[micro]
+% 	\marking[I]{#1}
+% 	\setupalign[flushleft]
+% 	{\kaquin #1 }
 }
 
 
