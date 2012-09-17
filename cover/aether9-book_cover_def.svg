@@ -11,7 +11,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="aether9-book_cover_def.svg"
+   sodipodi:docname="aether9-book_cover.pdf"
    inkscape:version="0.48.3.1 r9886"
    version="1.1"
    id="svg2"
@@ -28,19 +28,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0276702"
-     inkscape:cx="437.9675"
-     inkscape:cy="237.00142"
+     inkscape:zoom="0.25691755"
+     inkscape:cx="607.01226"
+     inkscape:cy="385.53668"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
      units="mm"
      borderlayer="true"
      inkscape:showpageshadow="false"
-     showguides="true"
+     showguides="false"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="744"
+     inkscape:window-width="1680"
+     inkscape:window-height="994"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -87,6 +87,14 @@
        orientation="0,1"
        position="875.10597,202.54106"
        id="guide6765" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="21.407646,228.67258"
+       id="guide5820" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="263.21674,799.86751"
+       id="guide5822" />
   </sodipodi:namedview>
   <defs
      id="defs4">
@@ -417,7 +425,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -484,7 +492,7 @@
          style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;letter-spacing:-0.44999999px;writing-mode:lr-tb;text-anchor:start;fill:#000000;font-family:Crimson Text;-inkscape-font-specification:Crimson Text"
          id="flowPara14044" /></flowRoot>    <g
        id="g16277"
-       transform="translate(255.04163,-9537.9119)"
+       transform="translate(259.04163,-9539.9119)"
        style="fill:#1e2eed;fill-opacity:1">
       <flowRoot
          xml:space="preserve"
@@ -511,7 +519,7 @@
            style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;letter-spacing:-0.44999999px;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text"
            id="flowPara16295">of apprehending the existence of water;</flowPara><flowPara
            id="flowPara16297"
-           style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;letter-spacing:-0.44999999px;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text">it is too uniformly immersed in it: and that is our condition in regard to theether.  </flowPara><flowPara
+           style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;letter-spacing:-0.44999999px;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text">it is too uniformly immersed in it: and that is our condition in regard to the ether.  </flowPara><flowPara
            id="flowPara16299"
            style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;letter-spacing:-0.44999999px;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text" /><flowPara
            id="flowPara16301"
@@ -551,7 +559,7 @@
            id="flowPara16323"
            style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla" /></flowRoot>    </g>
     <flowRoot
-       transform="matrix(1.1323843,0,0,1.1323843,-143.82905,-4035.7642)"
+       transform="matrix(1.1323843,0,0,1.1323843,-157.82905,-4039.7642)"
        style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:89.99999762%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Karla;-inkscape-font-specification:Karla"
        id="flowRoot16325"
        xml:space="preserve"><flowRegion
@@ -566,7 +574,7 @@
          id="flowPara16335">REMOTE  REALTIME  STORYTELLING</flowPara><flowPara
          style="font-size:12.4625845px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
          id="flowPara16337" /></flowRoot>    <flowRoot
-       transform="translate(-307.48723,572.57174)"
+       transform="translate(-327.32568,642.47158)"
        style="font-size:9px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Sans"
        id="flowRoot16339"
        xml:space="preserve"><flowRegion
@@ -579,30 +587,30 @@
            id="rect16343" /></flowRegion><flowPara
          style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
          id="flowPara16345">Aether9 is a publication of Greyscale Press.</flowPara><flowPara
-         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
-         id="flowPara16347" /><flowPara
          style="font-size:9px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text Italic"
-         id="flowPara16349">Copy editing </flowPara><flowPara
-         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
-         id="flowPara16351">Audrey Samson, Manuel Schmalstieg</flowPara><flowPara
-         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
-         id="flowPara16353" /><flowPara
+         id="flowPara5011">   </flowPara><flowPara
          style="font-size:9px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text Italic"
-         id="flowPara16355">Design</flowPara><flowPara
+         id="flowPara5037">Copy editing </flowPara><flowPara
          style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
-         id="flowPara16357">Gijs de Heij, Ludivine Loiseau, Pierre Marchand </flowPara><flowPara
+         id="flowPara16357">Audrey Samson, Manuel Schmalstieg</flowPara><flowPara
+         style="font-size:9px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:60.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text Italic"
+         id="flowPara5025">   </flowPara><flowPara
+         style="font-size:9px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text Italic"
+         id="flowPara5027">Design</flowPara><flowPara
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5021">Gijs de Heij, Ludivine Loiseau, Pierre Marchand </flowPara><flowPara
          style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
          id="flowPara5040">(OSP http://osp.constantvzw.org)</flowPara><flowPara
          style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
          id="flowPara16359">Composed in modified Karla, Crimson Text and Consola Mono fonts. Layouted in ConTeXt and Inkscape. The pdf found its way through OSPImpose.</flowPara><flowPara
-         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
-         id="flowPara16361" /><flowPara
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:60.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara16361">   </flowPara><flowPara
          style="font-size:9px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text Italic"
          id="flowPara16363">Printing </flowPara><flowPara
          style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
-         id="flowPara16365">Geers Printing, Gent - Belgium </flowPara><flowPara
-         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
-         id="flowPara16367" /><flowPara
+         id="flowPara16365">Geers Printing, Gent - Belgium</flowPara><flowPara
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:60.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara16367">    </flowPara><flowPara
          style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
          id="flowPara16369">This book was produced in an intense sprint and some after shocks in June and July 2012, starting from a gathering of the project archives.</flowPara><flowPara
          style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
@@ -614,7 +622,7 @@
        xml:space="preserve"
        id="flowRoot16377"
        style="font-size:9px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(-48.009289,85.20474)"><flowRegion
+       transform="translate(-38.009289,87.20474)"><flowRegion
          id="flowRegion16379"><rect
            id="rect16381"
            width="221.31125"
@@ -655,7 +663,7 @@
        xml:space="preserve"
        id="flowRoot16415"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(-823.56395,604.89774)"><flowRegion
+       transform="translate(-833.56395,678.89774)"><flowRegion
          id="flowRegion16417"><rect
            id="rect16419"
            width="60.609154"
@@ -664,27 +672,27 @@
            y="70.555908"
            style="fill:#1e2eed;fill-opacity:1" /></flowRegion><flowPara
          id="flowPara16421"
-         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla">782</flowPara></flowRoot>    <text
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla">672</flowPara></flowRoot>    <text
        xml:space="preserve"
        style="font-size:33.18959045px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-0.60000002px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Karla;-inkscape-font-specification:Karla"
-       x="630.41663"
-       y="230.11763"
+       x="616.41663"
+       y="228.06377"
        id="text16455"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan16457"
-         x="630.41663"
-         y="230.11763" /><tspan
+         x="616.41663"
+         y="228.06377" /><tspan
          sodipodi:role="line"
-         x="630.41663"
-         y="271.60461"
+         x="616.41663"
+         y="269.55078"
          style="font-size:33.18959045px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-0.60000002px;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
          id="tspan16459">aether9</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot16461"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(4,-10327.894)"><flowRegion
+       transform="translate(14,-10325.894)"><flowRegion
          id="flowRegion16463"><rect
            id="rect16465"
            width="223.85443"
@@ -698,7 +706,7 @@
          style="font-size:7px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla Bold" /><flowPara
          id="flowPara16471"
          style="font-size:7px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla Bold" /></flowRoot>    <flowRoot
-       transform="translate(-118.80186,94.92374)"
+       transform="translate(-136.80186,94.92374)"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Sans"
        id="flowRoot16473"
        xml:space="preserve"><flowRegion
@@ -712,16 +720,16 @@
          style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text"
          id="flowPara16479"> </flowPara><flowPara
          id="flowPara16481"
-         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text">Aether9, from the beginning was offering inclusion to participants at differing stages in the development of their art practice and technical proficiency. We had very different skill sets and we all wanted aether9 to be truly multidisciplinary, showing the ‘human hand’ in our creation: including sculpture and drawings on camera, sound composition, authoring both code and script, and all translation was handled among us. Interest in our progress was facilitated by a FB group, aether9's mailing list, news links from member's sites, our own aether9.org wiki, as well as venue/gallery listings. We gave interviews about aether9 within the interested community; but generally we rushed headlong into performance without stopping to merchandise anything like a T-shirt, and spent very little time asking for <flowSpan
-   style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text Cash;-inkscape-font-specification:Crimson Text Cash"
-   id="flowSpan16483">money</flowSpan>. Time was of the essence. As video conferencing and <flowSpan
-   style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:80.00000119%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text Chat;-inkscape-font-specification:Crimson Text Chat"
-   id="flowSpan16485">communication</flowSpan> over distance became commonplace and ubiquitous, aimed at families spread over several localities or corporate tele-conferencing, the novelty that attracted us to this project slowly faded. Today multiple stream video conferencing is a pay-to-play offering on <flowSpan
-   style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:80.00000119%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text Chat;-inkscape-font-specification:Crimson Text Chat"
-   id="flowSpan16487">Skype </flowSpan>Premium. Over half of us have changed our countries of residence and have gone on to other projects in emerging media. We remain in touch; our experiments in <flowSpan
-   style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:80.00000119%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text Chat;-inkscape-font-specification:Crimson Text Chat"
-   id="flowSpan16489">communication</flowSpan> technology as aether9 have expanded our imaginations and shaped our dramaturgical considerations.</flowPara></flowRoot>    <flowRoot
-       transform="translate(10,-10434.747)"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text">Beethoven’s Fifth Piano Trio dubbed and mixed with NYC traffic horns, leaking through from the street, all the way to the Oude Kerk in Amsterdam or having the wet child of his ‘spirit world’ streamed from another continent. Again, who knows?</flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text"
+         id="flowPara5003">Aether9, from the beginning was offering inclusion to participants at differing stages in the development of their art practice and technical proficiency. We had very different skill sets and we all wanted aether9 to be truly multidisciplinary, showing the ‘human hand’ in our creation: including sculpture and drawings on camera, sound composition, authoring both code and script, and all translation was handled among us. Interest in our progress was facilitated by a FB group, aether9's mailing list, news links from member's sites, our own aether9.org wiki, as well as venue/gallery listings. We gave interviews about aether9 within the interested community; but generally we rushed headlong into performance without stopping to merchandise anything like a T-shirt, and spent very little time asking for money. Time was of the essence. As video conferencing and communication over distance became commonplace and ubiquitous, aimed at families spread over several localities or corporate tele-conferencing, the novelty that attracted us to this project slowly faded. Today multiple stream video conferencing is a pay-to-play offering on Skype Premium. Over half of us have changed our countries of residence and have gone on to other projects in emerging media. We remain in touch; our experiments in communication technology as aether9 have expanded our imaginations and shaped our dramaturgical considerations. </flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text"
+         id="flowPara5005"> </flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text"
+         id="flowPara5007"> </flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text"
+         id="flowPara5009"> </flowPara></flowRoot>    <flowRoot
+       transform="translate(18,-10434.747)"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Sans"
        id="flowRoot16491"
        xml:space="preserve"><flowRegion
@@ -734,22 +742,7 @@
            style="fill:#1e2eed;fill-opacity:1" /></flowRegion><flowPara
          style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
          id="flowPara16497">This publication was supported by sitemapping mediaprojects / swiss federal office for culture.</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot16499"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(40.253413,-10398.642)"><flowRegion
-         id="flowRegion16501"><rect
-           id="rect16503"
-           width="563.70795"
-           height="97.530266"
-           x="798.13885"
-           y="11404.259"
-           style="fill:#1e2eed;fill-opacity:1" /></flowRegion><flowPara
-         id="flowPara16505"
-         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text">2007- 05- 03  .  0 <flowSpan
-   id="flowSpan16507"
-   style="font-size:9px;font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:LMRomanDemi10;-inkscape-font-specification:LMRomanDemi10 Semi-Bold">→</flowSpan> 0 </flowPara></flowRoot>    <flowRoot
-       transform="translate(-565.98671,-10400.642)"
+       transform="translate(-776.08604,-10383.44)"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Sans"
        id="flowRoot16509"
        xml:space="preserve"><flowRegion
@@ -760,38 +753,36 @@
            width="563.70795"
            id="rect16513"
            style="fill:#1e2eed;fill-opacity:1" /></flowRegion><flowPara
-         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text"
-         id="flowPara16515">2012- 07- 15  .  781 <flowSpan
-   style="font-size:9px;font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:LMRomanDemi10;-inkscape-font-specification:LMRomanDemi10 Semi-Bold"
-   id="flowSpan16517">→ </flowSpan>782 </flowPara></flowRoot>    <text
+         style="font-size:7px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Consola Mono;-inkscape-font-specification:Consola Mono"
+         id="flowPara16515">2012    672 </flowPara></flowRoot>    <text
        sodipodi:linespacing="125%"
        id="text16519"
-       y="572.52118"
-       x="-399.60736"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Crimson Text;-inkscape-font-specification:Crimson Text"
+       y="570.52118"
+       x="-379.60736"
+       style="font-size:7px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Consola Mono;-inkscape-font-specification:Consola Mono"
        xml:space="preserve"
        transform="matrix(0,-1,1,0,0,0)"><tspan
          id="tspan16521"
-         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text"
-         y="572.52118"
-         x="-399.60736"
-         sodipodi:role="line"> 2007 - 05 - 03  →  2012 -07 - 15 </tspan></text>
+         style="font-size:7px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Consola Mono;-inkscape-font-specification:Consola Mono"
+         y="570.52118"
+         x="-379.60736"
+         sodipodi:role="line">0    1933 - 2012    672</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        xml:space="preserve"
-       style="font-size:18.87103844px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Karla;-inkscape-font-specification:Karla"
-       x="-1020.9736"
+       style="font-size:18.87103844px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Karla;-inkscape-font-specification:Karla"
+       x="-960.97357"
        y="550.6297"
        id="text16523"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan16525"
-         x="-1020.9736"
+         x="-960.97357"
          y="550.6297" /><tspan
          sodipodi:role="line"
-         x="-1020.9736"
+         x="-960.97357"
          y="574.21851"
-         style="font-size:18.87103844px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
+         style="font-size:18.87103844px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
          id="tspan16527">aether9  </tspan></text>
     <rect
        style="fill:url(#pattern16854);stroke:none"
@@ -4618,7 +4609,7 @@
     </g>
     <g
        id="g5617"
-       transform="matrix(0.86693299,0,0,0.86693299,-43.464566,128.86111)">
+       transform="matrix(0,-0.86693299,0.86693299,0,-574.47781,915.9941)">
       <text
          sodipodi:linespacing="125%"
          id="text5596"
@@ -4670,7 +4661,7 @@
        xml:space="preserve"
        id="flowRoot4933-0"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(-327.1047,605.72024)"><flowRegion
+       transform="translate(-319.1047,605.72024)"><flowRegion
          id="flowRegion4935-6"><rect
            id="rect4937-6"
            width="209.77647"
@@ -4748,7 +4739,7 @@
          style="font-size:9px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text Italic" /><flowPara
          id="flowPara5023-3"
          style="font-size:9px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Crimson Text;-inkscape-font-specification:Crimson Text Italic" /></flowRoot>    <flowRoot
-       transform="translate(-216.2458,649.51234)"
+       transform="translate(-210.2458,649.51234)"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Sans"
        id="flowRoot5025-4"
        xml:space="preserve"><flowRegion
@@ -4839,18 +4830,19 @@
          id="flowPara5116-5" /></flowRoot>    <text
        xml:space="preserve"
        style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Consola Mono;-inkscape-font-specification:Consola Mono"
-       x="-497.98691"
-       y="948.16516"
+       x="-971.60681"
+       y="285.25043"
        id="text5055"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0,-1,1,0,0,0)"><tspan
          sodipodi:role="line"
          id="tspan5057"
-         x="-497.98691"
-         y="948.16516"
+         x="-971.60681"
+         y="285.25043"
          style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#0000ff;font-family:Consola Mono;-inkscape-font-specification:Consola Mono"> ISBN 978-2-9700706-4-1</tspan></text>
     <g
        id="g5273"
-       transform="matrix(0.22546953,0,0,0.22546953,316.13484,879.01254)">
+       transform="matrix(0.22546953,0,0,0.22546953,-294.86327,737.03537)">
       <rect
          id="use26519"
          y="280.48285"
@@ -5046,6 +5038,125 @@
          style="fill:none;stroke:#0000ff;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
          id="path5160" />
     </g>
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 40.431372,1025.4678 8.027867,0"
+       id="path5041"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#0000ff;fill-opacity:1;stroke:none"
+       d="m -388.56094,1009.6237 -3.01261,1.808 1.43136,-1.808 -1.43136,-1.808 z"
+       id="rect5043"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <g
+       id="g5824">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path5814"
+         d="m 46.86935,1023.5557 c 0.01743,1.1195 1.087798,1.7026 2.193108,1.932"
+         style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         style="fill:none;stroke:#0000ff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 46.86935,1027.3799 c 0.01743,-1.1195 1.087798,-1.7026 2.193108,-1.932"
+         id="path5816"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5838"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e2eed;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(264.27248,-10383.44)"><flowRegion
+         id="flowRegion5840"><rect
+           style="fill:#1e2eed;fill-opacity:1"
+           id="rect5842"
+           width="563.70795"
+           height="97.530266"
+           x="798.13885"
+           y="11404.259" /></flowRegion><flowPara
+         id="flowPara5844"
+         style="font-size:7px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1e2eed;fill-opacity:1;font-family:Consola Mono;-inkscape-font-specification:Consola Mono">0    1933 </flowPara></flowRoot>    <g
+       id="g6855"
+       style="fill:#000bee;fill-opacity:1">
+      <path
+         style="fill:#000bee;stroke:#0000ff;stroke-width:0.60000001999999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
+         d="m 1081.371,1025.4678 -8.0279,0"
+         id="path5846"
+         inkscape:connector-curvature="0" />
+      <g
+         transform="matrix(-1,0,0,1,1121.8024,0)"
+         id="g5848"
+         style="fill:#000bee;fill-opacity:1">
+        <path
+           sodipodi:nodetypes="cc"
+           inkscape:connector-curvature="0"
+           id="path5850"
+           d="m 46.86935,1023.5557 c 0.01743,1.1195 1.087798,1.7026 2.193108,1.932"
+           style="fill:#000bee;stroke:#0000ff;stroke-width:0.50000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1" />
+        <path
+           style="fill:#000bee;stroke:#0000ff;stroke-width:0.50000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
+           d="m 46.86935,1027.3799 c 0.01743,-1.1195 1.087798,-1.7026 2.193108,-1.932"
+           id="path5852"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc" />
+      </g>
+    </g>
+    <g
+       transform="matrix(0,1,-1,0,1593.4255,-768.99167)"
+       id="g6855-8"
+       style="fill:#000bee;fill-opacity:1">
+      <path
+         style="fill:#000bee;fill-opacity:1;stroke:#0000ff;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 1081.371,1025.4678 -8.0279,0"
+         id="path5846-2"
+         inkscape:connector-curvature="0" />
+      <g
+         transform="matrix(-1,0,0,1,1121.8024,0)"
+         id="g5848-5"
+         style="fill:#000bee;fill-opacity:1">
+        <path
+           sodipodi:nodetypes="cc"
+           inkscape:connector-curvature="0"
+           id="path5850-5"
+           d="m 46.86935,1023.5557 c 0.01743,1.1195 1.087798,1.7026 2.193108,1.932"
+           style="fill:#000bee;fill-opacity:1;stroke:#0000ff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+        <path
+           style="fill:#000bee;fill-opacity:1;stroke:#0000ff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 46.86935,1027.3799 c 0.01743,-1.1195 1.087798,-1.7026 2.193108,-1.932"
+           id="path5852-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc" />
+      </g>
+    </g>
+    <g
+       style="fill:#000bee;fill-opacity:1"
+       id="g6891"
+       transform="matrix(0,-1,-1,0,1593.4255,1442.623)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6893"
+         d="m 1081.371,1025.4678 -8.0279,0"
+         style="fill:#000bee;fill-opacity:1;stroke:#0000ff;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <g
+         style="fill:#000bee;fill-opacity:1"
+         id="g6895"
+         transform="matrix(-1,0,0,1,1121.8024,0)">
+        <path
+           style="fill:#000bee;fill-opacity:1;stroke:#0000ff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 46.86935,1023.5557 c 0.01743,1.1195 1.087798,1.7026 2.193108,1.932"
+           id="path6897"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc" />
+        <path
+           sodipodi:nodetypes="cc"
+           inkscape:connector-curvature="0"
+           id="path6899"
+           d="m 46.86935,1027.3799 c 0.01743,-1.1195 1.087798,-1.7026 2.193108,-1.932"
+           style="fill:#000bee;fill-opacity:1;stroke:#0000ff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      </g>
+    </g>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -5131,69 +5242,17 @@
     <path
        inkscape:connector-curvature="0"
        id="path16541"
-       d="m -352.26216,-259.72726 0,1342.87496 1857.12496,0 0,-1342.87496 -1857.12496,0 z M 0.237839,1.303737 l 1133.843761,0 0,850.407103 -1133.843761,0 0,-850.407103 z"
+       d="m -352.26216,-261.03918 0,1342.87488 1857.12496,0 0,-1342.87488 -1857.12496,0 z M 0.237839,-0.0081952 l 1133.843761,0 0,850.4071152 -1133.843761,0 0,-850.4071152 z"
        style="fill:#c9c7c7;fill-opacity:1;stroke:none" />
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot16545"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1f2ded;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(3.898103,-12213.322)"><flowRegion
-         id="flowRegion16547"><rect
-           id="rect16549"
-           width="18.981022"
-           height="12.654256"
-           x="269.53067"
-           y="12481.338"
-           style="fill:#1f2ded;fill-opacity:1" /></flowRegion><flowPara
-         id="flowPara16551"
-         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1f2ded;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla">12</flowPara></flowRoot>    <flowRoot
-       transform="translate(3.898103,-12188.268)"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1f2ded;fill-opacity:1;stroke:none;font-family:Sans"
-       id="flowRoot16553"
-       xml:space="preserve"><flowRegion
-         id="flowRegion16555"><rect
-           y="12481.338"
-           x="269.53067"
-           height="12.654256"
-           width="18.981022"
-           id="rect16557"
-           style="fill:#1f2ded;fill-opacity:1" /></flowRegion><flowPara
-         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1f2ded;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
-         id="flowPara16559">782</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot16561"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1f2ded;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(3.898103,-12107.291)"><flowRegion
-         id="flowRegion16563"><rect
-           id="rect16565"
-           width="18.981022"
-           height="12.654256"
-           x="269.53067"
-           y="12481.338"
-           style="fill:#1f2ded;fill-opacity:1" /></flowRegion><flowPara
-         id="flowPara16567"
-         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1f2ded;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla">782</flowPara></flowRoot>    <flowRoot
-       transform="translate(3.898103,-12067.026)"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1f2ded;fill-opacity:1;stroke:none;font-family:Sans"
-       id="flowRoot16569"
-       xml:space="preserve"><flowRegion
-         id="flowRegion16571"><rect
-           y="12481.338"
-           x="269.53067"
-           height="12.654256"
-           width="18.981022"
-           id="rect16573"
-           style="fill:#1f2ded;fill-opacity:1" /></flowRegion><flowPara
-         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#1f2ded;fill-opacity:1;font-family:Karla;-inkscape-font-specification:Karla"
-         id="flowPara16575">9</flowPara></flowRoot>    <path
+    <path
        style="fill:#1e2eed;fill-opacity:1;stroke:#000000;stroke-width:0.3125;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 549.71537,-16.804063 0,900.966503"
+       d="m 549.37134,-16.804063 0,900.966503"
        id="path16577"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path16579"
-       d="m 585.71537,-16.804063 0,900.966503"
+       d="m 584.74746,-16.804063 0,900.966503"
        style="fill:none;stroke:#000000;stroke-width:0.3125;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   </g>
 </svg>
