@@ -97,7 +97,7 @@ class Writer:
 		ret.append('\\stylepiece{%d}'%self.id)
 		ret.append('')
 		ret.append('\\styleinfos')
-		ret.append('%s\n\n\\startinfopar %s\n\n\\startinfopar %s\n\n\\startinfopar %s\n\n\\startinfopar %s'%(self.title,self.date,self.event,self.location,'\n'.join(self.performers.split())))
+		ret.append('\\startinfopar \perfotitle{%s}\n\n\\infopar %s\n\n\\infopar %s\n\n\\infopar %s\n\n\\infopar %s\\stopinfopar'%(self.title,self.date,self.event,self.location,'\n'.join(self.performers.split())))
 		ret.append('\\blackrule[color=black, width=65mm, height=0.5pt, depth=0mm]')
 		ret.append('\\styleperfo')
 		ret.append(self.description)

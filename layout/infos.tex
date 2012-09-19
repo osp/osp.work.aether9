@@ -1,4 +1,11 @@
-\setupparagraph[infopar][each][before=\smallskip]
+\defineparagraphs[infopar][n=1]
+\setupparagraphs[infopar][each][align=middle,before={\vspace{-6pt}}]
+
+\def\perfotitle#1%
+{
+	{\kaquin #1}
+}
+
 \def\styleinfos%
 {
 	\setupinterlinespace[9pt] 
