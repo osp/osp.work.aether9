@@ -23,7 +23,7 @@ function userdata.print(start, step, limit, cond)
 			if nstart == 2 then
 				context(" \\vbox to 16pt{ \\hbox{")
 				commands.getmarking("I", interfaces.variables.page, interfaces.variables.last)
-				context(" $$\\leftarrow$$ ")
+				context(" ← ")
 				commands.getmarking("P", interfaces.variables.page, interfaces.variables.current)
 				context(" }}")
 			end
@@ -32,7 +32,7 @@ function userdata.print(start, step, limit, cond)
 			if nstart == 3 then
 				context(" \\vbox to 16pt{ \\hbox{")
 				commands.getmarking("P", interfaces.variables.page, interfaces.variables.current)
-				context(" $$\\rightarrow$$ ")
+				context(" → ")
 				commands.getmarking("I", interfaces.variables.page, interfaces.variables.first)
 				context(" }}")
 			end
