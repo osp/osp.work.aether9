@@ -1,9 +1,9 @@
 SplineFontDB: 3.0
-FontName: Karla-Regular
-FullName: Karla
-FamilyName: Karla
+FontName: KarlaAether9
+FullName: Karla Regular Aether 9
+FamilyName: Karla Aether 9
 Weight: Book
-Copyright: Copyright (c) 2011, Jonathan Pinhorn (pinhorn.typedesign@gmail.com), with Reserved Font Names "Karla" and "Karla Tamil".
+Copyright: Copyright (c) 2011, Jonathan Pinhorn (pinhorn.typedesign@gmail.com), with Reserved Font Names "Karla" and "Karla Tamil".\ncedilla on c and C + acute accent and caron on C added by OSP Ludi http://ospublish.constantvzw.org
 Version: 1.000
 ItalicAngle: 0
 UnderlinePosition: -50
@@ -15,13 +15,13 @@ LayerCount: 2
 Layer: 0 1 "Back"  1
 Layer: 1 1 "Fore"  0
 NeedsXUIDChange: 1
-XUID: [1021 619 1067718245 14693548]
+XUID: [1021 619 1067718245 11273054]
 FSType: 8
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1307536560
-ModificationTime: 1348082389
+ModificationTime: 1348086046
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5
@@ -84,47 +84,48 @@ ShortTable: maxp 16
   0
   0
 EndShort
-LangName: 1033 "" "" "" "FontForge 2.0 : Karla Regular : 13-10-2011" "" "Version 1.000" "" "" "" "Jonathan Pinhorn" "" "" "jonpinhorn.com" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL" 
+LangName: 1033 "" "" "" "" "" "Version 1.000" "" "" "" "Jonathan Pinhorn" "" "" "jonpinhorn.com" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL" 
 GaspTable: 1 65535 15
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 22 10
+WinInfo: 154 22 10
+BeginPrivate: 0
+EndPrivate
 Grid
--1000 1170 m 0
- 2000 1170 l 0
+263.5 1300 m 0
+ 263.5 -700 l 0
 EndSplineSet
-BeginChars: 65536 168
+BeginChars: 65549 173
 
-StartChar: uni009B
-Encoding: 155 155 0
+StartChar: .notdef
+Encoding: 65536 -1 0
 Width: 553
 Flags: W
 LayerCount: 2
 EndChar
 
-StartChar: uni009C
-Encoding: 156 156 1
+StartChar: .null
+Encoding: 65537 -1 1
 Width: 0
 GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
-StartChar: uni009D
-Encoding: 157 157 2
+StartChar: nonmarkingreturn
+Encoding: 65538 -1 2
 Width: 553
 GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
-StartChar: underscore
-Encoding: 95 95 3
+StartChar: space
+Encoding: 32 32 3
 AltUni2: 0000a0.ffffffff.0
 Width: 238
 GlyphClass: 2
@@ -132,8 +133,8 @@ Flags: W
 LayerCount: 2
 EndChar
 
-StartChar: uni0001
-Encoding: 1 1 4
+StartChar: exclam
+Encoding: 33 33 4
 Width: 278
 GlyphClass: 2
 Flags: W
@@ -157,8 +158,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0002
-Encoding: 2 2 5
+StartChar: quotedbl
+Encoding: 34 34 5
 Width: 306
 GlyphClass: 2
 Flags: W
@@ -178,8 +179,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0003
-Encoding: 3 3 6
+StartChar: numbersign
+Encoding: 35 35 6
 Width: 627
 GlyphClass: 2
 Flags: W
@@ -223,8 +224,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0004
-Encoding: 4 4 7
+StartChar: dollar
+Encoding: 36 36 7
 Width: 632
 GlyphClass: 2
 Flags: W
@@ -274,8 +275,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0005
-Encoding: 5 5 8
+StartChar: percent
+Encoding: 37 37 8
 Width: 726
 GlyphClass: 2
 Flags: W
@@ -326,8 +327,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0006
-Encoding: 6 6 9
+StartChar: ampersand
+Encoding: 38 38 9
 Width: 916
 GlyphClass: 2
 Flags: W
@@ -383,8 +384,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0007
-Encoding: 7 7 10
+StartChar: quotesingle
+Encoding: 39 39 10
 Width: 136
 GlyphClass: 2
 Flags: W
@@ -399,8 +400,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0008
-Encoding: 8 8 11
+StartChar: parenleft
+Encoding: 40 40 11
 Width: 356
 GlyphClass: 2
 Flags: W
@@ -419,8 +420,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0009
-Encoding: 9 9 12
+StartChar: parenright
+Encoding: 41 41 12
 Width: 356
 GlyphClass: 2
 Flags: W
@@ -439,8 +440,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni000A
-Encoding: 10 10 13
+StartChar: asterisk
+Encoding: 42 42 13
 Width: 412
 GlyphClass: 2
 Flags: W
@@ -466,8 +467,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni000B
-Encoding: 11 11 14
+StartChar: plus
+Encoding: 43 43 14
 Width: 527
 GlyphClass: 2
 Flags: W
@@ -490,8 +491,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni000C
-Encoding: 12 12 15
+StartChar: comma
+Encoding: 44 44 15
 Width: 210
 GlyphClass: 2
 Flags: W
@@ -512,8 +513,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni000D
-Encoding: 13 13 16
+StartChar: hyphen
+Encoding: 45 45 16
 Width: 349
 GlyphClass: 2
 Flags: W
@@ -528,8 +529,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni000E
-Encoding: 14 14 17
+StartChar: period
+Encoding: 46 46 17
 Width: 179
 GlyphClass: 2
 Flags: W
@@ -548,8 +549,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni000F
-Encoding: 15 15 18
+StartChar: slash
+Encoding: 47 47 18
 Width: 432
 GlyphClass: 2
 Flags: W
@@ -564,8 +565,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0010
-Encoding: 16 16 19
+StartChar: zero
+Encoding: 48 48 19
 Width: 594
 GlyphClass: 2
 Flags: W
@@ -594,8 +595,8 @@ EndSplineSet
 Substitution2: "'onum' Oldstyle Figures in Latin lookup 0 subtable" .notdef
 EndChar
 
-StartChar: uni0011
-Encoding: 17 17 20
+StartChar: one
+Encoding: 49 49 20
 Width: 331
 GlyphClass: 2
 Flags: W
@@ -614,8 +615,8 @@ EndSplineSet
 Substitution2: "'onum' Oldstyle Figures in Latin lookup 0 subtable" .notdef
 EndChar
 
-StartChar: uni0012
-Encoding: 18 18 21
+StartChar: two
+Encoding: 50 50 21
 Width: 580
 GlyphClass: 2
 Flags: W
@@ -650,49 +651,49 @@ EndSplineSet
 Substitution2: "'onum' Oldstyle Figures in Latin lookup 0 subtable" .notdef
 EndChar
 
-StartChar: uni0013
-Encoding: 19 19 22
+StartChar: three
+Encoding: 51 51 22
 Width: 591
 GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
 SplineSet
-505 468 m 0,0,1
- 505 368 505 368 395 329 c 1,2,3
- 455 312 455 312 492 273 c 128,-1,4
- 529 234 529 234 529 173 c 0,5,6
- 529 90 529 90 466 39.5 c 128,-1,7
- 403 -11 403 -11 300 -11 c 128,-1,8
- 197 -11 197 -11 124.5 42.5 c 128,-1,9
- 52 96 52 96 52 193 c 1,10,-1
- 134 193 l 1,11,12
- 136 129 136 129 181.5 95 c 128,-1,13
- 227 61 227 61 297 61 c 128,-1,14
- 367 61 367 61 405.5 94.5 c 128,-1,15
- 444 128 444 128 444 177.5 c 128,-1,16
- 444 227 444 227 407 258.5 c 128,-1,17
- 370 290 370 290 287 290 c 2,18,-1
- 215 290 l 1,19,-1
- 215 353 l 1,20,-1
- 264 353 l 2,21,22
- 336 353 336 353 378 381.5 c 128,-1,23
- 420 410 420 410 420 458 c 128,-1,24
- 420 506 420 506 386 537 c 128,-1,25
- 352 568 352 568 296 568 c 128,-1,26
- 240 568 240 568 202.5 548.5 c 128,-1,27
- 165 529 165 529 152 476 c 1,28,-1
- 70 476 l 1,29,30
- 81 559 81 559 139 599.5 c 128,-1,31
- 197 640 197 640 288.5 640 c 128,-1,32
- 380 640 380 640 442.5 591.5 c 128,-1,33
- 505 543 505 543 505 468 c 0,0,1
+505 468 m 4,0,1
+ 505 368 505 368 395 329 c 5,2,3
+ 455 312 455 312 492 273 c 132,-1,4
+ 529 234 529 234 529 173 c 4,5,6
+ 529 90 529 90 466 39.5 c 132,-1,7
+ 403 -11 403 -11 300 -11 c 132,-1,8
+ 197 -11 197 -11 124.5 42.5 c 132,-1,9
+ 52 96 52 96 52 193 c 5,10,-1
+ 134 193 l 5,11,12
+ 136 129 136 129 181.5 95 c 132,-1,13
+ 227 61 227 61 297 61 c 132,-1,14
+ 367 61 367 61 405.5 94.5 c 132,-1,15
+ 444 128 444 128 444 177.5 c 132,-1,16
+ 444 227 444 227 407 258.5 c 132,-1,17
+ 370 290 370 290 287 290 c 6,18,-1
+ 215 290 l 5,19,-1
+ 215 353 l 5,20,-1
+ 264 353 l 6,21,22
+ 336 353 336 353 378 381.5 c 132,-1,23
+ 420 410 420 410 420 458 c 132,-1,24
+ 420 506 420 506 386 537 c 132,-1,25
+ 352 568 352 568 296 568 c 132,-1,26
+ 240 568 240 568 202.5 548.5 c 132,-1,27
+ 165 529 165 529 152 476 c 5,28,-1
+ 70 476 l 5,29,30
+ 81 559 81 559 139 599.5 c 132,-1,31
+ 197 640 197 640 288.5 640 c 132,-1,32
+ 380 640 380 640 442.5 591.5 c 132,-1,33
+ 505 543 505 543 505 468 c 4,0,1
 EndSplineSet
 Substitution2: "'onum' Oldstyle Figures in Latin lookup 0 subtable" .notdef
 EndChar
 
-StartChar: uni0014
-Encoding: 20 20 23
+StartChar: four
+Encoding: 52 52 23
 Width: 559
 GlyphClass: 2
 Flags: W
@@ -719,8 +720,8 @@ EndSplineSet
 Substitution2: "'onum' Oldstyle Figures in Latin lookup 0 subtable" .notdef
 EndChar
 
-StartChar: uni0015
-Encoding: 21 21 24
+StartChar: five
+Encoding: 53 53 24
 Width: 565
 GlyphClass: 2
 Flags: W
@@ -751,8 +752,8 @@ EndSplineSet
 Substitution2: "'onum' Oldstyle Figures in Latin lookup 0 subtable" .notdef
 EndChar
 
-StartChar: uni0016
-Encoding: 22 22 25
+StartChar: six
+Encoding: 54 54 25
 Width: 573
 GlyphClass: 2
 Flags: W
@@ -790,8 +791,8 @@ EndSplineSet
 Substitution2: "'onum' Oldstyle Figures in Latin lookup 0 subtable" .notdef
 EndChar
 
-StartChar: uni0017
-Encoding: 23 23 26
+StartChar: seven
+Encoding: 55 55 26
 Width: 470
 GlyphClass: 2
 Flags: W
@@ -810,8 +811,8 @@ EndSplineSet
 Substitution2: "'onum' Oldstyle Figures in Latin lookup 0 subtable" .notdef
 EndChar
 
-StartChar: uni0018
-Encoding: 24 24 27
+StartChar: eight
+Encoding: 56 56 27
 Width: 615
 GlyphClass: 2
 Flags: W
@@ -859,8 +860,8 @@ EndSplineSet
 Substitution2: "'onum' Oldstyle Figures in Latin lookup 0 subtable" .notdef
 EndChar
 
-StartChar: uni0019
-Encoding: 25 25 28
+StartChar: nine
+Encoding: 57 57 28
 Width: 581
 GlyphClass: 2
 Flags: W
@@ -900,8 +901,8 @@ EndSplineSet
 Substitution2: "'onum' Oldstyle Figures in Latin lookup 0 subtable" .notdef
 EndChar
 
-StartChar: uni001A
-Encoding: 26 26 29
+StartChar: colon
+Encoding: 58 58 29
 Width: 231
 GlyphClass: 2
 Flags: W
@@ -929,8 +930,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni001B
-Encoding: 27 27 30
+StartChar: semicolon
+Encoding: 59 59 30
 Width: 262
 GlyphClass: 2
 Flags: W
@@ -960,8 +961,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni001C
-Encoding: 28 28 31
+StartChar: less
+Encoding: 60 60 31
 Width: 454
 GlyphClass: 2
 Flags: W
@@ -979,8 +980,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni001D
-Encoding: 29 29 32
+StartChar: equal
+Encoding: 61 61 32
 Width: 488
 GlyphClass: 2
 Flags: W
@@ -1000,8 +1001,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni001E
-Encoding: 30 30 33
+StartChar: greater
+Encoding: 62 62 33
 Width: 454
 GlyphClass: 2
 Flags: W
@@ -1019,8 +1020,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni001F
-Encoding: 31 31 34
+StartChar: question
+Encoding: 63 63 34
 Width: 499
 GlyphClass: 2
 Flags: W
@@ -1060,8 +1061,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: space
-Encoding: 32 32 35
+StartChar: at
+Encoding: 64 64 35
 Width: 940
 GlyphClass: 2
 Flags: W
@@ -1118,8 +1119,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: exclam
-Encoding: 33 33 36
+StartChar: A
+Encoding: 65 65 36
 Width: 575
 GlyphClass: 2
 Flags: W
@@ -1143,8 +1144,8 @@ EndSplineSet
 Kerns2: 92 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  90 -24 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  89 -22 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  73 -12 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  60 -26 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  58 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  57 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -40 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: quotedbl
-Encoding: 34 34 37
+StartChar: B
+Encoding: 66 66 37
 Width: 622
 GlyphClass: 2
 Flags: W
@@ -1182,8 +1183,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: numbersign
-Encoding: 35 35 38
+StartChar: C
+Encoding: 67 67 38
 Width: 613
 GlyphClass: 2
 Flags: W
@@ -1212,8 +1213,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: dollar
-Encoding: 36 36 39
+StartChar: D
+Encoding: 68 68 39
 Width: 661
 GlyphClass: 2
 Flags: W
@@ -1240,8 +1241,8 @@ EndSplineSet
 Kerns2: 60 -25 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: percent
-Encoding: 37 37 40
+StartChar: E
+Encoding: 69 69 40
 Width: 562
 GlyphClass: 2
 Flags: W
@@ -1264,8 +1265,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: ampersand
-Encoding: 38 38 41
+StartChar: F
+Encoding: 70 70 41
 Width: 524
 GlyphClass: 2
 Flags: W
@@ -1287,8 +1288,8 @@ EndSplineSet
 Kerns2: 93 -24 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  92 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  91 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  90 -36 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  89 -32 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  88 -24 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  84 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  82 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  74 -45 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  72 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  71 -24 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  70 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  68 -24 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  60 -8 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  59 -16 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  58 -8 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  36 -57 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: quotesingle
-Encoding: 39 39 42
+StartChar: G
+Encoding: 71 71 42
 Width: 645
 GlyphClass: 2
 Flags: W
@@ -1321,8 +1322,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: parenleft
-Encoding: 40 40 43
+StartChar: H
+Encoding: 72 72 43
 Width: 669
 GlyphClass: 2
 Flags: W
@@ -1345,8 +1346,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: parenright
-Encoding: 41 41 44
+StartChar: I
+Encoding: 73 73 44
 Width: 280
 GlyphClass: 2
 Flags: W
@@ -1361,8 +1362,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: asterisk
-Encoding: 42 42 45
+StartChar: J
+Encoding: 74 74 45
 Width: 404
 GlyphClass: 2
 Flags: W
@@ -1383,8 +1384,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: plus
-Encoding: 43 43 46
+StartChar: K
+Encoding: 75 75 46
 Width: 609
 GlyphClass: 2
 Flags: W
@@ -1407,8 +1408,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: comma
-Encoding: 44 44 47
+StartChar: L
+Encoding: 76 76 47
 Width: 468
 GlyphClass: 2
 Flags: W
@@ -1426,8 +1427,8 @@ EndSplineSet
 Kerns2: 92 -20 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  90 -24 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  89 -24 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  60 -69 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  58 -41 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  57 -45 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -49 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  45 16 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: hyphen
-Encoding: 45 45 48
+StartChar: M
+Encoding: 77 77 48
 Width: 848
 GlyphClass: 2
 Flags: W
@@ -1451,8 +1452,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: period
-Encoding: 46 46 49
+StartChar: N
+Encoding: 78 78 49
 Width: 685
 GlyphClass: 2
 Flags: W
@@ -1473,8 +1474,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: slash
-Encoding: 47 47 50
+StartChar: O
+Encoding: 79 79 50
 Width: 646
 GlyphClass: 2
 Flags: W
@@ -1503,8 +1504,8 @@ EndSplineSet
 Kerns2: 60 -16 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  59 -12 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  57 -8 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: zero
-Encoding: 48 48 51
+StartChar: P
+Encoding: 80 80 51
 Width: 554
 GlyphClass: 2
 Flags: W
@@ -1533,8 +1534,8 @@ EndSplineSet
 Kerns2: 36 -38 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: one
-Encoding: 49 49 52
+StartChar: Q
+Encoding: 81 81 52
 Width: 652
 GlyphClass: 2
 Flags: W
@@ -1570,8 +1571,8 @@ EndSplineSet
 Kerns2: 60 -16 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: two
-Encoding: 50 50 53
+StartChar: R
+Encoding: 82 82 53
 Width: 613
 GlyphClass: 2
 Flags: W
@@ -1602,8 +1603,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: three
-Encoding: 51 51 54
+StartChar: S
+Encoding: 83 83 54
 Width: 605
 GlyphClass: 2
 Flags: W
@@ -1642,8 +1643,8 @@ EndSplineSet
 Kerns2: 60 -26 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: four
-Encoding: 52 52 55
+StartChar: T
+Encoding: 84 84 55
 Width: 501
 GlyphClass: 2
 Flags: W
@@ -1663,8 +1664,8 @@ EndSplineSet
 Kerns2: 93 -53 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  92 -50 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  91 -57 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  90 -40 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  89 -73 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  88 -69 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  86 -97 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  85 -73 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  84 -75 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  83 -69 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  82 -79 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  81 -69 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  80 -69 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  74 -87 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  73 -53 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  72 -75 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  71 -85 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  70 -75 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  68 -87 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  45 -69 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  36 -40 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: five
-Encoding: 53 53 56
+StartChar: U
+Encoding: 85 85 56
 Width: 654
 GlyphClass: 2
 Flags: W
@@ -1689,8 +1690,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: six
-Encoding: 54 54 57
+StartChar: V
+Encoding: 86 86 57
 Width: 563
 GlyphClass: 2
 Flags: W
@@ -1709,8 +1710,8 @@ EndSplineSet
 Kerns2: 86 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  85 -17 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  84 -29 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  82 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  74 -49 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  73 -40 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  72 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  71 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  70 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  68 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  50 -8 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  45 -69 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  38 -8 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  36 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: seven
-Encoding: 55 55 58
+StartChar: W
+Encoding: 87 87 58
 Width: 895
 GlyphClass: 2
 Flags: W
@@ -1735,8 +1736,8 @@ EndSplineSet
 Kerns2: 88 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  86 -40 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  85 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  84 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  82 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  74 -49 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  73 -40 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  72 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  71 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  70 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  68 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  45 -69 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  36 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: eight
-Encoding: 56 56 59
+StartChar: X
+Encoding: 88 88 59
 Width: 642
 GlyphClass: 2
 Flags: W
@@ -1760,8 +1761,8 @@ EndSplineSet
 Kerns2: 50 -12 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: nine
-Encoding: 57 57 60
+StartChar: Y
+Encoding: 89 89 60
 Width: 549
 GlyphClass: 2
 Flags: W
@@ -1782,8 +1783,8 @@ EndSplineSet
 Kerns2: 93 -65 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  92 -57 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  91 -53 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  90 -45 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  89 -45 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  88 -67 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  87 -37 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  86 -65 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  85 -65 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  84 -65 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  83 -65 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  82 -65 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  81 -65 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  80 -65 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  74 -77 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  73 -65 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  72 -65 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  71 -65 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  70 -65 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  68 -61 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  54 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  52 -16 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  50 -16 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  45 -82 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  43 -8 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  38 -17 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  36 -69 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: colon
-Encoding: 58 58 61
+StartChar: Z
+Encoding: 90 90 61
 Width: 592
 GlyphClass: 2
 Flags: W
@@ -1804,8 +1805,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: semicolon
-Encoding: 59 59 62
+StartChar: bracketleft
+Encoding: 91 91 62
 Width: 317
 GlyphClass: 2
 Flags: W
@@ -1824,8 +1825,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: less
-Encoding: 60 60 63
+StartChar: backslash
+Encoding: 92 92 63
 Width: 432
 GlyphClass: 2
 Flags: W
@@ -1840,8 +1841,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: equal
-Encoding: 61 61 64
+StartChar: bracketright
+Encoding: 93 93 64
 Width: 285
 GlyphClass: 2
 Flags: W
@@ -1860,8 +1861,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: greater
-Encoding: 62 62 65
+StartChar: asciicircum
+Encoding: 94 94 65
 Width: 448
 GlyphClass: 2
 Flags: W
@@ -1879,8 +1880,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: question
-Encoding: 63 63 66
+StartChar: underscore
+Encoding: 95 95 66
 Width: 726
 GlyphClass: 2
 Flags: W
@@ -1895,8 +1896,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: at
-Encoding: 64 64 67
+StartChar: grave
+Encoding: 96 96 67
 Width: 315
 GlyphClass: 2
 Flags: W
@@ -1911,8 +1912,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: A
-Encoding: 65 65 68
+StartChar: a
+Encoding: 97 97 68
 Width: 560
 GlyphClass: 2
 Flags: W
@@ -1950,8 +1951,8 @@ EndSplineSet
 Kerns2: 60 -53 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  58 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  57 -37 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -89 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: B
-Encoding: 66 66 69
+StartChar: b
+Encoding: 98 98 69
 Width: 584
 GlyphClass: 2
 Flags: W
@@ -1985,39 +1986,39 @@ EndSplineSet
 Kerns2: 60 -17 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  57 -29 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -20 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: C
-Encoding: 67 67 70
+StartChar: c
+Encoding: 99 99 70
 Width: 515
 GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
 SplineSet
-395 446.5 m 132,-1,1
- 445 403 445 403 460 338 c 5,2,-1
- 380 331 l 5,3,4
- 367 373 367 373 338 396.5 c 132,-1,5
- 309 420 309 420 274 420 c 4,6,7
- 210 420 210 420 170.5 372 c 132,-1,8
- 131 324 131 324 131 241.5 c 132,-1,9
- 131 159 131 159 169.5 109 c 132,-1,10
- 208 59 208 59 265.5 59 c 132,-1,11
- 323 59 323 59 351.5 85.5 c 132,-1,12
- 380 112 380 112 380 161 c 5,13,-1
- 461 161 l 5,14,15
- 461 84 461 84 407.5 36.5 c 132,-1,16
- 354 -11 354 -11 268 -11 c 4,17,18
- 177 -11 177 -11 113.5 58 c 132,-1,19
- 50 127 50 127 50 241.5 c 132,-1,20
- 50 356 50 356 113 423 c 132,-1,21
- 176 490 176 490 260.5 490 c 132,-1,0
- 345 490 345 490 395 446.5 c 132,-1,1
+395 446.5 m 128,-1,1
+ 445 403 445 403 460 338 c 1,2,-1
+ 380 331 l 1,3,4
+ 367 373 367 373 338 396.5 c 128,-1,5
+ 309 420 309 420 274 420 c 0,6,7
+ 210 420 210 420 170.5 372 c 128,-1,8
+ 131 324 131 324 131 241.5 c 128,-1,9
+ 131 159 131 159 169.5 109 c 128,-1,10
+ 208 59 208 59 265.5 59 c 128,-1,11
+ 323 59 323 59 351.5 85.5 c 128,-1,12
+ 380 112 380 112 380 161 c 1,13,-1
+ 461 161 l 1,14,15
+ 461 84 461 84 407.5 36.5 c 128,-1,16
+ 354 -11 354 -11 268 -11 c 0,17,18
+ 177 -11 177 -11 113.5 58 c 128,-1,19
+ 50 127 50 127 50 241.5 c 128,-1,20
+ 50 356 50 356 113 423 c 128,-1,21
+ 176 490 176 490 260.5 490 c 128,-1,0
+ 345 490 345 490 395 446.5 c 128,-1,1
 EndSplineSet
 Kerns2: 60 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  57 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -61 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: D
-Encoding: 68 68 71
+StartChar: d
+Encoding: 100 100 71
 Width: 594
 GlyphClass: 2
 Flags: W
@@ -2050,8 +2051,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: E
-Encoding: 69 69 72
+StartChar: e
+Encoding: 101 101 72
 Width: 515
 GlyphClass: 2
 Flags: W
@@ -2082,8 +2083,8 @@ EndSplineSet
 Kerns2: 60 -41 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  57 -24 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -61 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: F
-Encoding: 70 70 73
+StartChar: f
+Encoding: 102 102 73
 Width: 343
 GlyphClass: 2
 Flags: W
@@ -2113,8 +2114,8 @@ EndSplineSet
 Kerns2: 86 -24 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  77 -16 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  74 -26 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  70 -16 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  45 -53 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  36 -16 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: G
-Encoding: 71 71 74
+StartChar: g
+Encoding: 103 103 74
 Width: 565
 GlyphClass: 2
 Flags: W
@@ -2172,8 +2173,8 @@ EndSplineSet
 Kerns2: 92 16 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  77 73 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: H
-Encoding: 72 72 75
+StartChar: h
+Encoding: 104 104 75
 Width: 604
 GlyphClass: 2
 Flags: W
@@ -2200,8 +2201,8 @@ EndSplineSet
 Kerns2: 60 -45 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -8 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: I
-Encoding: 73 73 76
+StartChar: i
+Encoding: 105 105 76
 Width: 299
 GlyphClass: 2
 Flags: W
@@ -2225,8 +2226,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: J
-Encoding: 74 74 77
+StartChar: j
+Encoding: 106 106 77
 Width: 314
 GlyphClass: 2
 Flags: W
@@ -2256,8 +2257,8 @@ EndSplineSet
 Kerns2: 73 -22 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: K
-Encoding: 75 75 78
+StartChar: k
+Encoding: 107 107 78
 Width: 564
 GlyphClass: 2
 Flags: W
@@ -2281,8 +2282,8 @@ EndSplineSet
 Kerns2: 92 -16 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  77 -8 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  73 -16 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: L
-Encoding: 76 76 79
+StartChar: l
+Encoding: 108 108 79
 Width: 280
 GlyphClass: 2
 Flags: W
@@ -2297,8 +2298,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: M
-Encoding: 77 77 80
+StartChar: m
+Encoding: 109 109 80
 Width: 935
 GlyphClass: 2
 Flags: W
@@ -2335,8 +2336,8 @@ EndSplineSet
 Kerns2: 60 -41 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -36 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: N
-Encoding: 78 78 81
+StartChar: n
+Encoding: 110 110 81
 Width: 603
 GlyphClass: 2
 Flags: W
@@ -2363,8 +2364,8 @@ EndSplineSet
 Kerns2: 60 -41 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -44 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: O
-Encoding: 79 79 82
+StartChar: o
+Encoding: 111 111 82
 Width: 546
 GlyphClass: 2
 Flags: W
@@ -2393,8 +2394,8 @@ EndSplineSet
 Kerns2: 60 -65 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  58 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  57 -33 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -71 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: P
-Encoding: 80 80 83
+StartChar: p
+Encoding: 112 112 83
 Width: 594
 GlyphClass: 2
 Flags: W
@@ -2427,8 +2428,8 @@ EndSplineSet
 Kerns2: 60 -36 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -53 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: Q
-Encoding: 81 81 84
+StartChar: q
+Encoding: 113 113 84
 Width: 585
 GlyphClass: 2
 Flags: W
@@ -2466,8 +2467,8 @@ EndSplineSet
 Kerns2: 77 81 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  60 -47 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -73 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: R
-Encoding: 82 82 85
+StartChar: r
+Encoding: 114 114 85
 Width: 381
 GlyphClass: 2
 Flags: W
@@ -2489,8 +2490,8 @@ EndSplineSet
 Kerns2: 74 -20 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -48 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  45 -40 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: S
-Encoding: 83 83 86
+StartChar: s
+Encoding: 115 115 86
 Width: 526
 GlyphClass: 2
 Flags: W
@@ -2528,8 +2529,8 @@ EndSplineSet
 Kerns2: 92 -20 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  73 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  60 -57 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  58 -36 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  57 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -89 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: T
-Encoding: 84 84 87
+StartChar: t
+Encoding: 116 116 87
 Width: 376
 GlyphClass: 2
 Flags: W
@@ -2558,8 +2559,8 @@ EndSplineSet
 Kerns2: 60 -37 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: U
-Encoding: 85 85 88
+StartChar: u
+Encoding: 117 117 88
 Width: 606
 GlyphClass: 2
 Flags: W
@@ -2585,8 +2586,8 @@ EndSplineSet
 Kerns2: 60 -49 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -57 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: V
-Encoding: 86 86 89
+StartChar: v
+Encoding: 118 118 89
 Width: 503
 GlyphClass: 2
 Flags: W
@@ -2605,8 +2606,8 @@ EndSplineSet
 Kerns2: 74 -8 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  60 -45 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -60 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  45 -53 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  36 -24 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: W
-Encoding: 87 87 90
+StartChar: w
+Encoding: 119 119 90
 Width: 725
 GlyphClass: 2
 Flags: W
@@ -2631,8 +2632,8 @@ EndSplineSet
 Kerns2: 60 -32 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -32 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  45 -41 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  36 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: X
-Encoding: 88 88 91
+StartChar: x
+Encoding: 120 120 91
 Width: 512
 GlyphClass: 2
 Flags: W
@@ -2656,8 +2657,8 @@ EndSplineSet
 Kerns2: 60 -49 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -41 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: Y
-Encoding: 89 89 92
+StartChar: y
+Encoding: 121 121 92
 Width: 484
 GlyphClass: 2
 Flags: W
@@ -2683,8 +2684,8 @@ EndSplineSet
 Kerns2: 74 -8 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  60 -28 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -56 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  45 -24 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  36 -12 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: Z
-Encoding: 90 90 93
+StartChar: z
+Encoding: 122 122 93
 Width: 475
 GlyphClass: 2
 Flags: W
@@ -2706,8 +2707,8 @@ EndSplineSet
 Kerns2: 60 -41 "'kern' Horizontal Kerning in Latin lookup 0 subtable"  55 -24 "'kern' Horizontal Kerning in Latin lookup 0 subtable" 
 EndChar
 
-StartChar: bracketleft
-Encoding: 91 91 94
+StartChar: braceleft
+Encoding: 123 123 94
 Width: 349
 GlyphClass: 2
 Flags: W
@@ -2741,8 +2742,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: backslash
-Encoding: 92 92 95
+StartChar: bar
+Encoding: 124 124 95
 Width: 280
 GlyphClass: 2
 Flags: W
@@ -2757,8 +2758,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bracketright
-Encoding: 93 93 96
+StartChar: braceright
+Encoding: 125 125 96
 Width: 349
 GlyphClass: 2
 Flags: W
@@ -2792,8 +2793,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: asciicircum
-Encoding: 94 94 97
+StartChar: asciitilde
+Encoding: 126 126 97
 Width: 515
 GlyphClass: 2
 Flags: W
@@ -2815,8 +2816,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: grave
-Encoding: 96 96 98
+StartChar: sterling
+Encoding: 163 163 98
 Width: 565
 GlyphClass: 2
 Flags: W
@@ -2857,8 +2858,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: a
-Encoding: 97 97 99
+StartChar: dieresis
+Encoding: 168 168 99
 Width: 323
 GlyphClass: 2
 Flags: W
@@ -2886,8 +2887,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: b
-Encoding: 98 98 100
+StartChar: acute
+Encoding: 180 180 100
 Width: 315
 GlyphClass: 2
 Flags: W
@@ -2902,8 +2903,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: c
-Encoding: 99 99 101
+StartChar: Agrave
+Encoding: 192 192 101
 Width: 575
 GlyphClass: 2
 Flags: W
@@ -2931,8 +2932,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: d
-Encoding: 100 100 102
+StartChar: Aacute
+Encoding: 193 193 102
 Width: 575
 GlyphClass: 2
 Flags: W
@@ -2960,8 +2961,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: e
-Encoding: 101 101 103
+StartChar: Acircumflex
+Encoding: 194 194 103
 Width: 575
 GlyphClass: 2
 Flags: W
@@ -2991,8 +2992,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: f
-Encoding: 102 102 104
+StartChar: Atilde
+Encoding: 195 195 104
 Width: 575
 GlyphClass: 2
 Flags: W
@@ -3032,8 +3033,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: g
-Encoding: 103 103 105
+StartChar: Adieresis
+Encoding: 196 196 105
 Width: 575
 GlyphClass: 2
 Flags: W
@@ -3074,8 +3075,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: h
-Encoding: 104 104 106
+StartChar: Egrave
+Encoding: 200 200 106
 Width: 564
 GlyphClass: 2
 Flags: W
@@ -3103,8 +3104,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: i
-Encoding: 105 105 107
+StartChar: Eacute
+Encoding: 201 201 107
 Width: 564
 GlyphClass: 2
 Flags: W
@@ -3132,8 +3133,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: j
-Encoding: 106 106 108
+StartChar: Ecircumflex
+Encoding: 202 202 108
 Width: 564
 GlyphClass: 2
 Flags: W
@@ -3163,8 +3164,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: k
-Encoding: 107 107 109
+StartChar: Edieresis
+Encoding: 203 203 109
 Width: 564
 GlyphClass: 2
 Flags: W
@@ -3205,8 +3206,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: l
-Encoding: 108 108 110
+StartChar: Igrave
+Encoding: 204 204 110
 Width: 280
 GlyphClass: 2
 Flags: W
@@ -3226,8 +3227,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: m
-Encoding: 109 109 111
+StartChar: Iacute
+Encoding: 205 205 111
 Width: 280
 GlyphClass: 2
 Flags: W
@@ -3247,8 +3248,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: n
-Encoding: 110 110 112
+StartChar: Icircumflex
+Encoding: 206 206 112
 Width: 280
 GlyphClass: 2
 Flags: W
@@ -3270,8 +3271,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: o
-Encoding: 111 111 113
+StartChar: Idieresis
+Encoding: 207 207 113
 Width: 280
 GlyphClass: 2
 Flags: W
@@ -3304,8 +3305,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: p
-Encoding: 112 112 114
+StartChar: Ntilde
+Encoding: 209 209 114
 Width: 686
 GlyphClass: 2
 Flags: W
@@ -3343,8 +3344,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: q
-Encoding: 113 113 115
+StartChar: Ograve
+Encoding: 210 210 115
 Width: 646
 GlyphClass: 2
 Flags: W
@@ -3377,8 +3378,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: r
-Encoding: 114 114 116
+StartChar: Oacute
+Encoding: 211 211 116
 Width: 646
 GlyphClass: 2
 Flags: W
@@ -3411,8 +3412,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: s
-Encoding: 115 115 117
+StartChar: Ocircumflex
+Encoding: 212 212 117
 Width: 646
 GlyphClass: 2
 Flags: W
@@ -3447,8 +3448,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: t
-Encoding: 116 116 118
+StartChar: Otilde
+Encoding: 213 213 118
 Width: 646
 GlyphClass: 2
 Flags: W
@@ -3493,8 +3494,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: u
-Encoding: 117 117 119
+StartChar: Odieresis
+Encoding: 214 214 119
 Width: 646
 GlyphClass: 2
 Flags: W
@@ -3540,8 +3541,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: v
-Encoding: 118 118 120
+StartChar: Ugrave
+Encoding: 217 217 120
 Width: 654
 GlyphClass: 2
 Flags: W
@@ -3571,8 +3572,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: w
-Encoding: 119 119 121
+StartChar: Uacute
+Encoding: 218 218 121
 Width: 654
 GlyphClass: 2
 Flags: W
@@ -3602,8 +3603,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: x
-Encoding: 120 120 122
+StartChar: Ucircumflex
+Encoding: 219 219 122
 Width: 654
 GlyphClass: 2
 Flags: W
@@ -3635,8 +3636,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: y
-Encoding: 121 121 123
+StartChar: Udieresis
+Encoding: 220 220 123
 Width: 654
 GlyphClass: 2
 Flags: W
@@ -3679,8 +3680,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: z
-Encoding: 122 122 124
+StartChar: agrave
+Encoding: 224 224 124
 Width: 551
 GlyphClass: 2
 Flags: W
@@ -3722,8 +3723,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: braceleft
-Encoding: 123 123 125
+StartChar: aacute
+Encoding: 225 225 125
 Width: 551
 GlyphClass: 2
 Flags: W
@@ -3766,8 +3767,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bar
-Encoding: 124 124 126
+StartChar: acircumflex
+Encoding: 226 226 126
 Width: 551
 GlyphClass: 2
 Flags: W
@@ -3801,18 +3802,18 @@ SplineSet
  144 50 144 50 246 50 c 0,31,32
  304 50 304 50 345.5 91.5 c 128,-1,33
  387 133 387 133 387 199 c 1,25,26
-461 587 m 5,34,-1
- 411 548 l 5,35,-1
- 282 656 l 5,36,-1
- 152 548 l 5,37,-1
- 102 587 l 5,38,-1
- 282 743 l 5,39,-1
- 461 587 l 5,34,-1
+461 587 m 1,34,-1
+ 411 548 l 1,35,-1
+ 282 656 l 1,36,-1
+ 152 548 l 1,37,-1
+ 102 587 l 1,38,-1
+ 282 743 l 1,39,-1
+ 461 587 l 1,34,-1
 EndSplineSet
 EndChar
 
-StartChar: braceright
-Encoding: 125 125 127
+StartChar: atilde
+Encoding: 227 227 127
 Width: 551
 GlyphClass: 2
 Flags: W
@@ -3867,8 +3868,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: asciitilde
-Encoding: 126 126 128
+StartChar: adieresis
+Encoding: 228 228 128
 Width: 551
 GlyphClass: 2
 Flags: W
@@ -3923,8 +3924,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni007F
-Encoding: 127 127 129
+StartChar: egrave
+Encoding: 232 232 129
 Width: 514
 GlyphClass: 2
 Flags: W
@@ -3959,8 +3960,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0080
-Encoding: 128 128 130
+StartChar: eacute
+Encoding: 233 233 130
 Width: 514
 GlyphClass: 2
 Flags: W
@@ -3995,8 +3996,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0081
-Encoding: 129 129 131
+StartChar: ecircumflex
+Encoding: 234 234 131
 Width: 514
 GlyphClass: 2
 Flags: W
@@ -4033,8 +4034,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0082
-Encoding: 130 130 132
+StartChar: edieresis
+Encoding: 235 235 132
 Width: 514
 GlyphClass: 2
 Flags: W
@@ -4082,8 +4083,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0083
-Encoding: 131 131 133
+StartChar: igrave
+Encoding: 236 236 133
 Width: 299
 GlyphClass: 2
 Flags: W
@@ -4103,8 +4104,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0084
-Encoding: 132 132 134
+StartChar: iacute
+Encoding: 237 237 134
 Width: 299
 GlyphClass: 2
 Flags: W
@@ -4124,8 +4125,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0085
-Encoding: 133 133 135
+StartChar: icircumflex
+Encoding: 238 238 135
 Width: 299
 GlyphClass: 2
 Flags: W
@@ -4147,8 +4148,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0086
-Encoding: 134 134 136
+StartChar: idieresis
+Encoding: 239 239 136
 Width: 299
 GlyphClass: 2
 Flags: W
@@ -4181,8 +4182,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0087
-Encoding: 135 135 137
+StartChar: ntilde
+Encoding: 241 241 137
 Width: 604
 GlyphClass: 2
 Flags: W
@@ -4225,8 +4226,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0088
-Encoding: 136 136 138
+StartChar: ograve
+Encoding: 242 242 138
 Width: 547
 GlyphClass: 2
 Flags: W
@@ -4259,8 +4260,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0089
-Encoding: 137 137 139
+StartChar: oacute
+Encoding: 243 243 139
 Width: 547
 GlyphClass: 2
 Flags: W
@@ -4293,8 +4294,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni008A
-Encoding: 138 138 140
+StartChar: ocircumflex
+Encoding: 244 244 140
 Width: 547
 GlyphClass: 2
 Flags: W
@@ -4329,8 +4330,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni008B
-Encoding: 139 139 141
+StartChar: otilde
+Encoding: 245 245 141
 Width: 547
 GlyphClass: 2
 Flags: W
@@ -4375,8 +4376,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni008C
-Encoding: 140 140 142
+StartChar: odieresis
+Encoding: 246 246 142
 Width: 547
 GlyphClass: 2
 Flags: W
@@ -4422,8 +4423,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni008D
-Encoding: 141 141 143
+StartChar: ugrave
+Encoding: 249 249 143
 Width: 606
 GlyphClass: 2
 Flags: W
@@ -4453,8 +4454,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni008E
-Encoding: 142 142 144
+StartChar: uacute
+Encoding: 250 250 144
 Width: 606
 GlyphClass: 2
 Flags: W
@@ -4484,8 +4485,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni008F
-Encoding: 143 143 145
+StartChar: ucircumflex
+Encoding: 251 251 145
 Width: 606
 GlyphClass: 2
 Flags: W
@@ -4517,8 +4518,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0090
-Encoding: 144 144 146
+StartChar: udieresis
+Encoding: 252 252 146
 Width: 606
 GlyphClass: 2
 Flags: W
@@ -4561,8 +4562,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0091
-Encoding: 145 145 147
+StartChar: dotlessi
+Encoding: 305 305 147
 Width: 280
 GlyphClass: 2
 Flags: W
@@ -4577,8 +4578,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0092
-Encoding: 146 146 148
+StartChar: apostrophe
+Encoding: 700 700 148
 Width: 184
 GlyphClass: 2
 Flags: W
@@ -4599,8 +4600,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0093
-Encoding: 147 147 149
+StartChar: circumflex
+Encoding: 710 710 149
 Width: 407
 GlyphClass: 2
 Flags: W
@@ -4617,8 +4618,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0094
-Encoding: 148 148 150
+StartChar: tilde
+Encoding: 732 732 150
 Width: 366
 GlyphClass: 2
 Flags: W
@@ -4645,8 +4646,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0095
-Encoding: 149 149 151
+StartChar: endash
+Encoding: 8211 8211 151
 Width: 474
 GlyphClass: 2
 Flags: W
@@ -4661,8 +4662,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0096
-Encoding: 150 150 152
+StartChar: emdash
+Encoding: 8212 8212 152
 Width: 726
 GlyphClass: 2
 Flags: W
@@ -4677,8 +4678,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0097
-Encoding: 151 151 153
+StartChar: quoteleft
+Encoding: 8216 8216 153
 Width: 214
 GlyphClass: 2
 Flags: W
@@ -4699,8 +4700,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0098
-Encoding: 152 152 154
+StartChar: quoteright
+Encoding: 8217 8217 154
 Width: 214
 GlyphClass: 2
 Flags: W
@@ -4721,8 +4722,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0099
-Encoding: 153 153 155
+StartChar: rupeesymbol
+Encoding: 8377 8377 155
 Width: 581
 GlyphClass: 2
 Flags: W
@@ -4756,8 +4757,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni009A
-Encoding: 154 154 156
+StartChar: minus
+Encoding: 8722 8722 156
 Width: 488
 GlyphClass: 2
 Flags: W
@@ -4772,8 +4773,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni009E
-Encoding: 158 158 157
+StartChar: zero.propold
+Encoding: 65539 -1 157
 Width: 531
 GlyphClass: 2
 Flags: W
@@ -4797,8 +4798,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni009F
-Encoding: 159 159 158
+StartChar: one.propold
+Encoding: 65540 -1 158
 Width: 331
 GlyphClass: 2
 Flags: W
@@ -4816,8 +4817,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni00A0
-Encoding: 160 160 159
+StartChar: two.propold
+Encoding: 65541 -1 159
 Width: 575
 GlyphClass: 2
 Flags: W
@@ -4851,8 +4852,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: exclamdown
-Encoding: 161 161 160
+StartChar: three.propold
+Encoding: 65542 -1 160
 Width: 562
 GlyphClass: 2
 Flags: W
@@ -4890,8 +4891,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: cent
-Encoding: 162 162 161
+StartChar: four.propold
+Encoding: 65543 -1 161
 Width: 560
 GlyphClass: 2
 Flags: W
@@ -4917,8 +4918,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: sterling
-Encoding: 163 163 162
+StartChar: five.propold
+Encoding: 65544 -1 162
 Width: 569
 GlyphClass: 2
 Flags: W
@@ -4949,8 +4950,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: currency
-Encoding: 164 164 163
+StartChar: six.propold
+Encoding: 65545 -1 163
 Width: 573
 GlyphClass: 2
 Flags: W
@@ -4987,8 +4988,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: yen
-Encoding: 165 165 164
+StartChar: seven.propold
+Encoding: 65546 -1 164
 Width: 470
 GlyphClass: 2
 Flags: W
@@ -5006,8 +5007,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: brokenbar
-Encoding: 166 166 165
+StartChar: eight.propold
+Encoding: 65547 -1 165
 Width: 615
 GlyphClass: 2
 Flags: W
@@ -5054,8 +5055,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: section
-Encoding: 167 167 166
+StartChar: nine.propold
+Encoding: 65548 -1 166
 Width: 580
 GlyphClass: 2
 Flags: W
@@ -5101,32 +5102,204 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-441.5 746.9 m 5,0,-1
- 391.5 785.9 l 5,1,-1
- 262.5 677.9 l 5,2,-1
- 132.5 785.9 l 5,3,-1
- 82.5 746.9 l 5,4,-1
- 262.5 590.9 l 5,5,-1
- 441.5 746.9 l 5,0,-1
-395 446.5 m 132,-1,7
- 445 403 445 403 460 338 c 5,8,-1
- 380 331 l 5,9,10
- 367 373 367 373 338 396.5 c 132,-1,11
- 309 420 309 420 274 420 c 4,12,13
- 210 420 210 420 170.5 372 c 132,-1,14
- 131 324 131 324 131 241.5 c 132,-1,15
- 131 159 131 159 169.5 109 c 132,-1,16
- 208 59 208 59 265.5 59 c 132,-1,17
- 323 59 323 59 351.5 85.5 c 132,-1,18
- 380 112 380 112 380 161 c 5,19,-1
- 461 161 l 5,20,21
- 461 84 461 84 407.5 36.5 c 132,-1,22
- 354 -11 354 -11 268 -11 c 4,23,24
- 177 -11 177 -11 113.5 58 c 132,-1,25
- 50 127 50 127 50 241.5 c 132,-1,26
- 50 356 50 356 113 423 c 132,-1,27
- 176 490 176 490 260.5 490 c 132,-1,6
- 345 490 345 490 395 446.5 c 132,-1,7
+442.5 725.31 m 1,0,-1
+ 392.5 764.31 l 1,1,-1
+ 263.5 656.31 l 1,2,-1
+ 133.5 764.31 l 1,3,-1
+ 83.5 725.31 l 1,4,-1
+ 263.5 569.31 l 1,5,-1
+ 442.5 725.31 l 1,0,-1
+395 446.5 m 128,-1,7
+ 445 403 445 403 460 338 c 1,8,-1
+ 380 331 l 1,9,10
+ 367 373 367 373 338 396.5 c 128,-1,11
+ 309 420 309 420 274 420 c 0,12,13
+ 210 420 210 420 170.5 372 c 128,-1,14
+ 131 324 131 324 131 241.5 c 128,-1,15
+ 131 159 131 159 169.5 109 c 128,-1,16
+ 208 59 208 59 265.5 59 c 128,-1,17
+ 323 59 323 59 351.5 85.5 c 128,-1,18
+ 380 112 380 112 380 161 c 1,19,-1
+ 461 161 l 1,20,21
+ 461 84 461 84 407.5 36.5 c 128,-1,22
+ 354 -11 354 -11 268 -11 c 0,23,24
+ 177 -11 177 -11 113.5 58 c 128,-1,25
+ 50 127 50 127 50 241.5 c 128,-1,26
+ 50 356 50 356 113 423 c 128,-1,27
+ 176 490 176 490 260.5 490 c 128,-1,6
+ 345 490 345 490 395 446.5 c 128,-1,7
+EndSplineSet
+EndChar
+
+StartChar: ccedilla
+Encoding: 231 231 168
+Width: 515
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+395 446.5 m 128,-1,1
+ 445 403 445 403 460 338 c 1,2,-1
+ 380 331 l 1,3,4
+ 367 373 367 373 338 396.5 c 128,-1,5
+ 309 420 309 420 274 420 c 0,6,7
+ 210 420 210 420 170.5 372 c 128,-1,8
+ 131 324 131 324 131 241.5 c 128,-1,9
+ 131 159 131 159 169.5 109 c 128,-1,10
+ 208 59 208 59 265.5 59 c 128,-1,11
+ 323 59 323 59 351.5 85.5 c 128,-1,12
+ 380 112 380 112 380 161 c 1,13,-1
+ 461 161 l 1,14,15
+ 461 84 461 84 407 36 c 0,16,17
+ 358 -7 358 -7 282 -11 c 1,18,-1
+ 262 -47 l 1,19,20
+ 283 -32 283 -32 303 -33 c 1,21,22
+ 362 -33 362 -33 357 -99 c 0,23,24
+ 352 -169 352 -169 284 -170 c 1,25,26
+ 217 -173 217 -173 211 -111 c 1,27,-1
+ 258 -111 l 1,28,29
+ 259 -134 259 -134 283 -134 c 0,30,31
+ 309 -134 309 -134 310 -90 c 0,32,33
+ 310 -61 310 -61 274 -63 c 0,34,35
+ 256 -64 256 -64 242 -81 c 1,36,37
+ 227 -81 227 -81 212 -81 c 1,38,-1
+ 244 -10 l 1,39,40
+ 169 -2 169 -2 114 58 c 0,41,42
+ 50 127 50 127 50 241.5 c 128,-1,43
+ 50 356 50 356 113 423 c 128,-1,44
+ 176 490 176 490 260.5 490 c 128,-1,0
+ 345 490 345 490 395 446.5 c 128,-1,1
+EndSplineSet
+EndChar
+
+StartChar: Ccedilla
+Encoding: 199 199 169
+Width: 515
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+319 640 m 0,0,1
+ 420 640 420 640 481.5 589.5 c 128,-1,2
+ 543 539 543 539 566 458 c 1,3,-1
+ 481 441 l 1,4,5
+ 461 500 461 500 418.5 534.5 c 128,-1,6
+ 376 569 376 569 319 569 c 0,7,8
+ 240 569 240 569 188 503 c 128,-1,9
+ 136 437 136 437 136 319.5 c 128,-1,10
+ 136 202 136 202 182.5 131 c 128,-1,11
+ 229 60 229 60 319 60 c 0,12,13
+ 394 60 394 60 437.5 99.5 c 128,-1,14
+ 481 139 481 139 481 204 c 1,15,-1
+ 566 204 l 1,16,17
+ 566 105 566 105 499 47 c 0,18,19
+ 434 -8 434 -8 324 -11 c 1,20,-1
+ 304 -47 l 1,21,22
+ 326 -32 326 -32 346 -33 c 1,23,24
+ 404 -33 404 -33 400 -99 c 0,25,26
+ 395 -168 395 -168 326 -170 c 1,27,28
+ 260 -173 260 -173 254 -111 c 1,29,-1
+ 300 -111 l 1,30,31
+ 301 -134 301 -134 325 -134 c 0,32,33
+ 352 -134 352 -134 352 -90 c 0,34,35
+ 352 -61 352 -61 316 -63 c 0,36,37
+ 299 -64 299 -64 284 -81 c 1,38,39
+ 270 -81 270 -81 255 -81 c 1,40,-1
+ 287 -10 l 1,41,42
+ 187 -1 187 -1 123 79 c 0,43,44
+ 51 169 51 169 51 320 c 128,-1,45
+ 51 471 51 471 126 555.5 c 128,-1,46
+ 201 640 201 640 319 640 c 0,0,1
+EndSplineSet
+EndChar
+
+StartChar: arrowright
+Encoding: 8594 8594 170
+Width: 901
+Flags: HWO
+LayerCount: 2
+Fore
+SplineSet
+633.725 547.591 m 5,0,1
+ 634.889 472.814 634.889 472.814 702.688 420.578 c 4,2,3
+ 777.738 362.733 777.738 362.733 866 344.416 c 5,4,-1
+ 866 300.804 l 5,5,6
+ 777.774 282.493 777.774 282.493 702.688 224.641 c 4,7,8
+ 634.891 172.387 634.891 172.387 633.725 97.5908 c 5,9,-1
+ 576.312 111.916 l 5,10,11
+ 584 208.321 584 208.321 666.388 271.815 c 4,12,13
+ 671.286 275.592 671.286 275.592 688.01 282.161 c 132,-1,14
+ 704.732 288.731 704.732 288.731 708.987 291.391 c 5,15,-1
+ 20.1875 291.391 l 5,16,-1
+ 20.1875 353.828 l 5,17,-1
+ 709.438 353.828 l 5,18,19
+ 705.276 356.345 705.276 356.345 688.35 362.934 c 132,-1,20
+ 671.422 369.522 671.422 369.522 666.388 373.403 c 4,21,22
+ 583.992 436.903 583.992 436.903 576.312 533.266 c 5,23,-1
+ 633.725 547.591 l 5,0,1
+EndSplineSet
+EndChar
+
+StartChar: arrowleft
+Encoding: 8592 8592 171
+Width: 901
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+267.275 547.591 m 5,0,1
+ 266.111 472.814 266.111 472.814 198.312 420.578 c 4,2,3
+ 123.262 362.733 123.262 362.733 35 344.416 c 5,4,-1
+ 35 300.804 l 5,5,6
+ 123.226 282.493 123.226 282.493 198.312 224.641 c 4,7,8
+ 266.109 172.387 266.109 172.387 267.275 97.5908 c 5,9,-1
+ 324.688 111.916 l 5,10,11
+ 317 208.321 317 208.321 234.612 271.815 c 4,12,13
+ 229.714 275.592 229.714 275.592 212.99 282.161 c 132,-1,14
+ 196.268 288.731 196.268 288.731 192.013 291.391 c 5,15,-1
+ 880.812 291.391 l 5,16,-1
+ 880.812 353.828 l 5,17,-1
+ 191.562 353.828 l 5,18,19
+ 195.724 356.345 195.724 356.345 212.65 362.934 c 132,-1,20
+ 229.578 369.522 229.578 369.522 234.612 373.403 c 4,21,22
+ 317.008 436.903 317.008 436.903 324.688 533.266 c 5,23,-1
+ 267.275 547.591 l 5,0,1
+EndSplineSet
+EndChar
+
+StartChar: Ccaron
+Encoding: 268 268 172
+Width: 613
+Flags: HWO
+LayerCount: 2
+Fore
+SplineSet
+498.7 859.21 m 1,0,-1
+ 448.7 898.21 l 1,1,-1
+ 319.7 790.21 l 1,2,-1
+ 189.7 898.21 l 1,3,-1
+ 139.7 859.21 l 1,4,-1
+ 319.7 703.21 l 1,5,-1
+ 498.7 859.21 l 1,0,-1
+319 640 m 0,6,7
+ 420 640 420 640 481.5 589.5 c 128,-1,8
+ 543 539 543 539 566 458 c 1,9,-1
+ 481 441 l 1,10,11
+ 461 500 461 500 418.5 534.5 c 128,-1,12
+ 376 569 376 569 319 569 c 0,13,14
+ 240 569 240 569 188 503 c 128,-1,15
+ 136 437 136 437 136 319.5 c 128,-1,16
+ 136 202 136 202 182.5 131 c 128,-1,17
+ 229 60 229 60 319 60 c 0,18,19
+ 394 60 394 60 437.5 99.5 c 128,-1,20
+ 481 139 481 139 481 204 c 1,21,-1
+ 566 204 l 1,22,23
+ 566 105 566 105 498.5 47 c 128,-1,24
+ 431 -11 431 -11 313.5 -11 c 128,-1,25
+ 196 -11 196 -11 123.5 79 c 128,-1,26
+ 51 169 51 169 51 320 c 128,-1,27
+ 51 471 51 471 126 555.5 c 128,-1,28
+ 201 640 201 640 319 640 c 0,6,7
 EndSplineSet
 EndChar
 EndChars
