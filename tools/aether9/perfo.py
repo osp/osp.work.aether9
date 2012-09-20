@@ -96,12 +96,12 @@ class Writer:
 		ret = []
 		ret.append('\\stylepiece{%d}'%self.id)
 		ret.append('')
-		ret.append('\\styleinfos')
+		ret.append('\\styleinfoperfo')
 		ret.append('\\startinfopar \perfotitle{%s}\n\n\\infopar %s\n\n\\infopar %s\n\n\\infopar %s\n\n\\infopar %s\\stopinfopar'%(self.title,self.date,self.event,self.location,'\n'.join(self.performers.split())))
-		ret.append('\\blackrule[color=black, width=65mm, height=0.5pt, depth=0mm]')
+		ret.append('\\blackrule[color=black, width=60mm, height=0.5pt, depth=0mm]')
 		ret.append('\\styleperfo')
 		ret.append(self.description)
-		ret.append('\\blackrule[color=black, width=65mm, height=0.5pt, depth=0mm]')
+		ret.append('\\blackrule[color=black, width=60mm, height=0.5pt, depth=0mm]')
 		#ret.append('\\stopcolumnsetspan')
 		return '%s' % '\n'.join(ret)
 		
