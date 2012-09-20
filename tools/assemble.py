@@ -1,6 +1,10 @@
 # An assembler for aether9
 sdoc = params["INPUT"]
 tdoc = params["OUTPUT"]
+
+cleft = params["cl"]
+cright = params["cr"]
+
 sinfo = pdf_info.extract(sdoc)
 bbox = sinfo["page_size"][0][1]
 pcount = sinfo["page_count"]
@@ -13,9 +17,9 @@ imposition_plan = []
 belle_page = True
 
 bp_offsetL = 7
-bp_offsetR = -16
+bp_offsetR = -3
 
-up_offsetL = 16
+up_offsetL = 3
 up_offsetR = -7
 
 full_page_image = [
@@ -24,15 +28,16 @@ full_page_image = [
 	40,
 	49,
 	74,
-	84,
-	96,
-	97,
-	101,
-	107,
+	75,
+	85,
+	98,
+	102,
+	103,
 	109,
-	110,
-	118,
-	119,
+	111,
+	112,
+	120,
+	121,
 	]
 
 target_page = 0
@@ -65,6 +70,14 @@ for i in range(0,pcount,2):
 				"translate" : [swidth + bp_offsetR_c , 0],
 				"rotate" : 0,
 				"scale" : [1,1]
+				},
+				{
+				"source_document" : cright,
+				"source_page" : 0,
+				"crop_box" : {"left":0,"bottom":0,"width":swidth*2, "height":height},
+				"translate" : [0 , 0],
+				"rotate" : 0,
+				"scale" : [1,1]
 				}
 				]
 		})
@@ -95,6 +108,14 @@ for i in range(0,pcount,2):
 				"source_page" : i + 1,
 				"crop_box" : {"left":0,"bottom":0,"width":swidth, "height":height},
 				"translate" : [swidth + up_offsetR,0],
+				"rotate" : 0,
+				"scale" : [1,1]
+				},
+				{
+				"source_document" : cleft,
+				"source_page" : 0,
+				"crop_box" : {"left":0,"bottom":0,"width":swidth*2, "height":height},
+				"translate" : [0 , 0],
 				"rotate" : 0,
 				"scale" : [1,1]
 				}
